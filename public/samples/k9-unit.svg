@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220">
+  <defs>
+    <g id="paw">
+      <ellipse cx="0" cy="8" rx="12" ry="10"/>
+      <ellipse cx="-13" cy="-8" rx="5" ry="6.5"/>
+      <ellipse cx="-4" cy="-15" rx="5" ry="6.5"/>
+      <ellipse cx="6" cy="-15" rx="5" ry="6.5"/>
+      <ellipse cx="14" cy="-7" rx="5" ry="6.5"/>
+    </g>
+  </defs>
+  <rect x="4" y="4" width="352" height="212" rx="36" fill="#111317"/>
+  <rect x="16" y="16" width="328" height="188" rx="26" fill="none" stroke="#e0b33c" stroke-width="5"/>
+  <text x="180" y="128" font-family="Impact, 'Arial Black', sans-serif" font-size="104" fill="#e0b33c" text-anchor="middle" letter-spacing="4">K-9</text>
+  <rect x="70" y="146" width="220" height="40" rx="6" fill="#e0b33c"/>
+  <text x="180" y="176" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="28" fill="#111317" text-anchor="middle" letter-spacing="8">UNIT</text>
+  <use href="#paw" transform="translate(48 70) rotate(-20)" fill="#f2f2f2"/>
+  <use href="#paw" transform="translate(312 70) rotate(20)" fill="#f2f2f2"/>
+</svg>

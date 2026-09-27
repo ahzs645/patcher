@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <path id="top" d="M 42 150 A 108 108 0 0 1 258 150"/>
+    <path id="bottom" d="M 32 150 A 118 118 0 0 0 268 150"/>
+    <polygon id="star5" points="0,-10 2.35,-3.24 9.51,-3.09 3.8,1.24 5.88,8.09 0,4 -5.88,8.09 -3.8,1.24 -9.51,-3.09 -2.35,-3.24"/>
+  </defs>
+  <style>
+    .ring { fill: #16432f; }
+    .gold { fill: #d7b24a; }
+    .lbl { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; fill: #f2ead3; letter-spacing: 2px; }
+  </style>
+  <circle cx="150" cy="150" r="148" class="ring"/>
+  <circle cx="150" cy="150" r="96" class="gold"/>
+  <circle cx="150" cy="150" r="90" fill="#e9dfc4"/>
+  <text class="lbl" font-size="24"><textPath xlink:href="#top" startOffset="50%" text-anchor="middle">HIGHWAY PATROL</textPath></text>
+  <text class="lbl" font-size="24"><textPath xlink:href="#bottom" startOffset="50%" text-anchor="middle">STATE TROOPER</textPath></text>
+  <use xlink:href="#star5" transform="translate(26 158) scale(1.2)" class="gold"/>
+  <use xlink:href="#star5" transform="translate(274 158) scale(1.2)" class="gold"/>
+  <g transform="translate(150 150)">
+    <polygon points="0,-72 17,-23 68,-22 27,9 42,58 0,29 -42,58 -27,9 -68,-22 -17,-23" fill="#16432f"/>
+    <polygon points="0,-58 13.5,-18.5 55,-17.5 21.8,7.2 34,47 0,23.4 -34,47 -21.8,7.2 -55,-17.5 -13.5,-18.5" fill="#d7b24a"/>
+    <circle r="22" fill="#16432f"/>
+    <text y="7" font-family="Georgia, serif" font-weight="bold" font-size="19" fill="#d7b24a" text-anchor="middle">SHP</text>
+  </g>
+</svg>

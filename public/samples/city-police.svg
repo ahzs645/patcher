@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 360" width="300" height="360">
+  <defs>
+    <path id="shield" d="M150 8 C 205 30 250 22 292 12 C 296 60 290 110 292 170 C 294 250 240 312 150 352 C 60 312 6 250 8 170 C 10 110 4 60 8 12 C 50 22 95 30 150 8 Z"/>
+    <path id="arcTop" d="M58 92 C 100 58 200 58 242 92"/>
+    <path id="arcBottom" d="M78 262 C 115 292 185 292 222 262"/>
+    <polygon id="star" points="0,-50 11.8,-16.2 47.6,-15.5 19,6.2 29.4,40.5 0,20 -29.4,40.5 -19,6.2 -47.6,-15.5 -11.8,-16.2"/>
+  </defs>
+  <use xlink:href="#shield" fill="#1b2d5b"/>
+  <path d="M150 26 C 200 45 240 40 276 31 C 279 72 274 115 276 170 C 277 240 230 296 150 333 C 70 296 23 240 24 170 C 26 115 21 72 24 31 C 60 40 100 45 150 26 Z" fill="#f4f1e6" stroke="#c9a23a" stroke-width="6"/>
+  <path d="M150 40 C 196 57 232 53 263 45 C 266 80 261 120 263 170 C 264 232 222 283 150 318 C 78 283 36 232 37 170 C 39 120 34 80 37 45 C 68 53 104 57 150 40 Z" fill="#1b2d5b"/>
+  <text font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="30" fill="#f4f1e6" letter-spacing="3">
+    <textPath xlink:href="#arcTop" startOffset="50%" text-anchor="middle">CITY OF</textPath>
+  </text>
+  <text x="150" y="146" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="46" fill="#c9a23a" text-anchor="middle" letter-spacing="2">POLICE</text>
+  <circle cx="150" cy="208" r="52" fill="#c9a23a"/>
+  <circle cx="150" cy="208" r="44" fill="#9e1b24"/>
+  <use xlink:href="#star" transform="translate(150 212) scale(0.78)" fill="#f4f1e6"/>
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="20" fill="#f4f1e6" letter-spacing="2">
+    <textPath xlink:href="#arcBottom" startOffset="50%" text-anchor="middle">EST. 1901</textPath>
+  </text>
+</svg>

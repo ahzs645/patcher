@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#15171b" />
+    <title>Patcher — SVG to embroidered patch</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l12 5v9c0 7-5 12-12 14C9 28 4 23 4 16V7z' fill='%23233a6b' stroke='%23d4a93a' stroke-width='3'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- ============================================================ top bar -->
+      <header class="topbar">
+        <div class="brand">
+          <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><path d="M16 2l12 5v9c0 7-5 12-12 14C9 28 4 23 4 16V7z" fill="#233a6b" stroke="#d4a93a" stroke-width="3"/></svg>
+          <span class="brand-name">Patcher</span>
+        </div>
+        <div class="doc">
+          <span id="docName" class="doc-name">—</span>
+          <span id="docMeta" class="doc-meta"></span>
+        </div>
+        <div class="spacer"></div>
+        <button class="btn" id="openBtn" title="Open SVG (O)">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="lbl">Open</span>
+        </button>
+        <button class="btn primary" id="exportBtn" title="Export">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v12m0 0l-4-4m4 4l4-4M4 18v1a1 1 0 001 1h14a1 1 0 001-1v-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="lbl">Export</span>
+        </button>
+      </header>
+
+      <!-- ============================================================ viewer -->
+      <main class="viewer">
+        <div class="viewbar">
+          <div class="seg scroll" id="view" role="tablist" aria-label="View">
+            <button data-v="compare" title="Compare (1)">Compare</button>
+            <button data-v="split" title="Side by side (2)">Side by side</button>
+            <button data-v="stitched" title="Embroidered (3)">Embroidered</button>
+            <button data-v="plan" title="Stitch plan (4)">Stitch plan</button>
+            <button data-v="svg" title="Patch SVG (5)">SVG</button>
+          </div>
+        </div>
+        <div class="panes" id="panes" data-view="split">
+          <div class="pane" data-pane="compare">
+            <div class="stage">
+              <img id="cmpImg" alt="" draggable="false" />
+              <canvas id="cmpCanvas"></canvas>
+            </div>
+            <div class="wipe" id="wipe" role="slider" aria-label="Compare position" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+              <span class="wipe-knob">
+                <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="tag left">SVG</span><span class="tag right">Embroidered</span>
+          </div>
+          <div class="pane" data-pane="svg">
+            <span class="tag">Patch SVG</span>
+            <div class="stage"><img id="svgImg" alt="Patch artwork" draggable="false" /></div>
+          </div>
+          <div class="pane" data-pane="stitched">
+            <span class="tag">Embroidered</span>
+            <div class="stage"><canvas id="stitched"></canvas></div>
+          </div>
+          <div class="pane" data-pane="plan">
+            <span class="tag">Stitch plan</span>
+            <div class="stage"><canvas id="plan"></canvas></div>
+          </div>
+
+          <div class="zoom">
+            <button id="zoomOut" title="Zoom out (−)" aria-label="Zoom out">−</button>
+            <button id="zoomFit" title="Fit (F)">Fit</button>
+            <button id="zoomIn" title="Zoom in (+)" aria-label="Zoom in">+</button>
+          </div>
+          <div class="busy" id="busy" role="status"><span class="spin"></span><span id="busyText">Digitizing…</span></div>
+          <div class="toast" id="error" role="alert" hidden><span id="errorText"></span><button id="errorClose" aria-label="Dismiss">×</button></div>
+        </div>
+        <div class="simbar" id="simbar">
+          <button class="icon" id="play" title="Sew out (Space)" aria-label="Play sew-out">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path id="playIcon" d="M7 5v14l12-7z" fill="currentColor"/></svg>
+          </button>
+          <input type="range" id="scrub" min="0" max="1" value="1" step="1" aria-label="Stitch position" />
+          <span class="sim-chip" id="simColor" aria-hidden="true"></span>
+          <span class="sim-count" id="simCount">—</span>
+          <select id="simSpeed" aria-label="Playback speed">
+            <option value="0.5">0.5×</option>
+            <option value="1" selected>1×</option>
+            <option value="3">3×</option>
+            <option value="8">8×</option>
+          </select>
+        </div>
+      </main>
+
+      <!-- ============================================================ controls -->
+      <aside class="controls" aria-label="Settings">
+        <nav class="tabs" id="tabs" role="tablist">
+          <button data-tab="art" class="on">Artwork</button>
+          <button data-tab="threads">Threads</button>
+          <button data-tab="stitches">Stitches</button>
+          <button data-tab="look">Look</button>
+          <button data-tab="export">Export</button>
+        </nav>
+
+        <div class="panel" data-panel="art">
+          <label class="drop" id="drop">
+            <input type="file" id="file" accept=".svg,image/svg+xml" hidden />
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <strong>Drop an SVG or tap to choose</strong>
+            <span class="muted small">Police, fire, EMS, club patches — any SVG</span>
+          </label>
+          <form id="urlForm" class="row">
+            <input id="url" type="url" inputmode="url" placeholder="Paste SVG or Commons File: link" aria-label="SVG URL" />
+            <button type="submit" class="btn">Load</button>
+          </form>
+          <h3>Samples</h3>
+          <div class="samples" id="samples"></div>
+
+          <h3>Size</h3>
+          <div class="field">
+            <label for="widthMm">Patch width <output id="widthMmOut"></output></label>
+            <input type="range" id="widthMm" min="40" max="200" step="1" />
+          </div>
+          <div class="chips" id="sizePresets">
+            <button data-w="76">3″</button>
+            <button data-w="89">3½″</button>
+            <button data-w="102">4″</button>
+            <button data-w="127">5″</button>
+          </div>
+          <p class="muted small" id="sizeInfo"></p>
+        </div>
+
+        <div class="panel" data-panel="threads" hidden>
+          <div class="field">
+            <label for="maxColors">Max colors <output id="maxColorsOut"></output></label>
+            <input type="range" id="maxColors" min="2" max="16" step="1" />
+          </div>
+          <div class="field">
+            <label for="colorTolerance">Merge similar <output id="colorToleranceOut"></output></label>
+            <input type="range" id="colorTolerance" min="8" max="80" step="1" />
+          </div>
+          <div class="row between">
+            <label class="check"><input type="checkbox" id="snapChart" /> Snap to thread chart</label>
+            <select id="chart" aria-label="Thread chart">
+              <option>Brother</option>
+              <option>Janome</option>
+            </select>
+          </div>
+          <ul class="palette" id="palette"></ul>
+          <p class="muted small">Tap a swatch to recolor a thread.</p>
+        </div>
+
+        <div class="panel" data-panel="stitches" hidden>
+          <h3>Fill</h3>
+          <div class="field">
+            <label for="fillSpacingMm">Row spacing <output id="fillSpacingMmOut"></output></label>
+            <input type="range" id="fillSpacingMm" min="0.25" max="0.8" step="0.01" />
+          </div>
+          <div class="field">
+            <label for="fillStitchMm">Stitch length <output id="fillStitchMmOut"></output></label>
+            <input type="range" id="fillStitchMm" min="1.5" max="6" step="0.1" />
+          </div>
+          <div class="field">
+            <label for="fillAngleDeg">Angle <output id="fillAngleDegOut"></output></label>
+            <input type="range" id="fillAngleDeg" min="0" max="179" step="1" />
+          </div>
+          <label class="check"><input type="checkbox" id="varyAngles" /> Vary angle per color</label>
+          <label class="check"><input type="checkbox" id="underlay" /> Underlay under fills</label>
+          <h3>Satin</h3>
+          <div class="field">
+            <label for="satinMaxWidthMm">Use satin up to <output id="satinMaxWidthMmOut"></output></label>
+            <input type="range" id="satinMaxWidthMm" min="0" max="8" step="0.1" />
+          </div>
+          <h3>Border</h3>
+          <div class="seg full" id="border">
+            <button data-v="merrow">Merrow</button>
+            <button data-v="satin">Satin</button>
+            <button data-v="none">None</button>
+          </div>
+          <div class="field">
+            <label for="borderWidthMm">Width <output id="borderWidthMmOut"></output></label>
+            <input type="range" id="borderWidthMm" min="1.5" max="6" step="0.1" />
+          </div>
+          <div class="row">
+            <label class="check"><input type="checkbox" id="borderAuto" checked /> Auto color</label>
+            <input type="color" id="borderColor" value="#222222" disabled aria-label="Border color" />
+          </div>
+          <button class="btn ghost" id="resetParams">Reset stitch settings</button>
+        </div>
+
+        <div class="panel" data-panel="look" hidden>
+          <h3>Thread finish</h3>
+          <div class="seg full" id="finish">
+            <button data-v="matte">Matte patch</button>
+            <button data-v="glossy">Glossy satin</button>
+          </div>
+          <div class="field">
+            <label for="lightDeg">Light direction <output id="lightDegOut"></output></label>
+            <input type="range" id="lightDeg" min="0" max="359" step="1" />
+          </div>
+          <h3>Backdrop</h3>
+          <div class="backdrops" id="backdrop"></div>
+        </div>
+
+        <div class="panel" data-panel="export" hidden>
+          <div class="exports" id="exportList">
+            <button class="export" data-export="png"><strong>Embroidered PNG</strong><span>Mockup for approval</span></button>
+            <button class="export" data-export="svg"><strong>Patch SVG</strong><span>Vector art with border</span></button>
+            <button class="export" data-export="dst"><strong>Tajima .dst</strong><span>Most machines</span></button>
+            <button class="export" data-export="exp"><strong>Melco .exp</strong><span>Melco / Bernina</span></button>
+          </div>
+          <h3>Design details</h3>
+          <dl class="details" id="details"></dl>
+          <h3>Thread sequence</h3>
+          <ol class="sequence" id="sequence"></ol>
+        </div>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

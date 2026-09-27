@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7c96b"/>
+      <stop offset="1" stop-color="#ef8d4c"/>
+    </linearGradient>
+    <clipPath id="inner"><circle cx="150" cy="150" r="92"/></clipPath>
+    <path id="top" d="M 44 150 A 106 106 0 0 1 256 150"/>
+    <path id="bottom" d="M 34 150 A 116 116 0 0 0 266 150"/>
+  </defs>
+  <circle cx="150" cy="150" r="148" fill="#0e2a47"/>
+  <circle cx="150" cy="150" r="98" fill="#ffffff"/>
+  <g clip-path="url(#inner)">
+    <rect x="40" y="40" width="220" height="130" fill="url(#sky)"/>
+    <circle cx="150" cy="150" r="34" fill="#fff4d6"/>
+    <rect x="40" y="150" width="220" height="110" fill="#1d5f8f"/>
+    <path d="M40 175 q 18 -12 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 v 12 H40z" fill="#ffffff"/>
+    <path d="M40 205 q 18 -12 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 v 12 H40z" fill="#ffffff"/>
+    <path d="M40 235 q 18 -12 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 v 12 H40z" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#0e2a47" stroke-width="7" stroke-linecap="round">
+    <line x1="150" y1="92" x2="150" y2="200"/>
+    <line x1="126" y1="112" x2="174" y2="112"/>
+    <path d="M112 170 Q 150 214 188 170"/>
+  </g>
+  <circle cx="150" cy="84" r="9" fill="none" stroke="#0e2a47" stroke-width="6"/>
+  <text font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="25" fill="#ffffff" letter-spacing="2"><textPath xlink:href="#top" startOffset="50%" text-anchor="middle">HARBOR PATROL</textPath></text>
+  <text font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="22" fill="#ffffff" letter-spacing="3"><textPath xlink:href="#bottom" startOffset="50%" text-anchor="middle">MARINE UNIT</textPath></text>
+</svg>
