@@ -2,6 +2,10 @@
 
 `src/threadCharts.ts` contains thread colour charts from pystitch, as ported by bastidor. Both are MIT licensed.
 
+`public/samples/bc-*.svg` come from forestoval (https://github.com/ahzs645/forestoval). Their lettering is
+outlined from Kabel Black (as committed in forestoval), Open Sans, Noto Sans and Roboto Condensed; the last
+three are under the SIL Open Font License 1.1.
+
 ## bastidor
 
 ```

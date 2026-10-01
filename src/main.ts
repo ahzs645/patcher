@@ -19,6 +19,14 @@ const SAMPLES = [
   { file: 'state-trooper.svg', label: 'State trooper seal' },
   { file: 'k9-unit.svg', label: 'K-9 unit' },
   { file: 'harbor-patrol.svg', label: 'Harbor patrol' },
+  // The forestoval live lettering presets (github.com/ahzs645/forestoval),
+  // exported at their defaults with the lettering outlined.
+  { file: 'bc-forest-service.svg', label: 'Forest Service', group: 'bc' },
+  { file: 'bc-forests.svg', label: 'Forests', group: 'bc' },
+  { file: 'bc-forests-wildfire.svg', label: 'Forests · Wildfire Service', group: 'bc' },
+  { file: 'bc-long-ministry.svg', label: 'Long ministry', group: 'bc' },
+  { file: 'bc-long-wildfire.svg', label: 'Long ministry · Wildfire', group: 'bc' },
+  { file: 'bc-airtanker-package.svg', label: 'Airtanker Operations', group: 'bc' },
 ];
 /** Garment backdrops — the patch shown on the fabric it will be sewn to. */
 const BACKDROPS: { id: string; label: string; color?: string }[] = [
@@ -785,7 +793,6 @@ function setupLoading() {
     if (u) resolveUrl(u).then((r) => openUrl(r), (err) => showError(`Couldn't load that URL: ${err.message}`));
   });
 
-  const samples = $('samples');
   for (const s of SAMPLES) {
     const src = `${import.meta.env.BASE_URL}samples/${s.file}`;
     const b = document.createElement('button');
@@ -797,7 +804,7 @@ function setupLoading() {
     img.alt = s.label;
     b.append(img);
     b.onclick = () => openUrl(src, s.label);
-    samples.append(b);
+    $(s.group === 'bc' ? 'bcSamples' : 'samples').append(b);
   }
 }
 

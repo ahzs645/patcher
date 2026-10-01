@@ -11,6 +11,11 @@ npm run dev
 
 Drop an SVG, pick a sample, or paste a URL (Commons `File:` page links work).
 
+The **BC Forest Service** samples are the six presets of the [forestoval](https://github.com/ahzs645/forestoval)
+live lettering editor (Forest Service, Forests, Forests · Wildfire Service, Long ministry, Long ministry · Wildfire,
+Airtanker Operations), exported at their defaults with the lettering converted to outlines so they render
+without the fonts installed. They are reference-based reconstructions, not official masters.
+
 **Views:** Compare (wipe slider), Side by side, Embroidered, Stitch plan, Patch SVG — shared pan/zoom,
 pinch-zoom on touch, sew-out simulator with scrubber. Keys: `1`–`5` views, `Space` play, `F` fit, `O` open.
 
