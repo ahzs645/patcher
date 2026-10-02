@@ -4,6 +4,8 @@
 
 export type StitchKind = 'underlay' | 'fill' | 'satin' | 'border';
 export type BorderStyle = 'merrow' | 'satin' | 'none';
+/** Per-thread relief override: raised = satin sewn on top of the fill around it. */
+export type Relief = 'flat' | 'raised';
 
 export interface DigitizeParams {
   /** Finished patch width in mm (height follows the SVG aspect ratio). */
@@ -38,6 +40,10 @@ export interface DigitizeParams {
   borderWidthMm: number;
   /** null = pick automatically from the art's outer edge. */
   borderColor: string | null;
+  /** Sew lettering (SVG <text>, or groups tagged data-live-text) raised: satin columns on top of the fill. */
+  raiseText: boolean;
+  /** Per-thread overrides keyed by detected colour; absent = automatic (lettering only). */
+  relief: Record<string, Relief>;
 }
 
 export const DEFAULT_PARAMS: DigitizeParams = {
@@ -58,6 +64,8 @@ export const DEFAULT_PARAMS: DigitizeParams = {
   border: 'merrow',
   borderWidthMm: 3,
   borderColor: null,
+  raiseText: true,
+  relief: {},
 };
 
 /** One contiguous colour block: a single region (or the border) sewn in one go. */
@@ -68,6 +76,8 @@ export interface StitchBlock {
   kind: StitchKind;
   /** Flat [x0, y0, x1, y1, ...] needle positions in mm. */
   points: Float32Array;
+  /** Part of a raised area (sewn on top of the fill, casts a deeper shadow). */
+  raised?: boolean;
   /** Point indices that are reached by a jump (no visible thread from the previous point). */
   jumps: Uint32Array;
 }
@@ -78,6 +88,8 @@ export interface RasterInput {
   data: Uint8ClampedArray;
   /** Padding (px) added around the art on every side. */
   padPx: number;
+  /** 1 where the SVG's lettering covers the pixel (same size as data / 4). */
+  textMask?: Uint8Array;
 }
 
 export interface DigitizeResult {
@@ -98,5 +110,7 @@ export interface DigitizeResult {
   rasterH: number;
   stitchCount: number;
   borderColor: string | null;
+  /** Share of each palette entry's area that is sewn raised (0..1). */
+  raisedShare: number[];
   timings: Record<string, number>;
 }

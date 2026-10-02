@@ -378,3 +378,283 @@ export function contourSatin(
   }
   return { pts, jumps };
 }
+
+export interface ColumnOpts {
+  /** Distance between consecutive satin stitches along the stroke (px). */
+  spacing: number;
+  /** Rungs longer than this end a column (px). */
+  maxWidth: number;
+  /** Pull compensation added to both ends of every rung (px). */
+  extend: number;
+  /** Satin stitches longer than this are split (px). */
+  maxStitch: number;
+  /** Centre walk (+ zigzag on wide columns) under each column. */
+  underlay: boolean;
+  /** px per mm, for the underlay's fixed-size steps. */
+  ppm: number;
+}
+
+export interface Column {
+  /** Underlay needle points (px), sewn first. */
+  under: number[];
+  /** Satin needle points (px), sewn straight after the underlay. */
+  top: number[];
+}
+
+/**
+ * Lettering satin: split a stroke shape into columns and zig-zag across each
+ * one, the way a digitizer sews type. Each column is marched along the
+ * stroke's centreline; at every step the rung is the shortest chord through
+ * the centre point within ±25° of the previous one, which keeps stitches
+ * square to the stroke around curves (an "O" turns smoothly instead of
+ * fanning from the edge) and lets the column stop where a junction or the
+ * end of the stroke makes the chord jump. Underlay is a centre walk out and,
+ * on wide columns, a sparse zig-zag back, so the satin sits up on top.
+ *
+ * Pixels no column reached (junction corners, stroke tips) are returned in
+ * `leftover` for the caller to sew with a fixed-angle satin.
+ */
+export function columnSatin(
+  comp: Int32Array, dist: Float32Array, w: number, h: number, box: CompBox,
+  start: [number, number], o: ColumnOpts,
+): { columns: Column[]; leftover: Uint8Array; end: [number, number] } {
+  const id = box.id;
+  const inside = (x: number, y: number) => {
+    const xi = Math.floor(x), yi = Math.floor(y);
+    return xi >= 0 && yi >= 0 && xi < w && yi < h && comp[yi * w + xi] === id;
+  };
+  const occ = new Uint8Array(w * h);
+  const tried = new Uint8Array(w * h);
+  const STEP = 0.35;
+
+  /** Cast a chord through (px, py) at angle a; null if it can't be measured. */
+  const chord = (px: number, py: number, a: number) => {
+    const c = Math.cos(a), s = Math.sin(a);
+    let l0 = 0, l1 = 0;
+    while (l0 < o.maxWidth * 1.5 && inside(px - c * (l0 + STEP), py - s * (l0 + STEP))) l0 += STEP;
+    while (l1 < o.maxWidth * 1.5 && inside(px + c * (l1 + STEP), py + s * (l1 + STEP))) l1 += STEP;
+    l0 += STEP * 0.5; l1 += STEP * 0.5;
+    return { ax: px - c * l0, ay: py - s * l0, bx: px + c * l1, by: py + s * l1, len: l0 + l1, a };
+  };
+  type Chord = ReturnType<typeof chord>;
+  const shortest = (px: number, py: number, a0: number, range: number, steps: number): Chord => {
+    let best = chord(px, py, a0);
+    for (let k = 1; k <= steps; k++) {
+      for (const sg of [-1, 1]) {
+        const ch = chord(px, py, a0 + (sg * range * k) / steps);
+        if (ch.len < best.len - 1e-6) best = ch;
+      }
+    }
+    return best;
+  };
+  const occupiedShare = (ch: Chord) => {
+    let n = 0, hit = 0;
+    for (let f = 0.15; f <= 0.851; f += 0.1) {
+      const x = Math.floor(ch.ax + (ch.bx - ch.ax) * f), y = Math.floor(ch.ay + (ch.by - ch.ay) * f);
+      if (x < 0 || y < 0 || x >= w || y >= h) continue;
+      n++;
+      if (occ[y * w + x]) hit++;
+    }
+    return n ? hit / n : 1;
+  };
+  // Mark the quad between two consecutive rungs (two triangles, so crossed
+  // rungs on the inside of tight curves still mark something sensible).
+  const markTri = (x0: number, y0: number, x1: number, y1: number, x2: number, y2: number) => {
+    const minX = Math.max(box.minX, Math.floor(Math.min(x0, x1, x2))), maxX = Math.min(box.maxX, Math.ceil(Math.max(x0, x1, x2)));
+    const minY = Math.max(box.minY, Math.floor(Math.min(y0, y1, y2))), maxY = Math.min(box.maxY, Math.ceil(Math.max(y0, y1, y2)));
+    const area = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+    if (Math.abs(area) < 1e-6) return;
+    for (let y = minY; y <= maxY; y++) {
+      for (let x = minX; x <= maxX; x++) {
+        const px = x + 0.5, py = y + 0.5;
+        const e0 = ((x1 - x0) * (py - y0) - (y1 - y0) * (px - x0)) * area;
+        const e1 = ((x2 - x1) * (py - y1) - (y2 - y1) * (px - x1)) * area;
+        const e2 = ((x0 - x2) * (py - y2) - (y0 - y2) * (px - x2)) * area;
+        if (e0 >= 0 && e1 >= 0 && e2 >= 0) {
+          const i = y * w + x;
+          if (comp[i] === id) occ[i] = 1;
+        }
+      }
+    }
+  };
+  const markBand = (ch: Chord, half: number) => {
+    const nx = -Math.sin(ch.a) * half, ny = Math.cos(ch.a) * half;
+    markTri(ch.ax - nx, ch.ay - ny, ch.bx - nx, ch.by - ny, ch.bx + nx, ch.by + ny);
+    markTri(ch.ax - nx, ch.ay - ny, ch.bx + nx, ch.by + ny, ch.ax + nx, ch.ay + ny);
+  };
+  const markQuad = (p: Chord, q: Chord) => {
+    markTri(p.ax, p.ay, p.bx, p.by, q.bx, q.by);
+    markTri(p.ax, p.ay, q.bx, q.by, q.ax, q.ay);
+    markTri(p.ax, p.ay, q.bx, q.by, p.bx, p.by);
+    markTri(p.ax, p.ay, q.ax, q.ay, q.bx, q.by);
+  };
+
+  /** March from a centre point along ±dir; returns the rungs in order. */
+  const march = (first: Chord, dir: 1 | -1, commit: boolean): Chord[] => {
+    const out: Chord[] = [];
+    let cur = first;
+    let tx = -Math.sin(cur.a) * dir, ty = Math.cos(cur.a) * dir;
+    let avgLen = cur.len;
+    for (let guard = 0; guard < 4000; guard++) {
+      if (cur.len > o.maxWidth || occupiedShare(cur) > 0.5) break;
+      if (out.length && cur.len > Math.max(avgLen * 1.7, avgLen + 4)) break;
+      out.push(cur);
+      if (commit) {
+        if (out.length === 1) markBand(cur, o.spacing * 0.5);
+        else markQuad(out[out.length - 2], cur);
+      }
+      avgLen = out.length === 1 ? cur.len : avgLen * 0.75 + cur.len * 0.25;
+      const mx = (cur.ax + cur.bx) / 2, my = (cur.ay + cur.by) / 2;
+      const nx = mx + tx * o.spacing, ny = my + ty * o.spacing;
+      if (!inside(nx, ny)) break;
+      // Shortest chord near the previous angle, re-centred on the stroke.
+      let next = shortest(nx, ny, cur.a, (25 * Math.PI) / 180, 5);
+      const cx = (next.ax + next.bx) / 2, cy = (next.ay + next.by) / 2;
+      if (inside(cx, cy)) next = shortest(cx, cy, next.a, (6 * Math.PI) / 180, 2);
+      // Keep marching forward even if the chord flipped by ~180°.
+      let ntx = -Math.sin(next.a), nty = Math.cos(next.a);
+      if (ntx * tx + nty * ty < 0) { ntx = -ntx; nty = -nty; }
+      // Never step backwards (a chord that recentres behind us).
+      const ncx = (next.ax + next.bx) / 2, ncy = (next.ay + next.by) / 2;
+      if ((ncx - mx) * tx + (ncy - my) * ty < o.spacing * 0.3) break;
+      tx = ntx; ty = nty;
+      cur = next;
+    }
+    return out;
+  };
+
+  // Ridge pixels (local maxima of the distance field) seed the columns.
+  const ridge: number[] = [];
+  for (let y = Math.max(1, box.minY); y <= Math.min(h - 2, box.maxY); y++) {
+    for (let x = Math.max(1, box.minX); x <= Math.min(w - 2, box.maxX); x++) {
+      const i = y * w + x;
+      if (comp[i] !== id || dist[i] < 1.2) continue;
+      const d = dist[i] + 0.34;
+      if (d >= dist[i - 1] && d >= dist[i + 1] && d >= dist[i - w] && d >= dist[i + w] &&
+          d >= dist[i - w - 1] && d >= dist[i - w + 1] && d >= dist[i + w - 1] && d >= dist[i + w + 1]) ridge.push(i);
+    }
+  }
+
+  const columns: Column[] = [];
+  let pos = start;
+  for (let guard = 0; guard < 500; guard++) {
+    // Nearest untried, unsewn ridge pixel.
+    let best = -1, bd = Infinity;
+    for (const i of ridge) {
+      if (occ[i] || tried[i]) continue;
+      const x = (i % w) + 0.5, y = Math.floor(i / w) + 0.5;
+      const d = (x - pos[0]) ** 2 + (y - pos[1]) ** 2;
+      if (d < bd) { bd = d; best = i; }
+    }
+    if (best < 0) break;
+    const sx = (best % w) + 0.5, sy = Math.floor(best / w) + 0.5;
+    const r = 2;
+    for (let y = -r; y <= r; y++) for (let x = -r; x <= r; x++) {
+      const xi = Math.floor(sx) + x, yi = Math.floor(sy) + y;
+      if (xi >= 0 && yi >= 0 && xi < w && yi < h) tried[yi * w + xi] = 1;
+    }
+    const seed = shortest(sx, sy, 0, Math.PI / 2, 15);
+    if (seed.len > o.maxWidth) continue;
+    // Find this stroke's end on one side, then sew from there to the other end.
+    const probe = march(seed, 1, false);
+    const from = probe.length ? probe[probe.length - 1] : seed;
+    const rungs = march(from, -1, true);
+    // A column this short is a junction corner; the leftover satin covers it.
+    if (rungs.length < 4) continue;
+    // Start at whichever end is nearer the needle.
+    const a = rungs[0], b = rungs[rungs.length - 1];
+    const da = Math.min((a.ax - pos[0]) ** 2 + (a.ay - pos[1]) ** 2, (a.bx - pos[0]) ** 2 + (a.by - pos[1]) ** 2);
+    const db = Math.min((b.ax - pos[0]) ** 2 + (b.ay - pos[1]) ** 2, (b.bx - pos[0]) ** 2 + (b.by - pos[1]) ** 2);
+    if (db < da) rungs.reverse();
+    const col = sewColumn(rungs, o);
+    columns.push(col);
+    pos = [col.top[col.top.length - 2], col.top[col.top.length - 1]];
+  }
+
+  const leftover = new Uint8Array(w * h);
+  for (let y = box.minY; y <= box.maxY; y++) {
+    for (let x = box.minX; x <= box.maxX; x++) {
+      const i = y * w + x;
+      if (comp[i] === id && !occ[i]) leftover[i] = 1;
+    }
+  }
+  return { columns, leftover, end: pos };
+}
+
+interface Rung { ax: number; ay: number; bx: number; by: number; len: number }
+
+function sewColumn(rungs: Rung[], o: ColumnOpts): Column {
+  const under: number[] = [];
+  const mid = (r: Rung): [number, number] => [(r.ax + r.bx) / 2, (r.ay + r.by) / 2];
+  const extend = (r: Rung, e: number) => {
+    const l = r.len || 1;
+    const ux = (r.bx - r.ax) / l, uy = (r.by - r.ay) / l;
+    return [r.ax - ux * e, r.ay - uy * e, r.bx + ux * e, r.by + uy * e];
+  };
+  let order = rungs;
+  if (o.underlay) {
+    // Centre walk out, ~2 mm stitches.
+    const runLen = 2 * o.ppm;
+    let acc = Infinity;
+    let prev = mid(rungs[0]);
+    for (let i = 0; i < rungs.length; i++) {
+      const m = mid(rungs[i]);
+      acc += Math.hypot(m[0] - prev[0], m[1] - prev[1]);
+      prev = m;
+      if (acc >= runLen || i === rungs.length - 1) { under.push(m[0], m[1]); acc = 0; }
+    }
+    const meanLen = rungs.reduce((s, r) => s + r.len, 0) / rungs.length;
+    if (meanLen > 1.8 * o.ppm) {
+      // Zig-zag back, inset from the edges, ~1.2 mm apart.
+      const inset = 0.35 * o.ppm;
+      const every = Math.max(1, Math.round((1.2 * o.ppm) / o.spacing));
+      let side = 0;
+      for (let i = rungs.length - 1; i >= 0; i -= every) {
+        const e = extend(rungs[i], -inset);
+        if (side) under.push(e[0], e[1]); else under.push(e[2], e[3]);
+        side ^= 1;
+      }
+    } else {
+      // Narrow: the walk ends at the far end, so sew the satin back.
+      order = rungs.slice().reverse();
+    }
+  }
+  // Short stitches: on the inside of a tight curve the rung ends bunch up.
+  // There, skip the pull compensation and pull every other stitch back so
+  // the ends don't pile into one point (inkstitch's short-stitch inset).
+  const n = order.length;
+  const gap = (i: number, side: 0 | 1) => {
+    const j = i > 0 ? i - 1 : Math.min(n - 1, 1);
+    if (j === i) return o.spacing;
+    const r = order[i], q = order[j];
+    return side ? Math.hypot(r.bx - q.bx, r.by - q.by) : Math.hypot(r.ax - q.ax, r.ay - q.ay);
+  };
+  const ends = (i: number) => {
+    const r = order[i];
+    const l = r.len || 1;
+    const ux = (r.bx - r.ax) / l, uy = (r.by - r.ay) / l;
+    const off = (side: 0 | 1) => {
+      const g = gap(i, side) / o.spacing;
+      if (g >= 0.75) return -o.extend; // outward
+      return i & 1 ? Math.min(0.4, 0.6 * (1 - g)) * l : 0;
+    };
+    const oa = off(0), ob = off(1);
+    return [r.ax + ux * oa, r.ay + uy * oa, r.bx - ux * ob, r.by - uy * ob];
+  };
+  // Zig-zag satin: alternate rails every rung.
+  const top: number[] = [];
+  for (let i = 0; i < order.length; i++) {
+    const e = ends(i);
+    const [x0, y0, x1, y1] = i & 1 ? [e[2], e[3], e[0], e[1]] : [e[0], e[1], e[2], e[3]];
+    if (i === 0) top.push(x0, y0);
+    const len = Math.hypot(x1 - top[top.length - 2], y1 - top[top.length - 1]);
+    if (len > o.maxStitch) {
+      const sxp = top[top.length - 2], syp = top[top.length - 1];
+      const parts = Math.ceil(len / o.maxStitch);
+      const shift = (i & 1 ? 0.3 : -0.3) / parts;
+      for (let p = 1; p < parts; p++) top.push(sxp + (x1 - sxp) * (p / parts + shift), syp + (y1 - syp) * (p / parts + shift));
+    }
+    top.push(x1, y1);
+  }
+  return { under, top };
+}
