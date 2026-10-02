@@ -74,15 +74,29 @@ function loadImage(url: string): Promise<HTMLImageElement> {
   });
 }
 
-/** Render the SVG at the digitizing resolution, with transparent padding around it. */
-export async function rasterize(svg: LoadedSvg, widthMm: number, pxPerMm: number, padMm: number): Promise<RasterInput> {
-  const artW = Math.max(16, Math.round(widthMm * pxPerMm));
-  const artH = Math.max(16, Math.round(artW * svg.aspect));
-  const padPx = Math.round(padMm * pxPerMm);
+/** What counts as lettering: SVG text, and outlined lettering tagged by its exporter (forestoval keeps data-live-text). */
+const LETTERING = 'text, [data-live-text]';
 
+/**
+ * The same SVG with everything but the lettering hidden, or null when it has
+ * none. visibility is inherited and can be turned back on by a descendant,
+ * so one rule hides the art and the next shows the lettering through it,
+ * including lettering drawn by <use> into a hidden parent.
+ */
+function letteringOnly(text: string): string | null {
+  const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
+  const root = doc.documentElement;
+  if (!root.querySelector(LETTERING)) return null;
+  const style = doc.createElementNS('http://www.w3.org/2000/svg', 'style');
+  style.textContent = `*{visibility:hidden!important}${LETTERING.split(', ').map((s) => `${s},${s} *`).join(',')}{visibility:visible!important}`;
+  root.append(style);
+  return new XMLSerializer().serializeToString(doc);
+}
+
+async function drawSvg(text: string, artW: number, artH: number, padPx: number): Promise<ImageData> {
   // Re-emit the SVG at the exact pixel size so the browser renders it crisply
   // instead of scaling a small bitmap.
-  const sized = svg.text.replace(
+  const sized = text.replace(
     /<svg\b([^>]*)>/,
     (_m, attrs: string) =>
       `<svg${attrs.replace(/\s(width|height)="[^"]*"/g, '')} width="${artW}" height="${artH}">`,
@@ -95,9 +109,25 @@ export async function rasterize(svg: LoadedSvg, widthMm: number, pxPerMm: number
     canvas.height = artH + padPx * 2;
     const ctx = canvas.getContext('2d', { willReadFrequently: true })!;
     ctx.drawImage(img, padPx, padPx, artW, artH);
-    const id = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    return { width: canvas.width, height: canvas.height, data: id.data, padPx };
+    return ctx.getImageData(0, 0, canvas.width, canvas.height);
   } finally {
     URL.revokeObjectURL(url);
   }
+}
+
+/** Render the SVG at the digitizing resolution, with transparent padding around it. */
+export async function rasterize(svg: LoadedSvg, widthMm: number, pxPerMm: number, padMm: number): Promise<RasterInput> {
+  const artW = Math.max(16, Math.round(widthMm * pxPerMm));
+  const artH = Math.max(16, Math.round(artW * svg.aspect));
+  const padPx = Math.round(padMm * pxPerMm);
+  const id = await drawSvg(svg.text, artW, artH, padPx);
+  const raster: RasterInput = { width: id.width, height: id.height, data: id.data, padPx };
+  const lettering = letteringOnly(svg.text);
+  if (lettering) {
+    const m = await drawSvg(lettering, artW, artH, padPx);
+    const mask = new Uint8Array(m.width * m.height);
+    for (let i = 0; i < mask.length; i++) mask[i] = m.data[i * 4 + 3] >= 128 ? 1 : 0;
+    raster.textMask = mask;
+  }
+  return raster;
 }

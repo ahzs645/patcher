@@ -115,7 +115,9 @@ async function runDigitize() {
     if (id !== jobId) return;
     const msg = await new Promise<{ result?: DigitizeResult; error?: string }>((resolve) => {
       pending.set(id, resolve);
-      worker.postMessage({ id, raster, params: state.params }, [raster.data.buffer]);
+      const transfer: Transferable[] = [raster.data.buffer];
+      if (raster.textMask) transfer.push(raster.textMask.buffer);
+      worker.postMessage({ id, raster, params: state.params }, transfer);
     });
     if (id !== jobId) return;
     if (msg.error || !msg.result) throw new Error(msg.error || 'Digitizing failed');
@@ -470,6 +472,7 @@ function syncControls() {
   }
   $<HTMLInputElement>('varyAngles').checked = state.params.varyAngles;
   $<HTMLInputElement>('underlay').checked = state.params.underlay;
+  $<HTMLInputElement>('raiseText').checked = state.params.raiseText;
   $<HTMLInputElement>('borderAuto').checked = !state.params.borderColor;
   $<HTMLInputElement>('borderColor').disabled = !state.params.borderColor;
   if (state.params.borderColor) $<HTMLInputElement>('borderColor').value = state.params.borderColor;
@@ -568,7 +571,9 @@ function updatePalette() {
       const b = document.createElement('b');
       b.textContent = t ? `${t[1]} · ${state.chart} ${t[2]}` : input.value;
       const code = document.createElement('code');
-      code.textContent = input.value + (state.overrides[c] ? ' · edited' : '');
+      const raisedNote = !state.params.relief[c] && r.raisedShare[i] > 0.005
+        ? ` · lettering raised${r.raisedShare[i] < 0.995 ? ` (${Math.round(r.raisedShare[i] * 100)}%)` : ''}` : '';
+      code.textContent = input.value + (state.overrides[c] ? ' · edited' : '') + raisedNote;
       name.append(b, code);
       fillBar.style.width = `${Math.max(2, r.coverage[i] * 100)}%`;
       fillBar.style.background = input.value;
@@ -579,7 +584,29 @@ function updatePalette() {
       scheduleRecolor();
     });
     refresh();
-    li.append(input, name, pct, bar);
+    // Raised: sewn as satin on top of the fill around it. Auto raises lettering only.
+    const relief = document.createElement('div');
+    relief.className = 'seg mini relief';
+    relief.setAttribute('aria-label', `Relief for thread ${i + 1}`);
+    const current = state.params.relief[c] ?? 'auto';
+    for (const [v, label] of [['auto', 'Auto'], ['flat', 'Flat'], ['raised', 'Raised']] as const) {
+      const btn = document.createElement('button');
+      btn.textContent = label;
+      btn.classList.toggle('on', v === current);
+      btn.setAttribute('aria-pressed', String(v === current));
+      btn.onclick = () => {
+        const next = { ...state.params.relief };
+        if (v === 'auto') delete next[c]; else next[c] = v;
+        state.params.relief = next;
+        relief.querySelectorAll('button').forEach((x) => {
+          x.classList.toggle('on', x === btn);
+          x.setAttribute('aria-pressed', String(x === btn));
+        });
+        scheduleDigitize(0);
+      };
+      relief.append(btn);
+    }
+    li.append(input, name, pct, bar, relief);
     ul.append(li);
   }
   if (!state.params.borderColor) $<HTMLInputElement>('borderColor').value = borderColor() ?? '#222222';
@@ -865,6 +892,7 @@ function init() {
 
   $<HTMLInputElement>('varyAngles').onchange = (e) => { state.params.varyAngles = (e.target as HTMLInputElement).checked; scheduleDigitize(); };
   $<HTMLInputElement>('underlay').onchange = (e) => { state.params.underlay = (e.target as HTMLInputElement).checked; scheduleDigitize(); };
+  $<HTMLInputElement>('raiseText').onchange = (e) => { state.params.raiseText = (e.target as HTMLInputElement).checked; scheduleDigitize(); };
   bindSeg('border', () => state.params.border, (v) => { state.params.border = v as DigitizeParams['border']; scheduleDigitize(); });
   const auto = $<HTMLInputElement>('borderAuto');
   const bc = $<HTMLInputElement>('borderColor');

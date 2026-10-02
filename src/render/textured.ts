@@ -67,7 +67,7 @@ function capsule(g: CanvasRenderingContext2D, W: number, H: number) {
  * several random instances so neighbouring stitches never line up (the
  * random UV offset trick from dst-format).
  */
-function matteSprite(rgb: [number, number, number], b: number, aspect: number, border: boolean, seed: number) {
+function matteSprite(rgb: [number, number, number], b: number, aspect: number, border: boolean, seed: number, softEnds: boolean) {
   const H = border ? 18 : 12;
   const W = Math.round(H * aspect);
   const c = document.createElement('canvas');
@@ -76,11 +76,13 @@ function matteSprite(rgb: [number, number, number], b: number, aspect: number, b
   const g = c.getContext('2d')!;
   const rnd = mulberry32(seed);
   const grad = g.createLinearGradient(0, 0, 0, H);
-  grad.addColorStop(0, shade(rgb, 0.5 * b));
-  grad.addColorStop(0.22, shade(rgb, 0.8 * b));
+  // The flanks fall off fast and the crest is broad, so a stitch averages
+  // ~90% of its thread colour: white thread reads white, not silver.
+  grad.addColorStop(0, shade(rgb, 0.6 * b));
+  grad.addColorStop(0.16, shade(rgb, 0.9 * b));
   grad.addColorStop(0.45, shade(rgb, 1.0 * b));
-  grad.addColorStop(0.72, shade(rgb, 0.84 * b));
-  grad.addColorStop(1, shade(rgb, 0.48 * b));
+  grad.addColorStop(0.8, shade(rgb, 0.93 * b));
+  grad.addColorStop(1, shade(rgb, 0.58 * b));
   g.fillStyle = grad;
   capsule(g, W, H);
   g.fill();
@@ -112,10 +114,13 @@ function matteSprite(rgb: [number, number, number], b: number, aspect: number, b
   // Thread tucks into the needle hole at each end.
   const ends = g.createLinearGradient(0, 0, W, 0);
   const e = Math.min(0.3, (H * 0.6) / W);
-  ends.addColorStop(0, 'rgba(0,0,0,0.4)');
+  // Satin stitches lie side by side and hide their holes; fill stitches
+  // end in a visible needle hole.
+  const endA = softEnds ? 0.18 : 0.32;
+  ends.addColorStop(0, `rgba(0,0,0,${endA})`);
   ends.addColorStop(e, 'rgba(0,0,0,0)');
   ends.addColorStop(1 - e, 'rgba(0,0,0,0)');
-  ends.addColorStop(1, 'rgba(0,0,0,0.4)');
+  ends.addColorStop(1, `rgba(0,0,0,${endA})`);
   g.fillStyle = ends;
   g.fillRect(0, 0, W, H);
   g.restore();
@@ -159,8 +164,8 @@ function glossySprite(rgb: [number, number, number], b: number, border: boolean)
 }
 
 /** Sprite picker for one thread colour: (brightness variant, stitch aspect, random) → canvas. */
-function threadSprites(hex: string, border: boolean, finish: Finish): SpritePick {
-  const key = `${hex}:${border ? 'b' : 's'}:${finish}`;
+function threadSprites(hex: string, border: boolean, finish: Finish, softEnds = false): SpritePick {
+  const key = `${hex}:${border ? 'b' : 's'}:${softEnds ? 'soft' : 'hole'}:${finish}`;
   const hit = spriteCache.get(key);
   if (hit) return hit;
   const rgb = hexToRgb(hex);
@@ -168,9 +173,9 @@ function threadSprites(hex: string, border: boolean, finish: Finish): SpritePick
   if (finish === 'matte') {
     const table: HTMLCanvasElement[][][] = [];
     for (let v = 0; v < VARIANTS; v++) {
-      const bright = 0.8 + (v / (VARIANTS - 1)) * 0.22;
+      const bright = 0.88 + (v / (VARIANTS - 1)) * 0.14;
       table.push(ASPECTS.map((a, ai) =>
-        Array.from({ length: INSTANCES }, (_, k) => matteSprite(rgb, bright, a, border, v * 131 + ai * 17 + k * 7 + 1))));
+        Array.from({ length: INSTANCES }, (_, k) => matteSprite(rgb, bright, a, border, v * 131 + ai * 17 + k * 7 + 1, softEnds))));
     }
     pick = (v, aspect, r) => {
       let ai = 0;
@@ -259,25 +264,30 @@ export function renderTextured(result: DigitizeResult, opts: TexturedOptions, ta
   for (let bi = 0; bi < result.blocks.length && budget > 0; bi++) {
     const b = result.blocks[bi];
     const hex = blockColor(result, opts, bi);
-    const sprites = threadSprites(hex, b.kind === 'border', opts.finish);
-    const tw = THREAD_WIDTH_MM[b.kind] * scale;
+    const isSatin = b.kind === 'satin';
+    const sprites = threadSprites(hex, b.kind === 'border', opts.finish, isSatin);
+    const tw = (b.raised && b.kind === 'satin' ? 0.5 : THREAD_WIDTH_MM[b.kind]) * scale;
     const pts = b.points;
     const n = Math.min(pts.length / 2, budget);
     budget -= n;
     const jumpSet = new Set(b.jumps);
 
-    // Shadow cast by this block onto everything sewn before it.
+    // Shadow cast by this block onto everything sewn before it. Raised
+    // satin stands higher off the fill, so its shadow falls further and
+    // softer.
     if (b.kind !== 'underlay') {
+      const k = b.raised ? 2.4 : 1;
       const shadow = new Path2D();
       for (let i = 1; i < n; i++) {
         if (jumpSet.has(i)) continue;
-        shadow.moveTo(pts[i * 2 - 2] * scale + sx, pts[i * 2 - 1] * scale + sy);
-        shadow.lineTo(pts[i * 2] * scale + sx, pts[i * 2 + 1] * scale + sy);
+        shadow.moveTo(pts[i * 2 - 2] * scale + sx * k, pts[i * 2 - 1] * scale + sy * k);
+        shadow.lineTo(pts[i * 2] * scale + sx * k, pts[i * 2 + 1] * scale + sy * k);
       }
       ctx.save();
       ctx.lineCap = 'round';
-      ctx.strokeStyle = b.kind === 'border' ? 'rgba(0,0,0,0.45)' : 'rgba(0,0,0,0.3)';
-      ctx.lineWidth = tw * 1.15;
+      ctx.strokeStyle = b.kind === 'border' ? 'rgba(0,0,0,0.45)' : b.raised ? 'rgba(0,0,0,0.22)' : 'rgba(0,0,0,0.3)';
+      ctx.lineWidth = tw * (b.raised ? 1.6 : 1.15);
+      if (b.raised) ctx.filter = `blur(${Math.max(0.5, 0.06 * scale)}px)`;
       ctx.stroke(shadow);
       ctx.restore();
     }
@@ -293,14 +303,19 @@ export function renderTextured(result: DigitizeResult, opts: TexturedOptions, ta
       // Sheen: brightest when the thread lies across the light.
       const sheen = Math.abs(Math.sin(ang - la));
       // Matte: angle matters less, random per-stitch variation (±~9%) more.
+      // Satin columns are smoother and catch the light more evenly than fill.
       let v = matte
-        ? Math.round((0.35 + 0.4 * sheen) * (VARIANTS - 1) + (rnd() - 0.5) * 4)
+        ? isSatin
+          ? Math.round((0.3 + 0.55 * sheen) * (VARIANTS - 1) + (rnd() - 0.5) * 1.6)
+          : Math.round((0.35 + 0.4 * sheen) * (VARIANTS - 1) + (rnd() - 0.5) * 4)
         : Math.round((0.15 + 0.8 * sheen) * (VARIANTS - 1) + (rnd() - 0.5) * 2.2);
       v = v < 0 ? 0 : v >= VARIANTS ? VARIANTS - 1 : v;
       const c = dx / len, s = dy / len;
       // Glossy: overlap neighbours. Matte: stop just short of each needle
       // hole (inkstitch trims 0.2 mm) so the fill reads as individual stitches.
-      const ext = matte ? tw * 0.12 - Math.min(0.06 * scale, len * 0.15) : tw * 0.35;
+      // Satin: tuck the rounded caps inside the column so its edge reads as
+      // a clean line of wrapped thread rather than a row of beads.
+      const ext = isSatin ? -tw * 0.3 : matte ? tw * 0.12 - Math.min(0.06 * scale, len * 0.15) : tw * 0.35;
       const drawLen = len + ext * 2;
       ctx.setTransform(c, s, -s, c, x0 - c * ext, y0 - s * ext);
       ctx.drawImage(sprites(v, drawLen / tw, rnd()), 0, -tw / 2, drawLen, tw);
