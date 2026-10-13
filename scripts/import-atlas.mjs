@@ -174,8 +174,11 @@ async function main() {
     writeFileSync(p, bytes);
   }
 
+  // Listed by sector, in orgs.json's sector order; within a sector, in orgs.json's order.
+  const sectorOrder = taxonomy.sectors.map((sector) => sector.id);
   const orderedOrgs = [...taxonomy.orgs, { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' }]
     .filter((o) => byOrg.has(o.id))
+    .sort((a, b) => sectorOrder.indexOf(a.sector) - sectorOrder.indexOf(b.sector))
     .map((o) => {
       const { patches } = byOrg.get(o.id);
       return { id: o.id, name: o.name, sector: o.sector, description: o.description ?? null, count: patches.length, patches };

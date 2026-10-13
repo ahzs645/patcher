@@ -41,6 +41,7 @@ export function createDigitizer(opts: { worker?: boolean } = {}): Digitizer {
   const worker = opts.worker === false ? null : startWorker();
   const pending = new Map<number, (r: Reply) => void>();
   let nextId = 0;
+  let disposed = false;
   if (worker) {
     worker.onmessage = (e: MessageEvent<Reply>) => {
       const cb = pending.get(e.data.id);
@@ -50,6 +51,7 @@ export function createDigitizer(opts: { worker?: boolean } = {}): Digitizer {
   }
 
   const digitizeRaster = async (raster: RasterInput, params: DigitizeParams): Promise<DigitizeResult> => {
+    if (disposed) throw new Error('Digitizer disposed');
     if (!worker) return digitize(raster, params);
     const id = ++nextId;
     const msg = await new Promise<Reply>((resolve) => {
@@ -75,6 +77,7 @@ export function createDigitizer(opts: { worker?: boolean } = {}): Digitizer {
       }
     },
     dispose() {
+      disposed = true;
       worker?.terminate();
       for (const cb of pending.values()) cb({ id: -1, error: 'Digitizer disposed' });
       pending.clear();

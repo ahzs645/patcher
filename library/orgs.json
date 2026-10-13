@@ -1,7 +1,6 @@
 {
   "$comment": "How scripts/import-atlas.mjs files each atlas design under an organization. Orgs are tried in order and the first whose rules match wins: 'family' and 'label' are regular expressions (case-insensitive) tested against the atlas design's family and label, 'affiliation' is the atlas's own coarse affiliation, matched exactly. Put specific rules before broad ones. A design nothing matches is filed under 'unsorted' and the import says so.",
   "sectors": [
-    { "id": "government", "name": "Province of British Columbia" },
     { "id": "forests", "name": "Forests and wildfire" },
     { "id": "environment", "name": "Parks, environment and wildlife" },
     { "id": "justice", "name": "Justice and public safety" },
@@ -10,6 +9,7 @@
     { "id": "lands", "name": "Land and survey" },
     { "id": "institutions", "name": "Universities and institutions" },
     { "id": "community", "name": "Events and societies" },
+    { "id": "government", "name": "Province of British Columbia" },
     { "id": "unconfirmed", "name": "Unconfirmed" }
   ],
   "orgs": [

@@ -66,7 +66,7 @@ const state = {
   simLimit: null as number | null,
   patchSvgUrl: '',
   /** Organization shown in the patch library picker. */
-  libraryOrg: LIBRARY.orgs[0]?.id ?? '',
+  libraryOrg: orgsBySector()[0]?.orgs[0]?.id ?? '',
 };
 
 // ---------------------------------------------------------------- persistence (per-viewer convenience)
@@ -840,7 +840,7 @@ function openPatch(p: ResolvedPatch) {
 }
 
 function showLibraryOrg(orgId: string) {
-  const org = findOrg(orgId) ?? LIBRARY.orgs[0];
+  const org = findOrg(orgId) ?? orgsBySector()[0]?.orgs[0];
   if (!org) return;
   state.libraryOrg = org.id;
   $<HTMLSelectElement>('libraryOrg').value = org.id;
