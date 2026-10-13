@@ -8,7 +8,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "library:import": "node scripts/import-atlas.mjs"
+    "library:import": "node scripts/import-atlas.mjs",
+    "library:verify": "node scripts/verify-library.mjs"
   },
   "devDependencies": {
     "fflate": "^0.8.3",
@@ -19,6 +20,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./library": "./src/library.ts",
+    "./library/join": "./src/library-join.js",
     "./library/manifest.json": "./library/manifest.json",
     "./library/*": "./library/*",
     "./package.json": "./package.json"

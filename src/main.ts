@@ -9,7 +9,7 @@ import { machineStats, machineStitches } from './export/machine';
 import { buildPatchSvg } from './patchSvg';
 import { nearestThread } from './threadCharts';
 import { createDigitizer, DEFAULT_PAD_MM } from './digitizer';
-import { LIBRARY, findPatch, findOrg, orgsBySector, type ResolvedPatch } from './library';
+import { LIBRARY, findPatch, findOrg, loadPatchSvg, orgsBySector, type ResolvedPatch } from './library';
 
 /** Transparent margin around the art for the merrow lip and shadows. */
 const PAD_MM = DEFAULT_PAD_MM;
@@ -834,9 +834,17 @@ function setupLoading() {
 
 // ---------------------------------------------------------------- patch library
 
-function openPatch(p: ResolvedPatch) {
+/** Library patches are stored with their shared crests and outlines apart; loadPatchSvg joins them. */
+async function openPatch(p: ResolvedPatch) {
   if (state.libraryOrg !== p.orgId) showLibraryOrg(p.orgId);
-  return openUrl(p.svgUrl, p.label, LIBRARY_SOURCE + p.id);
+  showError(null);
+  setBusy('Loading…');
+  try {
+    openSvgText(await loadPatchSvg(p), p.label, LIBRARY_SOURCE + p.id);
+  } catch (err) {
+    setBusy(null);
+    showError(`Couldn't load that patch: ${(err as Error).message}`);
+  }
 }
 
 function showLibraryOrg(orgId: string) {
@@ -853,7 +861,7 @@ function showLibraryOrg(orgId: string) {
     b.dataset.src = LIBRARY_SOURCE + p.id;
     b.classList.toggle('on', state.source === b.dataset.src);
     const img = document.createElement('img');
-    img.src = p.previewUrl ?? p.svgUrl;
+    if (p.previewUrl) img.src = p.previewUrl;
     img.alt = p.label;
     img.loading = 'lazy';
     b.append(img);
