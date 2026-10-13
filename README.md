@@ -16,6 +16,12 @@ live lettering editor (Forest Service, Forests, Forests · Wildfire Service, Lon
 Airtanker Operations), exported at their defaults with the lettering converted to outlines so they render
 without the fonts installed. They are reference-based reconstructions, not official masters.
 
+The **Patch library** holds 277 patches, badges and emblems from the BC Forestry Patch Atlas, grouped by
+organization: BC Forest Service, BC Parks, Conservation Officer Service, BC Sheriff Service, BC Corrections,
+Highways and Motor Vehicles, BC Hydro and 27 more. Choose an organization, then a patch. `?patch=<id>` opens
+one directly (e.g. `?patch=S25-O01`). [`library/README.md`](library/README.md) says where the patches come
+from, how they are grouped, and how to re-import them (`npm run library:import`).
+
 **Views:** Compare (wipe slider), Side by side, Embroidered, Stitch plan, Patch SVG — shared pan/zoom,
 pinch-zoom on touch, sew-out simulator with scrubber. Keys: `1`–`5` views, `Space` play, `F` fit, `O` open.
 
@@ -26,6 +32,35 @@ in the Threads tab (e.g. raise a logo's outline, or keep a colour flat).
 
 **Exports:** embroidered PNG mockup, Patch SVG, Tajima `.dst`, Melco `.exp` (lock stitches, trims,
 long-stitch splitting), plus design details and a thread sequence matched to Brother / Janome charts.
+
+## Using Patcher in another project
+
+Patcher is also a library, meant to be added as a git submodule and installed as a local package:
+
+```bash
+git submodule add -b main https://github.com/ahzs645/patcher.git vendor/patcher
+npm install ./vendor/patcher        # adds "patcher": "file:vendor/patcher"
+```
+
+It ships TypeScript source, so the host needs a bundler that compiles it and its Web Worker. Vite does
+both with no configuration. There are two entry points:
+
+```js
+import { createDigitizer, renderTextured, writeDst, writeExp } from 'patcher'
+import { LIBRARY, orgsBySector, findPatch } from 'patcher/library'
+
+const digitizer = createDigitizer()                      // a Web Worker; { worker: false } runs inline
+const result = await digitizer.digitize(svgText, { widthMm: 90 })
+const canvas = renderTextured(result, {
+  scale: 8, lightDeg: 225, colors: result.palette, borderColor: result.borderColor, dropShadow: true
+})
+const dst = writeDst(result, 'patch')                    // Uint8Array, Tajima .dst
+```
+
+`patcher` is the digitizer, renderers and exporters (`src/index.ts`). `patcher/library` is the patch library
+(`src/library.ts`), kept separate so apps that only digitize don't bundle it. Clone the host with
+`--recurse-submodules`, or run `git submodule update --init` after cloning.
+[PofBC](https://github.com/ahzs645/PofBC) uses it this way for its Patches view.
 
 ## Pipeline
 

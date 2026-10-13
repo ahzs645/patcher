@@ -8,9 +8,13 @@ import { writeExp } from './export/exp';
 import { machineStats, machineStitches } from './export/machine';
 import { buildPatchSvg } from './patchSvg';
 import { nearestThread } from './threadCharts';
+import { createDigitizer, DEFAULT_PAD_MM } from './digitizer';
+import { LIBRARY, findPatch, findOrg, orgsBySector, type ResolvedPatch } from './library';
 
 /** Transparent margin around the art for the merrow lip and shadows. */
-const PAD_MM = 4;
+const PAD_MM = DEFAULT_PAD_MM;
+/** state.source for a library patch: its id survives rebuilds, its hashed asset URL doesn't. */
+const LIBRARY_SOURCE = 'library:';
 /** CSS px per mm at zoom 1 — every pane shares this so they line up. */
 const BASE = 5;
 const STORE_KEY = 'patcher:v1';
@@ -61,6 +65,8 @@ const state = {
   /** null = fully sewn; otherwise the number of needle points shown. */
   simLimit: null as number | null,
   patchSvgUrl: '',
+  /** Organization shown in the patch library picker. */
+  libraryOrg: LIBRARY.orgs[0]?.id ?? '',
 };
 
 // ---------------------------------------------------------------- persistence (per-viewer convenience)
@@ -71,7 +77,7 @@ function loadPrefs() {
     if (!raw) return;
     const p = JSON.parse(raw);
     Object.assign(state.params, p.params ?? {});
-    for (const k of ['view', 'lightDeg', 'finish', 'backdrop', 'chart', 'snap', 'source'] as const) {
+    for (const k of ['view', 'lightDeg', 'finish', 'backdrop', 'chart', 'snap', 'source', 'libraryOrg'] as const) {
       if (p[k] !== undefined) (state as Record<string, unknown>)[k] = p[k];
     }
   } catch { /* storage unavailable — defaults are fine */ }
@@ -81,22 +87,16 @@ function savePrefs() {
   clearTimeout(saveTimer);
   saveTimer = window.setTimeout(() => {
     try {
-      const { params, view, lightDeg, finish, backdrop, chart, snap, source } = state;
-      localStorage.setItem(STORE_KEY, JSON.stringify({ params, view, lightDeg, finish, backdrop, chart, snap, source }));
+      const { params, view, lightDeg, finish, backdrop, chart, snap, source, libraryOrg } = state;
+      localStorage.setItem(STORE_KEY, JSON.stringify({ params, view, lightDeg, finish, backdrop, chart, snap, source, libraryOrg }));
     } catch { /* ignore */ }
   }, 300);
 }
 
 // ---------------------------------------------------------------- worker
 
-const worker = new Worker(new URL('./digitize/worker.ts', import.meta.url), { type: 'module' });
+const digitizer = createDigitizer();
 let jobId = 0;
-const pending = new Map<number, (r: { result?: DigitizeResult; error?: string }) => void>();
-worker.onmessage = (e) => {
-  const cb = pending.get(e.data.id);
-  pending.delete(e.data.id);
-  cb?.(e.data);
-};
 
 let digitizeTimer = 0;
 function scheduleDigitize(delay = 200) {
@@ -113,15 +113,9 @@ async function runDigitize() {
   try {
     const raster = await rasterize(state.svg, state.params.widthMm, state.params.pxPerMm, PAD_MM);
     if (id !== jobId) return;
-    const msg = await new Promise<{ result?: DigitizeResult; error?: string }>((resolve) => {
-      pending.set(id, resolve);
-      const transfer: Transferable[] = [raster.data.buffer];
-      if (raster.textMask) transfer.push(raster.textMask.buffer);
-      worker.postMessage({ id, raster, params: state.params }, transfer);
-    });
+    const result = await digitizer.digitizeRaster(raster, state.params);
     if (id !== jobId) return;
-    if (msg.error || !msg.result) throw new Error(msg.error || 'Digitizing failed');
-    state.result = msg.result;
+    state.result = result;
     stopPlay();
     state.simLimit = null;
     setBusy('Rendering…');
@@ -131,6 +125,8 @@ async function runDigitize() {
     updateDetails();
     updateSim();
   } catch (err) {
+    // A job that was superseded while it ran has nothing to report.
+    if (id !== jobId) return;
     console.error(err);
     showError((err as Error).message.split('\n')[0]);
   } finally {
@@ -768,13 +764,13 @@ function openSvgText(text: string, name: string, source = '') {
   }
 }
 
-async function openUrl(url: string, name?: string) {
+async function openUrl(url: string, name?: string, source = url) {
   showError(null);
   setBusy('Loading…');
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Download failed (${res.status})`);
-    openSvgText(await res.text(), name ?? decodeURIComponent(url.split(/[?#]/)[0].split('/').pop() || 'patch.svg'), url);
+    openSvgText(await res.text(), name ?? decodeURIComponent(url.split(/[?#]/)[0].split('/').pop() || 'patch.svg'), source);
   } catch (err) {
     setBusy(null);
     showError(`Couldn't load that URL: ${(err as Error).message}`);
@@ -833,6 +829,51 @@ function setupLoading() {
     b.onclick = () => openUrl(src, s.label);
     $(s.group === 'bc' ? 'bcSamples' : 'samples').append(b);
   }
+  setupLibrary();
+}
+
+// ---------------------------------------------------------------- patch library
+
+function openPatch(p: ResolvedPatch) {
+  if (state.libraryOrg !== p.orgId) showLibraryOrg(p.orgId);
+  return openUrl(p.svgUrl, p.label, LIBRARY_SOURCE + p.id);
+}
+
+function showLibraryOrg(orgId: string) {
+  const org = findOrg(orgId) ?? LIBRARY.orgs[0];
+  if (!org) return;
+  state.libraryOrg = org.id;
+  $<HTMLSelectElement>('libraryOrg').value = org.id;
+  $('libraryNote').textContent = org.description ?? '';
+  const grid = $('librarySamples');
+  grid.replaceChildren(...org.patches.map((p) => {
+    const b = document.createElement('button');
+    b.className = 'sample';
+    b.title = `${p.label} (${p.medium})`;
+    b.dataset.src = LIBRARY_SOURCE + p.id;
+    b.classList.toggle('on', state.source === b.dataset.src);
+    const img = document.createElement('img');
+    img.src = p.previewUrl ?? p.svgUrl;
+    img.alt = p.label;
+    img.loading = 'lazy';
+    b.append(img);
+    b.onclick = () => openPatch(p);
+    return b;
+  }));
+  savePrefs();
+}
+
+function setupLibrary() {
+  const select = $<HTMLSelectElement>('libraryOrg');
+  for (const { sector, orgs } of orgsBySector()) {
+    const group = document.createElement('optgroup');
+    group.label = sector.name;
+    for (const org of orgs) group.append(new Option(`${org.name} (${org.count})`, org.id));
+    select.append(group);
+  }
+  select.onchange = () => showLibraryOrg(select.value);
+  $('libraryCount').textContent = `${LIBRARY.summary.patches} patches from the ${LIBRARY.source.name}, by organization`;
+  showLibraryOrg(state.libraryOrg);
 }
 
 // ---------------------------------------------------------------- export
@@ -947,6 +988,11 @@ function init() {
   setupLoading();
   setupKeys();
 
+  // ?patch=<id> opens a library patch (other apps link here that way).
+  const linked = findPatch(new URLSearchParams(location.search).get('patch') ?? '');
+  if (linked) { openPatch(linked); return; }
+  const remembered = state.source.startsWith(LIBRARY_SOURCE) ? findPatch(state.source.slice(LIBRARY_SOURCE.length)) : undefined;
+  if (remembered) { openPatch(remembered); return; }
   const sampleSrcs = SAMPLES.map((s) => `${import.meta.env.BASE_URL}samples/${s.file}`);
   // Reopen the last remote/sample source; local files can't be reopened.
   const src = state.source && /^(https?:|\/)/.test(state.source) ? state.source : sampleSrcs[0];

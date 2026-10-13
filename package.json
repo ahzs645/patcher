@@ -7,10 +7,25 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "library:import": "node scripts/import-atlas.mjs"
   },
   "devDependencies": {
+    "fflate": "^0.8.3",
     "typescript": "^5.6.0",
     "vite": "^6.0.0"
-  }
+  },
+  "description": "SVG patch art to embroidered patches: digitizer, renderer, DST/EXP export, and a patch library grouped by organization.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./library": "./src/library.ts",
+    "./library/manifest.json": "./library/manifest.json",
+    "./library/*": "./library/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "library",
+    "scripts"
+  ]
 }

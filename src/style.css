@@ -125,6 +125,12 @@ input[type=url], select {
 .sample:hover { border-color: var(--muted); }
 .sample.on { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 .sample img { max-width: 100%; max-height: 100%; }
+.library-org { width: 100%; }
+#libraryCount { margin: -4px 0 8px; }
+#libraryNote { margin: 6px 0 8px; }
+#libraryNote:empty { display: none; }
+/* Some organizations have dozens of patches; scroll them rather than push the settings off the panel. */
+.samples.library { max-height: 300px; overflow-y: auto; margin-top: 8px; padding: 1px; }
 
 .field { margin: 10px 0; }
 .field label { display: flex; justify-content: space-between; font-size: 12.5px; margin-bottom: 4px; }

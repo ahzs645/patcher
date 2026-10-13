@@ -1,0 +1,235 @@
+{
+  "$comment": "How scripts/import-atlas.mjs files each atlas design under an organization. Orgs are tried in order and the first whose rules match wins: 'family' and 'label' are regular expressions (case-insensitive) tested against the atlas design's family and label, 'affiliation' is the atlas's own coarse affiliation, matched exactly. Put specific rules before broad ones. A design nothing matches is filed under 'unsorted' and the import says so.",
+  "sectors": [
+    { "id": "government", "name": "Province of British Columbia" },
+    { "id": "forests", "name": "Forests and wildfire" },
+    { "id": "environment", "name": "Parks, environment and wildlife" },
+    { "id": "justice", "name": "Justice and public safety" },
+    { "id": "transportation", "name": "Transportation" },
+    { "id": "crown", "name": "Crown corporations" },
+    { "id": "lands", "name": "Land and survey" },
+    { "id": "institutions", "name": "Universities and institutions" },
+    { "id": "community", "name": "Events and societies" },
+    { "id": "unconfirmed", "name": "Unconfirmed" }
+  ],
+  "orgs": [
+    {
+      "id": "province-of-bc",
+      "name": "Province of British Columbia",
+      "sector": "government",
+      "description": "The Province's own identity: ministry lockups, the provincial arms, and programme marks.",
+      "match": { "family": ["^bc-government-logo$", "^provincial-arms$", "^bc-public-service$", "^cleanbc$", "^strongerbc$", "^top-work-award$", "^centennial$"] }
+    },
+    {
+      "id": "bc-timber-sales",
+      "name": "BC Timber Sales",
+      "sector": "forests",
+      "description": "BCTS lockups with the Forest Service tree oval and the ministry wildlife oval.",
+      "match": { "family": ["^bcts-"] }
+    },
+    {
+      "id": "bc-wildfire-service",
+      "name": "BC Wildfire Service",
+      "sector": "forests",
+      "description": "Ovals and patches naming the Wildfire Service or Wildfire Management.",
+      "match": { "family": ["wildfire"] }
+    },
+    {
+      "id": "bc-forest-service",
+      "name": "BC Forest Service",
+      "sector": "forests",
+      "description": "The Forest Service and the Ministry of Forests: tree ovals, shoulder patches, metal badges, fire-control and prevention marks.",
+      "match": { "affiliation": ["Forestry"] }
+    },
+    {
+      "id": "forest-practices-board",
+      "name": "Forest Practices Board",
+      "sector": "forests",
+      "match": { "family": ["^forest-practices-board$"] }
+    },
+    {
+      "id": "managed-forest-council",
+      "name": "Managed Forest Council",
+      "sector": "forests",
+      "match": { "family": ["^managed-forest-council$"] }
+    },
+    {
+      "id": "forest-enhancement-society",
+      "name": "Forest Enhancement Society of BC",
+      "sector": "forests",
+      "match": { "family": ["^fesbc$"] }
+    },
+    {
+      "id": "canadian-forestry-association",
+      "name": "Canadian Forestry Association",
+      "sector": "forests",
+      "description": "Junior Forest Warden badge; an association, not a ministry patch.",
+      "match": { "affiliation": ["Canadian Forestry Association"] }
+    },
+    {
+      "id": "bc-parks",
+      "name": "BC Parks",
+      "sector": "environment",
+      "description": "Parks Branch and the ministries that held it: arches, shields, rockers and ranger badges.",
+      "match": { "affiliation": ["Parks"] }
+    },
+    {
+      "id": "conservation-officer-service",
+      "name": "Conservation Officer Service",
+      "sector": "environment",
+      "description": "Conservation Officer shoulder, cap and blazer emblems, rockers and the 2005 centennial tabs.",
+      "match": { "family": ["^bc-co-", "^conservation-", "^bc-environment-cap-", "^bc-province-cap-"], "label": ["conservation officer"] }
+    },
+    {
+      "id": "fish-and-wildlife-branch",
+      "name": "Game Commission, Fish & Game and Fish & Wildlife Branch",
+      "sector": "environment",
+      "description": "The game wardens' predecessors of the Conservation Officer Service: felt flashes, role caps and branch shields.",
+      "match": { "family": ["^moosecop-", "^bc-fish-game-", "^bc-historical-blazer-crest$", "^fish-wildlife-"], "affiliation": ["Fish and Game / Conservation history"] }
+    },
+    {
+      "id": "ministry-of-environment",
+      "name": "Ministry of Environment",
+      "sector": "environment",
+      "match": { "family": ["^environment-"] }
+    },
+    {
+      "id": "creston-valley-wma",
+      "name": "Creston Valley Wildlife Management Area",
+      "sector": "environment",
+      "match": { "family": ["^creston-valley$"] }
+    },
+    {
+      "id": "bc-sheriff-service",
+      "name": "BC Sheriff Service",
+      "sector": "justice",
+      "description": "Sheriff and Deputy Sheriff shields and rockers.",
+      "match": { "family": ["^sheriff", "^deputy-sheriff-"] }
+    },
+    {
+      "id": "bc-corrections",
+      "name": "BC Corrections",
+      "sector": "justice",
+      "description": "Corrections Service shields, crests and rockers.",
+      "match": { "family": ["^corrections-"] }
+    },
+    {
+      "id": "bcgs",
+      "name": "B.C.G.S.",
+      "sector": "justice",
+      "description": "Gold arches lettered B.C.G.S., one for its camps and one for the Alouette River Unit. The atlas does not spell the initials out.",
+      "match": { "family": ["^bcgs-"] }
+    },
+    {
+      "id": "ministry-of-attorney-general",
+      "name": "Ministry of Attorney General",
+      "sector": "justice",
+      "match": { "family": ["^attorney-general-"] }
+    },
+    {
+      "id": "bc-coroners-service",
+      "name": "BC Coroners Service",
+      "sector": "justice",
+      "match": { "family": ["^coroners-"] }
+    },
+    {
+      "id": "fire-commissioner",
+      "name": "Fire Commissioner",
+      "sector": "justice",
+      "match": { "family": ["^fire-commissioner-"] }
+    },
+    {
+      "id": "legislative-security",
+      "name": "Legislative Security",
+      "sector": "justice",
+      "match": { "family": ["^legislative-security$"] }
+    },
+    {
+      "id": "justice-institute",
+      "name": "Justice Institute of British Columbia",
+      "sector": "justice",
+      "match": { "family": ["^justice-institute-"] }
+    },
+    {
+      "id": "highways-and-motor-vehicles",
+      "name": "Highways and Motor Vehicles",
+      "sector": "transportation",
+      "description": "Highway Patrol, the transportation ministries' shields, Motor Vehicle Inspectors, Weighmasters and Traffic Officers.",
+      "match": { "family": ["^highway", "^motor-", "^mv-inspector-", "^weighmaster-", "^traffic-officers-"] }
+    },
+    {
+      "id": "bc-transit",
+      "name": "BC Transit",
+      "sector": "transportation",
+      "match": { "family": ["^bc-transit-"] }
+    },
+    {
+      "id": "icbc",
+      "name": "ICBC",
+      "sector": "transportation",
+      "match": { "family": ["^icbc-"] }
+    },
+    {
+      "id": "bc-hydro",
+      "name": "BC Hydro",
+      "sector": "crown",
+      "description": "Hydro Patrol and Security patches, and the current BC Hydro identity.",
+      "match": { "family": ["^hydro-", "^bc-hydro-"] }
+    },
+    {
+      "id": "land-title-and-survey",
+      "name": "Land Title & Survey",
+      "sector": "lands",
+      "match": { "family": ["^land-title-survey$"] }
+    },
+    {
+      "id": "land-surveyors",
+      "name": "Association of British Columbia Land Surveyors",
+      "sector": "lands",
+      "match": { "family": ["^land-surveyors$"] }
+    },
+    {
+      "id": "icis",
+      "name": "Integrated Cadastral Information Society",
+      "sector": "lands",
+      "match": { "family": ["^icis$"] }
+    },
+    {
+      "id": "ubc",
+      "name": "University of British Columbia",
+      "sector": "institutions",
+      "match": { "family": ["^ubc-"] }
+    },
+    {
+      "id": "uvic",
+      "name": "University of Victoria",
+      "sector": "institutions",
+      "match": { "family": ["^uvic-"] }
+    },
+    {
+      "id": "sfu",
+      "name": "Simon Fraser University",
+      "sector": "institutions",
+      "match": { "family": ["^sfu-"] }
+    },
+    {
+      "id": "expo-86",
+      "name": "Expo 86",
+      "sector": "community",
+      "match": { "family": ["^expo-"] }
+    },
+    {
+      "id": "bc-spca",
+      "name": "BC SPCA",
+      "sector": "community",
+      "match": { "family": ["^bc-spca-"] }
+    },
+    {
+      "id": "unconfirmed",
+      "name": "Unconfirmed",
+      "sector": "unconfirmed",
+      "description": "Designs whose wording or owner the atlas could not resolve.",
+      "match": { "affiliation": ["Unconfirmed"] }
+    }
+  ]
+}
