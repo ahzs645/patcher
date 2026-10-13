@@ -89,14 +89,27 @@ async function main() {
     if (!sectorIds.has(org.sector)) throw new Error(`orgs.json: ${org.id} has unknown sector "${org.sector}"`);
     if (org.id === SHARED) throw new Error(`orgs.json: "${SHARED}" is reserved for library/${SHARED}/`);
   }
+  const collections = taxonomy.collections ?? [{ id: 'patches', name: 'Patches' }];
+  const collectionOf = (design) => collections.find((c) => c.medium?.includes(design.medium)) ?? collections[0];
+  const excludedIds = new Map((taxonomy.exclude ?? []).flatMap((rule) => rule.ids.map((id) => [id, rule.reason])));
+  const known = new Set(index.designs.map((d) => d.id));
+  for (const id of excludedIds.keys()) if (!known.has(id)) throw new Error(`orgs.json excludes ${id}, which isn't in the snapshot`);
 
-  const designs = [...index.designs].sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
+  const all = [...index.designs].sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
   const byOrg = new Map();
   const unsorted = [];
+  const excluded = [];
   const originals = new Map();
   const previews = [];
-  for (const d of designs) {
+  const designs = [];
+  for (const d of all) {
     const org = classify(d) ?? { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' };
+    const reason = excludedIds.get(d.id) ?? org.exclude;
+    if (reason) {
+      excluded.push({ id: d.id, label: d.label, medium: d.medium, org: org.id, reason });
+      continue;
+    }
+    designs.push(d);
     if (org.id === 'unsorted') unsorted.push(d);
     const svg = get(d.svgUrl);
     if (!svg) throw new Error(`${d.id}: ${d.svgUrl} is missing from the snapshot`);
@@ -112,6 +125,7 @@ async function main() {
     byOrg.get(org.id).patches.push({
       id: d.id,
       label: d.label,
+      collection: collectionOf(d).id,
       medium: d.medium,
       quality: d.quality,
       family: d.family,
@@ -160,11 +174,12 @@ async function main() {
     .sort((a, b) => sectorOrder.indexOf(a.sector) - sectorOrder.indexOf(b.sector))
     .map((o) => {
       const { patches } = byOrg.get(o.id);
-      return { id: o.id, name: o.name, sector: o.sector, description: o.description ?? null, count: patches.length, patches };
+      const counts = Object.fromEntries(collections.map((c) => [c.id, patches.filter((p) => p.collection === c.id).length]));
+      return { id: o.id, name: o.name, sector: o.sector, description: o.description ?? null, counts, patches };
     });
   const sourceBytes = [...originals.values()].reduce((n, text) => n + Buffer.byteLength(text), 0);
   const manifest = {
-    version: 2,
+    version: 3,
     source: {
       name: 'BC Forestry Patch Atlas',
       driveId: opts.zip ? null : driveId(opts.drive),
@@ -172,7 +187,9 @@ async function main() {
       note: 'Reference-based vector reconstructions, not authenticated issue artwork. See each patch\'s limitations.',
     },
     summary: {
-      patches: designs.length,
+      designs: designs.length,
+      byCollection: Object.fromEntries(collections.map((c) => [c.id, designs.filter((d) => collectionOf(d).id === c.id).length])),
+      excluded: excluded.length,
       orgs: orderedOrgs.length,
       unsorted: unsorted.length,
       sourceBytes,
@@ -180,9 +197,12 @@ async function main() {
       sharedBlocks: blocks.length,
       sharedPaths: shared.paths.size,
     },
+    collections: collections.map(({ id, name, description, hidden }) => ({ id, name, description: description ?? null, hidden: Boolean(hidden) })),
     sectors: taxonomy.sectors.filter((s) => orderedOrgs.some((o) => o.sector === s.id)),
     shared: { blocks, bundles },
     orgs: orderedOrgs,
+    /** Atlas designs left out on purpose (orgs.json), so the record of what was dropped stays with the library. */
+    excluded,
   };
   writeFileSync(join(LIBRARY, 'manifest.json'), `${JSON.stringify(manifest, null, 1)}\n`);
 
@@ -194,8 +214,11 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Imported ${designs.length} patches into ${orderedOrgs.length} organizations:`);
-  for (const o of orderedOrgs) console.log(`  ${String(o.count).padStart(3)}  ${o.name}`);
+  console.log(`Imported ${designs.length} designs into ${orderedOrgs.length} organizations (${excluded.length} left out by orgs.json):`);
+  for (const o of orderedOrgs) {
+    const counts = Object.entries(o.counts).filter(([, n]) => n).map(([c, n]) => `${n} ${c}`).join(', ');
+    console.log(`  ${o.name}: ${counts}`);
+  }
   console.log(
     `\nStored ${(storedBytes / 1e6).toFixed(2)} MB of SVG for ${(sourceBytes / 1e6).toFixed(2)} MB of drawings: ` +
     `${blocks.length} shared blocks, ${shared.paths.size} shared path outlines in ${bundles.length} bundles.`,

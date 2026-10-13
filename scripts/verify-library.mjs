@@ -56,15 +56,18 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
   }
   if (source) {
     const byId = new Map(patches.map((p) => [p.id, p]));
+    const { manifest } = joinedPatches(library);
+    const excluded = new Set((manifest.excluded ?? []).map((e) => e.id));
     for (const design of source.index.designs) {
+      if (excluded.has(design.id)) continue;
       const p = byId.get(design.id);
-      if (!p) { problems.push(`${design.id}: in the snapshot, not in the library`); continue; }
+      if (!p) { problems.push(`${design.id}: in the snapshot, not in the library (nor excluded)`); continue; }
       const original = source.get(design.svgUrl);
       if (!original) { problems.push(`${design.id}: ${design.svgUrl} missing from the snapshot`); continue; }
       if (!Buffer.from(original).equals(p.bytes)) problems.push(`${design.id}: joined bytes differ from the snapshot's ${design.svgUrl}`);
       if (design.vectorSha256 && design.vectorSha256 !== p.sha256) problems.push(`${design.id}: SHA-256 differs from the atlas's vectorSha256`);
     }
-    if (byId.size !== source.index.designs.length) problems.push(`library has ${byId.size} patches, snapshot has ${source.index.designs.length}`);
+    if (byId.size + excluded.size !== source.index.designs.length) problems.push(`library has ${byId.size} patches and ${excluded.size} excluded, snapshot has ${source.index.designs.length}`);
   }
   return problems;
 }

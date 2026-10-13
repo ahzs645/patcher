@@ -19,9 +19,13 @@ import { joinSvg, unwrapBlock } from './library-join.js';
 
 export interface LibrarySector { id: string; name: string }
 
+/** Patches, and badges (hidden for now). A design is in one collection; an organization can have both. */
+export interface LibraryCollection { id: string; name: string; description: string | null; hidden: boolean }
+
 export interface LibraryPatch {
   id: string;
   label: string;
+  collection: string;
   medium: string;
   quality: string;
   family: string;
@@ -46,7 +50,8 @@ export interface LibraryOrg {
   name: string;
   sector: string;
   description: string | null;
-  count: number;
+  /** How many of its designs are in each collection. */
+  counts: Record<string, number>;
   patches: LibraryPatch[];
 }
 
@@ -57,12 +62,15 @@ export interface LibraryManifest {
   version: number;
   source: { name: string; driveId: string | null; snapshotSha256: string | null; note: string };
   summary: {
-    patches: number; orgs: number; unsorted: number;
+    designs: number; byCollection: Record<string, number>; excluded: number; orgs: number; unsorted: number;
     sourceBytes: number; storedBytes: number; sharedBlocks: number; sharedPaths: number;
   };
+  collections: LibraryCollection[];
   sectors: LibrarySector[];
   shared: { blocks: SharedBlock[]; bundles: SharedBundle[] };
   orgs: LibraryOrg[];
+  /** Atlas designs left out on purpose (library/orgs.json), with why. */
+  excluded: { id: string; label: string; medium: string; org: string; reason: string }[];
 }
 
 /** A patch with its organization and the URLs the importing app serves. */
@@ -105,10 +113,20 @@ const byId = new Map(LIBRARY.orgs.flatMap((o) => o.patches.map((p) => [p.id, p] 
 export const findPatch = (id: string): ResolvedPatch | undefined => byId.get(id);
 export const findOrg = (id: string): ResolvedOrg | undefined => LIBRARY.orgs.find((o) => o.id === id);
 
-/** Sectors in order, each with its organizations. */
-export function orgsBySector(lib: Library = LIBRARY): { sector: LibrarySector; orgs: ResolvedOrg[] }[] {
+export const findCollection = (id: string): LibraryCollection | undefined => LIBRARY.collections.find((c) => c.id === id);
+
+/** One collection's designs, organization by organization (organizations with none left out). */
+export function collectionOrgs(collection = 'patches', lib: Library = LIBRARY): ResolvedOrg[] {
+  return lib.orgs
+    .map((org) => ({ ...org, patches: org.patches.filter((p) => p.collection === collection) }))
+    .filter((org) => org.patches.length > 0);
+}
+
+/** Sectors in order, each with its organizations that have designs in the collection. */
+export function orgsBySector(collection = 'patches', lib: Library = LIBRARY): { sector: LibrarySector; orgs: ResolvedOrg[] }[] {
+  const orgs = collectionOrgs(collection, lib);
   return lib.sectors
-    .map((sector) => ({ sector, orgs: lib.orgs.filter((o) => o.sector === sector.id) }))
+    .map((sector) => ({ sector, orgs: orgs.filter((o) => o.sector === sector.id) }))
     .filter((s) => s.orgs.length > 0);
 }
 

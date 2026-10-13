@@ -19,7 +19,11 @@ hand, because the next import replaces it.
 
 The **BC Forestry Patch Atlas** snapshot: the atlas site's own "Entire codebase" ZIP, shared on
 [Google Drive](https://drive.google.com/file/d/1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4/view). The import reads its
-277 reconstructions (`dist/assets/reconstructions.json` plus each SVG and WebP preview) and nothing else. It
+277 reconstructions (`dist/assets/reconstructions.json` plus each SVG and WebP preview) and nothing else.
+`orgs.json` keeps 173 of them: 159 patches and 14 badges. It leaves out 104 that aren't patches, which
+`manifest.json` lists under `excluded` with the reason for each: the Province's identity (ministry
+lockups, arms, programme marks), BC Timber Sales, the corporate logos of BC Hydro, BC Transit and ICBC,
+and the atlas's signs, decals, prevention cards and printed emblems. It
 does not read the source photographs, the template library or the registers. `manifest.json` records the
 snapshot's SHA-256, and every patch keeps its atlas id, medium, quality, limitations and a link to its
 source photograph.
@@ -42,8 +46,8 @@ claims, which are filed under `unsorted`.
 ## Shared parts
 
 The drawings repeat a lot. The Conservation Officer Service crest (4.8 MB) is in three patches, and
-the modern coat of arms is in seventeen. The same outlines also come back recoloured or moved. So the
-import stores each repeated thing once, and the library is 13.2 MB instead of 34 MB:
+the modern coat of arms is in sixteen. The same outlines also come back recoloured or moved. So the
+import stores each repeated thing once, and the library is 9 MB instead of 29 MB:
 
 - **Blocks.** When the same bytes sit inside a `<g>` in two or more places, they move to
   `shared/<name>-<hash>.svg`. The `<g>` stays in each patch with a placeholder,
@@ -58,7 +62,7 @@ Only exact bytes move. Joining a patch with its parts (`src/library-join.js`) gi
 file byte for byte. The manifest records each patch's SHA-256 (the atlas's own `vectorSha256`) and the
 blocks and bundles it needs, so a loader can fetch them all at once.
 
-Every import ends by joining all 277 patches back from disk and comparing them with the snapshot. To
+Every import ends by joining every design back from disk and comparing them with the snapshot. To
 check again at any time:
 
 ```bash
@@ -68,6 +72,19 @@ npm run library:verify -- --source # and file by file against the atlas snapshot
 
 A stored `<org>/<id>.svg` is not the whole drawing on its own, so don't serve it directly. Load it with
 `loadPatchSvg` (below), or join it with `joinSvg`.
+
+## Collections, and what is left out
+
+`orgs.json` has two more lists before the organizations:
+
+- `collections`: **patches**, and **badges** (metal and leather, by medium). Badges are marked
+  `"hidden": true`, so the apps leave them out of their menus for now. They are still in the library,
+  and `?patch=<id>` still opens one.
+- `exclude`: atlas designs to leave out, by id, with a reason. An organization can also carry
+  `"exclude": "<reason>"`, which leaves out everything filed under it (Province of British Columbia,
+  BC Timber Sales, BC Transit, ICBC, …).
+
+To bring something back, delete its rule and re-import.
 
 ## Grouping by organization
 

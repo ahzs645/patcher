@@ -9,12 +9,14 @@ import { machineStats, machineStitches } from './export/machine';
 import { buildPatchSvg } from './patchSvg';
 import { nearestThread } from './threadCharts';
 import { createDigitizer, DEFAULT_PAD_MM } from './digitizer';
-import { LIBRARY, findPatch, findOrg, loadPatchSvg, orgsBySector, type ResolvedPatch } from './library';
+import { LIBRARY, collectionOrgs, findPatch, loadPatchSvg, orgsBySector, type ResolvedPatch } from './library';
 
 /** Transparent margin around the art for the merrow lip and shadows. */
 const PAD_MM = DEFAULT_PAD_MM;
 /** state.source for a library patch: its id survives rebuilds, its hashed asset URL doesn't. */
 const LIBRARY_SOURCE = 'library:';
+/** The picker lists patches; badges are kept in the library but hidden for now (?patch=<id> still opens one). */
+const LIBRARY_COLLECTION = 'patches';
 /** CSS px per mm at zoom 1 — every pane shares this so they line up. */
 const BASE = 5;
 const STORE_KEY = 'patcher:v1';
@@ -66,7 +68,7 @@ const state = {
   simLimit: null as number | null,
   patchSvgUrl: '',
   /** Organization shown in the patch library picker. */
-  libraryOrg: orgsBySector()[0]?.orgs[0]?.id ?? '',
+  libraryOrg: orgsBySector(LIBRARY_COLLECTION)[0]?.orgs[0]?.id ?? '',
 };
 
 // ---------------------------------------------------------------- persistence (per-viewer convenience)
@@ -836,7 +838,7 @@ function setupLoading() {
 
 /** Library patches are stored with their shared crests and outlines apart; loadPatchSvg joins them. */
 async function openPatch(p: ResolvedPatch) {
-  if (state.libraryOrg !== p.orgId) showLibraryOrg(p.orgId);
+  if (state.libraryOrg !== p.orgId && p.collection === LIBRARY_COLLECTION) showLibraryOrg(p.orgId);
   showError(null);
   setBusy('Loading…');
   try {
@@ -848,7 +850,8 @@ async function openPatch(p: ResolvedPatch) {
 }
 
 function showLibraryOrg(orgId: string) {
-  const org = findOrg(orgId) ?? orgsBySector()[0]?.orgs[0];
+  const orgs = collectionOrgs(LIBRARY_COLLECTION);
+  const org = orgs.find((o) => o.id === orgId) ?? orgsBySector(LIBRARY_COLLECTION)[0]?.orgs[0];
   if (!org) return;
   state.libraryOrg = org.id;
   $<HTMLSelectElement>('libraryOrg').value = org.id;
@@ -873,14 +876,14 @@ function showLibraryOrg(orgId: string) {
 
 function setupLibrary() {
   const select = $<HTMLSelectElement>('libraryOrg');
-  for (const { sector, orgs } of orgsBySector()) {
+  for (const { sector, orgs } of orgsBySector(LIBRARY_COLLECTION)) {
     const group = document.createElement('optgroup');
     group.label = sector.name;
-    for (const org of orgs) group.append(new Option(`${org.name} (${org.count})`, org.id));
+    for (const org of orgs) group.append(new Option(`${org.name} (${org.patches.length})`, org.id));
     select.append(group);
   }
   select.onchange = () => showLibraryOrg(select.value);
-  $('libraryCount').textContent = `${LIBRARY.summary.patches} patches from the ${LIBRARY.source.name}, by organization`;
+  $('libraryCount').textContent = `${LIBRARY.summary.byCollection[LIBRARY_COLLECTION]} patches from the ${LIBRARY.source.name}, by organization`;
   showLibraryOrg(state.libraryOrg);
 }
 

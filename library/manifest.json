@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 3,
  "source": {
   "name": "BC Forestry Patch Atlas",
   "driveId": "1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4",
@@ -7,14 +7,33 @@
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
  "summary": {
-  "patches": 277,
-  "orgs": 34,
+  "designs": 173,
+  "byCollection": {
+   "patches": 159,
+   "badges": 14
+  },
+  "excluded": 104,
+  "orgs": 23,
   "unsorted": 0,
-  "sourceBytes": 33979111,
-  "storedBytes": 13174005,
-  "sharedBlocks": 44,
-  "sharedPaths": 282
+  "sourceBytes": 28823830,
+  "storedBytes": 9021956,
+  "sharedBlocks": 40,
+  "sharedPaths": 201
  },
+ "collections": [
+  {
+   "id": "patches",
+   "name": "Patches",
+   "description": "Cloth patches, rockers and the emblems they were made from.",
+   "hidden": false
+  },
+  {
+   "id": "badges",
+   "name": "Badges",
+   "description": "Metal and leather badges.",
+   "hidden": true
+  }
+ ],
  "sectors": [
   {
    "id": "forests",
@@ -37,20 +56,12 @@
    "name": "Crown corporations"
   },
   {
-   "id": "lands",
-   "name": "Land and survey"
-  },
-  {
    "id": "institutions",
    "name": "Universities and institutions"
   },
   {
    "id": "community",
    "name": "Events and societies"
-  },
-  {
-   "id": "government",
-   "name": "Province of British Columbia"
   },
   {
    "id": "unconfirmed",
@@ -69,19 +80,13 @@
     "id": "bc-framed-provincial-mark-3b841c1ba2",
     "file": "shared/bc-framed-provincial-mark-3b841c1ba2.svg",
     "bytes": 2570,
-    "usedBy": 19
+    "usedBy": 18
    },
    {
     "id": "bc-provincial-mark-356f812fb6",
     "file": "shared/bc-provincial-mark-356f812fb6.svg",
     "bytes": 2589,
     "usedBy": 6
-   },
-   {
-    "id": "bc-sun-wordmark-native-d189addff4",
-    "file": "shared/bc-sun-wordmark-native-d189addff4.svg",
-    "bytes": 1141,
-    "usedBy": 7
    },
    {
     "id": "block-1131bdd370",
@@ -96,12 +101,6 @@
     "usedBy": 2
    },
    {
-    "id": "block-44934af15a",
-    "file": "shared/block-44934af15a.svg",
-    "bytes": 3948,
-    "usedBy": 3
-   },
-   {
     "id": "block-5114723944",
     "file": "shared/block-5114723944.svg",
     "bytes": 10078,
@@ -111,12 +110,6 @@
     "id": "block-7088196603",
     "file": "shared/block-7088196603.svg",
     "bytes": 3841,
-    "usedBy": 2
-   },
-   {
-    "id": "block-7bb0545350",
-    "file": "shared/block-7bb0545350.svg",
-    "bytes": 13040,
     "usedBy": 2
    },
    {
@@ -234,12 +227,6 @@
     "usedBy": 2
    },
    {
-    "id": "lg-crowned-shield-maple-wreath-a57d6e6dd6",
-    "file": "shared/lg-crowned-shield-maple-wreath-a57d6e6dd6.svg",
-    "bytes": 5047,
-    "usedBy": 1
-   },
-   {
     "id": "ministry-of-15f6331b36",
     "file": "shared/ministry-of-15f6331b36.svg",
     "bytes": 2652,
@@ -315,7 +302,7 @@
     "id": "uploaded-bc-modern-arms-8491a6243c",
     "file": "shared/uploaded-bc-modern-arms-8491a6243c.svg",
     "bytes": 57464,
-    "usedBy": 15
+    "usedBy": 14
    },
    {
     "id": "uploaded-bc-modern-arms-da5d14bfd0",
@@ -326,287 +313,57 @@
   ],
   "bundles": [
    {
-    "name": "paths-212e7b4aaa",
-    "file": "shared/paths-212e7b4aaa.json",
-    "bytes": 6357,
-    "paths": 7,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-34b390f1bf",
-    "file": "shared/paths-34b390f1bf.json",
-    "bytes": 5157,
-    "paths": 5,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-551e786a72",
-    "file": "shared/paths-551e786a72.json",
-    "bytes": 4203,
-    "paths": 3,
-    "usedBy": 4
-   },
-   {
-    "name": "paths-58335388af",
-    "file": "shared/paths-58335388af.json",
-    "bytes": 6822,
-    "paths": 10,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-67cd2d216a",
-    "file": "shared/paths-67cd2d216a.json",
-    "bytes": 4598,
-    "paths": 7,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-7cfa647181",
-    "file": "shared/paths-7cfa647181.json",
-    "bytes": 4560,
-    "paths": 4,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-7e2533fa13",
-    "file": "shared/paths-7e2533fa13.json",
+    "name": "paths-73e0faed1f",
+    "file": "shared/paths-73e0faed1f.json",
     "bytes": 329385,
     "paths": 176,
-    "usedBy": 17
+    "usedBy": 16
    },
    {
-    "name": "paths-9143b26870",
-    "file": "shared/paths-9143b26870.json",
-    "bytes": 15083,
-    "paths": 17,
-    "usedBy": 8
-   },
-   {
-    "name": "paths-9908a85513",
-    "file": "shared/paths-9908a85513.json",
-    "bytes": 46715,
-    "paths": 8,
+    "name": "paths-93ff36b976",
+    "file": "shared/paths-93ff36b976.json",
+    "bytes": 291245,
+    "paths": 1,
     "usedBy": 12
    },
    {
-    "name": "paths-996207848f",
-    "file": "shared/paths-996207848f.json",
-    "bytes": 9311,
-    "paths": 9,
-    "usedBy": 2
+    "name": "paths-9538043afe",
+    "file": "shared/paths-9538043afe.json",
+    "bytes": 46715,
+    "paths": 8,
+    "usedBy": 10
    },
    {
-    "name": "paths-a442b8b22f",
-    "file": "shared/paths-a442b8b22f.json",
-    "bytes": 6656,
-    "paths": 9,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-ac8c1047d3",
-    "file": "shared/paths-ac8c1047d3.json",
-    "bytes": 4868,
-    "paths": 3,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-c3e14e08bf",
-    "file": "shared/paths-c3e14e08bf.json",
-    "bytes": 7444,
-    "paths": 7,
-    "usedBy": 2
-   },
-   {
-    "name": "paths-d69f02d52f",
-    "file": "shared/paths-d69f02d52f.json",
-    "bytes": 291245,
-    "paths": 1,
-    "usedBy": 13
-   },
-   {
-    "name": "paths-dc640ea455",
-    "file": "shared/paths-dc640ea455.json",
+    "name": "paths-a31172d96e",
+    "file": "shared/paths-a31172d96e.json",
     "bytes": 19841,
     "paths": 12,
-    "usedBy": 25
+    "usedBy": 24
    },
    {
-    "name": "paths-e237f81c47",
-    "file": "shared/paths-e237f81c47.json",
+    "name": "paths-a97bef7ec1",
+    "file": "shared/paths-a97bef7ec1.json",
     "bytes": 4550,
     "paths": 4,
-    "usedBy": 17
+    "usedBy": 13
    }
   ]
  },
  "orgs": [
   {
-   "id": "bc-timber-sales",
-   "name": "BC Timber Sales",
-   "sector": "forests",
-   "description": "BCTS lockups with the Forest Service tree oval and the ministry wildlife oval.",
-   "count": 8,
-   "patches": [
-    {
-     "id": "R02-O01",
-     "label": "Forest Service / BC / BCTS / BC Timber Sales / Chinook",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bcts-chinook",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R02-O01.svg",
-     "preview": "bc-timber-sales/previews/R02-O01.webp",
-     "sha256": "30708abb85c3740fea5e7c017ea182361611d94959bb96cacbc7ed0c0a8d062a",
-     "bytes": 111632,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-district.png",
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [
-      "block-44934af15a"
-     ],
-     "bundles": [
-      "paths-e237f81c47"
-     ]
-    },
-    {
-     "id": "R03-O01",
-     "label": "Forest Service / BC / BC Timber Sales — stacked",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bcts-stacked",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R03-O01.svg",
-     "preview": "bc-timber-sales/previews/R03-O01.webp",
-     "sha256": "22e008e64a973821d46d44d8efd12d103fe91083cf77d898e54f33ea4a8d6ffc",
-     "bytes": 108713,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-stacked-words.png",
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-e237f81c47"
-     ]
-    },
-    {
-     "id": "R04-O01",
-     "label": "Forest Service / BC / BCTS — alternate vector lockup",
-     "medium": "Digital emblem",
-     "quality": "Native vector reference",
-     "family": "bcts-tree-lockup-alt",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R04-O01.svg",
-     "preview": "bc-timber-sales/previews/R04-O01.webp",
-     "sha256": "8c9db6a9a369ad0d1d902740b386bcfa08b777cec464e9445024354e1941b035",
-     "bytes": 12268,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-tree-alt1.svg",
-     "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "R05-O01",
-     "label": "Forest Service / BC / BCTS / BC Timber Sales — supplied vector",
-     "medium": "Digital emblem",
-     "quality": "Native vector reference",
-     "family": "bcts-tree-lockup",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R05-O01.svg",
-     "preview": "bc-timber-sales/previews/R05-O01.webp",
-     "sha256": "187cf7240aac64fd07896577a9a62e6f2c894c3e59e608840fc54b8fbdad10b9",
-     "bytes": 18151,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-tree.svg",
-     "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
-     "blocks": [
-      "block-7bb0545350"
-     ],
-     "bundles": [
-      "paths-e237f81c47"
-     ]
-    },
-    {
-     "id": "R06-O01",
-     "label": "BC / Forests, Lands and Natural Resource Operations / BCTS — alternate",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bcts-wildlife-lockup",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R06-O01.svg",
-     "preview": "bc-timber-sales/previews/R06-O01.webp",
-     "sha256": "ff86752b30f1e70d5800eef6d5ca5468aad80130621507b8fdc073259c2f780b",
-     "bytes": 176463,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-wildlife-alt1.png",
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [
-      "block-44934af15a"
-     ],
-     "bundles": [
-      "paths-9908a85513"
-     ]
-    },
-    {
-     "id": "R07-O01",
-     "label": "Forest Service tree oval / BCTS — forest-photo banner",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bcts-tree-banner",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R07-O01.svg",
-     "preview": "bc-timber-sales/previews/R07-O01.webp",
-     "sha256": "b022aa5c2a53387e7528f0ace827c84b059d12990cff69aad443caf8cb2379f5",
-     "bytes": 109673,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-wildlife-context1.png",
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly. This art-only reconstruction preserves the emblem and white lettering; the photographic forest/truck background is replaced with an authored flat dark green panel so the white vector lettering stays visible.",
-     "blocks": [],
-     "bundles": [
-      "paths-e237f81c47"
-     ]
-    },
-    {
-     "id": "R08-O01",
-     "label": "BC / Forests, Lands and Natural Resource Operations / BCTS",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bcts-wildlife-lockup",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R08-O01.svg",
-     "preview": "bc-timber-sales/previews/R08-O01.webp",
-     "sha256": "da59cc5ceffa3eaaf77da79404d741517f259036e4ed3306570e3acd2e1e7a9d",
-     "bytes": 173917,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-wildlife.png",
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly. The narrow raster export is fitted uniformly to the verified common native oval and BCTS lockup; its horizontal compression is not reproduced.",
-     "blocks": [
-      "block-44934af15a"
-     ],
-     "bundles": [
-      "paths-9908a85513"
-     ]
-    },
-    {
-     "id": "R09-O01",
-     "label": "BCTS / BC Timber Sales — wordmark only",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bcts-wordmark",
-     "affiliation": "Forestry",
-     "svg": "bc-timber-sales/R09-O01.svg",
-     "preview": "bc-timber-sales/previews/R09-O01.webp",
-     "sha256": "3b225089b09e22acfa2a7730058711805f3db325f9d2c1e0e17dfddc7fe11d72",
-     "bytes": 7730,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/bcts-wordmark.png",
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
    "id": "bc-wildfire-service",
    "name": "BC Wildfire Service",
    "sector": "forests",
    "description": "Ovals and patches naming the Wildfire Service or Wildfire Management.",
-   "count": 8,
+   "counts": {
+    "patches": 8,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "R13-O01",
      "label": "British Columbia / Forests / Wildfire Service — small digital oval",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "forests-short-wildfire",
@@ -619,12 +376,13 @@
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "R14-O01",
      "label": "British Columbia / Forests / Wildfire Service — digital oval",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "forests-short-wildfire",
@@ -637,12 +395,13 @@
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "R17-O01",
      "label": "BC / Forests, Lands and Natural Resource Operations / Wildfire Service — small",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "ministry-long-wildfire-tab",
@@ -655,12 +414,13 @@
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "R18-O01",
      "label": "BC / Forests, Lands and Natural Resource Operations / Wildfire Service",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "ministry-long-wildfire-tab",
@@ -673,12 +433,13 @@
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "R20-O01",
      "label": "Wildfire Management / Forest Service / British Columbia — monochrome",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "forest-tree-wildfire-management-digital",
@@ -691,12 +452,13 @@
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "R21-O01",
      "label": "Wildfire Management / Forest Service / British Columbia — tree oval",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-tree-wildfire-management",
@@ -709,12 +471,13 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "R23-O01",
      "label": "British Columbia / Forests / Wildfire Service — supplied vector",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Native vector reference",
      "family": "forests-short-wildfire",
@@ -731,12 +494,13 @@
       "block-c169f73614"
      ],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "S43-O01",
      "label": "British Columbia / Forests, Lands and Natural Resource Operations / Wildfire Service",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "wildfire-long-oval",
@@ -749,7 +513,7 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Wildlife charges reuse forestoval native vector artwork, individually fitted to observed positions; exact stitched anatomy remains approximate. Face photograph does not establish whether the oval and lower service component share a backing.",
      "blocks": [],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     }
    ]
@@ -759,11 +523,15 @@
    "name": "BC Forest Service",
    "sector": "forests",
    "description": "The Forest Service and the Ministry of Forests: tree ovals, shoulder patches, metal badges, fire-control and prevention marks.",
-   "count": 36,
+   "counts": {
+    "patches": 23,
+    "badges": 4
+   },
    "patches": [
     {
      "id": "R01-O01",
      "label": "Forest Service / BC / Airtanker Operations",
+     "collection": "patches",
      "medium": "Photographed emblem",
      "quality": "Clean vector reconstruction",
      "family": "airtanker-winged",
@@ -778,24 +546,9 @@
      "bundles": []
     },
     {
-     "id": "R10-O01",
-     "label": "Forest Service / BC / Forest Analysis and Inventory Branch",
-     "medium": "Digital emblem",
-     "quality": "Native vector reference",
-     "family": "forest-branch-strip",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/R10-O01.svg",
-     "preview": "bc-forest-service/previews/R10-O01.webp",
-     "sha256": "abd69bb2d506d7488021d031895e07e32a53e93e51dd9bfd39d28cc978b4322a",
-     "bytes": 22033,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/branch-strip.svg",
-     "limitations": "Right strip extent follows the supplied reference. It is a printed/digital strip, not evidence of a cloth patch boundary.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
      "id": "R11-O01",
      "label": "Fire Control / Forest Service / British Columbia — tree oval",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-tree-fire-control",
@@ -808,12 +561,13 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "R12-O01",
      "label": "Forest Service / British Columbia — monochrome tree oval",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "forest-tree-mono",
@@ -826,12 +580,13 @@
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "R15-O01",
      "label": "British Columbia / Forests — short-caption wildlife oval",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "forests-short",
@@ -844,12 +599,13 @@
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "R16-O01",
      "label": "BC / Forests, Lands and Natural Resource Operations — digital oval",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Clean vector reconstruction",
      "family": "ministry-long-wildlife",
@@ -865,12 +621,13 @@
       "block-c5055608bf"
      ],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "R22-O01",
      "label": "Forest Service / BC — supplied tree vector",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Native vector reference",
      "family": "forest-tree-vector",
@@ -881,16 +638,15 @@
      "bytes": 18135,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/tree-source.svg",
      "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
-     "blocks": [
-      "block-7bb0545350"
-     ],
+     "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "R24-O01",
      "label": "British Columbia / Forests — supplied wildlife vector",
+     "collection": "patches",
      "medium": "Digital emblem",
      "quality": "Native vector reference",
      "family": "forests-short",
@@ -907,12 +663,13 @@
       "block-c169f73614"
      ],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
     },
     {
      "id": "S02-O01",
      "label": "British Columbia / Department of Forests / Constable",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "forest-constable",
@@ -929,6 +686,7 @@
     {
      "id": "S04-O01",
      "label": "Forest Service / British Columbia — poster oval",
+     "collection": "patches",
      "medium": "Printed emblem",
      "quality": "Clean vector reconstruction",
      "family": "tree-poster-black",
@@ -945,6 +703,7 @@
     {
      "id": "S05-O01",
      "label": "Forest Service / British Columbia — green poster oval",
+     "collection": "patches",
      "medium": "Printed emblem",
      "quality": "Clean vector reconstruction",
      "family": "tree-poster-green",
@@ -957,12 +716,13 @@
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "S07-O01",
      "label": "British Columbia / Lands Department / Forest Service",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "lands-metal-oval",
@@ -977,24 +737,9 @@
      "bundles": []
     },
     {
-     "id": "S09-O01",
-     "label": "Put your campfires out — yellow oval",
-     "medium": "Decal",
-     "quality": "Clean vector reconstruction",
-     "family": "campfire-yellow",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S09-O01.svg",
-     "preview": "bc-forest-service/previews/S09-O01.webp",
-     "sha256": "bb47b9e6af785d5fec8de548a1534f5cdf395a4916cdb097146a90e5dce6e02b",
-     "bytes": 47086,
-     "sourceUrl": "https://drive.google.com/file/d/1DJEIwv2rOlsZ15Y1GXuiOXJh0XfTajS0/view",
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
      "id": "S10-O01",
      "label": "British Columbia / Lands Department / Forest Service — pine-bough seal",
+     "collection": "patches",
      "medium": "Printed emblem",
      "quality": "Clean vector reconstruction",
      "family": "lands-pinebough",
@@ -1014,6 +759,7 @@
     {
      "id": "S21-O01",
      "label": "Forest Service / British Columbia — tree metal oval",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "tree-metal-oval",
@@ -1032,6 +778,7 @@
     {
      "id": "S24-O04",
      "label": "Forest Service / British Columbia — light-band printed oval",
+     "collection": "patches",
      "medium": "Decal",
      "quality": "Clean vector reconstruction",
      "family": "tree-print-light",
@@ -1044,12 +791,13 @@
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified. The source decal is photographed sideways on its backing; the redraw displays its readable upright design.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "S35-O01",
      "label": "Forest Service / British Columbia — green printed decal",
+     "collection": "patches",
      "medium": "Decal",
      "quality": "Clean vector reconstruction",
      "family": "tree-decal-green",
@@ -1062,12 +810,13 @@
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "S39-O01",
      "label": "Forest Service / British Columbia — Wells Gray vessel oval",
+     "collection": "patches",
      "medium": "Painted emblem",
      "quality": "Clean vector reconstruction",
      "family": "tree-vessel",
@@ -1084,6 +833,7 @@
     {
      "id": "S42-O01",
      "label": "Forest Service tree oval — vehicle door",
+     "collection": "patches",
      "medium": "Painted emblem",
      "quality": "Clean vector reconstruction",
      "family": "tree-vehicle-white",
@@ -1096,12 +846,13 @@
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "S44-O01",
      "label": "Forest / Service — British Columbia shoulder emblem",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-shoulder",
@@ -1114,12 +865,13 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The small scene and stitched letterform widths are interpreted from a blurred screenshot.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "S45-O01",
      "label": "B.C. / Forest Service — map, tree and ungulate rectangle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-map-animal",
@@ -1136,6 +888,7 @@
     {
      "id": "S46-O01",
      "label": "Forest Service / British Columbia — white-band tree oval",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-tree-light",
@@ -1148,12 +901,13 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "S47-O01",
      "label": "Forest Service / British Columbia — green/gold tree oval",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-tree-green",
@@ -1170,6 +924,7 @@
     {
      "id": "S49-O01",
      "label": "Fire Control — detached rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "fire-control-rocker",
@@ -1186,6 +941,7 @@
     {
      "id": "S49-O02",
      "label": "British Columbia / Forest Service — crest shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-service-shield",
@@ -1200,12 +956,13 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S51-O01",
      "label": "Forest Fire / Prevention Officer — tree shield",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "forest-fire-officer-metal",
@@ -1222,104 +979,9 @@
      "bundles": []
     },
     {
-     "id": "S53-O02",
-     "label": "Don’t Drop It! / B.C. Forest Service",
-     "medium": "Decal",
-     "quality": "Clean vector reconstruction",
-     "family": "prevention-dont-drop",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S53-O02.svg",
-     "preview": "bc-forest-service/previews/S53-O02.webp",
-     "sha256": "0fce02e5027334a5687cb3eafaf9e175f365f7fc263f01355f5a18e28a750dbb",
-     "bytes": 13699,
-     "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view",
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S53-O03",
-     "label": "Don’t gamble with FIRE / B.C. Forest Service",
-     "medium": "Decal",
-     "quality": "Clean vector reconstruction",
-     "family": "prevention-dice",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S53-O03.svg",
-     "preview": "bc-forest-service/previews/S53-O03.webp",
-     "sha256": "6356067bf54428e04732ed8f41900639e5a968276face2c8836f7f352e32a2c7",
-     "bytes": 38619,
-     "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view",
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S53-O04",
-     "label": "Enjoy & Protect our Forests — prevention card",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "prevention-enjoy",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S53-O04.svg",
-     "preview": "bc-forest-service/previews/S53-O04.webp",
-     "sha256": "e88e68ef0963f787419c86026e13c44bbfd3054c4f89102f8215a887611091a5",
-     "bytes": 25992,
-     "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained. The illustrated character and foliage are a clean manual interpretation, not a facsimile of the original artist’s fine pen strokes; card perspective is removed.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S53-O05",
-     "label": "British Columbia / Forest Service — map/tree surround",
-     "medium": "Decal",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-map-tree-lettered",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S53-O05.svg",
-     "preview": "bc-forest-service/previews/S53-O05.webp",
-     "sha256": "2a9aac3f9b14f56eba24cd6a073cddb3cd8cc5cca056d0efb0f6849bf975f187",
-     "bytes": 12171,
-     "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view",
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S53-O06",
-     "label": "Reward — A Living Forest — prevention card",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "prevention-reward",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S53-O06.svg",
-     "preview": "bc-forest-service/previews/S53-O06.webp",
-     "sha256": "7fbba757ef371666745b410f6dcb19a4d664783ed19f0253af872bcee6dbccbb",
-     "bytes": 43781,
-     "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained. The illustrated character and foliage are a clean manual interpretation, not a facsimile of the original artist’s fine pen strokes; card perspective is removed.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S53-O07",
-     "label": "Map/tree emblem — Enjoy & Protect card corner",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-map-tree-small",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S53-O07.svg",
-     "preview": "bc-forest-service/previews/S53-O07.webp",
-     "sha256": "df208e3c55e93c630740ec571b0ae0e581f8dac026a103d1e384e405f07faae0",
-     "bytes": 3253,
-     "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view",
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
      "id": "S54-O01",
      "label": "Forest Service / BC — cream-band poster oval",
+     "collection": "patches",
      "medium": "Printed emblem",
      "quality": "Clean vector reconstruction",
      "family": "tree-poster-cream",
@@ -1332,28 +994,13 @@
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
-    },
-    {
-     "id": "S55-O01",
-     "label": "British Columbia / Lookout / Forest Service — triangular sign",
-     "medium": "Sign",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-lookout-triangle",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S55-O01.svg",
-     "preview": "bc-forest-service/previews/S55-O01.webp",
-     "sha256": "cf38871253576acad3a0d60a17854fbb976689074250322c27e2afe70d2ca47f",
-     "bytes": 15833,
-     "sourceUrl": "https://drive.google.com/file/d/1DrbVEYA2kHdCRvXT5OPJK-_ClY23t-mZ/view",
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
     },
     {
      "id": "S56-O52",
      "label": "Forest / Service — British Columbia shoulder emblem",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-shoulder",
@@ -1366,12 +1013,13 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Shared shoulder-family geometry is fitted to this separate board occurrence, with its own native crop, palette and caption positions. Tiny stitching details cannot be established at this resolution.",
      "blocks": [],
      "bundles": [
-      "paths-e237f81c47"
+      "paths-a97bef7ec1"
      ]
     },
     {
      "id": "S58-O05",
      "label": "British Columbia / Ministry of Forests — wildlife oval",
+     "collection": "patches",
      "medium": "Printed emblem",
      "quality": "Clean vector reconstruction",
      "family": "ministry-wildlife-oval",
@@ -1387,83 +1035,8 @@
       "block-c5055608bf"
      ],
      "bundles": [
-      "paths-9908a85513"
+      "paths-9538043afe"
      ]
-    }
-   ]
-  },
-  {
-   "id": "forest-practices-board",
-   "name": "Forest Practices Board",
-   "sector": "forests",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "S58-O06",
-     "label": "Forest Practices Board",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-practices-board",
-     "affiliation": "Other",
-     "svg": "forest-practices-board/S58-O06.svg",
-     "preview": "forest-practices-board/previews/S58-O06.webp",
-     "sha256": "725f406ac58728d782fdc2322240d06d5e78c5b484e30dba18c080b78f699649",
-     "bytes": 8402,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
-   "id": "managed-forest-council",
-   "name": "Managed Forest Council",
-   "sector": "forests",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "S58-O07",
-     "label": "Managed Forest Council",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "managed-forest-council",
-     "affiliation": "Other",
-     "svg": "managed-forest-council/S58-O07.svg",
-     "preview": "managed-forest-council/previews/S58-O07.webp",
-     "sha256": "16cda64b26acc73b746faca42fb5e16e33c162c7b931e564af38211cd0579cc8",
-     "bytes": 9415,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
-   "id": "forest-enhancement-society",
-   "name": "Forest Enhancement Society of BC",
-   "sector": "forests",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "S58-O09",
-     "label": "Forest Enhancement Society of BC / FESBC",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "fesbc",
-     "affiliation": "Other",
-     "svg": "forest-enhancement-society/S58-O09.svg",
-     "preview": "forest-enhancement-society/previews/S58-O09.webp",
-     "sha256": "3da026327bc55ae524457ea76c2f23f8a7b389538feca8f831bdba650f78367e",
-     "bytes": 16726,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained.",
-     "blocks": [],
-     "bundles": []
     }
    ]
   },
@@ -1472,11 +1045,15 @@
    "name": "Canadian Forestry Association",
    "sector": "forests",
    "description": "Junior Forest Warden badge; an association, not a ministry patch.",
-   "count": 1,
+   "counts": {
+    "patches": 0,
+    "badges": 1
+   },
    "patches": [
     {
      "id": "S01-O01",
      "label": "Junior Forest Warden / Canadian Forestry Assn.",
+     "collection": "badges",
      "medium": "Leather badge",
      "quality": "Clean vector reconstruction",
      "family": "junior-warden",
@@ -1497,11 +1074,15 @@
    "name": "BC Parks",
    "sector": "environment",
    "description": "Parks Branch and the ministries that held it: arches, shields, rockers and ranger badges.",
-   "count": 36,
+   "counts": {
+    "patches": 27,
+    "badges": 9
+   },
    "patches": [
     {
      "id": "R19-O01",
      "label": "Forest Service / British Columbia / Parks — tree oval",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-parks-oval",
@@ -1518,6 +1099,7 @@
     {
      "id": "S11-O01",
      "label": "British Columbia / Park Ranger — 174",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "ranger-metal-early",
@@ -1534,12 +1116,13 @@
       "plateforge-historical-arms-2d24b22bc5"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "S12-O01",
      "label": "British Columbia / Park Ranger — 229",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "ranger-metal-early",
@@ -1556,12 +1139,13 @@
       "plateforge-historical-arms-2d24b22bc5"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "S13-O01",
      "label": "British Columbia / Parks — simplified arms cap badge",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "parks-cap-simple",
@@ -1579,12 +1163,13 @@
       "plateforge-historical-arms-2d24b22bc5"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "S14-O01",
      "label": "British Columbia / Park Ranger — 672",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "ranger-metal-green-inset",
@@ -1601,12 +1186,13 @@
       "plateforge-historical-arms-2d24b22bc5"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "S15-O01",
      "label": "British Columbia / Parks Branch — dogwood cap badge",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "parks-cap-dogwood",
@@ -1626,6 +1212,7 @@
     {
      "id": "S17-O01",
      "label": "British Columbia / Park Ranger — 266",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "ranger-metal-early",
@@ -1642,12 +1229,13 @@
       "plateforge-historical-arms-2d24b22bc5"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "S18-O01",
      "label": "British Columbia / Park Ranger — 1229",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "ranger-metal-green-full",
@@ -1664,12 +1252,13 @@
       "uploaded-bc-modern-arms-da5d14bfd0"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S19-O01",
      "label": "British Columbia / Parks — full arms cap badge",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "parks-cap-full",
@@ -1687,12 +1276,13 @@
       "uploaded-bc-modern-arms-da5d14bfd0"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S20-O01",
      "label": "British Columbia / Park Ranger — 120",
+     "collection": "badges",
      "medium": "Metal badge",
      "quality": "Clean vector reconstruction",
      "family": "ranger-metal-early",
@@ -1709,12 +1299,13 @@
       "plateforge-historical-arms-2d24b22bc5"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "S25-O01",
      "label": "British Columbia / Parks Branch — elk roundel",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-elk",
@@ -1731,6 +1322,7 @@
     {
      "id": "S25-O02",
      "label": "Parks Branch — detached rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "parks-branch-rocker",
@@ -1747,6 +1339,7 @@
     {
      "id": "S25-O03",
      "label": "British Columbia / Ministry of Lands, Parks and Housing",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-lands-housing-shield",
@@ -1763,12 +1356,13 @@
       "ministry-of-2a474cee20"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S25-O04",
      "label": "Parks / Outdoor Recreation — detached rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "parks-outdoor-rocker",
@@ -1785,6 +1379,7 @@
     {
      "id": "S25-O05",
      "label": "British Columbia / Ministry of Environment and Parks",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-environment-shield",
@@ -1801,12 +1396,13 @@
       "ministry-of-2a474cee20"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S25-O06",
      "label": "British Columbia / Ministry of Parks",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-ministry-shield",
@@ -1823,12 +1419,13 @@
       "ministry-of-5cfc02dee5"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S26-O01",
      "label": "Forest Service / British Columbia / Parks — tree oval",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "forest-parks-oval",
@@ -1845,6 +1442,7 @@
     {
      "id": "S27-O01",
      "label": "British Columbia / Parks — large scenic arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-scenic-large",
@@ -1863,6 +1461,7 @@
     {
      "id": "S27-O02",
      "label": "Ranger — detached tab",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "parks-ranger-tab",
@@ -1879,6 +1478,7 @@
     {
      "id": "S27-O03",
      "label": "British Columbia / Parks — small scenic arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-scenic-small",
@@ -1897,6 +1497,7 @@
     {
      "id": "S27-O04",
      "label": "British Columbia / Parks / Ranger — integrated arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-scenic-integrated-ranger",
@@ -1913,6 +1514,7 @@
     {
      "id": "S29-O01",
      "label": "BC / Parks Branch — beige semicircle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-branch-beige",
@@ -1931,6 +1533,7 @@
     {
      "id": "S29-O02",
      "label": "BC / Parks Branch — yellow semicircle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-branch-yellow",
@@ -1947,6 +1550,7 @@
     {
      "id": "S29-O03",
      "label": "Parks — hikers, mountains and flowers triangle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-hikers-triangle",
@@ -1965,6 +1569,7 @@
     {
      "id": "S29-O04",
      "label": "BC / Parks Branch — dark semicircle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-branch-dark",
@@ -1981,6 +1586,7 @@
     {
      "id": "S30-O01",
      "label": "BC Parks flag — rounded square",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-flag-square",
@@ -1997,6 +1603,7 @@
     {
      "id": "S30-O02",
      "label": "BC Parks flag — semicircle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-flag-semicircle",
@@ -2013,6 +1620,7 @@
     {
      "id": "S30-O03",
      "label": "British Columbia / Ministry of Lands and Parks",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-lands-shield",
@@ -2029,12 +1637,13 @@
       "ministry-of-5cfc02dee5"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S30-O04",
      "label": "British Columbia / Parks — scenic arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-scenic-large",
@@ -2053,6 +1662,7 @@
     {
      "id": "S31-O01",
      "label": "British Columbia / Department of Recreation and Conservation / Parks",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-dogwood-arch",
@@ -2069,6 +1679,7 @@
     {
      "id": "S56-O50",
      "label": "British Columbia / Parks — scenic arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-scenic-large",
@@ -2087,6 +1698,7 @@
     {
      "id": "S56-O51",
      "label": "Parks — hikers triangle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-hikers-triangle",
@@ -2105,6 +1717,7 @@
     {
      "id": "S56-O53",
      "label": "BC / Parks Branch — beige semicircle",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-branch-beige",
@@ -2123,6 +1736,7 @@
     {
      "id": "S56-O54",
      "label": "Parks / Outdoor Recreation — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "parks-outdoor-rocker",
@@ -2139,6 +1753,7 @@
     {
      "id": "S56-O55",
      "label": "Parks Branch — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "parks-branch-rocker",
@@ -2155,6 +1770,7 @@
     {
      "id": "S56-O56",
      "label": "BC / Ministry of Lands, Parks and Housing — white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "parks-lands-housing-shield",
@@ -2171,7 +1787,7 @@
       "ministry-of-15f6331b36"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     }
    ]
@@ -2181,11 +1797,15 @@
    "name": "Conservation Officer Service",
    "sector": "environment",
    "description": "Conservation Officer shoulder, cap and blazer emblems, rockers and the 2005 centennial tabs.",
-   "count": 23,
+   "counts": {
+    "patches": 23,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "MC19-O02",
      "label": "Conservation Officer — separate olive lower rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-wildlife-lower-role-rocker",
@@ -2202,6 +1822,7 @@
     {
      "id": "MC20-O02",
      "label": "Conservation Officer — separate green/gold lower rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-wildlife-lower-role-rocker",
@@ -2218,6 +1839,7 @@
     {
      "id": "MC27-O01",
      "label": "Conservation Officer / British Columbia / Ministry of Environment — integrated compact crest shield (1984 source edition)",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-compact-integrated",
@@ -2232,12 +1854,13 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "MC28-O01",
      "label": "Conservation Officer / British Columbia / Ministry of Environment and Parks — integrated compact crest shield (1986 source edition)",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-compact-integrated",
@@ -2252,12 +1875,13 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "MC29-O01",
      "label": "Conservation Officer / British Columbia / Ministry of Environment — narrow footer edition (c.1991 source edition)",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-compact-integrated",
@@ -2272,12 +1896,13 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "MC30-O01",
      "label": "Conservation Officer / BC Environment — small 1992 source edition",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-compact-integrated",
@@ -2292,12 +1917,13 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "MC31-O01",
      "label": "British Columbia / Environment / Conservation Officer — tan cap crest",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-environment-cap-hourglass-v1",
@@ -2310,12 +1936,13 @@
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The visible framed historical achievement uses the selected native historical component; tiny original crest details cannot be authenticated.",
      "blocks": [],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "MC31-O02",
      "label": "Conservation Officer / British Columbia / Ministry of Enviroment — spelling-error cap edition",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-compact-integrated-1984-v1",
@@ -2330,12 +1957,13 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "MC31-O03",
      "label": "Conservation Officer / British Columbia / Ministry of Environment — navy cap edition",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-compact-integrated-1984-v1",
@@ -2350,12 +1978,13 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "MC31-O04",
      "label": "Province of / British / Columbia / Conservation Officer — burgundy cap crest",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-province-cap-waisted-v1",
@@ -2370,12 +1999,13 @@
       "plateforge-historical-arms-2e9276f1bc"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "MC31-O05",
      "label": "Conservation Officer / British Columbia / Ministry of Environment — direct cap embroidery",
+     "collection": "patches",
      "medium": "Cloth embroidery",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-cap-direct-embroidery-v1",
@@ -2390,12 +2020,13 @@
       "plateforge-historical-arms-2e9276f1bc"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "MC31-O06",
      "label": "Conservation Officer / British Columbia — broad modern-achievement cap crest",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-broad-cap-modern-1993-v1",
@@ -2410,12 +2041,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "MC32-O01",
      "label": "Conservation Officer / British Columbia / Environment — earlier blazer emblem",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-blazer-historical-achievement-v1",
@@ -2430,12 +2062,13 @@
       "conservation-officer-7c4e576644"
      ],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "MC33-O01",
      "label": "Conservation Officer / British Columbia — modern-achievement blazer emblem",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-blazer-modern-achievement-v1",
@@ -2451,12 +2084,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "MC34-O01",
      "label": "Conservation Officer / British / Columbia — flat-bottom prototype",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-unapproved-prototype-1993-v1",
@@ -2471,12 +2105,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "MC36-O01",
      "label": "Chief Conservation Officer / British Columbia — gold-trim shoulder",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "conservation-concave-white",
@@ -2491,12 +2126,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "MC39-O01",
      "label": "Conservation Officer Service / British Columbia — blue 2004 shoulder",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Vector reconstruction with supplied artwork",
      "family": "bc-co-service-2004-shoulder-v1",
@@ -2516,6 +2152,7 @@
     {
      "id": "MC39-O02",
      "label": "Centennial / 1905–2005 — blue detached tab",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-centennial-tab-2005-v1",
@@ -2532,6 +2169,7 @@
     {
      "id": "MC40-O01",
      "label": "Conservation Officer Service / British Columbia — chief gold 2004 shoulder",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Vector reconstruction with supplied artwork",
      "family": "bc-co-service-2004-shoulder-v1",
@@ -2551,6 +2189,7 @@
     {
      "id": "MC40-O02",
      "label": "Centennial / 1905–2005 — gold detached tab",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "bc-co-centennial-tab-2005-v1",
@@ -2567,6 +2206,7 @@
     {
      "id": "MC41-O01",
      "label": "Conservation Officer Service — scalloped cap / sweater breast crest",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Vector reconstruction with supplied artwork",
      "family": "bc-co-service-2004-cap-breast-v1",
@@ -2585,6 +2225,7 @@
     {
      "id": "S56-O39",
      "label": "Conservation Officer / British Columbia — crest shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "conservation-crest",
@@ -2599,12 +2240,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O40",
      "label": "Conservation Officer — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "conservation-white-rocker",
@@ -2625,11 +2267,15 @@
    "name": "Game Commission, Fish & Game and Fish & Wildlife Branch",
    "sector": "environment",
    "description": "The game wardens' predecessors of the Conservation Officer Service: felt flashes, role caps and branch shields.",
-   "count": 22,
+   "counts": {
+    "patches": 22,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "MC03-O01",
      "label": "Predatory-control triangular wolf patch — limited evidence study",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Limited-evidence clean vector study",
      "family": "moosecop-predator-triangle-study-v1",
@@ -2646,6 +2292,7 @@
     {
      "id": "MC05-O01",
      "label": "British Columbia / Game / Warden — green felt",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-game-role-cap-v1",
@@ -2664,6 +2311,7 @@
     {
      "id": "MC06-O01",
      "label": "British Columbia / Game / Commissioner — green felt",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-game-role-cap-v1",
@@ -2682,6 +2330,7 @@
     {
      "id": "MC07-O01",
      "label": "British Columbia / Game / Inspector — green felt",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-game-role-cap-v1",
@@ -2700,6 +2349,7 @@
     {
      "id": "MC09-O01",
      "label": "British Columbia / Game Commission — detached felt flash",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-early-two-line-flash-v1",
@@ -2716,6 +2366,7 @@
     {
      "id": "MC09-O02",
      "label": "Wildlife Protection / Division — notched felt flash",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-division-notch-flash-v1",
@@ -2732,6 +2383,7 @@
     {
      "id": "MC11-O01",
      "label": "B.C. Game Dept. — rectangular felt title",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-game-dept-rectangle-v1",
@@ -2748,6 +2400,7 @@
     {
      "id": "MC11-O02",
      "label": "British Columbia / Fish & Game Branch — rectangular title",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-fish-game-rectangle-v1",
@@ -2764,6 +2417,7 @@
     {
      "id": "MC12-O01",
      "label": "British Columbia / Fish & Game Branch — old felt flash",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-early-two-line-flash-v1",
@@ -2780,6 +2434,7 @@
     {
      "id": "MC13-O02",
      "label": "Predator Control / Division — notched felt flash",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-division-notch-flash-v1",
@@ -2796,6 +2451,7 @@
     {
      "id": "MC14-O01",
      "label": "British Columbia / Fish & Game Branch — gold-border cloth flash",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-early-two-line-flash-v1",
@@ -2812,6 +2468,7 @@
     {
      "id": "MC15-O01",
      "label": "Inspector — detached rectangular felt tab",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "moosecop-inspector-rectangle-v1",
@@ -2828,6 +2485,7 @@
     {
      "id": "MC16-O01",
      "label": "British Columbia / Fish & Game Branch — navy felt shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-game-wildlife-branch-shield",
@@ -2844,6 +2502,7 @@
     {
      "id": "MC17-O01",
      "label": "British Columbia / Fish & Game Branch — green cloth shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-game-wildlife-branch-shield",
@@ -2860,6 +2519,7 @@
     {
      "id": "MC18-O01",
      "label": "British Columbia / Fish & Wildlife Branch — navy felt shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-game-wildlife-branch-shield",
@@ -2876,6 +2536,7 @@
     {
      "id": "MC19-O01",
      "label": "British Columbia / Fish & Wildlife Branch — dark green cloth shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-game-wildlife-branch-shield",
@@ -2892,6 +2553,7 @@
     {
      "id": "MC20-O01",
      "label": "British Columbia / Fish & Wildlife Branch — pale blue cloth shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-game-wildlife-branch-shield",
@@ -2908,6 +2570,7 @@
     {
      "id": "MC22-O01",
      "label": "British Columbia / Fish & Wildlife Branch — green field and orange/gold merrow",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-game-wildlife-branch-shield",
@@ -2924,6 +2587,7 @@
     {
      "id": "MC23-O01",
      "label": "British Columbia / Fish & Wildlife Branch — pale green cloth shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-fish-game-wildlife-branch-shield",
@@ -2940,6 +2604,7 @@
     {
      "id": "MC24-O01",
      "label": "BC Fish & Game Branch — historical blazer embroidery",
+     "collection": "patches",
      "medium": "Cloth embroidery",
      "quality": "Clean vector reconstruction",
      "family": "bc-historical-blazer-crest",
@@ -2952,12 +2617,13 @@
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. The native Plateforge1917-late Type3 historical achievement is reused without a modern helmeted achievement. This is historical artwork reconstruction, not a verified production engraving. Fine red/green embroidered accents in the reference are simplified to gold achievement linework and a green branch ribbon; their tiny exact painted distribution is not recovered. The rectangular navy field is a presentation of the photographed blazer cloth; a separate rectangular patch cut is not asserted.",
      "blocks": [],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "MC25-O01",
      "label": "BC Fish & Wildlife Branch — historical oval blazer crest",
+     "collection": "patches",
      "medium": "Cloth embroidery",
      "quality": "Clean vector reconstruction",
      "family": "bc-historical-blazer-crest",
@@ -2970,12 +2636,13 @@
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. The native Plateforge1917-late Type3 historical achievement is reused without a modern helmeted achievement. This is historical artwork reconstruction, not a verified production engraving. Fine red/green embroidered accents in the reference are simplified to gold achievement linework and a green branch ribbon; their tiny exact painted distribution is not recovered.",
      "blocks": [],
      "bundles": [
-      "paths-d69f02d52f"
+      "paths-93ff36b976"
      ]
     },
     {
      "id": "S56-O42",
      "label": "British Columbia / Fish & Wildlife / Branch — green shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "fish-wildlife-green",
@@ -2996,11 +2663,15 @@
    "name": "Ministry of Environment",
    "sector": "environment",
    "description": null,
-   "count": 1,
+   "counts": {
+    "patches": 1,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O41",
      "label": "BC / Ministry of Environment — white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "environment-white-shield",
@@ -3016,33 +2687,8 @@
       "british-columbia-45ce8c4409"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
-    }
-   ]
-  },
-  {
-   "id": "creston-valley-wma",
-   "name": "Creston Valley Wildlife Management Area",
-   "sector": "environment",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "S58-O08",
-     "label": "Creston Valley Wildlife Management Area",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "creston-valley",
-     "affiliation": "Other",
-     "svg": "creston-valley-wma/S58-O08.svg",
-     "preview": "creston-valley-wma/previews/S58-O08.webp",
-     "sha256": "60b9ee4250e5534de841ca10b47c7346395308015715a399b944d3a8125804f2",
-     "bytes": 9356,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained. A flat neutral field replaces the photograph behind the source’s white lettering, to keep the reversed logo visible.",
-     "blocks": [],
-     "bundles": []
     }
    ]
   },
@@ -3051,11 +2697,15 @@
    "name": "BC Sheriff Service",
    "sector": "justice",
    "description": "Sheriff and Deputy Sheriff shields and rockers.",
-   "count": 8,
+   "counts": {
+    "patches": 8,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O01",
      "label": "British Columbia / Sheriff — crest shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "sheriff-crest-1",
@@ -3070,12 +2720,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O02",
      "label": "Sheriff / British Columbia — crest shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "sheriff-crest-2",
@@ -3091,12 +2742,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O03",
      "label": "Deputy Sheriff / BC — crest shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "deputy-sheriff-crest-1",
@@ -3112,12 +2764,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O04",
      "label": "Deputy Sheriff / BC — rectangular crest",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "deputy-sheriff-rectangle",
@@ -3133,12 +2786,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O05",
      "label": "Deputy Sheriff / BC — crest shield, second variant",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "deputy-sheriff-crest-2",
@@ -3154,12 +2808,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O06",
      "label": "Deputy Sheriff — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "deputy-sheriff-white-rocker",
@@ -3176,6 +2831,7 @@
     {
      "id": "S56-O08",
      "label": "Deputy Sheriff — gold rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "deputy-sheriff-gold-rocker",
@@ -3192,6 +2848,7 @@
     {
      "id": "S56-O37",
      "label": "British Columbia / Sheriffs — gold arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "sheriffs-gold-arch",
@@ -3212,11 +2869,15 @@
    "name": "BC Corrections",
    "sector": "justice",
    "description": "Corrections Service shields, crests and rockers.",
-   "count": 8,
+   "counts": {
+    "patches": 8,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O25",
      "label": "Corrections / British Columbia — crest shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "corrections-crest",
@@ -3231,12 +2892,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O26",
      "label": "Corrections — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "corrections-white-rocker",
@@ -3253,6 +2915,7 @@
     {
      "id": "S56-O27",
      "label": "BC / Ministry of Attorney General — white corrections shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "corrections-white-shield",
@@ -3269,12 +2932,13 @@
       "ministry-of-15f6331b36"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O29",
      "label": "Corrections — gold rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "corrections-gold-rocker",
@@ -3293,6 +2957,7 @@
     {
      "id": "S56-O30",
      "label": "BC / Ministry of Attorney General — gold corrections shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "corrections-gold-shield",
@@ -3309,12 +2974,13 @@
       "ministry-of-1f10c2ae1f"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O31",
      "label": "British Columbia / Corrections Service — wide crest emblem",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "corrections-wide-crest",
@@ -3331,6 +2997,7 @@
     {
      "id": "S56-O32",
      "label": "British Columbia / Corrections Service — gold cap-shaped emblem",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "corrections-cap-gold",
@@ -3347,6 +3014,7 @@
     {
      "id": "S56-O62",
      "label": "Corrections — separate green/gold rocker above Attorney General shield",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "corrections-green-gold-rocker",
@@ -3369,11 +3037,15 @@
    "name": "B.C.G.S.",
    "sector": "justice",
    "description": "Gold arches lettered B.C.G.S., one for its camps and one for the Alouette River Unit. The atlas does not spell the initials out.",
-   "count": 2,
+   "counts": {
+    "patches": 2,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O33",
      "label": "Alouette River / Unit / B.C.G.S. — gold arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bcgs-alouette-river",
@@ -3390,6 +3062,7 @@
     {
      "id": "S56-O34",
      "label": "B.C.G.S. / Camps — gold arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bcgs-camps",
@@ -3410,11 +3083,15 @@
    "name": "Ministry of Attorney General",
    "sector": "justice",
    "description": null,
-   "count": 4,
+   "counts": {
+    "patches": 4,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O07",
      "label": "BC / Ministry of Attorney General — white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "attorney-general-white-1",
@@ -3430,12 +3107,13 @@
       "british-columbia-45ce8c4409"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O09",
      "label": "BC / Ministry of Attorney General — gold shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "attorney-general-gold",
@@ -3452,12 +3130,13 @@
       "ministry-of-1f10c2ae1f"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O10",
      "label": "BC / Ministry of Attorney General — lower white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "attorney-general-white-2",
@@ -3474,12 +3153,13 @@
       "ministry-of-15f6331b36"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O28",
      "label": "British Columbia / Ministry of Attorney General — green/gold shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "attorney-general-green-gold",
@@ -3496,7 +3176,7 @@
       "ministry-of-1f10c2ae1f"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     }
    ]
@@ -3506,11 +3186,15 @@
    "name": "BC Coroners Service",
    "sector": "justice",
    "description": null,
-   "count": 2,
+   "counts": {
+    "patches": 2,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O44",
      "label": "British Columbia / Coroners Service — gold shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "coroners-gold-shield",
@@ -3525,12 +3209,13 @@
       "bc-provincial-mark-356f812fb6"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "UP01-O01",
      "label": "Coroners Department — pointed shoulder patch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "coroners-dept-pointed-shoulder",
@@ -3545,7 +3230,7 @@
       "bc-provincial-mark-356f812fb6"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     }
    ]
@@ -3555,11 +3240,15 @@
    "name": "Fire Commissioner",
    "sector": "justice",
    "description": null,
-   "count": 1,
+   "counts": {
+    "patches": 1,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O43",
      "label": "Fire Commissioner / British Columbia — Maltese cross crest",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "fire-commissioner-maltese",
@@ -3574,7 +3263,7 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     }
    ]
@@ -3584,11 +3273,15 @@
    "name": "Legislative Security",
    "sector": "justice",
    "description": null,
-   "count": 1,
+   "counts": {
+    "patches": 1,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O45",
      "label": "Legislative Security / British Columbia — white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "legislative-security",
@@ -3603,7 +3296,7 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     }
    ]
@@ -3613,11 +3306,15 @@
    "name": "Justice Institute of British Columbia",
    "sector": "justice",
    "description": null,
-   "count": 1,
+   "counts": {
+    "patches": 1,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O46",
      "label": "Justice Institute / British Columbia — white fan shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "justice-institute-fan",
@@ -3638,11 +3335,15 @@
    "name": "Highways and Motor Vehicles",
    "sector": "transportation",
    "description": "Highway Patrol, the transportation ministries' shields, Motor Vehicle Inspectors, Weighmasters and Traffic Officers.",
-   "count": 11,
+   "counts": {
+    "patches": 11,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O12",
      "label": "Motor Vehicle Inspector / British Columbia — crest shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "motor-inspector-crest",
@@ -3657,12 +3358,13 @@
       "uploaded-bc-modern-arms-8491a6243c"
      ],
      "bundles": [
-      "paths-7e2533fa13"
+      "paths-73e0faed1f"
      ]
     },
     {
      "id": "S56-O13",
      "label": "Highway Patrol — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "highway-patrol-white-rocker",
@@ -3679,6 +3381,7 @@
     {
      "id": "S56-O14",
      "label": "BC / Ministry of Transportation and Highways — white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "highways-white-1",
@@ -3697,12 +3400,13 @@
       "transportation-031ef50c63"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O15",
      "label": "M.V. Inspector — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "mv-inspector-white-rocker",
@@ -3719,6 +3423,7 @@
     {
      "id": "S56-O16",
      "label": "BC / Ministry of Transportation and Highways — second white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "highways-white-2",
@@ -3737,12 +3442,13 @@
       "transportation-031ef50c63"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O17",
      "label": "Weighmaster — white rocker",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "weighmaster-white-rocker",
@@ -3759,6 +3465,7 @@
     {
      "id": "S56-O18",
      "label": "BC / Transportation, Communications and Highways — white shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "highways-white-3",
@@ -3775,12 +3482,13 @@
       "british-columbia-45ce8c4409"
      ],
      "bundles": [
-      "paths-dc640ea455"
+      "paths-a31172d96e"
      ]
     },
     {
      "id": "S56-O19",
      "label": "Enforcement of Highways / Patrol — gold bordered badge",
+     "collection": "patches",
      "medium": "Cloth rocker",
      "quality": "Clean vector reconstruction",
      "family": "highway-enforcement-rocker",
@@ -3797,6 +3505,7 @@
     {
      "id": "S56-O20",
      "label": "British Columbia / Highways / Patrol — green-edged gold shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "highway-patrol",
@@ -3813,6 +3522,7 @@
     {
      "id": "S56-O47",
      "label": "British Columbia / Traffic Officers — blue roundel",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "traffic-officers-roundel",
@@ -3829,6 +3539,7 @@
     {
      "id": "S56-O48",
      "label": "British Columbia / Motor Vehicles — wide crest emblem",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "motor-vehicles-wide",
@@ -3845,193 +3556,19 @@
    ]
   },
   {
-   "id": "bc-transit",
-   "name": "BC Transit",
-   "sector": "transportation",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "P07-O01",
-     "label": "BC Transit — wordmark and flag",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-transit-logo",
-     "affiliation": "Other",
-     "svg": "bc-transit/P07-O01.svg",
-     "preview": "bc-transit/previews/P07-O01.webp",
-     "sha256": "ae2ab8a1629e8ff4894b13af4e20a17e1a61e69fa795d6111e43fc5b00885488",
-     "bytes": 11447,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/research/identity/bc-transit/bc-transit-flag-horizontal-reference.jpg",
-     "limitations": "The native Spirit of BC flag is reused. BC Transit lettering is newly typeset; exact font and small flag clearances are approximate.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
-   "id": "icbc",
-   "name": "ICBC",
-   "sector": "transportation",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "P08-O01",
-     "label": "ICBC — historical symbol drawing",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "icbc-symbol",
-     "affiliation": "Other",
-     "svg": "icbc/P08-O01.svg",
-     "preview": "icbc/previews/P08-O01.webp",
-     "sha256": "d814d8290b92ce8661b97aa5a86cf1b66911bf4b85774f1b87d99aec8bb75a73",
-     "bytes": 19674,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/research/identity/icbc/cipo-374886-original-drawing.png",
-     "limitations": "The published patent drawing is rebuilt using smooth native PofBC research geometry and regular hatch lines. The hatch spacing and tiny intersections are approximate; no original production colours are inferred.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
    "id": "bc-hydro",
    "name": "BC Hydro",
    "sector": "crown",
-   "description": "Hydro Patrol and Security patches, and the current BC Hydro identity.",
-   "count": 10,
+   "description": "Hydro Patrol and Hydro Security patches.",
+   "counts": {
+    "patches": 2,
+    "badges": 0
+   },
    "patches": [
-    {
-     "id": "P11-O01",
-     "label": "BC Hydro / Power smart — colour",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O01.svg",
-     "preview": "bc-hydro/previews/P11-O01.webp",
-     "sha256": "57a3c20352e9aa81641174ed3c9da38a901447fda10cd99839a2564015e57d1d",
-     "bytes": 27881,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P11-O02",
-     "label": "BC Hydro / Power smart — black",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O02.svg",
-     "preview": "bc-hydro/previews/P11-O02.webp",
-     "sha256": "5d047d6749593b2e7e36b0d1fc583ccdd0ae2732134e1bc1c89747a2c03b479d",
-     "bytes": 27872,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P11-O03",
-     "label": "BC Hydro / Power smart — reverse",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O03.svg",
-     "preview": "bc-hydro/previews/P11-O03.webp",
-     "sha256": "7ae9e4e1cbc79a71605496115409a926a6f9d0ef3129b9734f7b10eb0aeb524c",
-     "bytes": 27896,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P11-O04",
-     "label": "BC Hydro — without tagline",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O04.svg",
-     "preview": "bc-hydro/previews/P11-O04.webp",
-     "sha256": "2e12043e674fab6a3c0aa96801136d160daa41580ec1a33b7d09606d1c55dfb2",
-     "bytes": 24445,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P11-O05",
-     "label": "BC Hydro symbol — no border",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O05.svg",
-     "preview": "bc-hydro/previews/P11-O05.webp",
-     "sha256": "51551025c38052742376c260874239533723122f5c9b4f321495027a0361456f",
-     "bytes": 26233,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P11-O06",
-     "label": "BC Hydro symbol — white border",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O06.svg",
-     "preview": "bc-hydro/previews/P11-O06.webp",
-     "sha256": "efec3f98d676d314225ed6f670176a5c54d732ff7bfe2d846087580b54d85c61",
-     "bytes": 26399,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P11-O07",
-     "label": "BC Hydro symbol — lower large example",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O07.svg",
-     "preview": "bc-hydro/previews/P11-O07.webp",
-     "sha256": "03a435765c1c550b8b43c14b326d8d8873edeba3325ffbc703a10aaed616f2cf",
-     "bytes": 27088,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P11-O08",
-     "label": "BC Hydro symbol — lower small example",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-hydro-current",
-     "affiliation": "Other",
-     "svg": "bc-hydro/P11-O08.svg",
-     "preview": "bc-hydro/previews/P11-O08.webp",
-     "sha256": "260c77109d8115e9329e51bdbad809a75289cf7df2d35aae5306dab6e958fc59",
-     "bytes": 26357,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/hydro/brand-guidelines-2020-logo.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
     {
      "id": "S56-O21",
      "label": "B.C. Hydro / Security — shield with round monogram",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "hydro-security-shield",
@@ -4048,6 +3585,7 @@
     {
      "id": "S56-O22",
      "label": "B.C. / Hydro / Patrol — roof-shaped badge",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "hydro-patrol-badge",
@@ -4064,90 +3602,19 @@
    ]
   },
   {
-   "id": "land-title-and-survey",
-   "name": "Land Title & Survey",
-   "sector": "lands",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "S58-O10",
-     "label": "bc Land / Title & Survey",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "land-title-survey",
-     "affiliation": "Other",
-     "svg": "land-title-and-survey/S58-O10.svg",
-     "preview": "land-title-and-survey/previews/S58-O10.webp",
-     "sha256": "8f056f21dd58ec1be87aa7b388fe0c9fc82da51e8b36f025ff617a710a162df9",
-     "bytes": 6902,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
-   "id": "land-surveyors",
-   "name": "Association of British Columbia Land Surveyors",
-   "sector": "lands",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "S58-O12",
-     "label": "Association of British Columbia Land Surveyors",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "land-surveyors",
-     "affiliation": "Other",
-     "svg": "land-surveyors/S58-O12.svg",
-     "preview": "land-surveyors/previews/S58-O12.webp",
-     "sha256": "1a47126e5828948adc380f8f9cf489d77f8a3095b67940152bf4229b9a64983d",
-     "bytes": 17852,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
-   "id": "icis",
-   "name": "Integrated Cadastral Information Society",
-   "sector": "lands",
-   "description": null,
-   "count": 1,
-   "patches": [
-    {
-     "id": "S58-O11",
-     "label": "Integrated Cadastral Information Society",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "icis",
-     "affiliation": "Other",
-     "svg": "icis/S58-O11.svg",
-     "preview": "icis/previews/S58-O11.webp",
-     "sha256": "cc089c84b58e788f09e1dd794515c57ceb93c1a30f322d9515f5c43461507948",
-     "bytes": 11430,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained. A flat neutral field replaces the photograph behind the source’s white lettering, to keep the reversed logo visible.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
    "id": "ubc",
    "name": "University of British Columbia",
    "sector": "institutions",
    "description": null,
-   "count": 3,
+   "counts": {
+    "patches": 3,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O57",
      "label": "University / British Columbia / Patrol — upper shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "ubc-patrol-upper",
@@ -4164,6 +3631,7 @@
     {
      "id": "S56-O58",
      "label": "University / British Columbia / Patrol — lower arch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "ubc-patrol-lower",
@@ -4180,6 +3648,7 @@
     {
      "id": "S56-O59",
      "label": "Campus Security / UBC — shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "ubc-campus-security",
@@ -4200,11 +3669,15 @@
    "name": "University of Victoria",
    "sector": "institutions",
    "description": null,
-   "count": 2,
+   "counts": {
+    "patches": 2,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O60",
      "label": "University of Victoria / Traffic and Security — shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "uvic-traffic",
@@ -4221,6 +3694,7 @@
     {
      "id": "S56-O61",
      "label": "University of Victoria — wide crest patch",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "uvic-wide",
@@ -4241,11 +3715,15 @@
    "name": "Simon Fraser University",
    "sector": "institutions",
    "description": null,
-   "count": 1,
+   "counts": {
+    "patches": 1,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O49",
      "label": "SFU / Campus Security — shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "sfu-shield",
@@ -4266,11 +3744,15 @@
    "name": "Expo 86",
    "sector": "community",
    "description": null,
-   "count": 2,
+   "counts": {
+    "patches": 2,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O23",
      "label": "Crime Prevention / Expo 86 — shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "expo-crime-prevention",
@@ -4287,6 +3769,7 @@
     {
      "id": "S56-O24",
      "label": "Security / Expo 86 — shield",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "expo-security",
@@ -4307,11 +3790,15 @@
    "name": "BC SPCA",
    "sector": "community",
    "description": null,
-   "count": 1,
+   "counts": {
+    "patches": 1,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S56-O38",
      "label": "British Columbia / SPCA — white-field navy-cross roundel",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "bc-spca-cross",
@@ -4328,1230 +3815,19 @@
    ]
   },
   {
-   "id": "province-of-bc",
-   "name": "Province of British Columbia",
-   "sector": "government",
-   "description": "The Province's own identity: ministry lockups, the provincial arms, and programme marks.",
-   "count": 70,
-   "patches": [
-    {
-     "id": "P01-O01",
-     "label": "Ministry of Energy, Mines and Low Carbon Innovation",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P01-O01.svg",
-     "preview": "province-of-bc/previews/P01-O01.webp",
-     "sha256": "76118e8082e32a11a94c670d17e61219c94e5b338c86e7e9b66e901383f948e9",
-     "bytes": 40273,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/confirmed/emli.png",
-     "limitations": "The shared sun and British Columbia wordmark are native PofBC paths. Ministry names are newly typeset with an outlined serif substitute; exact font metrics remain approximate.",
-     "blocks": [],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "P02-O01",
-     "label": "Ministry of Environment and Climate Change Strategy",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P02-O01.svg",
-     "preview": "province-of-bc/previews/P02-O01.webp",
-     "sha256": "47f1e6aa380b085e08e3476e3199672287bce2de374c669e03ac3dcc4a1a2502",
-     "bytes": 42071,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/confirmed/env-ccs.png",
-     "limitations": "The shared sun and British Columbia wordmark are native PofBC paths. Ministry names are newly typeset with an outlined serif substitute; exact font metrics remain approximate.",
-     "blocks": [
-      "bc-sun-wordmark-native-d189addff4"
-     ],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "P03-O01",
-     "label": "Ministry of Forests, Lands, Natural Resource Operations and Rural Development",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-government-logo",
-     "affiliation": "Forestry",
-     "svg": "province-of-bc/P03-O01.svg",
-     "preview": "province-of-bc/previews/P03-O01.webp",
-     "sha256": "5862395067cfcbef6fa7fa56238fd48886305b89125a7a115bc4a8e16c24d9e7",
-     "bytes": 51219,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/confirmed/flnrord.png",
-     "limitations": "The shared sun and British Columbia wordmark are native PofBC paths. Ministry names are newly typeset with an outlined serif substitute; exact font metrics remain approximate.",
-     "blocks": [
-      "bc-sun-wordmark-native-d189addff4"
-     ],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "P04-O01",
-     "label": "Ministry of Jobs, Economic Development and Innovation",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P04-O01.svg",
-     "preview": "province-of-bc/previews/P04-O01.webp",
-     "sha256": "7eae140a50558720b4a3b35317bedd85fc2f64e120aa262c28e1c6adf0c5a0dc",
-     "bytes": 40951,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/confirmed/jedi.png",
-     "limitations": "The shared sun and British Columbia wordmark are native PofBC paths. Ministry names are newly typeset with an outlined serif substitute; exact font metrics remain approximate.",
-     "blocks": [
-      "bc-sun-wordmark-native-d189addff4"
-     ],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "P05-O01",
-     "label": "Ministry of Transportation and Infrastructure",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P05-O01.svg",
-     "preview": "province-of-bc/previews/P05-O01.webp",
-     "sha256": "a23bab71d65f3c89319739003b403ed73787e4cf801e1abb5d883754a0400df9",
-     "bytes": 38740,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/confirmed/tran.png",
-     "limitations": "The shared sun and British Columbia wordmark are native PofBC paths. Ministry names are newly typeset with an outlined serif substitute; exact font metrics remain approximate.",
-     "blocks": [
-      "bc-sun-wordmark-native-d189addff4"
-     ],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "P06-O01",
-     "label": "Ministry of Water, Land and Resource Stewardship",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P06-O01.svg",
-     "preview": "province-of-bc/previews/P06-O01.webp",
-     "sha256": "3c7b1329691584a36eefab0070c3e0fa5b61f010adf308fe885f81ab880fb896",
-     "bytes": 39977,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/confirmed/wlrs.png",
-     "limitations": "The shared sun and British Columbia wordmark are native PofBC paths. Ministry names are newly typeset with an outlined serif substitute; exact font metrics remain approximate.",
-     "blocks": [
-      "bc-sun-wordmark-native-d189addff4"
-     ],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "P09-O01",
-     "label": "British Columbia — colour/background demonstration 1",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O01.svg",
-     "preview": "province-of-bc/previews/P09-O01.webp",
-     "sha256": "300e6e64a7f7998ca7dcfbd454ad904462383affde027c561f5788e2bf5e593c",
-     "bytes": 24512,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P09-O02",
-     "label": "British Columbia — colour/background demonstration 2",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O02.svg",
-     "preview": "province-of-bc/previews/P09-O02.webp",
-     "sha256": "9e9f70b456f4de866fa71f440e983c1168ca71cdc8c4b01137f6157452e6d0f9",
-     "bytes": 25069,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P09-O03",
-     "label": "British Columbia — colour/background demonstration 3",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O03.svg",
-     "preview": "province-of-bc/previews/P09-O03.webp",
-     "sha256": "b0a4210458b18b222319ccdbd4d6a6c7647d5eaae36dd7b4f6a5f1d7febc5c89",
-     "bytes": 24222,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P09-O04",
-     "label": "British Columbia — colour/background demonstration 4",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O04.svg",
-     "preview": "province-of-bc/previews/P09-O04.webp",
-     "sha256": "47bfe557e08bd60db5733b23a158a41c15ade5332c94de077ec61e68918086f1",
-     "bytes": 24234,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P09-O05",
-     "label": "British Columbia — colour/background demonstration 5",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O05.svg",
-     "preview": "province-of-bc/previews/P09-O05.webp",
-     "sha256": "a33406897b1c8f45a41499583b9d99839497a4cf9372a23c12e087420a9a998a",
-     "bytes": 24246,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P09-O06",
-     "label": "British Columbia — colour/background demonstration 6",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O06.svg",
-     "preview": "province-of-bc/previews/P09-O06.webp",
-     "sha256": "1539f97b47a9a1dd8d05d5a77086899ab04d117926389a3dcfbb174e6921ce4d",
-     "bytes": 24565,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-ac8c1047d3"
-     ]
-    },
-    {
-     "id": "P09-O07",
-     "label": "British Columbia — colour/background demonstration 7",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O07.svg",
-     "preview": "province-of-bc/previews/P09-O07.webp",
-     "sha256": "4b7d8b5b83e134c8046375de26abf8c2f1ec735116fa4f6eb28481b355e1278e",
-     "bytes": 24251,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P09-O08",
-     "label": "British Columbia — colour/background demonstration 8",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O08.svg",
-     "preview": "province-of-bc/previews/P09-O08.webp",
-     "sha256": "7182028f7af83abd669dbe9e3b5ca324b1752ed2441bbb01039a621df8777d8d",
-     "bytes": 24551,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-ac8c1047d3"
-     ]
-    },
-    {
-     "id": "P09-O09",
-     "label": "British Columbia — colour/background demonstration 9",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P09-O09.svg",
-     "preview": "province-of-bc/previews/P09-O09.webp",
-     "sha256": "2efb529467675ee562e0d72778516aed4325240411a3e1b0fdab89c2a9340e0f",
-     "bytes": 25107,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/colour-accessibility.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O01",
-     "label": "Agriculture and Food — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O01.svg",
-     "preview": "province-of-bc/previews/P10-O01.webp",
-     "sha256": "767620482229716aa36610761494bfc6287184a7277fb3312621ebcd14ccb517",
-     "bytes": 53284,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O02",
-     "label": "Agriculture and Food — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O02.svg",
-     "preview": "province-of-bc/previews/P10-O02.webp",
-     "sha256": "66b5205b4398f1e5f6039287ee25495e494413e623ff0f70a82d3ec694c5cff2",
-     "bytes": 66358,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-996207848f"
-     ]
-    },
-    {
-     "id": "P10-O03",
-     "label": "Attorney General — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O03.svg",
-     "preview": "province-of-bc/previews/P10-O03.webp",
-     "sha256": "454ffce88c30a9b0322975588562a61c6bdba3c2ae4cdda89fb1d8c33770a943",
-     "bytes": 50898,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O04",
-     "label": "Attorney General — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O04.svg",
-     "preview": "province-of-bc/previews/P10-O04.webp",
-     "sha256": "8ab362abea974cde654313dfc108c78eebfd8f3619118456785afeef41397ea1",
-     "bytes": 57222,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O05",
-     "label": "Children and Family Development — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O05.svg",
-     "preview": "province-of-bc/previews/P10-O05.webp",
-     "sha256": "27cbaa77fdb7747b1a5fb07db7f7f045935033d3b1838b37a828119b925eca65",
-     "bytes": 61781,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O06",
-     "label": "Children and Family Development — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O06.svg",
-     "preview": "province-of-bc/previews/P10-O06.webp",
-     "sha256": "58db291605695126307b28af8a3e36ef47786dbe8d3ae336950bc0f995df41c7",
-     "bytes": 71916,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-551e786a72"
-     ]
-    },
-    {
-     "id": "P10-O07",
-     "label": "Citizens’ Services — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O07.svg",
-     "preview": "province-of-bc/previews/P10-O07.webp",
-     "sha256": "2e77e40c14846e1c57aa44c488c4e47a09ab9fefb7c8d11e4c87d41267de3cdf",
-     "bytes": 50841,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O08",
-     "label": "Citizens’ Services — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O08.svg",
-     "preview": "province-of-bc/previews/P10-O08.webp",
-     "sha256": "9d1aef993a4bdc828ce630bf9647f8f16003984040392bf8f84c88f7ed7464c7",
-     "bytes": 59249,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-551e786a72"
-     ]
-    },
-    {
-     "id": "P10-O09",
-     "label": "Education and Child Care — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O09.svg",
-     "preview": "province-of-bc/previews/P10-O09.webp",
-     "sha256": "9b0961e53dc44120c01b83a1fa5d515029700b83197c873091abe0b6467461ca",
-     "bytes": 55829,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-7cfa647181"
-     ]
-    },
-    {
-     "id": "P10-O10",
-     "label": "Education and Child Care — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O10.svg",
-     "preview": "province-of-bc/previews/P10-O10.webp",
-     "sha256": "120582da5c1d1d04e33a1a25a1efa1010acadbb416c224f50cf19768e200787d",
-     "bytes": 73005,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O11",
-     "label": "Emergency Management and Climate Readiness — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O11.svg",
-     "preview": "province-of-bc/previews/P10-O11.webp",
-     "sha256": "5ec23bc5c16f954aca86b5b45b1fb17191fa475d1d72b551519d85ec59df5d67",
-     "bytes": 72107,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O12",
-     "label": "Emergency Management and Climate Readiness — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O12.svg",
-     "preview": "province-of-bc/previews/P10-O12.webp",
-     "sha256": "793885197043c8c15716748eb6fb0164f613f52b0dfba053b95c55018a39fe02",
-     "bytes": 77586,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O13",
-     "label": "Energy and Climate Solutions — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O13.svg",
-     "preview": "province-of-bc/previews/P10-O13.webp",
-     "sha256": "86398ddcda8b9ea55103722ba3a62a26e79536d3f56f29d60a3b7f4cf407ea35",
-     "bytes": 58829,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-34b390f1bf"
-     ]
-    },
-    {
-     "id": "P10-O14",
-     "label": "Energy and Climate Solutions — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O14.svg",
-     "preview": "province-of-bc/previews/P10-O14.webp",
-     "sha256": "54f2924a089f2274965dcab3932fdb0d6e0ec41c1196bf6276c51951c85a0570",
-     "bytes": 68531,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O15",
-     "label": "Environment and Parks — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Parks",
-     "svg": "province-of-bc/P10-O15.svg",
-     "preview": "province-of-bc/previews/P10-O15.webp",
-     "sha256": "fb6ab23e2bef424076c52a689980b6a7db34b523e2b17f7fbedb7d0c8cab0a7a",
-     "bytes": 55925,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-34b390f1bf"
-     ]
-    },
-    {
-     "id": "P10-O16",
-     "label": "Environment and Parks — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Parks",
-     "svg": "province-of-bc/P10-O16.svg",
-     "preview": "province-of-bc/previews/P10-O16.webp",
-     "sha256": "991297f151ef9bc4308a41c574fa2e33785560a0faf98cd780d05107e1837219",
-     "bytes": 63172,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O17",
-     "label": "Finance — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O17.svg",
-     "preview": "province-of-bc/previews/P10-O17.webp",
-     "sha256": "54a7d15782ed61d1bb6fc9bb978f207859412ea4d55377254d788de3c21b60f4",
-     "bytes": 45517,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-a442b8b22f"
-     ]
-    },
-    {
-     "id": "P10-O18",
-     "label": "Finance — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O18.svg",
-     "preview": "province-of-bc/previews/P10-O18.webp",
-     "sha256": "7837d3938188031f1938483b5471d5190fb9bdc41be2dd99c9b2c4e42c04f36e",
-     "bytes": 51964,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O19",
-     "label": "Forests — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Forestry",
-     "svg": "province-of-bc/P10-O19.svg",
-     "preview": "province-of-bc/previews/P10-O19.webp",
-     "sha256": "55fb5ebb204d24c6f09a8c3feaf0b5c3a57da0051498df7bb7b756365c2490c1",
-     "bytes": 35861,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O20",
-     "label": "Forests — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Forestry",
-     "svg": "province-of-bc/P10-O20.svg",
-     "preview": "province-of-bc/previews/P10-O20.webp",
-     "sha256": "b420bc306e660dde2e5f176e5b02c2747e92075338a86803cac5809a226dcd0d",
-     "bytes": 41258,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-996207848f"
-     ]
-    },
-    {
-     "id": "P10-O21",
-     "label": "Health — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O21.svg",
-     "preview": "province-of-bc/previews/P10-O21.webp",
-     "sha256": "b0ac74079427e69cec99a7de65da20cd0b11cf277ae6cd75254c9842e985dc35",
-     "bytes": 36722,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-a442b8b22f"
-     ]
-    },
-    {
-     "id": "P10-O22",
-     "label": "Health — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O22.svg",
-     "preview": "province-of-bc/previews/P10-O22.webp",
-     "sha256": "d3b5474d1cd2f93f4adf8ab07dc99bfeb7896bda9264ff03323655e787283ae0",
-     "bytes": 42562,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-c3e14e08bf"
-     ]
-    },
-    {
-     "id": "P10-O23",
-     "label": "Housing and Municipal Affairs — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O23.svg",
-     "preview": "province-of-bc/previews/P10-O23.webp",
-     "sha256": "245ed7099c254f99e5e8f4d55391af7eec27e6e985bff675c2072ae55da5a1d1",
-     "bytes": 52929,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O24",
-     "label": "Housing and Municipal Affairs — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O24.svg",
-     "preview": "province-of-bc/previews/P10-O24.webp",
-     "sha256": "5bc9b96650866b2736e47201f2c321dfabf248bee215320a6f0e8a87562c0641",
-     "bytes": 61209,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-212e7b4aaa"
-     ]
-    },
-    {
-     "id": "P10-O25",
-     "label": "Indigenous Relations and Reconciliation — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O25.svg",
-     "preview": "province-of-bc/previews/P10-O25.webp",
-     "sha256": "428fe1251366bbb90b91dc62f3a2242370132c3cfb5462a6ba4eafda05cf344d",
-     "bytes": 57231,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-67cd2d216a"
-     ]
-    },
-    {
-     "id": "P10-O26",
-     "label": "Indigenous Relations and Reconciliation — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O26.svg",
-     "preview": "province-of-bc/previews/P10-O26.webp",
-     "sha256": "d7484634b606d54cd942bb37f049214cba5d6e2b6eb2214688dc421dbca0bb7a",
-     "bytes": 69080,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-551e786a72"
-     ]
-    },
-    {
-     "id": "P10-O27",
-     "label": "Infrastructure — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O27.svg",
-     "preview": "province-of-bc/previews/P10-O27.webp",
-     "sha256": "e615023236145eef1a06c723d2e79fdb1c87c9b94b941a89df17c5a19dc50439",
-     "bytes": 43294,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image. The English-column Infrastructure example itself uses French wording in the PDF; the native wording is preserved.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O28",
-     "label": "Infrastructure — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O28.svg",
-     "preview": "province-of-bc/previews/P10-O28.webp",
-     "sha256": "cf64fc2f7d375e2abb7e389283f421559c36352bb161c45afe290eed0c3c4909",
-     "bytes": 47966,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O29",
-     "label": "Jobs and Economic Growth — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O29.svg",
-     "preview": "province-of-bc/previews/P10-O29.webp",
-     "sha256": "53071c7397fb866bd8b50d8e98d964a144183fb518577d7169eaa90569102162",
-     "bytes": 47761,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O30",
-     "label": "Jobs and Economic Growth — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O30.svg",
-     "preview": "province-of-bc/previews/P10-O30.webp",
-     "sha256": "a19b3b2578c3a235264f0d56b062ddd4aef9e9ac704da93984330a6ba858e142",
-     "bytes": 61075,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O31",
-     "label": "Labour — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O31.svg",
-     "preview": "province-of-bc/previews/P10-O31.webp",
-     "sha256": "ff3753a3f8ebdfe311341e58ce5245b81e6754dd23ba361dc7244bfbcf9c3fc0",
-     "bytes": 36360,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O32",
-     "label": "Labour — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O32.svg",
-     "preview": "province-of-bc/previews/P10-O32.webp",
-     "sha256": "68a105d04d5db4970ea7cf27c9cb6327593e7d67ca9c0d873af1850c4229b9ee",
-     "bytes": 42780,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-551e786a72"
-     ]
-    },
-    {
-     "id": "P10-O33",
-     "label": "Mining and Critical Minerals — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O33.svg",
-     "preview": "province-of-bc/previews/P10-O33.webp",
-     "sha256": "f9810535531d918b4fc4b4f6c0cff70e733b36864a87bae6bfa6825b8ea5e1c6",
-     "bytes": 51735,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-7cfa647181"
-     ]
-    },
-    {
-     "id": "P10-O34",
-     "label": "Mining and Critical Minerals — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O34.svg",
-     "preview": "province-of-bc/previews/P10-O34.webp",
-     "sha256": "29a51d951c2c825551406906036afa9f5535cad10ce22ce34390be3651048fe7",
-     "bytes": 58739,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O35",
-     "label": "Post-Secondary Education and Future Skills — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O35.svg",
-     "preview": "province-of-bc/previews/P10-O35.webp",
-     "sha256": "daa61b51c17ac7899103253119390ef0c743c1b0948719384b8cef4a5c334abf",
-     "bytes": 59153,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O36",
-     "label": "Post-Secondary Education and Future Skills — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O36.svg",
-     "preview": "province-of-bc/previews/P10-O36.webp",
-     "sha256": "dbd5e88d581005b659df32ccd8afc01ce6a0d8b966aca0ae1ffa179808c8e6af",
-     "bytes": 70088,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O37",
-     "label": "Public Safety and Solicitor General — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O37.svg",
-     "preview": "province-of-bc/previews/P10-O37.webp",
-     "sha256": "5464eb814bfa047a34843ed91d21b1f9e7f6065884f648829eaf7f332ae3399a",
-     "bytes": 53272,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O38",
-     "label": "Public Safety and Solicitor General — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O38.svg",
-     "preview": "province-of-bc/previews/P10-O38.webp",
-     "sha256": "c0a193a813f2b5fbcb9d4afa9d2de0957090a8329070694f9ac33f87c8e6a73f",
-     "bytes": 65126,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-58335388af"
-     ]
-    },
-    {
-     "id": "P10-O39",
-     "label": "Social Development and Poverty Reduction — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O39.svg",
-     "preview": "province-of-bc/previews/P10-O39.webp",
-     "sha256": "3a61c93c2d562fa90acd1aab61d690558dd96c44accd8af0bcaf3ce5133ab1dd",
-     "bytes": 56679,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-67cd2d216a"
-     ]
-    },
-    {
-     "id": "P10-O40",
-     "label": "Social Development and Poverty Reduction — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O40.svg",
-     "preview": "province-of-bc/previews/P10-O40.webp",
-     "sha256": "8967d9a13fca3e77b4199b40a2c22b9d680b8c30ad127340c226a41761e1999a",
-     "bytes": 69513,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-58335388af"
-     ]
-    },
-    {
-     "id": "P10-O41",
-     "label": "Tourism, Arts, Culture and Sport — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O41.svg",
-     "preview": "province-of-bc/previews/P10-O41.webp",
-     "sha256": "3230568564d508cbfdd5bf74d448e4d1c4a3e1679633b5fc53d8c4ff7cd6856e",
-     "bytes": 47924,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O42",
-     "label": "Tourism, Arts, Culture and Sport — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O42.svg",
-     "preview": "province-of-bc/previews/P10-O42.webp",
-     "sha256": "d3338ee1bb170c02c91926233e240bc3d3cb2ff29d233a04cac662d381a9b1d9",
-     "bytes": 59021,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-c3e14e08bf"
-     ]
-    },
-    {
-     "id": "P10-O43",
-     "label": "Transportation and Transit — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O43.svg",
-     "preview": "province-of-bc/previews/P10-O43.webp",
-     "sha256": "fc52acbdf1950bc6bd26bb451e69c16b5e9fd0ab0232233f01f0de0eaea87cce",
-     "bytes": 46240,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O44",
-     "label": "Transportation and Transit — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O44.svg",
-     "preview": "province-of-bc/previews/P10-O44.webp",
-     "sha256": "701931b093d15695ec3f0800a23a179d470e070b2262968adc3ecc6878566a2f",
-     "bytes": 57634,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O45",
-     "label": "Water, Land and Resource Stewardship — English ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O45.svg",
-     "preview": "province-of-bc/previews/P10-O45.webp",
-     "sha256": "3b4852e83b79f57689a654093f5b062cf29e01d7b4bc50e0bd3e8b85a3d80c81",
-     "bytes": 53611,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "P10-O46",
-     "label": "Water, Land and Resource Stewardship — French ministry lockup",
-     "medium": "Printed emblem",
-     "quality": "Native vector reference",
-     "family": "bc-government-logo",
-     "affiliation": "Other",
-     "svg": "province-of-bc/P10-O46.svg",
-     "preview": "province-of-bc/previews/P10-O46.webp",
-     "sha256": "9ef9c3cfa1838a6db659b33efe4eb61724ff229d0ac5082703409a99e272d3eb",
-     "bytes": 62022,
-     "sourceUrl": "https://github.com/ahzs645/PofBC/blob/e6aece301599ebf72bb4b10ef76b8a63c30b2f3c/artwork/current/ministry-marks.pdf",
-     "limitations": "Document logo reference, not a cloth patch. Original native glyph outlines, artwork and colour/background presentation retained; no replacement font or embedded raster image.",
-     "blocks": [],
-     "bundles": [
-      "paths-212e7b4aaa"
-     ]
-    },
-    {
-     "id": "S04-O02",
-     "label": "1966 / 1967 centennial symbol",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "centennial",
-     "affiliation": "Other",
-     "svg": "province-of-bc/S04-O02.svg",
-     "preview": "province-of-bc/previews/S04-O02.webp",
-     "sha256": "237e49b2052b33646be9620c6f6ee2d603ae49517812cd7c6975579bbe7a8931",
-     "bytes": 13730,
-     "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained. Tiny rosette interior detail is interpreted from the low-resolution reference.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S24-O02",
-     "label": "Compact framed supporter arms — Forest Officer booklet; edition unresolved",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "provincial-arms",
-     "affiliation": "Forestry",
-     "svg": "province-of-bc/S24-O02.svg",
-     "preview": "province-of-bc/previews/S24-O02.webp",
-     "sha256": "a9b12e5eb8b8a255490d1d744b7a9b959807d7e827d25750cab7d4ad7d1d65a4",
-     "bytes": 26800,
-     "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view",
-     "limitations": "The booklet and identification-card crops show compact supporter arms within a rounded square. The actual supplied PofBC PROVINCIAL_MARK.inner vector is preserved, including its own border and compact motto. The small sources do not establish the exact historical engraving or date; this reference does not date the cards or establish a modern edition. The flat dark field represents the booklet behind white ink; paper texture is excluded.",
-     "blocks": [
-      "bc-framed-provincial-mark-3b841c1ba2"
-     ],
-     "bundles": [
-      "paths-dc640ea455"
-     ]
-    },
-    {
-     "id": "S36-O01",
-     "label": "Provincial arms — Fire-weather Instruments manual",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "provincial-arms",
-     "affiliation": "Forestry",
-     "svg": "province-of-bc/S36-O01.svg",
-     "preview": "province-of-bc/previews/S36-O01.webp",
-     "sha256": "5227731e64c3abd3c927a2eb54bdc8647c7461f925e7e4cc50bb05a2cc835e3a",
-     "bytes": 296293,
-     "sourceUrl": "https://drive.google.com/file/d/1XvFjcslHLf-_yqdbFl7Ofz0WkJeVLGqw/view",
-     "limitations": "Uses the user-selected Plateforge 1917-late / Type3 native full achievement, preserving deer, ram, royal crest, BC shield and motto. Source book covers confirm an older full achievement. This supplied reference is an interpretation of the historical printing; an exact match to the cover engraving and print stroke weight is not asserted. Photograph texture and perspective are excluded.",
-     "blocks": [],
-     "bundles": [
-      "paths-d69f02d52f"
-     ]
-    },
-    {
-     "id": "S58-O21",
-     "label": "BC Public Service / Where ideas work — wordmark",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "bc-public-service",
-     "affiliation": "Other",
-     "svg": "province-of-bc/S58-O21.svg",
-     "preview": "province-of-bc/previews/S58-O21.webp",
-     "sha256": "a11d09c454b65478d428123eca5f34de5b32960c155682b6f6ba52e258f9ee9c",
-     "bytes": 29610,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained.",
-     "blocks": [
-      "bc-sun-wordmark-native-d189addff4"
-     ],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "S58-O22",
-     "label": "2022 Top Work Unit Award — pennant graphic",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "top-work-award",
-     "affiliation": "Other",
-     "svg": "province-of-bc/S58-O22.svg",
-     "preview": "province-of-bc/previews/S58-O22.webp",
-     "sha256": "c50ab0ee3f7d672ccab6c3e6122338237d1d55db2d3f370165d6f06b3fab0bd5",
-     "bytes": 8145,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S58-O23",
-     "label": "Lieutenant Governor-style crowned BC shield and maple-leaf wreath — blue flag",
-     "medium": "Photographed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "provincial-arms",
-     "affiliation": "Other",
-     "svg": "province-of-bc/S58-O23.svg",
-     "preview": "province-of-bc/previews/S58-O23.webp",
-     "sha256": "4b2c8b600077e208a5846067df1011a685411160dc3f907893546aa7a799abe8",
-     "bytes": 35747,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "The source is the same partly occluded group photograph reproduced on two slides. The flag emblem is a crowned BC shield with a maple-leaf wreath, without deer/ram supporters. Original supplied Plateforge LG vector nodes are retained. Fine embroidery, photographic occlusion and the precise flag fabric colors are not copied. The flat blue field is contextual; this is not another cloth patch.",
-     "blocks": [
-      "lg-crowned-shield-maple-wreath-a57d6e6dd6"
-     ],
-     "bundles": []
-    },
-    {
-     "id": "S58-O50",
-     "label": "Modern provincial achievement — 2022 mandate letter",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "provincial-arms",
-     "affiliation": "Other",
-     "svg": "province-of-bc/S58-O50.svg",
-     "preview": "province-of-bc/previews/S58-O50.webp",
-     "sha256": "9411a61a4a13d72b8093254962bfcadfda8c822604b420cdf3ed11a62e8b94f3",
-     "bytes": 385415,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "The December 7, 2022 mandate-letter source shows a modern colored supported achievement. The exact user-uploaded modern BC full-arms vector is preserved in its original colour and uniformly fitted. The tiny printed source does not resolve every fine line of the uploaded reference. The adjacent BRITISH COLUMBIA wordmark belongs to the publication layout and is outside this armorial occurrence.",
-     "blocks": [
-      "uploaded-bc-modern-arms-8491a6243c"
-     ],
-     "bundles": [
-      "paths-7e2533fa13"
-     ]
-    },
-    {
-     "id": "S58-O52",
-     "label": "British Columbia / cleanBC — publication-cover logos",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "cleanbc",
-     "affiliation": "Other",
-     "svg": "province-of-bc/S58-O52.svg",
-     "preview": "province-of-bc/previews/S58-O52.webp",
-     "sha256": "e195b07010e31b4a1c1941788258351fceafde1cca3628bd968966aaf682489d",
-     "bytes": 30314,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained. The corrected source rectangle isolates the actual logo; the photographic publication cover is contextual material rather than logo geometry.",
-     "blocks": [
-      "bc-sun-wordmark-native-d189addff4"
-     ],
-     "bundles": [
-      "paths-9143b26870"
-     ]
-    },
-    {
-     "id": "S58-O53",
-     "label": "StrongerBC — economic-plan cover tab",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "strongerbc",
-     "affiliation": "Other",
-     "svg": "province-of-bc/S58-O53.svg",
-     "preview": "province-of-bc/previews/S58-O53.webp",
-     "sha256": "d506489a2648b23d95cb6c37a23d061fcea796f1f70f31e02c31ce1cece97e52",
-     "bytes": 7991,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "limitations": "Clean shapes are constructed manually from visible layout; the source does not establish the exact typeface, so matched outlined font glyphs are interpreted. No photographed texture, pixel contours or raster images are retained. The corrected source rectangle isolates the actual logo; the photographic publication cover is contextual material rather than logo geometry.",
-     "blocks": [],
-     "bundles": []
-    }
-   ]
-  },
-  {
    "id": "unconfirmed",
    "name": "Unconfirmed",
    "sector": "unconfirmed",
    "description": "Designs whose wording or owner the atlas could not resolve.",
-   "count": 6,
+   "counts": {
+    "patches": 6,
+    "badges": 0
+   },
    "patches": [
     {
      "id": "S24-O01",
      "label": "Map / tree mark on spoon handle",
+     "collection": "patches",
      "medium": "Printed emblem",
      "quality": "Clean vector reconstruction",
      "family": "map-tree-motif",
@@ -5568,6 +3844,7 @@
     {
      "id": "S42-O02",
      "label": "Possible forest oval — vehicle windscreen",
+     "collection": "patches",
      "medium": "Printed emblem",
      "quality": "Limited-evidence clean vector study",
      "family": "unresolved-windscreen",
@@ -5584,6 +3861,7 @@
     {
      "id": "S48-O01",
      "label": "Unlabelled B.C. map and tree square",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Clean vector reconstruction",
      "family": "unlabelled-map-tree",
@@ -5600,6 +3878,7 @@
     {
      "id": "S56-O11",
      "label": "Lower-left gold-lettered arch — partial",
+     "collection": "patches",
      "medium": "Fragment",
      "quality": "Clean partial vector reconstruction",
      "family": "unresolved-lower-left-arch",
@@ -5616,6 +3895,7 @@
     {
      "id": "S56-O35",
      "label": "Green/white circular emblem — wording unresolved",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Limited-evidence clean vector study",
      "family": "unresolved-green-circle",
@@ -5632,6 +3912,7 @@
     {
      "id": "S56-O36",
      "label": "Gold/navy circular bridge emblem — wording unresolved",
+     "collection": "patches",
      "medium": "Cloth patch",
      "quality": "Limited-evidence clean vector study",
      "family": "unresolved-bridge-circle",
@@ -5646,6 +3927,736 @@
      "bundles": []
     }
    ]
+  }
+ ],
+ "excluded": [
+  {
+   "id": "P01-O01",
+   "label": "Ministry of Energy, Mines and Low Carbon Innovation",
+   "medium": "Digital emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P02-O01",
+   "label": "Ministry of Environment and Climate Change Strategy",
+   "medium": "Digital emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P03-O01",
+   "label": "Ministry of Forests, Lands, Natural Resource Operations and Rural Development",
+   "medium": "Digital emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P04-O01",
+   "label": "Ministry of Jobs, Economic Development and Innovation",
+   "medium": "Digital emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P05-O01",
+   "label": "Ministry of Transportation and Infrastructure",
+   "medium": "Digital emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P06-O01",
+   "label": "Ministry of Water, Land and Resource Stewardship",
+   "medium": "Digital emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P07-O01",
+   "label": "BC Transit — wordmark and flag",
+   "medium": "Digital emblem",
+   "org": "bc-transit",
+   "reason": "A corporate logo, not a patch"
+  },
+  {
+   "id": "P08-O01",
+   "label": "ICBC — historical symbol drawing",
+   "medium": "Digital emblem",
+   "org": "icbc",
+   "reason": "A corporate logo, not a patch"
+  },
+  {
+   "id": "P09-O01",
+   "label": "British Columbia — colour/background demonstration 1",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O02",
+   "label": "British Columbia — colour/background demonstration 2",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O03",
+   "label": "British Columbia — colour/background demonstration 3",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O04",
+   "label": "British Columbia — colour/background demonstration 4",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O05",
+   "label": "British Columbia — colour/background demonstration 5",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O06",
+   "label": "British Columbia — colour/background demonstration 6",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O07",
+   "label": "British Columbia — colour/background demonstration 7",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O08",
+   "label": "British Columbia — colour/background demonstration 8",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P09-O09",
+   "label": "British Columbia — colour/background demonstration 9",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O01",
+   "label": "Agriculture and Food — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O02",
+   "label": "Agriculture and Food — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O03",
+   "label": "Attorney General — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O04",
+   "label": "Attorney General — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O05",
+   "label": "Children and Family Development — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O06",
+   "label": "Children and Family Development — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O07",
+   "label": "Citizens’ Services — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O08",
+   "label": "Citizens’ Services — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O09",
+   "label": "Education and Child Care — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O10",
+   "label": "Education and Child Care — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O11",
+   "label": "Emergency Management and Climate Readiness — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O12",
+   "label": "Emergency Management and Climate Readiness — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O13",
+   "label": "Energy and Climate Solutions — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O14",
+   "label": "Energy and Climate Solutions — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O15",
+   "label": "Environment and Parks — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O16",
+   "label": "Environment and Parks — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O17",
+   "label": "Finance — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O18",
+   "label": "Finance — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O19",
+   "label": "Forests — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O20",
+   "label": "Forests — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O21",
+   "label": "Health — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O22",
+   "label": "Health — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O23",
+   "label": "Housing and Municipal Affairs — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O24",
+   "label": "Housing and Municipal Affairs — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O25",
+   "label": "Indigenous Relations and Reconciliation — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O26",
+   "label": "Indigenous Relations and Reconciliation — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O27",
+   "label": "Infrastructure — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O28",
+   "label": "Infrastructure — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O29",
+   "label": "Jobs and Economic Growth — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O30",
+   "label": "Jobs and Economic Growth — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O31",
+   "label": "Labour — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O32",
+   "label": "Labour — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O33",
+   "label": "Mining and Critical Minerals — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O34",
+   "label": "Mining and Critical Minerals — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O35",
+   "label": "Post-Secondary Education and Future Skills — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O36",
+   "label": "Post-Secondary Education and Future Skills — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O37",
+   "label": "Public Safety and Solicitor General — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O38",
+   "label": "Public Safety and Solicitor General — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O39",
+   "label": "Social Development and Poverty Reduction — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O40",
+   "label": "Social Development and Poverty Reduction — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O41",
+   "label": "Tourism, Arts, Culture and Sport — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O42",
+   "label": "Tourism, Arts, Culture and Sport — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O43",
+   "label": "Transportation and Transit — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O44",
+   "label": "Transportation and Transit — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O45",
+   "label": "Water, Land and Resource Stewardship — English ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P10-O46",
+   "label": "Water, Land and Resource Stewardship — French ministry lockup",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "P11-O01",
+   "label": "BC Hydro / Power smart — colour",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "P11-O02",
+   "label": "BC Hydro / Power smart — black",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "P11-O03",
+   "label": "BC Hydro / Power smart — reverse",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "P11-O04",
+   "label": "BC Hydro — without tagline",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "P11-O05",
+   "label": "BC Hydro symbol — no border",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "P11-O06",
+   "label": "BC Hydro symbol — white border",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "P11-O07",
+   "label": "BC Hydro symbol — lower large example",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "P11-O08",
+   "label": "BC Hydro symbol — lower small example",
+   "medium": "Printed emblem",
+   "org": "bc-hydro",
+   "reason": "The BC Hydro corporate logo, not a patch"
+  },
+  {
+   "id": "R02-O01",
+   "label": "Forest Service / BC / BCTS / BC Timber Sales / Chinook",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R03-O01",
+   "label": "Forest Service / BC / BC Timber Sales — stacked",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R04-O01",
+   "label": "Forest Service / BC / BCTS — alternate vector lockup",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R05-O01",
+   "label": "Forest Service / BC / BCTS / BC Timber Sales — supplied vector",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R06-O01",
+   "label": "BC / Forests, Lands and Natural Resource Operations / BCTS — alternate",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R07-O01",
+   "label": "Forest Service tree oval / BCTS — forest-photo banner",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R08-O01",
+   "label": "BC / Forests, Lands and Natural Resource Operations / BCTS",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R09-O01",
+   "label": "BCTS / BC Timber Sales — wordmark only",
+   "medium": "Digital emblem",
+   "org": "bc-timber-sales",
+   "reason": "Digital lockups, not patches"
+  },
+  {
+   "id": "R10-O01",
+   "label": "Forest Service / BC / Forest Analysis and Inventory Branch",
+   "medium": "Digital emblem",
+   "org": "bc-forest-service",
+   "reason": "A branch's digital lockup, not a patch"
+  },
+  {
+   "id": "S04-O02",
+   "label": "1966 / 1967 centennial symbol",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S09-O01",
+   "label": "Put your campfires out — yellow oval",
+   "medium": "Decal",
+   "org": "bc-forest-service",
+   "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S24-O02",
+   "label": "Compact framed supporter arms — Forest Officer booklet; edition unresolved",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S36-O01",
+   "label": "Provincial arms — Fire-weather Instruments manual",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S53-O02",
+   "label": "Don’t Drop It! / B.C. Forest Service",
+   "medium": "Decal",
+   "org": "bc-forest-service",
+   "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S53-O03",
+   "label": "Don’t gamble with FIRE / B.C. Forest Service",
+   "medium": "Decal",
+   "org": "bc-forest-service",
+   "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S53-O04",
+   "label": "Enjoy & Protect our Forests — prevention card",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S53-O05",
+   "label": "British Columbia / Forest Service — map/tree surround",
+   "medium": "Decal",
+   "org": "bc-forest-service",
+   "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S53-O06",
+   "label": "Reward — A Living Forest — prevention card",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S53-O07",
+   "label": "Map/tree emblem — Enjoy & Protect card corner",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S55-O01",
+   "label": "British Columbia / Lookout / Forest Service — triangular sign",
+   "medium": "Sign",
+   "org": "bc-forest-service",
+   "reason": "A sign, not a patch"
+  },
+  {
+   "id": "S58-O06",
+   "label": "Forest Practices Board",
+   "medium": "Printed emblem",
+   "org": "forest-practices-board",
+   "reason": "A printed emblem, not a patch"
+  },
+  {
+   "id": "S58-O07",
+   "label": "Managed Forest Council",
+   "medium": "Printed emblem",
+   "org": "managed-forest-council",
+   "reason": "A printed emblem, not a patch"
+  },
+  {
+   "id": "S58-O08",
+   "label": "Creston Valley Wildlife Management Area",
+   "medium": "Printed emblem",
+   "org": "creston-valley-wma",
+   "reason": "A printed emblem, not a patch"
+  },
+  {
+   "id": "S58-O09",
+   "label": "Forest Enhancement Society of BC / FESBC",
+   "medium": "Printed emblem",
+   "org": "forest-enhancement-society",
+   "reason": "A printed emblem, not a patch"
+  },
+  {
+   "id": "S58-O10",
+   "label": "bc Land / Title & Survey",
+   "medium": "Printed emblem",
+   "org": "land-title-and-survey",
+   "reason": "A printed emblem, not a patch"
+  },
+  {
+   "id": "S58-O11",
+   "label": "Integrated Cadastral Information Society",
+   "medium": "Printed emblem",
+   "org": "icis",
+   "reason": "A printed emblem, not a patch"
+  },
+  {
+   "id": "S58-O12",
+   "label": "Association of British Columbia Land Surveyors",
+   "medium": "Printed emblem",
+   "org": "land-surveyors",
+   "reason": "A printed emblem, not a patch"
+  },
+  {
+   "id": "S58-O21",
+   "label": "BC Public Service / Where ideas work — wordmark",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S58-O22",
+   "label": "2022 Top Work Unit Award — pennant graphic",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S58-O23",
+   "label": "Lieutenant Governor-style crowned BC shield and maple-leaf wreath — blue flag",
+   "medium": "Photographed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S58-O50",
+   "label": "Modern provincial achievement — 2022 mandate letter",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S58-O52",
+   "label": "British Columbia / cleanBC — publication-cover logos",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S58-O53",
+   "label": "StrongerBC — economic-plan cover tab",
+   "medium": "Printed emblem",
+   "org": "province-of-bc",
+   "reason": "The Province's corporate identity, not patches"
   }
  ]
 }

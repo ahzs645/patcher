@@ -1,5 +1,15 @@
 {
-  "$comment": "How scripts/import-atlas.mjs files each atlas design under an organization. Orgs are tried in order and the first whose rules match wins: 'family' and 'label' are regular expressions (case-insensitive) tested against the atlas design's family and label, 'affiliation' is the atlas's own coarse affiliation, matched exactly. Put specific rules before broad ones. A design nothing matches is filed under 'unsorted' and the import says so.",
+  "$comment": "How scripts/import-atlas.mjs files each atlas design. Designs listed in 'exclude', or claimed by an organization with an 'exclude' reason, are left out of the library altogether. The rest go into the first collection whose 'medium' list has their medium (else the first collection), and under an organization: Orgs are tried in order and the first whose rules match wins: 'family' and 'label' are regular expressions (case-insensitive) tested against the atlas design's family and label, 'affiliation' is the atlas's own coarse affiliation, matched exactly. Put specific rules before broad ones. A design nothing matches is filed under 'unsorted' and the import says so.",
+  "collections": [
+    { "id": "patches", "name": "Patches", "description": "Cloth patches, rockers and the emblems they were made from." },
+    { "id": "badges", "name": "Badges", "description": "Metal and leather badges.", "hidden": true, "medium": ["Metal badge", "Leather badge"] }
+  ],
+  "exclude": [
+    { "reason": "A decal, prevention card or printed emblem, not a patch", "ids": ["S53-O02", "S53-O03", "S53-O04", "S53-O05", "S53-O06", "S53-O07", "S09-O01"] },
+    { "reason": "A sign, not a patch", "ids": ["S55-O01"] },
+    { "reason": "A branch's digital lockup, not a patch", "ids": ["R10-O01"] },
+    { "reason": "The BC Hydro corporate logo, not a patch", "ids": ["P11-O01", "P11-O02", "P11-O03", "P11-O04", "P11-O05", "P11-O06", "P11-O07", "P11-O08"] }
+  ],
   "sectors": [
     { "id": "forests", "name": "Forests and wildfire" },
     { "id": "environment", "name": "Parks, environment and wildlife" },
@@ -15,6 +25,7 @@
   "orgs": [
     {
       "id": "province-of-bc",
+      "exclude": "The Province's corporate identity, not patches",
       "name": "Province of British Columbia",
       "sector": "government",
       "description": "The Province's own identity: ministry lockups, the provincial arms, and programme marks.",
@@ -22,6 +33,7 @@
     },
     {
       "id": "bc-timber-sales",
+      "exclude": "Digital lockups, not patches",
       "name": "BC Timber Sales",
       "sector": "forests",
       "description": "BCTS lockups with the Forest Service tree oval and the ministry wildlife oval.",
@@ -43,18 +55,21 @@
     },
     {
       "id": "forest-practices-board",
+      "exclude": "A printed emblem, not a patch",
       "name": "Forest Practices Board",
       "sector": "forests",
       "match": { "family": ["^forest-practices-board$"] }
     },
     {
       "id": "managed-forest-council",
+      "exclude": "A printed emblem, not a patch",
       "name": "Managed Forest Council",
       "sector": "forests",
       "match": { "family": ["^managed-forest-council$"] }
     },
     {
       "id": "forest-enhancement-society",
+      "exclude": "A printed emblem, not a patch",
       "name": "Forest Enhancement Society of BC",
       "sector": "forests",
       "match": { "family": ["^fesbc$"] }
@@ -95,6 +110,7 @@
     },
     {
       "id": "creston-valley-wma",
+      "exclude": "A printed emblem, not a patch",
       "name": "Creston Valley Wildlife Management Area",
       "sector": "environment",
       "match": { "family": ["^creston-valley$"] }
@@ -159,12 +175,14 @@
     },
     {
       "id": "bc-transit",
+      "exclude": "A corporate logo, not a patch",
       "name": "BC Transit",
       "sector": "transportation",
       "match": { "family": ["^bc-transit-"] }
     },
     {
       "id": "icbc",
+      "exclude": "A corporate logo, not a patch",
       "name": "ICBC",
       "sector": "transportation",
       "match": { "family": ["^icbc-"] }
@@ -173,23 +191,26 @@
       "id": "bc-hydro",
       "name": "BC Hydro",
       "sector": "crown",
-      "description": "Hydro Patrol and Security patches, and the current BC Hydro identity.",
+      "description": "Hydro Patrol and Hydro Security patches.",
       "match": { "family": ["^hydro-", "^bc-hydro-"] }
     },
     {
       "id": "land-title-and-survey",
+      "exclude": "A printed emblem, not a patch",
       "name": "Land Title & Survey",
       "sector": "lands",
       "match": { "family": ["^land-title-survey$"] }
     },
     {
       "id": "land-surveyors",
+      "exclude": "A printed emblem, not a patch",
       "name": "Association of British Columbia Land Surveyors",
       "sector": "lands",
       "match": { "family": ["^land-surveyors$"] }
     },
     {
       "id": "icis",
+      "exclude": "A printed emblem, not a patch",
       "name": "Integrated Cadastral Information Society",
       "sector": "lands",
       "match": { "family": ["^icis$"] }
