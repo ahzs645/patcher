@@ -21,7 +21,9 @@ hand, because the next import replaces it.
 The **BC Forestry Patch Atlas** snapshot: the atlas site's own "Entire codebase" ZIP, shared on
 [Google Drive](https://drive.google.com/file/d/1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4/view). The import reads its
 277 reconstructions (`dist/assets/reconstructions.json` plus each SVG and WebP preview) and nothing else.
-`orgs.json` keeps 172 of them, and 5 of those draw the same design as another, which leaves 153 patches and 14 badges. It leaves out 105 that aren't patches, which
+`orgs.json` keeps 172 of them. 25 of those, the Forest Service and Wildfire Service ovals, give way to
+PofBC's drawings of the same ovals (below), and 5 draw the same design as another. With the 28 Forest Oval
+variants, that leaves 156 patches and 14 badges. It leaves out 105 that aren't patches, which
 `manifest.json` lists under `excluded` with the reason for each: the Province's identity (ministry
 lockups, arms, programme marks), BC Timber Sales, the corporate logos of BC Hydro, BC Transit and ICBC,
 and the atlas's signs, decals, prevention cards, printed emblems and seals. It
@@ -48,7 +50,7 @@ claims, which are filed under `unsorted`.
 
 The drawings repeat a lot. The Conservation Officer Service crest (4.8 MB) is in three patches, and
 the modern coat of arms is in sixteen. The same outlines also come back recoloured or moved. So the
-import stores each repeated thing once, and the library is 9 MB instead of 29 MB:
+import stores each repeated thing once, and the library is 8 MB instead of 29 MB:
 
 - **Blocks.** When the same bytes sit inside a `<g>` in two or more places, they move to
   `shared/<name>-<hash>.svg`. The `<g>` stays in each patch with a placeholder,
@@ -112,9 +114,37 @@ stored patch joins back to the supplied file. It also checks that the atlas draw
 since it was replaced. Merged repeat photographs of a replaced design still group by the atlas's
 drawing.
 
+## Designs supplied with their variants
+
+`consolidate` goes further than `replace`: it puts a supplied design, with all its variants, in the place of
+several atlas entries. Each variant is a patch of its own with its own id, and lists the atlas entries it
+takes the place of (`atlas`). Those are left out of the library and recorded in the manifest's `absorbed`,
+and the variant carries their photographs. A variant that lists none is a colourway no photograph shows.
+The group is one card, as below.
+
+The Forest Service and Wildfire Service ovals are consolidated this way, into PofBC's own drawings of them
+(Internal Logos → Forests), in `supplied/pofbc-forest-ovals/`:
+
+| Card | Variants | Takes the place of |
+|---|---|---|
+| Forest Service tree oval | Full colour, Black & white, Forest green, White on green, Black & gold, Navy & gold, Wildfire Management (colour and black), Fire Control, Airtanker Operations | R22, R12, R21, R20, R11, R01 |
+| British Columbia / Forests wildlife oval | Full colour, Black & white, Forest green, White on green, Wildfire Service | R15, R24, R13, R14, R23 |
+| Forests, Lands and Natural Resource Operations wildlife oval | Full colour, Black & white, Forest green, White on green, Wildfire Service, Ministry of Forests | R16, R17, R18, S43, S58-O05 |
+| Forest Service yellow-sky oval | Green, Cream, Dark | S05, S54, S04 |
+| Forest Service green and gold oval | Full colour, Light band, Black & gold, Black & white | S47, S39, S35, S46, S24-O04, S42 |
+
+The first three come from the Forest Oval engine PofBC vendors. `capture.mjs` renders each variant in a
+browser from a PofBC dev server, as PofBC's Internal Logos view does, and outlines every letter from the
+font the page used, so the files need no fonts. It also sets two wordings the presets lack, FIRE CONTROL and
+Ministry of Forests, through the engine's own content fields. `drawings.mjs` copies the yellow-sky and
+green-and-gold drawings from PofBC and makes the recolours. After running either, re-import.
+
+`findPatch` follows an absorbed id to its variant (and a merged one to its patch), so old links such as
+`?patch=R22-O01` still open.
+
 ## Variants
 
-`variants` shows related designs as one card with a switch between them. Each group has an id, a card
+`variants` shows related atlas designs as one card with a switch between them. Each group has an id, a card
 label, and its members in order (the first is the card):
 
 ```json

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="200mm" height="253.781513mm" viewBox="174 -7 952 1208" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <title>British Columbia Forest Service — vector reconstruction</title>
+  <desc>Independent reconstruction from the supplied reference. Concentric ellipse geometry, individually positioned custom outlined letters, and separately authored landscape and evergreen paths. No bitmap tracing or embedded image. This is a reconstructed artwork, not an authenticated official vector master.</desc>
+  <defs>
+    <clipPath id="landscape-clip" clipPathUnits="userSpaceOnUse">
+      <ellipse cx="650.5" cy="596.5" rx="239.5" ry="364.5" />
+    </clipPath>
+  </defs>
+  <g id="oval-geometry" inkscape:label="Oval geometry — background, outer gold rule and inner rim" inkscape:groupmode="layer">
+    <ellipse id="outer-badge" cx="650" cy="597" rx="464" ry="592" fill="#00381E" />
+    <ellipse id="outer-rule-gold" cx="650" cy="596" rx="430" ry="558" fill="#E6C786" />
+    <ellipse id="outer-rule-inner-green" cx="650" cy="596" rx="411.5" ry="539.5" fill="#00381E" />
+    <ellipse id="inner-rim-gold" cx="650.5" cy="596.5" rx="262.5" ry="387.5" fill="#E6C786" />
+    <ellipse id="inner-rim-green-keyline" cx="650.5" cy="596.5" rx="247.5" ry="372.5" fill="#00381E" />
+  </g>
+  <g id="scene-layer" inkscape:label="Central landscape" inkscape:groupmode="layer"><g data-shared="block-2bc66a6555"/></g>
+  <g id="upper-lettering" fill="#E6C786" fill-rule="evenodd" inkscape:label="FOREST SERVICE — individual custom outlined letters" inkscape:groupmode="layer"><g data-shared="block-16bffd9b32"/></g>
+  <g id="lower-lettering" fill="#E6C786" fill-rule="evenodd" inkscape:label="BRITISH COLUMBIA — individual custom outlined letters" inkscape:groupmode="layer"><g data-shared="block-7bc2c318b5"/></g>
+</svg>

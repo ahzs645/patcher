@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-shared-part="block-a972e030c6">
+        <path d="M126 748 H635 V824 H126 Z" id="lake-surface" fill="#DEE6C5"/>
+        <path d="M143 752 H242" stroke-linecap="round" id="lake-ripple-01" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M259 753 H338" stroke-linecap="round" id="lake-ripple-02" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M399 753 H465" stroke-linecap="round" id="lake-ripple-03" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M484 752 H533" stroke-linecap="round" id="lake-ripple-04" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M550 752 H599" stroke-linecap="round" id="lake-ripple-05" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M163 760 H188" stroke-linecap="round" id="lake-ripple-06" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M196 766 H258" stroke-linecap="round" id="lake-ripple-07" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M279 763 H328" stroke-linecap="round" id="lake-ripple-08" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M420 763 H443" stroke-linecap="round" id="lake-ripple-09" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M462 760 H491" stroke-linecap="round" id="lake-ripple-10" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M515 761 H555" stroke-linecap="round" id="lake-ripple-11" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M161 777 H211" stroke-linecap="round" id="lake-ripple-12" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M224 773 H249" stroke-linecap="round" id="lake-ripple-13" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M291 774 H324" stroke-linecap="round" id="lake-ripple-14" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M409 771 H432" stroke-linecap="round" id="lake-ripple-15" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M450 776 H485" stroke-linecap="round" id="lake-ripple-16" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M539 773 H587" stroke-linecap="round" id="lake-ripple-17" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M182 788 H220" stroke-linecap="round" id="lake-ripple-18" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M257 786 H278" stroke-linecap="round" id="lake-ripple-19" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M305 788 H336" stroke-linecap="round" id="lake-ripple-20" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M414 788 H459" stroke-linecap="round" id="lake-ripple-21" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M481 785 H516" stroke-linecap="round" id="lake-ripple-22" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M553 786 H576" stroke-linecap="round" id="lake-ripple-23" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M177 795 H198" stroke-linecap="round" id="lake-ripple-24" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M233 800 H249" stroke-linecap="round" id="lake-ripple-25" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M285 798 H306" stroke-linecap="round" id="lake-ripple-26" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M432 801 H450" stroke-linecap="round" id="lake-ripple-27" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+        <path d="M502 797 H547" stroke-linecap="round" id="lake-ripple-28" fill="none" stroke="#0B3024" stroke-width="1.15"/>
+      </svg>

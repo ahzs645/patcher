@@ -16,14 +16,16 @@ live lettering editor (Forest Service, Forests, Forests · Wildfire Service, Lon
 Airtanker Operations), exported at their defaults with the lettering converted to outlines so they render
 without the fonts installed. They are reference-based reconstructions, not official masters.
 
-The **Patch library** holds 153 patches from the BC Forestry Patch Atlas, grouped by organization:
-BC Forest Service, BC Wildfire Service, BC Parks, Conservation Officer Service, BC Sheriff Service,
-BC Corrections, Highways and Motor Vehicles, BC Hydro and more. Choose an organization, then a patch. It also
-keeps 14 metal and leather badges, hidden from the picker for now. The atlas's logos, signs, decals and
-printed emblems are left out. `?patch=<id>` opens
-one directly (e.g. `?patch=S25-O01`). [`library/README.md`](library/README.md) says where the patches come
+The **Patch library** holds 156 patches from the BC Forestry Patch Atlas, grouped by organization:
+BC Forest Service, BC Parks, Conservation Officer Service, BC Sheriff Service, BC Corrections, Highways and
+Motor Vehicles, BC Hydro and more. Choose an organization, then a patch. Related designs are one card with a
+variant switch: the Forest Service and Wildfire Service ovals are PofBC's Forest Oval artwork in all its
+colourways, in place of the atlas's separate reconstructions of them. It also keeps 14 metal and leather
+badges, hidden from the picker for now. The atlas's logos, signs, decals and printed emblems are left out.
+`?patch=<id>` opens one directly (e.g. `?patch=S25-O01`), and an atlas id that was merged or replaced opens
+the patch that took its place. [`library/README.md`](library/README.md) says where the patches come
 from, how they are grouped, how repeated crests and outlines are stored once (29 MB of drawings in
-9 MB, joined back byte for byte), and how to re-import and verify them (`npm run library:import`,
+8 MB, joined back byte for byte), and how to re-import and verify them (`npm run library:import`,
 `npm run library:verify`).
 
 **Views:** Compare (wipe slider), Side by side, Embroidered, Stitch plan, Patch SVG — shared pan/zoom,

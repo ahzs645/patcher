@@ -8,7 +8,9 @@
 // Each patch is read as stored (library/<org>/<id>.svg), joined with the shared blocks and path
 // bundles it names (library/shared/), and hashed. The manifest's sha256 is the atlas's own
 // vectorSha256 for that drawing. With the snapshot, the joined bytes are also compared with the
-// snapshot's file directly and its vectorSha256 re-read, and every atlas design must be present.
+// snapshot's file directly and its vectorSha256 re-read, and every atlas design must be present,
+// or left out, merged or absorbed as the manifest records. Supplied drawings are checked against
+// their files in library/supplied/.
 
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
@@ -37,7 +39,7 @@ export function joinedPatches(library = LIBRARY) {
     for (const patch of org.patches) {
       const stored = readFileSync(join(library, patch.svg), 'utf8');
       const bytes = Buffer.from(joinSvg(stored, { block, path: (id) => paths.get(id) }), 'utf8');
-      out.push({ id: patch.id, org: org.id, bytes, sha256: sha(bytes), expected: patch.sha256, expectedBytes: patch.bytes, replaced: patch.replaced ?? null });
+      out.push({ id: patch.id, org: org.id, bytes, sha256: sha(bytes), expected: patch.sha256, expectedBytes: patch.bytes, replaced: patch.replaced ?? null, supplied: patch.supplied ?? null });
     }
   }
   return { manifest, patches: out };
@@ -53,14 +55,22 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
   for (const p of patches) {
     if (p.sha256 !== p.expected) problems.push(`${p.id}: joined SHA-256 ${p.sha256} is not the manifest's ${p.expected}`);
     if (p.bytes.length !== p.expectedBytes) problems.push(`${p.id}: joined ${p.bytes.length} bytes, manifest says ${p.expectedBytes}`);
+    // A consolidated variant is drawn by its supplied file, not by an atlas design.
+    if (p.supplied && !readFileSync(join(library, p.supplied.svg)).equals(p.bytes)) problems.push(`${p.id}: joined bytes differ from the supplied ${p.supplied.svg}`);
   }
   if (source) {
     const byId = new Map(patches.map((p) => [p.id, p]));
     const { manifest } = joinedPatches(library);
     const excluded = new Set((manifest.excluded ?? []).map((e) => e.id));
     const mergedInto = new Map((manifest.merged ?? []).map((m) => [m.id, m.into]));
+    const absorbedInto = new Map((manifest.absorbed ?? []).map((a) => [a.id, a.into]));
     for (const design of source.index.designs) {
       if (excluded.has(design.id)) continue;
+      if (absorbedInto.has(design.id)) {
+        // Replaced by a supplied variant, which must be in the library and say it absorbs this design.
+        if (!byId.get(absorbedInto.get(design.id))?.supplied) problems.push(`${design.id}: absorbed into ${absorbedInto.get(design.id)}, which is missing`);
+        continue;
+      }
       if (mergedInto.has(design.id)) {
         // Not stored: it must draw exactly what the patch it was merged into draws.
         const into = byId.get(mergedInto.get(design.id));
@@ -87,7 +97,9 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
       if (!Buffer.from(original).equals(p.bytes)) problems.push(`${design.id}: joined bytes differ from the snapshot's ${design.svgUrl}`);
       if (design.vectorSha256 && design.vectorSha256 !== p.sha256) problems.push(`${design.id}: SHA-256 differs from the atlas's vectorSha256`);
     }
-    if (byId.size + excluded.size + mergedInto.size !== source.index.designs.length) problems.push(`library has ${byId.size} patches, ${excluded.size} excluded and ${mergedInto.size} merged; snapshot has ${source.index.designs.length}`);
+    const fromAtlas = patches.filter((p) => !p.supplied).length;
+    const accounted = fromAtlas + excluded.size + mergedInto.size + absorbedInto.size;
+    if (accounted !== source.index.designs.length) problems.push(`library has ${fromAtlas} atlas patches, ${excluded.size} excluded, ${mergedInto.size} merged and ${absorbedInto.size} absorbed; snapshot has ${source.index.designs.length}`);
   }
   return problems;
 }

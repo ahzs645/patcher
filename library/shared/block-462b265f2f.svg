@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-shared-part="block-462b265f2f">
+        <path d="M124 704 L153 682 L178 658 L200 640 L221 615 L241 634 L261 645 L283 654 L304 637 L326 629 L347 614 L360 596 L372 604 L380 613 L391 607 L410 607 L420 622 L439 622 L449 646 L465 654 L481 641 L499 617 L510 635 L521 627 L535 639 L548 631 L566 642 L583 639 L601 644 L615 659 L643 669 L659 712 L659 752 L122 752 Z" id="snow-range" fill="#F4F0D3" stroke="#0B3024" stroke-width="2.1"/>
+        <path d="M360 596 L366 613 L381 629 M370 610 L386 624 M391 607 L396 623 L402 631 L416 644 L430 650 M420 623 L430 644 L441 651 L445 675 L456 685 M499 617 L493 634 L488 643 L476 650 M499 624 L505 643 L517 650 M521 627 L530 642 M547 645 L556 651 M583 641 L591 660 L587 674 M600 647 L607 674 L618 688" id="rear-mountain-folds" fill="none" stroke="#0B3024" stroke-width="1.47"/>
+        <path d="M272 661 L292 674 L313 681 Q338 679 361 668 L360 688 Q338 700 315 697 L298 687 L280 680 Z" id="left-cliff-ledges" fill="#F4F0D3" stroke="#0B3024" stroke-width="1.722"/>
+        <path d="M292 674 L297 686" id="left-cliff-stratum-1" fill="none" stroke="#0B3024" stroke-width="2.7300000000000004"/>
+        <path d="M304 678 L310 694" id="left-cliff-stratum-2" fill="none" stroke="#0B3024" stroke-width="1.6800000000000002"/>
+        <path d="M318 681 L323 697" id="left-cliff-stratum-3" fill="none" stroke="#0B3024" stroke-width="2.7300000000000004"/>
+        <path d="M332 678 L337 697" id="left-cliff-stratum-4" fill="none" stroke="#0B3024" stroke-width="1.6800000000000002"/>
+        <path d="M346 674 L350 692" id="left-cliff-stratum-5" fill="none" stroke="#0B3024" stroke-width="2.7300000000000004"/>
+        <path d="M357 670 L359 689" id="left-cliff-stratum-6" fill="none" stroke="#0B3024" stroke-width="1.6800000000000002"/>
+        <path d="M397 673 L401 687 L410 691 L419 697 L431 701 L446 706 L448 718 L426 716 L410 710 L398 707 L394 695 Z" id="right-cliff-ledge" fill="#F4F0D3" stroke="#0B3024" stroke-width="1.785"/>
+        <path d="M403 688 L405 709" id="right-cliff-stratum-1" fill="none" stroke="#0B3024" stroke-width="1.7429999999999999"/>
+        <path d="M412 692 L415 712" id="right-cliff-stratum-2" fill="none" stroke="#0B3024" stroke-width="1.7429999999999999"/>
+        <path d="M422 698 L425 715" id="right-cliff-stratum-3" fill="none" stroke="#0B3024" stroke-width="1.7429999999999999"/>
+        <path d="M433 702 L436 717" id="right-cliff-stratum-4" fill="none" stroke="#0B3024" stroke-width="1.7429999999999999"/>
+        <path d="M121 704 L157 681 L190 650 L221 615 L237 636 L265 653 L287 664 L315 688 L332 710 L356 731 L357 752 L120 752 Z" id="left-foreground-peak" fill="#F4F0D3" stroke="#0B3024" stroke-width="2.1"/>
+        <path d="M221 616 L215 639 L205 653 L188 661 M219 635 L226 649 L241 656 L260 671 M210 644 L211 654 L227 665 M206 654 L223 675 L237 699 M217 670 L222 688 L229 698 M190 661 L206 678 L214 700" id="left-peak-snow-folds" fill="none" stroke="#0B3024" stroke-width="1.512"/>
+        <path d="M136 734 Q161 724 185 720 Q211 714 233 720 L258 724 Q278 729 294 738 L310 751" id="low-snow-ridge" fill="none" stroke="#0B3024" stroke-width="1.7429999999999999"/>
+        <path d="M243 704 L256 709 L264 717 L253 714 Z" id="left-rock-fissure" fill="#0B3024"/>
+        <path d="M255 713 L268 716 L274 724 L266 720 Z" id="left-rock-fissure-small" fill="#0B3024"/>
+        <path d="M338 637 l6 8 4 -4 7 7" id="fine-snow-ravine-1" fill="none" stroke="#0B3024" stroke-width="1.1969999999999998"/>
+        <path d="M450 668 l-5 9 -1 12" id="fine-snow-ravine-2" fill="none" stroke="#0B3024" stroke-width="1.1969999999999998"/>
+        <path d="M459 687 l7 3" id="fine-snow-ravine-3" fill="none" stroke="#0B3024" stroke-width="1.1969999999999998"/>
+        <path d="M535 658 l8 4" id="fine-snow-ravine-4" fill="none" stroke="#0B3024" stroke-width="1.1969999999999998"/>
+        <path d="M560 668 l7 4" id="fine-snow-ravine-5" fill="none" stroke="#0B3024" stroke-width="1.1969999999999998"/>
+      </svg>

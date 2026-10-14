@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="200mm" height="253.781513mm" viewBox="174 -7 952 1208" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <title>British Columbia Forest Service — vector reconstruction</title>
+  <desc>Independent reconstruction from the supplied reference. Concentric ellipse geometry, individually positioned custom outlined letters, and separately authored landscape and evergreen paths. No bitmap tracing or embedded image. This is a reconstructed artwork, not an authenticated official vector master.</desc>
+  <defs>
+    <clipPath id="landscape-clip" clipPathUnits="userSpaceOnUse">
+      <ellipse cx="650.5" cy="596.5" rx="239.5" ry="364.5" />
+    </clipPath>
+  </defs>
+  <g id="oval-geometry" inkscape:label="Oval geometry — background, outer gold rule and inner rim" inkscape:groupmode="layer">
+    <ellipse id="outer-badge" cx="650" cy="597" rx="464" ry="592" fill="#00381E" />
+    <ellipse id="outer-rule-gold" cx="650" cy="596" rx="430" ry="558" fill="#E6C786" />
+    <ellipse id="outer-rule-inner-green" cx="650" cy="596" rx="411.5" ry="539.5" fill="#00381E" />
+    <ellipse id="inner-rim-gold" cx="650.5" cy="596.5" rx="262.5" ry="387.5" fill="#E6C786" />
+    <ellipse id="inner-rim-green-keyline" cx="650.5" cy="596.5" rx="247.5" ry="372.5" fill="#00381E" />
+  </g>
+  <g id="scene-layer" inkscape:label="Central landscape" inkscape:groupmode="layer">
+    <g id="landscape" clip-path="url(#landscape-clip)" inkscape:label="Landscape — separate editable components">
+      <g id="sky-and-clouds" inkscape:label="Blue sky and horizontal white cloud bands">
+        <rect id="sky" x="395" y="222" width="520" height="770" fill="#0FB4E0" />
+        <rect id="cloud-band-upper" x="395" y="581" width="520" height="12" fill="#FFFFFF" />
+        <rect id="cloud-band-middle" x="395" y="611" width="520" height="17" fill="#FFFFFF" />
+        <rect id="cloud-band-lower" x="395" y="641" width="520" height="22" fill="#FFFFFF" />
+        <rect id="distant-white-horizon" x="395" y="675" width="520" height="115" fill="#FFFFFF" />
+      </g>
+      <g id="mountains" stroke-linecap="round" stroke-linejoin="round" inkscape:label="Snow mountains and rock faces">
+        <path id="rear-snow-range" d="M397 744L435 716L478 714 Q506 710 524 701Q542 699 558 685L571 689Q589 685 602 678 L630 655L653 665L681 644L710 651L735 671L762 679 Q779 675 794 669Q806 662 817 671L832 681Q843 678 852 681 Q862 686 868 697L913 719L915 788H395Z" fill="#FFFFFF" stroke="#080C0A" stroke-width="6" />
+        <path id="rear-right-grey-rock" d="M793 670Q805 665 815 674L830 686L846 685 Q856 687 862 700L891 721L863 714L849 699L835 692L830 689 Q817 685 810 678Z" fill="#8D8F8D" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="rear-right-rock-edge" d="M827 682Q839 688 845 697L866 713" fill="none" stroke="#080C0A" stroke-width="3.4" />
+        <path id="central-high-snow-peak" d="M576 779L620 700L649 667L670 650L704 633 Q720 652 735 659L768 674L758 710L801 779Z" fill="#FFFFFF" stroke="#080C0A" stroke-width="6.6" />
+        <path id="central-peak-shadow" d="M704 633Q709 651 720 661L732 671L740 677L731 689 L718 682L709 667L695 651Z" fill="#8D8F8D" stroke="#080C0A" stroke-width="4.4" />
+        <path id="central-peak-snow-sliver" d="M705 644L712 652L715 663L724 668L724 672 L733 676L729 682L720 677L716 670L710 668L708 657L703 650Z" fill="#FFFFFF" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="central-peak-avalanche-edge" d="M703 652L710 668L713 676L719 680L721 685" fill="none" stroke="#080C0A" stroke-width="3.2" />
+        <path id="right-main-snow-mountain" d="M653 781L687 731L718 697L735 703 L749 674L777 654L796 679L814 688L823 694Q831 705 839 711 Q850 717 862 721L884 750L906 781Z" fill="#FFFFFF" stroke="#080C0A" stroke-width="6.5" />
+        <path id="right-mountain-grey-face" d="M795 679L813 688L823 695L833 709 L843 715L857 720L842 718L829 712L820 704L814 697Z" fill="#8D8F8D" />
+        <path id="right-mountain-black-spurs" d="M816 696L825 706L827 712L832 711L835 719 L840 716L843 723L849 722L853 729L860 732L865 736 Q851 736 840 729L829 720Z" fill="#080C0A" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="right-lower-ridge" d="M691 737L707 723L721 719L735 726L748 739L764 746L773 755" fill="none" stroke="#080C0A" stroke-width="4.4" />
+        <path id="right-lower-black-face" d="M733 704L739 706L742 712L748 711L750 719 L757 720L761 727L768 729L774 737L781 741L789 752 Q773 749 762 740L751 734L748 729L743 727L740 720L733 717Z" fill="#080C0A" />
+        <path id="left-main-snow-mountain" d="M387 704L417 691L454 668L476 686 Q482 690 490 688Q498 687 505 695L523 714 Q535 733 550 741L573 751L594 765L624 783L384 783Z" fill="#FFFFFF" stroke="#080C0A" stroke-width="6.4" />
+        <path id="left-snow-rock-face" d="M417 724L428 731L432 740L440 741L442 748 L450 749L453 753L461 754L467 762L479 767L485 775 L492 781H415Z" fill="#8D8F8D" stroke="#080C0A" stroke-width="4.5" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="left-peak-fold" d="M454 679L450 691L438 707L425 726" fill="none" stroke="#080C0A" stroke-width="3.5" />
+        <path id="left-black-ravine" d="M520 709L530 718L539 721L540 728L548 728 L551 736L558 735L562 742L569 741L574 748L582 746L588 753 L596 751L604 758L609 762L595 765L580 758L568 755 L555 748L543 742L531 730Z" fill="#080C0A" />
+        <path id="ravine-snow-break-a" d="M527 720L531 724L532 730L528 727Z" fill="#FFFFFF" />
+        <path id="ravine-snow-break-b" d="M535 725L540 729L541 737L536 734Z" fill="#FFFFFF" />
+        <path id="ravine-snow-break-c" d="M545 732L551 735L551 742L546 740Z" fill="#FFFFFF" />
+        <path id="ravine-snow-break-d" d="M557 740L562 742L562 749L557 747Z" fill="#FFFFFF" />
+        <path id="ravine-snow-break-e" d="M569 746L574 748L574 754L569 752Z" fill="#FFFFFF" />
+        <path id="foreground-snowfield" d="M469 779Q485 773 498 779Q510 784 525 778 Q541 779 558 771L576 767L592 759L608 763L624 774L641 770 L657 761L670 765L682 777L699 781L722 785L716 795H461Z" fill="#FFFFFF" stroke="#080C0A" stroke-width="4" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="snowfield-left-ridge" d="M557 773L570 769L581 771L591 767L601 770" fill="none" stroke="#080C0A" stroke-width="3" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="snowfield-mid-ridge" d="M584 757L597 754L607 758L614 757L623 765" fill="none" stroke="#080C0A" stroke-width="3" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="snowfield-right-ridge" d="M659 769L670 773L676 780" fill="none" stroke="#080C0A" stroke-width="3" />
+        <path id="left-shore-small-rock" d="M471 779Q478 768 486 776L499 781Z" fill="#005737" stroke="#080C0A" stroke-width="3" />
+        <path id="middle-shore-small-rock" d="M551 780L561 774L571 775L578 771L587 777L595 781Z" fill="#005737" stroke="#080C0A" stroke-width="3" />
+      </g>
+      <g id="distant-evergreens" inkscape:label="Distant forest on the opposite shore">
+        <path id="forest-solid-silhouette" d="M691 782L696 772L695 766L700 756L703 741 L709 758L715 748L720 761L725 745L731 760L736 744L742 760 L748 743L754 757L760 740L766 758L773 739L780 755 L785 733L793 718L800 742L806 731L813 750L820 736L827 756 L834 742L841 762L848 746L855 762L862 754L870 774L872 786Z" fill="#080C0A" />
+        <path id="far-tree-01" d="M703 750Q701.25 756.6 699.5 762.21L700.9 763.2Q698.1 767.82 697.19 771.78L699.15 771.78L695.72 778.05Q697.75 779.7 698.45 783H707.69L708.46 778.38L709.86 778.38L706.99 771.45L708.81 771.12Q706.99 765.84 705.24 762.87L706.43 762.21Z" fill="#005737" />
+        <path id="far-tree-02" d="M717 758Q715.5 763.0 714.0 767.25L715.2 768.0Q712.8 771.5 712.02 774.5L713.7 774.5L710.76 779.25Q712.5 780.5 713.1 783H721.02L721.68 779.5L722.88 779.5L720.42 774.25L721.98 774.0Q720.42 770.0 718.92 767.75L719.94 767.25Z" fill="#005737" />
+        <path id="far-tree-03" d="M730 754Q728.625 759.8 727.25 764.73L728.35 765.6Q726.15 769.66 725.435 773.14L726.975 773.14L724.28 778.65Q725.875 780.1 726.425 783H733.685L734.29 778.94L735.39 778.94L733.135 772.85L734.565 772.56Q733.135 767.92 731.76 765.31L732.695 764.73Z" fill="#005737" />
+        <path id="far-tree-04" d="M742 754Q740.625 759.8 739.25 764.73L740.35 765.6Q738.15 769.66 737.435 773.14L738.975 773.14L736.28 778.65Q737.875 780.1 738.425 783H745.685L746.29 778.94L747.39 778.94L745.135 772.85L746.565 772.56Q745.135 767.92 743.76 765.31L744.695 764.73Z" fill="#005737" />
+        <path id="far-tree-05" d="M754 751Q752.625 757.4 751.25 762.84L752.35 763.8Q750.15 768.28 749.435 772.12L750.975 772.12L748.28 778.2Q749.875 779.8 750.425 783H757.685L758.29 778.52L759.39 778.52L757.135 771.8L758.565 771.48Q757.135 766.36 755.76 763.48L756.695 762.84Z" fill="#005737" />
+        <path id="far-tree-06" d="M766 751Q764.75 757.4 763.5 762.84L764.5 763.8Q762.5 768.28 761.85 772.12L763.25 772.12L760.8 778.2Q762.25 779.8 762.75 783H769.35L769.9 778.52L770.9 778.52L768.85 771.8L770.15 771.48Q768.85 766.36 767.6 763.48L768.45 762.84Z" fill="#005737" />
+        <path id="far-tree-07" d="M779 748Q777.625 755.0 776.25 760.95L777.35 762.0Q775.15 766.9 774.435 771.1L775.975 771.1L773.28 777.75Q774.875 779.5 775.425 783H782.685L783.29 778.1L784.39 778.1L782.135 770.75L783.565 770.4Q782.135 764.8 780.76 761.65L781.695 760.95Z" fill="#005737" />
+        <path id="far-tree-08" d="M793 731Q791.25 741.4 789.5 750.24L790.9 751.8Q788.1 759.08 787.19 765.32L789.15 765.32L785.72 775.2Q787.75 777.8 788.45 783H797.69L798.46 775.72L799.86 775.72L796.99 764.8L798.81 764.28Q796.99 755.96 795.24 751.28L796.43 750.24Z" fill="#005737" />
+        <path id="far-tree-09" d="M807 746Q805.5 753.4 804.0 759.69L805.2 760.8Q802.8 765.98 802.02 770.42L803.7 770.42L800.76 777.45Q802.5 779.3 803.1 783H811.02L811.68 777.82L812.88 777.82L810.42 770.05L811.98 769.68Q810.42 763.76 808.92 760.43L809.94 759.69Z" fill="#005737" />
+        <path id="far-tree-10" d="M820 750Q818.625 756.6 817.25 762.21L818.35 763.2Q816.15 767.82 815.435 771.78L816.975 771.78L814.28 778.05Q815.875 779.7 816.425 783H823.685L824.29 778.38L825.39 778.38L823.135 771.45L824.565 771.12Q823.135 765.84 821.76 762.87L822.695 762.21Z" fill="#005737" />
+        <path id="far-tree-11" d="M834 755Q832.75 760.6 831.5 765.36L832.5 766.2Q830.5 770.12 829.85 773.48L831.25 773.48L828.8 778.8Q830.25 780.2 830.75 783H837.35L837.9 779.08L838.9 779.08L836.85 773.2L838.15 772.92Q836.85 768.44 835.6 765.92L836.45 765.36Z" fill="#005737" />
+        <path id="far-tree-12" d="M849 760Q847.625 764.6 846.25 768.51L847.35 769.2Q845.15 772.42 844.435 775.18L845.975 775.18L843.28 779.55Q844.875 780.7 845.425 783H852.685L853.29 779.78L854.39 779.78L852.135 774.95L853.565 774.72Q852.135 771.04 850.76 768.97L851.695 768.51Z" fill="#005737" />
+        <path id="far-tree-13" d="M862 765Q860.75 768.6 859.5 771.66L860.5 772.2Q858.5 774.72 857.85 776.88L859.25 776.88L856.8 780.3Q858.25 781.2 858.75 783H865.35L865.9 780.48L866.9 780.48L864.85 776.7L866.15 776.52Q864.85 773.64 863.6 772.02L864.45 771.66Z" fill="#005737" />
+      </g>
+      <g id="lake" inkscape:label="Lake, level far shoreline and individual ripples">
+        <rect id="water-blue" x="395" y="781" width="520" height="145" fill="#0FB4E0" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="far-shoreline" d="M402 782H900" fill="none" stroke="#080C0A" stroke-width="7" />
+        <path id="lake-ripple-01" d="M468 802Q477 799 481 798Q486 800 497 800Q489 804 482 804Q475 803 468 802Z" fill="#080C0A" />
+        <path id="lake-ripple-02" d="M528 802Q538 801 544 798Q551 801 568 801Q556 806 547 805Q538 804 528 802Z" fill="#080C0A" />
+        <path id="lake-ripple-03" d="M587 796Q594 795 599 792Q606 795 615 795Q607 799 600 798Q594 797 587 796Z" fill="#080C0A" />
+        <path id="lake-ripple-04" d="M483 821Q498 819 505 815Q515 819 530 820Q519 823 512 823L505 821Q494 825 483 821Z" fill="#080C0A" />
+        <path id="lake-ripple-05" d="M570 822Q578 821 584 818Q592 821 602 821Q595 824 588 824Z" fill="#080C0A" />
+        <path id="lake-ripple-06" d="M541 838Q552 836 558 833Q567 836 580 836Q570 840 559 840Z" fill="#080C0A" />
+        <path id="lake-ripple-07" d="M669 818Q682 816 687 813Q697 817 711 817Q700 821 690 821Z" fill="#080C0A" />
+        <path id="lake-ripple-08" d="M720 803Q733 801 739 797Q749 801 765 802Q751 806 742 805Z" fill="#080C0A" />
+        <path id="lake-ripple-09" d="M786 803Q797 801 804 798Q814 801 827 802Q814 806 806 805Z" fill="#080C0A" />
+        <path id="lake-ripple-10" d="M708 833Q721 831 729 827Q737 830 753 832Q741 836 731 835Z" fill="#080C0A" />
+      </g>
+      <g id="foreground-ground" stroke-linejoin="round" inkscape:label="Foreground shore, rocks and ground marks">
+        <path id="foreground-green-bank" d="M399 890L442 864L462 853 Q478 839 491 850Q508 857 526 855L544 857 Q556 842 566 848L579 858L600 857L621 858L644 856L671 858 L695 857L713 861L737 857L754 858L766 849L780 845 Q788 824 798 821Q807 823 809 838L819 842L835 853L859 863 L886 873L907 899L908 1001H394Z" fill="#005737" stroke="#080C0A" stroke-width="8" />
+        <path id="left-shore-rock" d="M464 850Q471 838 482 841Q488 842 490 849L498 853 L493 859L484 856L477 859L470 855Z" fill="#005737" stroke="#080C0A" stroke-width="5" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="left-rock-face" d="M469 851L478 848L484 853" fill="none" stroke="#080C0A" stroke-width="3.5" />
+        <path id="middle-low-rock" d="M545 856L552 847L561 846L568 851L575 850L583 858 L575 860L568 856L562 861L555 856L549 860Z" fill="#005737" stroke="#080C0A" stroke-width="4" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="middle-rock-crack" d="M560 850L559 856" fill="none" stroke="#080C0A" stroke-width="3.5" />
+        <path id="right-back-rock" d="M772 847L781 838L788 826Q796 814 803 824L806 835 L815 838L819 846L828 849L821 858L807 854L794 850Z" fill="#005737" stroke="#080C0A" stroke-width="5.5" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="right-back-rock-crack" d="M789 830L799 832L803 837M780 841L789 839L800 845" fill="none" stroke="#080C0A" stroke-width="4" />
+        <path id="right-front-rock" d="M757 859L767 849L775 850L784 842L793 847L799 854 L811 858L801 862L792 858L784 864L777 857L767 864Z" fill="#005737" stroke="#080C0A" stroke-width="5" />
+        <path stroke-linecap="round" stroke-linejoin="round" id="right-front-rock-crack" d="M781 849L786 853L785 858" fill="none" stroke="#080C0A" stroke-width="3.3" />
+        <path id="ground-mark-01" d="M514 873Q530 870 542 872Q554 876 573 875Q558 880 546 878Q530 877 514 873Z" fill="#080C0A" />
+        <path id="ground-mark-02" d="M531 894Q540 890 545 889Q555 891 558 898L571 904Q555 904 549 900L542 901Z" fill="#080C0A" />
+        <path id="ground-mark-03" d="M590 912Q600 909 606 909Q613 912 626 913Q618 917 610 916Z" fill="#080C0A" />
+        <path id="ground-mark-04" d="M682 883Q691 879 697 881L714 884Q705 889 696 887Z" fill="#080C0A" />
+        <path id="ground-mark-05" d="M675 905Q689 903 698 899Q706 901 715 903L734 904Q720 909 709 907L699 906Q686 911 675 905Z" fill="#080C0A" />
+        <path id="ground-mark-06" d="M692 930Q702 927 708 922Q719 924 734 928Q723 932 714 931L706 932Z" fill="#080C0A" />
+        <path id="ground-mark-07" d="M750 886L763 880Q771 881 784 879Q777 885 770 885L762 889Z" fill="#080C0A" />
+        <path id="ground-mark-08" d="M709 868Q721 864 737 867Q727 871 719 870Z" fill="#080C0A" />
+        <path id="left-grass-tuft" d="M607 953L609 946Q612 942 614 948L615 940Q619 935 621 944 L623 939Q627 937 628 944L629 949Q633 945 635 950L634 956L630 958L627 952 L624 958L620 953L617 958L614 953L610 957Z" fill="#080C0A" />
+        <path id="right-grass-tuft" d="M659 950Q660 945 665 948L664 944Q666 939 670 944 L674 942Q678 944 678 948Q683 945 686 950L690 957L685 960L681 956L678 958 L674 953L670 957L667 953L664 955Z" fill="#080C0A" />
+      </g>
+      <g id="central-evergreen" inkscape:label="Central evergreen — outline, canopy, needle cuts and trunk">
+        <path id="trunk-black-silhouette" d="M625 703L660 703C659 748 658 805 658 851 C658 869 659 878 669 881Q676 885 668 887Q653 889 645 879 Q647 886 644 887Q638 885 636 879Q628 890 613 888 Q601 888 599 883Q600 880 610 879C619 877 622 867 623 849 C626 802 625 751 625 703Z" fill="#080C0A" />
+        <path id="trunk-green-infill" d="M637 710L647 710L647 850C647 866 649 877 657 882 Q646 879 642 868Q640 879 629 883C635 872 635 862 635 848Z" fill="#005737" />
+        <path id="canopy-black-silhouette" d="M650 243 C659 287 671 324 687 345 Q679 348 672 342 C684 366 701 385 721 400 Q708 404 696 400 L697 406 Q685 404 680 399 C695 432 721 461 750 484 Q737 490 721 486 L727 495 Q716 497 703 490 L707 498 L694 494 C704 509 714 521 726 530 Q713 533 704 529 C716 547 733 566 751 583 Q739 588 730 585 C742 598 754 608 766 618 Q749 635 723 631 L732 638 Q715 638 702 632 L711 653 L696 649 C704 663 713 674 719 681 Q709 687 701 684 C717 704 735 720 753 734 Q731 744 704 736 L710 747 Q696 748 683 741 L686 751 Q671 750 659 743 L659 756 L643 741 L639 715 C629 729 616 738 603 740 L610 730 Q595 740 581 739 L586 731 Q566 739 550 736 L554 731 Q544 734 536 729 C567 710 592 688 607 668 Q598 673 589 670 L599 655 Q575 669 559 666 L569 654 Q551 661 541 658 L549 650 Q536 654 526 648 C559 622 589 596 607 568 Q590 579 575 575 L584 565 Q563 572 548 565 C573 544 592 525 609 502 Q593 518 570 522 L576 514 Q548 528 528 518 C565 490 595 467 607 445 Q593 452 576 451 L581 443 Q568 448 555 445 C579 425 599 405 610 382 Q597 388 584 384 C603 365 615 351 623 339 Q614 344 606 343 C626 312 639 274 650 243Z" fill="#080C0A" />
+        <path id="canopy-green-infill" d="M650 269 C642 293 636 313 627 326 Q633 324 636 318 C630 341 619 360 609 370 Q619 367 626 364 C619 395 601 416 580 436 Q593 433 600 428 L596 437 Q609 433 620 430 C611 459 582 490 553 509 Q578 503 600 491 L596 505 Q610 500 617 498 C607 523 590 541 574 554 Q590 550 602 546 L598 559 L616 552 C606 587 578 618 550 640 L570 635 L564 645 L583 639 L576 653 Q602 641 620 630 L615 651 L631 645 C616 680 591 707 568 724 Q589 720 606 711 L599 726 L623 714 L615 731 Q630 725 637 713 L639 708 L647 711 C652 728 659 733 671 739 L666 725 Q678 735 688 735 L682 722 Q699 733 713 733 L703 721 Q720 732 742 732 C724 716 707 702 695 682 Q704 687 710 685 C694 669 682 648 677 630 L699 639 L693 623 Q709 632 723 631 L711 616 Q728 625 739 623 C715 603 698 584 689 567 L712 575 C688 552 671 526 662 501 L686 520 C674 503 666 487 662 477 L681 486 L677 473 L696 482 L691 471 L719 480 C690 456 670 430 662 398 L682 407 L680 395 L698 402 C677 378 665 357 658 329 L668 340 C659 317 654 291 650 269Z" fill="#005737" />
+        <g id="canopy-interior-cuts" fill="#080C0A" inkscape:label="Separate interior needle cuts">
+          <path id="tip-cut" d="M646 312C640 323 643 333 652 339C649 329 648 320 646 312Z" />
+          <path id="upper-left-needle" d="M642 376C635 385 634 393 635 399C642 393 646 386 642 376Z" />
+          <path id="upper-left-sweep" d="M629 393C624 405 618 411 612 417C622 415 632 403 629 393Z" />
+          <path id="upper-right-needle" d="M663 417C665 427 673 436 681 440C674 430 670 422 663 417Z" />
+          <path id="upper-right-sweep" d="M666 440C669 453 678 463 688 468C679 455 673 447 666 440Z" />
+          <path id="left-middle-sweep" d="M635 447C630 465 620 477 608 485C624 481 636 468 635 447Z" />
+          <path id="middle-fork" d="M645 471C640 484 639 496 640 507L644 496Q649 510 657 514C653 498 650 483 645 471Z" />
+          <path id="left-branch-cut" d="M629 512C623 523 616 530 610 535C621 534 631 524 629 512Z" />
+          <path id="right-lower-sweep" d="M671 553C668 572 674 582 688 592C680 576 676 563 671 553Z" />
+          <path id="right-lower-needle" d="M698 576C695 591 701 602 708 609C705 595 701 584 698 576Z" />
+          <path id="left-lower-sweep" d="M632 581C625 597 616 607 606 614C623 610 634 598 632 581Z" />
+          <path id="central-crotch" d="M646 610C639 626 633 635 626 644Q638 641 644 634Q650 643 657 646C651 635 650 622 646 610Z" />
+          <path id="low-left-needle" d="M638 679C630 687 630 696 632 700C638 694 641 686 638 679Z" />
+          <path id="low-middle-needle" d="M646 673C639 688 644 697 650 704C650 692 649 682 646 673Z" />
+          <path id="low-right-needle" d="M663 670C667 687 675 696 684 701C677 687 671 677 663 670Z" />
+        </g>
+        <path id="white-crotch-opening" d="M645 635L653 646L650 652L643 643Z" fill="#FFFFFF" />
+      </g>
+    </g>
+  </g>
+  <g id="upper-lettering" fill="#E6C786" fill-rule="evenodd" inkscape:label="FOREST SERVICE — individual custom outlined letters" inkscape:groupmode="layer">
+    <path transform="translate(319.82399 493.76454) rotate(-81.75338) scale(0.9745827 0.9628020) translate(-32.0 -50.0)" data-letter="F" id="top-01-F" d="M0 0H64V24H28V42H57V64H28V100H0Z" />
+    <path transform="translate(339.20269 409.39963) rotate(-71.34472) scale(1.0034103 1.0093696) translate(-44.0 -50.0)" data-letter="O" id="top-02-O" d="M44 0C16 0 0 19 0 50C0 81 16 100 44 100C72 100 88 81 88 50C88 19 72 0 44 0Z M44 24C33 24 27 34 27 50C27 66 33 76 44 76C55 76 61 66 61 50C61 34 55 24 44 24Z" />
+    <path transform="translate(379.37551 315.20883) rotate(-62.34110) scale(0.9926582 0.9801913) translate(-42.0 -50.0)" data-letter="R" id="top-03-R" d="M0 0H40C64 0 77 10 77 31C77 44 71 52 61 57L84 100H53L33 64H28V100H0Z M28 23V44H39C46 44 50 40 50 34C50 27 46 23 38 23Z" />
+    <path transform="translate(430.26783 243.60098) rotate(-50.07037) scale(1.0109060 0.9854003) translate(-34.0 -50.0)" data-letter="E" id="top-04-E" d="M0 0H68V23H28V41H62V62H28V78H68V100H0Z" />
+    <path transform="translate(498.57209 182.10971) rotate(-33.30797) scale(0.9657945 0.9712935) translate(-39.0 -51.5)" data-letter="S" id="top-05-S" d="M74 6C64 2 52 0 40 0C17 0 1 12 1 31C1 48 13 55 34 64L43 68 C49 71 50 73 50 76C50 80 46 82 40 82C28 82 16 77 6 71L0 94 C11 100 26 103 40 103C63 103 78 90 78 71C78 54 64 45 45 37L35 33 C27 30 25 28 25 25C25 21 30 19 37 19C47 19 57 22 68 27Z" />
+    <path transform="translate(575.20233 147.82302) rotate(-17.08697) scale(0.9936571 0.9548134) translate(-36.5 -50.0)" data-letter="T" id="top-06-T" d="M0 0H73V24H50V100H23V24H0Z" />
+    <path transform="translate(723.96346 143.91091) rotate(15.68346) scale(1.0092064 0.9948065) translate(-39.0 -51.5)" data-letter="S" id="top-07-S" d="M74 6C64 2 52 0 40 0C17 0 1 12 1 31C1 48 13 55 34 64L43 68 C49 71 50 73 50 76C50 80 46 82 40 82C28 82 16 77 6 71L0 94 C11 100 26 103 40 103C63 103 78 90 78 71C78 54 64 45 45 37L35 33 C27 30 25 28 25 25C25 21 30 19 37 19C47 19 57 22 68 27Z" />
+    <path transform="translate(806.26949 181.27174) rotate(32.87627) scale(0.9866427 0.9934378) translate(-34.0 -50.0)" data-letter="E" id="top-08-E" d="M0 0H68V23H28V41H62V62H28V78H68V100H0Z" />
+    <path transform="translate(876.60243 245.91565) rotate(46.07200) scale(0.9687228 1.0380203) translate(-42.0 -50.0)" data-letter="R" id="top-09-R" d="M0 0H40C64 0 77 10 77 31C77 44 71 52 61 57L84 100H53L33 64H28V100H0Z M28 23V44H39C46 44 50 40 50 34C50 27 46 23 38 23Z" />
+    <path transform="translate(923.85754 320.91700) rotate(62.78293) scale(0.9861521 0.9818665) translate(-47.0 -50.0)" data-letter="V" id="top-10-V" d="M0 0H29L47 72L66 0H94L62 100H32Z" />
+    <path transform="translate(952.57143 383.67741) rotate(68.06816) scale(1.0008387 0.9742763) translate(-13.5 -50.0)" data-letter="I" id="top-11-I" d="M0 0H27V100H0Z" />
+    <path transform="translate(970.19803 448.31235) rotate(75.92585) scale(0.9919455 1.0165675) translate(-39.0 -50.0)" data-letter="C" id="top-12-C" d="M77 9C66 3 56 0 45 0C17 0 0 20 0 50C0 81 18 100 45 100 C59 100 70 97 78 91L68 68C60 73 53 75 47 75C33 75 26 66 26 50 C26 34 33 25 47 25C54 25 60 27 67 31Z" />
+    <path transform="translate(984.21971 532.76677) rotate(80.16041) scale(0.9721948 1.0086408) translate(-34.0 -50.0)" data-letter="E" id="top-13-E" d="M0 0H68V23H28V41H62V62H28V78H68V100H0Z" />
+  </g>
+  <g id="lower-lettering" fill="#E6C786" fill-rule="evenodd" inkscape:label="BRITISH COLUMBIA — individual custom outlined letters" inkscape:groupmode="layer">
+    <path transform="translate(314.30103 670.08941) rotate(83.61297) scale(0.9760564 0.9632991) translate(-38.5 -50.0)" data-letter="B" id="bottom-01-B" d="M0 0H39C64 0 73 9 73 25C73 36 68 43 60 47 C72 51 77 60 77 73C77 92 63 100 42 100H0Z M28 21V40H39C47 40 50 36 50 31C50 25 46 21 39 21Z M28 61V80H41C49 80 53 76 53 70C53 64 48 61 41 61Z" />
+    <path transform="translate(329.25802 757.53438) rotate(75.93157) scale(0.9502719 0.9632916) translate(-42.0 -50.0)" data-letter="R" id="bottom-02-R" d="M0 0H40C64 0 77 10 77 31C77 44 71 52 61 57L84 100H53L33 64H28V100H0Z M28 23V44H39C46 44 50 40 50 34C50 27 46 23 38 23Z" />
+    <path transform="translate(346.99759 817.82983) rotate(66.76383) scale(0.9805234 0.9489622) translate(-13.5 -50.0)" data-letter="I" id="bottom-03-I" d="M0 0H27V100H0Z" />
+    <path transform="translate(372.00172 870.27830) rotate(61.46278) scale(0.8915474 0.9681506) translate(-36.5 -50.0)" data-letter="T" id="bottom-04-T" d="M0 0H73V24H50V100H23V24H0Z" />
+    <path transform="translate(402.77080 922.55448) rotate(55.65156) scale(1.0247581 0.9791634) translate(-13.5 -50.0)" data-letter="I" id="bottom-05-I" d="M0 0H27V100H0Z" />
+    <path transform="translate(443.49800 970.49800) rotate(44.99427) scale(0.9375276 0.9982976) translate(-39.0 -51.5)" data-letter="S" id="bottom-06-S" d="M74 6C64 2 52 0 40 0C17 0 1 12 1 31C1 48 13 55 34 64L43 68 C49 71 50 73 50 76C50 80 46 82 40 82C28 82 16 77 6 71L0 94 C11 100 26 103 40 103C63 103 78 90 78 71C78 54 64 45 45 37L35 33 C27 30 25 28 25 25C25 21 30 19 37 19C47 19 57 22 68 27Z" />
+    <path transform="translate(512.76342 1023.21077) rotate(29.29542) scale(0.9982038 0.9961482) translate(-40.5 -50.0)" data-letter="H" id="bottom-07-H" d="M0 0H28V38H54V0H81V100H54V62H28V100H0Z" />
+    <path transform="translate(646.73252 1059.36744) rotate(0.77755) scale(0.9564609 1.0019444) translate(-39.0 -50.0)" data-letter="C" id="bottom-08-C" d="M77 9C66 3 56 0 45 0C17 0 0 20 0 50C0 81 18 100 45 100 C59 100 70 97 78 91L68 68C60 73 53 75 47 75C33 75 26 66 26 50 C26 34 33 25 47 25C54 25 60 27 67 31Z" />
+    <path transform="translate(728.14299 1048.07535) rotate(-17.21426) scale(0.8994450 1.0003093) translate(-44.0 -50.0)" data-letter="O" id="bottom-09-O" d="M44 0C16 0 0 19 0 50C0 81 16 100 44 100C72 100 88 81 88 50C88 19 72 0 44 0Z M44 24C33 24 27 34 27 50C27 66 33 76 44 76C55 76 61 66 61 50C61 34 55 24 44 24Z" />
+    <path transform="translate(799.15198 1015.73191) rotate(-33.69375) scale(0.9809943 0.9502415) translate(-28.5 -50.0)" data-letter="L" id="bottom-10-L" d="M0 0H28V75H57V100H0Z" />
+    <path transform="translate(854.95629 970.30868) rotate(-44.35424) scale(0.9572281 0.9970398) translate(-36.5 -50.0)" data-letter="U" id="bottom-11-U" d="M0 0H27V63C27 74 30 79 36.5 79C43 79 46 74 46 63V0H73V65 C73 89 61 100 36.5 100C12 100 0 89 0 65Z" />
+    <path transform="translate(914.26973 889.93516) rotate(-59.44941) scale(0.9866502 0.9488520) translate(-53.0 -50.0)" data-letter="M" id="bottom-12-M" d="M0 100L8 0H35L53 43L70 0H98L106 100H79L76 41L60 86H46L29 41L27 100Z" />
+    <path transform="translate(957.17397 798.38250) rotate(-69.72390) scale(0.9512558 0.9424809) translate(-38.5 -50.0)" data-letter="B" id="bottom-13-B" d="M0 0H39C64 0 73 9 73 25C73 36 68 43 60 47 C72 51 77 60 77 73C77 92 63 100 42 100H0Z M28 21V40H39C47 40 50 36 50 31C50 25 46 21 39 21Z M28 61V80H41C49 80 53 76 53 70C53 64 48 61 41 61Z" />
+    <path transform="translate(974.08823 738.14708) rotate(-75.96378) scale(0.9622656 0.9340607) translate(-13.5 -50.0)" data-letter="I" id="bottom-14-I" d="M0 0H27V100H0Z" />
+    <path transform="translate(984.47024 673.25801) rotate(-83.28610) scale(0.9633913 0.9289823) translate(-47.0 -50.0)" data-letter="A" id="bottom-15-A" d="M0 100L30 0H62L94 100H66L60 80H33L27 100Z M39 59H55L47 30Z" />
+  </g>
+</svg>

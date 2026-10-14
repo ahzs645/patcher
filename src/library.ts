@@ -48,6 +48,12 @@ export interface LibraryPatch {
   merged: string[];
   /** Set when a supplied drawing (library/supplied/) replaces the atlas's: its file, and the atlas drawing's SHA-256. */
   replaced?: { svg: string; atlasSha256: string };
+  /**
+   * Set on a supplied design that isn't an atlas entry (orgs.json "consolidate", ids like FO-forests):
+   * its file in library/supplied/, and the atlas entries it takes the place of (none for a new colourway).
+   */
+  supplied?: { svg: string };
+  absorbs?: string[];
   /** The variant group it belongs to (shown as one card with a switch), and its name in it. */
   group?: string;
   variant?: string;
@@ -71,7 +77,7 @@ export interface LibraryManifest {
   version: number;
   source: { name: string; driveId: string | null; snapshotSha256: string | null; note: string };
   summary: {
-    designs: number; byCollection: Record<string, number>; excluded: number; merged: number; orgs: number; unsorted: number;
+    designs: number; byCollection: Record<string, number>; excluded: number; merged: number; absorbed: number; orgs: number; unsorted: number;
     sourceBytes: number; storedBytes: number; sharedBlocks: number; sharedPaths: number;
   };
   collections: LibraryCollection[];
@@ -82,6 +88,8 @@ export interface LibraryManifest {
   excluded: { id: string; label: string; medium: string; org: string; reason: string }[];
   /** Atlas entries merged into the patch that draws the same design (`into`), with their own labels. */
   merged: { id: string; label: string; into: string }[];
+  /** Atlas entries replaced by a supplied design (`into`), with their own labels. */
+  absorbed: { id: string; label: string; medium: string; org: string; into: string }[];
   /** Designs shown as one card with a switch between them; the first member is the card. */
   variants: LibraryVariantGroup[];
 }
@@ -125,7 +133,11 @@ export const LIBRARY: Library = {
 
 const byId = new Map(LIBRARY.orgs.flatMap((o) => o.patches.map((p) => [p.id, p] as const)));
 
-export const findPatch = (id: string): ResolvedPatch | undefined => byId.get(id);
+// An atlas id merged into another photograph's patch (S27-O01 into S30-O04), or absorbed into a
+// supplied design (R22-O01 into FO-forest-service), still finds the patch that took its place.
+const movedTo = new Map([...data.merged, ...(data.absorbed ?? [])].map((m) => [m.id, m.into]));
+
+export const findPatch = (id: string): ResolvedPatch | undefined => byId.get(id) ?? byId.get(movedTo.get(id) ?? '');
 export const findOrg = (id: string): ResolvedOrg | undefined => LIBRARY.orgs.find((o) => o.id === id);
 
 export const findCollection = (id: string): LibraryCollection | undefined => LIBRARY.collections.find((c) => c.id === id);

@@ -99,12 +99,30 @@ async function main() {
     return [r.id, r];
   }));
   for (const id of excludedIds.keys()) if (!known.has(id)) throw new Error(`orgs.json excludes ${id}, which isn't in the snapshot`);
+  // Supplied drawings with variants that take the place of atlas designs (orgs.json "consolidate"):
+  // each atlas id a variant lists is absorbed into it.
+  const consolidate = taxonomy.consolidate ?? [];
+  const absorbedBy = new Map();
+  for (const group of consolidate) {
+    const org = taxonomy.orgs.find((o) => o.id === group.org);
+    if (!org || org.exclude) throw new Error(`orgs.json consolidate ${group.id}: organization "${group.org}" isn't one that's kept`);
+    for (const variant of group.variants) {
+      if (known.has(variant.id)) throw new Error(`orgs.json consolidate ${group.id}: ${variant.id} is an atlas id; give the variant its own`);
+      for (const id of variant.atlas ?? []) {
+        if (!known.has(id)) throw new Error(`orgs.json consolidate ${group.id}: ${id} isn't in the snapshot`);
+        if (absorbedBy.has(id) || excludedIds.has(id) || replacements.has(id)) throw new Error(`orgs.json: ${id} is consolidated and also excluded, replaced or consolidated elsewhere`);
+        absorbedBy.set(id, variant);
+      }
+    }
+  }
 
   const all = [...index.designs].sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
   const byOrg = new Map();
   const unsorted = [];
   const excluded = [];
   const merged = [];
+  const absorbed = [];
+  const absorbedDesigns = new Map();
   const originals = new Map();
   const previews = [];
   const designs = [];
@@ -114,6 +132,11 @@ async function main() {
   const kept = [];
   for (const d of all) {
     const org = classify(d) ?? { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' };
+    if (absorbedBy.has(d.id)) {
+      absorbedDesigns.set(d.id, d);
+      absorbed.push({ id: d.id, label: d.label, medium: d.medium, org: org.id, into: absorbedBy.get(d.id).id });
+      continue;
+    }
     const reason = excludedIds.get(d.id) ?? org.exclude;
     if (reason) {
       excluded.push({ id: d.id, label: d.label, medium: d.medium, org: org.id, reason });
@@ -139,6 +162,14 @@ async function main() {
   };
   // Of a group, keep the one drawn from the largest crop of its photograph: the sharpest preview.
   const area = ({ d }) => (d.bbox ? (d.bbox[2] - d.bbox[0]) * (d.bbox[3] - d.bbox[1]) : 0);
+  const sightingsOf = (occurrences) => occurrences.map((id) => ({ id, sourceUrl: sources.get(id.replace(/-O\d+$/, '')) ?? null }));
+  const readSupplied = (rel) => {
+    const file = readFileSync(join(LIBRARY, rel));
+    const text = strFromU8(new Uint8Array(file));
+    if (!Buffer.from(text, 'utf8').equals(file)) throw new Error(`${rel}: not valid UTF-8`);
+    checkSvg(rel, text);
+    return { file, text };
+  };
 
   for (const group of groups.values()) {
     const primary = [...group].sort((a, b) => area(b) - area(a) || (a.d.id < b.d.id ? -1 : 1))[0];
@@ -148,11 +179,7 @@ async function main() {
     let previewFile = null;
     let atlasSha256 = null;
     if (replacement) {
-      const file = readFileSync(join(LIBRARY, replacement.svg));
-      const supplied = strFromU8(new Uint8Array(file));
-      if (!Buffer.from(supplied, 'utf8').equals(file)) throw new Error(`${replacement.svg}: not valid UTF-8`);
-      checkSvg(replacement.svg, supplied);
-      if (hasReferences(supplied)) throw new Error(`${replacement.svg}: contains a shared-part reference`);
+      const { file, text: supplied } = readSupplied(replacement.svg);
       previewFile = replacement.preview ? readFileSync(join(LIBRARY, replacement.preview)) : null;
       atlasSha256 = sha(svg);
       svg = file;
@@ -163,9 +190,9 @@ async function main() {
     // Every photograph the design was seen in, by the atlas's occurrence ids (S27-O01 is photo S27).
     const occurrences = [...new Set(group.flatMap(({ d: g }) => g.occurrences?.length ? g.occurrences : [g.id]))]
       .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
-    const sightings = occurrences.map((id) => ({ id, sourceUrl: sources.get(id.replace(/-O\d+$/, '')) ?? null }));
+    const sightings = sightingsOf(occurrences);
 
-    designs.push(d);
+    designs.push({ id: d.id, collection: collectionOf(d).id });
     if (org.id === 'unsorted') unsorted.push(d);
     originals.set(d.id, text);
     const preview = previewFile ?? (d.previewUrl ? get(d.previewUrl) : null);
@@ -192,6 +219,45 @@ async function main() {
       ...(replacement ? { replaced: { svg: replacement.svg, atlasSha256 } } : {}),
     });
   }
+
+  // Each consolidated variant is a patch of its own, drawn by its supplied file, carrying the
+  // photographs of the atlas designs it absorbs.
+  for (const group of consolidate) {
+    const org = taxonomy.orgs.find((o) => o.id === group.org);
+    const groupDesigns = group.variants.flatMap((v) => (v.atlas ?? []).map((id) => absorbedDesigns.get(id)));
+    for (const variant of group.variants) {
+      const { file, text } = readSupplied(variant.svg);
+      const own = (variant.atlas ?? []).map((id) => absorbedDesigns.get(id));
+      const like = own[0] ?? groupDesigns[0];
+      const collection = group.collection ?? collections[0].id;
+      const occurrences = [...new Set(own.flatMap((g) => g.occurrences?.length ? g.occurrences : [g.id]))]
+        .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+      const previewPath = variant.preview ? `${org.id}/previews/${variant.id}.webp` : null;
+      if (previewPath) previews.push([previewPath, readFileSync(join(LIBRARY, variant.preview))]);
+      designs.push({ id: variant.id, collection });
+      originals.set(variant.id, text);
+      if (!byOrg.has(org.id)) byOrg.set(org.id, { org, patches: [] });
+      byOrg.get(org.id).patches.push({
+        id: variant.id,
+        label: variant.label ?? `${group.label} · ${variant.name}`,
+        collection,
+        medium: variant.medium ?? group.medium ?? like?.medium ?? null,
+        quality: group.quality,
+        family: like?.family ?? null,
+        affiliation: like?.affiliation ?? null,
+        svg: `${org.id}/${variant.id}.svg`,
+        preview: previewPath,
+        sha256: sha(file),
+        bytes: file.length,
+        sourceUrl: own[0]?.originalSourceUrl ?? null,
+        sightings: sightingsOf(occurrences),
+        merged: [],
+        limitations: [group.limitations, variant.note].filter(Boolean).join(' ') || null,
+        supplied: { svg: variant.svg },
+        absorbs: variant.atlas ?? [],
+      });
+    }
+  }
   for (const { patches } of byOrg.values()) patches.sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
 
   // Variant groups: designs shown as one card with a switch between them (orgs.json "variants").
@@ -210,6 +276,10 @@ async function main() {
     if (collectionsIn.size > 1) throw new Error(`orgs.json variant group ${group.id} spans collections`);
     return { id: group.id, label: group.label ?? patchById.get(members[0].id).label, members };
   });
+  for (const group of consolidate) {
+    for (const { id, name } of group.variants) Object.assign(patchById.get(id), { group: group.id, variant: name });
+    variantGroups.push({ id: group.id, label: group.label, members: group.variants.map(({ id, name }) => ({ id, name })) });
+  }
 
   // Store what repeats once.
   const groupOf = new Map([...patchById].filter(([, p]) => p.group).map(([id, p]) => [id, p.group]));
@@ -261,9 +331,10 @@ async function main() {
     },
     summary: {
       designs: designs.length,
-      byCollection: Object.fromEntries(collections.map((c) => [c.id, designs.filter((d) => collectionOf(d).id === c.id).length])),
+      byCollection: Object.fromEntries(collections.map((c) => [c.id, designs.filter((d) => d.collection === c.id).length])),
       excluded: excluded.length,
       merged: merged.length,
+      absorbed: absorbed.length,
       orgs: orderedOrgs.length,
       unsorted: unsorted.length,
       sourceBytes,
@@ -279,6 +350,8 @@ async function main() {
     excluded,
     /** Atlas entries that draw the same design as a kept one (another photograph of it), and which. */
     merged,
+    /** Atlas designs replaced by a supplied drawing's variant (orgs.json "consolidate"), and which. */
+    absorbed,
     /** Designs shown as one card with a switch between them; the first member is the card. */
     variants: variantGroups,
   };
@@ -292,7 +365,10 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Imported ${designs.length} designs into ${orderedOrgs.length} organizations (${excluded.length} left out by orgs.json, ${merged.length} merged into the same drawing):`);
+  console.log(
+    `Imported ${designs.length} designs into ${orderedOrgs.length} organizations (${excluded.length} left out by orgs.json, ` +
+    `${merged.length} merged into the same drawing, ${absorbed.length} absorbed into supplied variants):`,
+  );
   for (const o of orderedOrgs) {
     const counts = Object.entries(o.counts).filter(([, n]) => n).map(([c, n]) => `${n} ${c}`).join(', ');
     console.log(`  ${o.name}: ${counts}`);
@@ -301,7 +377,7 @@ async function main() {
     `\nStored ${(storedBytes / 1e6).toFixed(2)} MB of SVG for ${(sourceBytes / 1e6).toFixed(2)} MB of drawings: ` +
     `${blocks.length} shared blocks, ${shared.paths.size} shared path outlines in ${bundles.length} bundles.`,
   );
-  console.log('Every patch joins back byte for byte to the snapshot\'s file, or to its supplied file where orgs.json replaces it.');
+  console.log('Every patch joins back byte for byte to the snapshot\'s file, or to its supplied file where orgs.json replaces or consolidates it.');
   if (unsorted.length) {
     console.warn(`\n${unsorted.length} design(s) matched no organization; add a rule to library/orgs.json:`);
     for (const d of unsorted) console.warn(`  ${d.id}  family=${d.family}  affiliation=${d.affiliation}  ${d.label}`);

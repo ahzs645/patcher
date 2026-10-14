@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="152mm" height="200mm" viewBox="0 0 760 1000">
+  <title>British Columbia Forest Service - reference reconstruction - green</title>
+  <desc>Editable vector reconstruction. Analytical ellipse geometry; separate authored landscape and conifer paths; manually fitted outlined lettering. No raster images, automatic bitmap traces, filters or gradients. Interpretation of supplied S05.jpg and S54.jpg photographs; small details and colour are approximate.</desc>
+  <defs>
+    <clipPath id="scene-clip" clipPathUnits="userSpaceOnUse">
+      <ellipse cx="380" cy="500" rx="230" ry="340"/>
+    </clipPath>
+  </defs>
+  <g id="oval-rings">
+    <ellipse id="outer-oval" cx="380" cy="500" rx="360" ry="470" fill="#12763A" stroke="#0B3024" stroke-width="3.0"/>
+    <ellipse id="rim-inner-rule" cx="380" cy="500" rx="353" ry="463" fill="none" stroke="#0B3024" stroke-width="2.8"/>
+  </g>
+  <g id="scene">
+    <g id="scene-clipped" clip-path="url(#scene-clip)">
+      <g id="sky">
+        <ellipse id="sky-field" cx="380" cy="500" rx="230" ry="340" fill="#F4DD04"/>
+      </g>
+      <g id="mountains" stroke-linejoin="round" stroke-linecap="round"><g data-shared="block-462b265f2f"/></g>
+      <g id="lake"><g data-shared="block-a972e030c6"/></g>
+      <g id="distant-forest"><g data-shared="block-96223024ce"/></g>
+      <g id="foreground" stroke-linejoin="round" stroke-linecap="round"><g data-shared="block-bd9bcfbae5"/></g>
+      <g id="central-evergreen" stroke-linejoin="round" stroke-linecap="round"><g data-shared="block-4ad55ab5e0"/></g>
+    </g>
+  </g>
+  <g id="inner-frame">
+    <ellipse id="inner-oval-rule" cx="380" cy="500" rx="230" ry="340" fill="none" stroke="#0B3024" stroke-width="3.0"/>
+  </g>
+  <g id="lettering-upper" fill="#0B3024" aria-label="FOREST SERVICE" fill-rule="evenodd"><g data-shared="block-e87223c282"/></g>
+  <g id="lettering-lower" fill="#0B3024" aria-label="BRITISH COLUMBIA" fill-rule="evenodd"><g data-shared="block-7d4447618d"/></g>
+  <g id="separators">
+    <circle id="left-separator" cx="91" cy="540" r="5.3" fill="#0B3024"/>
+    <circle id="right-separator" cx="669" cy="540" r="5.3" fill="#0B3024"/>
+  </g>
+</svg>

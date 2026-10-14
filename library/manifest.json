@@ -7,19 +7,20 @@
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
  "summary": {
-  "designs": 167,
+  "designs": 170,
   "byCollection": {
-   "patches": 153,
+   "patches": 156,
    "badges": 14
   },
   "excluded": 105,
   "merged": 5,
-  "orgs": 23,
+  "absorbed": 25,
+  "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 29514347,
-  "storedBytes": 9332271,
-  "sharedBlocks": 45,
-  "sharedPaths": 224
+  "sourceBytes": 28808646,
+  "storedBytes": 8257832,
+  "sharedBlocks": 59,
+  "sharedPaths": 250
  },
  "collections": [
   {
@@ -96,10 +97,52 @@
     "usedBy": 2
    },
    {
-    "id": "block-1131bdd370",
-    "file": "shared/block-1131bdd370.svg",
-    "bytes": 323,
+    "id": "block-16bffd9b32",
+    "file": "shared/block-16bffd9b32.svg",
+    "bytes": 3384,
+    "usedBy": 4
+   },
+   {
+    "id": "block-228c4ab97f",
+    "file": "shared/block-228c4ab97f.svg",
+    "bytes": 3141,
+    "usedBy": 5
+   },
+   {
+    "id": "block-2bc66a6555",
+    "file": "shared/block-2bc66a6555.svg",
+    "bytes": 19174,
+    "usedBy": 3
+   },
+   {
+    "id": "block-3516b005e5",
+    "file": "shared/block-3516b005e5.svg",
+    "bytes": 6579,
+    "usedBy": 5
+   },
+   {
+    "id": "block-462b265f2f",
+    "file": "shared/block-462b265f2f.svg",
+    "bytes": 4006,
     "usedBy": 2
+   },
+   {
+    "id": "block-4ad55ab5e0",
+    "file": "shared/block-4ad55ab5e0.svg",
+    "bytes": 6450,
+    "usedBy": 2
+   },
+   {
+    "id": "block-59e90f2d58",
+    "file": "shared/block-59e90f2d58.svg",
+    "bytes": 4751,
+    "usedBy": 2
+   },
+   {
+    "id": "block-66a9b75e94",
+    "file": "shared/block-66a9b75e94.svg",
+    "bytes": 3633,
+    "usedBy": 10
    },
    {
     "id": "block-7088196603",
@@ -108,34 +151,76 @@
     "usedBy": 2
    },
    {
+    "id": "block-7b6375ed8b",
+    "file": "shared/block-7b6375ed8b.svg",
+    "bytes": 1746,
+    "usedBy": 3
+   },
+   {
+    "id": "block-7bc2c318b5",
+    "file": "shared/block-7bc2c318b5.svg",
+    "bytes": 3889,
+    "usedBy": 4
+   },
+   {
+    "id": "block-7d4447618d",
+    "file": "shared/block-7d4447618d.svg",
+    "bytes": 3921,
+    "usedBy": 3
+   },
+   {
+    "id": "block-868ffb3281",
+    "file": "shared/block-868ffb3281.svg",
+    "bytes": 208,
+    "usedBy": 2
+   },
+   {
+    "id": "block-9338f1acf5",
+    "file": "shared/block-9338f1acf5.svg",
+    "bytes": 17995,
+    "usedBy": 5
+   },
+   {
     "id": "block-940e48c769",
     "file": "shared/block-940e48c769.svg",
     "bytes": 4807,
     "usedBy": 2
    },
    {
-    "id": "block-99305879b9",
-    "file": "shared/block-99305879b9.svg",
-    "bytes": 9294,
+    "id": "block-96223024ce",
+    "file": "shared/block-96223024ce.svg",
+    "bytes": 13759,
     "usedBy": 2
    },
    {
-    "id": "block-b03d9442f5",
-    "file": "shared/block-b03d9442f5.svg",
-    "bytes": 19498,
+    "id": "block-a972e030c6",
+    "file": "shared/block-a972e030c6.svg",
+    "bytes": 3696,
     "usedBy": 2
    },
    {
-    "id": "block-c169f73614",
-    "file": "shared/block-c169f73614.svg",
-    "bytes": 1285,
+    "id": "block-b10ec37936",
+    "file": "shared/block-b10ec37936.svg",
+    "bytes": 3324,
+    "usedBy": 10
+   },
+   {
+    "id": "block-bd9bcfbae5",
+    "file": "shared/block-bd9bcfbae5.svg",
+    "bytes": 4467,
     "usedBy": 2
    },
    {
-    "id": "block-c5055608bf",
-    "file": "shared/block-c5055608bf.svg",
-    "bytes": 179,
-    "usedBy": 2
+    "id": "block-dc1347536c",
+    "file": "shared/block-dc1347536c.svg",
+    "bytes": 5442,
+    "usedBy": 5
+   },
+   {
+    "id": "block-e87223c282",
+    "file": "shared/block-e87223c282.svg",
+    "bytes": 3497,
+    "usedBy": 3
    },
    {
     "id": "british-columbia-07921d9bf6",
@@ -344,11 +429,25 @@
   ],
   "bundles": [
    {
+    "name": "paths-477fa3db06",
+    "file": "shared/paths-477fa3db06.json",
+    "bytes": 13605,
+    "paths": 3,
+    "usedBy": 2
+   },
+   {
     "name": "paths-73e0faed1f",
     "file": "shared/paths-73e0faed1f.json",
     "bytes": 329385,
     "paths": 176,
     "usedBy": 16
+   },
+   {
+    "name": "paths-7cbd77ceaf",
+    "file": "shared/paths-7cbd77ceaf.json",
+    "bytes": 13937,
+    "paths": 2,
+    "usedBy": 3
    },
    {
     "name": "paths-8395d04aa2",
@@ -365,13 +464,6 @@
     "usedBy": 12
    },
    {
-    "name": "paths-9538043afe",
-    "file": "shared/paths-9538043afe.json",
-    "bytes": 46715,
-    "paths": 8,
-    "usedBy": 10
-   },
-   {
     "name": "paths-a31172d96e",
     "file": "shared/paths-a31172d96e.json",
     "bytes": 14762,
@@ -379,11 +471,39 @@
     "usedBy": 24
    },
    {
-    "name": "paths-a97bef7ec1",
-    "file": "shared/paths-a97bef7ec1.json",
+    "name": "paths-a88adfc261",
+    "file": "shared/paths-a88adfc261.json",
+    "bytes": 46715,
+    "paths": 8,
+    "usedBy": 11
+   },
+   {
+    "name": "paths-b08402ee29",
+    "file": "shared/paths-b08402ee29.json",
     "bytes": 4550,
     "paths": 4,
-    "usedBy": 13
+    "usedBy": 12
+   },
+   {
+    "name": "paths-variants-forest-service-oval",
+    "file": "shared/paths-variants-forest-service-oval.json",
+    "bytes": 3233,
+    "paths": 17,
+    "usedBy": 10
+   },
+   {
+    "name": "paths-variants-forests-oval",
+    "file": "shared/paths-variants-forests-oval.json",
+    "bytes": 129,
+    "paths": 2,
+    "usedBy": 5
+   },
+   {
+    "name": "paths-variants-long-ministry-oval",
+    "file": "shared/paths-variants-long-ministry-oval.json",
+    "bytes": 559,
+    "paths": 2,
+    "usedBy": 2
    },
    {
     "name": "paths-variants-parks-scenic-arch",
@@ -396,251 +516,27 @@
  },
  "orgs": [
   {
-   "id": "bc-wildfire-service",
-   "name": "BC Wildfire Service",
-   "sector": "forests",
-   "description": "Ovals and patches naming the Wildfire Service or Wildfire Management.",
-   "counts": {
-    "patches": 8,
-    "badges": 0
-   },
-   "patches": [
-    {
-     "id": "R13-O01",
-     "label": "British Columbia / Forests / Wildfire Service — small digital oval",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "forests-short-wildfire",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/R13-O01.svg",
-     "preview": "bc-wildfire-service/previews/R13-O01.webp",
-     "sha256": "35688367d4b741f967873a0228435cb642ce6136aeeba8707427e8d062a5ae9c",
-     "bytes": 188974,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire-alt1.png",
-     "sightings": [
-      {
-       "id": "R13-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire-alt1.png"
-      }
-     ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-9538043afe"
-     ]
-    },
-    {
-     "id": "R14-O01",
-     "label": "British Columbia / Forests / Wildfire Service — digital oval",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "forests-short-wildfire",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/R14-O01.svg",
-     "preview": "bc-wildfire-service/previews/R14-O01.webp",
-     "sha256": "9f5c373c48b4f02f4dc8f70d1186b0003ab970c8d4c9b3e658fa7c8989ed0b1c",
-     "bytes": 187108,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire.png",
-     "sightings": [
-      {
-       "id": "R14-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire.png"
-      }
-     ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-9538043afe"
-     ]
-    },
-    {
-     "id": "R17-O01",
-     "label": "BC / Forests, Lands and Natural Resource Operations / Wildfire Service — small",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "ministry-long-wildfire-tab",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/R17-O01.svg",
-     "preview": "bc-wildfire-service/previews/R17-O01.webp",
-     "sha256": "d570296b4264e2d45c6a513450499a3af22a188696b2cdb04a5fff9582215577",
-     "bytes": 216800,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire-alt1.jpeg",
-     "sightings": [
-      {
-       "id": "R17-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire-alt1.jpeg"
-      }
-     ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-9538043afe"
-     ]
-    },
-    {
-     "id": "R18-O01",
-     "label": "BC / Forests, Lands and Natural Resource Operations / Wildfire Service",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "ministry-long-wildfire-tab",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/R18-O01.svg",
-     "preview": "bc-wildfire-service/previews/R18-O01.webp",
-     "sha256": "53e0c689e1ea448618a181851e39dde38a48dd091a73aaefe4ba5d4df65d613e",
-     "bytes": 215857,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire.png",
-     "sightings": [
-      {
-       "id": "R18-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire.png"
-      }
-     ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-9538043afe"
-     ]
-    },
-    {
-     "id": "R20-O01",
-     "label": "Wildfire Management / Forest Service / British Columbia — monochrome",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-tree-wildfire-management-digital",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/R20-O01.svg",
-     "preview": "bc-wildfire-service/previews/R20-O01.webp",
-     "sha256": "b7d8e14db3034a08f19b80194d6f0b61fd8040453143c743512382f15db24bcd",
-     "bytes": 148105,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg",
-     "sightings": [
-      {
-       "id": "R20-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg"
-      }
-     ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "R21-O01",
-     "label": "Wildfire Management / Forest Service / British Columbia — tree oval",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-tree-wildfire-management",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/R21-O01.svg",
-     "preview": "bc-wildfire-service/previews/R21-O01.webp",
-     "sha256": "f6e775358abb32829e1941fe6e04fa2106910b97002a21758d097cf643e8abdd",
-     "bytes": 26555,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management.jpg",
-     "sightings": [
-      {
-       "id": "R21-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management.jpg"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "R23-O01",
-     "label": "British Columbia / Forests / Wildfire Service — supplied vector",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Native vector reference",
-     "family": "forests-short-wildfire",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/R23-O01.svg",
-     "preview": "bc-wildfire-service/previews/R23-O01.webp",
-     "sha256": "11903edcc888eb81629abf390c51a0f54828520c86e86befe75441645c174bcf",
-     "bytes": 108053,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildfire-source.svg",
-     "sightings": [
-      {
-       "id": "R23-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildfire-source.svg"
-      }
-     ],
-     "merged": [],
-     "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
-     "blocks": [
-      "block-99305879b9",
-      "block-b03d9442f5",
-      "block-c169f73614"
-     ],
-     "bundles": [
-      "paths-9538043afe"
-     ]
-    },
-    {
-     "id": "S43-O01",
-     "label": "British Columbia / Forests, Lands and Natural Resource Operations / Wildfire Service",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "wildfire-long-oval",
-     "affiliation": "Forestry",
-     "svg": "bc-wildfire-service/S43-O01.svg",
-     "preview": "bc-wildfire-service/previews/S43-O01.webp",
-     "sha256": "25f76e338c09142732dadc53e951943920248e35085a593acdf0f08d07bae164",
-     "bytes": 88347,
-     "sourceUrl": "https://drive.google.com/file/d/1bRJ0u-IxNcut7sO6x2-qr-CZ8Ur3YwLH/view",
-     "sightings": [
-      {
-       "id": "S43-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1bRJ0u-IxNcut7sO6x2-qr-CZ8Ur3YwLH/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Wildlife charges reuse forestoval native vector artwork, individually fitted to observed positions; exact stitched anatomy remains approximate. Face photograph does not establish whether the oval and lower service component share a backing.",
-     "blocks": [],
-     "bundles": [
-      "paths-9538043afe"
-     ]
-    }
-   ]
-  },
-  {
    "id": "bc-forest-service",
    "name": "BC Forest Service",
    "sector": "forests",
    "description": "The Forest Service and the Ministry of Forests: tree ovals, shoulder patches, metal badges, fire-control and prevention marks.",
    "counts": {
-    "patches": 22,
+    "patches": 33,
     "badges": 4
    },
    "patches": [
     {
-     "id": "R01-O01",
-     "label": "Forest Service / BC / Airtanker Operations",
+     "id": "FO-airtanker",
+     "label": "Forest Service / British Columbia — tree oval · Airtanker Operations",
      "collection": "patches",
      "medium": "Photographed emblem",
-     "quality": "Clean vector reconstruction",
+     "quality": "PofBC Forest Oval artwork",
      "family": "airtanker-winged",
      "affiliation": "Forestry",
-     "svg": "bc-forest-service/R01-O01.svg",
-     "preview": "bc-forest-service/previews/R01-O01.webp",
-     "sha256": "cdccc791247f8a8c9fe1a184eba4b01bb2649e370fa453e8266bca0b52f456da",
-     "bytes": 23162,
+     "svg": "bc-forest-service/FO-airtanker.svg",
+     "preview": "bc-forest-service/previews/FO-airtanker.webp",
+     "sha256": "d48eb9a654d3d8ff07845b67a02e684ca3cfa798ff2458dca4f27b219f803529",
+     "bytes": 29652,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/airtanker.jpg",
      "sightings": [
       {
@@ -649,22 +545,36 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. This is a painted aircraft emblem, not a cloth patch. Rivets, scratches and aircraft panel reflections are omitted. Wing proportions and feather-line counts follow the photographed marking, rather than the generic repo wing proportions.",
-     "blocks": [],
-     "bundles": []
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. The Airtanker package's wings and band around the shared tree oval; its adoption date is unverified.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/airtanker.svg"
+     },
+     "absorbs": [
+      "R01-O01"
+     ],
+     "group": "forest-service-oval",
+     "variant": "Airtanker Operations",
+     "blocks": [
+      "block-66a9b75e94",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
     },
     {
-     "id": "R11-O01",
-     "label": "Fire Control / Forest Service / British Columbia — tree oval",
+     "id": "FO-fire-control",
+     "label": "Forest Service / British Columbia — tree oval · Fire Control",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "PofBC Forest Oval artwork",
      "family": "forest-tree-fire-control",
      "affiliation": "Forestry",
-     "svg": "bc-forest-service/R11-O01.svg",
-     "preview": "bc-forest-service/previews/R11-O01.webp",
-     "sha256": "bb10c6de78a029228e88441ab3549b6a2f74c9afe0b9065d1259fd872a42bdb5",
-     "bytes": 24790,
+     "svg": "bc-forest-service/FO-fire-control.svg",
+     "preview": "bc-forest-service/previews/FO-fire-control.webp",
+     "sha256": "c30d5e1424d18ca4d171c61680cac961467c05cd0830455e640e0be0a449800d",
+     "bytes": 36429,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/fire-control.jpg",
      "sightings": [
       {
@@ -673,105 +583,39 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "R12-O01",
-     "label": "Forest Service / British Columbia — monochrome tree oval",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-tree-mono",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/R12-O01.svg",
-     "preview": "bc-forest-service/previews/R12-O01.webp",
-     "sha256": "3ffdc58e001ab8a7c3d126816d07e967071271b4587ed7a54e4459d266b29c8b",
-     "bytes": 101761,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forest-service-mono.png",
-     "sightings": [
-      {
-       "id": "R12-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forest-service-mono.png"
-      }
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. FIRE CONTROL set on the Wildfire Management ribbon through the engine's own service field, as on the cloth patch; the ribbon's exact proportions on that patch are unverified.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/fire-control.svg"
+     },
+     "absorbs": [
+      "R11-O01"
      ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "R15-O01",
-     "label": "British Columbia / Forests — short-caption wildlife oval",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "forests-short",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/R15-O01.svg",
-     "preview": "bc-forest-service/previews/R15-O01.webp",
-     "sha256": "4fde04651824ee60a3627af5b3daa0cf5586ad06928a98d1e63a94eec4598025",
-     "bytes": 141847,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests.png",
-     "sightings": [
-      {
-       "id": "R15-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests.png"
-      }
-     ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
-     "blocks": [],
-     "bundles": [
-      "paths-9538043afe"
-     ]
-    },
-    {
-     "id": "R16-O01",
-     "label": "BC / Forests, Lands and Natural Resource Operations — digital oval",
-     "collection": "patches",
-     "medium": "Digital emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "ministry-long-wildlife",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/R16-O01.svg",
-     "preview": "bc-forest-service/previews/R16-O01.webp",
-     "sha256": "100f300065ced82a63fe0e1a6096b1e0af34609d3761b329897d811bc64de3a4",
-     "bytes": 169757,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-ministry.jpeg",
-     "sightings": [
-      {
-       "id": "R16-O01",
-       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-ministry.jpeg"
-      }
-     ],
-     "merged": [],
-     "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
+     "group": "forest-service-oval",
+     "variant": "Fire Control",
      "blocks": [
-      "block-1131bdd370",
-      "block-c5055608bf"
+      "block-66a9b75e94",
+      "block-7b6375ed8b",
+      "block-868ffb3281",
+      "block-b10ec37936"
      ],
      "bundles": [
-      "paths-9538043afe"
+      "paths-7cbd77ceaf",
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
      ]
     },
     {
-     "id": "R22-O01",
-     "label": "Forest Service / BC — supplied tree vector",
+     "id": "FO-forest-service",
+     "label": "Forest Service / British Columbia — tree oval · Full colour",
      "collection": "patches",
      "medium": "Digital emblem",
-     "quality": "Native vector reference",
+     "quality": "PofBC Forest Oval artwork",
      "family": "forest-tree-vector",
      "affiliation": "Forestry",
-     "svg": "bc-forest-service/R22-O01.svg",
-     "preview": "bc-forest-service/previews/R22-O01.webp",
-     "sha256": "2590d933fbf1f026f509e5fe33af7883d058c25cb22bc8c71b3527dae554fdb2",
-     "bytes": 18135,
+     "svg": "bc-forest-service/FO-forest-service.svg",
+     "preview": "bc-forest-service/previews/FO-forest-service.webp",
+     "sha256": "7fbd3994b26d112c01cdf7706058f87efc7e7b2be693c78d96e501efb10c5cfc",
+     "bytes": 17399,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/tree-source.svg",
      "sightings": [
       {
@@ -780,41 +624,976 @@
       }
      ],
      "merged": [],
-     "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
-     "blocks": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/colour.svg"
+     },
+     "absorbs": [
+      "R22-O01"
+     ],
+     "group": "forest-service-oval",
+     "variant": "Full colour",
+     "blocks": [
+      "block-66a9b75e94",
+      "block-7b6375ed8b",
+      "block-b10ec37936"
+     ],
      "bundles": [
-      "paths-a97bef7ec1"
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
      ]
     },
     {
-     "id": "R24-O01",
-     "label": "British Columbia / Forests — supplied wildlife vector",
+     "id": "FO-forest-service-black",
+     "label": "Forest Service / British Columbia — tree oval · Black & white",
      "collection": "patches",
      "medium": "Digital emblem",
-     "quality": "Native vector reference",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forest-tree-mono",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forest-service-black.svg",
+     "preview": "bc-forest-service/previews/FO-forest-service-black.webp",
+     "sha256": "f0a900b15e2adf8f4151e1bb2891f998b0b60d18ecc70a269ec513b7d9fc3ae7",
+     "bytes": 18374,
+     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forest-service-mono.png",
+     "sightings": [
+      {
+       "id": "R12-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forest-service-mono.png"
+      }
+     ],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/black.svg"
+     },
+     "absorbs": [
+      "R12-O01"
+     ],
+     "group": "forest-service-oval",
+     "variant": "Black & white",
+     "blocks": [
+      "block-66a9b75e94",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
+    },
+    {
+     "id": "FO-forest-service-black-gold",
+     "label": "Forest Service / British Columbia — tree oval · Black & gold",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forest-tree-vector",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forest-service-black-gold.svg",
+     "preview": "bc-forest-service/previews/FO-forest-service-black-gold.webp",
+     "sha256": "777ff3cfbfc1d7659ff9cbd3a4583153ae0a4fcf79e3036ccc31558eadc3ba00",
+     "bytes": 18622,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph. Its adoption date is unverified.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/black-gold.svg"
+     },
+     "absorbs": [],
+     "group": "forest-service-oval",
+     "variant": "Black & gold",
+     "blocks": [
+      "block-66a9b75e94",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
+    },
+    {
+     "id": "FO-forest-service-green",
+     "label": "Forest Service / British Columbia — tree oval · Forest green",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forest-tree-vector",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forest-service-green.svg",
+     "preview": "bc-forest-service/previews/FO-forest-service-green.webp",
+     "sha256": "377efc51cb3f08105379e193a8b9500e87186a60059cae4e7b120c63fcd99e6b",
+     "bytes": 18614,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/green.svg"
+     },
+     "absorbs": [],
+     "group": "forest-service-oval",
+     "variant": "Forest green",
+     "blocks": [
+      "block-66a9b75e94",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
+    },
+    {
+     "id": "FO-forest-service-navy-gold",
+     "label": "Forest Service / British Columbia — tree oval · Navy & gold",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forest-tree-vector",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forest-service-navy-gold.svg",
+     "preview": "bc-forest-service/previews/FO-forest-service-navy-gold.webp",
+     "sha256": "ac149ccb90740878c7b646f8519757a3a5560998def56f6f0ed420b5dd79dc4a",
+     "bytes": 18622,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. The Airtanker package's navy and gold applied to the standalone oval, a generated colourway.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/navy-gold.svg"
+     },
+     "absorbs": [],
+     "group": "forest-service-oval",
+     "variant": "Navy & gold",
+     "blocks": [
+      "block-66a9b75e94",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
+    },
+    {
+     "id": "FO-forest-service-reversed",
+     "label": "Forest Service / British Columbia — tree oval · White on green",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forest-tree-vector",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forest-service-reversed.svg",
+     "preview": "bc-forest-service/previews/FO-forest-service-reversed.webp",
+     "sha256": "c757d27cc9cd321601b26fffb3a7a9460b12a2d8b51b74083d20d6c6f8ff9ce5",
+     "bytes": 18622,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/reversed.svg"
+     },
+     "absorbs": [],
+     "group": "forest-service-oval",
+     "variant": "White on green",
+     "blocks": [
+      "block-66a9b75e94",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
+    },
+    {
+     "id": "FO-forests",
+     "label": "British Columbia / Forests — wildlife oval · Full colour",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
      "family": "forests-short",
      "affiliation": "Forestry",
-     "svg": "bc-forest-service/R24-O01.svg",
-     "preview": "bc-forest-service/previews/R24-O01.webp",
-     "sha256": "71212fca572f4fcc927da9bdead94435688add25b5639c1ede11aa606eb56339",
-     "bytes": 78398,
-     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildlife-source.svg",
+     "svg": "bc-forest-service/FO-forests.svg",
+     "preview": "bc-forest-service/previews/FO-forests.webp",
+     "sha256": "a5209c0694b7c6e208724bd5121a5105afbf4ab87fbc478c8ffe583103b2ccd5",
+     "bytes": 60473,
+     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests.png",
      "sightings": [
+      {
+       "id": "R15-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests.png"
+      },
       {
        "id": "R24-O01",
        "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildlife-source.svg"
       }
      ],
      "merged": [],
-     "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forests/colour.svg"
+     },
+     "absorbs": [
+      "R15-O01",
+      "R24-O01"
+     ],
+     "group": "forests-oval",
+     "variant": "Full colour",
      "blocks": [
-      "block-99305879b9",
-      "block-b03d9442f5",
-      "block-c169f73614"
+      "block-228c4ab97f",
+      "block-dc1347536c"
      ],
      "bundles": [
-      "paths-9538043afe"
+      "paths-a88adfc261",
+      "paths-variants-forests-oval"
      ]
+    },
+    {
+     "id": "FO-forests-black",
+     "label": "British Columbia / Forests — wildlife oval · Black & white",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forests-short",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forests-black.svg",
+     "preview": "bc-forest-service/previews/FO-forests-black.webp",
+     "sha256": "346579b35b0705d86f60204b1d6f95a4c4937f62c26366497f1ce53ae4b7d9be",
+     "bytes": 60469,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forests/black.svg"
+     },
+     "absorbs": [],
+     "group": "forests-oval",
+     "variant": "Black & white",
+     "blocks": [
+      "block-228c4ab97f",
+      "block-dc1347536c"
+     ],
+     "bundles": [
+      "paths-a88adfc261",
+      "paths-variants-forests-oval"
+     ]
+    },
+    {
+     "id": "FO-forests-green",
+     "label": "British Columbia / Forests — wildlife oval · Forest green",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forests-short",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forests-green.svg",
+     "preview": "bc-forest-service/previews/FO-forests-green.webp",
+     "sha256": "2a10fbf8307918303083312795e744ef4e7008f8d39e9078f9a6962c67fff143",
+     "bytes": 60709,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forests/green.svg"
+     },
+     "absorbs": [],
+     "group": "forests-oval",
+     "variant": "Forest green",
+     "blocks": [
+      "block-228c4ab97f",
+      "block-dc1347536c"
+     ],
+     "bundles": [
+      "paths-a88adfc261",
+      "paths-variants-forests-oval"
+     ]
+    },
+    {
+     "id": "FO-forests-reversed",
+     "label": "British Columbia / Forests — wildlife oval · White on green",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forests-short",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forests-reversed.svg",
+     "preview": "bc-forest-service/previews/FO-forests-reversed.webp",
+     "sha256": "48540ec1a5d8ecc5564af97677067e3727ee6b37a2bec9d8f017b23a88d81176",
+     "bytes": 60709,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forests/reversed.svg"
+     },
+     "absorbs": [],
+     "group": "forests-oval",
+     "variant": "White on green",
+     "blocks": [
+      "block-228c4ab97f",
+      "block-dc1347536c"
+     ],
+     "bundles": [
+      "paths-a88adfc261",
+      "paths-variants-forests-oval"
+     ]
+    },
+    {
+     "id": "FO-forests-wildfire",
+     "label": "British Columbia / Forests — wildlife oval · Wildfire Service",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forests-short-wildfire",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-forests-wildfire.svg",
+     "preview": "bc-forest-service/previews/FO-forests-wildfire.webp",
+     "sha256": "c0b8610549d2156279054e984119b4215d84dab1392f0d70843f682168f393b0",
+     "bytes": 79504,
+     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire.png",
+     "sightings": [
+      {
+       "id": "R13-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire-alt1.png"
+      },
+      {
+       "id": "R14-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire.png"
+      },
+      {
+       "id": "R23-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildfire-source.svg"
+      }
+     ],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forests/wildfire.svg"
+     },
+     "absorbs": [
+      "R14-O01",
+      "R13-O01",
+      "R23-O01"
+     ],
+     "group": "forests-oval",
+     "variant": "Wildfire Service",
+     "blocks": [
+      "block-228c4ab97f",
+      "block-dc1347536c"
+     ],
+     "bundles": [
+      "paths-477fa3db06",
+      "paths-a88adfc261",
+      "paths-variants-forests-oval"
+     ]
+    },
+    {
+     "id": "FO-green-gold",
+     "label": "Forest Service / British Columbia — green and gold oval · Full colour",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "PofBC reconstruction",
+     "family": "forest-tree-green",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-green-gold.svg",
+     "preview": "bc-forest-service/previews/FO-green-gold.webp",
+     "sha256": "c1538c9c1badeab48989fe3b2fdd8558f9dabb7e9476b11e6e2ec42e7df94f37",
+     "bytes": 28079,
+     "sourceUrl": "https://drive.google.com/file/d/1tuYkFokz7QG-cbfOnejUWcM2fNlMj7Mg/view",
+     "sightings": [
+      {
+       "id": "S33-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1nEqKVKbYRQcN_1hmFOBcC2dDn_oWKViy/view"
+      },
+      {
+       "id": "S34-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1AybvbTBLSg82RMizFS4aJCa2onr17u2z/view"
+      },
+      {
+       "id": "S35-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1sDwGcTT-MRFNLvJPEywUDibgnl11OBmW/view"
+      },
+      {
+       "id": "S38-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1wQOU6PLjGs-BWoPr1HxGKy67vtbeHZ0v/view"
+      },
+      {
+       "id": "S39-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1t1YXphOT-hvoSCiqYCTYqA2TlIYzIHlD/view"
+      },
+      {
+       "id": "S40-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1EE2PlsZQQeYly0nGdDwV1mRwptj37zc_/view"
+      },
+      {
+       "id": "S41-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1UCbGp_3-8mqZaBgviG0ybJm8Kze6TqVB/view"
+      },
+      {
+       "id": "S47-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1tuYkFokz7QG-cbfOnejUWcM2fNlMj7Mg/view"
+      },
+      {
+       "id": "S52-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1IRAuoXgyPCj-UhbPnLB4aowrKtehaDgE/view"
+      },
+      {
+       "id": "S53-O01",
+       "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/green-gold/colour.svg"
+     },
+     "absorbs": [
+      "S47-O01",
+      "S39-O01",
+      "S35-O01"
+     ],
+     "group": "forest-service-green-gold",
+     "variant": "Full colour",
+     "blocks": [
+      "block-16bffd9b32",
+      "block-2bc66a6555",
+      "block-7bc2c318b5"
+     ],
+     "bundles": []
+    },
+    {
+     "id": "FO-green-gold-black",
+     "label": "Forest Service / British Columbia — green and gold oval · Black & white",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "PofBC reconstruction",
+     "family": "forest-tree-green",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-green-gold-black.svg",
+     "preview": "bc-forest-service/previews/FO-green-gold-black.webp",
+     "sha256": "d31e5f8416f5918032e6b20772e25d65c2d8caac6764a68990f588411db25e53",
+     "bytes": 28079,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/green-gold/black.svg"
+     },
+     "absorbs": [],
+     "group": "forest-service-green-gold",
+     "variant": "Black & white",
+     "blocks": [
+      "block-16bffd9b32",
+      "block-7bc2c318b5"
+     ],
+     "bundles": []
+    },
+    {
+     "id": "FO-green-gold-black-gold",
+     "label": "Forest Service / British Columbia — green and gold oval · Black & gold",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "PofBC reconstruction",
+     "family": "forest-tree-green",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-green-gold-black-gold.svg",
+     "preview": "bc-forest-service/previews/FO-green-gold-black-gold.webp",
+     "sha256": "9bd94b549db613d8336e1daf59950f310f64d847c60a283046f6c96af83a6164",
+     "bytes": 28079,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/green-gold/black-gold.svg"
+     },
+     "absorbs": [],
+     "group": "forest-service-green-gold",
+     "variant": "Black & gold",
+     "blocks": [
+      "block-16bffd9b32",
+      "block-2bc66a6555",
+      "block-7bc2c318b5"
+     ],
+     "bundles": []
+    },
+    {
+     "id": "FO-green-gold-light-band",
+     "label": "Forest Service / British Columbia — green and gold oval · Light band",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "PofBC reconstruction",
+     "family": "forest-tree-light",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-green-gold-light-band.svg",
+     "preview": "bc-forest-service/previews/FO-green-gold-light-band.webp",
+     "sha256": "c27933cde5adb66e797fc70b52a9b90a760d1b65e39129efb0fb9e2a905fa04a",
+     "bytes": 28079,
+     "sourceUrl": "https://drive.google.com/file/d/11ch3hDdDDCIgJ2bEHvYoBlhgINX2sZnf/view",
+     "sightings": [
+      {
+       "id": "S24-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view"
+      },
+      {
+       "id": "S42-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view"
+      },
+      {
+       "id": "S46-O01",
+       "sourceUrl": "https://drive.google.com/file/d/11ch3hDdDDCIgJ2bEHvYoBlhgINX2sZnf/view"
+      },
+      {
+       "id": "S55-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1DrbVEYA2kHdCRvXT5OPJK-_ClY23t-mZ/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. The light band and green lettering of the white-band oval, recoloured from the full-colour drawing.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/green-gold/light-band.svg"
+     },
+     "absorbs": [
+      "S46-O01",
+      "S24-O04",
+      "S42-O01"
+     ],
+     "group": "forest-service-green-gold",
+     "variant": "Light band",
+     "blocks": [
+      "block-16bffd9b32",
+      "block-2bc66a6555",
+      "block-7bc2c318b5"
+     ],
+     "bundles": []
+    },
+    {
+     "id": "FO-long-ministry",
+     "label": "BC / Forests, Lands and Natural Resource Operations — wildlife oval · Full colour",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "ministry-long-wildlife",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-long-ministry.svg",
+     "preview": "bc-forest-service/previews/FO-long-ministry.webp",
+     "sha256": "c2662234e72a2388df6ed3f7c5e62e3826f95291530e299cb1eadd6429d4046d",
+     "bytes": 76830,
+     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-ministry.jpeg",
+     "sightings": [
+      {
+       "id": "R16-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-ministry.jpeg"
+      }
+     ],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/long-ministry/colour.svg"
+     },
+     "absorbs": [
+      "R16-O01"
+     ],
+     "group": "long-ministry-oval",
+     "variant": "Full colour",
+     "blocks": [
+      "block-3516b005e5",
+      "block-9338f1acf5"
+     ],
+     "bundles": [
+      "paths-a88adfc261"
+     ]
+    },
+    {
+     "id": "FO-long-ministry-black",
+     "label": "BC / Forests, Lands and Natural Resource Operations — wildlife oval · Black & white",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "ministry-long-wildlife",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-long-ministry-black.svg",
+     "preview": "bc-forest-service/previews/FO-long-ministry-black.webp",
+     "sha256": "95d28b4b3eed1f6b7df35d668b7723fb130e7c5b7aa6c9786af14da2616a36be",
+     "bytes": 76826,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/long-ministry/black.svg"
+     },
+     "absorbs": [],
+     "group": "long-ministry-oval",
+     "variant": "Black & white",
+     "blocks": [
+      "block-3516b005e5",
+      "block-9338f1acf5"
+     ],
+     "bundles": [
+      "paths-a88adfc261"
+     ]
+    },
+    {
+     "id": "FO-long-ministry-green",
+     "label": "BC / Forests, Lands and Natural Resource Operations — wildlife oval · Forest green",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "ministry-long-wildlife",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-long-ministry-green.svg",
+     "preview": "bc-forest-service/previews/FO-long-ministry-green.webp",
+     "sha256": "ab54760b15b21c6ec4b2d09f04867fa1e2b7b3c44489fbf6e84b5ad83cf657fd",
+     "bytes": 77066,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/long-ministry/green.svg"
+     },
+     "absorbs": [],
+     "group": "long-ministry-oval",
+     "variant": "Forest green",
+     "blocks": [
+      "block-3516b005e5",
+      "block-9338f1acf5"
+     ],
+     "bundles": [
+      "paths-a88adfc261"
+     ]
+    },
+    {
+     "id": "FO-long-ministry-reversed",
+     "label": "BC / Forests, Lands and Natural Resource Operations — wildlife oval · White on green",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "ministry-long-wildlife",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-long-ministry-reversed.svg",
+     "preview": "bc-forest-service/previews/FO-long-ministry-reversed.webp",
+     "sha256": "c00a61850ffe58817c938fd19c8cabc18a219e516bf918f3a2f60a52908c8c11",
+     "bytes": 77066,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. This colourway is a generated recolour, not seen in a photograph.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/long-ministry/reversed.svg"
+     },
+     "absorbs": [],
+     "group": "long-ministry-oval",
+     "variant": "White on green",
+     "blocks": [
+      "block-3516b005e5",
+      "block-9338f1acf5"
+     ],
+     "bundles": [
+      "paths-a88adfc261"
+     ]
+    },
+    {
+     "id": "FO-long-ministry-wildfire",
+     "label": "BC / Forests, Lands and Natural Resource Operations — wildlife oval · Wildfire Service",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "ministry-long-wildfire-tab",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-long-ministry-wildfire.svg",
+     "preview": "bc-forest-service/previews/FO-long-ministry-wildfire.webp",
+     "sha256": "0bc99aa6e4991e8b8ad381ed3f73d018d94045bb34827a38b91fc353012114cc",
+     "bytes": 106023,
+     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire.png",
+     "sightings": [
+      {
+       "id": "R17-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire-alt1.jpeg"
+      },
+      {
+       "id": "R18-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire.png"
+      },
+      {
+       "id": "S43-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1bRJ0u-IxNcut7sO6x2-qr-CZ8Ur3YwLH/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/long-ministry/wildfire.svg"
+     },
+     "absorbs": [
+      "R18-O01",
+      "R17-O01",
+      "S43-O01"
+     ],
+     "group": "long-ministry-oval",
+     "variant": "Wildfire Service",
+     "blocks": [
+      "block-3516b005e5",
+      "block-9338f1acf5"
+     ],
+     "bundles": [
+      "paths-477fa3db06",
+      "paths-a88adfc261",
+      "paths-variants-long-ministry-oval"
+     ]
+    },
+    {
+     "id": "FO-ministry-of-forests",
+     "label": "British Columbia / Ministry of Forests — wildlife oval",
+     "collection": "patches",
+     "medium": "Printed emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "ministry-wildlife-oval",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-ministry-of-forests.svg",
+     "preview": "bc-forest-service/previews/FO-ministry-of-forests.webp",
+     "sha256": "74ab1599232acccc31656cd9ab8008ddea063f530f5589a9e472df0f5edaf673",
+     "bytes": 66066,
+     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
+     "sightings": [
+      {
+       "id": "S58-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O05",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. \"Ministry of Forests\" set in the lower band through the engine's own content field, as on the printed oval.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/long-ministry/ministry-of-forests.svg"
+     },
+     "absorbs": [
+      "S58-O05"
+     ],
+     "group": "long-ministry-oval",
+     "variant": "Ministry of Forests",
+     "blocks": [],
+     "bundles": [
+      "paths-a88adfc261",
+      "paths-variants-long-ministry-oval"
+     ]
+    },
+    {
+     "id": "FO-wildfire-management",
+     "label": "Forest Service / British Columbia — tree oval · Wildfire Management",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forest-tree-wildfire-management",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-wildfire-management.svg",
+     "preview": "bc-forest-service/previews/FO-wildfire-management.webp",
+     "sha256": "4061faffa98eac1497a9452fce8c63fd8e3f362831612647636235fde1eec3e2",
+     "bytes": 37011,
+     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management.jpg",
+     "sightings": [
+      {
+       "id": "R21-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management.jpg"
+      }
+     ],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. The upper service ribbon; Forest Oval labels it a photographic approximation.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.svg"
+     },
+     "absorbs": [
+      "R21-O01"
+     ],
+     "group": "forest-service-oval",
+     "variant": "Wildfire Management",
+     "blocks": [
+      "block-59e90f2d58",
+      "block-66a9b75e94",
+      "block-7b6375ed8b",
+      "block-868ffb3281",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-7cbd77ceaf",
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
+    },
+    {
+     "id": "FO-wildfire-management-black",
+     "label": "Forest Service / British Columbia — tree oval · Wildfire Management · black",
+     "collection": "patches",
+     "medium": "Digital emblem",
+     "quality": "PofBC Forest Oval artwork",
+     "family": "forest-tree-wildfire-management-digital",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-wildfire-management-black.svg",
+     "preview": "bc-forest-service/previews/FO-wildfire-management-black.webp",
+     "sha256": "3d6b1867b9878e972ea0e99f476ab9085c0386264035014ef19f33914c424cef",
+     "bytes": 37009,
+     "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg",
+     "sightings": [
+      {
+       "id": "R20-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg"
+      }
+     ],
+     "merged": [],
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.svg"
+     },
+     "absorbs": [
+      "R20-O01"
+     ],
+     "group": "forest-service-oval",
+     "variant": "Wildfire Management · black",
+     "blocks": [
+      "block-59e90f2d58",
+      "block-66a9b75e94",
+      "block-b10ec37936"
+     ],
+     "bundles": [
+      "paths-7cbd77ceaf",
+      "paths-b08402ee29",
+      "paths-variants-forest-service-oval"
+     ]
+    },
+    {
+     "id": "FO-yellow-sky",
+     "label": "Forest Service / British Columbia — yellow-sky oval · Green",
+     "collection": "patches",
+     "medium": "Printed emblem",
+     "quality": "PofBC reconstruction",
+     "family": "tree-poster-green",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-yellow-sky.svg",
+     "preview": "bc-forest-service/previews/FO-yellow-sky.webp",
+     "sha256": "9106a425b2a103bd0e0ae2ab2ec199d5795bcb986ff5a1fbe7e23ef4cc38c5e8",
+     "bytes": 41280,
+     "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view",
+     "sightings": [
+      {
+       "id": "S05-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/yellow-sky/colour.svg"
+     },
+     "absorbs": [
+      "S05-O01"
+     ],
+     "group": "forest-service-yellow-sky",
+     "variant": "Green",
+     "blocks": [
+      "block-462b265f2f",
+      "block-4ad55ab5e0",
+      "block-7d4447618d",
+      "block-96223024ce",
+      "block-a972e030c6",
+      "block-bd9bcfbae5",
+      "block-e87223c282"
+     ],
+     "bundles": []
+    },
+    {
+     "id": "FO-yellow-sky-cream",
+     "label": "Forest Service / British Columbia — yellow-sky oval · Cream",
+     "collection": "patches",
+     "medium": "Printed emblem",
+     "quality": "PofBC reconstruction",
+     "family": "tree-poster-cream",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-yellow-sky-cream.svg",
+     "preview": "bc-forest-service/previews/FO-yellow-sky-cream.webp",
+     "sha256": "808463db540331cd37eff73844f6034a1b3a16c4d616f39fb1538fefcf187f19",
+     "bytes": 41280,
+     "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view",
+     "sightings": [
+      {
+       "id": "S54-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/yellow-sky/cream.svg"
+     },
+     "absorbs": [
+      "S54-O01"
+     ],
+     "group": "forest-service-yellow-sky",
+     "variant": "Cream",
+     "blocks": [
+      "block-7d4447618d",
+      "block-e87223c282"
+     ],
+     "bundles": []
+    },
+    {
+     "id": "FO-yellow-sky-dark",
+     "label": "Forest Service / British Columbia — yellow-sky oval · Dark",
+     "collection": "patches",
+     "medium": "Printed emblem",
+     "quality": "PofBC reconstruction",
+     "family": "tree-poster-black",
+     "affiliation": "Forestry",
+     "svg": "bc-forest-service/FO-yellow-sky-dark.svg",
+     "preview": "bc-forest-service/previews/FO-yellow-sky-dark.webp",
+     "sha256": "7f8c0e023cc94f3a837c50f503375ea5bd9f236a8525dfcf79ddfcda49452ac7",
+     "bytes": 41280,
+     "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view",
+     "sightings": [
+      {
+       "id": "S04-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. The dark ring and pale lettering of the poster oval, recoloured from the green drawing.",
+     "supplied": {
+      "svg": "supplied/pofbc-forest-ovals/yellow-sky/dark.svg"
+     },
+     "absorbs": [
+      "S04-O01"
+     ],
+     "group": "forest-service-yellow-sky",
+     "variant": "Dark",
+     "blocks": [
+      "block-462b265f2f",
+      "block-4ad55ab5e0",
+      "block-7d4447618d",
+      "block-96223024ce",
+      "block-a972e030c6",
+      "block-bd9bcfbae5",
+      "block-e87223c282"
+     ],
+     "bundles": []
     },
     {
      "id": "S02-O01",
@@ -839,56 +1618,6 @@
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The closed crown and jewel band are designed from the visible structure; fine jewel and floral engraving is unresolved.",
      "blocks": [],
      "bundles": []
-    },
-    {
-     "id": "S04-O01",
-     "label": "Forest Service / British Columbia — poster oval",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "tree-poster-black",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S04-O01.svg",
-     "preview": "bc-forest-service/previews/S04-O01.webp",
-     "sha256": "d423198d2f7132209a44015c8a091d2b671b055048ff20588e7c8ad9e8b2e26d",
-     "bytes": 20700,
-     "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view",
-     "sightings": [
-      {
-       "id": "S04-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S05-O01",
-     "label": "Forest Service / British Columbia — green poster oval",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "tree-poster-green",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S05-O01.svg",
-     "preview": "bc-forest-service/previews/S05-O01.webp",
-     "sha256": "cb54ece03a903d518313941c6f80cfadbc3ffe87c64114a7f23be16e7d3576b8",
-     "bytes": 21814,
-     "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view",
-     "sightings": [
-      {
-       "id": "S05-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
     },
     {
      "id": "S07-O01",
@@ -949,140 +1678,6 @@
      "bundles": []
     },
     {
-     "id": "S24-O04",
-     "label": "Forest Service / British Columbia — light-band printed oval",
-     "collection": "patches",
-     "medium": "Decal",
-     "quality": "Clean vector reconstruction",
-     "family": "tree-print-light",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S24-O04.svg",
-     "preview": "bc-forest-service/previews/S24-O04.webp",
-     "sha256": "0d1e494ec09d9b0c0cd2c998710ac8ae09ff3b31446f31a1a01b635feed35f25",
-     "bytes": 22021,
-     "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view",
-     "sightings": [
-      {
-       "id": "S24-O04",
-       "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view"
-      },
-      {
-       "id": "S55-O02",
-       "sourceUrl": "https://drive.google.com/file/d/1DrbVEYA2kHdCRvXT5OPJK-_ClY23t-mZ/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified. The source decal is photographed sideways on its backing; the redraw displays its readable upright design.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "S35-O01",
-     "label": "Forest Service / British Columbia — green printed decal",
-     "collection": "patches",
-     "medium": "Decal",
-     "quality": "Clean vector reconstruction",
-     "family": "tree-decal-green",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S35-O01.svg",
-     "preview": "bc-forest-service/previews/S35-O01.webp",
-     "sha256": "e0a65aafaf42a797d8644ac8f40c8ffc8b3040c752d8f62afe7084b8dc18f5e9",
-     "bytes": 21803,
-     "sourceUrl": "https://drive.google.com/file/d/1sDwGcTT-MRFNLvJPEywUDibgnl11OBmW/view",
-     "sightings": [
-      {
-       "id": "S33-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1nEqKVKbYRQcN_1hmFOBcC2dDn_oWKViy/view"
-      },
-      {
-       "id": "S34-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1AybvbTBLSg82RMizFS4aJCa2onr17u2z/view"
-      },
-      {
-       "id": "S35-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1sDwGcTT-MRFNLvJPEywUDibgnl11OBmW/view"
-      },
-      {
-       "id": "S38-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1wQOU6PLjGs-BWoPr1HxGKy67vtbeHZ0v/view"
-      },
-      {
-       "id": "S52-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1IRAuoXgyPCj-UhbPnLB4aowrKtehaDgE/view"
-      },
-      {
-       "id": "S53-O01",
-       "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "S39-O01",
-     "label": "Forest Service / British Columbia — Wells Gray vessel oval",
-     "collection": "patches",
-     "medium": "Painted emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "tree-vessel",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S39-O01.svg",
-     "preview": "bc-forest-service/previews/S39-O01.webp",
-     "sha256": "6c65b6f38ae14f2a6ed01b2ee50cb030dadde5d98d1144818e710235ff75f3ec",
-     "bytes": 18055,
-     "sourceUrl": "https://drive.google.com/file/d/1t1YXphOT-hvoSCiqYCTYqA2TlIYzIHlD/view",
-     "sightings": [
-      {
-       "id": "S39-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1t1YXphOT-hvoSCiqYCTYqA2TlIYzIHlD/view"
-      },
-      {
-       "id": "S40-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1EE2PlsZQQeYly0nGdDwV1mRwptj37zc_/view"
-      },
-      {
-       "id": "S41-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1UCbGp_3-8mqZaBgviG0ybJm8Kze6TqVB/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S42-O01",
-     "label": "Forest Service tree oval — vehicle door",
-     "collection": "patches",
-     "medium": "Painted emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "tree-vehicle-white",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S42-O01.svg",
-     "preview": "bc-forest-service/previews/S42-O01.webp",
-     "sha256": "588787b3dcacfbf244786e1b40ea798732ff6ddb9a837e9b73d971dc6dbc97fc",
-     "bytes": 21796,
-     "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view",
-     "sightings": [
-      {
-       "id": "S42-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
      "id": "S44-O01",
      "label": "Forest / Service — British Columbia shoulder emblem",
      "collection": "patches",
@@ -1105,7 +1700,7 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The small scene and stitched letterform widths are interpreted from a blurred screenshot.",
      "blocks": [],
      "bundles": [
-      "paths-a97bef7ec1"
+      "paths-b08402ee29"
      ]
     },
     {
@@ -1129,56 +1724,6 @@
      ],
      "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Map outline and ungulate anatomy are clean symbolic interpretations; the screenshot cannot establish detailed geographic/antler contours or species.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S46-O01",
-     "label": "Forest Service / British Columbia — white-band tree oval",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-tree-light",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S46-O01.svg",
-     "preview": "bc-forest-service/previews/S46-O01.webp",
-     "sha256": "6ff4ad9999575a195cb5a385a1343bec3560d6cfd5934a82c6651487ab9ebf38",
-     "bytes": 20386,
-     "sourceUrl": "https://drive.google.com/file/d/11ch3hDdDDCIgJ2bEHvYoBlhgINX2sZnf/view",
-     "sightings": [
-      {
-       "id": "S46-O01",
-       "sourceUrl": "https://drive.google.com/file/d/11ch3hDdDDCIgJ2bEHvYoBlhgINX2sZnf/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "S47-O01",
-     "label": "Forest Service / British Columbia — green/gold tree oval",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-tree-green",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S47-O01.svg",
-     "preview": "bc-forest-service/previews/S47-O01.webp",
-     "sha256": "b3f0bd486904c6b579b8a06be9664aa70567301b3218ae09b9b189ff8769f528",
-     "bytes": 14900,
-     "sourceUrl": "https://drive.google.com/file/d/1tuYkFokz7QG-cbfOnejUWcM2fNlMj7Mg/view",
-     "sightings": [
-      {
-       "id": "S47-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1tuYkFokz7QG-cbfOnejUWcM2fNlMj7Mg/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": []
     },
@@ -1262,32 +1807,6 @@
      "bundles": []
     },
     {
-     "id": "S54-O01",
-     "label": "Forest Service / BC — cream-band poster oval",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "tree-poster-cream",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S54-O01.svg",
-     "preview": "bc-forest-service/previews/S54-O01.webp",
-     "sha256": "c744876565773ff595071af49eb44b3d4e5dda72c85ce99a3b36d8dbd4cda980",
-     "bytes": 21804,
-     "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view",
-     "sightings": [
-      {
-       "id": "S54-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
      "id": "S56-O52",
      "label": "Forest / Service — British Columbia shoulder emblem",
      "collection": "patches",
@@ -1310,52 +1829,7 @@
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Shared shoulder-family geometry is fitted to this separate board occurrence, with its own native crop, palette and caption positions. Tiny stitching details cannot be established at this resolution.",
      "blocks": [],
      "bundles": [
-      "paths-a97bef7ec1"
-     ]
-    },
-    {
-     "id": "S58-O05",
-     "label": "British Columbia / Ministry of Forests — wildlife oval",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "ministry-wildlife-oval",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S58-O05.svg",
-     "preview": "bc-forest-service/previews/S58-O05.webp",
-     "sha256": "be2027b0ddbc147c7e34983d1d2adacc9fa30445b20b772694595cf403b59335",
-     "bytes": 73024,
-     "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
-     "sightings": [
-      {
-       "id": "S58-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
-      },
-      {
-       "id": "S58-O02",
-       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
-      },
-      {
-       "id": "S58-O03",
-       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
-      },
-      {
-       "id": "S58-O04",
-       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
-      },
-      {
-       "id": "S58-O05",
-       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [
-      "block-1131bdd370",
-      "block-c5055608bf"
-     ],
-     "bundles": [
-      "paths-9538043afe"
+      "paths-b08402ee29"
      ]
     }
    ]
@@ -6116,6 +6590,183 @@
    "into": "S29-O03"
   }
  ],
+ "absorbed": [
+  {
+   "id": "R01-O01",
+   "label": "Forest Service / BC / Airtanker Operations",
+   "medium": "Photographed emblem",
+   "org": "bc-forest-service",
+   "into": "FO-airtanker"
+  },
+  {
+   "id": "R11-O01",
+   "label": "Fire Control / Forest Service / British Columbia — tree oval",
+   "medium": "Cloth patch",
+   "org": "bc-forest-service",
+   "into": "FO-fire-control"
+  },
+  {
+   "id": "R12-O01",
+   "label": "Forest Service / British Columbia — monochrome tree oval",
+   "medium": "Digital emblem",
+   "org": "bc-forest-service",
+   "into": "FO-forest-service-black"
+  },
+  {
+   "id": "R13-O01",
+   "label": "British Columbia / Forests / Wildfire Service — small digital oval",
+   "medium": "Digital emblem",
+   "org": "bc-wildfire-service",
+   "into": "FO-forests-wildfire"
+  },
+  {
+   "id": "R14-O01",
+   "label": "British Columbia / Forests / Wildfire Service — digital oval",
+   "medium": "Digital emblem",
+   "org": "bc-wildfire-service",
+   "into": "FO-forests-wildfire"
+  },
+  {
+   "id": "R15-O01",
+   "label": "British Columbia / Forests — short-caption wildlife oval",
+   "medium": "Digital emblem",
+   "org": "bc-forest-service",
+   "into": "FO-forests"
+  },
+  {
+   "id": "R16-O01",
+   "label": "BC / Forests, Lands and Natural Resource Operations — digital oval",
+   "medium": "Digital emblem",
+   "org": "bc-forest-service",
+   "into": "FO-long-ministry"
+  },
+  {
+   "id": "R17-O01",
+   "label": "BC / Forests, Lands and Natural Resource Operations / Wildfire Service — small",
+   "medium": "Digital emblem",
+   "org": "bc-wildfire-service",
+   "into": "FO-long-ministry-wildfire"
+  },
+  {
+   "id": "R18-O01",
+   "label": "BC / Forests, Lands and Natural Resource Operations / Wildfire Service",
+   "medium": "Digital emblem",
+   "org": "bc-wildfire-service",
+   "into": "FO-long-ministry-wildfire"
+  },
+  {
+   "id": "R20-O01",
+   "label": "Wildfire Management / Forest Service / British Columbia — monochrome",
+   "medium": "Digital emblem",
+   "org": "bc-wildfire-service",
+   "into": "FO-wildfire-management-black"
+  },
+  {
+   "id": "R21-O01",
+   "label": "Wildfire Management / Forest Service / British Columbia — tree oval",
+   "medium": "Cloth patch",
+   "org": "bc-wildfire-service",
+   "into": "FO-wildfire-management"
+  },
+  {
+   "id": "R22-O01",
+   "label": "Forest Service / BC — supplied tree vector",
+   "medium": "Digital emblem",
+   "org": "bc-forest-service",
+   "into": "FO-forest-service"
+  },
+  {
+   "id": "R23-O01",
+   "label": "British Columbia / Forests / Wildfire Service — supplied vector",
+   "medium": "Digital emblem",
+   "org": "bc-wildfire-service",
+   "into": "FO-forests-wildfire"
+  },
+  {
+   "id": "R24-O01",
+   "label": "British Columbia / Forests — supplied wildlife vector",
+   "medium": "Digital emblem",
+   "org": "bc-forest-service",
+   "into": "FO-forests"
+  },
+  {
+   "id": "S04-O01",
+   "label": "Forest Service / British Columbia — poster oval",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "into": "FO-yellow-sky-dark"
+  },
+  {
+   "id": "S05-O01",
+   "label": "Forest Service / British Columbia — green poster oval",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "into": "FO-yellow-sky"
+  },
+  {
+   "id": "S24-O04",
+   "label": "Forest Service / British Columbia — light-band printed oval",
+   "medium": "Decal",
+   "org": "bc-forest-service",
+   "into": "FO-green-gold-light-band"
+  },
+  {
+   "id": "S35-O01",
+   "label": "Forest Service / British Columbia — green printed decal",
+   "medium": "Decal",
+   "org": "bc-forest-service",
+   "into": "FO-green-gold"
+  },
+  {
+   "id": "S39-O01",
+   "label": "Forest Service / British Columbia — Wells Gray vessel oval",
+   "medium": "Painted emblem",
+   "org": "bc-forest-service",
+   "into": "FO-green-gold"
+  },
+  {
+   "id": "S42-O01",
+   "label": "Forest Service tree oval — vehicle door",
+   "medium": "Painted emblem",
+   "org": "bc-forest-service",
+   "into": "FO-green-gold-light-band"
+  },
+  {
+   "id": "S43-O01",
+   "label": "British Columbia / Forests, Lands and Natural Resource Operations / Wildfire Service",
+   "medium": "Cloth patch",
+   "org": "bc-wildfire-service",
+   "into": "FO-long-ministry-wildfire"
+  },
+  {
+   "id": "S46-O01",
+   "label": "Forest Service / British Columbia — white-band tree oval",
+   "medium": "Cloth patch",
+   "org": "bc-forest-service",
+   "into": "FO-green-gold-light-band"
+  },
+  {
+   "id": "S47-O01",
+   "label": "Forest Service / British Columbia — green/gold tree oval",
+   "medium": "Cloth patch",
+   "org": "bc-forest-service",
+   "into": "FO-green-gold"
+  },
+  {
+   "id": "S54-O01",
+   "label": "Forest Service / BC — cream-band poster oval",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "into": "FO-yellow-sky-cream"
+  },
+  {
+   "id": "S58-O05",
+   "label": "British Columbia / Ministry of Forests — wildlife oval",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "into": "FO-ministry-of-forests"
+  }
+ ],
  "variants": [
   {
    "id": "parks-scenic-arch",
@@ -6128,6 +6779,148 @@
     {
      "id": "S27-O04",
      "name": "Parks · Ranger"
+    }
+   ]
+  },
+  {
+   "id": "forest-service-oval",
+   "label": "Forest Service / British Columbia — tree oval",
+   "members": [
+    {
+     "id": "FO-forest-service",
+     "name": "Full colour"
+    },
+    {
+     "id": "FO-forest-service-black",
+     "name": "Black & white"
+    },
+    {
+     "id": "FO-forest-service-green",
+     "name": "Forest green"
+    },
+    {
+     "id": "FO-forest-service-reversed",
+     "name": "White on green"
+    },
+    {
+     "id": "FO-forest-service-black-gold",
+     "name": "Black & gold"
+    },
+    {
+     "id": "FO-forest-service-navy-gold",
+     "name": "Navy & gold"
+    },
+    {
+     "id": "FO-wildfire-management",
+     "name": "Wildfire Management"
+    },
+    {
+     "id": "FO-wildfire-management-black",
+     "name": "Wildfire Management · black"
+    },
+    {
+     "id": "FO-fire-control",
+     "name": "Fire Control"
+    },
+    {
+     "id": "FO-airtanker",
+     "name": "Airtanker Operations"
+    }
+   ]
+  },
+  {
+   "id": "forests-oval",
+   "label": "British Columbia / Forests — wildlife oval",
+   "members": [
+    {
+     "id": "FO-forests",
+     "name": "Full colour"
+    },
+    {
+     "id": "FO-forests-black",
+     "name": "Black & white"
+    },
+    {
+     "id": "FO-forests-green",
+     "name": "Forest green"
+    },
+    {
+     "id": "FO-forests-reversed",
+     "name": "White on green"
+    },
+    {
+     "id": "FO-forests-wildfire",
+     "name": "Wildfire Service"
+    }
+   ]
+  },
+  {
+   "id": "long-ministry-oval",
+   "label": "BC / Forests, Lands and Natural Resource Operations — wildlife oval",
+   "members": [
+    {
+     "id": "FO-long-ministry",
+     "name": "Full colour"
+    },
+    {
+     "id": "FO-long-ministry-black",
+     "name": "Black & white"
+    },
+    {
+     "id": "FO-long-ministry-green",
+     "name": "Forest green"
+    },
+    {
+     "id": "FO-long-ministry-reversed",
+     "name": "White on green"
+    },
+    {
+     "id": "FO-long-ministry-wildfire",
+     "name": "Wildfire Service"
+    },
+    {
+     "id": "FO-ministry-of-forests",
+     "name": "Ministry of Forests"
+    }
+   ]
+  },
+  {
+   "id": "forest-service-yellow-sky",
+   "label": "Forest Service / British Columbia — yellow-sky oval",
+   "members": [
+    {
+     "id": "FO-yellow-sky",
+     "name": "Green"
+    },
+    {
+     "id": "FO-yellow-sky-cream",
+     "name": "Cream"
+    },
+    {
+     "id": "FO-yellow-sky-dark",
+     "name": "Dark"
+    }
+   ]
+  },
+  {
+   "id": "forest-service-green-gold",
+   "label": "Forest Service / British Columbia — green and gold oval",
+   "members": [
+    {
+     "id": "FO-green-gold",
+     "name": "Full colour"
+    },
+    {
+     "id": "FO-green-gold-light-band",
+     "name": "Light band"
+    },
+    {
+     "id": "FO-green-gold-black-gold",
+     "name": "Black & gold"
+    },
+    {
+     "id": "FO-green-gold-black",
+     "name": "Black & white"
     }
    ]
   }

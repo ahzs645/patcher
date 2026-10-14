@@ -209,7 +209,9 @@ function sharePaths(texts, docs, blocks, groupOf) {
         if (value.length >= VARIANT_PATH_MIN_BYTES) seen.set(value, (seen.get(value) ?? 0) + 1);
       }
     }
-    const values = [...seen].filter(([, n]) => n > 1).map(([value]) => value);
+    // An outline another group already bundled (the same letters) stays inline here, so a patch
+    // never fetches another group's bundle.
+    const values = [...seen].filter(([value, n]) => n > 1 && !ids.has(value)).map(([value]) => value);
     if (!values.length) continue;
     const local = new Map();
     for (const value of values) {
