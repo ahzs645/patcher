@@ -42,6 +42,10 @@ export interface LibraryPatch {
   bundles: string[];
   /** Where the source photograph or document lives (Google Drive). */
   sourceUrl: string | null;
+  /** Every photograph the design was seen in (atlas occurrence ids, S27-O01 being photo S27), with its link. */
+  sightings: { id: string; sourceUrl: string | null }[];
+  /** Atlas entries that draw this same design from another photograph, merged into this one. */
+  merged: string[];
   limitations: string | null;
 }
 
@@ -62,7 +66,7 @@ export interface LibraryManifest {
   version: number;
   source: { name: string; driveId: string | null; snapshotSha256: string | null; note: string };
   summary: {
-    designs: number; byCollection: Record<string, number>; excluded: number; orgs: number; unsorted: number;
+    designs: number; byCollection: Record<string, number>; excluded: number; merged: number; orgs: number; unsorted: number;
     sourceBytes: number; storedBytes: number; sharedBlocks: number; sharedPaths: number;
   };
   collections: LibraryCollection[];
@@ -71,6 +75,8 @@ export interface LibraryManifest {
   orgs: LibraryOrg[];
   /** Atlas designs left out on purpose (library/orgs.json), with why. */
   excluded: { id: string; label: string; medium: string; org: string; reason: string }[];
+  /** Atlas entries merged into the patch that draws the same design (`into`), with their own labels. */
+  merged: { id: string; label: string; into: string }[];
 }
 
 /** A patch with its organization and the URLs the importing app serves. */

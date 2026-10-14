@@ -21,7 +21,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, wri
 import { dirname, join } from 'node:path';
 import { strFromU8 } from 'fflate';
 import { hasReferences, wrapBlock } from '../src/library-join.js';
-import { LIBRARY, driveId, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
+import { LIBRARY, drawingKey, driveId, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
 import { shareParts } from './share-parts.mjs';
 import { verifyLibrary } from './verify-library.mjs';
 
@@ -81,7 +81,7 @@ function write(rel, data) {
 async function main() {
   const opts = parseArgs(process.argv.slice(2), 'Usage: import-atlas.mjs [--zip <file>] [--drive <file id or share URL>]');
   const source = readSnapshot(await snapshotPath(opts));
-  const { index, snapshot, get } = source;
+  const { index, snapshot, get, sources } = source;
   const taxonomy = JSON.parse(readFileSync(join(LIBRARY, 'orgs.json'), 'utf8'));
   const classify = classifier(taxonomy.orgs);
   const sectorIds = new Set(taxonomy.sectors.map((s) => s.id));
@@ -99,9 +99,14 @@ async function main() {
   const byOrg = new Map();
   const unsorted = [];
   const excluded = [];
+  const merged = [];
   const originals = new Map();
   const previews = [];
   const designs = [];
+
+  // Read and check every design that isn't left out, and group the ones that draw the same thing:
+  // the atlas has an entry per photograph a design was seen in, fitted to that photograph.
+  const kept = [];
   for (const d of all) {
     const org = classify(d) ?? { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' };
     const reason = excludedIds.get(d.id) ?? org.exclude;
@@ -109,14 +114,38 @@ async function main() {
       excluded.push({ id: d.id, label: d.label, medium: d.medium, org: org.id, reason });
       continue;
     }
-    designs.push(d);
-    if (org.id === 'unsorted') unsorted.push(d);
     const svg = get(d.svgUrl);
     if (!svg) throw new Error(`${d.id}: ${d.svgUrl} is missing from the snapshot`);
     const text = strFromU8(svg);
     if (!Buffer.from(text, 'utf8').equals(Buffer.from(svg))) throw new Error(`${d.id}: not valid UTF-8, so it can't be stored as text`);
     if (d.vectorSha256 && d.vectorSha256 !== sha(svg)) throw new Error(`${d.id}: the snapshot's SVG doesn't match the atlas's own vectorSha256`);
     checkSvg(d.id, text);
+    kept.push({ d, org, svg, text, key: `${org.id} ${collectionOf(d).id} ${drawingKey(text)}` });
+  }
+  const groups = new Map();
+  for (const entry of kept) groups.set(entry.key, [...(groups.get(entry.key) ?? []), entry]);
+
+  // The most common label, the more descriptive on a tie ("scenic arch" over "large scenic arch").
+  const labelFor = (entries) => {
+    const counts = new Map();
+    for (const { d } of entries) counts.set(d.label, (counts.get(d.label) ?? 0) + 1);
+    return [...counts].sort(([a, n], [b, m]) => m - n || b.length - a.length || (a < b ? -1 : 1))[0][0];
+  };
+  // Of a group, keep the one drawn from the largest crop of its photograph: the sharpest preview.
+  const area = ({ d }) => (d.bbox ? (d.bbox[2] - d.bbox[0]) * (d.bbox[3] - d.bbox[1]) : 0);
+
+  for (const group of groups.values()) {
+    const primary = [...group].sort((a, b) => area(b) - area(a) || (a.d.id < b.d.id ? -1 : 1))[0];
+    const { d, org, svg, text } = primary;
+    const others = group.filter((entry) => entry !== primary);
+    for (const { d: other } of others) merged.push({ id: other.id, label: other.label, into: d.id });
+    // Every photograph the design was seen in, by the atlas's occurrence ids (S27-O01 is photo S27).
+    const occurrences = [...new Set(group.flatMap(({ d: g }) => g.occurrences?.length ? g.occurrences : [g.id]))]
+      .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+    const sightings = occurrences.map((id) => ({ id, sourceUrl: sources.get(id.replace(/-O\d+$/, '')) ?? null }));
+
+    designs.push(d);
+    if (org.id === 'unsorted') unsorted.push(d);
     originals.set(d.id, text);
     const preview = d.previewUrl ? get(d.previewUrl) : null;
     const previewPath = preview ? `${org.id}/previews/${d.id}.webp` : null;
@@ -124,7 +153,7 @@ async function main() {
     if (!byOrg.has(org.id)) byOrg.set(org.id, { org, patches: [] });
     byOrg.get(org.id).patches.push({
       id: d.id,
-      label: d.label,
+      label: group.length > 1 ? labelFor(group) : d.label,
       collection: collectionOf(d).id,
       medium: d.medium,
       quality: d.quality,
@@ -135,9 +164,12 @@ async function main() {
       sha256: sha(svg),
       bytes: svg.length,
       sourceUrl: d.originalSourceUrl ?? null,
+      sightings,
+      merged: others.map(({ d: other }) => other.id),
       limitations: d.limitations ?? null,
     });
   }
+  for (const { patches } of byOrg.values()) patches.sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
 
   // Store what repeats once.
   const shared = shareParts(originals);
@@ -190,6 +222,7 @@ async function main() {
       designs: designs.length,
       byCollection: Object.fromEntries(collections.map((c) => [c.id, designs.filter((d) => collectionOf(d).id === c.id).length])),
       excluded: excluded.length,
+      merged: merged.length,
       orgs: orderedOrgs.length,
       unsorted: unsorted.length,
       sourceBytes,
@@ -203,6 +236,8 @@ async function main() {
     orgs: orderedOrgs,
     /** Atlas designs left out on purpose (orgs.json), so the record of what was dropped stays with the library. */
     excluded,
+    /** Atlas entries that draw the same design as a kept one (another photograph of it), and which. */
+    merged,
   };
   writeFileSync(join(LIBRARY, 'manifest.json'), `${JSON.stringify(manifest, null, 1)}\n`);
 
@@ -214,7 +249,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Imported ${designs.length} designs into ${orderedOrgs.length} organizations (${excluded.length} left out by orgs.json):`);
+  console.log(`Imported ${designs.length} designs into ${orderedOrgs.length} organizations (${excluded.length} left out by orgs.json, ${merged.length} merged into the same drawing):`);
   for (const o of orderedOrgs) {
     const counts = Object.entries(o.counts).filter(([, n]) => n).map(([c, n]) => `${n} ${c}`).join(', ');
     console.log(`  ${o.name}: ${counts}`);

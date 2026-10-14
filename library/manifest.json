@@ -7,17 +7,18 @@
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
  "summary": {
-  "designs": 173,
+  "designs": 168,
   "byCollection": {
-   "patches": 159,
+   "patches": 154,
    "badges": 14
   },
   "excluded": 104,
+  "merged": 5,
   "orgs": 23,
   "unsorted": 0,
-  "sourceBytes": 28823830,
-  "storedBytes": 9021956,
-  "sharedBlocks": 40,
+  "sourceBytes": 28759345,
+  "storedBytes": 9018181,
+  "sharedBlocks": 37,
   "sharedPaths": 201
  },
  "collections": [
@@ -95,18 +96,6 @@
     "usedBy": 2
    },
    {
-    "id": "block-1237a38142",
-    "file": "shared/block-1237a38142.svg",
-    "bytes": 8161,
-    "usedBy": 2
-   },
-   {
-    "id": "block-5114723944",
-    "file": "shared/block-5114723944.svg",
-    "bytes": 10078,
-    "usedBy": 2
-   },
-   {
     "id": "block-7088196603",
     "file": "shared/block-7088196603.svg",
     "bytes": 3841,
@@ -117,12 +106,6 @@
     "file": "shared/block-99305879b9.svg",
     "bytes": 9294,
     "usedBy": 2
-   },
-   {
-    "id": "block-a60a176b55",
-    "file": "shared/block-a60a176b55.svg",
-    "bytes": 14469,
-    "usedBy": 4
    },
    {
     "id": "block-b03d9442f5",
@@ -373,6 +356,13 @@
      "sha256": "35688367d4b741f967873a0228435cb642ce6136aeeba8707427e8d062a5ae9c",
      "bytes": 188974,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire-alt1.png",
+     "sightings": [
+      {
+       "id": "R13-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire-alt1.png"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
@@ -392,6 +382,13 @@
      "sha256": "9f5c373c48b4f02f4dc8f70d1186b0003ab970c8d4c9b3e658fa7c8989ed0b1c",
      "bytes": 187108,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire.png",
+     "sightings": [
+      {
+       "id": "R14-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests-wildfire.png"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
@@ -411,6 +408,13 @@
      "sha256": "d570296b4264e2d45c6a513450499a3af22a188696b2cdb04a5fff9582215577",
      "bytes": 216800,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire-alt1.jpeg",
+     "sightings": [
+      {
+       "id": "R17-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire-alt1.jpeg"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
@@ -430,6 +434,13 @@
      "sha256": "53e0c689e1ea448618a181851e39dde38a48dd091a73aaefe4ba5d4df65d613e",
      "bytes": 215857,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire.png",
+     "sightings": [
+      {
+       "id": "R18-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-wildfire.png"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
@@ -449,6 +460,13 @@
      "sha256": "b7d8e14db3034a08f19b80194d6f0b61fd8040453143c743512382f15db24bcd",
      "bytes": 148105,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg",
+     "sightings": [
+      {
+       "id": "R20-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
@@ -468,6 +486,13 @@
      "sha256": "f6e775358abb32829e1941fe6e04fa2106910b97002a21758d097cf643e8abdd",
      "bytes": 26555,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management.jpg",
+     "sightings": [
+      {
+       "id": "R21-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management.jpg"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": [
@@ -487,6 +512,13 @@
      "sha256": "11903edcc888eb81629abf390c51a0f54828520c86e86befe75441645c174bcf",
      "bytes": 108053,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildfire-source.svg",
+     "sightings": [
+      {
+       "id": "R23-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildfire-source.svg"
+      }
+     ],
+     "merged": [],
      "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
      "blocks": [
       "block-99305879b9",
@@ -510,6 +542,13 @@
      "sha256": "25f76e338c09142732dadc53e951943920248e35085a593acdf0f08d07bae164",
      "bytes": 88347,
      "sourceUrl": "https://drive.google.com/file/d/1bRJ0u-IxNcut7sO6x2-qr-CZ8Ur3YwLH/view",
+     "sightings": [
+      {
+       "id": "S43-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1bRJ0u-IxNcut7sO6x2-qr-CZ8Ur3YwLH/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Wildlife charges reuse forestoval native vector artwork, individually fitted to observed positions; exact stitched anatomy remains approximate. Face photograph does not establish whether the oval and lower service component share a backing.",
      "blocks": [],
      "bundles": [
@@ -541,6 +580,13 @@
      "sha256": "cdccc791247f8a8c9fe1a184eba4b01bb2649e370fa453e8266bca0b52f456da",
      "bytes": 23162,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/airtanker.jpg",
+     "sightings": [
+      {
+       "id": "R01-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/airtanker.jpg"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. This is a painted aircraft emblem, not a cloth patch. Rivets, scratches and aircraft panel reflections are omitted. Wing proportions and feather-line counts follow the photographed marking, rather than the generic repo wing proportions.",
      "blocks": [],
      "bundles": []
@@ -558,6 +604,13 @@
      "sha256": "bb10c6de78a029228e88441ab3549b6a2f74c9afe0b9065d1259fd872a42bdb5",
      "bytes": 24790,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/fire-control.jpg",
+     "sightings": [
+      {
+       "id": "R11-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/fire-control.jpg"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": [
@@ -577,6 +630,13 @@
      "sha256": "3ffdc58e001ab8a7c3d126816d07e967071271b4587ed7a54e4459d266b29c8b",
      "bytes": 101761,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forest-service-mono.png",
+     "sightings": [
+      {
+       "id": "R12-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forest-service-mono.png"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
@@ -596,6 +656,13 @@
      "sha256": "4fde04651824ee60a3627af5b3daa0cf5586ad06928a98d1e63a94eec4598025",
      "bytes": 141847,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests.png",
+     "sightings": [
+      {
+       "id": "R15-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/forests.png"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [],
      "bundles": [
@@ -615,6 +682,13 @@
      "sha256": "100f300065ced82a63fe0e1a6096b1e0af34609d3761b329897d811bc64de3a4",
      "bytes": 169757,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-ministry.jpeg",
+     "sightings": [
+      {
+       "id": "R16-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/long-ministry.jpeg"
+      }
+     ],
+     "merged": [],
      "limitations": "Smooth shared geometry and authentic native charge primitives replace raster contours. Caption wording and arrangement follow this source; substitute outlined caption fonts and source fitting are approximate; clean source-authored tree/wildlife scenes are reused directly.",
      "blocks": [
       "block-1131bdd370",
@@ -637,6 +711,13 @@
      "sha256": "2590d933fbf1f026f509e5fe33af7883d058c25cb22bc8c71b3527dae554fdb2",
      "bytes": 18135,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/tree-source.svg",
+     "sightings": [
+      {
+       "id": "R22-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/tree-source.svg"
+      }
+     ],
+     "merged": [],
      "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
      "blocks": [],
      "bundles": [
@@ -656,6 +737,13 @@
      "sha256": "71212fca572f4fcc927da9bdead94435688add25b5639c1ede11aa606eb56339",
      "bytes": 78398,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildlife-source.svg",
+     "sightings": [
+      {
+       "id": "R24-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/bc-ministry-primitives-v5/data/references/wildlife-source.svg"
+      }
+     ],
+     "merged": [],
      "limitations": "This supplied digital artwork is preserved as vector geometry. It is not a photographed cloth specimen.",
      "blocks": [
       "block-99305879b9",
@@ -679,6 +767,13 @@
      "sha256": "aeb4dc9fdee68bc8c90a61a863a4005af405e6bd590a858ceeca98cccfb8dd76",
      "bytes": 21549,
      "sourceUrl": "https://drive.google.com/file/d/1nfsa9xlipbyfuutUjD4PkgXkzUCk5hon/view",
+     "sightings": [
+      {
+       "id": "S02-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1nfsa9xlipbyfuutUjD4PkgXkzUCk5hon/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The closed crown and jewel band are designed from the visible structure; fine jewel and floral engraving is unresolved.",
      "blocks": [],
      "bundles": []
@@ -696,6 +791,13 @@
      "sha256": "d423198d2f7132209a44015c8a091d2b671b055048ff20588e7c8ad9e8b2e26d",
      "bytes": 20700,
      "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view",
+     "sightings": [
+      {
+       "id": "S04-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": []
@@ -713,6 +815,13 @@
      "sha256": "cb54ece03a903d518313941c6f80cfadbc3ffe87c64114a7f23be16e7d3576b8",
      "bytes": 21814,
      "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view",
+     "sightings": [
+      {
+       "id": "S05-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
@@ -732,6 +841,17 @@
      "sha256": "580b434cb18b43bffe31c0be2cb98bc42e8ff520f6131859e1d2513657eca308",
      "bytes": 28334,
      "sourceUrl": "https://drive.google.com/file/d/1VsCaN7fMWOo4Nl2LrbTzWiXWLAS0na4g/view",
+     "sightings": [
+      {
+       "id": "S07-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1VsCaN7fMWOo4Nl2LrbTzWiXWLAS0na4g/view"
+      },
+      {
+       "id": "S08-O03",
+       "sourceUrl": "https://drive.google.com/file/d/15JI44htPICcRkrgZc4gI2Mt3X3la3wQ0/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The SERVICE word is fitted inside the lower ring; the tree trunk is interrupted behind that lettering to represent layered metal relief without merging the outlines. Exact root engraving and the original alphabet remain unresolved.",
      "blocks": [],
      "bundles": []
@@ -749,6 +869,25 @@
      "sha256": "46cf6682e19c7ce264bfa3852dbe113913aa450bfb3a611dd166a8295036c377",
      "bytes": 161030,
      "sourceUrl": "https://drive.google.com/file/d/1B5Vn00JKHVSN6sVozNnuriihbWPNv6nT/view",
+     "sightings": [
+      {
+       "id": "S08-O02",
+       "sourceUrl": "https://drive.google.com/file/d/15JI44htPICcRkrgZc4gI2Mt3X3la3wQ0/view"
+      },
+      {
+       "id": "S10-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1B5Vn00JKHVSN6sVozNnuriihbWPNv6nT/view"
+      },
+      {
+       "id": "S23-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1xrjjiufOriYvletlkS_aZhNQVg1VFPJP/view"
+      },
+      {
+       "id": "S24-O05",
+       "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified. Botanical needle placement is a clean interpretation of the intricate original linework, not an exact botanical engraving.",
      "blocks": [
       "pine-bough-25d2842ca3",
@@ -769,6 +908,17 @@
      "sha256": "ae5ca4850d9a852c14c87a813637bffed10c84adac32053d773fee060fb79d6d",
      "bytes": 25033,
      "sourceUrl": "https://drive.google.com/file/d/1pewou_elFNrlbSOnQ1dBlq3D7Tbsih3v/view",
+     "sightings": [
+      {
+       "id": "S21-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1pewou_elFNrlbSOnQ1dBlq3D7Tbsih3v/view"
+      },
+      {
+       "id": "S22-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
      "blocks": [
       "historic-pine-adffb4d88d"
@@ -788,6 +938,17 @@
      "sha256": "0d1e494ec09d9b0c0cd2c998710ac8ae09ff3b31446f31a1a01b635feed35f25",
      "bytes": 22021,
      "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view",
+     "sightings": [
+      {
+       "id": "S24-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view"
+      },
+      {
+       "id": "S55-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1DrbVEYA2kHdCRvXT5OPJK-_ClY23t-mZ/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified. The source decal is photographed sideways on its backing; the redraw displays its readable upright design.",
      "blocks": [],
      "bundles": [
@@ -807,6 +968,33 @@
      "sha256": "e0a65aafaf42a797d8644ac8f40c8ffc8b3040c752d8f62afe7084b8dc18f5e9",
      "bytes": 21803,
      "sourceUrl": "https://drive.google.com/file/d/1sDwGcTT-MRFNLvJPEywUDibgnl11OBmW/view",
+     "sightings": [
+      {
+       "id": "S33-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1nEqKVKbYRQcN_1hmFOBcC2dDn_oWKViy/view"
+      },
+      {
+       "id": "S34-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1AybvbTBLSg82RMizFS4aJCa2onr17u2z/view"
+      },
+      {
+       "id": "S35-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1sDwGcTT-MRFNLvJPEywUDibgnl11OBmW/view"
+      },
+      {
+       "id": "S38-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1wQOU6PLjGs-BWoPr1HxGKy67vtbeHZ0v/view"
+      },
+      {
+       "id": "S52-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1IRAuoXgyPCj-UhbPnLB4aowrKtehaDgE/view"
+      },
+      {
+       "id": "S53-O01",
+       "sourceUrl": "https://drive.google.com/file/d/19KMoTNzgvyE5Q926qmTCuPBJHQ3N3iOW/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
@@ -826,6 +1014,21 @@
      "sha256": "6c65b6f38ae14f2a6ed01b2ee50cb030dadde5d98d1144818e710235ff75f3ec",
      "bytes": 18055,
      "sourceUrl": "https://drive.google.com/file/d/1t1YXphOT-hvoSCiqYCTYqA2TlIYzIHlD/view",
+     "sightings": [
+      {
+       "id": "S39-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1t1YXphOT-hvoSCiqYCTYqA2TlIYzIHlD/view"
+      },
+      {
+       "id": "S40-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1EE2PlsZQQeYly0nGdDwV1mRwptj37zc_/view"
+      },
+      {
+       "id": "S41-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1UCbGp_3-8mqZaBgviG0ybJm8Kze6TqVB/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": []
@@ -843,6 +1046,13 @@
      "sha256": "588787b3dcacfbf244786e1b40ea798732ff6ddb9a837e9b73d971dc6dbc97fc",
      "bytes": 21796,
      "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view",
+     "sightings": [
+      {
+       "id": "S42-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
@@ -862,6 +1072,13 @@
      "sha256": "c21a97d722c965c3a8ccf348a1584ef8a3e19174401566f156b22b6f8c7a9ab2",
      "bytes": 19043,
      "sourceUrl": "https://drive.google.com/file/d/1xjum4ASt8uX3pP__B-Ywpc315IUc9yz5/view",
+     "sightings": [
+      {
+       "id": "S44-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1xjum4ASt8uX3pP__B-Ywpc315IUc9yz5/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The small scene and stitched letterform widths are interpreted from a blurred screenshot.",
      "blocks": [],
      "bundles": [
@@ -881,6 +1098,13 @@
      "sha256": "7fb037c68de06c2ee9368331cac8d6538a57055c1767e0bf96a0c5ecf6855972",
      "bytes": 11336,
      "sourceUrl": "https://drive.google.com/file/d/1LuVoONE1ytqacJXacmQgiucv-k5JjleR/view",
+     "sightings": [
+      {
+       "id": "S45-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1LuVoONE1ytqacJXacmQgiucv-k5JjleR/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Map outline and ungulate anatomy are clean symbolic interpretations; the screenshot cannot establish detailed geographic/antler contours or species.",
      "blocks": [],
      "bundles": []
@@ -898,6 +1122,13 @@
      "sha256": "6ff4ad9999575a195cb5a385a1343bec3560d6cfd5934a82c6651487ab9ebf38",
      "bytes": 20386,
      "sourceUrl": "https://drive.google.com/file/d/11ch3hDdDDCIgJ2bEHvYoBlhgINX2sZnf/view",
+     "sightings": [
+      {
+       "id": "S46-O01",
+       "sourceUrl": "https://drive.google.com/file/d/11ch3hDdDDCIgJ2bEHvYoBlhgINX2sZnf/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": [
@@ -917,6 +1148,13 @@
      "sha256": "b3f0bd486904c6b579b8a06be9664aa70567301b3218ae09b9b189ff8769f528",
      "bytes": 14900,
      "sourceUrl": "https://drive.google.com/file/d/1tuYkFokz7QG-cbfOnejUWcM2fNlMj7Mg/view",
+     "sightings": [
+      {
+       "id": "S47-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1tuYkFokz7QG-cbfOnejUWcM2fNlMj7Mg/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Tree/landscape charges use shared forestoval vector art and designed scenery fitted to this specimen, rather than its embroidery edge contours.",
      "blocks": [],
      "bundles": []
@@ -934,6 +1172,13 @@
      "sha256": "8b06615cc1524f80a6f1685d8cc58f29139a9fbc1b8791602490f7f4a1eaaf21",
      "bytes": 5447,
      "sourceUrl": "https://drive.google.com/file/d/1kpXxoJ7pusJ9xnbztejVQixpxykHj-Og/view",
+     "sightings": [
+      {
+       "id": "S49-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1kpXxoJ7pusJ9xnbztejVQixpxykHj-Og/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The canonical shared rocker omits the photographed tilt and asymmetric camera skew. Native source crop dimensions remain unchanged.",
      "blocks": [],
      "bundles": []
@@ -951,6 +1196,13 @@
      "sha256": "2f5ff5f1b8737b58c0034858b1e6e7edb8e4fbd5104764a943a0209690032108",
      "bytes": 32634,
      "sourceUrl": "https://drive.google.com/file/d/1kpXxoJ7pusJ9xnbztejVQixpxykHj-Og/view",
+     "sightings": [
+      {
+       "id": "S49-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1kpXxoJ7pusJ9xnbztejVQixpxykHj-Og/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The shared symmetric ministry border and fixed provincial crest replace the photographed skewed outline. Native source crop dimensions remain unchanged.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
@@ -972,6 +1224,13 @@
      "sha256": "d53a603ffad1156f51847f4094900382d7689d1302c3b17f340d160340bccc06",
      "bytes": 39494,
      "sourceUrl": "https://drive.google.com/file/d/1Qx2P5oct-kU8_sf8XOJJvK_dU1-J6Elb/view",
+     "sightings": [
+      {
+       "id": "S51-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1Qx2P5oct-kU8_sf8XOJJvK_dU1-J6Elb/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
      "blocks": [
       "historic-pine-adffb4d88d"
@@ -991,6 +1250,13 @@
      "sha256": "c744876565773ff595071af49eb44b3d4e5dda72c85ce99a3b36d8dbd4cda980",
      "bytes": 21804,
      "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view",
+     "sightings": [
+      {
+       "id": "S54-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": [
@@ -1010,6 +1276,13 @@
      "sha256": "7822fb68435866d25a443c66ba158d2d19b9b10a86498273eacda4183e9ad33e",
      "bytes": 19170,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O52",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Shared shoulder-family geometry is fitted to this separate board occurrence, with its own native crop, palette and caption positions. Tiny stitching details cannot be established at this resolution.",
      "blocks": [],
      "bundles": [
@@ -1029,6 +1302,29 @@
      "sha256": "be2027b0ddbc147c7e34983d1d2adacc9fa30445b20b772694595cf403b59335",
      "bytes": 73024,
      "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view",
+     "sightings": [
+      {
+       "id": "S58-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      },
+      {
+       "id": "S58-O05",
+       "sourceUrl": "https://drive.google.com/file/d/1szQo3rgFx8Evj85I3UHXm00vZmyX6gSc/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [
       "block-1131bdd370",
@@ -1063,6 +1359,13 @@
      "sha256": "ba3b0714455cef51124813dafe88fc73f7c8f65b2c1dbf3a9093d0a86f8748bb",
      "bytes": 38420,
      "sourceUrl": "https://drive.google.com/file/d/1INS_YP_UZWb3HuuJuolLxhmbafQ2Fo_W/view",
+     "sightings": [
+      {
+       "id": "S01-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1INS_YP_UZWb3HuuJuolLxhmbafQ2Fo_W/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The embossed maple leaf and condensed lettering are interpreted as clean forms; leather grain is deliberately absent.",
      "blocks": [],
      "bundles": []
@@ -1075,7 +1378,7 @@
    "sector": "environment",
    "description": "Parks Branch and the ministries that held it: arches, shields, rockers and ranger badges.",
    "counts": {
-    "patches": 27,
+    "patches": 22,
     "badges": 9
    },
    "patches": [
@@ -1092,6 +1395,13 @@
      "sha256": "fcd050ea71e08064db3f94b11c8146c7b414364785640be0b3a9d1513f75b75d",
      "bytes": 13062,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/parks.jpeg",
+     "sightings": [
+      {
+       "id": "R19-O01",
+       "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/parks.jpeg"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1109,6 +1419,17 @@
      "sha256": "4cae62e23f8eafc8b275f64b92bcecead89645fe6554a7ecea996c4e76a17fe7",
      "bytes": 321647,
      "sourceUrl": "https://drive.google.com/file/d/1zlab9TWi5MgdBwcCu4ml8RXFCgaqBV4I/view",
+     "sightings": [
+      {
+       "id": "S11-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1zlab9TWi5MgdBwcCu4ml8RXFCgaqBV4I/view"
+      },
+      {
+       "id": "S22-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
@@ -1132,6 +1453,17 @@
      "sha256": "de07785612422f84189745f745680d19666996831b826ed866c0af7bbb6c4203",
      "bytes": 322228,
      "sourceUrl": "https://drive.google.com/file/d/18K9CtO9ako9vJB4Da9I_OJqtJc2KODWh/view",
+     "sightings": [
+      {
+       "id": "S12-O01",
+       "sourceUrl": "https://drive.google.com/file/d/18K9CtO9ako9vJB4Da9I_OJqtJc2KODWh/view"
+      },
+      {
+       "id": "S22-O05",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
@@ -1155,6 +1487,21 @@
      "sha256": "5c7ad8f8478752beb660696abe950f93bbe65b9a583cdd8a8d4a9a79ba2471a5",
      "bytes": 312630,
      "sourceUrl": "https://drive.google.com/file/d/1ePa_lXLyDnWoRlGVYQ7VUNsgzo1m5VeU/view",
+     "sightings": [
+      {
+       "id": "S13-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1ePa_lXLyDnWoRlGVYQ7VUNsgzo1m5VeU/view"
+      },
+      {
+       "id": "S22-O06",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      },
+      {
+       "id": "S28-O08",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
      "blocks": [
       "embossed-outlined-caption-1d0d62a359",
@@ -1179,6 +1526,21 @@
      "sha256": "82e81489e106a9665f0ece9def9e7c94934dfb035a3d6cab3b3dbbb0e9f57179",
      "bytes": 312643,
      "sourceUrl": "https://drive.google.com/file/d/1UexJQRmVnN87TV5QdUC8xb7sYnYZ2Pk_/view",
+     "sightings": [
+      {
+       "id": "S14-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1UexJQRmVnN87TV5QdUC8xb7sYnYZ2Pk_/view"
+      },
+      {
+       "id": "S22-O08",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      },
+      {
+       "id": "S32-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1DikFU59MqmWqCFxsu12UH3R7oUtaKYYL/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
      "blocks": [
       "british-columbia-ec197ba42f",
@@ -1202,6 +1564,25 @@
      "sha256": "5b19a9f02a8868b3ab6174482da32198c84ad7c46fd6f82563ea92db93e3ac31",
      "bytes": 26721,
      "sourceUrl": "https://drive.google.com/file/d/1896L2S-wZ2q2R81hNfThSmJCd5l8PAeg/view",
+     "sightings": [
+      {
+       "id": "S15-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1896L2S-wZ2q2R81hNfThSmJCd5l8PAeg/view"
+      },
+      {
+       "id": "S16-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1qn4i1bmK4MMkJZL73MFCslvihL7sl91h/view"
+      },
+      {
+       "id": "S22-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      },
+      {
+       "id": "S28-O07",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized.",
      "blocks": [
       "embossed-outlined-caption-1d0d62a359",
@@ -1222,6 +1603,17 @@
      "sha256": "b6b5dce3d48f49db45eb014cbe595d04382e807803528695e9b405ee29c6cb94",
      "bytes": 322471,
      "sourceUrl": "https://drive.google.com/file/d/1zShPMgLgSuNuK5Isegcg98jfNW-L2HbX/view",
+     "sightings": [
+      {
+       "id": "S17-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1zShPMgLgSuNuK5Isegcg98jfNW-L2HbX/view"
+      },
+      {
+       "id": "S22-O07",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
@@ -1245,6 +1637,17 @@
      "sha256": "ba6965f24be9aeab370d716eda34c1eb8cf57a70d0097fcd1f612e86a855888f",
      "bytes": 402480,
      "sourceUrl": "https://drive.google.com/file/d/1EjR9Hl9JbA8tIoaiQ3781kp_QIemH6Bf/view",
+     "sightings": [
+      {
+       "id": "S18-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1EjR9Hl9JbA8tIoaiQ3781kp_QIemH6Bf/view"
+      },
+      {
+       "id": "S22-O10",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The modern full achievement uses the exact uploaded native BC arms, uniformly fitted with its original geometry and stroke semantics. Two-tone engraved paint is a metal interpretation of that artwork, not authenticated die engraving.",
      "blocks": [
       "british-columbia-ec197ba42f",
@@ -1268,6 +1671,17 @@
      "sha256": "dbdec39ac6fd1423092cb27ff1618f4a21be3da8fb44aa71061159887ac8e9f6",
      "bytes": 402365,
      "sourceUrl": "https://drive.google.com/file/d/1jtb9fjfqiyRlP2uUPK5utZq8wnD7rz7e/view",
+     "sightings": [
+      {
+       "id": "S19-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1jtb9fjfqiyRlP2uUPK5utZq8wnD7rz7e/view"
+      },
+      {
+       "id": "S22-O09",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized. The modern full achievement uses the exact uploaded native BC arms, uniformly fitted with its original geometry and stroke semantics. Two-tone engraved paint is a metal interpretation of that artwork, not authenticated die engraving.",
      "blocks": [
       "embossed-outlined-caption-1d0d62a359",
@@ -1292,6 +1706,17 @@
      "sha256": "e291c82fc986dcd4e22223bff883c5006b0115f6e80ac9441e28adeb40844368",
      "bytes": 322080,
      "sourceUrl": "https://drive.google.com/file/d/1RSqL4LJo_-KD7OaCx_A85Vvp6CK5Vz36/view",
+     "sightings": [
+      {
+       "id": "S20-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1RSqL4LJo_-KD7OaCx_A85Vvp6CK5Vz36/view"
+      },
+      {
+       "id": "S22-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1fsoGuXOj9H3y2IWjqBbqrg5IoBsukHF-/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
@@ -1315,6 +1740,13 @@
      "sha256": "42a5f96234d4be99c8bb65ba6ed566986e7dd59410fe5d233a9daf643361bd2a",
      "bytes": 10640,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
+     "sightings": [
+      {
+       "id": "S25-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1332,6 +1764,17 @@
      "sha256": "b77130e0f22494139783f6204e9058e3fff8efa282d1a9265d8dbde98e692ad0",
      "bytes": 4468,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
+     "sightings": [
+      {
+       "id": "S25-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view"
+      },
+      {
+       "id": "S28-O05",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1349,6 +1792,17 @@
      "sha256": "971e7c5332e09050dfaf68551a36441a4ecb2c9f6531258229e372dd89aed3d2",
      "bytes": 36059,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
+     "sightings": [
+      {
+       "id": "S25-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view"
+      },
+      {
+       "id": "S28-O10",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [
       "bc-provincial-mark-356f812fb6",
@@ -1372,6 +1826,17 @@
      "sha256": "e3fcc8cc7f8906d0e3aae15614bcc357d01f72778233e6687b1a8e560c8f1aa8",
      "bytes": 7987,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
+     "sightings": [
+      {
+       "id": "S25-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view"
+      },
+      {
+       "id": "S28-O09",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1389,6 +1854,17 @@
      "sha256": "c151f9af00c8cc495215644d23353d8648f83cf5a7a00a2793b87d5dc0c136cc",
      "bytes": 34853,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
+     "sightings": [
+      {
+       "id": "S25-O05",
+       "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view"
+      },
+      {
+       "id": "S28-O06",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [
       "bc-provincial-mark-356f812fb6",
@@ -1412,6 +1888,17 @@
      "sha256": "54d5af866a9eec9d683177dd1a0f834125b44d28fd60769729e3380bb6dff312",
      "bytes": 31620,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
+     "sightings": [
+      {
+       "id": "S25-O06",
+       "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view"
+      },
+      {
+       "id": "S28-O11",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [
       "bc-provincial-mark-356f812fb6",
@@ -1435,27 +1922,19 @@
      "sha256": "bd6dd849f11490ac8a91b9054fa6d9ba183363fb2a909721045037120206efe1",
      "bytes": 13089,
      "sourceUrl": "https://drive.google.com/file/d/1IjyskNsAqMVYJ5WSQ2HOr_yDV8ep8V7L/view",
+     "sightings": [
+      {
+       "id": "S26-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1IjyskNsAqMVYJ5WSQ2HOr_yDV8ep8V7L/view"
+      },
+      {
+       "id": "S28-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S27-O01",
-     "label": "British Columbia / Parks — large scenic arch",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "parks-scenic-large",
-     "affiliation": "Parks",
-     "svg": "bc-parks/S27-O01.svg",
-     "preview": "bc-parks/previews/S27-O01.webp",
-     "sha256": "17cf0ff490d271b73af7e59630e1da046226e34fd625ae09d2a97ee835f1f260",
-     "bytes": 15054,
-     "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-a60a176b55"
-     ],
      "bundles": []
     },
     {
@@ -1471,27 +1950,19 @@
      "sha256": "3df82f2c80b259605483d2c1b0db36f6a281c06f114a21b7bcdb944673d1c2d4",
      "bytes": 3055,
      "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view",
+     "sightings": [
+      {
+       "id": "S27-O02",
+       "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view"
+      },
+      {
+       "id": "S28-O16",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S27-O03",
-     "label": "British Columbia / Parks — small scenic arch",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "parks-scenic-small",
-     "affiliation": "Parks",
-     "svg": "bc-parks/S27-O03.svg",
-     "preview": "bc-parks/previews/S27-O03.webp",
-     "sha256": "e1924a52064d67df5e1fa20cf858faebdd70c5902634fcfb848034916799b9b1",
-     "bytes": 15055,
-     "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-a60a176b55"
-     ],
      "bundles": []
     },
     {
@@ -1507,6 +1978,13 @@
      "sha256": "7bbd6751fed1b2656b55382642dfe79813b4471451a5902aaaf44b8839a29866",
      "bytes": 17472,
      "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view",
+     "sightings": [
+      {
+       "id": "S27-O04",
+       "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1524,10 +2002,25 @@
      "sha256": "57e0e762c8bf0b0b4feded9db77a2378b16ab7ed4b41700a02044eb012bbee13",
      "bytes": 8715,
      "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-1237a38142"
+     "sightings": [
+      {
+       "id": "S28-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S29-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view"
+      },
+      {
+       "id": "S56-O53",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
      ],
+     "merged": [
+      "S56-O53"
+     ],
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1543,6 +2036,13 @@
      "sha256": "95ca741ae5f4d3874f07765b8aae2b688c9265b6fbd145f49b92a546f9af7bba",
      "bytes": 12301,
      "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view",
+     "sightings": [
+      {
+       "id": "S29-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1560,10 +2060,25 @@
      "sha256": "1c829838f20df0adc58c79d1a2ddd59426139fbc56d6e92675e7f7607d5000dc",
      "bytes": 10667,
      "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-5114723944"
+     "sightings": [
+      {
+       "id": "S28-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S29-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view"
+      },
+      {
+       "id": "S56-O51",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
      ],
+     "merged": [
+      "S56-O51"
+     ],
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1579,6 +2094,13 @@
      "sha256": "b189033383d38bbe9e0c3388beeba4dac803e3862eac6e8871515fda104161c1",
      "bytes": 8964,
      "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view",
+     "sightings": [
+      {
+       "id": "S29-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1596,6 +2118,25 @@
      "sha256": "c339d8b46ed5b3fe4c39ced97a0899ee56bfa75784fa0f5721cc9524c7ac52c5",
      "bytes": 5361,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
+     "sightings": [
+      {
+       "id": "S28-O14",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S30-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view"
+      },
+      {
+       "id": "S32-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1DikFU59MqmWqCFxsu12UH3R7oUtaKYYL/view"
+      },
+      {
+       "id": "S57-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1D0gzYgYHgmrcymnbLUO1gUKQiSlEEb9Z/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1613,6 +2154,21 @@
      "sha256": "c09b09f8d7e8282d6cc263a8a64bc283ba7411210ec65ef29a268242ddd7eb23",
      "bytes": 5189,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
+     "sightings": [
+      {
+       "id": "S28-O12",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S30-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view"
+      },
+      {
+       "id": "S57-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1D0gzYgYHgmrcymnbLUO1gUKQiSlEEb9Z/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
      "bundles": []
@@ -1630,6 +2186,21 @@
      "sha256": "06c71b03357f82e730a7c8f1c713022ea140f0ecfcae8a2374f3594be263e48a",
      "bytes": 34109,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
+     "sightings": [
+      {
+       "id": "S28-O13",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S30-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view"
+      },
+      {
+       "id": "S57-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1D0gzYgYHgmrcymnbLUO1gUKQiSlEEb9Z/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [
       "bc-provincial-mark-356f812fb6",
@@ -1653,10 +2224,43 @@
      "sha256": "d47292cd1c7777f60eabe734902e70c9fedcf4e914cc5f40c28761ccf7d6901e",
      "bytes": 15034,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-a60a176b55"
+     "sightings": [
+      {
+       "id": "S27-O01",
+       "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view"
+      },
+      {
+       "id": "S27-O03",
+       "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view"
+      },
+      {
+       "id": "S28-O15",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S28-O17",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S30-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view"
+      },
+      {
+       "id": "S56-O50",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      },
+      {
+       "id": "S57-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1D0gzYgYHgmrcymnbLUO1gUKQiSlEEb9Z/view"
+      }
      ],
+     "merged": [
+      "S27-O01",
+      "S27-O03",
+      "S56-O50"
+     ],
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1672,65 +2276,19 @@
      "sha256": "fa3a76f68274e25235ac7e6cfd5d5757c64120518894cfc0719ac28bca2015c9",
      "bytes": 21796,
      "sourceUrl": "https://drive.google.com/file/d/1CXInb8CzinChs_jgPr_5vI2L7lIEko8y/view",
+     "sightings": [
+      {
+       "id": "S28-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      },
+      {
+       "id": "S31-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1CXInb8CzinChs_jgPr_5vI2L7lIEko8y/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
      "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S56-O50",
-     "label": "British Columbia / Parks — scenic arch",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "parks-scenic-large",
-     "affiliation": "Parks",
-     "svg": "bc-parks/S56-O50.svg",
-     "preview": "bc-parks/previews/S56-O50.webp",
-     "sha256": "cd435bbe94a319f77860877b8ddcced861f0bdfe2def3da439002655e30bbe11",
-     "bytes": 15047,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-a60a176b55"
-     ],
-     "bundles": []
-    },
-    {
-     "id": "S56-O51",
-     "label": "Parks — hikers triangle",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "parks-hikers-triangle",
-     "affiliation": "Parks",
-     "svg": "bc-parks/S56-O51.svg",
-     "preview": "bc-parks/previews/S56-O51.webp",
-     "sha256": "4dcfcff29ebe433882e86673ec6f0eef6d5150e35eef5cb29b15a7b8ed94f5e3",
-     "bytes": 10615,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-5114723944"
-     ],
-     "bundles": []
-    },
-    {
-     "id": "S56-O53",
-     "label": "BC / Parks Branch — beige semicircle",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "parks-branch-beige",
-     "affiliation": "Parks",
-     "svg": "bc-parks/S56-O53.svg",
-     "preview": "bc-parks/previews/S56-O53.webp",
-     "sha256": "3aca6c12ca81cee259dbfa285d8966dfb8d220fda892739c4e264a13dfad53b0",
-     "bytes": 8714,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [
-      "block-1237a38142"
-     ],
      "bundles": []
     },
     {
@@ -1746,6 +2304,13 @@
      "sha256": "e5a9a32a1aa8bf3fe1190739462b46c476f60655adcc2f86eb04e5bed6a57e5c",
      "bytes": 12245,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O54",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -1763,6 +2328,13 @@
      "sha256": "55e9dbce899c193b21a83932276f5f123b43d8953ce0f7807452c7cfc1b2d915",
      "bytes": 6912,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O55",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -1780,6 +2352,13 @@
      "sha256": "a34e55ab4d18623f1a065fb691864811eb20fb46b0a5870ea44375a4dab03262",
      "bytes": 38509,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O56",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -1815,6 +2394,13 @@
      "sha256": "c1f619a09060107cbcc910f5440a9805ac6bbdbcacde862c4db4f0e890bac9c2",
      "bytes": 10460,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Wildlife_cloth_CO.jpg",
+     "sightings": [
+      {
+       "id": "MC19-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. This upward-facing U-shaped lower strip is a separate object, with a different cut from the standard upper detached rocker.",
      "blocks": [],
      "bundles": []
@@ -1832,6 +2418,13 @@
      "sha256": "42c35e09369680a995f8eabb8d91a62304821a9f15c5cd083aaab518848de395",
      "bytes": 10506,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Wildlife_cloth_light.jpg",
+     "sightings": [
+      {
+       "id": "MC20-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. This upward-facing U-shaped lower strip is a separate object, with a different cut from the standard upper detached rocker.",
      "blocks": [],
      "bundles": []
@@ -1849,6 +2442,13 @@
      "sha256": "3cb9b71731b9adfbfbaa5d18660beadae8ebe44fb4e5311f0b9746a18ab907ad",
      "bytes": 42572,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_1st_version.jpg",
+     "sightings": [
+      {
+       "id": "MC27-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
@@ -1870,6 +2470,13 @@
      "sha256": "5e66d7bc704a667970c3c08fe5dfdea6485f8edcb4c42eb93c7f452e67e73453",
      "bytes": 45191,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_Parks.jpg",
+     "sightings": [
+      {
+       "id": "MC28-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
@@ -1891,6 +2498,13 @@
      "sha256": "e5599c52275da9c901f68795d95a31b2bc33520d892790430cbd89cbd35b3d74",
      "bytes": 42480,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_2nd_version.jpg",
+     "sightings": [
+      {
+       "id": "MC29-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
@@ -1912,6 +2526,13 @@
      "sha256": "861897a0265210cb14a873a0c9a9bc15374abf8a66ae0c898fecbe3a5233ad46",
      "bytes": 38059,
      "sourceUrl": "https://moosecop.net/History/BC_CO_BC_Env.jpg",
+     "sightings": [
+      {
+       "id": "MC30-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. The tiny flag beside BC is a clean symbolic reconstruction; fine embroidered flag details are unresolved.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
@@ -1933,6 +2554,13 @@
      "sha256": "b72b364de04d098d00466fba4b02987784e8c442afbae9112f6bf64ce743008b",
      "bytes": 314887,
      "sourceUrl": "https://moosecop.net/History/BC_cap_crests.jpg",
+     "sightings": [
+      {
+       "id": "MC31-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The visible framed historical achievement uses the selected native historical component; tiny original crest details cannot be authenticated.",
      "blocks": [],
      "bundles": [
@@ -1952,6 +2580,13 @@
      "sha256": "9f7a023f374a334df662449bc6a6ae96eb3318bd86615574f3bd4546ba2faac3",
      "bytes": 40297,
      "sourceUrl": "https://moosecop.net/History/BC_cap_crests.jpg",
+     "sightings": [
+      {
+       "id": "MC31-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The visible footer reads ENVIROMENT, missing the first N in Environment; the photographed spelling is preserved.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
@@ -1973,6 +2608,13 @@
      "sha256": "ed0874e63e97abc27c161f4618eed9cbfa5874a2c352ab3a4963832b7f5d7521",
      "bytes": 40482,
      "sourceUrl": "https://moosecop.net/History/BC_cap_crests.jpg",
+     "sightings": [
+      {
+       "id": "MC31-O03",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. Shared older boxed-provincial-mark construction; this remains separate from the later full modern achievement.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
@@ -1994,6 +2636,13 @@
      "sha256": "81ff9192a1b5f39cc25dbb3bfcadd688ebd62f061339cf32b329d342acd3e915",
      "bytes": 315959,
      "sourceUrl": "https://moosecop.net/History/BC_cap_crests.jpg",
+     "sightings": [
+      {
+       "id": "MC31-O04",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The rounded compact historical achievement and narrow scalloped border remain distinct from the modern achievement edition.",
      "blocks": [
       "plateforge-historical-arms-2e9276f1bc"
@@ -2015,6 +2664,13 @@
      "sha256": "85e838782bb09dc9f86c05b5adc934c52a5d2b4ba033648604d0ff53614eaa51",
      "bytes": 317986,
      "sourceUrl": "https://moosecop.net/History/BC_cap_crests.jpg",
+     "sightings": [
+      {
+       "id": "MC31-O05",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. This is a reconstruction of visible cap embroidery. The rectangular presentation field does not establish a separately issued rectangular patch.",
      "blocks": [
       "plateforge-historical-arms-2e9276f1bc"
@@ -2036,6 +2692,13 @@
      "sha256": "81d436165fe84f712372b8279cac7de8eb2d61961114bb554c9cee89be178d27",
      "bytes": 400218,
      "sourceUrl": "https://moosecop.net/History/BC_cap_crests.jpg",
+     "sightings": [
+      {
+       "id": "MC31-O06",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. This cap has a broader outline than the existing standard shoulder drawing. The uploaded modern arms are retained as a shared component without declaring the cap and shoulder the same complete design.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -2057,6 +2720,13 @@
      "sha256": "39e3854d8b04221b8855eb6c1e30d6c7b1f793bbb5e84b8c100126e194534918",
      "bytes": 309133,
      "sourceUrl": "https://moosecop.net/History/BC_Blazer01.jpg",
+     "sightings": [
+      {
+       "id": "MC32-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The earlier achievement lacks the modern helmet and mantling. The selected historical Plateforge component is used in a gold ink interpretation; precise coloured thread panels and rope texture remain uncertain.",
      "blocks": [
       "conservation-officer-7c4e576644"
@@ -2078,6 +2748,13 @@
      "sha256": "e7b725bdf4ab40fbb41ca12769ab331c68a5e46d09ca0c3983a643b51e458be6",
      "bytes": 395594,
      "sourceUrl": "https://moosecop.net/History/BC_Blazer02.jpg",
+     "sightings": [
+      {
+       "id": "MC33-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The photographed helmet/mantling and full modern achievement are kept distinct from the earlier blazer arms. The native uploaded modern arms are reused; fine gold stitch treatment is not an official embroidery master.",
      "blocks": [
       "conservation-officer-7c4e576644",
@@ -2100,6 +2777,13 @@
      "sha256": "660289c2c1f3222ac7727b9f526f2c5952e096aaa5c5ee18ecc4ecd456f9ac34",
      "bytes": 400280,
      "sourceUrl": "https://moosecop.net/History/CO_PROTOTYPE_PATCH.jpg",
+     "sightings": [
+      {
+       "id": "MC34-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. Its wide, flat-bottom hourglass silhouette and two-line lower caption remain independent of the issued pointed shoulder and broad cap editions.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -2121,6 +2805,13 @@
      "sha256": "cbd01a3e3855a3d51ff81b6033fbdd562d255264e9c70b3274b70c88351045a1",
      "bytes": 400051,
      "sourceUrl": "https://moosecop.net/History/Chief_CO_patch.jpg",
+     "sightings": [
+      {
+       "id": "MC36-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. Gold border and lettering are the chief palette variant of the existing shared 1993-family shoulder core. Fine stitch shape and exact gold thread colour are approximate.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -2142,6 +2833,13 @@
      "sha256": "91aecc506211f4052617bdd72271f2b0945a5a8b44e8cd616f710e1bdada8f4f",
      "bytes": 4849148,
      "sourceUrl": "https://moosecop.net/History/COS_patch_With_Tab.jpg",
+     "sightings": [
+      {
+       "id": "MC39-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "User-supplied native insignia paths and colours are retained. Shoulders use the crown/wreath/shield/dogwood portion with the lower ribbon and side folds excluded by a fixed vector window; cap/breast uses the complete native ribbon edition. Source photographs retain their own cloth cuts and captions. Exact embroidery edges, thread colours, original typeface and the uploaded artwork’s manufacturing provenance are not authenticated.",
      "blocks": [
       "british-columbia-07921d9bf6",
@@ -2162,6 +2860,13 @@
      "sha256": "1f655482186d81373c72f6a30964ea5a5685dceca7586675d7845c2858b07aea",
      "bytes": 11310,
      "sourceUrl": "https://moosecop.net/History/COS_patch_With_Tab.jpg",
+     "sightings": [
+      {
+       "id": "MC39-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The detached tab is treated as its own cloth piece. Dates and word order are readable; physical dimensions are unknown.",
      "blocks": [],
      "bundles": []
@@ -2179,6 +2884,13 @@
      "sha256": "fdf6cfca4f400dff31473c1d9834eaa39f093c97db9fef8abdfb3ecec0914306",
      "bytes": 4849153,
      "sourceUrl": "https://moosecop.net/History/Chief_CO_2004.jpg",
+     "sightings": [
+      {
+       "id": "MC40-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "User-supplied native insignia paths and colours are retained. Shoulders use the crown/wreath/shield/dogwood portion with the lower ribbon and side folds excluded by a fixed vector window; cap/breast uses the complete native ribbon edition. Source photographs retain their own cloth cuts and captions. Exact embroidery edges, thread colours, original typeface and the uploaded artwork’s manufacturing provenance are not authenticated.",
      "blocks": [
       "british-columbia-07921d9bf6",
@@ -2199,6 +2911,13 @@
      "sha256": "547004436ebe298f65c7365d7caa8197fdb5187b8765dfb4ee0db251512dfe61",
      "bytes": 11327,
      "sourceUrl": "https://moosecop.net/History/Chief_CO_2004.jpg",
+     "sightings": [
+      {
+       "id": "MC40-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Fine embroidered lettering, exact thread colours and stitch structure are not retained. Outlined type is a source-similar substitute. The detached tab is treated as its own cloth piece. Dates and word order are readable; physical dimensions are unknown.",
      "blocks": [],
      "bundles": []
@@ -2216,6 +2935,13 @@
      "sha256": "33965e7f06c76dcbe6368cea409724258d8663444238a14d2dcec4913842241e",
      "bytes": 4831229,
      "sourceUrl": "https://moosecop.net/History/Ball_Cap_Crest.jpg",
+     "sightings": [
+      {
+       "id": "MC41-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "User-supplied native insignia paths and colours are retained. Shoulders use the crown/wreath/shield/dogwood portion with the lower ribbon and side folds excluded by a fixed vector window; cap/breast uses the complete native ribbon edition. The existing scalloped cloth cut remains; the supplied lower ribbon carries the service caption without a duplicate generated text line. Exact embroidery edges, thread colours, original typeface and the uploaded artwork’s manufacturing provenance are not authenticated.",
      "blocks": [
       "supplied-cos-native-artwork-bd2030f373"
@@ -2235,6 +2961,17 @@
      "sha256": "1afe9ede8ab5ea9a2054171830fbcc5a3e18fb949ba46a1d6e83732e57f71ee4",
      "bytes": 400881,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "MC35-O01",
+       "sourceUrl": null
+      },
+      {
+       "id": "S56-O39",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -2256,6 +2993,17 @@
      "sha256": "742ebe938980006d273fd98455d77d09ed663a47f5a1029c5ef0316571fc6d1d",
      "bytes": 9084,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "MC26-O01",
+       "sourceUrl": null
+      },
+      {
+       "id": "S56-O40",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -2285,6 +3033,13 @@
      "sha256": "b0beddedcbba63d40101de1801b532c53a128f5535276b9ab9ab253e14491aef",
      "bytes": 1162,
      "sourceUrl": "https://moosecop.net/History/PredControlPatch.jpg",
+     "sightings": [
+      {
+       "id": "MC03-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Limited evidence study of visible complete triangular border and pale wolf profile. Unknown captions deliberately omitted, not authenticated. The page owner describes a1951 shoulder patch but gives no authenticated manufacturing dimensions; source image157x173px. Wolf details and thread colours remain approximate.",
      "blocks": [],
      "bundles": []
@@ -2302,6 +3057,13 @@
      "sha256": "022c78463e23703cf9b26a04a1f83bc0b5e20a8a2f8f77e37c8ab8e2399c73d5",
      "bytes": 7799,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Warden.jpg",
+     "sightings": [
+      {
+       "id": "MC05-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [
       "british-columbia-e9a8932264"
@@ -2321,6 +3083,13 @@
      "sha256": "2b74fd42acce299e5cfe466093d3c7a9f234cc2076eb6b6d51020be264d4c69d",
      "bytes": 10127,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Commissioner.jpg",
+     "sightings": [
+      {
+       "id": "MC06-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [
       "british-columbia-e9a8932264"
@@ -2340,6 +3109,13 @@
      "sha256": "4bc3dec138cd92a03eb606c1a24885ce37c2a93361c74c47f57f77ca154e09a5",
      "bytes": 9107,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Inspector.jpg",
+     "sightings": [
+      {
+       "id": "MC07-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [
       "british-columbia-e9a8932264"
@@ -2359,6 +3135,17 @@
      "sha256": "dbd12729b69fb4d1959e742667fab451a061674cbdf0c1ec5c303cb5b95d802a",
      "bytes": 9571,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Commission.jpg",
+     "sightings": [
+      {
+       "id": "MC08-O01",
+       "sourceUrl": null
+      },
+      {
+       "id": "MC09-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2376,6 +3163,21 @@
      "sha256": "8fc4d0080cb7a0771b46bfed7333c769c986d6c0016837facbc1eb8e1e28add2",
      "bytes": 7251,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Commission.jpg",
+     "sightings": [
+      {
+       "id": "MC08-O02",
+       "sourceUrl": null
+      },
+      {
+       "id": "MC09-O02",
+       "sourceUrl": null
+      },
+      {
+       "id": "MC12-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2393,6 +3195,13 @@
      "sha256": "724e6415cee8bf08a797a88a3eacbf482fa6ee1ba69ed4d54d8e76aaa06b05f7",
      "bytes": 4158,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Tabs.jpg",
+     "sightings": [
+      {
+       "id": "MC11-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2410,6 +3219,13 @@
      "sha256": "37076433a8d2822e51cad1d34f9b2ece4adafc571ee5c8da2b3597386f0c664f",
      "bytes": 9856,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Tabs.jpg",
+     "sightings": [
+      {
+       "id": "MC11-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2427,6 +3243,17 @@
      "sha256": "b773c9d24101b29711f5a3061c51cdbf31a465b1a8dfba71fc566748c873984c",
      "bytes": 9952,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Game_old_felt.jpg",
+     "sightings": [
+      {
+       "id": "MC12-O01",
+       "sourceUrl": null
+      },
+      {
+       "id": "MC13-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2444,6 +3271,13 @@
      "sha256": "2300edc32b8d370dcfe75a0e4da4d729b2aa9da72b79effc172bbe51785d1bcd",
      "bytes": 7398,
      "sourceUrl": "https://moosecop.net/History/BC_Predator_Control.jpg",
+     "sightings": [
+      {
+       "id": "MC13-O02",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2461,6 +3295,13 @@
      "sha256": "2175e9dcb94b881b720b07a4c19dbcf3a55a44a1cd0666656ae8dea45f9ada05",
      "bytes": 9849,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Game_old_cloth.jpg",
+     "sightings": [
+      {
+       "id": "MC14-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2478,6 +3319,13 @@
      "sha256": "80d3615511b9a06f45c6bbb98dda84e8bcf4d56e5bc56d9fd97947dae50881bb",
      "bytes": 3615,
      "sourceUrl": "https://moosecop.net/History/Inspector_tab.jpg",
+     "sightings": [
+      {
+       "id": "MC15-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
      "blocks": [],
      "bundles": []
@@ -2495,6 +3343,13 @@
      "sha256": "bd6918bc3b7a87bd0bdbb2fc7161b0a433a2efbb055103bdf9bcafa07c0e15c0",
      "bytes": 14169,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Game_old_felt2.jpg",
+     "sightings": [
+      {
+       "id": "MC16-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [],
      "bundles": []
@@ -2512,6 +3367,13 @@
      "sha256": "93be96ab695ac8148cf9f551c2694c092ee18bee27b88646ddbb570cc6b9abfc",
      "bytes": 14244,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Game_cloth.jpg",
+     "sightings": [
+      {
+       "id": "MC17-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [],
      "bundles": []
@@ -2529,6 +3391,13 @@
      "sha256": "82c011b03a41ca03998165a843e136aaf81961f3d55707afe849015ce3d259c8",
      "bytes": 15567,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Wildlife_felt.jpg",
+     "sightings": [
+      {
+       "id": "MC18-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [],
      "bundles": []
@@ -2546,6 +3415,13 @@
      "sha256": "f2b0bd02ea65fafff2c3f988149208210a632aadc7058a2efd98ccf6ded9204e",
      "bytes": 15474,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Wildlife_cloth_CO.jpg",
+     "sightings": [
+      {
+       "id": "MC19-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [],
      "bundles": []
@@ -2563,6 +3439,13 @@
      "sha256": "02ebbecbf1fed2485e403e5978bcd020a397634038be9b33f2173382cd0cb315",
      "bytes": 15818,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Wildlife_cloth_light.jpg",
+     "sightings": [
+      {
+       "id": "MC20-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [],
      "bundles": []
@@ -2580,6 +3463,13 @@
      "sha256": "b1ac9b2098fe92fe333334aeaa2a2e935e044154ca135941243a774d9143745c",
      "bytes": 15695,
      "sourceUrl": "https://moosecop.net/History/BC_FW_06.jpg",
+     "sightings": [
+      {
+       "id": "MC22-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [],
      "bundles": []
@@ -2597,6 +3487,13 @@
      "sha256": "bbec0aa819db5c47283018ddc500db8493368d11756ed9cc0f0ba7d23622ff2b",
      "bytes": 15561,
      "sourceUrl": "https://moosecop.net/History/BC_FW_07.jpg",
+     "sightings": [
+      {
+       "id": "MC23-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
      "blocks": [],
      "bundles": []
@@ -2614,6 +3511,13 @@
      "sha256": "cebfdc539cb0738ce39070b484bc9467707dee73354c107ec970276a176a01d7",
      "bytes": 303872,
      "sourceUrl": "https://moosecop.net/History/BC_FG_Blazer.jpg",
+     "sightings": [
+      {
+       "id": "MC24-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. The native Plateforge1917-late Type3 historical achievement is reused without a modern helmeted achievement. This is historical artwork reconstruction, not a verified production engraving. Fine red/green embroidered accents in the reference are simplified to gold achievement linework and a green branch ribbon; their tiny exact painted distribution is not recovered. The rectangular navy field is a presentation of the photographed blazer cloth; a separate rectangular patch cut is not asserted.",
      "blocks": [],
      "bundles": [
@@ -2633,6 +3537,13 @@
      "sha256": "7ee5a067997c256ae2fc78cf177c73cce3d76c3519e5f88d0dfb4ffe4792803c",
      "bytes": 304235,
      "sourceUrl": "https://moosecop.net/History/BC_FW_Blazer.jpg",
+     "sightings": [
+      {
+       "id": "MC25-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. The native Plateforge1917-late Type3 historical achievement is reused without a modern helmeted achievement. This is historical artwork reconstruction, not a verified production engraving. Fine red/green embroidered accents in the reference are simplified to gold achievement linework and a green branch ribbon; their tiny exact painted distribution is not recovered.",
      "blocks": [],
      "bundles": [
@@ -2652,6 +3563,17 @@
      "sha256": "a0e2ddf9d45b57ce9586e95e8d404d5aa037632856eab08f3ddef2d157202d24",
      "bytes": 10411,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "MC21-O01",
+       "sourceUrl": null
+      },
+      {
+       "id": "S56-O42",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clearer MC21 source supplies the same observed green/gold Fish & Wildlife Branch edition and literal shared trapezoid border. Typeface and thread calibration remain interpreted; no physical size or issue date inferred.",
      "blocks": [],
      "bundles": []
@@ -2681,6 +3603,17 @@
      "sha256": "0926c9df9f86de9efe1ab4916b4e822a79fc407a1d5c6e4cacaded1e18524273",
      "bytes": 34802,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "MC26-O02",
+       "sourceUrl": null
+      },
+      {
+       "id": "S56-O41",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -2715,6 +3648,13 @@
      "sha256": "2d6b5e47b579a5745aaa989bd3d2f4aac3fc7735081bb90d47a62199a6d25660",
      "bytes": 395117,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -2736,6 +3676,13 @@
      "sha256": "39d6127b06a25fa968df9d446e74b7c6cc2f4daaba973feb0bab5ecf365b79da",
      "bytes": 395400,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "british-columbia-883e8093cd",
@@ -2758,6 +3705,13 @@
      "sha256": "6cfc345486fbf7f35a5dfbc86143cfd0d8ff8d65b22e1f399aa9be044d22e9a9",
      "bytes": 397336,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O03",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "british-columbia-883e8093cd",
@@ -2780,6 +3734,13 @@
      "sha256": "6e781b1e8ebe1b9c97b47b757963679b6f25ba8b29a50d34c63165434d02c752",
      "bytes": 390810,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O04",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "sheriff-dcf6c31d6b",
@@ -2802,6 +3763,13 @@
      "sha256": "80421308c37cb9762688746fcbac76695a61c1690f320ded928b24126f1812b8",
      "bytes": 390922,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O05",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "sheriff-dcf6c31d6b",
@@ -2824,6 +3792,13 @@
      "sha256": "368f391c01ff501edfe83c0f87450671e69964b62761ee1b74ef0c6bb7fa291f",
      "bytes": 6706,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O06",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -2841,6 +3816,13 @@
      "sha256": "985f9f3a8e54c28ad47c0320b6921de5a598e22000c0dbc4cf9a25554684b66d",
      "bytes": 6704,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O08",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -2858,6 +3840,13 @@
      "sha256": "b67ce75da9a5e6cc232c517aa3bcc35e3f4707ebaacd5d32b847e830783be553",
      "bytes": 7421,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O37",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -2887,6 +3876,13 @@
      "sha256": "5a05975f40f34ecea8b67a366ffc6886cfef31b146cf113529f94989e0c39eac",
      "bytes": 398118,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O25",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -2908,6 +3904,13 @@
      "sha256": "e1363764102ff47ae142dd8660cac335db56b9e8c66c9a6a80c7032e99b0932a",
      "bytes": 7286,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O26",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -2925,6 +3928,13 @@
      "sha256": "39351646b461cab4a72f01c87de03e134bfd07ae1d32f4d3b79dde7ba2375e2b",
      "bytes": 36247,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O27",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -2948,6 +3958,13 @@
      "sha256": "10230e0d2c43cae74ba45f27dd300ad9f80e847abd33853edf9384d6c68fbb9a",
      "bytes": 7285,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O29",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "block-7088196603"
@@ -2967,6 +3984,13 @@
      "sha256": "b55c8d848c1066d0ce66e49e52b67f75931322546c9a9d4b2d5410b0c4134c34",
      "bytes": 36245,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O30",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -2990,6 +4014,13 @@
      "sha256": "c9664d191a2934bd0cf1bb2d961070be488a63c6fbdea0b4ca6895f120de8c66",
      "bytes": 18807,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O31",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The compact provincial shield and crown are a coarse heraldic interpretation; banner lettering placement and colours are approximate.",
      "blocks": [],
      "bundles": []
@@ -3007,6 +4038,13 @@
      "sha256": "8c825c2282aa6d1246d190387c2432b2ca56dcc5e96e279f5385ab3b994e3a02",
      "bytes": 18660,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O32",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The crown is an interpretation of its visible outline; gold/brown tones and small ribbon lettering are approximate. The BRITISH caption begins beyond the photographed crop and is expanded from the visible partial wording and catalogue identification.",
      "blocks": [],
      "bundles": []
@@ -3024,6 +4062,13 @@
      "sha256": "eeae32f55a4ecd6275bef66f285f0a86064fec8544770f8f22de7542adda76f7",
      "bytes": 7617,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O62",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified. Separate green/gold upper rocker, not an integrated shield caption; rectangular photo crops overlap the adjacent shield.",
      "blocks": [
       "block-7088196603"
@@ -3055,6 +4100,13 @@
      "sha256": "46e8da540f6c9848f4024a664ed121cfb375d6a2e0e0a1a0cc3278f4a9ccbd91",
      "bytes": 7088,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O33",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. Curved legend corrected from Volunteer to the visibly lettered Alouette River; transcription remains provisional. Small tan material below the bottom border is an occlusion/mounting detail, excluded from the design outline.",
      "blocks": [],
      "bundles": []
@@ -3072,6 +4124,13 @@
      "sha256": "69dfc2d3d8c9eb9b9ac03c03372f2b0d3b820a63efb80f124b3857d8c46498ef",
      "bytes": 4842,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O34",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. Slightly concave lower border and vertical side ends reconstructed from source; central tan mounting/occlusion detail excluded.",
      "blocks": [],
      "bundles": []
@@ -3101,6 +4160,13 @@
      "sha256": "0675d7e4e3fdff34f6739233dcc476d87b3c24d3eb69f9116578beb9a802514b",
      "bytes": 36780,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O07",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -3123,6 +4189,13 @@
      "sha256": "13741b3f240b0b1603ad08912395909220c7effa8eff116e6abbd76bf914dd39",
      "bytes": 36220,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O09",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -3146,6 +4219,13 @@
      "sha256": "2b4e2506f085bb49385dc42289dc940ffc779751523d85dd0a90b062b29a578e",
      "bytes": 36234,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O10",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -3169,6 +4249,13 @@
      "sha256": "d81878aa061b9e338234e64cce1a1fbd8a95b6cb4d9b6f66c784e82a39ec1438",
      "bytes": 36495,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O28",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified. Ministry of Attorney General is identified by the user; the separate upper Corrections rocker is indexed as S56-O62.",
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2",
@@ -3204,6 +4291,13 @@
      "sha256": "c8ba1d69257f6bfeb5e4afe3411926a04afbf21c8be98034a567c4cb60dbaa26",
      "bytes": 39255,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O44",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The simplified framed arms reuse the supplied native provincial-crest artwork; fine embroidered colours remain unresolved.",
      "blocks": [
       "bc-provincial-mark-356f812fb6"
@@ -3225,6 +4319,13 @@
      "sha256": "7d060344da38e90588360f484a4b0228dd050d66817d57faf9ef47c35870cd89",
      "bytes": 33365,
      "sourceUrl": "https://live.staticflickr.com/889/40504500534_cbfcabe13e_b.jpg",
+     "sightings": [
+      {
+       "id": "UP01-O01",
+       "sourceUrl": null
+      }
+     ],
+     "merged": [],
      "limitations": "Source-backed clean vector reconstruction of the user-provided Coroners Department photograph. This pointed CORONERS / DEPT. edition is separate from S56-O44 BRITISH COLUMBIA / CORONERS SERVICE. Smooth manually designed border and authored condensed slab-serif captions follow the visible structure; exact original alphabet, stitches, edge fuzz, cloth texture and physical dimensions are unverified. The supplied compact framed deer/ram reference is uniformly fitted with native geometry and aspect preserved; fine embroidery differences and tiny motto details are not authenticated. Gold and white are intended clean thread colours, not colour-calibrated measurements.",
      "blocks": [
       "bc-provincial-mark-356f812fb6"
@@ -3258,6 +4359,13 @@
      "sha256": "f0b15494991d158fc21488ab174a09a372ae92da5e8af4f5aaa1ca4d0ed3c713",
      "bytes": 400977,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O43",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction. The earlier inventory misidentified this as Conservation Officer; the visible caption reads FIRE COMMISSIONER. A manually aligned four-arm Maltese cross replaces the earlier arbitrary scallops. One smooth analytical quadrant defines all four arms and diagonal recesses; exact stitch-edge irregularities and photographic perspective are not copied.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -3291,6 +4399,13 @@
      "sha256": "ce6c5952683dbd3b9755c29b634fa63782737a6ba8aaf5486ecd9d91c0118aa5",
      "bytes": 399493,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O45",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -3324,6 +4439,13 @@
      "sha256": "55c05c6d80366eaa6b98e757eed3c570edb4f65033e70a397e3f8df933ef6b91",
      "bytes": 13183,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O46",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. Justice Institute identity is confirmed by the visible caption and user reference. Fine channels in the historical triangular institutional monogram remain an interpretation of the board photograph.",
      "blocks": [],
      "bundles": []
@@ -3353,6 +4475,13 @@
      "sha256": "64317aad9b8f5a9ae7ee6b98324358b3756aa3be7afedcc745b8278cc718c6c1",
      "bytes": 401289,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O12",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
@@ -3374,6 +4503,13 @@
      "sha256": "d29bca3ec39cf40e6a66a670a62a97c61f4a7795959f7037b251aed963fc94f1",
      "bytes": 6881,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O13",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -3391,6 +4527,13 @@
      "sha256": "5fb87cc056b086458b73a0e2011f622b46e8a25ac33b6c151aec43ca6aecbd3f",
      "bytes": 39316,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O14",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "and-highways-e1171261d7",
@@ -3416,6 +4559,13 @@
      "sha256": "0a2cbbaa55ca0347e2e9154463b40ecb98a2210d894fa4711a72a9bb412e8aba",
      "bytes": 7009,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O15",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -3433,6 +4583,13 @@
      "sha256": "9a585628d5fd727f574413021ea31d7c9ab47ce3366db8f288ee974ab2fb9192",
      "bytes": 39330,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O16",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "and-highways-e1171261d7",
@@ -3458,6 +4615,13 @@
      "sha256": "d228b9302a88146787c09c9d339b50bb7e4e0eb88e36adbd8e8cac9c16ddb589",
      "bytes": 6456,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O17",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -3475,6 +4639,13 @@
      "sha256": "7ad374aba841a15ad0ba88813883ca5cb73c90daca0ef19af1353605a835a3af",
      "bytes": 40771,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O18",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [
       "and-highways-e1171261d7",
@@ -3498,6 +4669,13 @@
      "sha256": "9fd7f07fad848ac0d8f3ccfa810231fdf0775fb97a0c9a4144dfbc0889846c6c",
      "bytes": 10452,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O19",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -3515,6 +4693,13 @@
      "sha256": "43ebd1e49f992aa9952227e9cfe68c88937b64920b145792e6e675713c022071",
      "bytes": 13115,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O20",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The supplied vector geometry and original colours are preserved. The collector-board green stitched perimeter is interpreted as a smooth offset of the supplied shield. The gold supplied reference has no perimeter stroke and is available unchanged. Exact embroidery edges, calibrated thread colours and original typeface remain unverified.",
      "blocks": [],
      "bundles": []
@@ -3532,6 +4717,13 @@
      "sha256": "0c4dd02b2a3da99307889c79e0e178b51cd9cd421e6aed84e43673f47f576ea1",
      "bytes": 13613,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O47",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3549,6 +4741,13 @@
      "sha256": "511adc581fe187d2b685469ffa9ddff64ccf7ff70d3f13178461b4d44124f27e",
      "bytes": 15157,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O48",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The small central red/blue/white charge is retained as a coarse colour interpretation; its exact shield charges cannot be authenticated from this photograph.",
      "blocks": [],
      "bundles": []
@@ -3578,6 +4777,13 @@
      "sha256": "4d9f85bc63127619ffede98236ef95e443b443c15e106b253d1f703ac19069bc",
      "bytes": 6168,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O21",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3595,6 +4801,13 @@
      "sha256": "568ee13420bbce3fc6dbd4218733dc25378f2b7c4fe3fee4b122da58d38e129b",
      "bytes": 7823,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O22",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
      "blocks": [],
      "bundles": []
@@ -3624,6 +4837,13 @@
      "sha256": "e1a414e80d7961f45fa50f147991ba30af21b8b8b26b695cc09977fe8be26aba",
      "bytes": 13807,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O57",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3641,6 +4861,13 @@
      "sha256": "2b97ef0162d6693bfb54f88f4a5b004def0f7c6ece0057bb085649413cc69231",
      "bytes": 9724,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O58",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3658,6 +4885,13 @@
      "sha256": "f3b0523ebf9b964bdabcd2d5b37025127401dff6556b816125e1e511e581ac51",
      "bytes": 18521,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O59",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3687,6 +4921,13 @@
      "sha256": "55f87e86513457367cefc8418b8443551ba730e547db732c38dedf32e10cce10",
      "bytes": 11434,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O60",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3704,6 +4945,13 @@
      "sha256": "998a84dc324aa1bdff5b4276b8c5fced610be4edf86cf5f840677361d2295d4e",
      "bytes": 5756,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O61",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3733,6 +4981,13 @@
      "sha256": "65979f21095303246894891cc3d3e6b13f6fed45c970ebaf4c7c5f877dac51fb",
      "bytes": 11615,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O49",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3762,6 +5017,13 @@
      "sha256": "ce38984b19c265c5c0b79aef3d6b925073db55e93475ced0caaa8655d16b47d8",
      "bytes": 6304,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O23",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3779,6 +5041,13 @@
      "sha256": "31c9204c8a43641c529bae7e971d4c7a33afacf340f0d6ba2171fc71a37dcc81",
      "bytes": 4751,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O24",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
@@ -3808,6 +5077,13 @@
      "sha256": "fc1abe7d50b32a2bad6ab7ba15c97f76306e1963314321a501cfdcb153d3610b",
      "bytes": 6353,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O38",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "BRITISH COLUMBIA / SPCA is visible in the original 57×53px board region; this is not Justice Institute. Typeface, calibrated thread colors and fine embroidery remain interpreted.",
      "blocks": [],
      "bundles": []
@@ -3837,6 +5113,13 @@
      "sha256": "76527b79ef83bc81838a5578c7257a756df6697a206559f284ae024aba9e4d53",
      "bytes": 3230,
      "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view",
+     "sightings": [
+      {
+       "id": "S24-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
      "blocks": [],
      "bundles": []
@@ -3854,6 +5137,13 @@
      "sha256": "711a34fb6ad627e6baa1c7e743d6b0ef580b443916c7e219c81dd4addb209d7e",
      "bytes": 3492,
      "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view",
+     "sightings": [
+      {
+       "id": "S42-O02",
+       "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view"
+      }
+     ],
+     "merged": [],
      "limitations": "The tiny windscreen emblem is heavily blurred. This clean drawing represents its visible oval and tree-like central silhouette only; wording, affiliation and exact fine details are not recoverable.",
      "blocks": [],
      "bundles": []
@@ -3871,6 +5161,13 @@
      "sha256": "08e3b25cfc6a4cd4d532f368c0d89191a9aa091077e276d77dd7eb37ac94bcd3",
      "bytes": 2426,
      "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view",
+     "sightings": [
+      {
+       "id": "S48-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. No wording in the source proves a ministry affiliation. Frayed threads are omitted. Coast and island are shared clean symbolic interpretations; the broad tree and its position differ from the printed map-tree master and have a separate cloth edition.",
      "blocks": [],
      "bundles": []
@@ -3888,6 +5185,13 @@
      "sha256": "b98be270020d86945f7b6f30ffffc990b7acee085c663454cecc60913372bffd",
      "bytes": 2408,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O11",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean geometric drawing of only the visible fragment. No unseen boundary, words or complete underlying patch are claimed. Readable short letter fragments are preserved where identifiable; unresolved words are omitted.",
      "blocks": [],
      "bundles": []
@@ -3905,6 +5209,13 @@
      "sha256": "31e2abe77a960eddd4425cec2785bf888f1f9c2627960a972a7e2d754570f95d",
      "bytes": 29728,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O35",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean hand-designed roundel silhouette and principal visible motif. Only BRITISH COLUMBIA is confidently legible. The remaining caption is omitted rather than invented; affiliation and fine charge details remain unresolved.",
      "blocks": [],
      "bundles": []
@@ -3922,6 +5233,13 @@
      "sha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1",
      "bytes": 29009,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O36",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
      "limitations": "Clean hand-designed roundel silhouette and principal visible motif. Only BRITISH COLUMBIA is confidently legible. The remaining caption is omitted rather than invented; affiliation and fine charge details remain unresolved.",
      "blocks": [],
      "bundles": []
@@ -4657,6 +5975,33 @@
    "medium": "Printed emblem",
    "org": "province-of-bc",
    "reason": "The Province's corporate identity, not patches"
+  }
+ ],
+ "merged": [
+  {
+   "id": "S27-O01",
+   "label": "British Columbia / Parks — large scenic arch",
+   "into": "S30-O04"
+  },
+  {
+   "id": "S27-O03",
+   "label": "British Columbia / Parks — small scenic arch",
+   "into": "S30-O04"
+  },
+  {
+   "id": "S56-O50",
+   "label": "British Columbia / Parks — scenic arch",
+   "into": "S30-O04"
+  },
+  {
+   "id": "S56-O53",
+   "label": "BC / Parks Branch — beige semicircle",
+   "into": "S29-O01"
+  },
+  {
+   "id": "S56-O51",
+   "label": "Parks — hikers triangle",
+   "into": "S29-O03"
   }
  ]
 }

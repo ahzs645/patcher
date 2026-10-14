@@ -15,7 +15,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { joinSvg, unwrapBlock } from '../src/library-join.js';
-import { LIBRARY, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
+import { LIBRARY, drawingKey, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
 
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 
@@ -58,8 +58,17 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
     const byId = new Map(patches.map((p) => [p.id, p]));
     const { manifest } = joinedPatches(library);
     const excluded = new Set((manifest.excluded ?? []).map((e) => e.id));
+    const mergedInto = new Map((manifest.merged ?? []).map((m) => [m.id, m.into]));
     for (const design of source.index.designs) {
       if (excluded.has(design.id)) continue;
+      if (mergedInto.has(design.id)) {
+        // Not stored: it must draw exactly what the patch it was merged into draws.
+        const into = byId.get(mergedInto.get(design.id));
+        const original = source.get(design.svgUrl);
+        if (!into || !original) problems.push(`${design.id}: merged into ${mergedInto.get(design.id)}, which is missing`);
+        else if (drawingKey(Buffer.from(original).toString('utf8')) !== drawingKey(into.bytes.toString('utf8'))) problems.push(`${design.id}: doesn't draw the same as ${into.id}, which it was merged into`);
+        continue;
+      }
       const p = byId.get(design.id);
       if (!p) { problems.push(`${design.id}: in the snapshot, not in the library (nor excluded)`); continue; }
       const original = source.get(design.svgUrl);
@@ -67,7 +76,7 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
       if (!Buffer.from(original).equals(p.bytes)) problems.push(`${design.id}: joined bytes differ from the snapshot's ${design.svgUrl}`);
       if (design.vectorSha256 && design.vectorSha256 !== p.sha256) problems.push(`${design.id}: SHA-256 differs from the atlas's vectorSha256`);
     }
-    if (byId.size + excluded.size !== source.index.designs.length) problems.push(`library has ${byId.size} patches and ${excluded.size} excluded, snapshot has ${source.index.designs.length}`);
+    if (byId.size + excluded.size + mergedInto.size !== source.index.designs.length) problems.push(`library has ${byId.size} patches, ${excluded.size} excluded and ${mergedInto.size} merged; snapshot has ${source.index.designs.length}`);
   }
   return problems;
 }

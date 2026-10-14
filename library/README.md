@@ -20,7 +20,7 @@ hand, because the next import replaces it.
 The **BC Forestry Patch Atlas** snapshot: the atlas site's own "Entire codebase" ZIP, shared on
 [Google Drive](https://drive.google.com/file/d/1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4/view). The import reads its
 277 reconstructions (`dist/assets/reconstructions.json` plus each SVG and WebP preview) and nothing else.
-`orgs.json` keeps 173 of them: 159 patches and 14 badges. It leaves out 104 that aren't patches, which
+`orgs.json` keeps 173 of them, and 5 of those draw the same design as another, which leaves 154 patches and 14 badges. It leaves out 104 that aren't patches, which
 `manifest.json` lists under `excluded` with the reason for each: the Province's identity (ministry
 lockups, arms, programme marks), BC Timber Sales, the corporate logos of BC Hydro, BC Transit and ICBC,
 and the atlas's signs, decals, prevention cards and printed emblems. It
@@ -85,6 +85,13 @@ A stored `<org>/<id>.svg` is not the whole drawing on its own, so don't serve it
   BC Timber Sales, BC Transit, ICBC, …).
 
 To bring something back, delete its rule and re-import.
+
+The atlas also has an entry per photograph a design was seen in, each fitted to its photograph, so
+the same patch can come out several times (the Parks scenic arch four times). The import merges
+entries that draw exactly the same thing, differing only in the canvas and the placement transform
+directly inside it. It keeps the one from the largest photo crop, under the group's most common
+label, and records the others in `merged` and every photograph in the patch's `sightings`. The
+verifier checks each merged entry against the patch it went into.
 
 ## Grouping by organization
 

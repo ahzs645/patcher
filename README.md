@@ -16,7 +16,7 @@ live lettering editor (Forest Service, Forests, Forests · Wildfire Service, Lon
 Airtanker Operations), exported at their defaults with the lettering converted to outlines so they render
 without the fonts installed. They are reference-based reconstructions, not official masters.
 
-The **Patch library** holds 159 patches from the BC Forestry Patch Atlas, grouped by organization:
+The **Patch library** holds 154 patches from the BC Forestry Patch Atlas, grouped by organization:
 BC Forest Service, BC Wildfire Service, BC Parks, Conservation Officer Service, BC Sheriff Service,
 BC Corrections, Highways and Motor Vehicles, BC Hydro and more. Choose an organization, then a patch. It also
 keeps 14 metal and leather badges, hidden from the picker for now. The atlas's logos, signs, decals and
