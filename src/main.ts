@@ -900,11 +900,12 @@ function setupLibrary() {
   for (const { sector, orgs } of orgsBySector(LIBRARY_COLLECTION)) {
     const group = document.createElement('optgroup');
     group.label = sector.name;
-    for (const org of orgs) group.append(new Option(`${org.name} (${org.patches.length})`, org.id));
+    for (const org of orgs) group.append(new Option(`${org.name} (${org.patches.filter(isCard).length})`, org.id));
     select.append(group);
   }
   select.onchange = () => showLibraryOrg(select.value);
-  $('libraryCount').textContent = `${LIBRARY.summary.byCollection[LIBRARY_COLLECTION]} patches from the ${LIBRARY.source.name}, by organization`;
+  const cards = collectionOrgs(LIBRARY_COLLECTION).reduce((n, o) => n + o.patches.filter(isCard).length, 0);
+  $('libraryCount').textContent = `${cards} patches from the ${LIBRARY.source.name}, by organization`;
   showLibraryOrg(state.libraryOrg);
 }
 
