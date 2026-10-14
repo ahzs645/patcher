@@ -93,6 +93,19 @@ directly inside it. It keeps the one from the largest photo crop, under the grou
 label, and records the others in `merged` and every photograph in the patch's `sightings`. The
 verifier checks each merged entry against the patch it went into.
 
+`variants` shows related designs as one card with a switch between them. Each group has an id, a card
+label, and its members in order (the first is the card):
+
+```json
+{ "id": "parks-scenic-arch", "label": "British Columbia / Parks — scenic arch",
+  "members": [{ "id": "S30-O04", "name": "Parks" }, { "id": "S27-O04", "name": "Parks · Ranger" }] }
+```
+
+Every outline two variants draw goes into the group's own bundle, `shared/paths-variants-<id>.json`,
+however small it is. Only the variants point into it, so other patches never fetch it. In code,
+`variantsOf(patch)` gives a design's group and members, `isCard` and `cardOf` pick the card, and
+`cardLabel` gives the card's label.
+
 ## Grouping by organization
 
 The atlas's own `affiliation` is coarse: half the designs are "Other". `orgs.json` splits them into

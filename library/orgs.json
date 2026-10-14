@@ -1,5 +1,5 @@
 {
-  "$comment": "How scripts/import-atlas.mjs files each atlas design. Designs listed in 'exclude', or claimed by an organization with an 'exclude' reason, are left out of the library altogether. The rest go into the first collection whose 'medium' list has their medium (else the first collection), and under an organization: Orgs are tried in order and the first whose rules match wins: 'family' and 'label' are regular expressions (case-insensitive) tested against the atlas design's family and label, 'affiliation' is the atlas's own coarse affiliation, matched exactly. Put specific rules before broad ones. A design nothing matches is filed under 'unsorted' and the import says so.",
+  "$comment": "How scripts/import-atlas.mjs files each atlas design. 'variants' groups designs shown as one card with a variant switch (the first member is the card); an id merged into another (a repeat photograph) may be named, and stands for the patch it went into. Designs listed in 'exclude', or claimed by an organization with an 'exclude' reason, are left out of the library altogether. The rest go into the first collection whose 'medium' list has their medium (else the first collection), and under an organization: Orgs are tried in order and the first whose rules match wins: 'family' and 'label' are regular expressions (case-insensitive) tested against the atlas design's family and label, 'affiliation' is the atlas's own coarse affiliation, matched exactly. Put specific rules before broad ones. A design nothing matches is filed under 'unsorted' and the import says so.",
   "collections": [
     { "id": "patches", "name": "Patches", "description": "Cloth patches, rockers and the emblems they were made from." },
     { "id": "badges", "name": "Badges", "description": "Metal and leather badges.", "hidden": true, "medium": ["Metal badge", "Leather badge"] }
@@ -9,6 +9,16 @@
     { "reason": "A sign, not a patch", "ids": ["S55-O01"] },
     { "reason": "A branch's digital lockup, not a patch", "ids": ["R10-O01"] },
     { "reason": "The BC Hydro corporate logo, not a patch", "ids": ["P11-O01", "P11-O02", "P11-O03", "P11-O04", "P11-O05", "P11-O06", "P11-O07", "P11-O08"] }
+  ],
+  "variants": [
+    {
+      "id": "parks-scenic-arch",
+      "label": "British Columbia / Parks — scenic arch",
+      "members": [
+        { "id": "S30-O04", "name": "Parks" },
+        { "id": "S27-O04", "name": "Parks · Ranger" }
+      ]
+    }
   ],
   "sectors": [
     { "id": "forests", "name": "Forests and wildfire" },

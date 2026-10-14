@@ -129,6 +129,8 @@ input[type=url], select {
 #libraryCount { margin: -4px 0 8px; }
 #libraryNote { margin: 6px 0 8px; }
 #libraryNote:empty { display: none; }
+#libraryVariants { margin-top: 8px; }
+#libraryVariants[hidden] { display: none; }
 /* Some organizations have dozens of patches; scroll them rather than push the settings off the panel. */
 .samples.library { max-height: 300px; overflow-y: auto; margin-top: 8px; padding: 1px; }
 

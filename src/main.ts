@@ -9,7 +9,7 @@ import { machineStats, machineStitches } from './export/machine';
 import { buildPatchSvg } from './patchSvg';
 import { nearestThread } from './threadCharts';
 import { createDigitizer, DEFAULT_PAD_MM } from './digitizer';
-import { LIBRARY, collectionOrgs, findPatch, loadPatchSvg, orgsBySector, type ResolvedPatch } from './library';
+import { LIBRARY, cardLabel, cardOf, collectionOrgs, findPatch, isCard, loadPatchSvg, orgsBySector, variantsOf, type ResolvedPatch } from './library';
 
 /** Transparent margin around the art for the merrow lip and shadows. */
 const PAD_MM = DEFAULT_PAD_MM;
@@ -743,6 +743,7 @@ function openSvgText(text: string, name: string, source = '') {
     state.svg = svg;
     state.name = name.replace(/\.svg$/i, '').replace(/_+/g, ' ').slice(0, 60) || 'patch';
     state.source = source;
+    if (!source.startsWith(LIBRARY_SOURCE)) $('libraryVariants').hidden = true;
     state.result = null;
     state.overrides = {};
     state.simLimit = null;
@@ -842,7 +843,8 @@ async function openPatch(p: ResolvedPatch) {
   showError(null);
   setBusy('Loading…');
   try {
-    openSvgText(await loadPatchSvg(p), p.label, LIBRARY_SOURCE + p.id);
+    openSvgText(await loadPatchSvg(p), p.variant ? `${cardLabel(p)} — ${p.variant}` : p.label, LIBRARY_SOURCE + p.id);
+    showLibraryVariants(p);
   } catch (err) {
     setBusy(null);
     showError(`Couldn't load that patch: ${(err as Error).message}`);
@@ -857,12 +859,15 @@ function showLibraryOrg(orgId: string) {
   $<HTMLSelectElement>('libraryOrg').value = org.id;
   $('libraryNote').textContent = org.description ?? '';
   const grid = $('librarySamples');
-  grid.replaceChildren(...org.patches.map((p) => {
+  // One tile per card: a variant group shows its first member, and the variant row switches.
+  const current = state.source.startsWith(LIBRARY_SOURCE) ? findPatch(state.source.slice(LIBRARY_SOURCE.length)) : undefined;
+  grid.replaceChildren(...org.patches.filter(isCard).map((p) => {
     const b = document.createElement('button');
     b.className = 'sample';
-    b.title = `${p.label} (${p.medium})`;
+    const variants = variantsOf(p);
+    b.title = `${cardLabel(p)} (${p.medium}${variants ? `, ${variants.members.length} variants` : ''})`;
     b.dataset.src = LIBRARY_SOURCE + p.id;
-    b.classList.toggle('on', state.source === b.dataset.src);
+    b.classList.toggle('on', !!current && cardOf(current).id === p.id);
     const img = document.createElement('img');
     if (p.previewUrl) img.src = p.previewUrl;
     img.alt = p.label;
@@ -872,6 +877,22 @@ function showLibraryOrg(orgId: string) {
     return b;
   }));
   savePrefs();
+}
+
+/** The open patch's variants, as chips under the library grid; hidden when it has none. */
+function showLibraryVariants(p: ResolvedPatch) {
+  const row = $('libraryVariants');
+  const variants = variantsOf(p);
+  row.hidden = !variants;
+  if (!variants) return row.replaceChildren();
+  row.replaceChildren(...variants.members.map((m) => {
+    const b = document.createElement('button');
+    b.textContent = m.variant;
+    b.classList.toggle('on', m.id === p.id);
+    b.onclick = () => openPatch(m);
+    return b;
+  }));
+  document.querySelectorAll<HTMLElement>('#librarySamples .sample').forEach((t) => t.classList.toggle('on', t.dataset.src === LIBRARY_SOURCE + cardOf(p).id));
 }
 
 function setupLibrary() {

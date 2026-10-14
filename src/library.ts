@@ -46,6 +46,9 @@ export interface LibraryPatch {
   sightings: { id: string; sourceUrl: string | null }[];
   /** Atlas entries that draw this same design from another photograph, merged into this one. */
   merged: string[];
+  /** The variant group it belongs to (shown as one card with a switch), and its name in it. */
+  group?: string;
+  variant?: string;
   limitations: string | null;
 }
 
@@ -77,7 +80,11 @@ export interface LibraryManifest {
   excluded: { id: string; label: string; medium: string; org: string; reason: string }[];
   /** Atlas entries merged into the patch that draws the same design (`into`), with their own labels. */
   merged: { id: string; label: string; into: string }[];
+  /** Designs shown as one card with a switch between them; the first member is the card. */
+  variants: LibraryVariantGroup[];
 }
+
+export interface LibraryVariantGroup { id: string; label: string; members: { id: string; name: string }[] }
 
 /** A patch with its organization and the URLs the importing app serves. */
 export interface ResolvedPatch extends LibraryPatch {
@@ -120,6 +127,21 @@ export const findPatch = (id: string): ResolvedPatch | undefined => byId.get(id)
 export const findOrg = (id: string): ResolvedOrg | undefined => LIBRARY.orgs.find((o) => o.id === id);
 
 export const findCollection = (id: string): LibraryCollection | undefined => LIBRARY.collections.find((c) => c.id === id);
+
+const groups = new Map(data.variants.map((g) => [g.id, g]));
+
+/** A design's variant group with its members resolved, or null when it stands alone. */
+export function variantsOf(patch: ResolvedPatch): { group: LibraryVariantGroup; members: (ResolvedPatch & { variant: string })[] } | null {
+  const group = patch.group ? groups.get(patch.group) : undefined;
+  if (!group) return null;
+  return { group, members: group.members.map((m) => ({ ...byId.get(m.id)!, variant: m.name })) };
+}
+
+/** What to show as a card: the design, or for a variant group, its first member under the group's label. */
+export const isCard = (patch: ResolvedPatch): boolean => !patch.group || groups.get(patch.group)?.members[0].id === patch.id;
+export const cardLabel = (patch: ResolvedPatch): string => (patch.group ? groups.get(patch.group)?.label ?? patch.label : patch.label);
+/** The card a design is shown under: itself, or its group's first member. */
+export const cardOf = (patch: ResolvedPatch): ResolvedPatch => (patch.group ? byId.get(groups.get(patch.group)!.members[0].id) ?? patch : patch);
 
 /** One collection's designs, organization by organization (organizations with none left out). */
 export function collectionOrgs(collection = 'patches', lib: Library = LIBRARY): ResolvedOrg[] {

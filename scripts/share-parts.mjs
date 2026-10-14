@@ -19,8 +19,10 @@ import { blockPlaceholder, pathReference, references } from '../src/library-join
 
 /** Block content smaller than this stays put: the placeholder and request cost more than it saves. */
 const BLOCK_MIN_BYTES = 2048;
-/** Path values shorter than this stay put. */
+/** Path values shorter than this stay put… */
 const PATH_MIN_BYTES = 256;
+/** …except between variants of one card, which share every repeated outline down to this. */
+const VARIANT_PATH_MIN_BYTES = 32;
 /** A group of patches gets its own path bundle once it shares this much; smaller ones go in the common bundle. */
 const BUNDLE_MIN_BYTES = 4096;
 
@@ -147,11 +149,11 @@ function blocksNeeded(text, blocks, seen = new Set()) {
  * draw; a group of patches whose shared outlines come to less than BUNDLE_MIN_BYTES keeps them
  * inline, because the extra request would cost more than the bytes it saves.
  */
-function sharePaths(texts, docs, blocks) {
+function sharePaths(texts, docs, blocks, groupOf) {
   const VALUE = /(\s)d="([^"@][^"]*)"/g;
   const counts = new Map();
   for (const text of texts.values()) {
-    for (const m of text.matchAll(VALUE)) if (m[2].length >= PATH_MIN_BYTES) counts.set(m[2], (counts.get(m[2]) ?? 0) + 1);
+    for (const m of text.matchAll(VALUE)) if (m[2].length >= VARIANT_PATH_MIN_BYTES) counts.set(m[2], (counts.get(m[2]) ?? 0) + 1);
   }
   const repeated = new Set([...counts].filter(([, n]) => n > 1).map(([value]) => value));
 
@@ -169,6 +171,7 @@ function sharePaths(texts, docs, blocks) {
   }
   const groupsByUsers = new Map();
   for (const [value, names] of users) {
+    if (value.length < PATH_MIN_BYTES) continue;
     const key = [...names].sort().join('\n');
     if (!groupsByUsers.has(key)) groupsByUsers.set(key, []);
     groupsByUsers.get(key).push(value);
@@ -193,19 +196,47 @@ function sharePaths(texts, docs, blocks) {
   for (const [name, text] of texts) {
     texts.set(name, text.replace(VALUE, (whole, space, value) => (ids.has(value) ? `${space}${pathReference(ids.get(value))}` : whole)));
   }
+
+  // Variants of one card (orgs.json "variants") share every outline two of them draw, however small,
+  // in a bundle of their own. Only their own files point into it: another patch that happens to
+  // draw the same outline keeps its copy, so it never fetches the variants' bundle.
+  const members = new Map();
+  for (const [name, group] of groupOf) if (docs.has(name)) members.set(group, [...(members.get(group) ?? []), name]);
+  for (const [group, names] of members) {
+    const seen = new Map();
+    for (const name of names) {
+      for (const value of new Set([...texts.get(name).matchAll(VALUE)].map((m) => m[2]))) {
+        if (value.length >= VARIANT_PATH_MIN_BYTES) seen.set(value, (seen.get(value) ?? 0) + 1);
+      }
+    }
+    const values = [...seen].filter(([, n]) => n > 1).map(([value]) => value);
+    if (!values.length) continue;
+    const local = new Map();
+    for (const value of values) {
+      const id = `p${sha(value).slice(0, 12)}`;
+      if ([...ids.values()].includes(id)) throw new Error(`path id collision: ${id}`);
+      local.set(value, id);
+      ids.set(value, id);
+    }
+    bundles.push({ name: `paths-variants-${group}`, ids: [...local.values()].sort() });
+    for (const name of names) {
+      texts.set(name, texts.get(name).replace(VALUE, (whole, space, value) => (local.has(value) ? `${space}${pathReference(local.get(value))}` : whole)));
+    }
+  }
+  bundles.sort((a, b) => (a.name < b.name ? -1 : 1));
   return { paths: new Map([...ids].map(([value, id]) => [id, value])), bundles };
 }
 
 /**
  * @param {Map<string, string>} docs  Each patch's SVG text, by name.
  */
-export function shareParts(docs) {
+export function shareParts(docs, { groupOf = new Map() } = {}) {
   const texts = new Map(docs);
   const blocks = new Map();
   shareBlocks(texts, blocks);
   inlineSingleUseBlocks(texts, blocks);
   for (const id of blocks.keys()) blocks.set(id, texts.get(`block:${id}`));
-  const { paths, bundles } = sharePaths(texts, docs, blocks);
+  const { paths, bundles } = sharePaths(texts, docs, blocks, groupOf);
   for (const id of blocks.keys()) blocks.set(id, texts.get(`block:${id}`));
 
   // What each patch needs: its blocks (following blocks into blocks) and the bundles of every path

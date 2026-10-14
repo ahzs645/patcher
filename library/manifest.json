@@ -17,9 +17,9 @@
   "orgs": 23,
   "unsorted": 0,
   "sourceBytes": 28759345,
-  "storedBytes": 9018181,
+  "storedBytes": 9013429,
   "sharedBlocks": 37,
-  "sharedPaths": 201
+  "sharedPaths": 222
  },
  "collections": [
   {
@@ -329,6 +329,13 @@
     "bytes": 4550,
     "paths": 4,
     "usedBy": 13
+   },
+   {
+    "name": "paths-variants-parks-scenic-arch",
+    "file": "shared/paths-variants-parks-scenic-arch.json",
+    "bytes": 4565,
+    "paths": 21,
+    "usedBy": 2
    }
   ]
  },
@@ -1986,8 +1993,12 @@
      ],
      "merged": [],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "group": "parks-scenic-arch",
+     "variant": "Parks · Ranger",
      "blocks": [],
-     "bundles": []
+     "bundles": [
+      "paths-variants-parks-scenic-arch"
+     ]
     },
     {
      "id": "S29-O01",
@@ -2260,8 +2271,12 @@
       "S56-O50"
      ],
      "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "group": "parks-scenic-arch",
+     "variant": "Parks",
      "blocks": [],
-     "bundles": []
+     "bundles": [
+      "paths-variants-parks-scenic-arch"
+     ]
     },
     {
      "id": "S31-O01",
@@ -6002,6 +6017,22 @@
    "id": "S56-O51",
    "label": "Parks — hikers triangle",
    "into": "S29-O03"
+  }
+ ],
+ "variants": [
+  {
+   "id": "parks-scenic-arch",
+   "label": "British Columbia / Parks — scenic arch",
+   "members": [
+    {
+     "id": "S30-O04",
+     "name": "Parks"
+    },
+    {
+     "id": "S27-O04",
+     "name": "Parks · Ranger"
+    }
+   ]
   }
  ]
 }

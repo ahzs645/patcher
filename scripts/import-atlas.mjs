@@ -171,8 +171,26 @@ async function main() {
   }
   for (const { patches } of byOrg.values()) patches.sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
 
+  // Variant groups: designs shown as one card with a switch between them (orgs.json "variants").
+  const patchById = new Map([...byOrg.values()].flatMap(({ patches }) => patches.map((p) => [p.id, p])));
+  const mergedInto = new Map(merged.map((m) => [m.id, m.into]));
+  const variantGroups = (taxonomy.variants ?? []).map((group) => {
+    const members = group.members.map(({ id, name }) => {
+      const patch = patchById.get(mergedInto.get(id) ?? id);
+      if (!patch) throw new Error(`orgs.json variant group ${group.id}: ${id} isn't in the library`);
+      if (patch.group) throw new Error(`orgs.json: ${patch.id} is in two variant groups (${patch.group}, ${group.id})`);
+      patch.group = group.id;
+      patch.variant = name;
+      return { id: patch.id, name };
+    });
+    const collectionsIn = new Set(members.map((m) => patchById.get(m.id).collection));
+    if (collectionsIn.size > 1) throw new Error(`orgs.json variant group ${group.id} spans collections`);
+    return { id: group.id, label: group.label ?? patchById.get(members[0].id).label, members };
+  });
+
   // Store what repeats once.
-  const shared = shareParts(originals);
+  const groupOf = new Map([...patchById].filter(([, p]) => p.group).map(([id, p]) => [id, p.group]));
+  const shared = shareParts(originals, { groupOf });
 
   clearGenerated();
   let storedBytes = 0;
@@ -238,6 +256,8 @@ async function main() {
     excluded,
     /** Atlas entries that draw the same design as a kept one (another photograph of it), and which. */
     merged,
+    /** Designs shown as one card with a switch between them; the first member is the card. */
+    variants: variantGroups,
   };
   writeFileSync(join(LIBRARY, 'manifest.json'), `${JSON.stringify(manifest, null, 1)}\n`);
 
