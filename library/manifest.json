@@ -17,8 +17,8 @@
   "absorbed": 25,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28808646,
-  "storedBytes": 8257832,
+  "sourceBytes": 28809142,
+  "storedBytes": 8258328,
   "sharedBlocks": 59,
   "sharedPaths": 250
  },
@@ -5348,13 +5348,13 @@
      "label": "B.C. Hydro / Security — shield with round monogram",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas shield with PofBC's BC Hydro symbol",
      "family": "hydro-security-shield",
      "affiliation": "Other",
      "svg": "bc-hydro/S56-O21.svg",
      "preview": "bc-hydro/previews/S56-O21.webp",
-     "sha256": "4d9f85bc63127619ffede98236ef95e443b443c15e106b253d1f703ac19069bc",
-     "bytes": 6168,
+     "sha256": "ca2cebcecfdf327676a17e324c6d31749e6c7350d6e775a4e2f783fd6b64c511",
+     "bytes": 6664,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5363,7 +5363,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
+     "limitations": "The shield, gold border and B.C. HYDRO / SECURITY lettering are the atlas's reconstruction from a low-resolution collector board. The centre is BC Hydro's ringed two-star H as PofBC draws it (Logos → BC Hydro, full authority name: the manual's symbol in its scanned green and blue), on a light disc, fitted by compose.mjs in place of the atlas's plain H monogram, after the photograph. Thread colours and the symbol's size on the patch are interpreted.",
+     "replaced": {
+      "svg": "supplied/bc-hydro-security/composed/S56-O21.svg",
+      "atlasSha256": "4d9f85bc63127619ffede98236ef95e443b443c15e106b253d1f703ac19069bc"
+     },
      "blocks": [],
      "bundles": []
     },

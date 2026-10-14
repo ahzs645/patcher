@@ -53,6 +53,13 @@
       "preview": "supplied/bc-parks-flag-badge/preview-S30-O02.webp",
       "quality": "Atlas semicircle with PofBC flag badge wording",
       "limitations": "The semicircular cut and border are the atlas's reconstruction; the flag symbol and BC / Parks (outlined Helvetica Bold) are PofBC's flag badge, fitted to where the atlas set them. Thread colours are interpreted. Rights unresolved."
+    },
+    {
+      "id": "S56-O21",
+      "svg": "supplied/bc-hydro-security/composed/S56-O21.svg",
+      "preview": "supplied/bc-hydro-security/preview-S56-O21.webp",
+      "quality": "Atlas shield with PofBC's BC Hydro symbol",
+      "limitations": "The shield, gold border and B.C. HYDRO / SECURITY lettering are the atlas's reconstruction from a low-resolution collector board. The centre is BC Hydro's ringed two-star H as PofBC draws it (Logos → BC Hydro, full authority name: the manual's symbol in its scanned green and blue), on a light disc, fitted by compose.mjs in place of the atlas's plain H monogram, after the photograph. Thread colours and the symbol's size on the patch are interpreted."
     }
   ],
   "variants": [
