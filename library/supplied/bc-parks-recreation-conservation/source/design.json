@@ -1,0 +1,33 @@
+{
+  "coordinate_system": {
+    "photo_aligned_viewBox": [
+      0,
+      0,
+      1080,
+      1080
+    ],
+    "main_viewBox": [
+      155,
+      65,
+      730,
+      940
+    ],
+    "main_page_width_mm": 100
+  },
+  "palette": {
+    "navy": "#102338",
+    "gold": "#E9BE36",
+    "white": "#FFFFFF",
+    "leaf": "#97CA69",
+    "leaf_vein": "#578044",
+    "flower_outline": "#07111C"
+  },
+  "construction": "Author-defined Bezier curves and polygon shapes; font outlines for header/body; custom PARKS outlines.",
+  "header_font_substitute": "Roboto Slab Bold",
+  "body_font_substitute": "Liberation Sans Bold",
+  "font_identification": "Visual substitutes only; original historical fonts were not identified.",
+  "editable_text_note": "Each header/body character is editable separately for consistent spacing; PARKS remains custom paths.",
+  "source_photo": "reference/original-patch.jpg",
+  "shared_setup": "Layered arch/shoulder/frame construction and registered component workflow from supplied BC Parks scene package. Proportions adjusted to recreation/conservation patch.",
+  "fidelity": "Reconstructed, straightened flat design. Not an official source, pixel-perfect tracing, or digitized embroidery file."
+}

@@ -1,0 +1,161 @@
+{
+  "svg_checks": [
+    {
+      "file": "vectors/authored-redraw/bc-parks-landscape-no-sky.svg",
+      "paths": 90,
+      "artwork_layers": 8,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/authored-redraw/bc-parks-scene-badge-aligned.svg",
+      "paths": 91,
+      "artwork_layers": 9,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/authored-redraw/bc-parks-scene-editable.svg",
+      "paths": 91,
+      "artwork_layers": 9,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/authored-redraw/bc-parks-scene-with-white-frame.svg",
+      "paths": 92,
+      "artwork_layers": 10,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/bc-parks-landscape-no-sky.svg",
+      "paths": 69,
+      "artwork_layers": 10,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/bc-parks-scene-badge-aligned.svg",
+      "paths": 70,
+      "artwork_layers": 11,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/bc-parks-scene-editable.svg",
+      "paths": 70,
+      "artwork_layers": 11,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/bc-parks-scene-with-white-frame.svg",
+      "paths": 71,
+      "artwork_layers": 12,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/components/01-sky.svg",
+      "paths": 2,
+      "artwork_layers": 1,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/components/02-mountains-snowcaps.svg",
+      "paths": 4,
+      "artwork_layers": 2,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/components/03-forest-shoreline.svg",
+      "paths": 41,
+      "artwork_layers": 6,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/components/04-lake-reflections.svg",
+      "paths": 26,
+      "artwork_layers": 2,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    },
+    {
+      "file": "vectors/components/05-white-scene-frame.svg",
+      "paths": 2,
+      "artwork_layers": 1,
+      "embedded_images": 0,
+      "text_elements": 0,
+      "external_references": [],
+      "duplicate_ids": [],
+      "unresolved_local_references": []
+    }
+  ],
+  "main_pdf": {
+    "pages": 1,
+    "image_objects": 0,
+    "font_objects": 0,
+    "independent_render_check": "Poppler PNG rendered and visually inspected"
+  },
+  "eps_test_pdf": {
+    "pages": 1,
+    "image_objects": 0,
+    "conversion": "Ghostscript"
+  },
+  "authored_alternative": {
+    "independent_tree_groups": 14,
+    "individual_ripple_paths": 24
+  },
+  "alignment": {
+    "original_raster_dimensions": [
+      1122,
+      1402
+    ],
+    "full_vector_render_dimensions": [
+      1122,
+      1402
+    ],
+    "matching_artboard_dimensions": true
+  },
+  "inspection": "Scene render and PDF render visually inspected; reference comparison produced from the actual delivered vector."
+}

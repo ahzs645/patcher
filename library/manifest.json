@@ -7,19 +7,19 @@
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
  "summary": {
-  "designs": 168,
+  "designs": 167,
   "byCollection": {
-   "patches": 154,
+   "patches": 153,
    "badges": 14
   },
-  "excluded": 104,
+  "excluded": 105,
   "merged": 5,
   "orgs": 23,
   "unsorted": 0,
-  "sourceBytes": 28759345,
-  "storedBytes": 9013429,
-  "sharedBlocks": 37,
-  "sharedPaths": 222
+  "sourceBytes": 29514347,
+  "storedBytes": 9332271,
+  "sharedBlocks": 45,
+  "sharedPaths": 224
  },
  "collections": [
   {
@@ -90,6 +90,12 @@
     "usedBy": 6
    },
    {
+    "id": "block-0986f6c5fa",
+    "file": "shared/block-0986f6c5fa.svg",
+    "bytes": 2935,
+    "usedBy": 2
+   },
+   {
     "id": "block-1131bdd370",
     "file": "shared/block-1131bdd370.svg",
     "bytes": 323,
@@ -99,6 +105,12 @@
     "id": "block-7088196603",
     "file": "shared/block-7088196603.svg",
     "bytes": 3841,
+    "usedBy": 2
+   },
+   {
+    "id": "block-940e48c769",
+    "file": "shared/block-940e48c769.svg",
+    "bytes": 4807,
     "usedBy": 2
    },
    {
@@ -240,16 +252,52 @@
     "usedBy": 2
    },
    {
-    "id": "pine-bough-25d2842ca3",
-    "file": "shared/pine-bough-25d2842ca3.svg",
-    "bytes": 12391,
-    "usedBy": 1
+    "id": "parks-scenic-arch-centre-art-0d7faa8021",
+    "file": "shared/parks-scenic-arch-centre-art-0d7faa8021.svg",
+    "bytes": 41298,
+    "usedBy": 2
    },
    {
-    "id": "pine-bough-b65332a22b",
-    "file": "shared/pine-bough-b65332a22b.svg",
-    "bytes": 12357,
-    "usedBy": 1
+    "id": "parks-scenic-arch-centre-art-6c15f7e4cb",
+    "file": "shared/parks-scenic-arch-centre-art-6c15f7e4cb.svg",
+    "bytes": 38296,
+    "usedBy": 2
+   },
+   {
+    "id": "parks-scenic-arch-centre-art-a3d89d67e6",
+    "file": "shared/parks-scenic-arch-centre-art-a3d89d67e6.svg",
+    "bytes": 75106,
+    "usedBy": 2
+   },
+   {
+    "id": "parks-scenic-arch-centre-art-c47d941f67",
+    "file": "shared/parks-scenic-arch-centre-art-c47d941f67.svg",
+    "bytes": 22833,
+    "usedBy": 2
+   },
+   {
+    "id": "parks-scenic-arch-centre-art-d4ca2aacb9",
+    "file": "shared/parks-scenic-arch-centre-art-d4ca2aacb9.svg",
+    "bytes": 69555,
+    "usedBy": 2
+   },
+   {
+    "id": "parks-scenic-arch-centre-art-df1e1c1c1f",
+    "file": "shared/parks-scenic-arch-centre-art-df1e1c1c1f.svg",
+    "bytes": 41401,
+    "usedBy": 2
+   },
+   {
+    "id": "parks-scenic-arch-centre-art-e511bf1568",
+    "file": "shared/parks-scenic-arch-centre-art-e511bf1568.svg",
+    "bytes": 144773,
+    "usedBy": 2
+   },
+   {
+    "id": "parks-scenic-arch-centre-art-f5c671eb06",
+    "file": "shared/parks-scenic-arch-centre-art-f5c671eb06.svg",
+    "bytes": 15043,
+    "usedBy": 2
    },
    {
     "id": "plateforge-historical-arms-2d24b22bc5",
@@ -303,6 +351,13 @@
     "usedBy": 16
    },
    {
+    "name": "paths-8395d04aa2",
+    "file": "shared/paths-8395d04aa2.json",
+    "bytes": 5080,
+    "paths": 1,
+    "usedBy": 25
+   },
+   {
     "name": "paths-93ff36b976",
     "file": "shared/paths-93ff36b976.json",
     "bytes": 291245,
@@ -319,8 +374,8 @@
    {
     "name": "paths-a31172d96e",
     "file": "shared/paths-a31172d96e.json",
-    "bytes": 19841,
-    "paths": 12,
+    "bytes": 14762,
+    "paths": 11,
     "usedBy": 24
    },
    {
@@ -333,8 +388,8 @@
    {
     "name": "paths-variants-parks-scenic-arch",
     "file": "shared/paths-variants-parks-scenic-arch.json",
-    "bytes": 4565,
-    "paths": 21,
+    "bytes": 6698,
+    "paths": 23,
     "usedBy": 2
    }
   ]
@@ -570,7 +625,7 @@
    "sector": "forests",
    "description": "The Forest Service and the Ministry of Forests: tree ovals, shoulder patches, metal badges, fire-control and prevention marks.",
    "counts": {
-    "patches": 23,
+    "patches": 22,
     "badges": 4
    },
    "patches": [
@@ -861,45 +916,6 @@
      "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The SERVICE word is fitted inside the lower ring; the tree trunk is interrupted behind that lettering to represent layered metal relief without merging the outlines. Exact root engraving and the original alphabet remain unresolved.",
      "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S10-O01",
-     "label": "British Columbia / Lands Department / Forest Service — pine-bough seal",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "lands-pinebough",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/S10-O01.svg",
-     "preview": "bc-forest-service/previews/S10-O01.webp",
-     "sha256": "46cf6682e19c7ce264bfa3852dbe113913aa450bfb3a611dd166a8295036c377",
-     "bytes": 161030,
-     "sourceUrl": "https://drive.google.com/file/d/1B5Vn00JKHVSN6sVozNnuriihbWPNv6nT/view",
-     "sightings": [
-      {
-       "id": "S08-O02",
-       "sourceUrl": "https://drive.google.com/file/d/15JI44htPICcRkrgZc4gI2Mt3X3la3wQ0/view"
-      },
-      {
-       "id": "S10-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1B5Vn00JKHVSN6sVozNnuriihbWPNv6nT/view"
-      },
-      {
-       "id": "S23-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1xrjjiufOriYvletlkS_aZhNQVg1VFPJP/view"
-      },
-      {
-       "id": "S24-O05",
-       "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified. Botanical needle placement is a clean interpretation of the intricate original linework, not an exact botanical engraving.",
-     "blocks": [
-      "pine-bough-25d2842ca3",
-      "pine-bough-b65332a22b"
-     ],
      "bundles": []
     },
     {
@@ -1215,6 +1231,7 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -1739,13 +1756,13 @@
      "label": "British Columbia / Parks Branch — elk roundel",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Supplied vector reconstruction",
      "family": "parks-elk",
      "affiliation": "Parks",
      "svg": "bc-parks/S25-O01.svg",
      "preview": "bc-parks/previews/S25-O01.webp",
-     "sha256": "42a5f96234d4be99c8bb65ba6ed566986e7dd59410fe5d233a9daf643361bd2a",
-     "bytes": 10640,
+     "sha256": "6ef27b331771f3bbce775a556fc6163d0f05940632226bc5de5c5bc334445725",
+     "bytes": 17004,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
      "sightings": [
       {
@@ -1754,7 +1771,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "Constructed flat-colour redraw of the supplied reference image (BC Parks Branch vector package): editable rings, mountain vertices, hand-drafted elk curves and 26 individually placed letter outlines. Not an authenticated government master; the original typeface is unverified, small contour and stroke differences remain, and flat sampled sRGB colours replace the source's shading. See the package README.",
+     "replaced": {
+      "svg": "supplied/bc-parks-branch-elk-roundel/vectors/BC_Parks_Branch_Master.svg",
+      "atlasSha256": "42a5f96234d4be99c8bb65ba6ed566986e7dd59410fe5d233a9daf643361bd2a"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -1817,6 +1838,7 @@
       "ministry-of-2a474cee20"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -1879,6 +1901,7 @@
       "ministry-of-2a474cee20"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -1913,6 +1936,7 @@
       "ministry-of-5cfc02dee5"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -1977,13 +2001,13 @@
      "label": "British Columbia / Parks / Ranger — integrated arch",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas arch with supplied landscape",
      "family": "parks-scenic-integrated-ranger",
      "affiliation": "Parks",
      "svg": "bc-parks/S27-O04.svg",
      "preview": "bc-parks/previews/S27-O04.webp",
-     "sha256": "7bbd6751fed1b2656b55382642dfe79813b4471451a5902aaaf44b8839a29866",
-     "bytes": 17472,
+     "sha256": "0666f016eaf11ec53b17f3698c3614c762b6522782f4c55ff2717fd5d7374395",
+     "bytes": 463917,
      "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view",
      "sightings": [
       {
@@ -1992,10 +2016,23 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "The arch, white frame, lettering and RANGER band are the atlas's reconstruction; the landscape inside the window is the supplied BC Parks scene vector package (reference-fit editable scene), fitted to the window by compose.mjs. Neither is an official original or a pixel-identical facsimile. Typeface and thread colours are interpreted.",
+     "replaced": {
+      "svg": "supplied/bc-parks-scenic-arch/composed/S27-O04.svg",
+      "atlasSha256": "7bbd6751fed1b2656b55382642dfe79813b4471451a5902aaaf44b8839a29866"
+     },
      "group": "parks-scenic-arch",
      "variant": "Parks · Ranger",
-     "blocks": [],
+     "blocks": [
+      "parks-scenic-arch-centre-art-0d7faa8021",
+      "parks-scenic-arch-centre-art-6c15f7e4cb",
+      "parks-scenic-arch-centre-art-a3d89d67e6",
+      "parks-scenic-arch-centre-art-c47d941f67",
+      "parks-scenic-arch-centre-art-d4ca2aacb9",
+      "parks-scenic-arch-centre-art-df1e1c1c1f",
+      "parks-scenic-arch-centre-art-e511bf1568",
+      "parks-scenic-arch-centre-art-f5c671eb06"
+     ],
      "bundles": [
       "paths-variants-parks-scenic-arch"
      ]
@@ -2121,13 +2158,13 @@
      "label": "BC Parks flag — rounded square",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "PofBC flag badge artwork",
      "family": "parks-flag-square",
      "affiliation": "Parks",
      "svg": "bc-parks/S30-O01.svg",
      "preview": "bc-parks/previews/S30-O01.webp",
-     "sha256": "c339d8b46ed5b3fe4c39ced97a0899ee56bfa75784fa0f5721cc9524c7ac52c5",
-     "bytes": 5361,
+     "sha256": "8d85225d9f422bbbe6f3b82ba8dcca29f3c47198baf070c527d154252d73925f",
+     "bytes": 15621,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
      "sightings": [
       {
@@ -2148,22 +2185,31 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [],
-     "bundles": []
+     "limitations": "The BC Parks flag badge as PofBC draws it (its hand-drawn frame, the flag symbol and BC / Parks in outlined Helvetica Bold), in the atlas's thread colours. The badge's proportions are read off a picture of the mark, not measured from artwork; thread colours are interpreted. Rights unresolved.",
+     "replaced": {
+      "svg": "supplied/bc-parks-flag-badge/composed/S30-O01.svg",
+      "atlasSha256": "c339d8b46ed5b3fe4c39ced97a0899ee56bfa75784fa0f5721cc9524c7ac52c5"
+     },
+     "blocks": [
+      "block-0986f6c5fa",
+      "block-940e48c769"
+     ],
+     "bundles": [
+      "paths-8395d04aa2"
+     ]
     },
     {
      "id": "S30-O02",
      "label": "BC Parks flag — semicircle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas semicircle with PofBC flag badge wording",
      "family": "parks-flag-semicircle",
      "affiliation": "Parks",
      "svg": "bc-parks/S30-O02.svg",
      "preview": "bc-parks/previews/S30-O02.webp",
-     "sha256": "c09b09f8d7e8282d6cc263a8a64bc283ba7411210ec65ef29a268242ddd7eb23",
-     "bytes": 5189,
+     "sha256": "b2e34a876c3688176da2fc09aa1b7af980be1218da260d58be30a72cbe30564b",
+     "bytes": 8812,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
      "sightings": [
       {
@@ -2180,8 +2226,15 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [],
+     "limitations": "The semicircular cut and border are the atlas's reconstruction; the flag symbol and BC / Parks (outlined Helvetica Bold) are PofBC's flag badge, fitted to where the atlas set them. Thread colours are interpreted. Rights unresolved.",
+     "replaced": {
+      "svg": "supplied/bc-parks-flag-badge/composed/S30-O02.svg",
+      "atlasSha256": "c09b09f8d7e8282d6cc263a8a64bc283ba7411210ec65ef29a268242ddd7eb23"
+     },
+     "blocks": [
+      "block-0986f6c5fa",
+      "block-940e48c769"
+     ],
      "bundles": []
     },
     {
@@ -2219,6 +2272,7 @@
       "ministry-of-5cfc02dee5"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -2227,13 +2281,13 @@
      "label": "British Columbia / Parks — scenic arch",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas arch with supplied landscape",
      "family": "parks-scenic-large",
      "affiliation": "Parks",
      "svg": "bc-parks/S30-O04.svg",
      "preview": "bc-parks/previews/S30-O04.webp",
-     "sha256": "d47292cd1c7777f60eabe734902e70c9fedcf4e914cc5f40c28761ccf7d6901e",
-     "bytes": 15034,
+     "sha256": "9fdc5dc41f37606227a0b08c33e99aeebc53836bbb876458983f67f8c73f0530",
+     "bytes": 461489,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
      "sightings": [
       {
@@ -2270,10 +2324,23 @@
       "S27-O03",
       "S56-O50"
      ],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "The arch, white frame and lettering are the atlas's reconstruction; the landscape inside the window is the supplied BC Parks scene vector package (reference-fit editable scene), fitted to the window by compose.mjs. Neither is an official original or a pixel-identical facsimile; the scene's forest and water are reference-fit regions, not individually drawn trees. Typeface and thread colours are interpreted.",
+     "replaced": {
+      "svg": "supplied/bc-parks-scenic-arch/composed/S30-O04.svg",
+      "atlasSha256": "d47292cd1c7777f60eabe734902e70c9fedcf4e914cc5f40c28761ccf7d6901e"
+     },
      "group": "parks-scenic-arch",
      "variant": "Parks",
-     "blocks": [],
+     "blocks": [
+      "parks-scenic-arch-centre-art-0d7faa8021",
+      "parks-scenic-arch-centre-art-6c15f7e4cb",
+      "parks-scenic-arch-centre-art-a3d89d67e6",
+      "parks-scenic-arch-centre-art-c47d941f67",
+      "parks-scenic-arch-centre-art-d4ca2aacb9",
+      "parks-scenic-arch-centre-art-df1e1c1c1f",
+      "parks-scenic-arch-centre-art-e511bf1568",
+      "parks-scenic-arch-centre-art-f5c671eb06"
+     ],
      "bundles": [
       "paths-variants-parks-scenic-arch"
      ]
@@ -2283,13 +2350,13 @@
      "label": "British Columbia / Department of Recreation and Conservation / Parks",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Supplied vector reconstruction",
      "family": "parks-dogwood-arch",
      "affiliation": "Parks",
      "svg": "bc-parks/S31-O01.svg",
      "preview": "bc-parks/previews/S31-O01.webp",
-     "sha256": "fa3a76f68274e25235ac7e6cfd5d5757c64120518894cfc0719ac28bca2015c9",
-     "bytes": 21796,
+     "sha256": "e5c9bc7ff9a977c26255a4253ec793494aad97c8adab5522ef6b691c7fde157a",
+     "bytes": 24681,
      "sourceUrl": "https://drive.google.com/file/d/1CXInb8CzinChs_jgPr_5vI2L7lIEko8y/view",
      "sightings": [
       {
@@ -2302,7 +2369,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "Independent layered reconstruction of the supplied historic embroidered patch photograph (BC Parks Recreation and Conservation vector package), lettering outlined. Not a recovered official original or a pixel-identical facsimile: the header uses Roboto Slab Bold and the body Liberation Sans Bold as visual substitutes, PARKS is newly constructed lettering, and the dogwood, frame and flat RGB colours are interpreted. See the package README.",
+     "replaced": {
+      "svg": "supplied/bc-parks-recreation-conservation/vectors/bc-parks-recreation-conservation-outlined.svg",
+      "atlasSha256": "fa3a76f68274e25235ac7e6cfd5d5757c64120518894cfc0719ac28bca2015c9"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -2381,6 +2452,7 @@
       "ministry-of-15f6331b36"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     }
@@ -2469,6 +2541,7 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -2497,6 +2570,7 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -2525,6 +2599,7 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -2553,6 +2628,7 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -2607,6 +2683,7 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -2635,6 +2712,7 @@
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -3635,6 +3713,7 @@
       "british-columbia-45ce8c4409"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     }
@@ -3957,6 +4036,7 @@
       "ministry-of-15f6331b36"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4013,6 +4093,7 @@
       "ministry-of-1f10c2ae1f"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4188,6 +4269,7 @@
       "british-columbia-45ce8c4409"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4218,6 +4300,7 @@
       "ministry-of-1f10c2ae1f"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4248,6 +4331,7 @@
       "ministry-of-15f6331b36"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4278,6 +4362,7 @@
       "ministry-of-1f10c2ae1f"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     }
@@ -4318,6 +4403,7 @@
       "bc-provincial-mark-356f812fb6"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4346,6 +4432,7 @@
       "bc-provincial-mark-356f812fb6"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     }
@@ -4558,6 +4645,7 @@
       "transportation-031ef50c63"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4614,6 +4702,7 @@
       "transportation-031ef50c63"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -4668,6 +4757,7 @@
       "british-columbia-45ce8c4409"
      ],
      "bundles": [
+      "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
     },
@@ -5836,6 +5926,13 @@
    "medium": "Decal",
    "org": "bc-forest-service",
    "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S10-O01",
+   "label": "British Columbia / Lands Department / Forest Service — pine-bough seal",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "reason": "A printed seal, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, Lands Department)"
   },
   {
    "id": "S24-O02",

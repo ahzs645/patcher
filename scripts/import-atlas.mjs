@@ -26,7 +26,7 @@ import { shareParts } from './share-parts.mjs';
 import { verifyLibrary } from './verify-library.mjs';
 
 /** Files library/ keeps across imports; everything else in it is regenerated. */
-const KEEP = new Set(['orgs.json', 'README.md']);
+const KEEP = new Set(['orgs.json', 'README.md', 'supplied']);
 /** library/shared/ holds the shared blocks and path bundles, so no organization may be called that. */
 const SHARED = 'shared';
 
@@ -87,12 +87,17 @@ async function main() {
   const sectorIds = new Set(taxonomy.sectors.map((s) => s.id));
   for (const org of taxonomy.orgs) {
     if (!sectorIds.has(org.sector)) throw new Error(`orgs.json: ${org.id} has unknown sector "${org.sector}"`);
-    if (org.id === SHARED) throw new Error(`orgs.json: "${SHARED}" is reserved for library/${SHARED}/`);
+    if (org.id === SHARED || org.id === 'supplied') throw new Error(`orgs.json: "${org.id}" is reserved for library/${org.id}/`);
   }
   const collections = taxonomy.collections ?? [{ id: 'patches', name: 'Patches' }];
   const collectionOf = (design) => collections.find((c) => c.medium?.includes(design.medium)) ?? collections[0];
   const excludedIds = new Map((taxonomy.exclude ?? []).flatMap((rule) => rule.ids.map((id) => [id, rule.reason])));
   const known = new Set(index.designs.map((d) => d.id));
+  // Drawings supplied to replace an atlas reconstruction (library/supplied/), by atlas id.
+  const replacements = new Map((taxonomy.replace ?? []).map((r) => {
+    if (!known.has(r.id)) throw new Error(`orgs.json replaces ${r.id}, which isn't in the snapshot`);
+    return [r.id, r];
+  }));
   for (const id of excludedIds.keys()) if (!known.has(id)) throw new Error(`orgs.json excludes ${id}, which isn't in the snapshot`);
 
   const all = [...index.designs].sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
@@ -120,6 +125,7 @@ async function main() {
     if (!Buffer.from(text, 'utf8').equals(Buffer.from(svg))) throw new Error(`${d.id}: not valid UTF-8, so it can't be stored as text`);
     if (d.vectorSha256 && d.vectorSha256 !== sha(svg)) throw new Error(`${d.id}: the snapshot's SVG doesn't match the atlas's own vectorSha256`);
     checkSvg(d.id, text);
+    // Grouped by the atlas's own drawing, so a supplied replacement (below) doesn't split a group.
     kept.push({ d, org, svg, text, key: `${org.id} ${collectionOf(d).id} ${drawingKey(text)}` });
   }
   const groups = new Map();
@@ -136,7 +142,22 @@ async function main() {
 
   for (const group of groups.values()) {
     const primary = [...group].sort((a, b) => area(b) - area(a) || (a.d.id < b.d.id ? -1 : 1))[0];
-    const { d, org, svg, text } = primary;
+    let { d, org, svg, text } = primary;
+    // A better drawing supplied for any entry of the group replaces the group's; the atlas's hash stays on record.
+    const replacement = group.map(({ d: g }) => replacements.get(g.id)).find(Boolean);
+    let previewFile = null;
+    let atlasSha256 = null;
+    if (replacement) {
+      const file = readFileSync(join(LIBRARY, replacement.svg));
+      const supplied = strFromU8(new Uint8Array(file));
+      if (!Buffer.from(supplied, 'utf8').equals(file)) throw new Error(`${replacement.svg}: not valid UTF-8`);
+      checkSvg(replacement.svg, supplied);
+      if (hasReferences(supplied)) throw new Error(`${replacement.svg}: contains a shared-part reference`);
+      previewFile = replacement.preview ? readFileSync(join(LIBRARY, replacement.preview)) : null;
+      atlasSha256 = sha(svg);
+      svg = file;
+      text = supplied;
+    }
     const others = group.filter((entry) => entry !== primary);
     for (const { d: other } of others) merged.push({ id: other.id, label: other.label, into: d.id });
     // Every photograph the design was seen in, by the atlas's occurrence ids (S27-O01 is photo S27).
@@ -147,7 +168,7 @@ async function main() {
     designs.push(d);
     if (org.id === 'unsorted') unsorted.push(d);
     originals.set(d.id, text);
-    const preview = d.previewUrl ? get(d.previewUrl) : null;
+    const preview = previewFile ?? (d.previewUrl ? get(d.previewUrl) : null);
     const previewPath = preview ? `${org.id}/previews/${d.id}.webp` : null;
     if (preview) previews.push([previewPath, preview]);
     if (!byOrg.has(org.id)) byOrg.set(org.id, { org, patches: [] });
@@ -156,7 +177,7 @@ async function main() {
       label: group.length > 1 ? labelFor(group) : d.label,
       collection: collectionOf(d).id,
       medium: d.medium,
-      quality: d.quality,
+      quality: replacement?.quality ?? d.quality,
       family: d.family,
       affiliation: d.affiliation,
       svg: `${org.id}/${d.id}.svg`,
@@ -166,7 +187,9 @@ async function main() {
       sourceUrl: d.originalSourceUrl ?? null,
       sightings,
       merged: others.map(({ d: other }) => other.id),
-      limitations: d.limitations ?? null,
+      limitations: replacement?.limitations ?? d.limitations ?? null,
+      // Where the drawing came from when it isn't the atlas's own reconstruction.
+      ...(replacement ? { replaced: { svg: replacement.svg, atlasSha256 } } : {}),
     });
   }
   for (const { patches } of byOrg.values()) patches.sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
@@ -278,7 +301,7 @@ async function main() {
     `\nStored ${(storedBytes / 1e6).toFixed(2)} MB of SVG for ${(sourceBytes / 1e6).toFixed(2)} MB of drawings: ` +
     `${blocks.length} shared blocks, ${shared.paths.size} shared path outlines in ${bundles.length} bundles.`,
   );
-  console.log('Every patch joins back to the snapshot\'s file byte for byte.');
+  console.log('Every patch joins back byte for byte to the snapshot\'s file, or to its supplied file where orgs.json replaces it.');
   if (unsorted.length) {
     console.warn(`\n${unsorted.length} design(s) matched no organization; add a rule to library/orgs.json:`);
     for (const d of unsorted) console.warn(`  ${d.id}  family=${d.family}  affiliation=${d.affiliation}  ${d.label}`);

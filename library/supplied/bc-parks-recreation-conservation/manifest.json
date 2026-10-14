@@ -1,0 +1,120 @@
+{
+  "package": "BC Parks Recreation and Conservation \u2014 vector reconstruction",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6507,
+      "sha256": "e025c036cc651728f8616c206c06e846ebc2371e50dc349bf5019623762e954a"
+    },
+    {
+      "path": "alignment-viewer.html",
+      "bytes": 1845,
+      "sha256": "8d938dc1fe5081b6d443fe6095b95c52db87b13504acb5eec84a94134d52a9b5"
+    },
+    {
+      "path": "exports/bc-parks-recreation-conservation-transparent-4000.png",
+      "bytes": 885373,
+      "sha256": "ec04c038a1446ec896fc2f0358134eb3ca08b1e4d3292c90f7bd002c6a357a10"
+    },
+    {
+      "path": "exports/bc-parks-recreation-conservation-vector.eps",
+      "bytes": 37417,
+      "sha256": "0ac79d1f780580ed99c864ae8157221106cfb4f9e7824d4f84099426eba09d73"
+    },
+    {
+      "path": "exports/bc-parks-recreation-conservation-vector.pdf",
+      "bytes": 12927,
+      "sha256": "d93533f796e46ab00ad8d942e68845fb480751af6b5548979e00e5129959c7f9"
+    },
+    {
+      "path": "previews/alignment-overlay.jpg",
+      "bytes": 488627,
+      "sha256": "08c3753c5a06d730922c4c3453a829639b52d1a0294a99a800260b61533c58ab"
+    },
+    {
+      "path": "previews/editable-text-preview.png",
+      "bytes": 206610,
+      "sha256": "f77b01e063dee9f34ffdd861a1f753060d381e9563cbcc8e7b143e869192df95"
+    },
+    {
+      "path": "previews/pdf-proof-render.png",
+      "bytes": 111245,
+      "sha256": "ba0e02b7a0bbe302f1bd4e26f1a123964b9ea7999ff3262a466fc239c70a8351"
+    },
+    {
+      "path": "previews/photo-aligned-render.png",
+      "bytes": 141396,
+      "sha256": "278d0af9931ae195248902a5c487ce90d21326e9df5be437f13b7d1a38d70409"
+    },
+    {
+      "path": "previews/reference-vs-vector.png",
+      "bytes": 1483817,
+      "sha256": "9ec671b8e6a68c0133ca4cf6694e1cd8dbafa658f6ed394dd8c2dbec9be9d526"
+    },
+    {
+      "path": "previews/vector-preview.png",
+      "bytes": 211016,
+      "sha256": "454e9366a0f4a14816bfea7f8846c1d0c3dbca86b03377ae6da180e6c5ae2007"
+    },
+    {
+      "path": "reference/original-patch.jpg",
+      "bytes": 281790,
+      "sha256": "f8eb7b714d213b771d469f7b61fb4385d136a65ef822aa93c4ea2bf48eb36f07"
+    },
+    {
+      "path": "source/build_vectors.py",
+      "bytes": 17645,
+      "sha256": "90a32880f6f278bd3c8e3b80fd21cdb35471682fa645fe2290ea326f6ba2cb82"
+    },
+    {
+      "path": "source/design.json",
+      "bytes": 1211,
+      "sha256": "5331661d7799b338d6c2197faedc61641fdea7ed0dc6ca0f60e0e0a01f71cdc8"
+    },
+    {
+      "path": "source/validation.json",
+      "bytes": 2639,
+      "sha256": "7d5be5954a07fefdf2eb9ec568d29b8e666d13684c70373bbc6cade7bef87156"
+    },
+    {
+      "path": "vectors/bc-parks-recreation-conservation-editable-text.svg",
+      "bytes": 17522,
+      "sha256": "55e649218d8ace650179235873c55f861a57377fd17997703d940870608a35d2"
+    },
+    {
+      "path": "vectors/bc-parks-recreation-conservation-outlined.svg",
+      "bytes": 24681,
+      "sha256": "e5c9bc7ff9a977c26255a4253ec793494aad97c8adab5522ef6b691c7fde157a"
+    },
+    {
+      "path": "vectors/bc-parks-recreation-conservation-photo-aligned.svg",
+      "bytes": 24671,
+      "sha256": "41873c322822d6b1a47c1268f3ba4a917e0ae6cf8a752c968d0f27f08050b83e"
+    },
+    {
+      "path": "vectors/components/01-badge-and-frame.svg",
+      "bytes": 1606,
+      "sha256": "4adbaeb4538c4b76766d3cb7251b7e4843f584abc72bc755385c7f1b724f0c85"
+    },
+    {
+      "path": "vectors/components/02-dogwood-registered.svg",
+      "bytes": 5472,
+      "sha256": "a5705f131af07f2164e6ebdddeff29a91bd8783f2b0499b104428041cb39c53d"
+    },
+    {
+      "path": "vectors/components/03-lettering-registered.svg",
+      "bytes": 19050,
+      "sha256": "a1d06a9bc003c86a8d0c58616e63e16cc255d02217e4c4320307da49748469a2"
+    },
+    {
+      "path": "vectors/components/04-rebranding-template.svg",
+      "bytes": 6333,
+      "sha256": "93485a1ff837ad2f57362fe147c2ae194b5f908b933d819d9094db372ef5ea71"
+    },
+    {
+      "path": "vectors/components/05-dogwood-isolated.svg",
+      "bytes": 5450,
+      "sha256": "8b9123f845af17dfcbd6d25e0f5d861421c5122b70928914e923da26b3226263"
+    }
+  ]
+}

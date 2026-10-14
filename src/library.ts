@@ -46,6 +46,8 @@ export interface LibraryPatch {
   sightings: { id: string; sourceUrl: string | null }[];
   /** Atlas entries that draw this same design from another photograph, merged into this one. */
   merged: string[];
+  /** Set when a supplied drawing (library/supplied/) replaces the atlas's: its file, and the atlas drawing's SHA-256. */
+  replaced?: { svg: string; atlasSha256: string };
   /** The variant group it belongs to (shown as one card with a switch), and its name in it. */
   group?: string;
   variant?: string;

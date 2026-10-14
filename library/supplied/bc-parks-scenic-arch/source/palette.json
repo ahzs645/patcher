@@ -1,0 +1,19 @@
+{
+  "sky": "#5BA3EB",
+  "mountain": "#242D3A",
+  "snow": "#F8F8FA",
+  "rear_shadow": "#243C2B",
+  "rear_green": "#628448",
+  "rear_light": "#678A4C",
+  "central_shadow": "#104929",
+  "central_green": "#248E49",
+  "fir_shadow": "#177C31",
+  "fir_mid": "#238F35",
+  "fir_light": "#65B940",
+  "bank": "#164F2A",
+  "shore_mid": "#1C8534",
+  "shore_light": "#6DBD44",
+  "water": "#4A9AE8",
+  "ripples": "#1D3555",
+  "border": "#FCFCFD"
+}

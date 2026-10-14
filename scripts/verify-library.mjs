@@ -37,7 +37,7 @@ export function joinedPatches(library = LIBRARY) {
     for (const patch of org.patches) {
       const stored = readFileSync(join(library, patch.svg), 'utf8');
       const bytes = Buffer.from(joinSvg(stored, { block, path: (id) => paths.get(id) }), 'utf8');
-      out.push({ id: patch.id, org: org.id, bytes, sha256: sha(bytes), expected: patch.sha256, expectedBytes: patch.bytes });
+      out.push({ id: patch.id, org: org.id, bytes, sha256: sha(bytes), expected: patch.sha256, expectedBytes: patch.bytes, replaced: patch.replaced ?? null });
     }
   }
   return { manifest, patches: out };
@@ -66,13 +66,24 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
         const into = byId.get(mergedInto.get(design.id));
         const original = source.get(design.svgUrl);
         if (!into || !original) problems.push(`${design.id}: merged into ${mergedInto.get(design.id)}, which is missing`);
-        else if (drawingKey(Buffer.from(original).toString('utf8')) !== drawingKey(into.bytes.toString('utf8'))) problems.push(`${design.id}: doesn't draw the same as ${into.id}, which it was merged into`);
+        else {
+          // Against the atlas's own drawing of that patch, which a supplied replacement may have taken over.
+          const intoDesign = source.index.designs.find((d) => d.id === into.id);
+          const intoAtlas = into.replaced ? Buffer.from(source.get(intoDesign.svgUrl)).toString('utf8') : into.bytes.toString('utf8');
+          if (drawingKey(Buffer.from(original).toString('utf8')) !== drawingKey(intoAtlas)) problems.push(`${design.id}: doesn't draw the same as ${into.id}, which it was merged into`);
+        }
         continue;
       }
       const p = byId.get(design.id);
       if (!p) { problems.push(`${design.id}: in the snapshot, not in the library (nor excluded)`); continue; }
       const original = source.get(design.svgUrl);
       if (!original) { problems.push(`${design.id}: ${design.svgUrl} missing from the snapshot`); continue; }
+      if (p.replaced) {
+        // A supplied drawing replaces the atlas's: it must be that file, and the atlas file the one on record.
+        if (!readFileSync(join(library, p.replaced.svg)).equals(p.bytes)) problems.push(`${design.id}: joined bytes differ from the supplied ${p.replaced.svg}`);
+        if (createHash('sha256').update(original).digest('hex') !== p.replaced.atlasSha256) problems.push(`${design.id}: the atlas's drawing changed since it was replaced`);
+        continue;
+      }
       if (!Buffer.from(original).equals(p.bytes)) problems.push(`${design.id}: joined bytes differ from the snapshot's ${design.svgUrl}`);
       if (design.vectorSha256 && design.vectorSha256 !== p.sha256) problems.push(`${design.id}: SHA-256 differs from the atlas's vectorSha256`);
     }

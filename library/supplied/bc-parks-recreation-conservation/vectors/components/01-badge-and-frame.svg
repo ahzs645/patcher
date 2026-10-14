@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="155 65 730 940" width="100mm" height="128.767123mm" preserveAspectRatio="xMidYMid meet">
+  <title>Blank badge and portal frame</title>
+  <desc>Independent reconstruction from the supplied embroidered patch photograph. Smooth authored badge/frame and dogwood geometry; no bitmap tracing or raster embedding. Gold header is a visual substitute in Roboto Slab Bold, not an identified historical typeface. Body lettering uses a proportion-adjusted sans-serif substitute; PARKS is custom outlined lettering. Not an official original file or an embroidery-machine file.</desc>
+  <g id="badge-base" inkscape:groupmode="layer" inkscape:label="01 · Navy field and white outside edging">
+    <path id="outer-border" d="M 173,994 Q 168,994 168,989 V 426 C 168,232 326,74 520,74 C 714,74 872,232 872,426 V 989 Q 872,994 867,994 Z" fill="#FFFFFF" />
+    <path id="navy-field" d="M 188,972 V 427 C 188,243 337,94 520,94 C 703,94 852,243 852,427 V 972 Z" fill="#102338" />
+  </g>
+  <g id="portal-frame" inkscape:groupmode="layer" inkscape:label="02 · White arch / shoulder / base frame">
+    <path id="inner-white-frame" d="M 244,816 V 542 C 286,526 303,504 303,466 V 430 C 303,307 399,208 520,208 C 641,208 737,307 737,430 V 466 C 737,504 754,526 796,542 V 816 Z M 254,806 V 550 C 296,532 313,507 313,466 V 430 C 313,313 404,218 520,218 C 636,218 727,313 727,430 V 466 C 727,507 744,532 786,550 V 806 Z" fill="#FFFFFF" fill-rule="evenodd" />
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+{
+  "BC_Parks_Branch_White_Background.svg": {
+    "parse_valid": true,
+    "image_elements": 0,
+    "text_elements": 0,
+    "path_elements": 40,
+    "ellipse_elements": 5,
+    "editable_layers": 13,
+    "unique_ids": true,
+    "gradients": 0,
+    "external_hrefs": []
+  },
+  "BC_Parks_Branch_Master.svg": {
+    "parse_valid": true,
+    "image_elements": 0,
+    "text_elements": 0,
+    "path_elements": 40,
+    "ellipse_elements": 5,
+    "editable_layers": 12,
+    "unique_ids": true,
+    "gradients": 0,
+    "external_hrefs": []
+  },
+  "BC_Parks_Branch_Scene_Only.svg": {
+    "parse_valid": true,
+    "image_elements": 0,
+    "text_elements": 0,
+    "path_elements": 14,
+    "ellipse_elements": 3,
+    "editable_layers": 8,
+    "unique_ids": true,
+    "gradients": 0,
+    "external_hrefs": []
+  },
+  "BC_Parks_Branch_Vector.pdf": {
+    "pages": 1,
+    "page_mm": [
+      200.0,
+      200.0
+    ],
+    "image_objects": 0,
+    "font_objects": 0,
+    "vector_drawings": 44,
+    "independent_render": "Poppler pdftoppm, 150 dpi; visually reviewed"
+  },
+  "cross_renderer_check": {
+    "renderers": [
+      "CairoSVG",
+      "Inkscape"
+    ],
+    "pixels": [
+      1254,
+      1254
+    ],
+    "mean_absolute_channel_difference_0_255": 0.04531,
+    "note": "Renderer-parity check only; not a source-matching accuracy score."
+  },
+  "visual_review": {
+    "reference_comparison": "same-scale full emblem and enlarged detail comparison inspected",
+    "corrections_made": [
+      "restored narrow opening between front legs",
+      "corrected clipping of the letter-reference measurement region",
+      "redrew S curves with sharp diagonal terminals",
+      "reduced an overextended hind-leg shadow"
+    ],
+    "limitations": [
+      "not an authenticated original master",
+      "original font not verified; letters reconstructed as paths",
+      "small contour and stroke differences remain",
+      "flat sampled colours replace source shading"
+    ]
+  }
+}

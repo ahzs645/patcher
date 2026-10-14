@@ -1,0 +1,93 @@
+{
+  "svg": [
+    {
+      "file": "vectors/bc-parks-recreation-conservation-editable-text.svg",
+      "paths": 29,
+      "image_elements": 0,
+      "text_elements": 52,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "155 65 730 940"
+    },
+    {
+      "file": "vectors/bc-parks-recreation-conservation-outlined.svg",
+      "paths": 81,
+      "image_elements": 0,
+      "text_elements": 0,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "155 65 730 940"
+    },
+    {
+      "file": "vectors/bc-parks-recreation-conservation-photo-aligned.svg",
+      "paths": 81,
+      "image_elements": 0,
+      "text_elements": 0,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "0 0 1080 1080"
+    },
+    {
+      "file": "vectors/components/01-badge-and-frame.svg",
+      "paths": 3,
+      "image_elements": 0,
+      "text_elements": 0,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "155 65 730 940"
+    },
+    {
+      "file": "vectors/components/02-dogwood-registered.svg",
+      "paths": 21,
+      "image_elements": 0,
+      "text_elements": 0,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "155 65 730 940"
+    },
+    {
+      "file": "vectors/components/03-lettering-registered.svg",
+      "paths": 57,
+      "image_elements": 0,
+      "text_elements": 0,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "155 65 730 940"
+    },
+    {
+      "file": "vectors/components/04-rebranding-template.svg",
+      "paths": 24,
+      "image_elements": 0,
+      "text_elements": 0,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "155 65 730 940"
+    },
+    {
+      "file": "vectors/components/05-dogwood-isolated.svg",
+      "paths": 21,
+      "image_elements": 0,
+      "text_elements": 0,
+      "duplicate_ids": [],
+      "external_artwork_references": [],
+      "viewBox": "350 230 330 320"
+    }
+  ],
+  "pdf": {
+    "pages": 1,
+    "image_resources": 0,
+    "font_resources": 0,
+    "vector_drawing_objects": 81,
+    "independent_renderer": "Poppler pdftoppm",
+    "visual_review": "Rendered PDF proof inspected; no clipped lettering or missing shapes found."
+  },
+  "visual_review": [
+    "Outlined SVG rendered and checked against photograph.",
+    "Editable-text render compared with outlined render.",
+    "Independent PDF render inspected."
+  ],
+  "limits": [
+    "Typeface/colour/geometry reconstruction, not an official master.",
+    "Not a stitch or machine-specific cutting file."
+  ]
+}

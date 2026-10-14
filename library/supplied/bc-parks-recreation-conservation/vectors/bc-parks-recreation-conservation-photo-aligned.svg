@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" viewBox="0 0 1080 1080" width="1080" height="1080" preserveAspectRatio="xMidYMid meet">
+  <title>British Columbia — Department of Recreation and Conservation — Parks</title>
+  <desc>Independent reconstruction from the supplied embroidered patch photograph. Smooth authored badge/frame and dogwood geometry; no bitmap tracing or raster embedding. Gold header is a visual substitute in Roboto Slab Bold, not an identified historical typeface. Body lettering uses a proportion-adjusted sans-serif substitute; PARKS is custom outlined lettering. Not an official original file or an embroidery-machine file.</desc>
+  <g id="badge-base" inkscape:groupmode="layer" inkscape:label="01 · Navy field and white outside edging">
+    <path id="outer-border" d="M 173,994 Q 168,994 168,989 V 426 C 168,232 326,74 520,74 C 714,74 872,232 872,426 V 989 Q 872,994 867,994 Z" fill="#FFFFFF" />
+    <path id="navy-field" d="M 188,972 V 427 C 188,243 337,94 520,94 C 703,94 852,243 852,427 V 972 Z" fill="#102338" />
+  </g>
+  <g id="portal-frame" inkscape:groupmode="layer" inkscape:label="02 · White arch / shoulder / base frame">
+    <path id="inner-white-frame" d="M 244,816 V 542 C 286,526 303,504 303,466 V 430 C 303,307 399,208 520,208 C 641,208 737,307 737,430 V 466 C 737,504 754,526 796,542 V 816 Z M 254,806 V 550 C 296,532 313,507 313,466 V 430 C 313,313 404,218 520,218 C 636,218 727,313 727,430 V 466 C 727,507 744,532 786,550 V 806 Z" fill="#FFFFFF" fill-rule="evenodd" />
+  </g>
+  <g id="dogwood-emblem" inkscape:groupmode="layer" inkscape:label="03 · Dogwood · individually editable leaves and petals">
+    <g id="dogwood-leaves">
+      <path id="leaf-top" d="M 498,277 C 503,268 514,263 517,254 L 523,256 L 532,239 L 535,254 L 542,259 L 539,268 L 545,277 L 537,280 L 539,289 L 531,291 L 529,303 C 514,300 505,291 498,277 Z" fill="#97CA69" />
+      <path id="leaf-upper-left" d="M 432,366 C 414,363 402,352 397,341 L 388,341 L 391,335 L 384,324 C 402,316 422,322 432,334 C 439,344 439,356 432,366 Z" fill="#97CA69" />
+      <path id="leaf-upper-right" d="M 608,361 C 611,345 617,331 628,325 L 632,329 L 640,323 L 643,330 L 652,330 L 651,335 L 668,338 L 655,346 L 653,351 L 645,352 L 641,360 L 633,359 L 628,366 Z" fill="#97CA69" />
+      <path id="leaf-lower-left-outer" d="M 447,463 C 430,452 411,440 396,436 L 393,445 L 383,445 L 385,453 L 375,459 L 380,465 L 372,473 L 376,477 L 359,500 L 378,493 L 386,494 L 390,485 L 401,487 L 409,480 L 419,483 C 429,480 439,471 447,463 Z" fill="#97CA69" />
+      <path id="leaf-lower-left-inner" d="M 449,454 C 463,469 463,482 456,493 L 458,501 L 450,503 L 449,513 L 442,513 L 439,524 L 433,523 L 424,539 C 415,522 414,507 420,495 L 411,489 L 417,482 C 429,472 441,462 449,454 Z" fill="#97CA69" />
+      <path id="leaf-lower-right-outer" d="M 596,478 C 599,466 610,450 621,443 L 625,450 L 634,449 L 633,457 L 642,461 L 638,466 L 649,472 L 646,478 L 654,484 L 654,489 L 670,501 L 653,501 L 646,506 L 640,499 L 632,502 L 626,494 L 617,496 Z" fill="#97CA69" />
+      <path id="leaf-lower-right-inner" d="M 574,468 C 589,470 605,478 615,489 L 612,495 L 619,501 L 614,506 L 620,513 L 613,515 L 613,527 L 605,519 L 598,522 L 595,512 L 586,511 L 586,503 L 580,502 C 574,490 571,479 574,468 Z" fill="#97CA69" />
+    </g>
+    <g id="dogwood-leaf-veins" fill="none" stroke="#578044" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path id="vein-top" d="M 513,294 C 520,281 526,263 531,246" fill="none" />
+      <path id="vein-upper-left" d="M 427,358 C 417,345 405,332 391,326" fill="none" />
+      <path id="vein-upper-right" d="M 616,359 C 630,347 646,340 661,338" fill="none" />
+      <path id="vein-lower-left-outer" d="M 441,463 C 414,461 390,475 365,496" fill="none" />
+      <path id="vein-lower-left-inner" d="M 447,462 C 437,484 430,507 425,533" fill="none" />
+      <path id="vein-lower-right-outer" d="M 603,479 C 620,482 644,491 664,499" fill="none" />
+      <path id="vein-lower-right-inner" d="M 579,474 C 590,487 603,505 611,522" fill="none" />
+    </g>
+    <g id="dogwood-petals" stroke="#07111C" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+      <path id="petal-upper-left" d="M 491,365 C 475,361 451,355 440,342 C 426,325 428,306 438,287 C 445,274 452,268 452,254 C 457,262 458,267 466,269 C 481,275 500,282 510,298 C 520,313 522,329 515,347 C 510,358 501,363 491,365 Z" fill="#FFFFFF" />
+      <path id="petal-upper-right" d="M 520,355 C 519,334 523,305 539,291 C 557,274 578,286 596,288 C 606,289 613,286 619,280 C 615,294 619,306 616,321 C 613,345 595,363 574,367 C 554,373 535,367 520,355 Z" fill="#FFFFFF" />
+      <path id="petal-left" d="M 486,369 C 465,360 442,357 420,365 C 399,371 390,384 390,402 C 389,412 387,418 378,425 L 388,427 C 399,438 412,440 426,444 C 435,447 443,450 449,456 L 454,447 C 474,446 486,431 492,413 C 498,397 497,381 486,369 Z" fill="#FFFFFF" />
+      <path id="petal-right" d="M 539,378 C 559,375 582,369 603,371 C 625,372 637,385 639,402 C 641,414 636,428 642,439 L 631,435 C 620,449 609,462 596,463 C 578,464 564,448 554,434 C 544,420 539,399 539,378 Z" fill="#FFFFFF" />
+      <path id="petal-bottom" d="M 506,404 C 494,421 478,441 470,459 C 459,483 468,495 489,503 C 500,507 508,508 516,518 L 521,509 C 539,506 555,498 562,488 C 565,479 558,462 550,449 C 541,432 527,417 519,405 Z" fill="#FFFFFF" />
+    </g>
+    <g id="dogwood-gold-center" stroke="#07111C" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+      <path id="center-shape" d="M 486,349 C 494,340 510,337 523,341 C 534,342 541,350 541,361 C 549,369 546,380 544,389 C 541,400 533,406 524,409 C 515,416 503,412 496,409 C 484,409 476,399 477,389 C 472,379 477,370 478,364 C 478,356 481,352 486,349 Z" fill="#E9BE36" />
+      <path id="center-divisions" d="M 502,341 C 507,351 508,360 505,370 M 525,342 C 527,353 525,361 520,369 M 479,363 C 487,369 496,369 503,372 M 540,362 C 535,367 529,370 521,371 M 503,372 L 519,369 L 527,381 L 518,392 L 505,389 Z M 476,383 C 486,381 495,382 506,383 M 545,384 C 539,380 533,379 527,381 M 505,389 C 500,398 495,402 489,406 M 518,392 C 515,399 514,405 515,412 M 520,391 C 529,393 534,398 536,401" fill="none" stroke-width="1.8" />
+    </g>
+  </g>
+  <g id="lettering-header" inkscape:groupmode="layer" inkscape:label="04 · BRITISH COLUMBIA · curved lettering" fill="#E9BE36">
+    <g id="header-letter-00-B" transform="translate(284.041844 440.443946) rotate(-91.078959)">
+      <path id="outline-header-00" d="M703 1456H56V1280L211 1250V205L56 175V0H772C1109 0 1301 145 1301 424C1301 585 1214 720 1039 757C1175 810 1248 922 1248 1057C1248 1322 1046 1456 703 1456ZM503 846V1231H703C871 1231 956 1169 956 1034C956 911 869 846 713 846ZM503 644H794C943 644 1010 567 1010 424C1010 292 927 224 772 224H503Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-677.000000 0)" />
+    </g>
+    <g id="header-letter-01-R" transform="translate(289.426497 385.682414) rotate(-77.689460)">
+      <path id="outline-header-01" d="M710 1456H56V1280L211 1250V205L56 175V0H659V175L503 205V589H742C879 585 958 500 958 359V276C958 113 1026 0 1217 0H1368V176L1332 181C1273 188 1250 223 1250 287V361C1250 536 1180 656 1008 707C1160 774 1240 882 1240 1029C1240 1296 1041 1456 710 1456ZM503 814V1231H710C867 1231 949 1147 949 1016C949 885 868 814 705 814Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-704.000000 0)" />
+    </g>
+    <g id="header-letter-02-I" transform="translate(302.217863 345.077280) rotate(-67.339760)">
+      <path id="outline-header-02" d="M55 1280 211 1250V205L55 175V0H658V175L502 205V1250L658 1280V1456H55Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-356.500000 0)" />
+    </g>
+    <g id="header-letter-03-T" transform="translate(321.766816 307.939059) rotate(-57.137070)">
+      <path id="outline-header-03" d="M1338 1456H40V1068H263L275 1231H542V205L386 175V0H990V175L834 205V1231H1102L1114 1068H1338Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-688.500000 0)" />
+    </g>
+    <g id="header-letter-04-I" transform="translate(347.584974 274.850818) rotate(-46.934380)">
+      <path id="outline-header-04" d="M55 1280 211 1250V205L55 175V0H658V175L502 205V1250L658 1280V1456H55Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-356.500000 0)" />
+    </g>
+    <g id="header-letter-05-S" transform="translate(376.828905 248.388600) rotate(-37.348186)">
+      <path id="outline-header-05" d="M1150 991V1319C1025 1419 853 1479 629 1476C326 1472 114 1307 114 1071C114 832 282 711 627 611C826 551 895 492 895 380C895 271 809 200 650 200C526 200 413 235 354 285L323 492H97V140C267 21 436 -21 650 -21C973 -21 1188 133 1188 382C1188 621 1019 759 698 848C474 919 405 971 405 1070C405 1177 504 1251 644 1251C753 1251 842 1223 893 1191L931 991Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-623.500000 0)" />
+    </g>
+    <g id="header-letter-06-H" transform="translate(425.703173 219.657428) rotate(-23.550852)">
+      <path id="outline-header-06" d="M56 1280 211 1250V205L56 175V0H659V175L503 205V605H1097V205L941 175V0H1544V175L1388 205V1250L1544 1280V1456H941V1280L1097 1250V830H503V1250L659 1280V1456H56Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-800.500000 0)" />
+    </g>
+    <g id="header-letter-08-C" transform="translate(502.216483 200.670982) rotate(-4.321556)">
+      <path id="outline-header-08" d="M1249 955V1307C1119 1422 944 1477 734 1477C326 1477 52 1175 52 752V703C52 259 338 -21 749 -21C974 -21 1148 37 1249 112V460H1032L1002 255C939 224 869 203 754 203C516 203 344 397 344 703V754C344 1060 509 1252 741 1252C860 1252 936 1223 1002 1176L1032 955Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-663.500000 0)" />
+    </g>
+    <g id="header-letter-09-O" transform="translate(557.445655 202.989651) rotate(9.129592)">
+      <path id="outline-header-09" d="M1387 717V739C1387 1163 1119 1477 724 1477C331 1477 67 1163 67 739V717C67 290 332 -21 725 -21C1120 -21 1387 290 1387 717ZM1096 741V717C1096 410 972 206 725 206C481 206 359 410 359 717V741C359 1045 479 1249 724 1249C969 1249 1096 1042 1096 741Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-724.000000 0)" />
+    </g>
+    <g id="header-letter-10-L" transform="translate(608.324933 217.151408) rotate(21.978472)">
+      <path id="outline-header-10" d="M56 0H1151V437H928L914 224H503V1250L679 1280V1456H56V1280L211 1250V205L56 175Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-600.000000 0)" />
+    </g>
+    <g id="header-letter-11-U" transform="translate(656.363765 243.384000) rotate(35.296837)">
+      <path id="outline-header-11" d="M642 1456H39V1280L194 1250V490C194 163 428 -21 776 -21C1125 -21 1361 163 1361 490V1250L1517 1280V1456H914V1280L1069 1250V490C1069 297 959 203 776 203C596 203 486 298 486 490V1250L642 1280Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-773.500000 0)" />
+    </g>
+    <g id="header-letter-12-M" transform="translate(707.987611 293.323239) rotate(52.802630)">
+      <path id="outline-header-12" d="M1594 1142 1600 1141 1595 484V205L1432 175V0H2035V175L1879 205V1250L2035 1280V1456H1448L1054 441H1048L643 1456H56V1280L211 1250V205L56 175V0H659V175L487 205V514L470 1132L476 1133L931 0H1149Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-1041.500000 0)" />
+    </g>
+    <g id="header-letter-13-B" transform="translate(740.900144 352.939019) rotate(69.393165)">
+      <path id="outline-header-13" d="M703 1456H56V1280L211 1250V205L56 175V0H772C1109 0 1301 145 1301 424C1301 585 1214 720 1039 757C1175 810 1248 922 1248 1057C1248 1322 1046 1456 703 1456ZM503 846V1231H703C871 1231 956 1169 956 1034C956 911 869 846 713 846ZM503 644H794C943 644 1010 567 1010 424C1010 292 927 224 772 224H503Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-677.000000 0)" />
+    </g>
+    <g id="header-letter-14-I" transform="translate(752.038231 392.938887) rotate(79.486783)">
+      <path id="outline-header-14" d="M55 1280 211 1250V205L55 175V0H658V175L502 205V1250L658 1280V1456H55Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-356.500000 0)" />
+    </g>
+    <g id="header-letter-15-A" transform="translate(755.996093 437.357936) rotate(90.329680)">
+      <path id="outline-header-15" d="M41 175V0H537V175L436 193L500 393H1012L1076 193L975 175V0H1471V175L1367 190L907 1456H608L145 190ZM569 608 738 1104 753 1151H759L773 1107L943 608Z" fill="#E9BE36" transform="scale(0.03906665 -0.04532967) translate(-756.000000 0)" />
+    </g>
+  </g>
+  <g id="department-lettering" inkscape:groupmode="layer" inkscape:label="05 · Department wording · four separate lines">
+    <g id="department-of" inkscape:label="DEPARTMENT OF" fill="#E9BE36" transform="translate(282.389662 597.351724) scale(0.026352835 0.032413793)">
+      <title>DEPARTMENT OF</title>
+      <path id="department-of-letter-00" d="M1393 715Q1393 497 1307.5 334.5Q1222 172 1065.5 86.0Q909 0 707 0H137V1409H647Q1003 1409 1198.0 1229.5Q1393 1050 1393 715ZM1096 715Q1096 942 978.0 1061.5Q860 1181 641 1181H432V228H682Q872 228 984.0 359.0Q1096 490 1096 715Z" fill="#E9BE36" transform="translate(0 0) scale(1 -1)" />
+      <path id="department-of-letter-01" d="M137 0V1409H1245V1181H432V827H1184V599H432V228H1286V0Z" fill="#E9BE36" transform="translate(1507 0) scale(1 -1)" />
+      <path id="department-of-letter-02" d="M1296 963Q1296 827 1234.0 720.0Q1172 613 1056.5 554.5Q941 496 782 496H432V0H137V1409H770Q1023 1409 1159.5 1292.5Q1296 1176 1296 963ZM999 958Q999 1180 737 1180H432V723H745Q867 723 933.0 783.5Q999 844 999 958Z" fill="#E9BE36" transform="translate(2901 0) scale(1 -1)" />
+      <path id="department-of-letter-03" d="M1133 0 1008 360H471L346 0H51L565 1409H913L1425 0ZM739 1192 733 1170Q723 1134 709.0 1088.0Q695 1042 537 582H942L803 987L760 1123Z" fill="#E9BE36" transform="translate(4295 0) scale(1 -1)" />
+      <path id="department-of-letter-04" d="M1105 0 778 535H432V0H137V1409H841Q1093 1409 1230.0 1300.5Q1367 1192 1367 989Q1367 841 1283.0 733.5Q1199 626 1056 592L1437 0ZM1070 977Q1070 1180 810 1180H432V764H818Q942 764 1006.0 820.0Q1070 876 1070 977Z" fill="#E9BE36" transform="translate(5802 0) scale(1 -1)" />
+      <path id="department-of-letter-05" d="M773 1181V0H478V1181H23V1409H1229V1181Z" fill="#E9BE36" transform="translate(7309 0) scale(1 -1)" />
+      <path id="department-of-letter-06" d="M1307 0V854Q1307 883 1307.5 912.0Q1308 941 1317 1161Q1246 892 1212 786L958 0H748L494 786L387 1161Q399 929 399 854V0H137V1409H532L784 621L806 545L854 356L917 582L1176 1409H1569V0Z" fill="#E9BE36" transform="translate(8588 0) scale(1 -1)" />
+      <path id="department-of-letter-07" d="M137 0V1409H1245V1181H432V827H1184V599H432V228H1286V0Z" fill="#E9BE36" transform="translate(10322 0) scale(1 -1)" />
+      <path id="department-of-letter-08" d="M995 0 381 1085Q399 927 399 831V0H137V1409H474L1097 315Q1079 466 1079 590V1409H1341V0Z" fill="#E9BE36" transform="translate(11716 0) scale(1 -1)" />
+      <path id="department-of-letter-09" d="M773 1181V0H478V1181H23V1409H1229V1181Z" fill="#E9BE36" transform="translate(13223 0) scale(1 -1)" />
+      <path id="department-of-letter-11" d="M1507 711Q1507 491 1420.0 324.0Q1333 157 1171.0 68.5Q1009 -20 793 -20Q461 -20 272.5 175.5Q84 371 84 711Q84 1050 272.0 1240.0Q460 1430 795 1430Q1130 1430 1318.5 1238.0Q1507 1046 1507 711ZM1206 711Q1206 939 1098.0 1068.5Q990 1198 795 1198Q597 1198 489.0 1069.5Q381 941 381 711Q381 479 491.5 345.5Q602 212 793 212Q991 212 1098.5 342.0Q1206 472 1206 711Z" fill="#E9BE36" transform="translate(15099 0) scale(1 -1)" />
+      <path id="department-of-letter-12" d="M432 1181V745H1153V517H432V0H137V1409H1176V1181Z" fill="#E9BE36" transform="translate(16720 0) scale(1 -1)" />
+    </g>
+    <g id="recreation" inkscape:label="RECREATION" fill="#E9BE36" transform="translate(298.601243 666.268966) scale(0.032107716 0.036551724)">
+      <title>RECREATION</title>
+      <path id="recreation-letter-00" d="M1105 0 778 535H432V0H137V1409H841Q1093 1409 1230.0 1300.5Q1367 1192 1367 989Q1367 841 1283.0 733.5Q1199 626 1056 592L1437 0ZM1070 977Q1070 1180 810 1180H432V764H818Q942 764 1006.0 820.0Q1070 876 1070 977Z" fill="#E9BE36" transform="translate(0 0) scale(1 -1)" />
+      <path id="recreation-letter-01" d="M137 0V1409H1245V1181H432V827H1184V599H432V228H1286V0Z" fill="#E9BE36" transform="translate(1507 0) scale(1 -1)" />
+      <path id="recreation-letter-02" d="M795 212Q1062 212 1166 480L1423 383Q1340 179 1179.5 79.5Q1019 -20 795 -20Q455 -20 269.5 172.5Q84 365 84 711Q84 1058 263.0 1244.0Q442 1430 782 1430Q1030 1430 1186.0 1330.5Q1342 1231 1405 1038L1145 967Q1112 1073 1015.5 1135.5Q919 1198 788 1198Q588 1198 484.5 1074.0Q381 950 381 711Q381 468 487.5 340.0Q594 212 795 212Z" fill="#E9BE36" transform="translate(2901 0) scale(1 -1)" />
+      <path id="recreation-letter-03" d="M1105 0 778 535H432V0H137V1409H841Q1093 1409 1230.0 1300.5Q1367 1192 1367 989Q1367 841 1283.0 733.5Q1199 626 1056 592L1437 0ZM1070 977Q1070 1180 810 1180H432V764H818Q942 764 1006.0 820.0Q1070 876 1070 977Z" fill="#E9BE36" transform="translate(4408 0) scale(1 -1)" />
+      <path id="recreation-letter-04" d="M137 0V1409H1245V1181H432V827H1184V599H432V228H1286V0Z" fill="#E9BE36" transform="translate(5915 0) scale(1 -1)" />
+      <path id="recreation-letter-05" d="M1133 0 1008 360H471L346 0H51L565 1409H913L1425 0ZM739 1192 733 1170Q723 1134 709.0 1088.0Q695 1042 537 582H942L803 987L760 1123Z" fill="#E9BE36" transform="translate(7309 0) scale(1 -1)" />
+      <path id="recreation-letter-06" d="M773 1181V0H478V1181H23V1409H1229V1181Z" fill="#E9BE36" transform="translate(8816 0) scale(1 -1)" />
+      <path id="recreation-letter-07" d="M137 0V1409H432V0Z" fill="#E9BE36" transform="translate(10095 0) scale(1 -1)" />
+      <path id="recreation-letter-08" d="M1507 711Q1507 491 1420.0 324.0Q1333 157 1171.0 68.5Q1009 -20 793 -20Q461 -20 272.5 175.5Q84 371 84 711Q84 1050 272.0 1240.0Q460 1430 795 1430Q1130 1430 1318.5 1238.0Q1507 1046 1507 711ZM1206 711Q1206 939 1098.0 1068.5Q990 1198 795 1198Q597 1198 489.0 1069.5Q381 941 381 711Q381 479 491.5 345.5Q602 212 793 212Q991 212 1098.5 342.0Q1206 472 1206 711Z" fill="#E9BE36" transform="translate(10692 0) scale(1 -1)" />
+      <path id="recreation-letter-09" d="M995 0 381 1085Q399 927 399 831V0H137V1409H474L1097 315Q1079 466 1079 590V1409H1341V0Z" fill="#E9BE36" transform="translate(12313 0) scale(1 -1)" />
+    </g>
+    <g id="and" inkscape:label="AND" fill="#E9BE36" transform="translate(447.337466 730.000000) scale(0.032598714 0.034776437)">
+      <title>AND</title>
+      <path id="and-letter-00" d="M1133 0 1008 360H471L346 0H51L565 1409H913L1425 0ZM739 1192 733 1170Q723 1134 709.0 1088.0Q695 1042 537 582H942L803 987L760 1123Z" fill="#E9BE36" transform="translate(0 0) scale(1 -1)" />
+      <path id="and-letter-01" d="M995 0 381 1085Q399 927 399 831V0H137V1409H474L1097 315Q1079 466 1079 590V1409H1341V0Z" fill="#E9BE36" transform="translate(1507 0) scale(1 -1)" />
+      <path id="and-letter-02" d="M1393 715Q1393 497 1307.5 334.5Q1222 172 1065.5 86.0Q909 0 707 0H137V1409H647Q1003 1409 1198.0 1229.5Q1393 1050 1393 715ZM1096 715Q1096 942 978.0 1061.5Q860 1181 641 1181H432V228H682Q872 228 984.0 359.0Q1096 490 1096 715Z" fill="#E9BE36" transform="translate(3014 0) scale(1 -1)" />
+    </g>
+    <g id="conservation" inkscape:label="CONSERVATION" fill="#E9BE36" transform="translate(269.487850 796.241379) scale(0.029906542 0.037931034)">
+      <title>CONSERVATION</title>
+      <path id="conservation-letter-00" d="M795 212Q1062 212 1166 480L1423 383Q1340 179 1179.5 79.5Q1019 -20 795 -20Q455 -20 269.5 172.5Q84 365 84 711Q84 1058 263.0 1244.0Q442 1430 782 1430Q1030 1430 1186.0 1330.5Q1342 1231 1405 1038L1145 967Q1112 1073 1015.5 1135.5Q919 1198 788 1198Q588 1198 484.5 1074.0Q381 950 381 711Q381 468 487.5 340.0Q594 212 795 212Z" fill="#E9BE36" transform="translate(0 0) scale(1 -1)" />
+      <path id="conservation-letter-01" d="M1507 711Q1507 491 1420.0 324.0Q1333 157 1171.0 68.5Q1009 -20 793 -20Q461 -20 272.5 175.5Q84 371 84 711Q84 1050 272.0 1240.0Q460 1430 795 1430Q1130 1430 1318.5 1238.0Q1507 1046 1507 711ZM1206 711Q1206 939 1098.0 1068.5Q990 1198 795 1198Q597 1198 489.0 1069.5Q381 941 381 711Q381 479 491.5 345.5Q602 212 793 212Q991 212 1098.5 342.0Q1206 472 1206 711Z" fill="#E9BE36" transform="translate(1507 0) scale(1 -1)" />
+      <path id="conservation-letter-02" d="M995 0 381 1085Q399 927 399 831V0H137V1409H474L1097 315Q1079 466 1079 590V1409H1341V0Z" fill="#E9BE36" transform="translate(3128 0) scale(1 -1)" />
+      <path id="conservation-letter-03" d="M1286 406Q1286 199 1132.5 89.5Q979 -20 682 -20Q411 -20 257.0 76.0Q103 172 59 367L344 414Q373 302 457.0 251.5Q541 201 690 201Q999 201 999 389Q999 449 963.5 488.0Q928 527 863.5 553.0Q799 579 616 616Q458 653 396.0 675.5Q334 698 284.0 728.5Q234 759 199.0 802.0Q164 845 144.5 903.0Q125 961 125 1036Q125 1227 268.5 1328.5Q412 1430 686 1430Q948 1430 1079.5 1348.0Q1211 1266 1249 1077L963 1038Q941 1129 873.5 1175.0Q806 1221 680 1221Q412 1221 412 1053Q412 998 440.5 963.0Q469 928 525.0 903.5Q581 879 752 842Q955 799 1042.5 762.5Q1130 726 1181.0 677.5Q1232 629 1259.0 561.5Q1286 494 1286 406Z" fill="#E9BE36" transform="translate(4635 0) scale(1 -1)" />
+      <path id="conservation-letter-04" d="M137 0V1409H1245V1181H432V827H1184V599H432V228H1286V0Z" fill="#E9BE36" transform="translate(6029 0) scale(1 -1)" />
+      <path id="conservation-letter-05" d="M1105 0 778 535H432V0H137V1409H841Q1093 1409 1230.0 1300.5Q1367 1192 1367 989Q1367 841 1283.0 733.5Q1199 626 1056 592L1437 0ZM1070 977Q1070 1180 810 1180H432V764H818Q942 764 1006.0 820.0Q1070 876 1070 977Z" fill="#E9BE36" transform="translate(7423 0) scale(1 -1)" />
+      <path id="conservation-letter-06" d="M834 0H535L14 1409H322L612 504Q639 416 686 238L707 324L758 504L1047 1409H1352Z" fill="#E9BE36" transform="translate(8930 0) scale(1 -1)" />
+      <path id="conservation-letter-07" d="M1133 0 1008 360H471L346 0H51L565 1409H913L1425 0ZM739 1192 733 1170Q723 1134 709.0 1088.0Q695 1042 537 582H942L803 987L760 1123Z" fill="#E9BE36" transform="translate(10324 0) scale(1 -1)" />
+      <path id="conservation-letter-08" d="M773 1181V0H478V1181H23V1409H1229V1181Z" fill="#E9BE36" transform="translate(11831 0) scale(1 -1)" />
+      <path id="conservation-letter-09" d="M137 0V1409H432V0Z" fill="#E9BE36" transform="translate(13110 0) scale(1 -1)" />
+      <path id="conservation-letter-10" d="M1507 711Q1507 491 1420.0 324.0Q1333 157 1171.0 68.5Q1009 -20 793 -20Q461 -20 272.5 175.5Q84 371 84 711Q84 1050 272.0 1240.0Q460 1430 795 1430Q1130 1430 1318.5 1238.0Q1507 1046 1507 711ZM1206 711Q1206 939 1098.0 1068.5Q990 1198 795 1198Q597 1198 489.0 1069.5Q381 941 381 711Q381 479 491.5 345.5Q602 212 793 212Q991 212 1098.5 342.0Q1206 472 1206 711Z" fill="#E9BE36" transform="translate(13707 0) scale(1 -1)" />
+      <path id="conservation-letter-11" d="M995 0 381 1085Q399 927 399 831V0H137V1409H474L1097 315Q1079 466 1079 590V1409H1341V0Z" fill="#E9BE36" transform="translate(15328 0) scale(1 -1)" />
+    </g>
+  </g>
+  <g id="parks-lettering" inkscape:groupmode="layer" inkscape:label="06 · PARKS · custom extended outlines">
+    <g id="parks-word" transform="translate(235 842) scale(0.98615917 .88)" fill="#E9BE36">
+      <title>PARKS</title>
+      <path id="parks-P" d="M 0,0 H 61 C 87,0 98,10 98,29 C 98,48 85,60 61,60 H 20 V 100 H 0 Z M 20,18 V 41 H 60 C 72,41 78,38 78,29 C 78,21 72,18 60,18 Z" fill="#E9BE36" transform="translate(0 0)" fill-rule="evenodd" />
+      <path id="parks-A" d="M 0,100 L 51,0 H 68 L 119,100 H 96 L 83,75 H 35 L 22,100 Z M 44,57 H 75 L 60,24 Z" fill="#E9BE36" transform="translate(107 0)" fill-rule="evenodd" />
+      <path id="parks-R" d="M 0,0 H 64 C 87,0 99,11 99,29 C 99,45 88,55 73,58 L 106,100 H 81 L 51,60 H 20 V 100 H 0 Z M 20,18 V 41 H 63 C 74,41 79,37 79,29 C 79,21 73,18 63,18 Z" fill="#E9BE36" transform="translate(235 0)" fill-rule="evenodd" />
+      <path id="parks-K" d="M 0,0 H 20 V 42 L 80,0 H 108 L 54,43 L 111,100 H 84 L 38,56 L 20,70 V 100 H 0 Z" fill="#E9BE36" transform="translate(350 0)" fill-rule="evenodd" />
+      <path id="parks-S" d="M 102,9 C 80,-3 54,-3 31,1 C 10,5 0,16 0,31 C 0,50 15,56 44,59 L 67,61 C 82,62 88,66 88,73 C 88,81 77,85 59,85 C 37,85 18,80 2,72 V 92 C 19,100 40,102 60,102 C 92,102 108,91 108,72 C 108,54 96,46 71,44 L 43,41 C 27,39 20,36 20,29 C 20,22 31,18 49,18 C 69,18 87,22 102,29 Z" fill="#E9BE36" transform="translate(470 0)" fill-rule="evenodd" />
+    </g>
+  </g>
+</svg>

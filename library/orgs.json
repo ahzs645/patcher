@@ -8,7 +8,52 @@
     { "reason": "A decal, prevention card or printed emblem, not a patch", "ids": ["S53-O02", "S53-O03", "S53-O04", "S53-O05", "S53-O06", "S53-O07", "S09-O01"] },
     { "reason": "A sign, not a patch", "ids": ["S55-O01"] },
     { "reason": "A branch's digital lockup, not a patch", "ids": ["R10-O01"] },
+    { "reason": "A printed seal, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, Lands Department)", "ids": ["S10-O01"] },
     { "reason": "The BC Hydro corporate logo, not a patch", "ids": ["P11-O01", "P11-O02", "P11-O03", "P11-O04", "P11-O05", "P11-O06", "P11-O07", "P11-O08"] }
+  ],
+  "replace": [
+    {
+      "id": "S25-O01",
+      "svg": "supplied/bc-parks-branch-elk-roundel/vectors/BC_Parks_Branch_Master.svg",
+      "preview": "supplied/bc-parks-branch-elk-roundel/preview.webp",
+      "quality": "Supplied vector reconstruction",
+      "limitations": "Constructed flat-colour redraw of the supplied reference image (BC Parks Branch vector package): editable rings, mountain vertices, hand-drafted elk curves and 26 individually placed letter outlines. Not an authenticated government master; the original typeface is unverified, small contour and stroke differences remain, and flat sampled sRGB colours replace the source's shading. See the package README."
+    },
+    {
+      "id": "S30-O04",
+      "svg": "supplied/bc-parks-scenic-arch/composed/S30-O04.svg",
+      "preview": "supplied/bc-parks-scenic-arch/preview-S30-O04.webp",
+      "quality": "Atlas arch with supplied landscape",
+      "limitations": "The arch, white frame and lettering are the atlas's reconstruction; the landscape inside the window is the supplied BC Parks scene vector package (reference-fit editable scene), fitted to the window by compose.mjs. Neither is an official original or a pixel-identical facsimile; the scene's forest and water are reference-fit regions, not individually drawn trees. Typeface and thread colours are interpreted."
+    },
+    {
+      "id": "S27-O04",
+      "svg": "supplied/bc-parks-scenic-arch/composed/S27-O04.svg",
+      "preview": "supplied/bc-parks-scenic-arch/preview-S27-O04.webp",
+      "quality": "Atlas arch with supplied landscape",
+      "limitations": "The arch, white frame, lettering and RANGER band are the atlas's reconstruction; the landscape inside the window is the supplied BC Parks scene vector package (reference-fit editable scene), fitted to the window by compose.mjs. Neither is an official original or a pixel-identical facsimile. Typeface and thread colours are interpreted."
+    },
+    {
+      "id": "S31-O01",
+      "svg": "supplied/bc-parks-recreation-conservation/vectors/bc-parks-recreation-conservation-outlined.svg",
+      "preview": "supplied/bc-parks-recreation-conservation/preview.webp",
+      "quality": "Supplied vector reconstruction",
+      "limitations": "Independent layered reconstruction of the supplied historic embroidered patch photograph (BC Parks Recreation and Conservation vector package), lettering outlined. Not a recovered official original or a pixel-identical facsimile: the header uses Roboto Slab Bold and the body Liberation Sans Bold as visual substitutes, PARKS is newly constructed lettering, and the dogwood, frame and flat RGB colours are interpreted. See the package README."
+    },
+    {
+      "id": "S30-O01",
+      "svg": "supplied/bc-parks-flag-badge/composed/S30-O01.svg",
+      "preview": "supplied/bc-parks-flag-badge/preview-S30-O01.webp",
+      "quality": "PofBC flag badge artwork",
+      "limitations": "The BC Parks flag badge as PofBC draws it (its hand-drawn frame, the flag symbol and BC / Parks in outlined Helvetica Bold), in the atlas's thread colours. The badge's proportions are read off a picture of the mark, not measured from artwork; thread colours are interpreted. Rights unresolved."
+    },
+    {
+      "id": "S30-O02",
+      "svg": "supplied/bc-parks-flag-badge/composed/S30-O02.svg",
+      "preview": "supplied/bc-parks-flag-badge/preview-S30-O02.webp",
+      "quality": "Atlas semicircle with PofBC flag badge wording",
+      "limitations": "The semicircular cut and border are the atlas's reconstruction; the flag symbol and BC / Parks (outlined Helvetica Bold) are PofBC's flag badge, fitted to where the atlas set them. Thread colours are interpreted. Rights unresolved."
+    }
   ],
   "variants": [
     {

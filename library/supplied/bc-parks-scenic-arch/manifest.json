@@ -1,0 +1,167 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 7189,
+    "sha256": "85bea42bffd473e7d8ea750d646534e0ac0a2e2f940f908931a167e5e292ddf1"
+  },
+  {
+    "path": "alignment-viewer.html",
+    "bytes": 3009,
+    "sha256": "3814a9686e4f0fdf218d7210ed80603a0b3ba64628bf1880b9d253293c80e795"
+  },
+  {
+    "path": "exports/bc-parks-scene-transparent-4000.png",
+    "bytes": 963832,
+    "sha256": "16dbd503d4e67fe3ce814dbf59b3d447cc88016df7557dc6f7563d6e6d477895"
+  },
+  {
+    "path": "exports/bc-parks-scene-vector.eps",
+    "bytes": 696078,
+    "sha256": "61746ae2867575cbef3a43c30da0c2738395d4d77d3bb7d02f2d92918f51ca44"
+  },
+  {
+    "path": "exports/bc-parks-scene-vector.pdf",
+    "bytes": 149797,
+    "sha256": "f93232ff454a224512b27da6d1e5c187af8dc0b18f351b2c98555fce566148f1"
+  },
+  {
+    "path": "previews/authored-redraw.png",
+    "bytes": 195723,
+    "sha256": "4db3a08985d2a3f45a5261dff1b906c931eb785c322b2d4a08a053f4faacfb21"
+  },
+  {
+    "path": "previews/badge-placement-proof.png",
+    "bytes": 1078922,
+    "sha256": "1b46e85842bf213380f137236d8bacea5e949afbbf0e806a016cf1774c1986b1"
+  },
+  {
+    "path": "previews/reference-vs-vector.png",
+    "bytes": 779052,
+    "sha256": "cae956f9028c64417babdea2507c0bf112684e12bf85eab816747ac67d72de4d"
+  },
+  {
+    "path": "previews/scene-badge-aligned.png",
+    "bytes": 176696,
+    "sha256": "0cc522f0a2b6802e388befcd598586c99cd1b3ee4f32f221df2089d479734066"
+  },
+  {
+    "path": "previews/scene-preview.png",
+    "bytes": 211475,
+    "sha256": "787cb720b3ab5bda41c096a0cb6f0276221a83c5563cccdc173434f686eccd8f"
+  },
+  {
+    "path": "previews/scene-with-frame.png",
+    "bytes": 222470,
+    "sha256": "63d753c7b45ad29b2220293d3d5f8de1eb4e6eb9f010e369160161f62e31c198"
+  },
+  {
+    "path": "reference/aligned-scene-preview.png",
+    "bytes": 145983,
+    "sha256": "51e9c71ec6c39206ac7a0a468f86e8be0a84e33ad87b061f94d3764772b3e1ef"
+  },
+  {
+    "path": "reference/original-badge.png",
+    "bytes": 2158987,
+    "sha256": "7bb8e40bef4bcf2c8830989ffd1435c7c64ac01082abce64d1c3d338df95bbb0"
+  },
+  {
+    "path": "source/alignment-landmarks.json",
+    "bytes": 2724,
+    "sha256": "bc2a53b42b16f726e92146316f140e9e0c0b34037effc7a2235a34beaf95e722"
+  },
+  {
+    "path": "source/base-landscape-redraw.svg",
+    "bytes": 238289,
+    "sha256": "893aad3a1c71ca413b990e7eac9d65f8487b9a90982078d6a555feb6e61e46d7"
+  },
+  {
+    "path": "source/build_aligned_scene.py",
+    "bytes": 11286,
+    "sha256": "02b2d59128626e22dfbbfbe53d9ca32a7109ae0ba3bec53907dd377c85c524ad"
+  },
+  {
+    "path": "source/build_reference_fit.py",
+    "bytes": 10805,
+    "sha256": "a858be995a696df9b12e667afad7592a176452a33428d8b60df906e5327c7ccf"
+  },
+  {
+    "path": "source/palette.json",
+    "bytes": 433,
+    "sha256": "0978e749b0b4438eb4c7d20c0565d24cd2561000c0ec05a9ac48e3b5e613a7b7"
+  },
+  {
+    "path": "source/reference-fit-palette.json",
+    "bytes": 320,
+    "sha256": "ede09aad4d97c193168046c132c5ace2318d7d5601150a9942733c4ea3313c94"
+  },
+  {
+    "path": "source/validation.json",
+    "bytes": 4294,
+    "sha256": "97369659b160b7732ab27440334d08812aff096233b39cc1c5eb65946d517f29"
+  },
+  {
+    "path": "vectors/authored-redraw/bc-parks-landscape-no-sky.svg",
+    "bytes": 240478,
+    "sha256": "04b3298974f31a93902e4fe0973b95399de542cbaca46058789cb7b5f8ea5566"
+  },
+  {
+    "path": "vectors/authored-redraw/bc-parks-scene-badge-aligned.svg",
+    "bytes": 240911,
+    "sha256": "e4382c4535b3e70dab54facdf4803aa44ad6bc5556f8746fb0d07a81526a2285"
+  },
+  {
+    "path": "vectors/authored-redraw/bc-parks-scene-editable.svg",
+    "bytes": 240911,
+    "sha256": "93593003695ff481699b77a9b32dbcc7f57ec3ad6b914cc97f54e12bf6a6fb97"
+  },
+  {
+    "path": "vectors/authored-redraw/bc-parks-scene-with-white-frame.svg",
+    "bytes": 241580,
+    "sha256": "fcbd136264a3ac35168fc322cee2013c4b90dc610337bf4188a118a62d016635"
+  },
+  {
+    "path": "vectors/bc-parks-landscape-no-sky.svg",
+    "bytes": 452675,
+    "sha256": "85bac5e07587558121adeb00e390cab0ec7d1bfc7877df6c11bb39ea675814d2"
+  },
+  {
+    "path": "vectors/bc-parks-scene-badge-aligned.svg",
+    "bytes": 453100,
+    "sha256": "1a0b7c4fec7d2f140e0a09b70db789513e785d9404a9e580c9bad758502c4429"
+  },
+  {
+    "path": "vectors/bc-parks-scene-editable.svg",
+    "bytes": 453100,
+    "sha256": "60febe08c5359d9d15f4bb6d179fb641c79b348ee5751b1619b88638a2922321"
+  },
+  {
+    "path": "vectors/bc-parks-scene-with-white-frame.svg",
+    "bytes": 453775,
+    "sha256": "f95d4737ca3103c596de4ca55031ba9eb684bd3dcbb8c9c5a83ace27a62426fb"
+  },
+  {
+    "path": "vectors/components/01-sky.svg",
+    "bytes": 1599,
+    "sha256": "dbf3ed8505c2c61351635af32fe455b960e44d260e93c8fd3e927d885cd8217d"
+  },
+  {
+    "path": "vectors/components/02-mountains-snowcaps.svg",
+    "bytes": 3745,
+    "sha256": "bd36cb13b9a5c31e7d57d0f6eb3ca93eab25387c7db8991cdca4b26f99fe2ba9"
+  },
+  {
+    "path": "vectors/components/03-forest-shoreline.svg",
+    "bytes": 396602,
+    "sha256": "96b1e60d539afa32b95692d230f19182fcbb7dc8f98c1ffeb75cd8339da4270a"
+  },
+  {
+    "path": "vectors/components/04-lake-reflections.svg",
+    "bytes": 54676,
+    "sha256": "3a19ce87349d793b9175eb27e0286b7940da6a69cec26db8c6960cf58b5d4698"
+  },
+  {
+    "path": "vectors/components/05-white-scene-frame.svg",
+    "bytes": 1849,
+    "sha256": "de75a0320b01d270cdd59ae9812dd97f9203dd34f142baa4b20370978577626d"
+  }
+]
