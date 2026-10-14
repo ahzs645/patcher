@@ -13,8 +13,8 @@ badge's hand-drawn frame and BC, flag and Parks shapes, where the atlas had appr
   on cloth `#ebeaf4`):
   - `composed/S30-O01.svg`: the rounded square. It's PofBC's badge whole, with the cloth filling
     the frame's outer edge, so it's cut at the frame.
-  - `composed/S30-O02.svg`: the semicircle. The atlas's semicircle cut and border, with its
-    wording and flag replaced by PofBC's, fitted to the same place.
+  - The semicircle (S30-O02) is built from the same badge by `../bc-parks-semicircles/compose.mjs`,
+    which constructs the semicircle itself as exact geometry.
 
 The badge's dating, sources and rights are as PofBC records them: seen on BC Parks brochures by
 2002 (Alice Lake Provincial Park, 03/2002), rights unresolved. "BC" and "Parks" are set in the

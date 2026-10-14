@@ -17,8 +17,8 @@
   "absorbed": 25,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28809142,
-  "storedBytes": 8258328,
+  "sourceBytes": 28806861,
+  "storedBytes": 8256047,
   "sharedBlocks": 59,
   "sharedPaths": 250
  },
@@ -2516,13 +2516,13 @@
      "label": "BC / Parks Branch — beige semicircle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed semicircle, atlas lettering",
      "family": "parks-branch-beige",
      "affiliation": "Parks",
      "svg": "bc-parks/S29-O01.svg",
      "preview": "bc-parks/previews/S29-O01.webp",
-     "sha256": "57e0e762c8bf0b0b4feded9db77a2378b16ab7ed4b41700a02044eb012bbee13",
-     "bytes": 8715,
+     "sha256": "4f181869a5963c2b8b6aec576c43c701e1b8ad1ff7a3eb2377f787be56dc45b5",
+     "bytes": 8072,
      "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view",
      "sightings": [
       {
@@ -2541,7 +2541,11 @@
      "merged": [
       "S56-O53"
      ],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "The geometry is constructed (bc-parks-semicircles/compose.mjs): a true semicircle, its field the exact inset by the border width, BRITISH COLUMBIA on a concentric arc and PARKS BRANCH on a straight baseline, both an even clearance inside the field. The letter outlines, colours and the span of each line are the atlas reconstruction's, from a photograph: the exact embroidered alphabet and thread colours remain unverified.",
+     "replaced": {
+      "svg": "supplied/bc-parks-semicircles/composed/S29-O01.svg",
+      "atlasSha256": "57e0e762c8bf0b0b4feded9db77a2378b16ab7ed4b41700a02044eb012bbee13"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -2550,13 +2554,13 @@
      "label": "BC / Parks Branch — yellow semicircle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed semicircle, atlas lettering",
      "family": "parks-branch-yellow",
      "affiliation": "Parks",
      "svg": "bc-parks/S29-O02.svg",
      "preview": "bc-parks/previews/S29-O02.webp",
-     "sha256": "95ca741ae5f4d3874f07765b8aae2b688c9265b6fbd145f49b92a546f9af7bba",
-     "bytes": 12301,
+     "sha256": "c6414cba69909a02cb3de011349077a83e74d4bc10489e7aa170f9b8ff76f913",
+     "bytes": 11686,
      "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view",
      "sightings": [
       {
@@ -2565,7 +2569,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "The geometry is constructed (bc-parks-semicircles/compose.mjs): a true semicircle, its field the exact inset by the border width, BRITISH COLUMBIA on a concentric arc and PARKS BRANCH on a straight baseline, both an even clearance inside the field. The letter outlines, colours and the span of each line are the atlas reconstruction's, from a photograph: the exact embroidered alphabet and thread colours remain unverified.",
+     "replaced": {
+      "svg": "supplied/bc-parks-semicircles/composed/S29-O02.svg",
+      "atlasSha256": "95ca741ae5f4d3874f07765b8aae2b688c9265b6fbd145f49b92a546f9af7bba"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -2608,13 +2616,13 @@
      "label": "BC / Parks Branch — dark semicircle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed semicircle, atlas lettering",
      "family": "parks-branch-dark",
      "affiliation": "Parks",
      "svg": "bc-parks/S29-O04.svg",
      "preview": "bc-parks/previews/S29-O04.webp",
-     "sha256": "b189033383d38bbe9e0c3388beeba4dac803e3862eac6e8871515fda104161c1",
-     "bytes": 8964,
+     "sha256": "6e99c8b8921ac78ed3c5d683ad05d271d109f2f958f3be17b467752627b6077f",
+     "bytes": 8329,
      "sourceUrl": "https://drive.google.com/file/d/1PCxnrSE3IXxEj5XL7paFiefSU-Kv07TM/view",
      "sightings": [
       {
@@ -2623,7 +2631,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "The geometry is constructed (bc-parks-semicircles/compose.mjs): a true semicircle, its field the exact inset by the border width, BRITISH COLUMBIA on a concentric arc and PARKS BRANCH on a straight baseline, both an even clearance inside the field. The letter outlines, colours and the span of each line are the atlas reconstruction's, from a photograph: the exact embroidered alphabet and thread colours remain unverified.",
+     "replaced": {
+      "svg": "supplied/bc-parks-semicircles/composed/S29-O04.svg",
+      "atlasSha256": "b189033383d38bbe9e0c3388beeba4dac803e3862eac6e8871515fda104161c1"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -2677,13 +2689,13 @@
      "label": "BC Parks flag — semicircle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Atlas semicircle with PofBC flag badge wording",
+     "quality": "Constructed semicircle with PofBC's flag badge",
      "family": "parks-flag-semicircle",
      "affiliation": "Parks",
      "svg": "bc-parks/S30-O02.svg",
      "preview": "bc-parks/previews/S30-O02.webp",
-     "sha256": "b2e34a876c3688176da2fc09aa1b7af980be1218da260d58be30a72cbe30564b",
-     "bytes": 8812,
+     "sha256": "414544f955995b9a4f809b4a651e6739848b59cbbf6d99ddc19af343fd9c1194",
+     "bytes": 8424,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
      "sightings": [
       {
@@ -2700,9 +2712,9 @@
       }
      ],
      "merged": [],
-     "limitations": "The semicircular cut and border are the atlas's reconstruction; the flag symbol and BC / Parks (outlined Helvetica Bold) are PofBC's flag badge, fitted to where the atlas set them. Thread colours are interpreted. Rights unresolved.",
+     "limitations": "The semicircle is constructed: a true half circle, its field the exact inset by the border width. Inside it is PofBC's BC Parks flag badge (its flag and outlined BC / Parks, as PofBC's generator exports it), in the atlas's thread colours, at the largest size that keeps an even clearance from the field's edge (bc-parks-semicircles/compose.mjs). Thread colours and the patch's exact proportions are interpreted.",
      "replaced": {
-      "svg": "supplied/bc-parks-flag-badge/composed/S30-O02.svg",
+      "svg": "supplied/bc-parks-semicircles/composed/S30-O02.svg",
       "atlasSha256": "c09b09f8d7e8282d6cc263a8a64bc283ba7411210ec65ef29a268242ddd7eb23"
      },
      "blocks": [
