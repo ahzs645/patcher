@@ -21,12 +21,13 @@ hand, because the next import replaces it.
 The **BC Forestry Patch Atlas** snapshot: the atlas site's own "Entire codebase" ZIP, shared on
 [Google Drive](https://drive.google.com/file/d/1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4/view). The import reads its
 277 reconstructions (`dist/assets/reconstructions.json` plus each SVG and WebP preview) and nothing else.
-`orgs.json` keeps 172 of them. 25 of those, the Forest Service and Wildfire Service ovals, give way to
-PofBC's drawings of the same ovals (below), and 5 draw the same design as another. With the 28 Forest Oval
-variants, that leaves 156 patches and 14 badges. It leaves out 105 that aren't patches, which
-`manifest.json` lists under `excluded` with the reason for each: the Province's identity (ministry
+`orgs.json` keeps 169 of them. 27 of those give way to supplied drawings of the same designs (below): 25
+Forest Service and Wildfire Service ovals to PofBC's, and the two Forest Service / Parks ovals; 5 draw the
+same design as another. With the 31 supplied variants, that leaves 154 patches and 14 badges. It leaves out
+108, which `manifest.json` lists under `excluded` with the reason for each: the Province's identity (ministry
 lockups, arms, programme marks), BC Timber Sales, the corporate logos of BC Hydro, BC Transit and ICBC,
-and the atlas's signs, decals, prevention cards, printed emblems and seals. It
+the atlas's signs, decals, prevention cards, printed emblems and seals, and two fragments too small to
+identify. It
 does not read the source photographs, the template library or the registers. `manifest.json` records the
 snapshot's SHA-256, and every patch keeps its atlas id, medium, quality, limitations and a link to its
 source photograph.
@@ -89,6 +90,10 @@ A stored `<org>/<id>.svg` is not the whole drawing on its own, so don't serve it
 
 To bring something back, delete its rule and re-import.
 
+`relabel` gives a design a label of its own where the atlas's was wrong or left it unresolved, with a note
+that joins its limitations (S56-O36 is the Justice Institute's bridge roundel; S48-O01 the Forest Service
+evergreen emblem). Moving a design to another organization is a `family` rule like any other.
+
 The atlas also has an entry per photograph a design was seen in, each fitted to its photograph, so
 the same patch can come out several times (the Parks scenic arch four times). The import merges
 entries that draw exactly the same thing, differing only in the canvas and the placement transform
@@ -109,6 +114,10 @@ preview, quality line and limitations:
 | S30-O01 BC Parks flag, rounded square | `supplied/bc-parks-flag-badge/`: PofBC's flag badge, whole (`compose.mjs`) |
 | S29-O01, S29-O02, S29-O04 Parks Branch semicircles; S30-O02 BC Parks flag semicircle | `supplied/bc-parks-semicircles/`: constructed geometry (a true semicircle, its field the exact inset, concentric arc lettering), with the atlas's letters or PofBC's flag badge (`compose.mjs`) |
 | S56-O21 B.C. Hydro Security shield | `supplied/bc-hydro-security/`: the atlas shield with PofBC's BC Hydro symbol in place of its plain H (`compose.mjs`) |
+| MC30-O01 Conservation Officer / BC Environment | `supplied/bc-co-environment-flag/`: the atlas shield with the waving flag of PofBC's BC Parks flag badge beside BC (`compose.mjs`) |
+| MC09-O02, MC13-O02 Division flashes | `supplied/moosecop-division-flash/`: the regular felt flash's rocker merged with a box, the outline their exact union, with the atlas's lettering (`compose.mjs`) |
+| S48-O01 Forest Service evergreen emblem, cloth square | `supplied/forest-service-emblem-square/`: PofBC's Forest Service evergreen emblem in the atlas's thread colours (`compose.mjs`) |
+| S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
 
 A composed drawing is rebuilt by running its `compose.mjs`, then re-importing. Each replaced patch
 records the supplied file and the atlas drawing's SHA-256 (`replaced`), and the verifier checks the
@@ -141,6 +150,10 @@ font the page used, so the files need no fonts. It also sets two wordings the pr
 Ministry of Forests, through the engine's own content fields. `drawings.mjs` copies the yellow-sky and
 green-and-gold drawings from PofBC and makes the recolours. After running either, re-import.
 
+The Forest Service / British Columbia / Parks tree oval is consolidated the same way, into two supplied vector
+packages kept in `supplied/forest-service-parks-oval/` (see its README): Cream backing and Without backing
+(R19, S26) from the first, and Bright gold, a second reconstruction from another image.
+
 `findPatch` follows an absorbed id to its variant (and a merged one to its patch), so old links such as
 `?patch=R22-O01` still open.
 
@@ -148,6 +161,9 @@ green-and-gold drawings from PofBC and makes the recolours. After running either
 
 `variants` shows related atlas designs as one card with a switch between them. Each group has an id, a card
 label, and its members in order (the first is the card):
+
+The Forest Service shoulder emblem (S44-O01, S56-O52) and the Conservation Officer lower rockers (MC19-O02,
+MC20-O02) are grouped this way too.
 
 ```json
 { "id": "parks-scenic-arch", "label": "British Columbia / Parks — scenic arch",

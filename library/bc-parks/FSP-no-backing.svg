@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="23 25 346 450" version="1.1" width="1038" height="1350" role="img" aria-label="Reconstructed Forest Service British Columbia Parks patch">
+  <title>Forest Service — British Columbia — Parks: clean vector reconstruction</title>
+  <desc>Hand-rebuilt from the supplied 401 × 498 pixel photograph. Symmetric idealized patch geometry; outlined lettering; no raster image or auto-traced stitch contours. Colours, font identity, and small mountain contours are approximate. Physical size is unspecified.</desc>
+  <defs>
+    <clipPath id="illustration-window" clipPathUnits="userSpaceOnUse">
+      <ellipse cx="196" cy="224" rx="68.4" ry="113.5" fill="white" />
+    </clipPath>
+  </defs>
+  <g id="green-foundation" inkscape:groupmode="layer" inkscape:label="02 · Forest-green oval and PARKS tab">
+    <path d="@pb2aaed3e575b" fill="#203E2C" id="combined-green-contour" />
+  </g>
+  <g id="seam-accent" inkscape:groupmode="layer" inkscape:label="03 · Fine green border accent">
+    <path d="@p1e46ff1cceb9" fill="none" id="inset-green-border" stroke="#60755A" stroke-width="0.9" stroke-linejoin="round" />
+  </g>
+  <g id="gold-oval-borders" inkscape:groupmode="layer" inkscape:label="04 · Gold oval piping">
+    <ellipse cx="196" cy="223" rx="119.2" ry="165" fill="none" stroke="#D3B253" stroke-width="1.8" id="outer-gold-oval" />
+    <ellipse cx="196" cy="224" rx="73.5" ry="119.1" fill="none" stroke="#D3B253" stroke-width="1.9" id="inner-gold-oval" />
+  </g>
+  <g id="central-landscape" inkscape:groupmode="layer" inkscape:label="05 · Lavender field and low mountain backdrop" clip-path="url(#illustration-window)">
+    <ellipse cx="196" cy="224" rx="68.4" ry="113.5" fill="#A9A8B8" id="lavender-field" />
+    <path d="@p21a6f66bb17a" fill="#9586AE" id="mountain-fill" />
+    <path d="@p6e40e3fb18da" fill="none" id="main-mountain-ridge" stroke="#514363" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="@p29b8fb61ab83" fill="none" id="short-ridge-facets" stroke="#514363" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="@pc2f8998a7b2f" fill="none" id="low-foothill-ridge" stroke="#514363" stroke-width="1.05" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="@p3ea1a6b877fd" fill="none" id="mountain-base-line" stroke="#514363" stroke-width="1.1" stroke-linecap="round" />
+  </g>
+  <g id="tree-and-ground" inkscape:groupmode="layer" inkscape:label="06 · Solid green conifer and foreground" clip-path="url(#illustration-window)">
+    <path d="@p13c9d46c3eaa" fill="#3C6B43" id="foreground" />
+    <path d="@p6307958b2057" fill="#3C6B43" id="seven-tier-conifer" />
+  </g>
+  <g id="oval-lettering" inkscape:groupmode="layer" inkscape:label="07 · FOREST SERVICE / BRITISH COLUMBIA · outlined letters"><g data-shared="block-d267be55c0"/></g>
+  <g id="tab-lettering" inkscape:groupmode="layer" inkscape:label="08 · PARKS · outlined letters">
+    <g id="parks-lettering" fill="#D3B253" aria-label="PARKS">
+      <title>PARKS</title>
+      <path d="@p5d228ba940aa" fill="#D3B253" id="parks-P" fill-rule="evenodd" transform="translate(73.00000,435) scale(0.07046565,-0.05501393) translate(-76,0)" />
+      <path d="M501 147 549 0H703L451 729H285L26 0H179L228 147ZM460 272H270L365 557Z" fill="#D3B253" id="parks-A" fill-rule="evenodd" transform="translate(119.64937,435) scale(0.07046565,-0.05501393) translate(-26,0)" />
+      <path d="@pb9440d3a446a" fill="#D3B253" id="parks-R" fill-rule="evenodd" transform="translate(174.75461,435) scale(0.07046565,-0.05501393) translate(-80,0)" />
+      <path d="@pc3ed15dd83cd" fill="#D3B253" id="parks-K" fill-rule="evenodd" transform="translate(223.94074,435) scale(0.07046565,-0.05501393) translate(-74,0)" />
+      <path d="M607 507C606 658 505 741 321 741C146 741 45 659 45 517C45 404 102 349 250 321L352 301C452 282 489 254 489 195C489 134 433 97 342 97C240 97 183 140 178 218H32C41 62 148 -23 334 -23C522 -23 633 64 633 213C633 328 575 388 440 414L326 436C219 457 188 478 188 531C188 586 236 621 314 621C409 621 462 581 467 507Z" fill="#D3B253" id="parks-S" fill-rule="evenodd" transform="translate(276.65015,435) scale(0.07046565,-0.05501393) translate(-32,0)" />
+    </g>
+  </g>
+</svg>

@@ -99,6 +99,12 @@ async function main() {
     return [r.id, r];
   }));
   for (const id of excludedIds.keys()) if (!known.has(id)) throw new Error(`orgs.json excludes ${id}, which isn't in the snapshot`);
+  // Designs the atlas labelled wrongly or vaguely, given a label of their own (orgs.json "relabel"),
+  // with a note on why that joins their limitations.
+  const relabels = new Map((taxonomy.relabel ?? []).map((r) => {
+    if (!known.has(r.id)) throw new Error(`orgs.json relabels ${r.id}, which isn't in the snapshot`);
+    return [r.id, r];
+  }));
   // Supplied drawings with variants that take the place of atlas designs (orgs.json "consolidate"):
   // each atlas id a variant lists is absorbed into it.
   const consolidate = taxonomy.consolidate ?? [];
@@ -201,7 +207,7 @@ async function main() {
     if (!byOrg.has(org.id)) byOrg.set(org.id, { org, patches: [] });
     byOrg.get(org.id).patches.push({
       id: d.id,
-      label: group.length > 1 ? labelFor(group) : d.label,
+      label: relabels.get(d.id)?.label ?? (group.length > 1 ? labelFor(group) : d.label),
       collection: collectionOf(d).id,
       medium: d.medium,
       quality: replacement?.quality ?? d.quality,
@@ -214,7 +220,7 @@ async function main() {
       sourceUrl: d.originalSourceUrl ?? null,
       sightings,
       merged: others.map(({ d: other }) => other.id),
-      limitations: replacement?.limitations ?? d.limitations ?? null,
+      limitations: [replacement?.limitations ?? d.limitations, relabels.get(d.id)?.note].filter(Boolean).join(' ') || null,
       // Where the drawing came from when it isn't the atlas's own reconstruction.
       ...(replacement ? { replaced: { svg: replacement.svg, atlasSha256 } } : {}),
     });

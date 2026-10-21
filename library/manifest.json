@@ -7,20 +7,20 @@
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
  "summary": {
-  "designs": 170,
+  "designs": 168,
   "byCollection": {
-   "patches": 156,
+   "patches": 154,
    "badges": 14
   },
-  "excluded": 105,
+  "excluded": 108,
   "merged": 5,
-  "absorbed": 25,
+  "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28806861,
-  "storedBytes": 8256047,
-  "sharedBlocks": 59,
-  "sharedPaths": 250
+  "sourceBytes": 28841468,
+  "storedBytes": 8267905,
+  "sharedBlocks": 60,
+  "sharedPaths": 294
  },
  "collections": [
   {
@@ -208,6 +208,12 @@
     "id": "block-bd9bcfbae5",
     "file": "shared/block-bd9bcfbae5.svg",
     "bytes": 4467,
+    "usedBy": 2
+   },
+   {
+    "id": "block-d267be55c0",
+    "file": "shared/block-d267be55c0.svg",
+    "bytes": 12877,
     "usedBy": 2
    },
    {
@@ -485,11 +491,32 @@
     "usedBy": 12
    },
    {
+    "name": "paths-variants-conservation-officer-lower-rocker",
+    "file": "shared/paths-variants-conservation-officer-lower-rocker.json",
+    "bytes": 1765,
+    "paths": 11,
+    "usedBy": 2
+   },
+   {
     "name": "paths-variants-forest-service-oval",
     "file": "shared/paths-variants-forest-service-oval.json",
     "bytes": 3233,
     "paths": 17,
     "usedBy": 10
+   },
+   {
+    "name": "paths-variants-forest-service-parks-oval",
+    "file": "shared/paths-variants-forest-service-parks-oval.json",
+    "bytes": 3071,
+    "paths": 12,
+    "usedBy": 2
+   },
+   {
+    "name": "paths-variants-forest-shoulder-emblem",
+    "file": "shared/paths-variants-forest-shoulder-emblem.json",
+    "bytes": 3860,
+    "paths": 21,
+    "usedBy": 2
    },
    {
     "name": "paths-variants-forests-oval",
@@ -521,7 +548,7 @@
    "sector": "forests",
    "description": "The Forest Service and the Ministry of Forests: tree ovals, shoulder patches, metal badges, fire-control and prevention marks.",
    "counts": {
-    "patches": 33,
+    "patches": 34,
     "badges": 4
    },
    "patches": [
@@ -1698,9 +1725,12 @@
      ],
      "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The small scene and stitched letterform widths are interpreted from a blurred screenshot.",
+     "group": "forest-shoulder-emblem",
+     "variant": "Shoulder photograph",
      "blocks": [],
      "bundles": [
-      "paths-b08402ee29"
+      "paths-b08402ee29",
+      "paths-variants-forest-shoulder-emblem"
      ]
     },
     {
@@ -1724,6 +1754,34 @@
      ],
      "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Map outline and ungulate anatomy are clean symbolic interpretations; the screenshot cannot establish detailed geographic/antler contours or species.",
+     "blocks": [],
+     "bundles": []
+    },
+    {
+     "id": "S48-O01",
+     "label": "Forest Service evergreen emblem — cloth square",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "PofBC Forest Service emblem artwork",
+     "family": "unlabelled-map-tree",
+     "affiliation": "Unconfirmed",
+     "svg": "bc-forest-service/S48-O01.svg",
+     "preview": "bc-forest-service/previews/S48-O01.webp",
+     "sha256": "0e5f0843e63ee3d75ac74e4ded6e079c30fba673e2f9b184c762243f14caf524",
+     "bytes": 2954,
+     "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view",
+     "sightings": [
+      {
+       "id": "S48-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "Drawn from PofBC's Forest Service evergreen emblem (Internal Logos → Forests) by compose.mjs: its bowed badge as the outline and an inset copy as the cloth field, its mainland, islands and evergreen, in the atlas's thread colours. The emblem is itself a vector reconstruction from a supplied image; thread colours and the patch's proportions are interpreted, and frayed threads are omitted. The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters.",
+     "replaced": {
+      "svg": "supplied/forest-service-emblem-square/composed/S48-O01.svg",
+      "atlasSha256": "08e3b25cfc6a4cd4d532f368c0d89191a9aa091077e276d77dd7eb37ac94bcd3"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -1827,9 +1885,12 @@
      ],
      "merged": [],
      "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Shared shoulder-family geometry is fitted to this separate board occurrence, with its own native crop, palette and caption positions. Tiny stitching details cannot be established at this resolution.",
+     "group": "forest-shoulder-emblem",
+     "variant": "Collector board",
      "blocks": [],
      "bundles": [
-      "paths-b08402ee29"
+      "paths-b08402ee29",
+      "paths-variants-forest-shoulder-emblem"
      ]
     }
    ]
@@ -1876,22 +1937,47 @@
    "sector": "environment",
    "description": "Parks Branch and the ministries that held it: arches, shields, rockers and ranger badges.",
    "counts": {
-    "patches": 22,
+    "patches": 23,
     "badges": 9
    },
    "patches": [
     {
-     "id": "R19-O01",
-     "label": "Forest Service / British Columbia / Parks — tree oval",
+     "id": "FSP-bright-gold",
+     "label": "Forest Service / British Columbia / Parks — tree oval · Bright gold",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Supplied vector reconstruction",
      "family": "forest-parks-oval",
      "affiliation": "Parks",
-     "svg": "bc-parks/R19-O01.svg",
-     "preview": "bc-parks/previews/R19-O01.webp",
-     "sha256": "fcd050ea71e08064db3f94b11c8146c7b414364785640be0b3a9d1513f75b75d",
-     "bytes": 13062,
+     "svg": "bc-parks/FSP-bright-gold.svg",
+     "preview": "bc-parks/previews/FSP-bright-gold.webp",
+     "sha256": "bda0bf3a2d0210f04ebb63db7a2d6e1d04756bc506a1a91e7eb240a281f25069",
+     "bytes": 23283,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "Supplied vector reconstructions of the oval and its PARKS tab (forest-service-parks-oval/, two packages, see the README): one silhouette for the oval and tab, constructed ellipses, hand-authored tree and landscape, and outlined lettering fitted from Nimbus Sans and similar faces. Not recovered production art; the original typeface, thread colours and the patch's size are not established, and the colours are flat approximations of the photographs. A second reconstruction, from a separate supplied image: brighter gold lettering and rules, a lavender sky and an eight-tier fir.",
+     "supplied": {
+      "svg": "supplied/forest-service-parks-oval/second-package/forest-service-bc-parks.svg"
+     },
+     "absorbs": [],
+     "group": "forest-service-parks-oval",
+     "variant": "Bright gold",
+     "blocks": [],
+     "bundles": []
+    },
+    {
+     "id": "FSP-cream-backing",
+     "label": "Forest Service / British Columbia / Parks — tree oval · Cream backing",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Supplied vector reconstruction",
+     "family": "forest-parks-oval",
+     "affiliation": "Parks",
+     "svg": "bc-parks/FSP-cream-backing.svg",
+     "preview": "bc-parks/previews/FSP-cream-backing.webp",
+     "sha256": "4d8233dd7a7a46eba9e318c7f4b98d2e4e399a1885726720e6bc3461d4584e82",
+     "bytes": 20034,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/parks.jpeg",
      "sightings": [
       {
@@ -1900,9 +1986,61 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [],
-     "bundles": []
+     "limitations": "Supplied vector reconstructions of the oval and its PARKS tab (forest-service-parks-oval/, two packages, see the README): one silhouette for the oval and tab, constructed ellipses, hand-authored tree and landscape, and outlined lettering fitted from Nimbus Sans and similar faces. Not recovered production art; the original typeface, thread colours and the patch's size are not established, and the colours are flat approximations of the photographs.",
+     "supplied": {
+      "svg": "supplied/forest-service-parks-oval/first-package/forest-service-parks-patch.svg"
+     },
+     "absorbs": [
+      "R19-O01"
+     ],
+     "group": "forest-service-parks-oval",
+     "variant": "Cream backing",
+     "blocks": [
+      "block-d267be55c0"
+     ],
+     "bundles": [
+      "paths-variants-forest-service-parks-oval"
+     ]
+    },
+    {
+     "id": "FSP-no-backing",
+     "label": "Forest Service / British Columbia / Parks — tree oval · Without backing",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Supplied vector reconstruction",
+     "family": "forest-parks-oval",
+     "affiliation": "Parks",
+     "svg": "bc-parks/FSP-no-backing.svg",
+     "preview": "bc-parks/previews/FSP-no-backing.webp",
+     "sha256": "de06fa7d90a7be66499b82163c8667065cd971b06b8bea6a978f8309115ef6a5",
+     "bytes": 19785,
+     "sourceUrl": "https://drive.google.com/file/d/1IjyskNsAqMVYJ5WSQ2HOr_yDV8ep8V7L/view",
+     "sightings": [
+      {
+       "id": "S26-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1IjyskNsAqMVYJ5WSQ2HOr_yDV8ep8V7L/view"
+      },
+      {
+       "id": "S28-O01",
+       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "Supplied vector reconstructions of the oval and its PARKS tab (forest-service-parks-oval/, two packages, see the README): one silhouette for the oval and tab, constructed ellipses, hand-authored tree and landscape, and outlined lettering fitted from Nimbus Sans and similar faces. Not recovered production art; the original typeface, thread colours and the patch's size are not established, and the colours are flat approximations of the photographs. The same drawing with the cream outer backing left off.",
+     "supplied": {
+      "svg": "supplied/forest-service-parks-oval/first-package/forest-service-parks-patch-no-backing.svg"
+     },
+     "absorbs": [
+      "S26-O01"
+     ],
+     "group": "forest-service-parks-oval",
+     "variant": "Without backing",
+     "blocks": [
+      "block-d267be55c0"
+     ],
+     "bundles": [
+      "paths-variants-forest-service-parks-oval"
+     ]
     },
     {
      "id": "S11-O01",
@@ -2413,34 +2551,6 @@
       "paths-8395d04aa2",
       "paths-a31172d96e"
      ]
-    },
-    {
-     "id": "S26-O01",
-     "label": "Forest Service / British Columbia / Parks — tree oval",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "forest-parks-oval",
-     "affiliation": "Parks",
-     "svg": "bc-parks/S26-O01.svg",
-     "preview": "bc-parks/previews/S26-O01.webp",
-     "sha256": "bd6dd849f11490ac8a91b9054fa6d9ba183363fb2a909721045037120206efe1",
-     "bytes": 13089,
-     "sourceUrl": "https://drive.google.com/file/d/1IjyskNsAqMVYJ5WSQ2HOr_yDV8ep8V7L/view",
-     "sightings": [
-      {
-       "id": "S26-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1IjyskNsAqMVYJ5WSQ2HOr_yDV8ep8V7L/view"
-      },
-      {
-       "id": "S28-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1MuLSTj36clSyGWkeC0qIgIbYMG0qcgbV/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
-     "blocks": [],
-     "bundles": []
     },
     {
      "id": "S27-O02",
@@ -2975,8 +3085,12 @@
      ],
      "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. This upward-facing U-shaped lower strip is a separate object, with a different cut from the standard upper detached rocker.",
+     "group": "conservation-officer-lower-rocker",
+     "variant": "Olive",
      "blocks": [],
-     "bundles": []
+     "bundles": [
+      "paths-variants-conservation-officer-lower-rocker"
+     ]
     },
     {
      "id": "MC20-O02",
@@ -2999,8 +3113,12 @@
      ],
      "merged": [],
      "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. This upward-facing U-shaped lower strip is a separate object, with a different cut from the standard upper detached rocker.",
+     "group": "conservation-officer-lower-rocker",
+     "variant": "Green and gold",
      "blocks": [],
-     "bundles": []
+     "bundles": [
+      "paths-variants-conservation-officer-lower-rocker"
+     ]
     },
     {
      "id": "MC27-O01",
@@ -3094,13 +3212,13 @@
      "label": "Conservation Officer / BC Environment — small 1992 source edition",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas shield with PofBC's BC Parks flag",
      "family": "bc-co-compact-integrated",
      "affiliation": "Conservation",
      "svg": "conservation-officer-service/MC30-O01.svg",
      "preview": "conservation-officer-service/previews/MC30-O01.webp",
-     "sha256": "861897a0265210cb14a873a0c9a9bc15374abf8a66ae0c898fecbe3a5233ad46",
-     "bytes": 38059,
+     "sha256": "bb38e3a4550eac15b6c7f5d882977e9679d051e1a294f7cd2b3775ccde18e759",
+     "bytes": 42501,
      "sourceUrl": "https://moosecop.net/History/BC_CO_BC_Env.jpg",
      "sightings": [
       {
@@ -3109,7 +3227,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components. The tiny flag beside BC is a clean symbolic reconstruction; fine embroidered flag details are unresolved.",
+     "limitations": "The border, provincial mark and captions are the atlas's reconstruction; natural outlined replacement fonts approximate the embroidered alphabets. The flag beside BC is the waving flag of PofBC's BC Parks flag badge (Logos → BC Parks), in the patch's cream thread, fitted by compose.mjs in place of the atlas's symbolic flag. Exact stitch anatomy, dimensions and thread colours remain unverified.",
+     "replaced": {
+      "svg": "supplied/bc-co-environment-flag/composed/MC30-O01.svg",
+      "atlasSha256": "861897a0265210cb14a873a0c9a9bc15374abf8a66ae0c898fecbe3a5233ad46"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -3734,13 +3856,13 @@
      "label": "Wildlife Protection / Division — notched felt flash",
      "collection": "patches",
      "medium": "Cloth rocker",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed rocker and box, atlas lettering",
      "family": "moosecop-division-notch-flash-v1",
      "affiliation": "Fish and Game / Conservation history",
      "svg": "fish-and-wildlife-branch/MC09-O02.svg",
      "preview": "fish-and-wildlife-branch/previews/MC09-O02.webp",
-     "sha256": "8fc4d0080cb7a0771b46bfed7333c769c986d6c0016837facbc1eb8e1e28add2",
-     "bytes": 7251,
+     "sha256": "f9e172f9a69e15201df9e81f6ad06781c04c00ce87b87ec83f714a75a8b79d0e",
+     "bytes": 7310,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Commission.jpg",
      "sightings": [
       {
@@ -3757,7 +3879,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
+     "limitations": "The outline is constructed (moosecop-division-flash/compose.mjs): the regular felt flash's curved rocker, as on the Game Commission and Fish & Game flashes, merged with a box under its centre, and the gold inset the same union of their insets. Lettering and colours are the atlas's interpretation; exact font identity, physical dimensions and thread colours are approximate.",
+     "replaced": {
+      "svg": "supplied/moosecop-division-flash/composed/MC09-O02.svg",
+      "atlasSha256": "8fc4d0080cb7a0771b46bfed7333c769c986d6c0016837facbc1eb8e1e28add2"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -3842,13 +3968,13 @@
      "label": "Predator Control / Division — notched felt flash",
      "collection": "patches",
      "medium": "Cloth rocker",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed rocker and box, atlas lettering",
      "family": "moosecop-division-notch-flash-v1",
      "affiliation": "Fish and Game / Conservation history",
      "svg": "fish-and-wildlife-branch/MC13-O02.svg",
      "preview": "fish-and-wildlife-branch/previews/MC13-O02.webp",
-     "sha256": "2300edc32b8d370dcfe75a0e4da4d729b2aa9da72b79effc172bbe51785d1bcd",
-     "bytes": 7398,
+     "sha256": "178e6cffd97a30c1f26cf9e92224e1320735b6a81dcab70c417508f85e7f50bb",
+     "bytes": 7457,
      "sourceUrl": "https://moosecop.net/History/BC_Predator_Control.jpg",
      "sightings": [
       {
@@ -3857,7 +3983,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
+     "limitations": "The outline is constructed (moosecop-division-flash/compose.mjs): the regular felt flash's curved rocker, as on the Game Commission and Fish & Game flashes, merged with a box under its centre, and the gold inset the same union of their insets. Lettering and colours are the atlas's interpretation; exact font identity, physical dimensions and thread colours are approximate.",
+     "replaced": {
+      "svg": "supplied/moosecop-division-flash/composed/MC13-O02.svg",
+      "atlasSha256": "2300edc32b8d370dcfe75a0e4da4d729b2aa9da72b79effc172bbe51785d1bcd"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -4939,13 +5069,13 @@
      "label": "Fire Commissioner / British Columbia — Maltese cross crest",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Supplied badge shape, atlas arms and lettering",
      "family": "fire-commissioner-maltese",
      "affiliation": "Other",
      "svg": "fire-commissioner/S56-O43.svg",
      "preview": "fire-commissioner/previews/S56-O43.webp",
-     "sha256": "f0b15494991d158fc21488ab174a09a372ae92da5e8af4f5aaa1ca4d0ed3c713",
-     "bytes": 400977,
+     "sha256": "520e8ab06f7347f111a24a1fe9773256287655dd4720f5c84188900c390a0d3b",
+     "bytes": 402675,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -4954,7 +5084,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction. The earlier inventory misidentified this as Conservation Officer; the visible caption reads FIRE COMMISSIONER. A manually aligned four-arm Maltese cross replaces the earlier arbitrary scallops. One smooth analytical quadrant defines all four arms and diagonal recesses; exact stitch-edge irregularities and photographic perspective are not copied.",
+     "limitations": "The outline is the supplied scalloped-shield shape study (fire-commissioner-badge/source/): a hand-constructed, mirrored outer silhouette and an independently drawn inset field, from a 165 × 174 photograph, so small corner radii are not resolved. The coat of arms, the three captions and the two thread colours are the atlas's; compose.mjs fits the shape to the atlas's canvas and draws the lower caption slightly smaller to clear the narrower foot. Not recovered official artwork.",
+     "replaced": {
+      "svg": "supplied/fire-commissioner-badge/composed/S56-O43.svg",
+      "atlasSha256": "f0b15494991d158fc21488ab174a09a372ae92da5e8af4f5aaa1ca4d0ed3c713"
+     },
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
      ],
@@ -5010,10 +5144,34 @@
    "sector": "justice",
    "description": null,
    "counts": {
-    "patches": 1,
+    "patches": 2,
     "badges": 0
    },
    "patches": [
+    {
+     "id": "S56-O36",
+     "label": "Justice Institute / British Columbia — gold and navy bridge roundel",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Limited-evidence clean vector study",
+     "family": "unresolved-bridge-circle",
+     "affiliation": "Unconfirmed",
+     "svg": "justice-institute/S56-O36.svg",
+     "preview": "justice-institute/previews/S56-O36.webp",
+     "sha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1",
+     "bytes": 29009,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O36",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "Clean hand-designed roundel silhouette and principal visible motif. Only BRITISH COLUMBIA is confidently legible. The remaining caption is omitted rather than invented; affiliation and fine charge details remain unresolved. The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46).",
+     "blocks": [],
+     "bundles": []
+    },
     {
      "id": "S56-O46",
      "label": "Justice Institute / British Columbia — white fan shield",
@@ -5691,106 +5849,10 @@
    "sector": "unconfirmed",
    "description": "Designs whose wording or owner the atlas could not resolve.",
    "counts": {
-    "patches": 6,
+    "patches": 1,
     "badges": 0
    },
    "patches": [
-    {
-     "id": "S24-O01",
-     "label": "Map / tree mark on spoon handle",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "Clean vector reconstruction",
-     "family": "map-tree-motif",
-     "affiliation": "Unconfirmed",
-     "svg": "unconfirmed/S24-O01.svg",
-     "preview": "unconfirmed/previews/S24-O01.webp",
-     "sha256": "76527b79ef83bc81838a5578c7257a756df6697a206559f284ae024aba9e4d53",
-     "bytes": 3230,
-     "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view",
-     "sightings": [
-      {
-       "id": "S24-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1-QVWbIQg6MrkZRVLNYN1qmXptWJfsTMt/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric reconstruction from the visible source. Readable wording is set as outlined lettering; photograph grain, wear, stitching and paper texture are excluded. Exact historical typeface and physical colours remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S42-O02",
-     "label": "Possible forest oval — vehicle windscreen",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "Limited-evidence clean vector study",
-     "family": "unresolved-windscreen",
-     "affiliation": "Unconfirmed",
-     "svg": "unconfirmed/S42-O02.svg",
-     "preview": "unconfirmed/previews/S42-O02.webp",
-     "sha256": "711a34fb6ad627e6baa1c7e743d6b0ef580b443916c7e219c81dd4addb209d7e",
-     "bytes": 3492,
-     "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view",
-     "sightings": [
-      {
-       "id": "S42-O02",
-       "sourceUrl": "https://drive.google.com/file/d/1t2QN7TC_BPUTGkjlDOUHmOT-qH7R-mxB/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "The tiny windscreen emblem is heavily blurred. This clean drawing represents its visible oval and tree-like central silhouette only; wording, affiliation and exact fine details are not recoverable.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S48-O01",
-     "label": "Unlabelled B.C. map and tree square",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "unlabelled-map-tree",
-     "affiliation": "Unconfirmed",
-     "svg": "unconfirmed/S48-O01.svg",
-     "preview": "unconfirmed/previews/S48-O01.webp",
-     "sha256": "08e3b25cfc6a4cd4d532f368c0d89191a9aa091077e276d77dd7eb37ac94bcd3",
-     "bytes": 2426,
-     "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view",
-     "sightings": [
-      {
-       "id": "S48-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. No wording in the source proves a ministry affiliation. Frayed threads are omitted. Coast and island are shared clean symbolic interpretations; the broad tree and its position differ from the printed map-tree master and have a separate cloth edition.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S56-O11",
-     "label": "Lower-left gold-lettered arch — partial",
-     "collection": "patches",
-     "medium": "Fragment",
-     "quality": "Clean partial vector reconstruction",
-     "family": "unresolved-lower-left-arch",
-     "affiliation": "Unconfirmed",
-     "svg": "unconfirmed/S56-O11.svg",
-     "preview": "unconfirmed/previews/S56-O11.webp",
-     "sha256": "b98be270020d86945f7b6f30ffffc990b7acee085c663454cecc60913372bffd",
-     "bytes": 2408,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O11",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean geometric drawing of only the visible fragment. No unseen boundary, words or complete underlying patch are claimed. Readable short letter fragments are preserved where identifiable; unresolved words are omitted.",
-     "blocks": [],
-     "bundles": []
-    },
     {
      "id": "S56-O35",
      "label": "Green/white circular emblem — wording unresolved",
@@ -5807,30 +5869,6 @@
      "sightings": [
       {
        "id": "S56-O35",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Clean hand-designed roundel silhouette and principal visible motif. Only BRITISH COLUMBIA is confidently legible. The remaining caption is omitted rather than invented; affiliation and fine charge details remain unresolved.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S56-O36",
-     "label": "Gold/navy circular bridge emblem — wording unresolved",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Limited-evidence clean vector study",
-     "family": "unresolved-bridge-circle",
-     "affiliation": "Unconfirmed",
-     "svg": "unconfirmed/S56-O36.svg",
-     "preview": "unconfirmed/previews/S56-O36.webp",
-     "sha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1",
-     "bytes": 29009,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O36",
        "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
       }
      ],
@@ -6425,6 +6463,13 @@
    "reason": "A printed seal, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, Lands Department)"
   },
   {
+   "id": "S24-O01",
+   "label": "Map / tree mark on spoon handle",
+   "medium": "Printed emblem",
+   "org": "unconfirmed",
+   "reason": "A printed mark on a spoon handle, not a patch; the same emblem is the Forest Service evergreen emblem, drawn as the cloth square S48-O01 and kept as a logo in PofBC's Internal Logos"
+  },
+  {
    "id": "S24-O02",
    "label": "Compact framed supporter arms — Forest Officer booklet; edition unresolved",
    "medium": "Printed emblem",
@@ -6437,6 +6482,13 @@
    "medium": "Printed emblem",
    "org": "province-of-bc",
    "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S42-O02",
+   "label": "Possible forest oval — vehicle windscreen",
+   "medium": "Printed emblem",
+   "org": "unconfirmed",
+   "reason": "Too little survives to draw: a blurred windscreen emblem and a lower-left fragment of an arch, neither identifiable"
   },
   {
    "id": "S53-O02",
@@ -6486,6 +6538,13 @@
    "medium": "Sign",
    "org": "bc-forest-service",
    "reason": "A sign, not a patch"
+  },
+  {
+   "id": "S56-O11",
+   "label": "Lower-left gold-lettered arch — partial",
+   "medium": "Fragment",
+   "org": "unconfirmed",
+   "reason": "Too little survives to draw: a blurred windscreen emblem and a lower-left fragment of an arch, neither identifiable"
   },
   {
    "id": "S58-O06",
@@ -6671,6 +6730,13 @@
    "into": "FO-long-ministry-wildfire"
   },
   {
+   "id": "R19-O01",
+   "label": "Forest Service / British Columbia / Parks — tree oval",
+   "medium": "Cloth patch",
+   "org": "bc-parks",
+   "into": "FSP-cream-backing"
+  },
+  {
    "id": "R20-O01",
    "label": "Wildfire Management / Forest Service / British Columbia — monochrome",
    "medium": "Digital emblem",
@@ -6725,6 +6791,13 @@
    "medium": "Decal",
    "org": "bc-forest-service",
    "into": "FO-green-gold-light-band"
+  },
+  {
+   "id": "S26-O01",
+   "label": "Forest Service / British Columbia / Parks — tree oval",
+   "medium": "Cloth patch",
+   "org": "bc-parks",
+   "into": "FSP-no-backing"
   },
   {
    "id": "S35-O01",
@@ -6795,6 +6868,34 @@
     {
      "id": "S27-O04",
      "name": "Parks · Ranger"
+    }
+   ]
+  },
+  {
+   "id": "forest-shoulder-emblem",
+   "label": "Forest / Service — British Columbia shoulder emblem",
+   "members": [
+    {
+     "id": "S44-O01",
+     "name": "Shoulder photograph"
+    },
+    {
+     "id": "S56-O52",
+     "name": "Collector board"
+    }
+   ]
+  },
+  {
+   "id": "conservation-officer-lower-rocker",
+   "label": "Conservation Officer — separate lower rocker",
+   "members": [
+    {
+     "id": "MC19-O02",
+     "name": "Olive"
+    },
+    {
+     "id": "MC20-O02",
+     "name": "Green and gold"
     }
    ]
   },
@@ -6937,6 +7038,24 @@
     {
      "id": "FO-green-gold-black",
      "name": "Black & white"
+    }
+   ]
+  },
+  {
+   "id": "forest-service-parks-oval",
+   "label": "Forest Service / British Columbia / Parks — tree oval",
+   "members": [
+    {
+     "id": "FSP-cream-backing",
+     "name": "Cream backing"
+    },
+    {
+     "id": "FSP-no-backing",
+     "name": "Without backing"
+    },
+    {
+     "id": "FSP-bright-gold",
+     "name": "Bright gold"
     }
    ]
   }

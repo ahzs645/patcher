@@ -1,0 +1,27 @@
+{
+  "verified_on": "2026-10-21",
+  "source_size": [
+    1122,
+    1402
+  ],
+  "viewBox": "0 0 1122 1402",
+  "svg_path_elements": 50,
+  "svg_rectangles": 1,
+  "svg_layers": 4,
+  "svg_bitmap_images": 0,
+  "svg_live_text_elements": 0,
+  "external_font_dependencies": false,
+  "all_ids_unique": true,
+  "all_clip_references_resolve": true,
+  "palette": [
+    "#003719",
+    "#161B44",
+    "#238D35",
+    "#B19FD1",
+    "#FCECC0",
+    "#FFD128"
+  ],
+  "pdf_embedded_image_objects": 0,
+  "comparison_registration": "Original shared source coordinates, no fitted transform",
+  "method": "Hand-authored shapes and curves; font-derived outlines plus custom R, M and PARKS letters; no bitmap autotrace"
+}

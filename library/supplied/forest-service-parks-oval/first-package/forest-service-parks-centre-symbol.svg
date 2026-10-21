@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="123 107 146 234" version="1.1" width="584" height="936" role="img" aria-label="Reconstructed Forest Service British Columbia Parks patch">
+  <title>Forest Service — British Columbia — Parks: clean vector reconstruction</title>
+  <desc>Hand-rebuilt from the supplied 401 × 498 pixel photograph. Symmetric idealized patch geometry; outlined lettering; no raster image or auto-traced stitch contours. Colours, font identity, and small mountain contours are approximate. Physical size is unspecified.</desc>
+  <defs>
+    <clipPath id="illustration-window" clipPathUnits="userSpaceOnUse">
+      <ellipse cx="196" cy="224" rx="68.4" ry="113.5" fill="white" />
+    </clipPath>
+  </defs>
+  <g id="central-landscape" inkscape:groupmode="layer" inkscape:label="05 · Lavender field and low mountain backdrop" clip-path="url(#illustration-window)">
+    <ellipse cx="196" cy="224" rx="68.4" ry="113.5" fill="#A9A8B8" id="lavender-field" />
+    <path d="M 125,244.5 L 132.5,240.5 L 139.6,238.1&#10; L 143.4,240.8 L 148.8,249.6 L 153.2,251.3 L 158.9,258.3&#10; L 165.2,260.9 L 174.2,252.7 L 180.5,256.3 L 187.7,253.7&#10; L 197,259.4 L 208.1,255.2 L 216.2,245.1 L 222.1,250.6&#10; L 230.1,238.2 L 236.1,242.4 L 241.3,233.1 L 246.2,235.6&#10; L 250.1,246.3 L 254.7,239.8 L 260.2,246.1 L 268,240.5 L 269,280.6 L 125,280.6 Z" fill="#9586AE" id="mountain-fill" />
+    <path d="M 125,244.5 L 132.5,240.5 L 139.6,238.1&#10; L 143.4,240.8 L 148.8,249.6 L 153.2,251.3 L 158.9,258.3&#10; L 165.2,260.9 L 174.2,252.7 L 180.5,256.3 L 187.7,253.7&#10; L 197,259.4 L 208.1,255.2 L 216.2,245.1 L 222.1,250.6&#10; L 230.1,238.2 L 236.1,242.4 L 241.3,233.1 L 246.2,235.6&#10; L 250.1,246.3 L 254.7,239.8 L 260.2,246.1 L 268,240.5" fill="none" id="main-mountain-ridge" stroke="#514363" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 146.5,247.4 L 149.9,254.7 L 158,261.2 M 242.1,239.9 L 245.1,247.9 L 250.6,252.3" fill="none" id="short-ridge-facets" stroke="#514363" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 129,270.3 L 140.8,272.1 L 151.8,270.3 L 162.3,271.4 L 173.8,268.1 L 185.8,271.5 L 204.7,270.7 L 218.8,272.1 L 230.1,270.5 L 239.9,267.5 L 247.7,269.8 L 261.1,272.2" fill="none" id="low-foothill-ridge" stroke="#514363" stroke-width="1.05" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 132.5,279.4 Q 164,280.8 191.2,280.2 Q 225,280.9 259.7,279.8" fill="none" id="mountain-base-line" stroke="#514363" stroke-width="1.1" stroke-linecap="round" />
+  </g>
+  <g id="tree-and-ground" inkscape:groupmode="layer" inkscape:label="06 · Solid green conifer and foreground" clip-path="url(#illustration-window)">
+    <path d="M 126,296.8 C 142,294.8 152,298.1 169,296.6 S 185,294.5 193,295.4 C 207,296.5 212,294.9 226,296.7 S 249,295.6 267,296.4 L 270,344 L 124,344 Z" fill="#3C6B43" id="foreground" />
+    <path d="M 196,119&#10; C 193.5,129 190,139 185,147.5&#10; Q 182.8,150.2 179.8,152&#10; Q 184.8,154 189.6,150.4&#10; C 186.5,159 180.8,167.4 175.4,172&#10; Q 180.2,175.6 187,171.5&#10; C 182.7,181 176.3,188.8 170.5,193.8&#10; Q 176,197.2 183.3,193.4&#10; C 178.5,203.2 172.3,210.5 166.7,214.4&#10; Q 172.9,218.9 181.5,214.8&#10; C 176.3,225 169.7,232.4 163.5,237.2&#10; Q 170.7,241.5 179.9,236.7&#10; C 173.9,247 165.2,254.4 158.6,258.2&#10; Q 167,262.4 180.9,255.2&#10; C 174.1,265.9 164.8,271.5 156.9,274.2&#10; Q 171,277 190.8,265.7&#10; L 190.8,289.8 Q 190,293.2 184.7,296.1&#10; L 207.8,296.1 Q 202.2,293.5 201.3,289.9&#10; L 201.3,265.5&#10; Q 220.5,277.1 235.2,274.4&#10; C 225.4,269.5 217.3,263 212.7,255.3&#10; Q 226.6,262.6 233.3,258.2&#10; C 224.6,253.1 216.9,245.2 212,236.9&#10; Q 222.7,241.3 229.3,237.3&#10; C 221.4,231.4 215,223.1 210.5,214.7&#10; Q 219.5,218.6 226,214.6&#10; C 219.2,209.3 212.8,201.1 208.6,193.6&#10; Q 216,197.1 221.1,193.8&#10; C 215.2,189 208.8,181.2 204.9,171.7&#10; Q 211.5,175.6 216.5,172.2&#10; C 210.8,167.2 205.4,158.4 202.7,150.6&#10; Q 208.5,154 212.3,152&#10; C 204.9,146 199.2,129.5 196,119 Z" fill="#3C6B43" id="seven-tier-conifer" />
+  </g>
+</svg>
