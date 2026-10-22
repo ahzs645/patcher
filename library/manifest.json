@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28901367,
-  "storedBytes": 8332148,
+  "sourceBytes": 28901607,
+  "storedBytes": 8332388,
   "sharedBlocks": 60,
   "sharedPaths": 294
  },
@@ -5832,13 +5832,13 @@
      "label": "British Columbia / SPCA — white-field navy-cross roundel",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed vector reconstruction",
      "family": "bc-spca-cross",
      "affiliation": "Other",
      "svg": "bc-spca/S56-O38.svg",
      "preview": "bc-spca/previews/S56-O38.webp",
-     "sha256": "fc1abe7d50b32a2bad6ab7ba15c97f76306e1963314321a501cfdcb153d3610b",
-     "bytes": 6353,
+     "sha256": "3fa5026931e576acd7853965f8e4bee64971d5771b3784bec26ba83946b57b6d",
+     "bytes": 6593,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5847,7 +5847,11 @@
       }
      ],
      "merged": [],
-     "limitations": "BRITISH COLUMBIA / SPCA is visible in the original 57×53px board region; this is not Justice Institute. Typeface, calibrated thread colors and fine embroidery remain interpreted.",
+     "limitations": "Reconstructed from a supplied 66 × 55 photograph using two concentric circles, a heavier equal-arm cross, taller BRITISH COLUMBIA lettering and a shallower SPCA arc (bc-spca-roundel/compose.mjs). The cloth field is pure white, as confirmed by the user; the photographed colour cast is lighting. The atlas's substitute glyph outlines are re-spaced and placed individually; the photograph is not auto-traced. The tiny source does not establish the original typeface, calibrated navy thread colour, physical dimensions or fine embroidery. Not recovered official artwork.",
+     "replaced": {
+      "svg": "supplied/bc-spca-roundel/composed/S56-O38.svg",
+      "atlasSha256": "fc1abe7d50b32a2bad6ab7ba15c97f76306e1963314321a501cfdcb153d3610b"
+     },
      "blocks": [],
      "bundles": []
     }
