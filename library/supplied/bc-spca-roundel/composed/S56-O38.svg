@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="spca-title spca-description">
   <title id="spca-title">British Columbia / SPCA — reconstructed cross roundel</title>
-  <desc id="spca-description">Reference-based reconstruction of S56-O38: concentric circular rim and cool grey cloth field, a single equal-arm navy cross, taller BRITISH COLUMBIA lettering and a shallow lower SPCA arc. Existing substitute letter outlines are repositioned geometrically. The 66 by 55 pixel reference cannot establish the exact typeface, thread colours or physical dimensions.</desc>
+  <desc id="spca-description">Reference-based reconstruction of S56-O38: concentric circular rim and pure white cloth field, a single equal-arm navy cross, taller BRITISH COLUMBIA lettering and a shallow lower SPCA arc. The white field is confirmed by the user; the colour cast in the photograph is lighting. Existing substitute letter outlines are repositioned geometrically. The 66 by 55 pixel reference cannot establish the exact typeface, navy thread colour or physical dimensions.</desc>
   <path data-component="outer-border" fill="#1c204a" d="M 2 50 A 48 48 0 1 0 98 50 A 48 48 0 1 0 2 50 Z"/>
-  <path data-component="cloth-field" fill="#b8bacf" d="M 5.5 50 A 44.5 44.5 0 1 0 94.5 50 A 44.5 44.5 0 1 0 5.5 50 Z"/>
+  <path data-component="cloth-field" fill="#ffffff" d="M 5.5 50 A 44.5 44.5 0 1 0 94.5 50 A 44.5 44.5 0 1 0 5.5 50 Z"/>
   <path data-component="spca-cross-charge" fill="#1c204a" d="M 42.25 30 H 57.75 V 42.25 H 70 V 57.75 H 57.75 V 70 H 42.25 V 57.75 H 30 V 42.25 H 42.25 Z"/>
   <g data-caption="BRITISH COLUMBIA" fill="#1c204a">
     <path data-letter="B" d="M62 0H311C413 0 457 15 498 64C532 105 549 157 549 216C549 256 541 292 527 320C511 351 495 367 458 387C509 419 530 460 530 531C530 647 461 718 348 718H62ZM180 315H337C393 315 426 282 426 225C426 159 393 123 331 123H180ZM180 595H321C384 595 412 571 412 519C412 466 381 437 324 437H180Z" transform="translate(18.47366 46.68645) rotate(-84) scale(0.0149 -0.0149) translate(-296 0)"/>

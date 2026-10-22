@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28862020,
-  "storedBytes": 8288457,
+  "sourceBytes": 28862114,
+  "storedBytes": 8288551,
   "sharedBlocks": 60,
   "sharedPaths": 294
  },
@@ -5831,8 +5831,8 @@
      "affiliation": "Other",
      "svg": "bc-spca/S56-O38.svg",
      "preview": "bc-spca/previews/S56-O38.webp",
-     "sha256": "2ebfa2d4cc6336c6a1daa67ec17ae0f595231a8e845bc5904498309a80c776f6",
-     "bytes": 6499,
+     "sha256": "3fa5026931e576acd7853965f8e4bee64971d5771b3784bec26ba83946b57b6d",
+     "bytes": 6593,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5841,7 +5841,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Reconstructed from a supplied 66 × 55 photograph using two concentric circles, a heavier equal-arm cross, taller BRITISH COLUMBIA lettering and a shallower SPCA arc (bc-spca-roundel/compose.mjs). The atlas's substitute glyph outlines are re-spaced and placed individually; the photograph is not auto-traced. The tiny source does not establish the original typeface, calibrated thread colours, physical dimensions or fine embroidery. Not recovered official artwork.",
+     "limitations": "Reconstructed from a supplied 66 × 55 photograph using two concentric circles, a heavier equal-arm cross, taller BRITISH COLUMBIA lettering and a shallower SPCA arc (bc-spca-roundel/compose.mjs). The cloth field is pure white, as confirmed by the user; the photographed colour cast is lighting. The atlas's substitute glyph outlines are re-spaced and placed individually; the photograph is not auto-traced. The tiny source does not establish the original typeface, calibrated navy thread colour, physical dimensions or fine embroidery. Not recovered official artwork.",
      "replaced": {
       "svg": "supplied/bc-spca-roundel/composed/S56-O38.svg",
       "atlasSha256": "fc1abe7d50b32a2bad6ab7ba15c97f76306e1963314321a501cfdcb153d3610b"

@@ -82,7 +82,7 @@ function caption(config, lower = false) {
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${geometry.canvas} ${geometry.canvas}" role="img" aria-labelledby="spca-title spca-description">
   <title id="spca-title">British Columbia / SPCA — reconstructed cross roundel</title>
-  <desc id="spca-description">Reference-based reconstruction of S56-O38: concentric circular rim and cool grey cloth field, a single equal-arm navy cross, taller BRITISH COLUMBIA lettering and a shallow lower SPCA arc. Existing substitute letter outlines are repositioned geometrically. The 66 by 55 pixel reference cannot establish the exact typeface, thread colours or physical dimensions.</desc>
+  <desc id="spca-description">Reference-based reconstruction of S56-O38: concentric circular rim and pure white cloth field, a single equal-arm navy cross, taller BRITISH COLUMBIA lettering and a shallow lower SPCA arc. The white field is confirmed by the user; the colour cast in the photograph is lighting. Existing substitute letter outlines are repositioned geometrically. The 66 by 55 pixel reference cannot establish the exact typeface, navy thread colour or physical dimensions.</desc>
   <path data-component="outer-border" fill="${ink}" d="${circle(geometry.radius)}"/>
   <path data-component="cloth-field" fill="${cloth}" d="${circle(geometry.radius - geometry.rimWidth)}"/>
   <path data-component="spca-cross-charge" fill="${ink}" d="${cross()}"/>
