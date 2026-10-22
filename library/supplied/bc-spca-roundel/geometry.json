@@ -1,0 +1,26 @@
+{
+  "canvas": 100,
+  "centre": { "x": 50, "y": 50 },
+  "radius": 48,
+  "rimWidth": 3.5,
+  "colours": { "ink": "#1c204a", "cloth": "#ffffff" },
+  "cross": { "width": 40, "bar": 15.5, "centreY": 50 },
+  "upper": {
+    "caption": "BRITISH COLUMBIA",
+    "capHeight": 10.7,
+    "capUnits": 718,
+    "radius": 31.7,
+    "firstAngle": -84,
+    "lastAngle": 84,
+    "wordSpace": 2.7
+  },
+  "lower": {
+    "caption": "SPCA",
+    "capHeight": 14,
+    "capUnits": 729,
+    "radius": 57,
+    "baselineY": 89.5,
+    "firstAngle": -24,
+    "lastAngle": 24
+  }
+}
