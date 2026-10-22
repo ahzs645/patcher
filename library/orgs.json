@@ -118,6 +118,13 @@
       "limitations": "Drawn from PofBC's Forest Service evergreen emblem (Internal Logos → Forests) by compose.mjs: its bowed badge as the outline and an inset copy as the cloth field, its mainland, islands and evergreen, in the atlas's thread colours. The emblem is itself a vector reconstruction from a supplied image; thread colours and the patch's proportions are interpreted, and frayed threads are omitted."
     },
     {
+      "id": "S56-O38",
+      "svg": "supplied/bc-spca-roundel/composed/S56-O38.svg",
+      "preview": "supplied/bc-spca-roundel/preview.webp",
+      "quality": "Constructed vector reconstruction",
+      "limitations": "Reconstructed from a supplied 66 × 55 photograph using two concentric circles, a heavier equal-arm cross, taller BRITISH COLUMBIA lettering and a shallower SPCA arc (bc-spca-roundel/compose.mjs). The atlas's substitute glyph outlines are re-spaced and placed individually; the photograph is not auto-traced. The tiny source does not establish the original typeface, calibrated thread colours, physical dimensions or fine embroidery. Not recovered official artwork."
+    },
+    {
       "id": "S56-O43",
       "svg": "supplied/fire-commissioner-badge/composed/S56-O43.svg",
       "preview": "supplied/fire-commissioner-badge/preview-S56-O43.webp",

@@ -117,6 +117,7 @@ preview, quality line and limitations:
 | MC30-O01 Conservation Officer / BC Environment | `supplied/bc-co-environment-flag/`: the atlas shield with the waving flag of PofBC's BC Parks flag badge beside BC (`compose.mjs`) |
 | MC09-O02, MC13-O02 Division flashes | `supplied/moosecop-division-flash/`: the regular felt flash's rocker merged with a box, the outline their exact union, with the atlas's lettering (`compose.mjs`) |
 | S48-O01 Forest Service evergreen emblem, cloth square | `supplied/forest-service-emblem-square/`: PofBC's Forest Service evergreen emblem in the atlas's thread colours (`compose.mjs`) |
+| S56-O38 British Columbia / SPCA roundel | `supplied/bc-spca-roundel/`: concentric circles, a heavier equal-arm cross and re-spaced atlas letter outlines fitted to a supplied 66 × 55 photograph (`compose.mjs`) |
 | S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
 | MC03-O01 B.C. Game Department / Predator Branch | `supplied/bc-predator-branch/`: a supplied vector package, used whole, which reads the captions the atlas left out |
 
