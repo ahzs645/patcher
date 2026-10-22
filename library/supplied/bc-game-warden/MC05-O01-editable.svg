@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 580" width="1260" height="580" role="img" aria-labelledby="title desc" data-reconstruction="bc-game-warden-v2">
+<title id="title">British Columbia / Game / Warden — constructed felt patch</title>
+<desc id="desc">Reference-based vector reconstruction of the supplied Game Warden photograph. Custom Bezier-stroke lettering: tall narrow upper capitals individually positioned on a high arch with modest lean, broader closely stacked GAME and WARDEN. A symmetric shallow-domed felt shape and separate gold inset regularize the fabric distortion. Exact historical alphabet, dimensions and thread colours are unverified; no photograph, traced contours or installed fonts are used.</desc>
+<g id="felt" data-component="felt-ground"><path d="M6 151 C238 68 435 2 630 2 C825 2 1022 68 1254 151 L1254 575 H6 Z" fill="#16462c"/></g>
+<g id="border" data-component="inset-border"><path d="M56 180 C267 110 452 50 630 50 C808 50 993 110 1204 180 V512 H56 Z" fill="none" stroke="#d3ac52" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/></g>
+<g id="british-columbia" data-caption="BRITISH COLUMBIA" data-live-text="BRITISH COLUMBIA" fill="none" stroke="#d3ac52" stroke-width="14.5" stroke-linejoin="round" stroke-linecap="round">
+<path id="british-columbia-01-B" data-glyph="B" d="M110 309 V201 H131.85 C153.7 201 165.1 209.64 165.1 226.92 C165.1 244.2 152.75 252.84 131.85 252.84 H110 M131.85 252.84 C155.6 252.84 167 263.64 167 282 C167 300.36 154.65 309 131.85 309 H110" transform="rotate(4 138.5 255)"/>
+<path id="british-columbia-02-R" data-glyph="R" d="M184 274 V165 H206.233 C229.433 165 242 174.81 242 192.25 C242 210.78 229.433 219.5 206.233 219.5 H184 M208.167 219.5 L242 274" transform="rotate(4 213 219.5)"/>
+<path id="british-columbia-03-I" data-glyph="I" d="M278 147 V255" transform="rotate(0 278 201)"/>
+<path id="british-columbia-04-T" data-glyph="T" d="M298 122 H361 M329.5 122 V237" transform="rotate(0 329.5 179.5)"/>
+<path id="british-columbia-05-I" data-glyph="I" d="M379 114 V223" transform="rotate(2 379 168.5)"/>
+<path id="british-columbia-06-S" data-glyph="S" d="M462.1 121.96 C456.4 110.3 447.85 105 433.6 105 C416.5 105 407 114.54 407 130.44 C407 146.34 419.35 152.7 435.5 158 C451.65 164.36 464 171.78 464 187.68 C464 203.58 452.6 211 435.5 211 C421.25 211 410.8 204.64 407 192.98" transform="rotate(3 435.5 158)"/>
+<path id="british-columbia-07-H" data-glyph="H" d="M493 91 V198 M549 91 V198 M493 144.5 H549" transform="rotate(1 521 144.5)"/>
+<path id="british-columbia-08-C" data-glyph="C" d="M660.133 103.4 C657.333 88.42 648 82 634.933 82 C615.333 82 606 100.19 606 135.5 C606 170.81 615.333 189 634.933 189 C648 189 657.333 180.44 661.067 167.6" transform="rotate(0 634 135.5)"/>
+<path id="british-columbia-09-O" data-glyph="O" d="M714 88 C695.333 88 686 106.36 686 142 C686 177.64 695.333 196 714 196 C732.667 196 742 177.64 742 142 C742 106.36 732.667 88 714 88 Z" transform="rotate(2 714 142)"/>
+<path id="british-columbia-10-L" data-glyph="L" d="M770 101 V206 H814" transform="rotate(4 792 153.5)"/>
+<path id="british-columbia-11-U" data-glyph="U" d="M834 119 V193.9 C834 215.3 841.65 226 859.5 226 C877.35 226 885 215.3 885 193.9 V119" transform="rotate(4 859.5 172.5)"/>
+<path id="british-columbia-12-M" data-glyph="M" d="M903 249 V140 L939.5 193.41 L976 140 V249" transform="rotate(5 939.5 194.5)"/>
+<path id="british-columbia-13-B" data-glyph="B" d="M994 275 V165 H1015.467 C1036.933 165 1048.133 173.8 1048.133 191.4 C1048.133 209 1036 217.8 1015.467 217.8 H994 M1015.467 217.8 C1038.8 217.8 1050 228.8 1050 247.5 C1050 266.2 1037.867 275 1015.467 275 H994" transform="rotate(5 1022 220)"/>
+<path id="british-columbia-14-I" data-glyph="I" d="M1078 185 V291" transform="rotate(6 1078 238)"/>
+<path id="british-columbia-15-A" data-glyph="A" d="M1114 313 L1143 208 L1172 313 M1124.633 277.3 H1161.367" transform="rotate(3 1143 260.5)"/>
+</g>
+<g id="game" data-caption="GAME" data-live-text="GAME" fill="none" stroke="#d3ac52" stroke-width="17" stroke-linejoin="round" stroke-linecap="round">
+<path id="game-01-G" data-glyph="G" d="M530.967 269.48 C526.833 256.28 515.467 251 501 251 C480.333 251 470 265.96 470 295 C470 324.04 481.367 339 503.067 339 C516.5 339 526.833 333.72 532 326.68 V303.8 H502.033" transform="rotate(2 501 295)"/>
+<path id="game-02-A" data-glyph="A" d="M552 339 L584 248 L616 339 M563.733 308.06 H604.267" transform="rotate(0 584 293.5)"/>
+<path id="game-03-M" data-glyph="M" d="M635 339 V247 L669 292.08 L703 247 V339" transform="rotate(0 669 293)"/>
+<path id="game-04-E" data-glyph="E" d="M787 250 H723 V339 H787 M723 293.61 H774.2" transform="rotate(0 755 294.5)"/>
+</g>
+<g id="warden" data-caption="WARDEN" data-live-text="WARDEN" fill="none" stroke="#d3ac52" stroke-width="17" stroke-linejoin="round" stroke-linecap="round">
+<path id="warden-01-W" data-glyph="W" d="M378 375 L399.933 470 L425 412.05 L450.067 470 L472 375" transform="rotate(0 425 422.5)"/>
+<path id="warden-02-A" data-glyph="A" d="M487 470 L518.5 374 L550 470 M498.55 437.36 H538.45" transform="rotate(0 518.5 422)"/>
+<path id="warden-03-R" data-glyph="R" d="M568 470 V372 H591 C615 372 628 380.82 628 396.5 C628 413.16 615 421 591 421 H568 M593 421 L628 470" transform="rotate(0 598 421)"/>
+<path id="warden-04-D" data-glyph="D" d="M648 470 V372 H667.633 C696.567 372 710 388.66 710 421 C710 453.34 696.567 470 667.633 470 H648" transform="rotate(0 679 421)"/>
+<path id="warden-05-E" data-glyph="E" d="M785 371 H729 V470 H785 M729 419.51 H773.8" transform="rotate(0 757 420.5)"/>
+<path id="warden-06-N" data-glyph="N" d="M804 470 V372 L869 470 V372" transform="rotate(0 836.5 421)"/>
+</g>
+</svg>

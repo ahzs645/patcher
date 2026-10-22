@@ -57,7 +57,9 @@ const BOTTOM = Math.max(ROCKER.yi, BOX.bottom) + 1;
 
 const source = readSnapshot(await snapshotPath({}));
 mkdirSync(join(HERE, 'composed'), { recursive: true });
-for (const id of ['MC09-O02', 'MC13-O02']) {
+// MC13-O02 now has its own reference-based outline and custom lettering in
+// supplied/bc-fish-game-rockers; rebuilding this shared outline must not replace it.
+for (const id of ['MC09-O02']) {
   const design = source.index.designs.find((d) => d.id === id);
   let svg = strFromU8(source.get(design.svgUrl));
   const scale = +/scale\(([\d.]+)\)" data-master-id="moosecop-division-notch-flash-v1"/.exec(svg)[1];

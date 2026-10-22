@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28862114,
-  "storedBytes": 8288551,
+  "sourceBytes": 28901607,
+  "storedBytes": 8332388,
   "sharedBlocks": 60,
   "sharedPaths": 294
  },
@@ -262,7 +262,7 @@
     "id": "british-columbia-e9a8932264",
     "file": "shared/british-columbia-e9a8932264.svg",
     "bytes": 4483,
-    "usedBy": 3
+    "usedBy": 2
    },
    {
     "id": "british-columbia-ec197ba42f",
@@ -3754,13 +3754,13 @@
      "label": "British Columbia / Game / Warden — green felt",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed custom lettering and felt shape",
      "family": "moosecop-game-role-cap-v1",
      "affiliation": "Fish and Game / Conservation history",
      "svg": "fish-and-wildlife-branch/MC05-O01.svg",
      "preview": "fish-and-wildlife-branch/previews/MC05-O01.webp",
-     "sha256": "022c78463e23703cf9b26a04a1f83bc0b5e20a8a2f8f77e37c8ab8e2399c73d5",
-     "bytes": 7799,
+     "sha256": "d09f53798edf4c30b1f95a5571ec06f56a66dd53dc2483a63855e724401d1214",
+     "bytes": 17772,
      "sourceUrl": "https://moosecop.net/History/BC_Game_Warden.jpg",
      "sightings": [
       {
@@ -3769,10 +3769,12 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
-     "blocks": [
-      "british-columbia-e9a8932264"
-     ],
+     "limitations": "Manual geometric reconstruction from the supplied Game Warden photograph: narrow custom upper capitals individually positioned along the arch, broader closely stacked GAME/WARDEN, and a constructed felt silhouette with an independent gold inset. No raster trace or font dependency. Fabric distortion is regularized; the historical alphabet, physical dimensions and calibrated thread colours are unverified. See supplied/bc-game-warden/README.md.",
+     "replaced": {
+      "svg": "supplied/bc-game-warden/MC05-O01.svg",
+      "atlasSha256": "022c78463e23703cf9b26a04a1f83bc0b5e20a8a2f8f77e37c8ab8e2399c73d5"
+     },
+     "blocks": [],
      "bundles": []
     },
     {
@@ -3944,13 +3946,13 @@
      "label": "British Columbia / Fish & Game Branch — old felt flash",
      "collection": "patches",
      "medium": "Cloth rocker",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed rocker and custom lettering",
      "family": "moosecop-early-two-line-flash-v1",
      "affiliation": "Fish and Game / Conservation history",
      "svg": "fish-and-wildlife-branch/MC12-O01.svg",
      "preview": "fish-and-wildlife-branch/previews/MC12-O01.webp",
-     "sha256": "b773c9d24101b29711f5a3061c51cdbf31a465b1a8dfba71fc566748c873984c",
-     "bytes": 9952,
+     "sha256": "0c9b8338176d0e0079047eca724defef1c65fb4dad2354f56ee00ee9da734fe0",
+     "bytes": 27250,
      "sourceUrl": "https://moosecop.net/History/BC_Fish_Game_old_felt.jpg",
      "sightings": [
       {
@@ -3963,7 +3965,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean interpreted reconstruction from source; embroidery texture, exact font identity, physical dimensions and calibrated thread colours are approximate. Source fit is uniform centred; no contour traces or raster imagery.",
+     "limitations": "Reference-based geometric reconstruction of the upper Fish & Game title in the supplied paired photograph (also sighting MC13-O01). Custom Bezier-stroke capitals, independently fitted row curvature and spacing, and a constructed felt outline with bevelled ends. No raster trace or font dependency. The 306 by 172 reference image limits fine detail; exact historic alphabet, physical dimensions and thread colours remain unverified. See supplied/bc-fish-game-rockers/README.md.",
+     "replaced": {
+      "svg": "supplied/bc-fish-game-rockers/MC12-O01.svg",
+      "atlasSha256": "b773c9d24101b29711f5a3061c51cdbf31a465b1a8dfba71fc566748c873984c"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -3972,13 +3978,13 @@
      "label": "Predator Control / Division — notched felt flash",
      "collection": "patches",
      "medium": "Cloth rocker",
-     "quality": "Constructed rocker and box, atlas lettering",
+     "quality": "Constructed rocker, center tab and custom lettering",
      "family": "moosecop-division-notch-flash-v1",
      "affiliation": "Fish and Game / Conservation history",
      "svg": "fish-and-wildlife-branch/MC13-O02.svg",
      "preview": "fish-and-wildlife-branch/previews/MC13-O02.webp",
-     "sha256": "178e6cffd97a30c1f26cf9e92224e1320735b6a81dcab70c417508f85e7f50bb",
-     "bytes": 7457,
+     "sha256": "b3add2b6d05f8877f2a4df17f82a56b5b9104dec70704e6fad321ef4a306201c",
+     "bytes": 19679,
      "sourceUrl": "https://moosecop.net/History/BC_Predator_Control.jpg",
      "sightings": [
       {
@@ -3987,9 +3993,9 @@
       }
      ],
      "merged": [],
-     "limitations": "The outline is constructed (moosecop-division-flash/compose.mjs): the regular felt flash's curved rocker, as on the Game Commission and Fish & Game flashes, merged with a box under its centre, and the gold inset the same union of their insets. Lettering and colours are the atlas's interpretation; exact font identity, physical dimensions and thread colours are approximate.",
+     "limitations": "Reference-based geometric reconstruction of the lower Predator Control / Division patch: a wide, shallow connected rocker with a narrower center tab, custom condensed capitals on an independent curved baseline, and almost horizontal DIVISION. Outlined lettering is tagged for raised satin stitching. No raster trace or font dependency. The 306 by 172 paired photograph limits fine detail; exact historic alphabet, dimensions and thread colours remain unverified. See supplied/bc-fish-game-rockers/README.md.",
      "replaced": {
-      "svg": "supplied/moosecop-division-flash/composed/MC13-O02.svg",
+      "svg": "supplied/bc-fish-game-rockers/MC13-O02.svg",
       "atlasSha256": "2300edc32b8d370dcfe75a0e4da4d729b2aa9da72b79effc172bbe51785d1bcd"
      },
      "blocks": [],

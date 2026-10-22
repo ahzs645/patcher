@@ -1,0 +1,50 @@
+{
+  "id": "MC05-O01",
+  "source": {
+    "file": "reference.png",
+    "uploadedName": "image(20261022-175504).png",
+    "sha256": "f9495d45eeab88e09ed6c400cc24e8d1652e1d9e7b8fccd3c30b0662667c1ea4",
+    "dimensions": [
+      1326,
+      636
+    ],
+    "sourceUrl": "https://moosecop.net/History/BC_Game_Warden.jpg"
+  },
+  "method": "Manual geometric reconstruction with custom Bezier-stroke glyphs; outline expansion by Inkscape. No bitmap tracing or installed font.",
+  "authority": "Reference interpretation; not authenticated original production artwork.",
+  "preservedFeatures": [
+    "Shallow domed felt silhouette with vertical sides and a flat bottom",
+    "Independent inset gold border",
+    "Tall narrow upper lettering on a manually positioned arch with mostly upright stems",
+    "Broad closely stacked GAME and WARDEN",
+    "Shallow central M, lowered W apex, direct diagonal R leg, tall round C/O bowls"
+  ],
+  "regularizedFeatures": [
+    "Fabric edge fuzz and waviness",
+    "Embroidery stroke irregularity",
+    "Small photographic asymmetries"
+  ],
+  "uncertain": [
+    "Exact historical font or embroidery alphabet identity",
+    "Physical patch dimensions",
+    "Calibrated thread colours",
+    "Production stitch specification"
+  ],
+  "artwork": {
+    "svg": "MC05-O01.svg",
+    "editable": "MC05-O01-editable.svg",
+    "preview": "preview-MC05-O01.webp",
+    "generator": "compose.py",
+    "layout": "layout.json"
+  },
+  "validation": {
+    "filledPaths": 27,
+    "letteringGroups": 3,
+    "fontDependencies": 0,
+    "embeddedImages": 0,
+    "liveTextElements": 0,
+    "renderedGoldConnectedComponents": 26,
+    "expectedGoldComponents": "25 separate letters and 1 inset border",
+    "rebuild": "All five generated files were byte-identical on a second run with the same toolchain."
+  }
+}

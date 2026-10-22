@@ -1,0 +1,195 @@
+{
+  "canvas": [
+    234,
+    82
+  ],
+  "colours": {
+    "felt": "#243e32",
+    "gold": "#d5b54f"
+  },
+  "rows": [
+    {
+      "text": "PREDATOR CONTROL",
+      "span": 185,
+      "cap": 15.4,
+      "baseline": 32,
+      "curve": 0.00365,
+      "stroke": 1.55,
+      "tracking": 1.8,
+      "glyphs": [
+        {
+          "glyph": "P",
+          "x": 30.6867,
+          "baseline": 59.1924,
+          "rotation": -32.214,
+          "width": 8.4419
+        },
+        {
+          "glyph": "R",
+          "x": 40.8277,
+          "baseline": 53.1781,
+          "rotation": -29.077,
+          "width": 8.8941
+        },
+        {
+          "glyph": "E",
+          "x": 51.7053,
+          "baseline": 47.5614,
+          "rotation": -25.485,
+          "width": 7.8389
+        },
+        {
+          "glyph": "D",
+          "x": 61.9477,
+          "baseline": 43.0622,
+          "rotation": -21.894,
+          "width": 9.0448
+        },
+        {
+          "glyph": "A",
+          "x": 73.6097,
+          "baseline": 38.8719,
+          "rotation": -17.576,
+          "width": 9.0448
+        },
+        {
+          "glyph": "T",
+          "x": 85.5633,
+          "baseline": 35.6072,
+          "rotation": -12.925,
+          "width": 8.7433
+        },
+        {
+          "glyph": "O",
+          "x": 97.449,
+          "baseline": 33.3952,
+          "rotation": -8.123,
+          "width": 9.0448
+        },
+        {
+          "glyph": "R",
+          "x": 109.781,
+          "baseline": 32.1902,
+          "rotation": -3.017,
+          "width": 8.8941
+        },
+        {
+          "glyph": "C",
+          "x": 127.8624,
+          "baseline": 32.4307,
+          "rotation": 4.534,
+          "width": 8.5926
+        },
+        {
+          "glyph": "O",
+          "x": 139.7128,
+          "baseline": 33.8829,
+          "rotation": 9.414,
+          "width": 9.0448
+        },
+        {
+          "glyph": "N",
+          "x": 151.8392,
+          "baseline": 36.4303,
+          "rotation": 14.269,
+          "width": 9.0448
+        },
+        {
+          "glyph": "T",
+          "x": 163.7158,
+          "baseline": 39.9656,
+          "rotation": 18.831,
+          "width": 8.7433
+        },
+        {
+          "glyph": "R",
+          "x": 175.0095,
+          "baseline": 44.2826,
+          "rotation": 22.951,
+          "width": 8.8941
+        },
+        {
+          "glyph": "O",
+          "x": 186.1142,
+          "baseline": 49.4352,
+          "rotation": 26.772,
+          "width": 9.0448
+        },
+        {
+          "glyph": "L",
+          "x": 196.9993,
+          "baseline": 55.3596,
+          "rotation": 30.285,
+          "width": 7.3866
+        }
+      ]
+    },
+    {
+      "text": "DIVISION",
+      "span": 86,
+      "cap": 15.6,
+      "baseline": 58,
+      "curve": 0,
+      "stroke": 1.6,
+      "tracking": 3.0,
+      "glyphs": [
+        {
+          "glyph": "D",
+          "x": 74.8,
+          "baseline": 58.0,
+          "rotation": -0.0,
+          "width": 10.5811
+        },
+        {
+          "glyph": "I",
+          "x": 89.9811,
+          "baseline": 58.0,
+          "rotation": -0.0,
+          "width": 0.0
+        },
+        {
+          "glyph": "V",
+          "x": 94.5811,
+          "baseline": 58.0,
+          "rotation": -0.0,
+          "width": 10.5811
+        },
+        {
+          "glyph": "I",
+          "x": 109.7622,
+          "baseline": 58.0,
+          "rotation": -0.0,
+          "width": 0.0
+        },
+        {
+          "glyph": "S",
+          "x": 114.3622,
+          "baseline": 58.0,
+          "rotation": -0.0,
+          "width": 9.8757
+        },
+        {
+          "glyph": "I",
+          "x": 128.8378,
+          "baseline": 58.0,
+          "rotation": 0.0,
+          "width": 0.0
+        },
+        {
+          "glyph": "O",
+          "x": 133.4378,
+          "baseline": 58.0,
+          "rotation": 0.0,
+          "width": 10.5811
+        },
+        {
+          "glyph": "N",
+          "x": 148.6189,
+          "baseline": 58.0,
+          "rotation": 0.0,
+          "width": 10.5811
+        }
+      ]
+    }
+  ]
+}
