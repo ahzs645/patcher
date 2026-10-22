@@ -118,6 +118,7 @@ preview, quality line and limitations:
 | MC09-O02, MC13-O02 Division flashes | `supplied/moosecop-division-flash/`: the regular felt flash's rocker merged with a box, the outline their exact union, with the atlas's lettering (`compose.mjs`) |
 | S48-O01 Forest Service evergreen emblem, cloth square | `supplied/forest-service-emblem-square/`: PofBC's Forest Service evergreen emblem in the atlas's thread colours (`compose.mjs`) |
 | S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
+| MC03-O01 B.C. Game Department / Predator Branch | `supplied/bc-predator-branch/`: a supplied vector package, used whole, which reads the captions the atlas left out |
 
 A composed drawing is rebuilt by running its `compose.mjs`, then re-importing. Each replaced patch
 records the supplied file and the atlas drawing's SHA-256 (`replaced`), and the verifier checks the

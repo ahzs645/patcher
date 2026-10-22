@@ -15,7 +15,8 @@
   ],
   "relabel": [
     { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
-    { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy bridge roundel", "note": "The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46)." }
+    { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy bridge roundel", "note": "The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46)." },
+    { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The atlas left the captions out, unread from a 157 × 173 photograph; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
   ],
   "replace": [
     {
@@ -122,6 +123,13 @@
       "preview": "supplied/fire-commissioner-badge/preview-S56-O43.webp",
       "quality": "Supplied badge shape, atlas arms and lettering",
       "limitations": "The outline is the supplied scalloped-shield shape study (fire-commissioner-badge/source/): a hand-constructed, mirrored outer silhouette and an independently drawn inset field, from a 165 × 174 photograph, so small corner radii are not resolved. The coat of arms, the three captions and the two thread colours are the atlas's; compose.mjs fits the shape to the atlas's canvas and draws the lower caption slightly smaller to clear the narrower foot. Not recovered official artwork."
+    },
+    {
+      "id": "MC03-O01",
+      "svg": "supplied/bc-predator-branch/vectors/bc-predator-branch-rebuilt.svg",
+      "preview": "supplied/bc-predator-branch/preview.webp",
+      "quality": "Supplied vector reconstruction",
+      "limitations": "Manual vector reconstruction of a supplied image (B.C. Predator Branch vector package): a symmetric border of six Bézier arcs, a hand-drawn wolf's head, and fourteen custom glyphs placed one by one for B.C. GAME DEPARTMENT and PREDATOR BRANCH. Not an official master; the shading is flattened to cream and near-black, and the lettering and border are close to the reference, not measured from an original (95% foreground overlap with it). The 1951 date is the publishing page's description, not verified. See the package README."
     }
   ],
   "variants": [

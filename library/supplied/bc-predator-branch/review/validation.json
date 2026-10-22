@@ -1,0 +1,438 @@
+{
+  "svg": {
+    "layers": [
+      "01 - Black patch base",
+      "02 - Cream border",
+      "03 - Animal head",
+      "04 - B.C. GAME",
+      "05 - DEPARTMENT",
+      "06 - PREDATOR",
+      "07 - BRANCH"
+    ],
+    "paths": 36,
+    "images": 0,
+    "live_text": 0
+  },
+  "pdf": {
+    "pages": 1,
+    "raster_images": 0,
+    "font_resources": 0
+  },
+  "comparison": {
+    "method": "Pixel masks used only for QA, never to derive outline paths. RGB min >180, alpha >128; vector render sampled at source dimensions.",
+    "reference_components": 34,
+    "vector_components": 34,
+    "foreground_iou": 0.951449,
+    "silhouette_iou": 0.992436,
+    "components": [
+      {
+        "reference_component": 1,
+        "bounds": [
+          68,
+          41,
+          1244,
+          1157
+        ],
+        "iou": 0.92012,
+        "reference_area": 119581,
+        "vector_area": 119040
+      },
+      {
+        "reference_component": 2,
+        "bounds": [
+          689,
+          149,
+          788,
+          255
+        ],
+        "iou": 0.93812,
+        "reference_area": 5369,
+        "vector_area": 5374
+      },
+      {
+        "reference_component": 3,
+        "bounds": [
+          505,
+          157,
+          617,
+          274
+        ],
+        "iou": 0.933708,
+        "reference_area": 5546,
+        "vector_area": 5801
+      },
+      {
+        "reference_component": 4,
+        "bounds": [
+          743,
+          197,
+          843,
+          306
+        ],
+        "iou": 0.915781,
+        "reference_area": 4394,
+        "vector_area": 4614
+      },
+      {
+        "reference_component": 5,
+        "bounds": [
+          426,
+          213,
+          560,
+          348
+        ],
+        "iou": 0.930224,
+        "reference_area": 7987,
+        "vector_area": 8196
+      },
+      {
+        "reference_component": 6,
+        "bounds": [
+          787,
+          242,
+          888,
+          330
+        ],
+        "iou": 0.912615,
+        "reference_area": 4645,
+        "vector_area": 4679
+      },
+      {
+        "reference_component": 7,
+        "bounds": [
+          822,
+          308,
+          929,
+          415
+        ],
+        "iou": 0.898734,
+        "reference_area": 5159,
+        "vector_area": 5041
+      },
+      {
+        "reference_component": 8,
+        "bounds": [
+          379,
+          312,
+          495,
+          424
+        ],
+        "iou": 0.899854,
+        "reference_area": 5913,
+        "vector_area": 5773
+      },
+      {
+        "reference_component": 9,
+        "bounds": [
+          875,
+          361,
+          980,
+          476
+        ],
+        "iou": 0.907053,
+        "reference_area": 5701,
+        "vector_area": 5953
+      },
+      {
+        "reference_component": 10,
+        "bounds": [
+          321,
+          378,
+          431,
+          484
+        ],
+        "iou": 0.932141,
+        "reference_area": 6589,
+        "vector_area": 6594
+      },
+      {
+        "reference_component": 11,
+        "bounds": [
+          366,
+          392,
+          932,
+          844
+        ],
+        "iou": 0.988613,
+        "reference_area": 133583,
+        "vector_area": 133271
+      },
+      {
+        "reference_component": 12,
+        "bounds": [
+          923,
+          423,
+          1026,
+          515
+        ],
+        "iou": 0.886066,
+        "reference_area": 3604,
+        "vector_area": 3746
+      },
+      {
+        "reference_component": 13,
+        "bounds": [
+          948,
+          487,
+          1075,
+          615
+        ],
+        "iou": 0.926403,
+        "reference_area": 7542,
+        "vector_area": 8006
+      },
+      {
+        "reference_component": 14,
+        "bounds": [
+          250,
+          497,
+          360,
+          594
+        ],
+        "iou": 0.916153,
+        "reference_area": 5921,
+        "vector_area": 5574
+      },
+      {
+        "reference_component": 15,
+        "bounds": [
+          350,
+          500,
+          381,
+          529
+        ],
+        "iou": 0.920339,
+        "reference_area": 545,
+        "vector_area": 588
+      },
+      {
+        "reference_component": 16,
+        "bounds": [
+          991,
+          584,
+          1104,
+          677
+        ],
+        "iou": 0.90168,
+        "reference_area": 4875,
+        "vector_area": 5086
+      },
+      {
+        "reference_component": 17,
+        "bounds": [
+          302,
+          600,
+          333,
+          628
+        ],
+        "iou": 0.916803,
+        "reference_area": 570,
+        "vector_area": 605
+      },
+      {
+        "reference_component": 18,
+        "bounds": [
+          195,
+          607,
+          317,
+          708
+        ],
+        "iou": 0.961058,
+        "reference_area": 7511,
+        "vector_area": 7546
+      },
+      {
+        "reference_component": 19,
+        "bounds": [
+          1015,
+          653,
+          1134,
+          757
+        ],
+        "iou": 0.919228,
+        "reference_area": 6520,
+        "vector_area": 6905
+      },
+      {
+        "reference_component": 20,
+        "bounds": [
+          1045,
+          731,
+          1155,
+          803
+        ],
+        "iou": 0.952601,
+        "reference_area": 3727,
+        "vector_area": 3894
+      },
+      {
+        "reference_component": 21,
+        "bounds": [
+          299,
+          851,
+          388,
+          957
+        ],
+        "iou": 0.972652,
+        "reference_area": 6578,
+        "vector_area": 6550
+      },
+      {
+        "reference_component": 22,
+        "bounds": [
+          852,
+          851,
+          933,
+          959
+        ],
+        "iou": 0.958956,
+        "reference_area": 6863,
+        "vector_area": 6644
+      },
+      {
+        "reference_component": 23,
+        "bounds": [
+          944,
+          851,
+          1032,
+          958
+        ],
+        "iou": 0.957797,
+        "reference_area": 7654,
+        "vector_area": 7701
+      },
+      {
+        "reference_component": 24,
+        "bounds": [
+          398,
+          852,
+          486,
+          957
+        ],
+        "iou": 0.983827,
+        "reference_area": 7693,
+        "vector_area": 7763
+      },
+      {
+        "reference_component": 25,
+        "bounds": [
+          585,
+          852,
+          672,
+          958
+        ],
+        "iou": 0.973145,
+        "reference_area": 7452,
+        "vector_area": 7463
+      },
+      {
+        "reference_component": 26,
+        "bounds": [
+          673,
+          852,
+          771,
+          958
+        ],
+        "iou": 0.962782,
+        "reference_area": 6502,
+        "vector_area": 6366
+      },
+      {
+        "reference_component": 27,
+        "bounds": [
+          499,
+          853,
+          572,
+          956
+        ],
+        "iou": 0.951289,
+        "reference_area": 6219,
+        "vector_area": 6119
+      },
+      {
+        "reference_component": 28,
+        "bounds": [
+          763,
+          853,
+          844,
+          958
+        ],
+        "iou": 0.97266,
+        "reference_area": 4681,
+        "vector_area": 4699
+      },
+      {
+        "reference_component": 29,
+        "bounds": [
+          774,
+          976,
+          853,
+          1084
+        ],
+        "iou": 0.947673,
+        "reference_area": 5811,
+        "vector_area": 5616
+      },
+      {
+        "reference_component": 30,
+        "bounds": [
+          375,
+          977,
+          466,
+          1083
+        ],
+        "iou": 0.980369,
+        "reference_area": 8256,
+        "vector_area": 8187
+      },
+      {
+        "reference_component": 31,
+        "bounds": [
+          477,
+          977,
+          565,
+          1084
+        ],
+        "iou": 0.977772,
+        "reference_area": 7781,
+        "vector_area": 7701
+      },
+      {
+        "reference_component": 32,
+        "bounds": [
+          570,
+          977,
+          669,
+          1084
+        ],
+        "iou": 0.962042,
+        "reference_area": 6519,
+        "vector_area": 6507
+      },
+      {
+        "reference_component": 33,
+        "bounds": [
+          677,
+          977,
+          763,
+          1084
+        ],
+        "iou": 0.971506,
+        "reference_area": 7971,
+        "vector_area": 7943
+      },
+      {
+        "reference_component": 34,
+        "bounds": [
+          862,
+          977,
+          945,
+          1084
+        ],
+        "iou": 0.985048,
+        "reference_area": 7399,
+        "vector_area": 7338
+      }
+    ]
+  }
+}

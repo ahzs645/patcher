@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28841468,
-  "storedBytes": 8267905,
+  "sourceBytes": 28861874,
+  "storedBytes": 8288311,
   "sharedBlocks": 60,
   "sharedPaths": 294
  },
@@ -3723,16 +3723,16 @@
    "patches": [
     {
      "id": "MC03-O01",
-     "label": "Predatory-control triangular wolf patch — limited evidence study",
+     "label": "B.C. Game Department / Predator Branch — wolf's head triangle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Limited-evidence clean vector study",
+     "quality": "Supplied vector reconstruction",
      "family": "moosecop-predator-triangle-study-v1",
      "affiliation": "Fish and Game / Conservation history",
      "svg": "fish-and-wildlife-branch/MC03-O01.svg",
      "preview": "fish-and-wildlife-branch/previews/MC03-O01.webp",
-     "sha256": "b0beddedcbba63d40101de1801b532c53a128f5535276b9ab9ab253e14491aef",
-     "bytes": 1162,
+     "sha256": "3650282b5efc6e95401bd233f5323d54aec3b2b0f10d112087286df0a3f9d2dd",
+     "bytes": 21568,
      "sourceUrl": "https://moosecop.net/History/PredControlPatch.jpg",
      "sightings": [
       {
@@ -3741,7 +3741,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Limited evidence study of visible complete triangular border and pale wolf profile. Unknown captions deliberately omitted, not authenticated. The page owner describes a1951 shoulder patch but gives no authenticated manufacturing dimensions; source image157x173px. Wolf details and thread colours remain approximate.",
+     "limitations": "Manual vector reconstruction of a supplied image (B.C. Predator Branch vector package): a symmetric border of six Bézier arcs, a hand-drawn wolf's head, and fourteen custom glyphs placed one by one for B.C. GAME DEPARTMENT and PREDATOR BRANCH. Not an official master; the shading is flattened to cream and near-black, and the lettering and border are close to the reference, not measured from an original (95% foreground overlap with it). The 1951 date is the publishing page's description, not verified. See the package README. The atlas left the captions out, unread from a 157 × 173 photograph; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head.",
+     "replaced": {
+      "svg": "supplied/bc-predator-branch/vectors/bc-predator-branch-rebuilt.svg",
+      "atlasSha256": "b0beddedcbba63d40101de1801b532c53a128f5535276b9ab9ab253e14491aef"
+     },
      "blocks": [],
      "bundles": []
     },
