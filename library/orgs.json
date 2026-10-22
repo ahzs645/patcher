@@ -104,11 +104,25 @@
       "limitations": "The outline is constructed (moosecop-division-flash/compose.mjs): the regular felt flash's curved rocker, as on the Game Commission and Fish & Game flashes, merged with a box under its centre, and the gold inset the same union of their insets. Lettering and colours are the atlas's interpretation; exact font identity, physical dimensions and thread colours are approximate."
     },
     {
+      "id": "MC05-O01",
+      "svg": "supplied/bc-game-warden/MC05-O01.svg",
+      "preview": "supplied/bc-game-warden/preview-MC05-O01.webp",
+      "quality": "Constructed custom lettering and felt shape",
+      "limitations": "Manual geometric reconstruction from the supplied Game Warden photograph: narrow custom upper capitals individually positioned along the arch, broader closely stacked GAME/WARDEN, and a constructed felt silhouette with an independent gold inset. No raster trace or font dependency. Fabric distortion is regularized; the historical alphabet, physical dimensions and calibrated thread colours are unverified. See supplied/bc-game-warden/README.md."
+    },
+    {
+      "id": "MC12-O01",
+      "svg": "supplied/bc-fish-game-rockers/MC12-O01.svg",
+      "preview": "supplied/bc-fish-game-rockers/preview-MC12-O01.webp",
+      "quality": "Constructed rocker and custom lettering",
+      "limitations": "Reference-based geometric reconstruction of the upper Fish & Game title in the supplied paired photograph (also sighting MC13-O01). Custom Bezier-stroke capitals, independently fitted row curvature and spacing, and a constructed felt outline with bevelled ends. No raster trace or font dependency. The 306 by 172 reference image limits fine detail; exact historic alphabet, physical dimensions and thread colours remain unverified. See supplied/bc-fish-game-rockers/README.md."
+    },
+    {
       "id": "MC13-O02",
-      "svg": "supplied/moosecop-division-flash/composed/MC13-O02.svg",
-      "preview": "supplied/moosecop-division-flash/preview-MC13-O02.webp",
-      "quality": "Constructed rocker and box, atlas lettering",
-      "limitations": "The outline is constructed (moosecop-division-flash/compose.mjs): the regular felt flash's curved rocker, as on the Game Commission and Fish & Game flashes, merged with a box under its centre, and the gold inset the same union of their insets. Lettering and colours are the atlas's interpretation; exact font identity, physical dimensions and thread colours are approximate."
+      "svg": "supplied/bc-fish-game-rockers/MC13-O02.svg",
+      "preview": "supplied/bc-fish-game-rockers/preview-MC13-O02.webp",
+      "quality": "Constructed rocker, center tab and custom lettering",
+      "limitations": "Reference-based geometric reconstruction of the lower Predator Control / Division patch: a wide, shallow connected rocker with a narrower center tab, custom condensed capitals on an independent curved baseline, and almost horizontal DIVISION. Outlined lettering is tagged for raised satin stitching. No raster trace or font dependency. The 306 by 172 paired photograph limits fine detail; exact historic alphabet, dimensions and thread colours remain unverified. See supplied/bc-fish-game-rockers/README.md."
     },
     {
       "id": "S48-O01",

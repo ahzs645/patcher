@@ -1,0 +1,244 @@
+{
+  "canvas": [
+    300,
+    112
+  ],
+  "colours": {
+    "felt": "#243e32",
+    "gold": "#d5b54f"
+  },
+  "rows": [
+    {
+      "text": "BRITISH COLUMBIA",
+      "span": 234,
+      "cap": 19.8,
+      "baseline": 39,
+      "curve": 0.00248,
+      "stroke": 1.95,
+      "tracking": 2.8,
+      "glyphs": [
+        {
+          "glyph": "B",
+          "x": 39.3083,
+          "baseline": 69.3866,
+          "rotation": -28.768,
+          "width": 13.0007
+        },
+        {
+          "glyph": "R",
+          "x": 55.1199,
+          "baseline": 61.3256,
+          "rotation": -25.202,
+          "width": 13.2249
+        },
+        {
+          "glyph": "I",
+          "x": 71.6316,
+          "baseline": 54.2312,
+          "rotation": -21.241,
+          "width": 0.0
+        },
+        {
+          "glyph": "T",
+          "x": 76.0752,
+          "baseline": 52.5529,
+          "rotation": -20.136,
+          "width": 13.0007
+        },
+        {
+          "glyph": "I",
+          "x": 92.9536,
+          "baseline": 47.0706,
+          "rotation": -15.799,
+          "width": 0.0
+        },
+        {
+          "glyph": "S",
+          "x": 97.5375,
+          "baseline": 45.8257,
+          "rotation": -14.586,
+          "width": 12.5524
+        },
+        {
+          "glyph": "H",
+          "x": 114.4373,
+          "baseline": 42.1365,
+          "rotation": -10.004,
+          "width": 13.0007
+        },
+        {
+          "glyph": "C",
+          "x": 139.5332,
+          "baseline": 39.2717,
+          "rotation": -2.972,
+          "width": 12.7766
+        },
+        {
+          "glyph": "O",
+          "x": 157.0536,
+          "baseline": 39.1234,
+          "rotation": 2.004,
+          "width": 13.449
+        },
+        {
+          "glyph": "L",
+          "x": 175.1887,
+          "baseline": 40.5735,
+          "rotation": 7.121,
+          "width": 10.9834
+        },
+        {
+          "glyph": "U",
+          "x": 190.7124,
+          "baseline": 43.1106,
+          "rotation": 11.416,
+          "width": 13.449
+        },
+        {
+          "glyph": "M",
+          "x": 208.3805,
+          "baseline": 47.4526,
+          "rotation": 16.149,
+          "width": 16.1388
+        },
+        {
+          "glyph": "B",
+          "x": 228.1594,
+          "baseline": 54.1501,
+          "rotation": 21.19,
+          "width": 13.0007
+        },
+        {
+          "glyph": "I",
+          "x": 244.4743,
+          "baseline": 61.135,
+          "rotation": 25.107,
+          "width": 0.0
+        },
+        {
+          "glyph": "A",
+          "x": 248.7578,
+          "baseline": 63.1877,
+          "rotation": 26.097,
+          "width": 13.449
+        }
+      ]
+    },
+    {
+      "text": "FISH & GAME BRANCH",
+      "span": 220,
+      "cap": 17.5,
+      "baseline": 65,
+      "curve": 0.0023,
+      "stroke": 1.8,
+      "tracking": 2.35,
+      "glyphs": [
+        {
+          "glyph": "F",
+          "x": 44.8653,
+          "baseline": 90.4226,
+          "rotation": -25.809,
+          "width": 8.8337
+        },
+        {
+          "glyph": "I",
+          "x": 56.6757,
+          "baseline": 85.0317,
+          "rotation": -23.233,
+          "width": 0.0
+        },
+        {
+          "glyph": "S",
+          "x": 60.5012,
+          "baseline": 83.4231,
+          "rotation": -22.377,
+          "width": 9.5132
+        },
+        {
+          "glyph": "H",
+          "x": 73.262,
+          "baseline": 78.544,
+          "rotation": -19.443,
+          "width": 9.853
+        },
+        {
+          "glyph": "&",
+          "x": 92.9965,
+          "baseline": 72.4736,
+          "rotation": -14.693,
+          "width": 10.7024
+        },
+        {
+          "glyph": "G",
+          "x": 114.0159,
+          "baseline": 67.9782,
+          "rotation": -9.399,
+          "width": 10.1927
+        },
+        {
+          "glyph": "A",
+          "x": 128.2313,
+          "baseline": 66.0899,
+          "rotation": -5.718,
+          "width": 10.1927
+        },
+        {
+          "glyph": "M",
+          "x": 142.5392,
+          "baseline": 65.128,
+          "rotation": -1.966,
+          "width": 12.2313
+        },
+        {
+          "glyph": "E",
+          "x": 158.9165,
+          "baseline": 65.1829,
+          "rotation": 2.349,
+          "width": 8.8337
+        },
+        {
+          "glyph": "B",
+          "x": 178.4715,
+          "baseline": 66.8644,
+          "rotation": 7.461,
+          "width": 9.853
+        },
+        {
+          "glyph": "R",
+          "x": 192.2904,
+          "baseline": 69.1135,
+          "rotation": 11.009,
+          "width": 10.0228
+        },
+        {
+          "glyph": "A",
+          "x": 206.1115,
+          "baseline": 72.2416,
+          "rotation": 14.473,
+          "width": 10.1927
+        },
+        {
+          "glyph": "N",
+          "x": 219.8855,
+          "baseline": 76.2332,
+          "rotation": 17.821,
+          "width": 10.1927
+        },
+        {
+          "glyph": "C",
+          "x": 233.4104,
+          "baseline": 81.0018,
+          "rotation": 20.991,
+          "width": 9.6831
+        },
+        {
+          "glyph": "H",
+          "x": 246.1942,
+          "baseline": 86.2826,
+          "rotation": 23.869,
+          "width": 9.853
+        }
+      ]
+    }
+  ]
+}

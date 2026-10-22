@@ -1,11 +1,15 @@
 # Division flashes: a rocker and a box, merged
 
+MC13-O02 is now supplied by `../bc-fish-game-rockers/`, with its own photograph-
+based proportions and custom lettering. This older construction is kept for
+MC09-O02 only; its historical MC13 files are retained as source history.
+
 MC09-O02 (Wildlife Protection / Division) and MC13-O02 (Predator Control / Division) are the regular
 curved felt flash with a box joined under its centre for DIVISION. The atlas drew each as one freehand
 outline with notched shoulders; here it is the two shapes merged.
 
 ```bash
-node library/supplied/moosecop-division-flash/compose.mjs   # writes composed/MC09-O02.svg, MC13-O02.svg
+node library/supplied/moosecop-division-flash/compose.mjs   # writes composed/MC09-O02.svg
 npm run library:import
 ```
 

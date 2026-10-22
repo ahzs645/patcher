@@ -1,0 +1,28 @@
+{
+  "reference": {
+    "file": "reference.png",
+    "supplied_name": "image(20261022-175405).png",
+    "dimensions": [
+      306,
+      172
+    ],
+    "sha256": "0ce72139ca9ebc60bc1d546b873121af1f66f66ac6301f4779685e22643f8836",
+    "published_source": "https://moosecop.net/History/BC_Predator_Control.jpg"
+  },
+  "method": "Manually constructed cubic Bezier patch shapes and original single-line glyph skeletons; per-row arc-length placement; Inkscape expands vector strokes. No contour tracing or font file used.",
+  "designs": {
+    "MC12-O01": "Upper Fish & Game title; the catalogue records MC13-O01 as another sighting.",
+    "MC13-O02": "Lower Predator Control / Division rocker."
+  },
+  "uncertainties": [
+    "Exact historical typeface not identified",
+    "Small source limits fine glyph and edge detail",
+    "Photographic fabric distortion regularized",
+    "No verified physical dimensions or calibrated thread colours"
+  ],
+  "checks": {
+    "MC12-O01_gold_components": 31,
+    "MC13-O02_gold_components": 24,
+    "meaning": "One connected gold inset plus a separate component for every glyph; no letter-border or letter-letter collisions at 1200px rendering."
+  }
+}

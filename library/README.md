@@ -115,7 +115,9 @@ preview, quality line and limitations:
 | S29-O01, S29-O02, S29-O04 Parks Branch semicircles; S30-O02 BC Parks flag semicircle | `supplied/bc-parks-semicircles/`: constructed geometry (a true semicircle, its field the exact inset, concentric arc lettering), with the atlas's letters or PofBC's flag badge (`compose.mjs`) |
 | S56-O21 B.C. Hydro Security shield | `supplied/bc-hydro-security/`: the atlas shield with PofBC's BC Hydro symbol in place of its plain H (`compose.mjs`) |
 | MC30-O01 Conservation Officer / BC Environment | `supplied/bc-co-environment-flag/`: the atlas shield with the waving flag of PofBC's BC Parks flag badge beside BC (`compose.mjs`) |
-| MC09-O02, MC13-O02 Division flashes | `supplied/moosecop-division-flash/`: the regular felt flash's rocker merged with a box, the outline their exact union, with the atlas's lettering (`compose.mjs`) |
+| MC09-O02 Wildlife Protection / Division | `supplied/moosecop-division-flash/`: the regular felt flash's rocker merged with a box, the outline their exact union, with the atlas's lettering (`compose.mjs`) |
+| MC12-O01 Fish & Game title, MC13-O02 Predator Control / Division | `supplied/bc-fish-game-rockers/`: constructed felt shapes and custom stroke alphabets, with independent curved baselines and a straight DIVISION row (`compose.py`) |
+| MC05-O01 British Columbia / Game / Warden | `supplied/bc-game-warden/`: a constructed felt cap and custom tall narrow upper lettering, with individually placed glyphs and compact GAME/WARDEN rows (`compose.py`) |
 | S48-O01 Forest Service evergreen emblem, cloth square | `supplied/forest-service-emblem-square/`: PofBC's Forest Service evergreen emblem in the atlas's thread colours (`compose.mjs`) |
 | S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
 | MC03-O01 B.C. Game Department / Predator Branch | `supplied/bc-predator-branch/`: a supplied vector package, used whole, which reads the captions the atlas left out |
