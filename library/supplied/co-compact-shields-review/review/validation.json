@@ -1,0 +1,35 @@
+{
+  "repeatBuildIdentical": true,
+  "patches": [
+    {
+      "id": "MC27-O01",
+      "validXml": true,
+      "allOriginalPathOutlinesPreserved": true,
+      "oneDividerAdded": true,
+      "liveTextOrRaster": false
+    },
+    {
+      "id": "MC28-O01",
+      "validXml": true,
+      "allOriginalPathOutlinesPreserved": true,
+      "oneDividerAdded": true,
+      "liveTextOrRaster": false
+    },
+    {
+      "id": "MC29-O01",
+      "validXml": true,
+      "allOriginalPathOutlinesPreserved": true,
+      "oneDividerAdded": true,
+      "liveTextOrRaster": false
+    }
+  ],
+  "artifactSha256": {
+    "library/supplied/co-compact-shields-review/MC29-O01.svg": "309f230ff4ed90318f8f4c27b5999ba596e7fb46d1b4533c7bc90ad7fb3dcaf8",
+    "library/supplied/co-compact-shields-review/MC28-O01.svg": "2669c66c81b11ef60b39b737543ee8650bfae7a7ceec512b5e340625fb21a35b",
+    "library/supplied/co-compact-shields-review/MC27-O01.svg": "d6593b9543e7a463bf60d0c2a32cc2e45e2bcc51652b275953bff6223b6c4e6e",
+    "library/supplied/co-compact-shields-review/layout.json": "02fb69ef98085a36f59758e39d8ad8295bde444d0b140842a13aeaa4a40b8634",
+    "library/supplied/co-compact-shields-review/preview-MC29-O01.webp": "eab086f114dbca6ea7f6322adf7c45dba2fa70209b4d40a1ac2be69c77e1df2c",
+    "library/supplied/co-compact-shields-review/preview-MC27-O01.webp": "fba6972d652de29d51fdeb033c4458276b88957da240f192cb62934867a04929",
+    "library/supplied/co-compact-shields-review/preview-MC28-O01.webp": "2ac71538d6d36947a288e649c16852774a0b032e786dee7f6f42ce13b196a481"
+  }
+}

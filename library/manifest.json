@@ -2,7 +2,7 @@
  "version": 3,
  "source": {
   "name": "BC Forestry Patch Atlas",
-  "driveId": "1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4",
+  "driveId": null,
   "snapshotSha256": "02f524d650e28b12a9600bfcd220e492d0fcb2b7cdce039d97e6655ab231c563",
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
@@ -17,9 +17,9 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28901607,
-  "storedBytes": 8332388,
-  "sharedBlocks": 60,
+  "sourceBytes": 28897994,
+  "storedBytes": 8327959,
+  "sharedBlocks": 61,
   "sharedPaths": 294
  },
  "collections": [
@@ -190,6 +190,12 @@
     "id": "block-96223024ce",
     "file": "shared/block-96223024ce.svg",
     "bytes": 13759,
+    "usedBy": 2
+   },
+   {
+    "id": "block-9af7c06080",
+    "file": "shared/block-9af7c06080.svg",
+    "bytes": 2723,
     "usedBy": 2
    },
    {
@@ -701,6 +707,7 @@
      "variant": "Black & white",
      "blocks": [
       "block-66a9b75e94",
+      "block-9af7c06080",
       "block-b10ec37936"
      ],
      "bundles": [
@@ -1477,8 +1484,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/FO-wildfire-management-black.svg",
      "preview": "bc-forest-service/previews/FO-wildfire-management-black.webp",
-     "sha256": "3d6b1867b9878e972ea0e99f476ab9085c0386264035014ef19f33914c424cef",
-     "bytes": 37009,
+     "sha256": "1ac453ee147c52adbe578a5ebfb989537affeef608a8914f9ca0239f0e1c6e43",
+     "bytes": 37986,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg",
      "sightings": [
       {
@@ -1487,7 +1494,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted.",
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. The missing ridge and mountain-base linework has been restored from the identical monochrome tree-scene master after comparing R20. Band proportions and caption weight remain to review.",
      "supplied": {
       "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.svg"
      },
@@ -1499,6 +1506,7 @@
      "blocks": [
       "block-59e90f2d58",
       "block-66a9b75e94",
+      "block-9af7c06080",
       "block-b10ec37936"
      ],
      "bundles": [
@@ -1762,13 +1770,13 @@
      "label": "Forest Service evergreen emblem — cloth square",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "PofBC Forest Service emblem artwork",
+     "quality": "Source-refined cloth border, PofBC emblem components",
      "family": "unlabelled-map-tree",
      "affiliation": "Unconfirmed",
      "svg": "bc-forest-service/S48-O01.svg",
      "preview": "bc-forest-service/previews/S48-O01.webp",
-     "sha256": "0e5f0843e63ee3d75ac74e4ded6e079c30fba673e2f9b184c762243f14caf524",
-     "bytes": 2954,
+     "sha256": "cd0a8ad6864fd74283ab28dda1b42da9b88f3386109f9f74cf61e9306a6e42f7",
+     "bytes": 2389,
      "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view",
      "sightings": [
       {
@@ -1777,7 +1785,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Drawn from PofBC's Forest Service evergreen emblem (Internal Logos → Forests) by compose.mjs: its bowed badge as the outline and an inset copy as the cloth field, its mainland, islands and evergreen, in the atlas's thread colours. The emblem is itself a vector reconstruction from a supplied image; thread colours and the patch's proportions are interpreted, and frayed threads are omitted. The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters.",
+     "limitations": "The near-square cloth border is constructed independently with near-straight sides and restrained corner rounding, following the S48 photograph. PofBC mainland, islands and evergreen geometry are retained. Exact cloth dimensions, inner component contours, edge stitching and thread colours remain interpreted; the photo was not warped or traced. The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters.",
      "replaced": {
       "svg": "supplied/forest-service-emblem-square/composed/S48-O01.svg",
       "atlasSha256": "08e3b25cfc6a4cd4d532f368c0d89191a9aa091077e276d77dd7eb37ac94bcd3"
@@ -3125,13 +3133,13 @@
      "label": "Conservation Officer / British Columbia / Ministry of Environment — integrated compact crest shield (1984 source edition)",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Partial source-based heading refinement",
      "family": "bc-co-compact-integrated",
      "affiliation": "Conservation",
      "svg": "conservation-officer-service/MC27-O01.svg",
      "preview": "conservation-officer-service/previews/MC27-O01.webp",
-     "sha256": "3cb9b71731b9adfbfbaa5d18660beadae8ebe44fb4e5311f0b9746a18ab907ad",
-     "bytes": 42572,
+     "sha256": "d6593b9543e7a463bf60d0c2a32cc2e45e2bcc51652b275953bff6223b6c4e6e",
+     "bytes": 41346,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_1st_version.jpg",
      "sightings": [
       {
@@ -3140,7 +3148,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
+     "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions.",
+     "replaced": {
+      "svg": "supplied/co-compact-shields-review/MC27-O01.svg",
+      "atlasSha256": "3cb9b71731b9adfbfbaa5d18660beadae8ebe44fb4e5311f0b9746a18ab907ad"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -3154,13 +3166,13 @@
      "label": "Conservation Officer / British Columbia / Ministry of Environment and Parks — integrated compact crest shield (1986 source edition)",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Partial source-based heading refinement",
      "family": "bc-co-compact-integrated",
      "affiliation": "Conservation",
      "svg": "conservation-officer-service/MC28-O01.svg",
      "preview": "conservation-officer-service/previews/MC28-O01.webp",
-     "sha256": "5e66d7bc704a667970c3c08fe5dfdea6485f8edcb4c42eb93c7f452e67e73453",
-     "bytes": 45191,
+     "sha256": "2669c66c81b11ef60b39b737543ee8650bfae7a7ceec512b5e340625fb21a35b",
+     "bytes": 43596,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_Parks.jpg",
      "sightings": [
       {
@@ -3169,7 +3181,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
+     "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions.",
+     "replaced": {
+      "svg": "supplied/co-compact-shields-review/MC28-O01.svg",
+      "atlasSha256": "5e66d7bc704a667970c3c08fe5dfdea6485f8edcb4c42eb93c7f452e67e73453"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -3183,13 +3199,13 @@
      "label": "Conservation Officer / British Columbia / Ministry of Environment — narrow footer edition (c.1991 source edition)",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Partial source-based heading refinement",
      "family": "bc-co-compact-integrated",
      "affiliation": "Conservation",
      "svg": "conservation-officer-service/MC29-O01.svg",
      "preview": "conservation-officer-service/previews/MC29-O01.webp",
-     "sha256": "e5599c52275da9c901f68795d95a31b2bc33520d892790430cbd89cbd35b3d74",
-     "bytes": 42480,
+     "sha256": "309f230ff4ed90318f8f4c27b5999ba596e7fb46d1b4533c7bc90ad7fb3dcaf8",
+     "bytes": 41276,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_2nd_version.jpg",
      "sightings": [
       {
@@ -3198,7 +3214,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
+     "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions.",
+     "replaced": {
+      "svg": "supplied/co-compact-shields-review/MC29-O01.svg",
+      "atlasSha256": "e5599c52275da9c901f68795d95a31b2bc33520d892790430cbd89cbd35b3d74"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -3725,7 +3745,7 @@
      "id": "MC03-O01",
      "label": "B.C. Game Department / Predator Branch — wolf's head triangle",
      "collection": "patches",
-     "medium": "Cloth patch",
+     "medium": "Printed depiction",
      "quality": "Supplied vector reconstruction",
      "family": "moosecop-predator-triangle-study-v1",
      "affiliation": "Fish and Game / Conservation history",
@@ -3741,7 +3761,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Manual vector reconstruction of a supplied image (B.C. Predator Branch vector package): a symmetric border of six Bézier arcs, a hand-drawn wolf's head, and fourteen custom glyphs placed one by one for B.C. GAME DEPARTMENT and PREDATOR BRANCH. Not an official master; the shading is flattened to cream and near-black, and the lettering and border are close to the reference, not measured from an original (95% foreground overlap with it). The 1951 date is the publishing page's description, not verified. See the package README. The atlas left the captions out, unread from a 157 × 173 photograph; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head.",
+     "limitations": "Manual vector reconstruction of a supplied clean illustration: a symmetric six-arc border, authored wolf silhouette and custom glyphs. The reported illustration-overlap figures do not measure fidelity to the separate 157 × 173 historical catalogue depiction. The source inventory identifies that small reference as a printed depiction and says the page owner has not seen a physical example. Exact lettering, animal details and the relationship between the two illustrations require source review; no photographed cloth specimen is established here. Not an authenticated issue master; the publishing page's date attribution is unverified. See the package README. The atlas left the captions out, unread from a 157 × 173 historical catalogue illustration; the separate supplied illustration package resolves B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head.",
      "replaced": {
       "svg": "supplied/bc-predator-branch/vectors/bc-predator-branch-rebuilt.svg",
       "atlasSha256": "b0beddedcbba63d40101de1801b532c53a128f5535276b9ab9ab253e14491aef"

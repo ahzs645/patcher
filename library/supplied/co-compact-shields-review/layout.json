@@ -1,0 +1,413 @@
+{
+  "settings": {
+    "divider": {
+      "path": "M5 24.8 Q50 7.6 95 24.8",
+      "width": 1.4
+    },
+    "britishColumbia": {
+      "centerX": 50,
+      "centerBaselineY": 25.8,
+      "curvature": 0.006,
+      "positionSpread": 1.18,
+      "glyphScale": 1.06
+    }
+  },
+  "patches": [
+    {
+      "id": "MC27-O01",
+      "review": "co-compact-heading-review-v1",
+      "source": {
+        "sourceId": "MC27",
+        "url": "https://moosecop.net/History/BC_CO_Min_of_Env_1st_version.jpg",
+        "dimensions": [
+          323,
+          307
+        ],
+        "bbox": [
+          2,
+          5,
+          320,
+          306
+        ]
+      },
+      "baselinePatcherCommit": "1e41f5e01a517d2232197ff57ba5b4f1c9d0636e",
+      "baselineSvgSha256": "3cb9b71731b9adfbfbaa5d18660beadae8ebe44fb4e5311f0b9746a18ab907ad",
+      "operations": [
+        "Add authored curved heading divider",
+        "Move and rotate unchanged British Columbia glyph outlines on an independent arc with uniform glyph scaling"
+      ],
+      "settings": {
+        "divider": {
+          "path": "M5 24.8 Q50 7.6 95 24.8",
+          "width": 1.4
+        },
+        "britishColumbia": {
+          "centerX": 50,
+          "centerBaselineY": 25.8,
+          "curvature": 0.006,
+          "positionSpread": 1.18,
+          "glyphScale": 1.06
+        }
+      },
+      "glyphPositions": [
+        {
+          "x": 14.503322600000004,
+          "y": 33.36008463863802,
+          "angle": -23.072070989267996,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 20.108086600000004,
+          "y": 31.161158920278595,
+          "angle": -19.733060516178227,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 24.0649688,
+          "y": 29.835755060069843,
+          "angle": -17.287206055659734,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 27.6183382,
+          "y": 28.805632709577477,
+          "angle": -15.03371307355486,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 31.188475400000005,
+          "y": 27.92324074665843,
+          "angle": -12.720640010335211,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 34.990671400000004,
+          "y": 27.15167967013667,
+          "angle": -10.210186185602563,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 40.5351256,
+          "y": 26.337503084446652,
+          "angle": -6.479800188189732,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 48.6260316,
+          "y": 25.811326734985194,
+          "angle": -0.9445854996989197,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 54.6287978,
+          "y": 25.928554614439708,
+          "angle": 3.179259955390342,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 60.189182,
+          "y": 26.422916578974746,
+          "angle": 6.9709642868991235,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 65.5129762,
+          "y": 27.2439145834906,
+          "angle": 10.545231142708067,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 71.6663222,
+          "y": 28.616577106045277,
+          "angle": 14.573994356457044,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 77.771595,
+          "y": 30.42756893306415,
+          "angle": 18.43112286938842,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 81.716394,
+          "y": 31.835577890179415,
+          "angle": 20.836661005371724,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 85.6331208,
+          "y": 33.41831578768436,
+          "angle": 23.15142838690318,
+          "scale": 0.0085626694
+        }
+      ],
+      "limits": "Partial source-based refinement: restored curved heading divider and independently fitted British Columbia row. Existing glyph outlines, outer cut, boxed arms, ministry captions and palette remain interpretations. Not authenticated issue artwork or an embroidery production master.",
+      "svgSha256": "d6593b9543e7a463bf60d0c2a32cc2e45e2bcc51652b275953bff6223b6c4e6e",
+      "bytes": 41346
+    },
+    {
+      "id": "MC28-O01",
+      "review": "co-compact-heading-review-v1",
+      "source": {
+        "sourceId": "MC28",
+        "url": "https://moosecop.net/History/BC_CO_Min_of_Env_Parks.jpg",
+        "dimensions": [
+          305,
+          306
+        ],
+        "bbox": [
+          2,
+          2,
+          303,
+          305
+        ]
+      },
+      "baselinePatcherCommit": "1e41f5e01a517d2232197ff57ba5b4f1c9d0636e",
+      "baselineSvgSha256": "5e66d7bc704a667970c3c08fe5dfdea6485f8edcb4c42eb93c7f452e67e73453",
+      "operations": [
+        "Add authored curved heading divider",
+        "Move and rotate unchanged British Columbia glyph outlines on an independent arc with uniform glyph scaling"
+      ],
+      "settings": {
+        "divider": {
+          "path": "M5 24.8 Q50 7.6 95 24.8",
+          "width": 1.4
+        },
+        "britishColumbia": {
+          "centerX": 50,
+          "centerBaselineY": 25.8,
+          "curvature": 0.006,
+          "positionSpread": 1.18,
+          "glyphScale": 1.06
+        }
+      },
+      "glyphPositions": [
+        {
+          "x": 14.503322600000004,
+          "y": 33.36008463863802,
+          "angle": -23.072070989267996,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 20.108086600000004,
+          "y": 31.161158920278595,
+          "angle": -19.733060516178227,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 24.0649688,
+          "y": 29.835755060069843,
+          "angle": -17.287206055659734,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 27.6183382,
+          "y": 28.805632709577477,
+          "angle": -15.03371307355486,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 31.188475400000005,
+          "y": 27.92324074665843,
+          "angle": -12.720640010335211,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 34.990671400000004,
+          "y": 27.15167967013667,
+          "angle": -10.210186185602563,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 40.5351256,
+          "y": 26.337503084446652,
+          "angle": -6.479800188189732,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 48.6260316,
+          "y": 25.811326734985194,
+          "angle": -0.9445854996989197,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 54.6287978,
+          "y": 25.928554614439708,
+          "angle": 3.179259955390342,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 60.189182,
+          "y": 26.422916578974746,
+          "angle": 6.9709642868991235,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 65.5129762,
+          "y": 27.2439145834906,
+          "angle": 10.545231142708067,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 71.6663222,
+          "y": 28.616577106045277,
+          "angle": 14.573994356457044,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 77.771595,
+          "y": 30.42756893306415,
+          "angle": 18.43112286938842,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 81.716394,
+          "y": 31.835577890179415,
+          "angle": 20.836661005371724,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 85.6331208,
+          "y": 33.41831578768436,
+          "angle": 23.15142838690318,
+          "scale": 0.0085626694
+        }
+      ],
+      "limits": "Partial source-based refinement: restored curved heading divider and independently fitted British Columbia row. Existing glyph outlines, outer cut, boxed arms, ministry captions and palette remain interpretations. Not authenticated issue artwork or an embroidery production master.",
+      "svgSha256": "2669c66c81b11ef60b39b737543ee8650bfae7a7ceec512b5e340625fb21a35b",
+      "bytes": 43596
+    },
+    {
+      "id": "MC29-O01",
+      "review": "co-compact-heading-review-v1",
+      "source": {
+        "sourceId": "MC29",
+        "url": "https://moosecop.net/History/BC_CO_Min_of_Env_2nd_version.jpg",
+        "dimensions": [
+          304,
+          298
+        ],
+        "bbox": [
+          2,
+          1,
+          303,
+          297
+        ]
+      },
+      "baselinePatcherCommit": "1e41f5e01a517d2232197ff57ba5b4f1c9d0636e",
+      "baselineSvgSha256": "e5599c52275da9c901f68795d95a31b2bc33520d892790430cbd89cbd35b3d74",
+      "operations": [
+        "Add authored curved heading divider",
+        "Move and rotate unchanged British Columbia glyph outlines on an independent arc with uniform glyph scaling"
+      ],
+      "settings": {
+        "divider": {
+          "path": "M5 24.8 Q50 7.6 95 24.8",
+          "width": 1.4
+        },
+        "britishColumbia": {
+          "centerX": 50,
+          "centerBaselineY": 25.8,
+          "curvature": 0.006,
+          "positionSpread": 1.18,
+          "glyphScale": 1.06
+        }
+      },
+      "glyphPositions": [
+        {
+          "x": 14.503322600000004,
+          "y": 33.36008463863802,
+          "angle": -23.072070989267996,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 20.108086600000004,
+          "y": 31.161158920278595,
+          "angle": -19.733060516178227,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 24.0649688,
+          "y": 29.835755060069843,
+          "angle": -17.287206055659734,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 27.6183382,
+          "y": 28.805632709577477,
+          "angle": -15.03371307355486,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 31.188475400000005,
+          "y": 27.92324074665843,
+          "angle": -12.720640010335211,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 34.990671400000004,
+          "y": 27.15167967013667,
+          "angle": -10.210186185602563,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 40.5351256,
+          "y": 26.337503084446652,
+          "angle": -6.479800188189732,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 48.6260316,
+          "y": 25.811326734985194,
+          "angle": -0.9445854996989197,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 54.6287978,
+          "y": 25.928554614439708,
+          "angle": 3.179259955390342,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 60.189182,
+          "y": 26.422916578974746,
+          "angle": 6.9709642868991235,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 65.5129762,
+          "y": 27.2439145834906,
+          "angle": 10.545231142708067,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 71.6663222,
+          "y": 28.616577106045277,
+          "angle": 14.573994356457044,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 77.771595,
+          "y": 30.42756893306415,
+          "angle": 18.43112286938842,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 81.716394,
+          "y": 31.835577890179415,
+          "angle": 20.836661005371724,
+          "scale": 0.0085626694
+        },
+        {
+          "x": 85.6331208,
+          "y": 33.41831578768436,
+          "angle": 23.15142838690318,
+          "scale": 0.0085626694
+        }
+      ],
+      "limits": "Partial source-based refinement: restored curved heading divider and independently fitted British Columbia row. Existing glyph outlines, outer cut, boxed arms, ministry captions and palette remain interpretations. Not authenticated issue artwork or an embroidery production master.",
+      "svgSha256": "309f230ff4ed90318f8f4c27b5999ba596e7fb46d1b4533c7bc90ad7fb3dcaf8",
+      "bytes": 41276
+    }
+  ]
+}
