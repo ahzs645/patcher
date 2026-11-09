@@ -209,7 +209,7 @@ async function main() {
       id: d.id,
       label: relabels.get(d.id)?.label ?? (group.length > 1 ? labelFor(group) : d.label),
       collection: collectionOf(d).id,
-      medium: d.medium,
+      medium: replacement?.medium ?? d.medium,
       quality: replacement?.quality ?? d.quality,
       family: d.family,
       affiliation: d.affiliation,

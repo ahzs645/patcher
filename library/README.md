@@ -122,6 +122,15 @@ preview, quality line and limitations:
 | S56-O38 British Columbia / SPCA roundel | `supplied/bc-spca-roundel/`: concentric circles, a heavier equal-arm cross and re-spaced atlas letter outlines fitted to a supplied 66 × 55 photograph (`compose.mjs`) |
 | S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
 | MC03-O01 B.C. Game Department / Predator Branch | `supplied/bc-predator-branch/`: a supplied vector package, used whole, which reads the captions the atlas left out |
+| MC27-O01, MC28-O01, MC29-O01 compact Conservation Officer shields | `supplied/co-compact-shields-review/`: restores the photographed curved heading divider and refits the British Columbia row; other components remain under review |
+
+The November 8 source review also restores the missing mountain strokes in the
+monochrome Wildfire Management oval and gives S48-O01 a separate near-square cloth
+border instead of the bowed printed-emblem outline. These are partial corrections,
+not declarations of complete specimen fidelity. The Predator Branch package's
+overlap figures are explicitly illustration-to-vector checks, not cloth-photo
+accuracy measurements. PofBC's accompanying review records findings for every
+patch variant and preserves source crop dimensions.
 
 A composed drawing is rebuilt by running its `compose.mjs`, then re-importing. Each replaced patch
 records the supplied file and the atlas drawing's SHA-256 (`replaced`), and the verifier checks the

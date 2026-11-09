@@ -16,7 +16,7 @@
   "relabel": [
     { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
     { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy bridge roundel", "note": "The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46)." },
-    { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The atlas left the captions out, unread from a 157 × 173 photograph; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
+    { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The atlas left the captions out, unread from a 157 × 173 historical catalogue illustration; the separate supplied illustration package resolves B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
   ],
   "replace": [
     {
@@ -128,8 +128,8 @@
       "id": "S48-O01",
       "svg": "supplied/forest-service-emblem-square/composed/S48-O01.svg",
       "preview": "supplied/forest-service-emblem-square/preview-S48-O01.webp",
-      "quality": "PofBC Forest Service emblem artwork",
-      "limitations": "Drawn from PofBC's Forest Service evergreen emblem (Internal Logos → Forests) by compose.mjs: its bowed badge as the outline and an inset copy as the cloth field, its mainland, islands and evergreen, in the atlas's thread colours. The emblem is itself a vector reconstruction from a supplied image; thread colours and the patch's proportions are interpreted, and frayed threads are omitted."
+      "quality": "Source-refined cloth border, PofBC emblem components",
+      "limitations": "The near-square cloth border is constructed independently with near-straight sides and restrained corner rounding, following the S48 photograph. PofBC mainland, islands and evergreen geometry are retained. Exact cloth dimensions, inner component contours, edge stitching and thread colours remain interpreted; the photo was not warped or traced."
     },
     {
       "id": "S56-O38",
@@ -149,8 +149,30 @@
       "id": "MC03-O01",
       "svg": "supplied/bc-predator-branch/vectors/bc-predator-branch-rebuilt.svg",
       "preview": "supplied/bc-predator-branch/preview.webp",
+      "medium": "Printed depiction",
       "quality": "Supplied vector reconstruction",
-      "limitations": "Manual vector reconstruction of a supplied image (B.C. Predator Branch vector package): a symmetric border of six Bézier arcs, a hand-drawn wolf's head, and fourteen custom glyphs placed one by one for B.C. GAME DEPARTMENT and PREDATOR BRANCH. Not an official master; the shading is flattened to cream and near-black, and the lettering and border are close to the reference, not measured from an original (95% foreground overlap with it). The 1951 date is the publishing page's description, not verified. See the package README."
+      "limitations": "Manual vector reconstruction of a supplied clean illustration: a symmetric six-arc border, authored wolf silhouette and custom glyphs. The reported illustration-overlap figures do not measure fidelity to the separate 157 × 173 historical catalogue depiction. The source inventory identifies that small reference as a printed depiction and says the page owner has not seen a physical example. Exact lettering, animal details and the relationship between the two illustrations require source review; no photographed cloth specimen is established here. Not an authenticated issue master; the publishing page's date attribution is unverified. See the package README."
+    },
+    {
+      "id": "MC27-O01",
+      "svg": "supplied/co-compact-shields-review/MC27-O01.svg",
+      "preview": "supplied/co-compact-shields-review/preview-MC27-O01.webp",
+      "quality": "Partial source-based heading refinement",
+      "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions."
+    },
+    {
+      "id": "MC28-O01",
+      "svg": "supplied/co-compact-shields-review/MC28-O01.svg",
+      "preview": "supplied/co-compact-shields-review/preview-MC28-O01.webp",
+      "quality": "Partial source-based heading refinement",
+      "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions."
+    },
+    {
+      "id": "MC29-O01",
+      "svg": "supplied/co-compact-shields-review/MC29-O01.svg",
+      "preview": "supplied/co-compact-shields-review/preview-MC29-O01.webp",
+      "quality": "Partial source-based heading refinement",
+      "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions."
     }
   ],
   "variants": [
@@ -194,7 +216,7 @@
         { "id": "FO-forest-service-black-gold", "name": "Black & gold", "svg": "supplied/pofbc-forest-ovals/forest-service/black-gold.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/black-gold.webp", "atlas": [], "note": "This colourway is a generated recolour, not seen in a photograph. Its adoption date is unverified." },
         { "id": "FO-forest-service-navy-gold", "name": "Navy & gold", "svg": "supplied/pofbc-forest-ovals/forest-service/navy-gold.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/navy-gold.webp", "atlas": [], "note": "The Airtanker package's navy and gold applied to the standalone oval, a generated colourway." },
         { "id": "FO-wildfire-management", "name": "Wildfire Management", "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.webp", "atlas": ["R21-O01"], "note": "The upper service ribbon; Forest Oval labels it a photographic approximation." },
-        { "id": "FO-wildfire-management-black", "name": "Wildfire Management · black", "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.webp", "atlas": ["R20-O01"] },
+        { "id": "FO-wildfire-management-black", "name": "Wildfire Management · black", "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.webp", "atlas": ["R20-O01"], "note": "The missing ridge and mountain-base linework has been restored from the identical monochrome tree-scene master after comparing R20. Band proportions and caption weight remain to review." },
         { "id": "FO-fire-control", "name": "Fire Control", "svg": "supplied/pofbc-forest-ovals/forest-service/fire-control.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/fire-control.webp", "atlas": ["R11-O01"], "note": "FIRE CONTROL set on the Wildfire Management ribbon through the engine's own service field, as on the cloth patch; the ribbon's exact proportions on that patch are unverified." },
         { "id": "FO-airtanker", "name": "Airtanker Operations", "svg": "supplied/pofbc-forest-ovals/forest-service/airtanker.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/airtanker.webp", "atlas": ["R01-O01"], "note": "The Airtanker package's wings and band around the shared tree oval; its adoption date is unverified." }
       ]
