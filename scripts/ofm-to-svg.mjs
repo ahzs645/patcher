@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 // Batch-convert Melco DesignShop .ofm files to SVG.
 //
-//   npm run ofm:svg -- <file.ofm | folder | archive.zip>… [-o out-dir] [--no-walks] [--thumbs]
+//   npm run ofm:svg -- <file.ofm | folder | archive.zip>… [-o out-dir] [--png [--dpi 300]] [--no-walks] [--thumbs]
 //
 // Folders are searched recursively and .zip archives are read in place. Each
 // design becomes <name>.svg in the output folder (default ./ofm-svg), with
-// --thumbs also writing the PNG thumbnail DesignShop embeds, <name>.thumb.png.
+// --png also writing <name>.png (the SVG rendered at --dpi, default 300, on a
+// transparent background) and --thumbs the PNG thumbnail DesignShop embeds,
+// <name>.thumb.png.
 // A summary table is printed at the end; files that fail are reported, not fatal.
 
 import { readFileSync, writeFileSync, mkdirSync, statSync, readdirSync } from 'node:fs';
@@ -17,19 +19,23 @@ const args = process.argv.slice(2);
 let outDir = 'ofm-svg';
 let omitWalks = false;
 let thumbs = false;
+let png = false;
+let dpi = 300;
 const inputs = [];
 for (let i = 0; i < args.length; i++) {
   const a = args[i];
   if (a === '-o' || a === '--out') outDir = args[++i];
   else if (a === '--no-walks') omitWalks = true;
   else if (a === '--thumbs') thumbs = true;
+  else if (a === '--png') png = true;
+  else if (a === '--dpi') { dpi = Number(args[++i]); png = true; if (!(dpi > 0)) usage(1); }
   else if (a === '-h' || a === '--help') { usage(0); }
   else inputs.push(a);
 }
 if (!inputs.length) usage(1);
 
 function usage(code) {
-  console.log('usage: npm run ofm:svg -- <file.ofm | folder | archive.zip>… [-o out-dir] [--no-walks] [--thumbs]');
+  console.log('usage: npm run ofm:svg -- <file.ofm | folder | archive.zip>… [-o out-dir] [--png [--dpi 300]] [--no-walks] [--thumbs]');
   process.exit(code);
 }
 
@@ -49,6 +55,9 @@ function collect(p) {
 for (const p of inputs) collect(resolve(p));
 if (!jobs.length) { console.error('No .ofm files found.'); process.exit(1); }
 
+// resvg is a dev dependency, loaded only when PNGs are asked for.
+const Resvg = png ? (await import('@resvg/resvg-js')).Resvg : null;
+
 mkdirSync(outDir, { recursive: true });
 const used = new Set();
 let ok = 0;
@@ -58,7 +67,13 @@ for (const job of jobs) {
   used.add(name.toLowerCase());
   try {
     const design = readOfm(job.bytes);
-    writeFileSync(join(outDir, `${name}.svg`), ofmToSvg(design, { omitWalks }));
+    const svg = ofmToSvg(design, { omitWalks });
+    writeFileSync(join(outDir, `${name}.svg`), svg);
+    if (Resvg) {
+      const widthMm = (design.bounds[2] - design.bounds[0]) / 10 + 4; // + the SVG's 2 mm margins
+      const img = new Resvg(svg, { fitTo: { mode: 'width', value: Math.round((widthMm / 25.4) * dpi) } }).render();
+      writeFileSync(join(outDir, `${name}.png`), img.asPng());
+    }
     if (thumbs && design.thumbnail) writeFileSync(join(outDir, `${name}.thumb.png`), design.thumbnail);
     const [x0, y0, x1, y1] = design.bounds;
     const kinds = {};

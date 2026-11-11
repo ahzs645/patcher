@@ -106,8 +106,9 @@
             <input type="file" id="file" accept=".svg,image/svg+xml,.ofm" multiple hidden />
             <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <strong>Drop an SVG or Melco .ofm, or tap to choose</strong>
-            <span class="muted small">Any SVG. Several .ofm files at once download as a zip of SVGs</span>
+            <span class="muted small">Any SVG. Several .ofm files at once download as a zip of SVGs (and PNGs if ticked below)</span>
           </label>
+          <label class="check"><input type="checkbox" id="ofmPng" /> Include PNGs in the .ofm zip</label>
           <form id="urlForm" class="row">
             <input id="url" type="url" inputmode="url" placeholder="Paste SVG or Commons File: link" aria-label="SVG URL" />
             <button type="submit" class="btn">Load</button>

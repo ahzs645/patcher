@@ -798,6 +798,35 @@ async function resolveUrl(u: string): Promise<string> {
   return url;
 }
 
+const PNG_DPI = 300;
+
+/** Render a millimetre-sized SVG to PNG bytes at `dpi`, transparent background. */
+async function svgToPng(svg: string, dpi: number): Promise<Uint8Array> {
+  const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+  try {
+    const img = new Image();
+    img.src = url;
+    await img.decode();
+    const mm = (v: string | null) => parseFloat(v ?? '') || 0;
+    const root = new DOMParser().parseFromString(svg, 'image/svg+xml').documentElement;
+    let w = Math.round((mm(root.getAttribute('width')) / 25.4) * dpi);
+    let h = Math.round((mm(root.getAttribute('height')) / 25.4) * dpi);
+    // Keep within what browsers will allocate for one canvas.
+    const k = Math.min(1, 8000 / Math.max(w, h));
+    w = Math.max(1, Math.round(w * k));
+    h = Math.max(1, Math.round(h * k));
+    const canvas = document.createElement('canvas');
+    canvas.width = w;
+    canvas.height = h;
+    canvas.getContext('2d')!.drawImage(img, 0, 0, w, h);
+    const blob = await new Promise<Blob | null>((res) => canvas.toBlob(res, 'image/png'));
+    if (!blob) throw new Error('PNG render failed');
+    return new Uint8Array(await blob.arrayBuffer());
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
+
 function setupLoading() {
   const drop = $('drop');
   const file = $<HTMLInputElement>('file');
@@ -811,6 +840,7 @@ function setupLoading() {
     const files = Array.from(list);
     const ofms = files.filter((f) => /\.ofm$/i.test(f.name));
     if (ofms.length > 1) {
+      const withPng = $<HTMLInputElement>('ofmPng').checked;
       showError(null);
       setBusy(`Converting ${ofms.length} .ofm files…`);
       const out: Record<string, Uint8Array> = {};
@@ -819,7 +849,9 @@ function setupLoading() {
         try {
           let name = f.name.replace(/\.ofm$/i, '');
           for (let n = 2; out[`${name}.svg`]; n++) name = `${f.name.replace(/\.ofm$/i, '')} (${n})`;
-          out[`${name}.svg`] = strToU8(ofmToSvg(readOfm(await f.arrayBuffer())));
+          const svg = ofmToSvg(readOfm(await f.arrayBuffer()));
+          out[`${name}.svg`] = strToU8(svg);
+          if (withPng) out[`${name}.png`] = await svgToPng(svg, PNG_DPI);
         } catch (err) {
           failed.push(`${f.name} (${(err as Error).message})`);
         }
