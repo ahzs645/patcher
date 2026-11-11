@@ -10,6 +10,8 @@ import { buildPatchSvg } from './patchSvg';
 import { nearestThread } from './threadCharts';
 import { createDigitizer, DEFAULT_PAD_MM } from './digitizer';
 import { LIBRARY, cardLabel, cardOf, collectionOrgs, findPatch, isCard, loadPatchSvg, orgsBySector, variantsOf, type ResolvedPatch } from './library';
+import { readOfm, ofmToSvg } from './import/ofm';
+import { strToU8, zipSync } from 'fflate';
 
 /** Transparent margin around the art for the merrow lip and shadows. */
 const PAD_MM = DEFAULT_PAD_MM;
@@ -799,8 +801,36 @@ async function resolveUrl(u: string): Promise<string> {
 function setupLoading() {
   const drop = $('drop');
   const file = $<HTMLInputElement>('file');
-  const readFile = (f: File) => f.text().then((t) => openSvgText(t, f.name));
-  file.onchange = () => { if (file.files?.[0]) readFile(file.files[0]); file.value = ''; };
+  const readFile = (f: File) => /\.ofm$/i.test(f.name)
+    ? f.arrayBuffer().then((b) => openSvgText(ofmToSvg(readOfm(b)), f.name.replace(/\.ofm$/i, '.svg')))
+      .catch((err) => showError(`${f.name}: ${(err as Error).message}`))
+    : f.text().then((t) => openSvgText(t, f.name));
+  // Several files: convert every .ofm to SVG and download them as one zip,
+  // then open the first one.
+  const readFiles = async (list: FileList | File[]) => {
+    const files = Array.from(list);
+    const ofms = files.filter((f) => /\.ofm$/i.test(f.name));
+    if (ofms.length > 1) {
+      showError(null);
+      setBusy(`Converting ${ofms.length} .ofm files…`);
+      const out: Record<string, Uint8Array> = {};
+      const failed: string[] = [];
+      for (const f of ofms) {
+        try {
+          let name = f.name.replace(/\.ofm$/i, '');
+          for (let n = 2; out[`${name}.svg`]; n++) name = `${f.name.replace(/\.ofm$/i, '')} (${n})`;
+          out[`${name}.svg`] = strToU8(ofmToSvg(readOfm(await f.arrayBuffer())));
+        } catch (err) {
+          failed.push(`${f.name} (${(err as Error).message})`);
+        }
+      }
+      setBusy(null);
+      if (Object.keys(out).length) download(new Blob([zipSync(out)], { type: 'application/zip' }), 'ofm-svg.zip');
+      if (failed.length) showError(`Couldn't convert: ${failed.join('; ')}`);
+    }
+    if (files[0]) readFile(files[0]);
+  };
+  file.onchange = () => { if (file.files?.length) readFiles(file.files); file.value = ''; };
   $('openBtn').onclick = () => file.click();
   drop.addEventListener('dragover', (e) => { e.preventDefault(); drop.classList.add('hover'); });
   drop.addEventListener('dragleave', () => drop.classList.remove('hover'));
@@ -809,8 +839,8 @@ function setupLoading() {
   window.addEventListener('drop', (e) => {
     e.preventDefault();
     drop.classList.remove('hover');
-    const f = e.dataTransfer?.files?.[0];
-    if (f) readFile(f);
+    const fs = e.dataTransfer?.files;
+    if (fs?.length) readFiles(fs);
   });
 
   $('urlForm').addEventListener('submit', (e) => {

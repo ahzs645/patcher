@@ -36,6 +36,20 @@ is sewn the way a digitizer sews type: the fill behind it runs on underneath, th
 columns over a centre-walk underlay. Switch it off under Stitches → Lettering, or set any thread to Auto / Flat / Raised
 in the Threads tab (e.g. raise a logo's outline, or keep a colour flat).
 
+**Melco DesignShop `.ofm` files** open directly (drop or choose them like an SVG). Patcher reads the
+design's own vector objects (fills, satin columns, running-stitch walks and lettering, in sew order with
+their thread colours) and turns them into an SVG it then digitizes like any other. Drop or choose several
+`.ofm` files at once and they are all converted and downloaded as `ofm-svg.zip`. Files saved as stitches
+only ("expanded") come through as their stitch paths. To convert in bulk from the command line (files,
+folders or `.zip` archives):
+
+```bash
+npm run ofm:svg -- designs/ -o svg-out            # add --thumbs for DesignShop's PNG previews, --no-walks to drop running stitches
+```
+
+Each SVG is sized in millimetres and has one `<path>` per object, labelled with its kind and thread.
+How the format is laid out is described at the top of [`src/import/ofm.ts`](src/import/ofm.ts).
+
 **Exports:** embroidered PNG mockup, Patch SVG, Tajima `.dst`, Melco `.exp` (lock stitches, trims,
 long-stitch splitting), plus design details and a thread sequence matched to Brother / Janome charts.
 
