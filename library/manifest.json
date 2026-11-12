@@ -2,7 +2,7 @@
  "version": 3,
  "source": {
   "name": "BC Forestry Patch Atlas",
-  "driveId": null,
+  "driveId": "1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4",
   "snapshotSha256": "02f524d650e28b12a9600bfcd220e492d0fcb2b7cdce039d97e6655ab231c563",
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28897994,
-  "storedBytes": 8327959,
+  "sourceBytes": 28903909,
+  "storedBytes": 8333874,
   "sharedBlocks": 61,
   "sharedPaths": 294
  },
@@ -5180,16 +5180,16 @@
    "patches": [
     {
      "id": "S56-O36",
-     "label": "Justice Institute / British Columbia — gold and navy bridge roundel",
+     "label": "Justice Institute / British Columbia — gold and navy roundel",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Limited-evidence clean vector study",
+     "quality": "Atlas roundel with the supplied JIBC monogram",
      "family": "unresolved-bridge-circle",
      "affiliation": "Unconfirmed",
      "svg": "justice-institute/S56-O36.svg",
      "preview": "justice-institute/previews/S56-O36.webp",
-     "sha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1",
-     "bytes": 29009,
+     "sha256": "d149651fc853af76d3c693283f713f35f142cb73cd9d8986f3c1640e1264529b",
+     "bytes": 30268,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5198,7 +5198,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean hand-designed roundel silhouette and principal visible motif. Only BRITISH COLUMBIA is confidently legible. The remaining caption is omitted rather than invented; affiliation and fine charge details remain unresolved. The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46).",
+     "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board; the upper caption (Justice Institute in the photograph) is still left out. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted by compose.mjs in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted. The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46).",
+     "replaced": {
+      "svg": "supplied/jibc-bridge-roundel/composed/S56-O36.svg",
+      "atlasSha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -5207,13 +5211,13 @@
      "label": "Justice Institute / British Columbia — white fan shield",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Supplied vector reconstruction",
      "family": "justice-institute-fan",
      "affiliation": "Other",
      "svg": "justice-institute/S56-O46.svg",
      "preview": "justice-institute/previews/S56-O46.webp",
-     "sha256": "55c05c6d80366eaa6b98e757eed3c570edb4f65033e70a397e3f8df933ef6b91",
-     "bytes": 13183,
+     "sha256": "6215880570b56d580edc1f7985369b07b5c7620c5825b15ef728a94a6c62ffa8",
+     "bytes": 17839,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5222,7 +5226,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. Justice Institute identity is confirmed by the visible caption and user reference. Fine channels in the historical triangular institutional monogram remain an interpretation of the board photograph.",
+     "limitations": "Manual vector reconstruction of a supplied image of the badge (JIBC badge vector package): an 11-curve border, the four-part JIBC monogram with real B counters, and 31 individually placed letters from Bookman-derived, hand-corrected letter masters. Not an official master; the typeface is unconfirmed and the blue (#0141A2) is sampled from the image, not an institutional specification. See the package README.",
+     "replaced": {
+      "svg": "supplied/jibc-fan-badge/vectors/JIBC_Badge_Rebuilt.svg",
+      "atlasSha256": "55c05c6d80366eaa6b98e757eed3c570edb4f65033e70a397e3f8df933ef6b91"
+     },
      "blocks": [],
      "bundles": []
     }

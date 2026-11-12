@@ -91,7 +91,7 @@ A stored `<org>/<id>.svg` is not the whole drawing on its own, so don't serve it
 To bring something back, delete its rule and re-import.
 
 `relabel` gives a design a label of its own where the atlas's was wrong or left it unresolved, with a note
-that joins its limitations (S56-O36 is the Justice Institute's bridge roundel; S48-O01 the Forest Service
+that joins its limitations (S56-O36 is the Justice Institute's roundel; S48-O01 the Forest Service
 evergreen emblem). Moving a design to another organization is a `family` rule like any other.
 
 The atlas also has an entry per photograph a design was seen in, each fitted to its photograph, so
@@ -122,6 +122,8 @@ preview, quality line and limitations:
 | S56-O38 British Columbia / SPCA roundel | `supplied/bc-spca-roundel/`: concentric circles, a heavier equal-arm cross and re-spaced atlas letter outlines fitted to a supplied 66 × 55 photograph (`compose.mjs`) |
 | S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
 | MC03-O01 B.C. Game Department / Predator Branch | `supplied/bc-predator-branch/`: a supplied vector package, used whole, which reads the captions the atlas left out |
+| S56-O46 Justice Institute / British Columbia fan shield | `supplied/jibc-fan-badge/`: a supplied vector package, used whole |
+| S56-O36 Justice Institute / British Columbia roundel | `supplied/jibc-bridge-roundel/`: the atlas roundel with the fan-badge package's JIBC monogram in place of its schematic bridge (`compose.mjs`) |
 | MC27-O01, MC28-O01, MC29-O01 compact Conservation Officer shields | `supplied/co-compact-shields-review/`: restores the photographed curved heading divider and refits the British Columbia row; other components remain under review |
 
 The November 8 source review also restores the missing mountain strokes in the

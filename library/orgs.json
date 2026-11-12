@@ -15,7 +15,7 @@
   ],
   "relabel": [
     { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
-    { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy bridge roundel", "note": "The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46)." },
+    { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy roundel", "note": "The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46)." },
     { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The atlas left the captions out, unread from a 157 × 173 historical catalogue illustration; the separate supplied illustration package resolves B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
   ],
   "replace": [
@@ -173,6 +173,20 @@
       "preview": "supplied/co-compact-shields-review/preview-MC29-O01.webp",
       "quality": "Partial source-based heading refinement",
       "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions."
+    },
+    {
+      "id": "S56-O46",
+      "svg": "supplied/jibc-fan-badge/vectors/JIBC_Badge_Rebuilt.svg",
+      "preview": "supplied/jibc-fan-badge/preview.webp",
+      "quality": "Supplied vector reconstruction",
+      "limitations": "Manual vector reconstruction of a supplied image of the badge (JIBC badge vector package): an 11-curve border, the four-part JIBC monogram with real B counters, and 31 individually placed letters from Bookman-derived, hand-corrected letter masters. Not an official master; the typeface is unconfirmed and the blue (#0141A2) is sampled from the image, not an institutional specification. See the package README."
+    },
+    {
+      "id": "S56-O36",
+      "svg": "supplied/jibc-bridge-roundel/composed/S56-O36.svg",
+      "preview": "supplied/jibc-bridge-roundel/preview-S56-O36.webp",
+      "quality": "Atlas roundel with the supplied JIBC monogram",
+      "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board; the upper caption (Justice Institute in the photograph) is still left out. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted by compose.mjs in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted."
     }
   ],
   "variants": [
