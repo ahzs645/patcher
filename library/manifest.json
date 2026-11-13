@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28903909,
-  "storedBytes": 8333874,
+  "sourceBytes": 28905122,
+  "storedBytes": 8335087,
   "sharedBlocks": 61,
   "sharedPaths": 294
  },
@@ -2598,8 +2598,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S27-O04.svg",
      "preview": "bc-parks/previews/S27-O04.webp",
-     "sha256": "0666f016eaf11ec53b17f3698c3614c762b6522782f4c55ff2717fd5d7374395",
-     "bytes": 463917,
+     "sha256": "f9d643e34b6a3b3c06ecaf39918ceb5aa7821f493f034d2d3badc8117b1af2cc",
+     "bytes": 464522,
      "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view",
      "sightings": [
       {
@@ -2890,8 +2890,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S30-O04.svg",
      "preview": "bc-parks/previews/S30-O04.webp",
-     "sha256": "9fdc5dc41f37606227a0b08c33e99aeebc53836bbb876458983f67f8c73f0530",
-     "bytes": 461489,
+     "sha256": "f9c4de1bc1a7e32611e7b7ef1f906e17a95b85b9ecc3b4509f4d7403a89c44e8",
+     "bytes": 462097,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
      "sightings": [
       {
