@@ -1,0 +1,31 @@
+{
+  "S31-O01": {
+    "evidence": "Scan of the patch (moosecop.net, BC Parks display, Parks_002): slate-green twill ground, plain gold satin lettering, white merrow edge.",
+    "params": { "groundColor": "#102338", "borderColor": "#f4f2ec" },
+    "threads": { "#102338": "#364548", "#7f7236": "#e9be36", "#b09536": "#e9be36" }
+  },
+  "S25-O05": {
+    "evidence": "Scan of the patch (moosecop.net, BC Parks display, Parks_008): dark brown twill ground, white satin lettering and crest, white merrow edge.",
+    "params": { "groundColor": "#242130", "borderColor": "#f4f2ec" },
+    "threads": { "#242130": "#2a201e", "#bebbc0": "#f1eef0", "#89858e": "#f1eef0", "#5a5763": "#f1eef0" }
+  },
+  "S30-O04": {
+    "evidence": "Scan of the patch (moosecop.net, BC Parks display, Parks_013): dark olive twill ground, white merrow edge, periwinkle sky and water sewn in level rows.",
+    "params": { "groundColor": "#1b2b2a", "borderColor": "#f4f2ec", "fillAngles": { "#559feb": 0, "#f1eef0": 90 } },
+    "threads": { "#1b2b2a": "#363226", "#559feb": "#6e84b5", "#b6b9bb": "#f1eef0" }
+  },
+  "S27-O04": {
+    "evidence": "Source photograph S27-O04 (PofBC patch review crop): the scenic arch with a Ranger panel; white merrow edge, sky and water sewn in level rows. Ground colour is taken from the scan of the same design without the panel (S30-O04).",
+    "params": { "groundColor": "#1a2b29", "borderColor": "#f4f2ec", "fillAngles": { "#559feb": 0 } },
+    "threads": { "#1a2b29": "#363226", "#b6b9bb": "#f1eef0" }
+  },
+  "S25-O01": {
+    "evidence": "Source photograph S25-O01 (PofBC patch review crop): white twill ground showing in the scene, brown band and elk embroidered, white merrow edge.",
+    "params": { "groundColor": "#ffffff", "borderColor": "#f4f2ec" }
+  },
+  "S25-O02": {
+    "evidence": "Source photograph S25-O02 (PofBC patch review crop): dark brown twill ground, white satin lettering, white merrow edge.",
+    "params": { "groundColor": "#242130", "borderColor": "#f4f2ec" },
+    "threads": { "#242130": "#2a201e", "#7d7a83": "#f1eef0", "#a5a2a8": "#f1eef0" }
+  }
+}

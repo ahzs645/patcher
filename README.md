@@ -40,9 +40,14 @@ in the Threads tab (e.g. raise a logo's outline, or keep a colour flat).
 **Cloth ground:** Stitches → Ground (`ground: 'cloth'`) leaves the colour lying just inside the edge unsewn, as bare twill, the way most
 cloth patches are made; `groundColor` picks another colour. The stitch count drops accordingly.
 
+**Patch profiles:** `library/profiles.json` records what a source photograph shows about one patch that its drawing
+cannot: which colour is the cloth (`groundColor`), the edge (`borderColor`, `borderWidthMm`), the direction an area is
+sewn in (`fillAngles`, by colour), and thread colour corrections (`threads`). `profileParams(id)` gives the digitizing
+settings and `threadColors(profile, palette)` the colours to render with. The drawings are not edited.
+
 **Checking a change:** `npm run sew:check` sews every library patch in a real browser (it needs Playwright) and writes
 a PNG and a report line for each: stitches by kind, raised share, longest stitch, time. Run it before and after into two
-`--out` folders and compare.
+`--out` folders and compare; `--profiles` applies each patch's profile.
 
 **Exports:** embroidered PNG mockup, Patch SVG, Tajima `.dst`, Melco `.exp` (lock stitches, trims,
 long-stitch splitting), plus design details and a thread sequence matched to Brother / Janome charts.

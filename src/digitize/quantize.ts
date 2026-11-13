@@ -143,3 +143,21 @@ function majorityFilter(labels: Uint8Array, w: number, h: number) {
 export function toHex(c: RGB): string {
   return '#' + c.map((v) => Math.max(0, Math.min(255, v)).toString(16).padStart(2, '0')).join('');
 }
+
+/**
+ * The palette entry a colour named from outside (a profile, a setting) means:
+ * the nearest one, if it is close. Detected colours shift by a few levels with
+ * the size the art was rasterised at, so an exact match is too strict.
+ */
+export function nearestIndex(palette: string[], hex: string | null | undefined, tolerance = 40): number {
+  if (!hex || !/^#[0-9a-f]{6}$/i.test(hex)) return -1;
+  const n = parseInt(hex.slice(1), 16);
+  const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+  let best = -1, bd = tolerance * tolerance;
+  for (let i = 0; i < palette.length; i++) {
+    const m = parseInt(palette[i].slice(1), 16);
+    const d = (((m >> 16) & 255) - r) ** 2 + (((m >> 8) & 255) - g) ** 2 + ((m & 255) - b) ** 2;
+    if (d <= bd) { bd = d; best = i; }
+  }
+  return best;
+}

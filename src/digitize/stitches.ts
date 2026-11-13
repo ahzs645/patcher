@@ -489,6 +489,18 @@ export function columnSatin(
     markTri(p.ax, p.ay, q.ax, q.ay, q.bx, q.by);
   };
 
+  /**
+   * Across a stroke, a rung is about twice as long as its middle is deep in
+   * the shape. Where strokes meet, even the shortest chord runs on down one
+   * of them and is far longer than that: sewn, it is a loose thread lying
+   * across the letter. Columns stop there and the leftover satin fills in.
+   */
+  const acrossJunction = (ch: Chord) => {
+    const x = Math.floor((ch.ax + ch.bx) / 2), y = Math.floor((ch.ay + ch.by) / 2);
+    if (x < 0 || y < 0 || x >= w || y >= h) return true;
+    return ch.len > dist[y * w + x] * 2 * 1.6 + 3;
+  };
+
   /** March from a centre point along ±dir; returns the rungs in order. */
   const march = (first: Chord, dir: 1 | -1, commit: boolean): Chord[] => {
     const out: Chord[] = [];
@@ -498,6 +510,7 @@ export function columnSatin(
     for (let guard = 0; guard < 4000; guard++) {
       if (cur.len > o.maxWidth || occupiedShare(cur) > 0.5) break;
       if (out.length && cur.len > Math.max(avgLen * 1.4, avgLen + 3)) break;
+      if (acrossJunction(cur)) break;
       out.push(cur);
       if (commit) {
         if (out.length === 1) markBand(cur, o.spacing * 0.5);
@@ -575,7 +588,7 @@ export function columnSatin(
       if (xi >= 0 && yi >= 0 && xi < w && yi < h) tried[yi * w + xi] = 1;
     }
     const seed = shortest(sx, sy, 0, Math.PI / 2, 15);
-    if (seed.len > o.maxWidth) continue;
+    if (seed.len > o.maxWidth || acrossJunction(seed)) continue;
     // Find this stroke's end on one side, then sew from there to the other end.
     const probe = march(seed, 1, false);
     const from = probe.length ? probe[probe.length - 1] : seed;

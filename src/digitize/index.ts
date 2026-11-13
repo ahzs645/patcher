@@ -2,7 +2,7 @@
 // tatami / satin / border stitches (+ a relief map for the textured render).
 
 import type { DigitizeParams, DigitizeResult, RasterInput, StitchBlock, StitchKind } from '../types';
-import { quantize, toHex, TRANSPARENT } from './quantize';
+import { nearestIndex, quantize, toHex, TRANSPARENT } from './quantize';
 import {
   HOLE, absorbSmall, chaikinClosed, components, markHoles, regionDistance, resampleClosed,
   silhouetteDistance, simplifyClosed, traceBoundary, traceOutlines, type Comp,
@@ -78,12 +78,18 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   const colorRank = palette.map((_, i) => i).sort((a, b) => coverage[b] - coverage[a]);
   const rankOf = new Map(colorRank.map((l, r) => [l, r]));
 
+  const angleOf = new Map<number, number>();
+  for (const [hex, deg] of Object.entries(params.fillAngles ?? {})) {
+    const l = nearestIndex(palette, hex);
+    if (l >= 0 && Number.isFinite(deg)) angleOf.set(l, deg);
+  }
+
   // ---- cloth ground: the ground colour's areas are left unsewn. Its small
   // pieces (a letter's counter, a gap between strokes) are cloth as well.
   let clothLabel = -1;
   if (params.ground === 'cloth') {
     if (params.groundColor) {
-      clothLabel = palette.indexOf(params.groundColor);
+      clothLabel = nearestIndex(palette, params.groundColor);
     } else {
       // The cloth is what the edge is sewn round, so it is the colour lying
       // just inside the border (past a drawn rim line, which is satin-thin),
@@ -102,7 +108,9 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
       clothLabel = best > 0 ? inBand.indexOf(best) : colorRank[0] ?? -1;
     }
   }
-  const isCloth = (c: Comp) => c.label === clothLabel;
+  // Lettering in the cloth's colour is still sewn: white letters on a band of
+  // thread are satin, not the white cloth showing through.
+  const isCloth = (c: Comp) => c.label === clothLabel && textHits[c.id] < c.area * 0.5;
 
   // ---- raised regions: lettering (from the SVG's text mask) and any thread
   // set to raised. They are sewn last, as satin columns on top of the fill
@@ -226,7 +234,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
     const box = isRaised ? c : underBox[c.id];
     const dField = isRaised ? dist : distUnder;
     const travel = travelIn(ids, c.id);
-    const deg = params.fillAngleDeg + (params.varyAngles ? ANGLE_OFFSETS[rankOf.get(label)! % ANGLE_OFFSETS.length] : 0);
+    const deg = angleOf.get(label) ?? params.fillAngleDeg + (params.varyAngles ? ANGLE_OFFSETS[rankOf.get(label)! % ANGLE_OFFSETS.length] : 0);
     const f = frame((deg * Math.PI) / 180);
     if (params.underlay) {
       // inkstitch-style fill underlay: fill angle + 90°, sparse rows,
@@ -255,7 +263,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
     pushBlock(palette[label], label, 'satin', p.pts, p.jumps, isRaised);
   };
 
-  const hasFlat = (l: number) => l !== clothLabel && regions.some((c) => c.label === l && !raised[c.id]);
+  const hasFlat = (l: number) => regions.some((c) => c.label === l && !raised[c.id] && !isCloth(c));
   const hasRaised = (l: number) => regions.some((c) => c.label === l && raised[c.id]);
   // Flat colours first (a colour that is also raised goes last, so its raised
   // pass can follow without another thread change), then the raised colours.
@@ -272,7 +280,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   // overlap and a separate "satin on top" pass would only add colour changes.
   for (const label of flatOrder) {
     for (const pass of ['fill', 'satin'] as const) {
-      const todo = regions.filter((c) => c.label === label && !raised[c.id] && (pass === 'satin') === isSatin(c));
+      const todo = regions.filter((c) => c.label === label && !raised[c.id] && !isCloth(c) && (pass === 'satin') === isSatin(c));
       while (todo.length) {
         const c = nearest(todo);
         if (pass === 'fill') { fillRegion(c, false); continue; }
@@ -281,7 +289,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
         while (sx <= c.maxX && comp[c.minY * w + sx] !== c.id) sx++;
         const insideC = (x: number, y: number) => x >= 0 && y >= 0 && x < w && y < h && comp[y * w + x] === c.id;
         const rawEdge = traceBoundary(insideC, sx, c.minY, c.area * 8 + 64);
-        const edge = resampleClosed(chaikinClosed(simplifyClosed(rawEdge, 0.5), 1), params.satinSpacingMm * ppm);
+        const edge = resampleClosed(chaikinClosed(simplifyClosed(rawEdge, 0.5), 1, 0.3 * ppm), params.satinSpacingMm * ppm);
         const cs = contourSatin(comp, dist, w, h, c, c.area, edge, params.satinSpacingMm * ppm, satinMaxPx,
           (params.pullCompMm + 0.05) * ppm, params.satinMaxStitchMm * ppm, needle, 1.2 * ppm);
         if (cs) {
@@ -324,7 +332,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   lap('stitches');
 
   // ---- outline + border -----------------------------------------------------
-  const outlinesPx = traceOutlines(labels, w, h, minArea * 20).map((o) => chaikinClosed(simplifyClosed(o, 0.7), 2));
+  const outlinesPx = traceOutlines(labels, w, h, minArea * 20).map((o) => chaikinClosed(simplifyClosed(o, 0.7), 2, 0.6 * ppm));
   let borderColor: string | null = null;
   if (params.border !== 'none' && outlinesPx.length) {
     const inner = params.borderWidthMm * ppm * (params.border === 'merrow' ? 0.8 : 1);
@@ -363,7 +371,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
     let autoLabel = -1, bv = 0;
     for (const [l, v] of votes) if (v > bv) { bv = v; autoLabel = l; }
     borderColor = params.borderColor ?? (autoLabel >= 0 ? palette[autoLabel] : '#222222');
-    const pIndex = params.borderColor ? palette.indexOf(params.borderColor) : autoLabel;
+    const pIndex = params.borderColor ? palette.indexOf(params.borderColor.toLowerCase()) : autoLabel;
     for (const r of rails) pushBlock(borderColor, pIndex, 'border', r.pts, [0]);
   }
   lap('border');
@@ -379,7 +387,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
     if (c.label === HOLE) continue;
     const d = dist[i];
     let v: number;
-    if (c.label === clothLabel) {
+    if (isCloth(c)) {
       v = 0; // bare cloth: everything sewn stands above it
     } else if (raised[ci]) {
       // Satin over underlay on top of the fill: the highest thread on the patch.

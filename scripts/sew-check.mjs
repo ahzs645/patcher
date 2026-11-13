@@ -7,6 +7,7 @@
 //   npm run sew:check -- --params '{"ground":"cloth"}' # any DigitizeParams
 //   npm run sew:check -- --out before                  # where the PNGs and report.json go (default .cache/sew-check)
 //   npm run sew:check -- --no-png                      # numbers only
+//   npm run sew:check -- --profiles                    # with each patch's profile (library/profiles.json)
 //
 // Run it before and after a change with two --out folders, then compare the folders' report.json
 // (stitch counts by kind, raised share, timings) and the PNGs side by side.
@@ -28,6 +29,7 @@ const opt = (name, fallback) => { const i = args.indexOf(`--${name}`); return i 
 const out = resolve(opt('out', join(root, '.cache/sew-check')));
 const params = JSON.parse(opt('params', '{}'));
 const wantPng = !args.includes('--no-png');
+const useProfiles = args.includes('--profiles');
 const only = opt('ids', '')?.split(',').filter(Boolean);
 
 let chromium;
@@ -56,7 +58,7 @@ const ids = await page.evaluate(async (only) => {
 const report = [];
 let failed = 0;
 for (const id of ids) {
-  const r = await page.evaluate(async ({ id, params, wantPng }) => {
+  const r = await page.evaluate(async ({ id, params, wantPng, useProfiles }) => {
     try {
       const P = await import('/src/index.ts');
       const L = await import('/src/library.ts');
@@ -65,7 +67,8 @@ for (const id of ids) {
       const svg = await L.loadPatchSvg(patch);
       const digitizer = P.createDigitizer({ worker: false });
       const t = performance.now();
-      const res = await digitizer.digitize(svg, params);
+      const profile = useProfiles ? P.profileOf(id) : null;
+      const res = await digitizer.digitize(svg, { ...profile?.params, ...params });
       const ms = Math.round(performance.now() - t);
       const kinds = {};
       let longest = 0;
@@ -80,7 +83,7 @@ for (const id of ids) {
       }
       let png = null;
       if (wantPng) {
-        png = P.renderTextured(res, { scale: 10, lightDeg: 225, colors: res.palette, borderColor: res.borderColor, dropShadow: true, finish: 'matte' }).toDataURL('image/png');
+        png = P.renderTextured(res, { scale: 10, lightDeg: 225, colors: P.threadColors(profile, res.palette), borderColor: P.threadColor(profile, res.borderColor), dropShadow: true, finish: 'matte' }).toDataURL('image/png');
       }
       return {
         ms, stitches: res.stitchCount, threads: res.palette.length, kinds,
@@ -91,7 +94,7 @@ for (const id of ids) {
     } catch (e) {
       return { error: String(e?.message ?? e) };
     }
-  }, { id, params, wantPng });
+  }, { id, params, wantPng, useProfiles });
   if (r.png) writeFileSync(join(out, `${id}.png`), Buffer.from(r.png.split(',')[1], 'base64'));
   delete r.png;
   const bad = r.error || !r.stitches;

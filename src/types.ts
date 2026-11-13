@@ -53,6 +53,13 @@ export interface DigitizeParams {
   ground: Ground;
   /** The colour left as cloth; null = the colour lying just inside the edge. */
   groundColor: string | null;
+  /**
+   * Fill direction in degrees for particular threads, keyed by colour (0 =
+   * rows running left to right, 90 = top to bottom). A colour not listed
+   * keeps the automatic angle. Water sewn level and a mountain sewn upright
+   * read as water and rock; one angle rule for every colour does not.
+   */
+  fillAngles: Record<string, number>;
 }
 
 export const DEFAULT_PARAMS: DigitizeParams = {
@@ -77,6 +84,7 @@ export const DEFAULT_PARAMS: DigitizeParams = {
   relief: {},
   ground: 'stitched',
   groundColor: null,
+  fillAngles: {},
 };
 
 /** One contiguous colour block: a single region (or the border) sewn in one go. */

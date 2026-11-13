@@ -20,3 +20,4 @@ export { writeExp } from './export/exp';
 export { machineStitches, machineStats, type MachineStitch, type MachineStats } from './export/machine';
 export { buildPatchSvg } from './patchSvg';
 export { THREAD_CHARTS, nearestThread, type ThreadEntry } from './threadCharts';
+export { PROFILES, profileOf, profileParams, threadColor, threadColors, type PatchProfile } from './profiles';

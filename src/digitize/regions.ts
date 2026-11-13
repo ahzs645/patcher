@@ -290,7 +290,7 @@ export function simplifyClosed(pts: number[], eps: number): number[] {
 }
 
 /** Chaikin corner cutting on a closed polygon. */
-export function chaikinClosed(pts: number[], iterations: number): number[] {
+export function chaikinClosed(pts: number[], iterations: number, maxCut = Infinity): number[] {
   let cur = pts;
   for (let it = 0; it < iterations; it++) {
     const n = cur.length / 2;
@@ -298,7 +298,12 @@ export function chaikinClosed(pts: number[], iterations: number): number[] {
     for (let i = 0; i < n; i++) {
       const j = (i + 1) % n;
       const x0 = cur[i * 2], y0 = cur[i * 2 + 1], x1 = cur[j * 2], y1 = cur[j * 2 + 1];
-      next.push(0.75 * x0 + 0.25 * x1, 0.75 * y0 + 0.25 * y1, 0.25 * x0 + 0.75 * x1, 0.25 * y0 + 0.75 * y1);
+      // A quarter of the edge, but no more than maxCut: a simplified
+      // rectangle has four long edges, and cutting a quarter off each end
+      // turns its corners into an octagon.
+      const len = Math.hypot(x1 - x0, y1 - y0);
+      const t = len > 0 ? Math.min(0.25, maxCut / len) : 0.25;
+      next.push(x0 + (x1 - x0) * t, y0 + (y1 - y0) * t, x1 + (x0 - x1) * t, y1 + (y0 - y1) * t);
     }
     cur = next;
   }

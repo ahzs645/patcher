@@ -381,6 +381,10 @@ function applyRelief(ctx: CanvasRenderingContext2D, result: DigitizeResult, opts
   const k = result.pxPerMm * (opts.finish === 'matte' ? 1.2 : 1.6);
   // Matte thread scatters light: raised areas lighten much less.
   const hiK = opts.finish === 'matte' ? 0.3 : 1;
+  // ...and their far sides darken less too. At full strength the side of a
+  // white merrow edge facing away from the light went mid-grey, and white
+  // lettering read as silver.
+  const loK = opts.finish === 'matte' ? 0.55 : 1;
   for (let y = 1; y < rh - 1; y++) {
     for (let x = 1; x < rw - 1; x++) {
       const i = y * rw + x;
@@ -393,7 +397,7 @@ function applyRelief(ctx: CanvasRenderingContext2D, result: DigitizeResult, opts
       if (height[i] > 0) s -= Math.max(0, 0.3 - hb[i]) * 1.2;
       const o = i * 4;
       if (s >= 0) { d[o] = d[o + 1] = d[o + 2] = 255; d[o + 3] = Math.min(150, s * 170 * hiK); }
-      else { d[o + 3] = Math.min(190, -s * 230); }
+      else { d[o + 3] = Math.min(190, -s * 230) * loK; }
     }
   }
   const rc = document.createElement('canvas');
