@@ -14,11 +14,19 @@
     { "reason": "Too little survives to draw: a blurred windscreen emblem and a lower-left fragment of an arch, neither identifiable", "ids": ["S42-O02", "S56-O11"] }
   ],
   "relabel": [
+    { "id": "S56-O23", "label": "Emergency Service / Expo 86 — shield", "family": "expo-emergency-service", "note": "EMERGENCY corrects the atlas's mistaken CRIME PREVENTION caption. SERVICE follows the user's reading of the short second line and remains provisional at 75 × 57 source pixels." },
     { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
     { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy roundel", "note": "The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46)." },
     { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The atlas left the captions out, unread from a 157 × 173 historical catalogue illustration; the separate supplied illustration package resolves B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
   ],
   "replace": [
+    {
+      "id": "S56-O23",
+      "svg": "supplied/expo-emergency-service/composed/S56-O23.svg",
+      "preview": "supplied/expo-emergency-service/preview-S56-O23.webp",
+      "quality": "Reconstructed captions with PofBC's collected Expo 86 vector",
+      "limitations": "The blue shield, dark edging, gold inset border and two magenta caption rows are reconstructed from a 75 × 57 collector-board crop. The stacked EXPO-over-86 lockup reuses PofBC's collected expo86-symbol.svg at its original aspect ratio, recoloured gold; the source is Mwtoews's third-party vector reconstruction, not an official historical master. The exact embroidered alphabet, thread colours, outline and second-line transcription remain unverified. See supplied/expo-emergency-service/README.md."
+    },
     {
       "id": "S25-O01",
       "svg": "supplied/bc-parks-branch-elk-roundel/vectors/BC_Parks_Branch_Master.svg",

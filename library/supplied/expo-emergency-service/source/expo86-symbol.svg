@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg  version="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="263" height="347" viewBox="0 0 263 347" overflow="visible" enable-background="new 0 0 263 347" xml:space="preserve">
+<line fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" x1="59.899" y1="28.5" x2="31.899" y2="28.5"/>
+<line fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" x1="56.649" y1="53.25" x2="31.899" y2="53.25"/>
+<line fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" x1="60.024" y1="79" x2="32.024" y2="79"/>
+<line fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" x1="31.899" y1="28.5" x2="31.899" y2="78.313"/>
+<line fill="none" stroke="#000000" stroke-width="16" stroke-linecap="round" x1="76.784" y1="29.067" x2="116.284" y2="77.817"/>
+<line fill="none" stroke="#000000" stroke-width="16" stroke-linecap="round" x1="116.284" y1="29.067" x2="76.784" y2="77.817"/>
+<line fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" x1="151.117" y1="28.25" x2="134.5" y2="28.25"/>
+<line fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" x1="134.5" y1="28.25" x2="134.5" y2="78.5"/>
+<path fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" d="M151,60.744c0.039,0,0.078,0.006,0.117,0.006
+	c8.975,0,16.25-7.275,16.25-16.25s-7.275-16.25-16.25-16.25c-0.039,0-0.078,0.006-0.117,0.006"/>
+<line fill="none" stroke="#000000" stroke-width="15" stroke-linecap="round" x1="152.906" y1="60.781" x2="135.406" y2="60.781"/>
+<circle fill="none" stroke="#000000" stroke-width="16" stroke-linecap="round" cx="205.5" cy="54.284" r="25.25"/>
+<path fill="none" stroke="#1F92CF" stroke-width="31" d="M147.742,170.386c0,33.708-27.282,61.019-60.97,61.019
+	c-33.689,0-61-27.311-61-61.019c0-33.69,27.31-61,61-61C120.46,109.386,147.742,136.696,147.742,170.386z"/>
+<path fill="none" stroke="#1F92CF" stroke-width="31" d="M147.742,253.486c0,33.709-27.282,61.02-60.97,61.02
+	c-33.689,0-61-27.311-61-61.02c0-33.69,27.31-61.001,61-61.001C120.46,192.485,147.742,219.796,147.742,253.486z"/>
+<path fill="none" stroke="#1F92CF" stroke-width="31" d="M231.643,253.486c0,33.709-27.281,61.02-60.97,61.02
+	c-33.689,0-60.999-27.311-60.999-61.02c0-33.69,27.309-61.001,60.999-61.001C204.361,192.485,231.643,219.796,231.643,253.486z"/>
+<line fill="none" stroke="#1F92CF" stroke-width="31" x1="146.434" y1="193" x2="225.434" y2="114"/>
+</svg>

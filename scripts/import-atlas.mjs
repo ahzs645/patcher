@@ -211,7 +211,7 @@ async function main() {
       collection: collectionOf(d).id,
       medium: replacement?.medium ?? d.medium,
       quality: replacement?.quality ?? d.quality,
-      family: d.family,
+      family: relabels.get(d.id)?.family ?? d.family,
       affiliation: d.affiliation,
       svg: `${org.id}/${d.id}.svg`,
       preview: previewPath,
