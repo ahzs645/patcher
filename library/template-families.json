@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-13",
+  "reviewedAgainst": "68f145d3f91fd3d915b0810b4faf19dd81b1e7e3",
+  "scope": "Curated families of related layout templates. Membership does not merge specimens, establish issue dates, or assert byte-identical geometry. Variant groups are referenced once; other members use stable patch IDs.",
+  "families": [
+    {
+      "id": "forest-service-oval",
+      "label": "Forest Service tree oval",
+      "description": "Tree-and-landscape oval with service wording, palette and attached-title variants.",
+      "basis": "Existing Forest Oval variant group; inherited photographs and interpretation notes remain on each member.",
+      "variantGroups": [
+        "forest-service-oval"
+      ]
+    },
+    {
+      "id": "forests-oval",
+      "label": "Forests wildlife oval",
+      "description": "Short Forests wording around the wildlife oval, with palette and Wildfire Service variants.",
+      "basis": "Existing supplied Forest Oval recipe and variant group.",
+      "variantGroups": [
+        "forests-oval"
+      ]
+    },
+    {
+      "id": "long-ministry-oval",
+      "label": "Long ministry wildlife oval",
+      "description": "Wildlife oval with a longer ministry name and optional Wildfire Service wording.",
+      "basis": "Existing supplied long-ministry recipe and variant group; names and dates are not interchangeable.",
+      "variantGroups": [
+        "long-ministry-oval"
+      ]
+    },
+    {
+      "id": "forest-service-yellow-sky",
+      "label": "Forest Service yellow-sky oval",
+      "description": "Yellow-sky oval in three recorded or reconstructed colour treatments.",
+      "basis": "Existing variant group; printed-source media remain recorded per member.",
+      "variantGroups": [
+        "forest-service-yellow-sky"
+      ]
+    },
+    {
+      "id": "forest-service-green-gold",
+      "label": "Forest Service green-and-gold oval",
+      "description": "Green-and-gold oval, light-band edition and generated colourways.",
+      "basis": "Existing variant group; generated colourways remain interpretations, not newly documented specimens.",
+      "variantGroups": [
+        "forest-service-green-gold"
+      ]
+    },
+    {
+      "id": "forest-service-parks-oval",
+      "label": "Forest Service / Parks tabbed oval",
+      "description": "Tree oval with an attached Parks tab and backing or lettering variants.",
+      "basis": "Existing supplied variant group; no claim that the two reconstruction packages use identical geometry.",
+      "variantGroups": [
+        "forest-service-parks-oval"
+      ]
+    },
+    {
+      "id": "forest-shoulder-emblem",
+      "label": "Forest Service shoulder emblem",
+      "description": "A shared Forest Service shoulder composition represented by two atlas occurrences.",
+      "basis": "Existing forest-shoulder variant group.",
+      "variantGroups": [
+        "forest-shoulder-emblem"
+      ]
+    },
+    {
+      "id": "parks-scenic-arch",
+      "label": "BC Parks scenic arch",
+      "description": "Scenic arch with Parks wording and an integrated Ranger edition.",
+      "basis": "Existing supplied scenic-arch variant group.",
+      "variantGroups": [
+        "parks-scenic-arch"
+      ]
+    },
+    {
+      "id": "conservation-officer-lower-rocker",
+      "label": "Conservation Officer lower rocker",
+      "description": "Separate lower title rocker in olive and green-and-gold treatments.",
+      "basis": "Existing lower-role-rocker variant group; detached pieces remain separate from shoulder shields.",
+      "variantGroups": [
+        "conservation-officer-lower-rocker"
+      ]
+    },
+    {
+      "id": "provincial-ministry-shield",
+      "label": "Provincial ministry shield",
+      "description": "Arched British Columbia heading, small provincial arms and ministry name below. Related layouts span five organizations; wording, colours and dimensions remain distinct.",
+      "basis": "Visual comparison of current previews and the corresponding source-labelled atlas designs. Shared arrangement, not proof of one manufacturer or identical outline.",
+      "members": [
+        "S25-O03",
+        "S56-O56",
+        "S25-O05",
+        "S25-O06",
+        "S30-O03",
+        "S56-O41",
+        "S56-O07",
+        "S56-O09",
+        "S56-O10",
+        "S56-O28",
+        "S56-O27",
+        "S56-O30",
+        "S56-O14",
+        "S56-O16",
+        "S56-O18"
+      ]
+    },
+    {
+      "id": "parks-branch-semicircle",
+      "label": "Parks Branch semicircle",
+      "description": "Semicircular BC Parks Branch title in beige, yellow and dark colour treatments.",
+      "basis": "Constructed semicircle recipe in supplied/bc-parks-semicircles/; the later flag semicircle uses a different composition and stays separate.",
+      "members": [
+        "S29-O01",
+        "S29-O02",
+        "S29-O04"
+      ]
+    },
+    {
+      "id": "parks-branch-title-rocker",
+      "label": "Parks Branch title rocker",
+      "description": "Detached Parks Branch title in two source occurrences.",
+      "basis": "Same parks-branch-rocker atlas family and reviewed title layout; source occurrences remain distinct.",
+      "members": [
+        "S25-O02",
+        "S56-O55"
+      ]
+    },
+    {
+      "id": "parks-outdoor-recreation-rocker",
+      "label": "Parks / Outdoor Recreation rocker",
+      "description": "Detached two-line Parks / Outdoor Recreation title.",
+      "basis": "Same parks-outdoor-rocker atlas family and reviewed title layout.",
+      "members": [
+        "S25-O04",
+        "S56-O54"
+      ]
+    },
+    {
+      "id": "game-role-cap",
+      "label": "Game Warden / Commissioner / Inspector cap",
+      "description": "Arched British Columbia heading and stacked game-service role on a felt cap shape.",
+      "basis": "Same moosecop-game-role-cap-v1 atlas family, reviewed against all three previews. Different offices are preserved as separate designs.",
+      "members": [
+        "MC05-O01",
+        "MC06-O01",
+        "MC07-O01"
+      ]
+    },
+    {
+      "id": "game-branch-two-line-flash",
+      "label": "Game branch two-line flash",
+      "description": "Two curved title lines on a detached felt or cloth flash, including Game Commission and Fish & Game Branch wording.",
+      "basis": "Same moosecop-early-two-line-flash-v1 atlas family; wording, material and border differences stay on the members.",
+      "members": [
+        "MC09-O01",
+        "MC12-O01",
+        "MC14-O01"
+      ]
+    },
+    {
+      "id": "game-division-notched-flash",
+      "label": "Wildlife / Predator division flash",
+      "description": "Curved upper title with a rectangular Division extension below.",
+      "basis": "Same moosecop-division-notch-flash-v1 family; the Wildlife Protection and Predator Control titles remain separate.",
+      "members": [
+        "MC09-O02",
+        "MC13-O02"
+      ]
+    },
+    {
+      "id": "fish-game-wildlife-shield",
+      "label": "Fish & Game / Fish & Wildlife shield",
+      "description": "Text-only branch title on a broad curved-top shield, with wording, material and border variants.",
+      "basis": "Seven bc-fish-game-wildlife-branch-shield records plus S56-O42, whose preview shares this arrangement. The latter is related, not a proven duplicate specimen.",
+      "members": [
+        "MC16-O01",
+        "MC17-O01",
+        "MC18-O01",
+        "MC19-O01",
+        "MC20-O01",
+        "MC22-O01",
+        "MC23-O01",
+        "S56-O42"
+      ]
+    },
+    {
+      "id": "conservation-compact-shoulder",
+      "label": "Conservation Officer compact shoulder shield",
+      "description": "Compact shield with an upper role heading, small arms and ministry footer. The BC Environment edition changes the footer.",
+      "basis": "Shared bc-co-compact-integrated atlas family. Historical wording and source-edition dates remain separate; the 1992 flag footer is a distinct edition.",
+      "members": [
+        "MC27-O01",
+        "MC28-O01",
+        "MC29-O01",
+        "MC30-O01"
+      ]
+    },
+    {
+      "id": "conservation-compact-cap",
+      "label": "Conservation Officer compact cap crest",
+      "description": "Cap versions with the role and province above small arms and a ministry footer.",
+      "basis": "Same bc-co-compact-integrated-1984-v1 atlas family. The source spelling error Enviroment is intentionally preserved in its member.",
+      "members": [
+        "MC31-O02",
+        "MC31-O03"
+      ]
+    },
+    {
+      "id": "conservation-service-2004-shoulder",
+      "label": "Conservation Officer Service shoulder",
+      "description": "Modern service achievement on a tall shoulder patch, in officer and chief colour treatments.",
+      "basis": "Same bc-co-service-2004-shoulder-v1 atlas family; rank differences remain separate.",
+      "members": [
+        "MC39-O01",
+        "MC40-O01"
+      ]
+    },
+    {
+      "id": "conservation-centennial-tab",
+      "label": "Conservation centennial tab",
+      "description": "Detached Centennial / 1905–2005 tab in blue and gold.",
+      "basis": "Same bc-co-centennial-tab-2005-v1 atlas family. Tabs are not merged with the shoulder patches they accompany.",
+      "members": [
+        "MC39-O02",
+        "MC40-O02"
+      ]
+    },
+    {
+      "id": "deputy-sheriff-title-rocker",
+      "label": "Deputy Sheriff title rocker",
+      "description": "Detached single-line Deputy Sheriff title in white and gold.",
+      "basis": "Reviewed rocker previews and explicit deputy-sheriff role labels. Colour is retained as a variant attribute, not evidence of a manufacturing date.",
+      "members": [
+        "S56-O06",
+        "S56-O08"
+      ]
+    },
+    {
+      "id": "corrections-title-rocker",
+      "label": "Corrections title rocker",
+      "description": "Detached Corrections title in white, gold and green-and-gold.",
+      "basis": "Reviewed title layout; all three are distinct source-labelled occurrences.",
+      "members": [
+        "S56-O26",
+        "S56-O29",
+        "S56-O62"
+      ]
+    },
+    {
+      "id": "sheriff-waisted-shield",
+      "label": "Sheriff / Deputy Sheriff waisted shield",
+      "description": "Waisted shield with a role title above full arms and the province below.",
+      "basis": "Reviewed S56-O02 and S56-O03 previews. Rectangular and rounded sheriff shields have different layouts and stay separate.",
+      "members": [
+        "S56-O02",
+        "S56-O03"
+      ]
+    },
+    {
+      "id": "bcgs-semicircle",
+      "label": "B.C.G.S. semicircle",
+      "description": "Gold-lettered semicircular Alouette River Unit and Camps designs.",
+      "basis": "Reviewed gold arch silhouettes and title arrangement. The initials remain unresolved in the source catalogue.",
+      "members": [
+        "S56-O33",
+        "S56-O34"
+      ]
+    },
+    {
+      "id": "parks-ranger-numbered-metal",
+      "label": "Numbered Park Ranger metal badge",
+      "description": "Earlier metal shield with provincial arms, Park Ranger title and an individual number plate.",
+      "basis": "Same ranger-metal-early atlas family. Numbers 174, 229, 266 and 120 are separate specimens of this layout; green-inset later badges stay separate.",
+      "members": [
+        "S11-O01",
+        "S12-O01",
+        "S17-O01",
+        "S20-O01"
+      ]
+    }
+  ]
+}

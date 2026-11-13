@@ -24,9 +24,10 @@ import { hasReferences, wrapBlock } from '../src/library-join.js';
 import { LIBRARY, drawingKey, driveId, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
 import { shareParts } from './share-parts.mjs';
 import { verifyLibrary } from './verify-library.mjs';
+import { resolveTemplateFamilies } from '../src/template-families.js';
 
 /** Files library/ keeps across imports; everything else in it is regenerated. */
-const KEEP = new Set(['orgs.json', 'README.md', 'supplied']);
+const KEEP = new Set(['orgs.json', 'template-families.json', 'README.md', 'supplied']);
 /** library/shared/ holds the shared blocks and path bundles, so no organization may be called that. */
 const SHARED = 'shared';
 
@@ -286,6 +287,12 @@ async function main() {
     for (const { id, name } of group.variants) Object.assign(patchById.get(id), { group: group.id, variant: name });
     variantGroups.push({ id: group.id, label: group.label, members: group.variants.map(({ id, name }) => ({ id, name })) });
   }
+
+  // Validate the hand-maintained browsing relationships before replacing generated files.
+  resolveTemplateFamilies(
+    { orgs: [...byOrg.values()], variants: variantGroups },
+    JSON.parse(readFileSync(join(LIBRARY, 'template-families.json'), 'utf8')),
+  );
 
   // Store what repeats once.
   const groupOf = new Map([...patchById].filter(([, p]) => p.group).map(([id, p]) => [id, p.group]));
