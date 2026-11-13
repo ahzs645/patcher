@@ -26,7 +26,7 @@ import { shareParts } from './share-parts.mjs';
 import { verifyLibrary } from './verify-library.mjs';
 
 /** Files library/ keeps across imports; everything else in it is regenerated. */
-const KEEP = new Set(['orgs.json', 'README.md', 'supplied']);
+const KEEP = new Set(['orgs.json', 'README.md', 'supplied', 'profiles.json']);
 /** library/shared/ holds the shared blocks and path bundles, so no organization may be called that. */
 const SHARED = 'shared';
 
