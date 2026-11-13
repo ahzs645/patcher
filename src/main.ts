@@ -471,6 +471,7 @@ function syncControls() {
   $<HTMLInputElement>('varyAngles').checked = state.params.varyAngles;
   $<HTMLInputElement>('underlay').checked = state.params.underlay;
   $<HTMLInputElement>('raiseText').checked = state.params.raiseText;
+  $<HTMLInputElement>('clothGround').checked = state.params.ground === 'cloth';
   $<HTMLInputElement>('borderAuto').checked = !state.params.borderColor;
   $<HTMLInputElement>('borderColor').disabled = !state.params.borderColor;
   if (state.params.borderColor) $<HTMLInputElement>('borderColor').value = state.params.borderColor;
@@ -966,6 +967,7 @@ function init() {
 
   $<HTMLInputElement>('varyAngles').onchange = (e) => { state.params.varyAngles = (e.target as HTMLInputElement).checked; scheduleDigitize(); };
   $<HTMLInputElement>('underlay').onchange = (e) => { state.params.underlay = (e.target as HTMLInputElement).checked; scheduleDigitize(); };
+  $<HTMLInputElement>('clothGround').onchange = (e) => { state.params.ground = (e.target as HTMLInputElement).checked ? 'cloth' : 'stitched'; scheduleDigitize(); };
   $<HTMLInputElement>('raiseText').onchange = (e) => { state.params.raiseText = (e.target as HTMLInputElement).checked; scheduleDigitize(); };
   bindSeg('border', () => state.params.border, (v) => { state.params.border = v as DigitizeParams['border']; scheduleDigitize(); });
   const auto = $<HTMLInputElement>('borderAuto');

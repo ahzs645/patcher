@@ -6,6 +6,7 @@ export type StitchKind = 'underlay' | 'fill' | 'satin' | 'border';
 export type BorderStyle = 'merrow' | 'satin' | 'none';
 /** Per-thread relief override: raised = satin sewn on top of the fill around it. */
 export type Relief = 'flat' | 'raised';
+export type Ground = 'stitched' | 'cloth';
 
 export interface DigitizeParams {
   /** Finished patch width in mm (height follows the SVG aspect ratio). */
@@ -44,6 +45,14 @@ export interface DigitizeParams {
   raiseText: boolean;
   /** Per-thread overrides keyed by detected colour; absent = automatic (lettering only). */
   relief: Record<string, Relief>;
+  /**
+   * What the patch is sewn on. 'stitched' covers every colour with thread.
+   * 'cloth' leaves the ground colour as bare twill, the way most cloth
+   * patches are made: only the lettering, the motif and the edge are sewn.
+   */
+  ground: Ground;
+  /** The colour left as cloth; null = the colour covering the most area. */
+  groundColor: string | null;
 }
 
 export const DEFAULT_PARAMS: DigitizeParams = {
@@ -66,6 +75,8 @@ export const DEFAULT_PARAMS: DigitizeParams = {
   borderColor: null,
   raiseText: true,
   relief: {},
+  ground: 'stitched',
+  groundColor: null,
 };
 
 /** One contiguous colour block: a single region (or the border) sewn in one go. */
@@ -110,6 +121,8 @@ export interface DigitizeResult {
   rasterH: number;
   stitchCount: number;
   borderColor: string | null;
+  /** Palette index left as bare cloth (the twill shows instead of stitches), or -1 when every colour is sewn. */
+  clothIndex: number;
   /** Share of each palette entry's area that is sewn raised (0..1). */
   raisedShare: number[];
   timings: Record<string, number>;

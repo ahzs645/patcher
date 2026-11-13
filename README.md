@@ -31,10 +31,18 @@ from, how they are grouped, how repeated crests and outlines are stored once (29
 **Views:** Compare (wipe slider), Side by side, Embroidered, Stitch plan, Patch SVG — shared pan/zoom,
 pinch-zoom on touch, sew-out simulator with scrubber. Keys: `1`–`5` views, `Space` play, `F` fit, `O` open.
 
-**Raised lettering:** text in the SVG (`<text>`, or outlined lettering tagged `data-live-text` as forestoval exports it)
-is sewn the way a digitizer sews type: the fill behind it runs on underneath, then each letter goes on top as satin
+**Raised lettering:** text in the SVG (`<text>`, or outlined lettering its drawing marks as such: `data-live-text` as
+forestoval exports it, a `data-caption` group, `data-letter` / `data-char` / `data-glyph` on each letter, or an id such as
+`upper-lettering` or `header-letter-03-T`) is sewn the way a digitizer sews type: the fill behind it runs on underneath, then each letter goes on top as satin
 columns over a centre-walk underlay. Switch it off under Stitches → Lettering, or set any thread to Auto / Flat / Raised
 in the Threads tab (e.g. raise a logo's outline, or keep a colour flat).
+
+**Cloth ground:** Stitches → Ground (`ground: 'cloth'`) leaves the largest colour unsewn, as bare twill, the way most
+cloth patches are made; `groundColor` picks another colour. The stitch count drops accordingly.
+
+**Checking a change:** `npm run sew:check` sews every library patch in a real browser (it needs Playwright) and writes
+a PNG and a report line for each: stitches by kind, raised share, longest stitch, time. Run it before and after into two
+`--out` folders and compare.
 
 **Exports:** embroidered PNG mockup, Patch SVG, Tajima `.dst`, Melco `.exp` (lock stitches, trims,
 long-stitch splitting), plus design details and a thread sequence matched to Brother / Janome charts.

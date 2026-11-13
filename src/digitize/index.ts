@@ -78,6 +78,14 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   const colorRank = palette.map((_, i) => i).sort((a, b) => coverage[b] - coverage[a]);
   const rankOf = new Map(colorRank.map((l, r) => [l, r]));
 
+  // ---- cloth ground: the ground colour's areas are left unsewn. Its small
+  // pieces (a letter's counter, a gap between strokes) are cloth as well.
+  let clothLabel = -1;
+  if (params.ground === 'cloth') {
+    clothLabel = params.groundColor ? palette.indexOf(params.groundColor) : colorRank[0] ?? -1;
+  }
+  const isCloth = (c: Comp) => c.label === clothLabel;
+
   // ---- raised regions: lettering (from the SVG's text mask) and any thread
   // set to raised. They are sewn last, as satin columns on top of the fill
   // around them, which runs on underneath instead of stopping at their edge.
@@ -92,6 +100,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   const raisedArea = new Array(palette.length).fill(0);
   for (const c of regions) {
     labelArea[c.label] += c.area;
+    if (isCloth(c)) continue;
     const mode = relief[palette[c.label]];
     if (mode === 'raised' || (mode !== 'flat' && params.raiseText && textHits[c.id] >= c.area * 0.5)) {
       raised[c.id] = 1;
@@ -115,7 +124,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   }
   // Only tatami fills extend underneath; a satin neighbour (a letter's counter,
   // a thin rule) is sewn by its own outline and would leave the pixels bare.
-  const isSource = (ci: number) => ci >= 0 && !raised[ci] && comps[ci].label !== HOLE && !isSatin(comps[ci]);
+  const isSource = (ci: number) => ci >= 0 && !raised[ci] && comps[ci].label !== HOLE && !isSatin(comps[ci]) && !isCloth(comps[ci]);
   for (let i = 0; i < w * h; i++) {
     if (compUnder[i] !== PENDING) continue;
     const x = i % w, y = (i / w) | 0;
@@ -228,7 +237,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
     pushBlock(palette[label], label, 'satin', p.pts, p.jumps, isRaised);
   };
 
-  const hasFlat = (l: number) => regions.some((c) => c.label === l && !raised[c.id]);
+  const hasFlat = (l: number) => l !== clothLabel && regions.some((c) => c.label === l && !raised[c.id]);
   const hasRaised = (l: number) => regions.some((c) => c.label === l && raised[c.id]);
   // Flat colours first (a colour that is also raised goes last, so its raised
   // pass can follow without another thread change), then the raised colours.
@@ -352,7 +361,9 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
     if (c.label === HOLE) continue;
     const d = dist[i];
     let v: number;
-    if (raised[ci]) {
+    if (c.label === clothLabel) {
+      v = 0; // bare cloth: everything sewn stands above it
+    } else if (raised[ci]) {
       // Satin over underlay on top of the fill: the highest thread on the patch.
       const u = Math.min(1, d / Math.max(1, Math.min(c.maxDist, 1.4 * ppm)));
       v = 0.6 + 0.4 * Math.sqrt(1 - (1 - u) * (1 - u));
@@ -392,6 +403,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
     rasterH: h,
     stitchCount,
     borderColor,
+    clothIndex: clothLabel,
     raisedShare,
     timings,
   };

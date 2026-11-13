@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "library:import": "node scripts/import-atlas.mjs",
-    "library:verify": "node scripts/verify-library.mjs"
+    "library:verify": "node scripts/verify-library.mjs",
+    "sew:check": "node scripts/sew-check.mjs"
   },
   "devDependencies": {
     "fflate": "^0.8.3",

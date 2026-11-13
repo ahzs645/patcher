@@ -74,8 +74,17 @@ function loadImage(url: string): Promise<HTMLImageElement> {
   });
 }
 
-/** What counts as lettering: SVG text, and outlined lettering tagged by its exporter (forestoval keeps data-live-text). */
-const LETTERING = 'text, [data-live-text]';
+/**
+ * What counts as lettering: SVG text, and outlined lettering marked as such
+ * by whoever drew it. forestoval keeps data-live-text; the atlas's drawings
+ * group a line of outlined letters under data-caption, or name the group or
+ * each letter (id="upper-lettering", id="header-letter-03-T", data-letter="B").
+ */
+export const LETTERING = [
+  'text', '[data-live-text]', '[data-caption]', '[data-letter]', '[data-char]', '[data-glyph]', '[data-character]',
+  // By name, and not id*="lettering": the band lettering sits on is "white-lettering-band".
+  '[id$="lettering"]', '[id^="lettering-"]', '[id*="-letter-"]', '[id^="letter-"]',
+].join(', ');
 
 /**
  * The same SVG with everything but the lettering hidden, or null when it has

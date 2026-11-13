@@ -497,7 +497,7 @@ export function columnSatin(
     let avgLen = cur.len;
     for (let guard = 0; guard < 4000; guard++) {
       if (cur.len > o.maxWidth || occupiedShare(cur) > 0.5) break;
-      if (out.length && cur.len > Math.max(avgLen * 1.7, avgLen + 4)) break;
+      if (out.length && cur.len > Math.max(avgLen * 1.4, avgLen + 3)) break;
       out.push(cur);
       if (commit) {
         if (out.length === 1) markBand(cur, o.spacing * 0.5);
@@ -521,6 +521,27 @@ export function columnSatin(
       cur = next;
     }
     return out;
+  };
+
+  /**
+   * The shortest chord at each step is measured on pixels, so its angle
+   * jitters by several degrees from rung to rung; sewn as is, the rungs fan
+   * out and their ends bunch and gap, which reads as a ragged edge. Average
+   * the angle over the neighbouring rungs and cast each rung again through
+   * its own centre, so the ends still land on the outline.
+   */
+  const smooth = (rungs: Chord[]): Chord[] => {
+    const R = 3;
+    return rungs.map((r, i) => {
+      let c = 0, s = 0;
+      for (let j = Math.max(0, i - R); j <= Math.min(rungs.length - 1, i + R); j++) {
+        const wgt = R + 1 - Math.abs(j - i);
+        c += Math.cos(rungs[j].a) * wgt; s += Math.sin(rungs[j].a) * wgt;
+      }
+      const again = chord((r.ax + r.bx) / 2, (r.ay + r.by) / 2, Math.atan2(s, c));
+      // Near a junction the averaged angle can run off down the joining stroke.
+      return again.len <= Math.min(o.maxWidth, r.len * 1.35 + 1) ? again : r;
+    });
   };
 
   // Ridge pixels (local maxima of the distance field) seed the columns.
@@ -558,9 +579,10 @@ export function columnSatin(
     // Find this stroke's end on one side, then sew from there to the other end.
     const probe = march(seed, 1, false);
     const from = probe.length ? probe[probe.length - 1] : seed;
-    const rungs = march(from, -1, true);
+    const marched = march(from, -1, true);
     // A column this short is a junction corner; the leftover satin covers it.
-    if (rungs.length < 4) continue;
+    if (marched.length < 4) continue;
+    const rungs = smooth(marched);
     // Start at whichever end is nearer the needle.
     const a = rungs[0], b = rungs[rungs.length - 1];
     const da = Math.min((a.ax - pos[0]) ** 2 + (a.ay - pos[1]) ** 2, (a.bx - pos[0]) ** 2 + (a.by - pos[1]) ** 2);

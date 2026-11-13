@@ -190,15 +190,20 @@ function threadSprites(hex: string, border: boolean, finish: Finish, softEnds = 
   return pick;
 }
 
-function twillPattern(ctx: CanvasRenderingContext2D, hex: string, scale: number): CanvasPattern {
-  const s = Math.max(4, Math.round(scale * 0.8));
+/**
+ * Twill backing. `bare` is cloth meant to be seen (a patch sewn on a twill
+ * ground): its own colour with a finer, clearer diagonal rib. Otherwise it
+ * only shows through gaps in the stitching and is kept darker.
+ */
+function twillPattern(ctx: CanvasRenderingContext2D, hex: string, scale: number, bare: boolean): CanvasPattern {
+  const s = Math.max(4, Math.round(scale * (bare ? 0.55 : 0.8)));
   const c = document.createElement('canvas');
   c.width = c.height = s;
   const g = c.getContext('2d')!;
   const rgb = hexToRgb(hex);
-  g.fillStyle = shade(rgb, 0.9);
+  g.fillStyle = shade(rgb, bare ? 1.06 : 0.9);
   g.fillRect(0, 0, s, s);
-  g.strokeStyle = shade(rgb, 0.7);
+  g.strokeStyle = shade(rgb, bare ? 0.74 : 0.7);
   g.lineWidth = s / 3;
   g.beginPath();
   g.moveTo(-s, s * 2); g.lineTo(s * 2, -s);
@@ -250,8 +255,8 @@ export function renderTextured(result: DigitizeResult, opts: TexturedOptions, ta
   const outline = outlinePath(result, scale);
 
   // Twill backing, visible only where nothing is stitched.
-  const main = result.coverage.indexOf(Math.max(...result.coverage));
-  ctx.fillStyle = twillPattern(ctx, opts.colors[main] ?? '#777777', scale);
+  const main = result.clothIndex >= 0 ? result.clothIndex : result.coverage.indexOf(Math.max(...result.coverage));
+  ctx.fillStyle = twillPattern(ctx, opts.colors[main] ?? '#777777', scale, result.clothIndex >= 0);
   ctx.fill(outline);
 
   const la = (opts.lightDeg * Math.PI) / 180;
@@ -384,7 +389,8 @@ function applyRelief(ctx: CanvasRenderingContext2D, result: DigitizeResult, opts
       // Surface normal ≈ (-gx, -gy, 1); dot with light (lx, ly, ~0.7).
       let s = -(gx * lx + gy * ly) / Math.sqrt(1 + gx * gx + gy * gy);
       // Ambient occlusion in the valleys between areas.
-      s -= Math.max(0, 0.3 - hb[i]) * 1.2;
+      // (Bare cloth, at height 0, is the floor itself and is not a valley.)
+      if (height[i] > 0) s -= Math.max(0, 0.3 - hb[i]) * 1.2;
       const o = i * 4;
       if (s >= 0) { d[o] = d[o + 1] = d[o + 2] = 255; d[o + 3] = Math.min(150, s * 170 * hiK); }
       else { d[o + 3] = Math.min(190, -s * 230); }
