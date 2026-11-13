@@ -37,7 +37,7 @@ forestoval exports it, a `data-caption` group, `data-letter` / `data-char` / `da
 columns over a centre-walk underlay. Switch it off under Stitches → Lettering, or set any thread to Auto / Flat / Raised
 in the Threads tab (e.g. raise a logo's outline, or keep a colour flat).
 
-**Cloth ground:** Stitches → Ground (`ground: 'cloth'`) leaves the largest colour unsewn, as bare twill, the way most
+**Cloth ground:** Stitches → Ground (`ground: 'cloth'`) leaves the colour lying just inside the edge unsewn, as bare twill, the way most
 cloth patches are made; `groundColor` picks another colour. The stitch count drops accordingly.
 
 **Checking a change:** `npm run sew:check` sews every library patch in a real browser (it needs Playwright) and writes

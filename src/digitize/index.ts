@@ -82,7 +82,25 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   // pieces (a letter's counter, a gap between strokes) are cloth as well.
   let clothLabel = -1;
   if (params.ground === 'cloth') {
-    clothLabel = params.groundColor ? palette.indexOf(params.groundColor) : colorRank[0] ?? -1;
+    if (params.groundColor) {
+      clothLabel = palette.indexOf(params.groundColor);
+    } else {
+      // The cloth is what the edge is sewn round, so it is the colour lying
+      // just inside the border (past a drawn rim line, which is satin-thin),
+      // not necessarily the one covering the most area: a roundel's white
+      // scene can outweigh the band of cloth around it.
+      const from = (params.border === 'none' ? 0 : params.borderWidthMm * 0.8) * ppm + 0.5 * ppm;
+      const to = from + 5 * ppm;
+      const inBand = new Array(palette.length).fill(0);
+      for (let i = 0; i < w * h; i++) {
+        const ci = comp[i];
+        if (ci < 0 || silDist[i] < from || silDist[i] > to) continue;
+        const c = comps[ci];
+        if (c.label !== HOLE && !isSatin(c)) inBand[c.label]++;
+      }
+      const best = Math.max(...inBand);
+      clothLabel = best > 0 ? inBand.indexOf(best) : colorRank[0] ?? -1;
+    }
   }
   const isCloth = (c: Comp) => c.label === clothLabel;
 

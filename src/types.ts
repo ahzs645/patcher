@@ -51,7 +51,7 @@ export interface DigitizeParams {
    * patches are made: only the lettering, the motif and the edge are sewn.
    */
   ground: Ground;
-  /** The colour left as cloth; null = the colour covering the most area. */
+  /** The colour left as cloth; null = the colour lying just inside the edge. */
   groundColor: string | null;
 }
 
