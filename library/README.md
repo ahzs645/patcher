@@ -91,7 +91,8 @@ A stored `<org>/<id>.svg` is not the whole drawing on its own, so don't serve it
 
 To bring something back, delete its rule and re-import.
 
-`relabel` gives a design a label of its own where the atlas's was wrong or left it unresolved, with a note
+`relabel` gives a design a label of its own where the atlas's was wrong or left it unresolved, with an optional
+`family` correction and a note
 that joins its limitations (S56-O36 is the Justice Institute's roundel; S48-O01 the Forest Service
 evergreen emblem). Moving a design to another organization is a `family` rule like any other.
 
@@ -109,6 +110,7 @@ preview, quality line and limitations:
 
 | Design | Drawing |
 |---|---|
+| S56-O23 Emergency Service / Expo 86 shield | `supplied/expo-emergency-service/`: corrected EMERGENCY and provisional SERVICE captions, a constructed shield, and the full stacked Expo logo already collected by PofBC (`compose.mjs`) |
 | S25-O01 Parks Branch elk roundel | `supplied/bc-parks-branch-elk-roundel/`: a supplied vector package, used whole |
 | S31-O01 Recreation and Conservation / Parks | `supplied/bc-parks-recreation-conservation/`: a supplied vector package, used whole |
 | S30-O04, S27-O04 scenic arch, Parks and Parks · Ranger | `supplied/bc-parks-scenic-arch/`: the atlas arch and lettering with a supplied landscape in the window (`compose.mjs`) |

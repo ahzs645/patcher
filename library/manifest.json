@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28905122,
-  "storedBytes": 8335087,
+  "sourceBytes": 28906506,
+  "storedBytes": 8336471,
   "sharedBlocks": 61,
   "sharedPaths": 294
  },
@@ -5797,16 +5797,16 @@
    "patches": [
     {
      "id": "S56-O23",
-     "label": "Crime Prevention / Expo 86 — shield",
+     "label": "Emergency Service / Expo 86 — shield",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "expo-crime-prevention",
+     "quality": "Reconstructed captions with PofBC's collected Expo 86 vector",
+     "family": "expo-emergency-service",
      "affiliation": "Other",
      "svg": "expo-86/S56-O23.svg",
      "preview": "expo-86/previews/S56-O23.webp",
-     "sha256": "ce38984b19c265c5c0b79aef3d6b925073db55e93475ced0caaa8655d16b47d8",
-     "bytes": 6304,
+     "sha256": "a0029b139562dd84c977497fe7aac8b1a39e73218b252d4c3d4ea59173832b96",
+     "bytes": 7688,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5815,7 +5815,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
+     "limitations": "The blue shield, dark edging, gold inset border and two magenta caption rows are reconstructed from a 75 × 57 collector-board crop. The stacked EXPO-over-86 lockup reuses PofBC's collected expo86-symbol.svg at its original aspect ratio, recoloured gold; the source is Mwtoews's third-party vector reconstruction, not an official historical master. The exact embroidered alphabet, thread colours, outline and second-line transcription remain unverified. See supplied/expo-emergency-service/README.md. EMERGENCY corrects the atlas's mistaken CRIME PREVENTION caption. SERVICE follows the user's reading of the short second line and remains provisional at 75 × 57 source pixels.",
+     "replaced": {
+      "svg": "supplied/expo-emergency-service/composed/S56-O23.svg",
+      "atlasSha256": "ce38984b19c265c5c0b79aef3d6b925073db55e93475ced0caaa8655d16b47d8"
+     },
      "blocks": [],
      "bundles": []
     },
