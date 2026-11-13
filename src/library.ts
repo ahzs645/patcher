@@ -15,7 +15,10 @@
 // join with src/library-join.js themselves.
 
 import manifest from '../library/manifest.json';
+import templateCatalogue from '../library/template-families.json';
+import { resolveTemplateFamilies, type TemplateFamily } from './template-families.js';
 import { joinSvg, unwrapBlock } from './library-join.js';
+import { createTextCache } from './library-cache.js';
 
 export interface LibrarySector { id: string; name: string }
 
@@ -133,6 +136,11 @@ export const LIBRARY: Library = {
 
 const byId = new Map(LIBRARY.orgs.flatMap((o) => o.patches.map((p) => [p.id, p] as const)));
 
+/** Explicit layout families; these never merge designs, variant cards, or photographed specimens. */
+export const TEMPLATE_FAMILIES: TemplateFamily[] = resolveTemplateFamilies(data, templateCatalogue);
+const templateByPatch = new Map(TEMPLATE_FAMILIES.flatMap((family) => family.members.map((id) => [id, family] as const)));
+export const templateFamilyOf = (patch: Pick<LibraryPatch, 'id'>): TemplateFamily | null => templateByPatch.get(patch.id) ?? null;
+
 // An atlas id merged into another photograph's patch (S27-O01 into S30-O04), or absorbed into a
 // supplied design (R22-O01 into FO-forest-service), still finds the patch that took its place.
 const movedTo = new Map([...data.merged, ...(data.absorbed ?? [])].map((m) => [m.id, m.into]));
@@ -210,20 +218,31 @@ async function sha256(value: string): Promise<string | null> {
   return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('');
 }
 
+// Cache completed drawings separately from their shared parts. The expected hash and asset URL
+// identify immutable text without retaining a caller's mutable patch object. Failed loads (including
+// a failed SHA check) are retried. The 16 MiB limit applies to retained UTF-8 text, not browser heap.
+const drawings = createTextCache({ maxBytes: 16 * 1024 * 1024 });
+
 /**
  * A library patch's whole drawing, exactly as the atlas published it. Rejects if a part is missing
  * or the joined drawing's SHA-256 isn't the atlas's (checked where the page can hash: https or localhost).
  */
-export async function loadPatchSvg(patch: ResolvedPatch): Promise<string> {
-  const [stored, blockTexts, bundleMaps] = await Promise.all([
-    fetchText(patch.fileUrl, patch.id),
-    Promise.all(patch.blocks.map((id) => loadBlock(id).then((content) => [id, content] as const))),
-    Promise.all(patch.bundles.map(loadBundle)),
-  ]);
-  const blockMap = new Map(blockTexts);
-  const paths: Record<string, string> = Object.assign({}, ...bundleMaps);
-  const svg = joinSvg(stored, { block: (id) => blockMap.get(id), path: (id) => paths[id] });
-  const hash = await sha256(svg);
-  if (hash && hash !== patch.sha256) throw new Error(`${patch.id} didn't join back to the atlas's drawing`);
-  return svg;
+export function loadPatchSvg(patch: ResolvedPatch): Promise<string> {
+  const { id, fileUrl, sha256: expectedHash } = patch;
+  const neededBlocks = [...patch.blocks];
+  const neededBundles = [...patch.bundles];
+  const key = JSON.stringify([expectedHash, fileUrl]);
+  return drawings.get(key, async () => {
+    const [stored, blockTexts, bundleMaps] = await Promise.all([
+      fetchText(fileUrl, id),
+      Promise.all(neededBlocks.map((blockId) => loadBlock(blockId).then((content) => [blockId, content] as const))),
+      Promise.all(neededBundles.map(loadBundle)),
+    ]);
+    const blockMap = new Map(blockTexts);
+    const paths: Record<string, string> = Object.assign({}, ...bundleMaps);
+    const svg = joinSvg(stored, { block: (blockId) => blockMap.get(blockId), path: (pathId) => paths[pathId] });
+    const hash = await sha256(svg);
+    if (hash && hash !== expectedHash) throw new Error(`${id} didn't join back to the atlas's drawing`);
+    return svg;
+  });
 }

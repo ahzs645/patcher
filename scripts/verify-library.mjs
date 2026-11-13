@@ -17,6 +17,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { joinSvg, unwrapBlock } from '../src/library-join.js';
+import { resolveTemplateFamilies } from '../src/template-families.js';
 import { LIBRARY, drawingKey, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
 
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
@@ -51,7 +52,12 @@ export function joinedPatches(library = LIBRARY) {
  */
 export function verifyLibrary({ source, library = LIBRARY } = {}) {
   const problems = [];
-  const { patches } = joinedPatches(library);
+  const { manifest: catalogue, patches } = joinedPatches(library);
+  try {
+    resolveTemplateFamilies(catalogue, JSON.parse(readFileSync(join(library, 'template-families.json'), 'utf8')));
+  } catch (error) {
+    problems.push(`Template families: ${error.message}`);
+  }
   for (const p of patches) {
     if (p.sha256 !== p.expected) problems.push(`${p.id}: joined SHA-256 ${p.sha256} is not the manifest's ${p.expected}`);
     if (p.bytes.length !== p.expectedBytes) problems.push(`${p.id}: joined ${p.bytes.length} bytes, manifest says ${p.expectedBytes}`);

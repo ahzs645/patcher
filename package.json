@@ -10,7 +10,9 @@
     "typecheck": "tsc --noEmit",
     "library:import": "node scripts/import-atlas.mjs",
     "library:verify": "node scripts/verify-library.mjs",
-    "sew:check": "node scripts/sew-check.mjs"
+    "sew:check": "node scripts/sew-check.mjs",
+    "library:audit": "node scripts/audit-library.mjs",
+    "test:library": "node --test src/library-cache.test.js src/template-families.test.js"
   },
   "devDependencies": {
     "fflate": "^0.8.3",
