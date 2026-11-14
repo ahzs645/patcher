@@ -7,8 +7,10 @@ B and C that its fan shield (S56-O46) carries.
 `compose.mjs` takes the atlas drawing from the snapshot and swaps its bridge (one stroked path) for the
 four paths of `../jibc-fan-badge/vectors/JIBC_Monogram.svg`, filled in the roundel's gold (#cdb171) and
 centred where the bridge sat, 52 units wide, as wide as the photograph shows it. The ring, the disc and
-BRITISH COLUMBIA are the atlas's. The photograph's upper caption (Justice Institute) is still left out,
-as the atlas left it.
+BRITISH COLUMBIA are the atlas's. The photograph's upper caption, JUSTICE INSTITUTE, which the atlas left
+out, is set over the top with `../lettering` in the atlas's own face and size (Roboto Condensed Bold, cap
+height 6.6) and navy, mirroring BRITISH COLUMBIA: its capitals fill the same band of the ring, radius 34.4
+to 41.
 
 ```bash
 node library/supplied/jibc-bridge-roundel/compose.mjs   # then npm run library:import

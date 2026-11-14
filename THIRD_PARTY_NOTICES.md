@@ -6,6 +6,13 @@
 outlined from Kabel Black (as committed in forestoval), Open Sans, Noto Sans and Roboto Condensed; the last
 three are under the SIL Open Font License 1.1.
 
+`library/supplied/lettering/glyphs/` holds letter outlines from Roboto Condensed Bold and Poppins SemiBold
+(both SIL Open Font License 1.1, via Fontsource) and TeX Gyre Heros Regular (GUST Font License), used to set
+patch lettering as paths. The arms in `library/supplied/sfu-security-fan/source/` and
+`library/supplied/uvic-campus-security/source/` are the universities' own marks, kept as reference for the
+patch reconstructions; their READMEs record where they came from. The UBC arms in
+`library/supplied/ubc-patrol-shield/source/` are public domain (Wikimedia Commons).
+
 ## bastidor
 
 ```

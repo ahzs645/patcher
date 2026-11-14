@@ -18,6 +18,9 @@
     { "id": "S56-O23", "label": "Emergency Service / Expo 86 — shield", "family": "expo-emergency-service", "note": "EMERGENCY corrects the atlas's mistaken CRIME PREVENTION caption. SERVICE follows the user's reading of the short second line and remains provisional at 75 × 57 source pixels." },
     { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
     { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy roundel", "note": "The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46)." },
+    { "id": "S56-O47", "label": "British Columbia / Police College — blue roundel", "family": "justice-institute-police-college-roundel", "note": "The atlas read the lower caption as TRAFFIC OFFICERS and filed it with Highways and Motor Vehicles. The photograph reads british columbia / police college in lower case; the BC Police College became part of the Justice Institute of British Columbia (now its Police Academy)." },
+    { "id": "S56-O48", "label": "Simon Fraser University / Security Services — fan", "family": "sfu-security-fan", "note": "The atlas read this fan as British Columbia / Motor Vehicles. The photograph reads SIMON FRASER UNIVERSITY over SECURITY SERVICES, about the university's arms." },
+    { "id": "S56-O59", "label": "Campus Security / University of Victoria — shield", "family": "uvic-campus-security", "note": "The atlas filed this patch under UBC and read UNIVERSITY OF / BRITISH COLUMBIA. The shield is the University of Victoria's (three martlets over an open book), with UNIVERSITY OF VICTORIA under it and SERVICES across the bottom." },
     { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The atlas left the captions out, unread from a 157 × 173 historical catalogue illustration; the separate supplied illustration package resolves B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
   ],
   "replace": [
@@ -202,7 +205,35 @@
       "svg": "supplied/jibc-bridge-roundel/composed/S56-O36.svg",
       "preview": "supplied/jibc-bridge-roundel/preview-S56-O36.webp",
       "quality": "Atlas roundel with the supplied JIBC monogram",
-      "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board; the upper caption (Justice Institute in the photograph) is still left out. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted by compose.mjs in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted."
+      "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board. JUSTICE INSTITUTE, which the atlas left out, is set over the top by compose.mjs in the same outlined face and size, mirroring BRITISH COLUMBIA. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted."
+    },
+    {
+      "id": "S56-O47",
+      "svg": "supplied/bc-police-college-roundel/composed/S56-O47.svg",
+      "preview": "supplied/bc-police-college-roundel/preview-S56-O47.webp",
+      "quality": "Atlas roundel with corrected lower-case lettering",
+      "limitations": "The cream rim, navy ring, grey disc and centre figure are the atlas's reconstruction from a 60 × 57 collector-board crop; the centre remains a coarse interpretation. compose.mjs resets both captions in lower case as the photograph shows them (british columbia, police college) in Poppins SemiBold, a stand-in for the unidentified geometric face. Thread colours are interpreted."
+    },
+    {
+      "id": "S56-O48",
+      "svg": "supplied/sfu-security-fan/composed/S56-O48.svg",
+      "preview": "supplied/sfu-security-fan/preview-S56-O48.webp",
+      "quality": "Atlas fan with Simon Fraser University's arms and corrected captions",
+      "limitations": "The cream fan and navy edge are the atlas's reconstruction from a 113 × 48 collector-board crop. compose.mjs puts Simon Fraser University's full-colour arms (shield and motto scroll, from the university's May 2015 brand guidelines; copyright Simon Fraser University) in the centre, SIMON FRASER UNIVERSITY along the upper edge and SECURITY SERVICES along the lower edges in outlined Roboto Condensed Bold. The embroidered alphabet, thread colours and the arms' stitched detail are interpreted."
+    },
+    {
+      "id": "S56-O57",
+      "svg": "supplied/ubc-patrol-shield/composed/S56-O57.svg",
+      "preview": "supplied/ubc-patrol-shield/preview-S56-O57.webp",
+      "quality": "Atlas shield with the UBC arms and a straight base",
+      "limitations": "The navy field, gold edge and lettering are the atlas's reconstruction from an 80 × 65 collector-board crop. compose.mjs makes the base straight, as on the patch, and replaces the simplified centre with the University of British Columbia's arms (Wikimedia Commons, public domain, after the 1915 design in the UBC Archives), its gold matched to the patch's thread, at its own proportions. PATROL's tall condensed alphabet and the exact thread colours remain interpreted."
+    },
+    {
+      "id": "S56-O59",
+      "svg": "supplied/uvic-campus-security/composed/S56-O59.svg",
+      "preview": "supplied/uvic-campus-security/preview-S56-O59.webp",
+      "quality": "Atlas shield with the University of Victoria's arms and corrected captions",
+      "limitations": "The navy field, gold edge, CAMPUS and SECURITY are the atlas's reconstruction from a 78 × 62 collector-board crop. compose.mjs puts the University of Victoria's shield (cut from the full arms in its brand guidelines, as reproduced on the English Wikipedia; copyright the University of Victoria) in the centre, with UNIVERSITY OF VICTORIA curving under it and SERVICES across the bottom in outlined Roboto Condensed Bold. SERVICES is read from the blurred photograph. The embroidered alphabet, thread colours and the shield's stitched detail are interpreted."
     }
   ],
   "variants": [

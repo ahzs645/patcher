@@ -7,13 +7,17 @@
 // The gold ring, the navy disc and the BRITISH COLUMBIA lettering are the atlas's reconstruction. Its
 // centre art, a single stroked path of five lines, gives way to the four paths of the JIBC monogram
 // (the triangle with B and C) from the supplied fan-badge package (../jibc-fan-badge), in the
-// roundel's gold thread, centred where the bridge sat.
+// roundel's gold thread, centred where the bridge sat. The upper caption, JUSTICE INSTITUTE, which the
+// atlas left out, is set over the top of the ring in the atlas's own face and size (Roboto Condensed
+// Bold, cap height 6.6, its navy), mirroring BRITISH COLUMBIA below: the capitals fill the same band
+// of the ring, from radius 34.4 to 41.
 
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { strFromU8 } from 'fflate';
 import { readSnapshot, snapshotPath } from '../../../scripts/atlas-snapshot.mjs';
+import { arc, face } from '../lettering/lettering.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const source = readSnapshot(await snapshotPath({}));
@@ -44,7 +48,20 @@ const art =
   paths.map((tag) => tag.replace(/\s*id="[^"]*"/, '').replace(/fill="#[0-9A-Fa-f]{6}"/, `fill="${GOLD}"`).replace(/\s*\/>$/, '/>')).join('') +
   '</g>';
 
-const svg = atlas.replace(BRIDGE, art);
+// JUSTICE INSTITUTE over the top. BRITISH COLUMBIA's baseline is the circle of radius 41 below the
+// centre, its capitals standing inward to 34.4; these stand outward from 34.4 to 41.
+const NAVY = /<g data-caption="BRITISH COLUMBIA"><path d="[^"]*" fill="(#[0-9a-f]{6})"/.exec(atlas)[1];
+const CAP = 6.6;
+const upper = arc(face('roboto-condensed-bold'), 'JUSTICE INSTITUTE', {
+  cx: 50, cy: 50, radius: 41 - CAP, capHeight: CAP, fill: NAVY, tracking: 0.3, side: 'top',
+});
+
+const svg = atlas
+  .replace(BRIDGE, art + upper)
+  .replace(/<title>[^<]*<\/title>/, '<title>Justice Institute / British Columbia — gold and navy roundel</title>')
+  .replace(/<desc>[^<]*<\/desc>/, '<desc>Gold ring and navy disc with the Justice Institute of British Columbia monogram. ' +
+    'JUSTICE INSTITUTE over the top and BRITISH COLUMBIA below, outlined in Roboto Condensed Bold; the embroidered ' +
+    'alphabet, thread colours and fine detail are interpreted from a low-resolution collector board.</desc>');
 mkdirSync(join(HERE, 'composed'), { recursive: true });
 writeFileSync(join(HERE, 'composed/S56-O36.svg'), svg);
 console.log(`composed/S56-O36.svg: ${svg.length} bytes`);
