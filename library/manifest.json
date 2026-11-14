@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28906506,
-  "storedBytes": 8336471,
+  "sourceBytes": 28909751,
+  "storedBytes": 8339716,
   "sharedBlocks": 61,
   "sharedPaths": 294
  },
@@ -1743,16 +1743,16 @@
     },
     {
      "id": "S45-O01",
-     "label": "B.C. / Forest Service — map, tree and ungulate rectangle",
+     "label": "B.C. / Forest Service — evergreen emblem and caribou rectangle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Shared Forest Service emblem with reconstructed caribou and fitted captions",
      "family": "forest-map-animal",
      "affiliation": "Forestry",
      "svg": "bc-forest-service/S45-O01.svg",
      "preview": "bc-forest-service/previews/S45-O01.webp",
-     "sha256": "7fb037c68de06c2ee9368331cac8d6538a57055c1767e0bf96a0c5ecf6855972",
-     "bytes": 11336,
+     "sha256": "eb139ad5577d28d72be795df67c6c9bafcc7a572f9b50bb49df847d90e2660ce",
+     "bytes": 14581,
      "sourceUrl": "https://drive.google.com/file/d/1LuVoONE1ytqacJXacmQgiucv-k5JjleR/view",
      "sightings": [
       {
@@ -1761,7 +1761,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Map outline and ungulate anatomy are clean symbolic interpretations; the screenshot cannot establish detailed geographic/antler contours or species.",
+     "limitations": "The mainland, three islands, evergreen crown and trunk use the same PofBC component outlines as S48-O01, fitted independently to S45's rectangular composition with its red-brown outlining. The right-facing animal is built from smooth closed paths with a darker body and pale neck; caribou is the user's identification. The two atlas caption rows retain their substitute outlined glyphs with adjusted fitting. The 418 × 479 source crop cannot establish exact animal anatomy, the original alphabet, physical dimensions or calibrated thread colours. No tracing or source-photo warping. See supplied/forest-service-map-caribou/README.md. The central mark reuses the Forest Service evergreen emblem also present on S48-O01. Caribou follows the user's identification; the blurred source does not independently establish species or fine antler anatomy.",
+     "replaced": {
+      "svg": "supplied/forest-service-map-caribou/composed/S45-O01.svg",
+      "atlasSha256": "7fb037c68de06c2ee9368331cac8d6538a57055c1767e0bf96a0c5ecf6855972"
+     },
      "blocks": [],
      "bundles": []
     },

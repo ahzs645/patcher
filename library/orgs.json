@@ -14,6 +14,7 @@
     { "reason": "Too little survives to draw: a blurred windscreen emblem and a lower-left fragment of an arch, neither identifiable", "ids": ["S42-O02", "S56-O11"] }
   ],
   "relabel": [
+    { "id": "S45-O01", "label": "B.C. / Forest Service — evergreen emblem and caribou rectangle", "note": "The central mark reuses the Forest Service evergreen emblem also present on S48-O01. Caribou follows the user's identification; the blurred source does not independently establish species or fine antler anatomy." },
     { "id": "S56-O23", "label": "Emergency Service / Expo 86 — shield", "family": "expo-emergency-service", "note": "EMERGENCY corrects the atlas's mistaken CRIME PREVENTION caption. SERVICE follows the user's reading of the short second line and remains provisional at 75 × 57 source pixels." },
     { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
     { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy roundel", "note": "The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46)." },
@@ -138,6 +139,13 @@
       "preview": "supplied/forest-service-emblem-square/preview-S48-O01.webp",
       "quality": "Source-refined cloth border, PofBC emblem components",
       "limitations": "The near-square cloth border is constructed independently with near-straight sides and restrained corner rounding, following the S48 photograph. PofBC mainland, islands and evergreen geometry are retained. Exact cloth dimensions, inner component contours, edge stitching and thread colours remain interpreted; the photo was not warped or traced."
+    },
+    {
+      "id": "S45-O01",
+      "svg": "supplied/forest-service-map-caribou/composed/S45-O01.svg",
+      "preview": "supplied/forest-service-map-caribou/preview-S45-O01.webp",
+      "quality": "Shared Forest Service emblem with reconstructed caribou and fitted captions",
+      "limitations": "The mainland, three islands, evergreen crown and trunk use the same PofBC component outlines as S48-O01, fitted independently to S45's rectangular composition with its red-brown outlining. The right-facing animal is built from smooth closed paths with a darker body and pale neck; caribou is the user's identification. The two atlas caption rows retain their substitute outlined glyphs with adjusted fitting. The 418 × 479 source crop cannot establish exact animal anatomy, the original alphabet, physical dimensions or calibrated thread colours. No tracing or source-photo warping. See supplied/forest-service-map-caribou/README.md."
     },
     {
       "id": "S56-O38",
