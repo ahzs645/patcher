@@ -107,7 +107,8 @@ const ring = `<path data-role="border" d="${ellipse(FIT.rx + RING, FIT.ry + RING
 
 // ── Onto the atlas's oval ──
 // The atlas's oval was fitted to the whole badge's photograph, from which its shield and outer
-// lettering were drawn; the close-up's oval is a little wider (0.80 against 0.76), likely a
+// lettering were drawn; the close-up's oval is a little wider (0.80 against the atlas's 0.76, which
+// the whole photograph matches by eye, not by measurement), perhaps a
 // slightly oblique view. So the fitted ellipse is mapped onto the atlas's exactly: turned upright,
 // and scaled 221 / rx across and 290 / ry down.
 const ATLAS = { cx: 503, cy: 503, rx: 221, ry: 290 };

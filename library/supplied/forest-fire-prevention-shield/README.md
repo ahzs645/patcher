@@ -43,7 +43,8 @@ die's edge; these are the best available, not authenticated geometry.
 ## Fitting it to the badge
 
 The fitted ellipse is turned upright and mapped onto the atlas's inner oval (centre 503, 503; radii
-221 × 290 in its template units). The close-up shows the oval a little wider (0.80) than the whole
-badge's photograph and the atlas's oval do (0.76), likely because the close-up was taken slightly
-obliquely, so the emblem is scaled about 5% more across than down to sit in the badge as the whole
-photograph shows it.
+221 × 290 in its template units). The close-up's fitted oval is a little wider (width to height 0.80)
+than the atlas's (0.76). The whole badge's photograph, from which the atlas's shield and outer lettering
+were drawn, looks closer to the atlas's proportion, but only by eye: that 0.76 is the atlas's figure,
+not a measurement made here. The close-up may have been taken slightly obliquely. So the emblem is
+scaled about 5% more across than down, to sit in the badge as the atlas draws it.
