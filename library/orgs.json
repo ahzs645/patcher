@@ -14,6 +14,11 @@
     { "reason": "Too little survives to draw: a blurred windscreen emblem and a lower-left fragment of an arch, neither identifiable", "ids": ["S42-O02", "S56-O11"] }
   ],
   "relabel": [
+    {
+      "id": "S01-O01",
+      "label": "Junior Forest Warden / Canadian Forestry Ass’n.",
+      "note": "The supplied photograph shows an apostrophe before the final N and a terminal period."
+    },
     { "id": "S45-O01", "label": "B.C. / Forest Service — evergreen emblem and caribou rectangle", "note": "The central mark reuses the Forest Service evergreen emblem also present on S48-O01. Caribou follows the user's identification; the blurred source does not independently establish species or fine antler anatomy." },
     { "id": "S56-O23", "label": "Emergency Service / Expo 86 — shield", "family": "expo-emergency-service", "note": "EMERGENCY corrects the atlas's mistaken CRIME PREVENTION caption. SERVICE follows the user's reading of the short second line and remains provisional at 75 × 57 source pixels." },
     { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
@@ -24,6 +29,13 @@
     { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The atlas left the captions out, unread from a 157 × 173 historical catalogue illustration; the separate supplied illustration package resolves B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
   ],
   "replace": [
+    {
+      "id": "S01-O01",
+      "svg": "supplied/junior-forest-warden/composed/S01-O01.svg",
+      "preview": "supplied/junior-forest-warden/preview-S01-O01.webp",
+      "quality": "Photo-registered vector reconstruction",
+      "limitations": "Manually fitted shield and inset rim, individual outlined glyph strokes with the photographed relative sizes, both JUNIOR dots and the ASS’N. punctuation, and a five-lobe maple leaf with connected veins. Registered to the original 720 × 960 photo with crop [65,125,604,732]; perspective and surface curvature are retained, so this is not a rectified die master. Fine relief edges are interpreted and grain/cast shadows are omitted. Warm flat colours are display choices. The inherited leather attribution is not authenticated from this photograph. See supplied/junior-forest-warden/README.md."
+    },
     {
       "id": "S56-O23",
       "svg": "supplied/expo-emergency-service/composed/S56-O23.svg",

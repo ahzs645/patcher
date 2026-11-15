@@ -2,7 +2,7 @@
  "version": 3,
  "source": {
   "name": "BC Forestry Patch Atlas",
-  "driveId": "1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4",
+  "driveId": null,
   "snapshotSha256": "02f524d650e28b12a9600bfcd220e492d0fcb2b7cdce039d97e6655ab231c563",
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 29048142,
-  "storedBytes": 8484573,
+  "sourceBytes": 29033816,
+  "storedBytes": 8470247,
   "sharedBlocks": 60,
   "sharedPaths": 294
  },
@@ -1913,16 +1913,16 @@
    "patches": [
     {
      "id": "S01-O01",
-     "label": "Junior Forest Warden / Canadian Forestry Assn.",
+     "label": "Junior Forest Warden / Canadian Forestry Ass’n.",
      "collection": "badges",
      "medium": "Leather badge",
-     "quality": "Clean vector reconstruction",
+     "quality": "Photo-registered vector reconstruction",
      "family": "junior-warden",
      "affiliation": "Canadian Forestry Association",
      "svg": "canadian-forestry-association/S01-O01.svg",
      "preview": "canadian-forestry-association/previews/S01-O01.webp",
-     "sha256": "ba3b0714455cef51124813dafe88fc73f7c8f65b2c1dbf3a9093d0a86f8748bb",
-     "bytes": 38420,
+     "sha256": "5bdc11226f3b7edfb4bdb79bf2783947c0df197751d5f8f182b0ae5be1b7e4fe",
+     "bytes": 24094,
      "sourceUrl": "https://drive.google.com/file/d/1INS_YP_UZWb3HuuJuolLxhmbafQ2Fo_W/view",
      "sightings": [
       {
@@ -1931,7 +1931,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The embossed maple leaf and condensed lettering are interpreted as clean forms; leather grain is deliberately absent.",
+     "limitations": "Manually fitted shield and inset rim, individual outlined glyph strokes with the photographed relative sizes, both JUNIOR dots and the ASS’N. punctuation, and a five-lobe maple leaf with connected veins. Registered to the original 720 × 960 photo with crop [65,125,604,732]; perspective and surface curvature are retained, so this is not a rectified die master. Fine relief edges are interpreted and grain/cast shadows are omitted. Warm flat colours are display choices. The inherited leather attribution is not authenticated from this photograph. See supplied/junior-forest-warden/README.md. The supplied photograph shows an apostrophe before the final N and a terminal period.",
+     "replaced": {
+      "svg": "supplied/junior-forest-warden/composed/S01-O01.svg",
+      "atlasSha256": "ba3b0714455cef51124813dafe88fc73f7c8f65b2c1dbf3a9093d0a86f8748bb"
+     },
      "blocks": [],
      "bundles": []
     }

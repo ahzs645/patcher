@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="245 350 165 145" width="660" height="580" role="img" aria-labelledby="leaf-title leaf-description">
+  <title id="leaf-title">S01-O01 maple leaf — corrected lobe structure</title>
+  <desc id="leaf-description">Editable paths in the original photograph's pixel coordinates. The left recess is deepened to the visible relief valley, margins retain irregular angular changes, the basal lobes are distinct, and curved veins taper toward their tips. Photo perspective is retained. Fine serrations and bevel widths remain interpreted from the JPEG.</desc>
+  <g id="maple-leaf-outline" fill="#dfad74" stroke="#80522e" stroke-width="2.5" stroke-linejoin="round">
+    <path id="maple-leaf-blade-and-stem" d="
+      M327.2 360
+      C330.3 362 330.7 365 333.5 367.2
+      L335.8 368.1 336.5 372.3 Q339.4 376.6 339.3 379.3
+      L342 381 Q342.7 386.2 345 390 L344.9 393.3
+      C348.5 399.8 347.1 406.8 343.7 411
+      C341.6 413.7 339.8 416.1 339.9 418.5
+      C339.6 423 343.3 425 347.3 424.5
+      C351.4 424 352 420 353.6 415.7
+      L355.6 411.7 Q358.5 406.3 363.7 400.9
+      L367.7 397.1 373.7 396.6 377 394.7
+      Q387 394.4 396.2 397
+      L393.5 404.1 393 409.6 389.8 414.2 387 415.7
+      L388 418.2 384.2 423.9 381.7 425.3
+      L383.4 427.5 378.7 434 376.5 434.6
+      L377.1 437 370 443.6 366 443.4
+      Q361.1 446.5 358 447.5
+      C367 449 375.7 452 377.8 458.4
+      L381.5 465.3 374.1 468.1 371 471 363 470.5
+      Q359.6 473.1 354 471.2
+      C350.6 475.4 343.3 474.2 337 469.8
+      Q334.5 468.6 332.6 468.5
+      L333.8 481.7 Q334.4 485.2 331.5 484.1
+      Q330.5 483.7 330 481.3 L328.4 467.9
+      C323.8 470.4 317.6 473.3 313.2 473
+      Q309.2 475.3 305.1 471.4
+      L300.8 473.6 295.6 470.7
+      Q288 473 278.7 469
+      L282.4 463.6 285.3 458.1
+      C289.5 452.4 295.1 450 301 447.2
+      L290.6 444.4 286.3 441.7 282.1 442.2
+      L278.8 438.6 273.5 435.8 272.6 431.8 268.3 428.4
+      L269.2 424 264.8 420.6 266 416.9 262.1 413.6
+      L263.5 411.1 258.8 406.8 259.2 403 254.8 396.6
+      Q263 394.5 273.6 395.7 L281.3 393.8
+      Q286.8 395.3 289.7 401.4
+      C294 409 301 414.5 309 420.8
+      Q314.8 425.7 315 421.2
+      C315.1 417.9 311.8 414.6 309.2 412.1
+      C305.4 408.6 302.9 404.8 303.5 398.2
+      Q304 393.5 307 389
+      L310.6 384.2 311 380.4 314.4 377.8
+      L316.2 373 320 371 322.5 365 Z"/>
+  </g>
+  <g id="maple-leaf-principal-veins" fill="#f4d2a0" stroke="#b9864f" stroke-width="0.55" stroke-linejoin="round">
+    <path id="maple-leaf-left-main-vein" d="M329 452.2 C313.5 446.2 293 430 267.3 404.8 C275 411.3 286.5 420.1 297 427.5 C310.3 437 321.5 446 330 451.4 Z"/>
+    <path id="maple-leaf-right-main-vein" d="M329 452.3 C346 448.1 368.7 428 388.3 404.3 C374.5 425 350 450.3 330.1 454.5 Z"/>
+    <path id="maple-leaf-left-basal-vein" d="M328.8 452.5 C315.5 452.2 298 459 283.2 467.3 C297.8 462.6 315 456.2 329.6 454.2 Z"/>
+    <path id="maple-leaf-right-basal-vein" d="M330 452.8 C344.8 451.8 360.4 457.6 376.2 465.6 C359 461.8 344.1 455.5 330 455 Z"/>
+  </g>
+  <g id="maple-leaf-secondary-veins" fill="#f4d2a0" stroke="#b9864f" stroke-width="0.4" stroke-linejoin="round">
+    <path id="maple-leaf-top-left-branch" d="M327.8 393.9 C324 389.4 322.5 383.8 322.1 377.8 C323.9 383.2 325.5 387.6 328.3 391.4 Z"/>
+    <path id="maple-leaf-top-right-branch" d="M328.5 388.1 C331.1 384.4 332.6 379.6 332.1 374.4 C334.4 380.2 332.8 386.7 328.6 390.3 Z"/>
+    <path id="maple-leaf-centre-left-branch" d="M328.1 413 C320.9 405.3 317.7 397.4 316.4 389.2 C319.9 397.9 323 404.1 328.5 410.5 Z"/>
+    <path id="maple-leaf-centre-right-branch" d="M329 406.8 C335.3 401 339.5 391.8 339.2 385.5 C341.7 393.5 336.5 404.3 329.2 409 Z"/>
+    <path id="maple-leaf-lower-left-branch" d="M328.7 437 C324 432.6 321.2 428.2 319.8 423.7 C323.9 427.5 326.4 430.5 329 433.8 Z"/>
+    <path id="maple-leaf-lower-right-branch" d="M329.4 429.9 C333.5 425.5 337.4 419.8 339.1 414.9 C339.5 421.4 335 428.5 329.5 432.4 Z"/>
+    <path id="maple-leaf-left-upper-branch" d="M295.7 430.6 C292.4 418.9 282.9 407.9 274 402 C285.5 407.8 294.4 418.9 298.6 432.4 Z"/>
+    <path id="maple-leaf-left-lower-branch" d="M310.5 442.6 C296.5 443.4 285.9 437.4 278.6 431.4 C289.8 437.6 300.3 440.1 308.5 439.7 Z"/>
+    <path id="maple-leaf-left-tip-branch" d="M282 417.8 C274.4 418.5 269.7 414.3 267 410.7 C272.1 414.9 277.8 416.8 280.7 416.1 Z"/>
+    <path id="maple-leaf-right-upper-branch" d="M350.9 442.5 C352.2 426.4 362.6 409.1 375.5 401.9 C364.3 412.9 355.1 429.1 353.7 440.7 Z"/>
+    <path id="maple-leaf-right-lower-branch" d="M346.6 444.5 C359.5 444 370.8 436.6 377.3 429.7 C370.7 439.8 359 446.8 343.5 447 Z"/>
+    <path id="maple-leaf-right-tip-branch" d="M367.8 424.6 C374.9 423.5 381.4 415.4 385 411.6 C382.3 419.1 375.4 424.9 365.6 427 Z"/>
+    <path id="maple-leaf-left-basal-branch" d="M309.4 458.3 C308.8 463 305.4 468 301 470 C303.8 464.8 305.4 462.9 306.8 459 Z"/>
+    <path id="maple-leaf-right-basal-branch" d="M349.5 457.3 C349.5 462.4 354.1 467.3 360.9 470.1 C352 468.7 347.5 463.4 347 456.8 Z"/>
+  </g>
+  <g id="maple-leaf-midrib" fill="#f4d2a0" stroke="#b9864f" stroke-width="0.5" stroke-linejoin="round">
+    <path id="maple-leaf-continuous-midrib" d="M331.4 482.1 C330 471.8 328.3 459.9 327.9 447.2 C327.2 433 328.5 420.3 327.4 408.2 C326.5 397 327.2 384 327.5 371.7 C329.2 382.8 329.1 395 329.4 407.8 C330 423.7 329 436 330 447.6 C330.4 460.1 332.4 472 333 481.9 Q332.6 483.1 331.4 482.1 Z"/>
+  </g>
+</svg>
