@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="520" height="650" viewBox="0 0 520 650" role="img" aria-labelledby="title desc">
+<title id="title">British Columbia Forest Service — reconstructed oval emblem</title>
+<desc id="desc">Geometric reconstruction of the inner British Columbia Forest Service emblem in the user-supplied photograph. Explicit hand-authored paths; no embedded raster, auto-trace or font dependency. Asymmetric conifer, one elliptical border, two dots and individually constructed uppercase letters. The blurred photograph does not resolve every small contour; this is not a certified historical master.</desc>
+<g id="bc-forest-service-emblem" fill="#181A19" fill-rule="evenodd">
+<path id="oval-border" d="M16.5 325 A243.5 299.5 0 1 0 503.5 325 A243.5 299.5 0 1 0 16.5 325 Z M23.5 325 A236.5 292.5 0 1 0 496.5 325 A236.5 292.5 0 1 0 23.5 325 Z"/>
+<g id="reference-registration" transform="translate(260 325) rotate(2) translate(-352 -323)">
+<path id="conifer" d="M339 122
+ C336.5 131 338 142 332 149
+ C329 153 325 155 321 157
+ Q318 159 322 162
+ C327 166 333 165 338 164
+ C338 177 335 188 330 196
+ C318 207 300 212 279 212
+ Q273 212 278 218
+ C292 230 310 240 329 237
+ C335 238 337 244 332 252
+ C319 274 302 287 282 296
+ Q276 299 281 303
+ C297 310 318 304 334 294
+ C331 309 320 328 304 342
+ Q298 346 301 350
+ C310 358 323 353 335 348
+ C330 365 311 382 293 397
+ C284 403 278 410 277 415
+ Q274 419 278 421
+ C288 423 309 408 325 402
+ C317 417 303 425 285 430
+ Q280 431 283 436
+ C291 444 306 441 320 436
+ C312 447 299 455 282 460
+ Q276 463 281 467
+ C300 478 321 478 338 468
+ C339 492 338 520 334 541
+ Q332 548 338 547
+ L364 532
+ C362 515 364 493 365 475
+ C378 482 389 484 395 480
+ Q397 478.5 394.5 477
+ C391 474.5 388 469.5 387 464
+ C403 466 422 455 433 446
+ Q438 442 433 440
+ C416 442 401 433 393 421
+ C386 411 383 401 383 394
+ C394 394 406 387 410 380
+ Q413 376 408 373
+ C390 373 376 360 368 346
+ C366 338 368 332 371 328
+ C381 335 390 335 396 330
+ Q399 328 394 324
+ C383 316 371 308 365 299
+ C377 303 387 299 392 292
+ Q395 289 390 286
+ C375 276 361 263 354 248
+ C352 239 362 228 375 221
+ C386 221 396 218 402 213
+ Q405 210 400 207
+ C378 196 360 189 349 181
+ C345 177 345 172 346 168
+ C353 173 359 172 363 168
+ Q366 165 361 162
+ C351 157 345 150 343 141
+ L342 126 Q341 119 339 122 Z"/>
+<g id="separator-dots">
+<path id="left-dot" d="M156.5 350 A8.5 10 0 1 0 173.5 350 A8.5 10 0 1 0 156.5 350 Z"/>
+<path id="right-dot" d="M521.5 332 A8.5 10 0 1 0 538.5 332 A8.5 10 0 1 0 521.5 332 Z"/>
+</g><g id="upper-inscription" aria-label="BRITISH COLUMBIA">
+<path id="top-01-B" aria-label="B" transform="translate(169 251) rotate(-80) scale(0.37681159 0.39000000) translate(-34.5 -50)" d="M0 0 H35 C55 0 65 9 65 25 C65 36 60 42 51 46 C63 49 69 58 69 72 C69 90 57 100 37 100 H0 Z M18 16 V40 H33 C42 40 47 36 47 28 C47 20 42 16 33 16 Z M18 56 V84 H35 C45 84 51 80 51 70 C51 60 45 56 35 56 Z"/>
+<path id="top-02-R" aria-label="R" transform="translate(179 216) rotate(-73) scale(0.37500000 0.40000000) translate(-36 -50)" d="M0 100 V0 H36 C58 0 69 11 69 31 C69 46 62 55 50 59 L72 100 H52 L32 62 H18 V100 Z M18 16 V46 H34 C45 46 51 41 51 31 C51 21 45 16 34 16 Z"/>
+<path id="top-03-I" aria-label="I" transform="translate(191 187) rotate(-65) scale(0.44444444 0.40000000) translate(-9 -50)" d="M0 0 H18 V100 H0 Z"/>
+<path id="top-04-T" aria-label="T" transform="translate(205 166) rotate(-56) scale(0.38888889 0.40000000) translate(-36 -50)" d="M0 0 H72 V17 H45 V100 H27 V17 H0 Z"/>
+<path id="top-05-I" aria-label="I" transform="translate(223 144) rotate(-49) scale(0.44444444 0.40000000) translate(-9 -50)" d="M0 0 H18 V100 H0 Z"/>
+<path id="top-06-S" aria-label="S" transform="translate(240 126) rotate(-41) scale(0.38571429 0.41000000) translate(-35 -50)" d="M68 26 L51 29 C50 19 44 14 34 14 C24 14 18 19 18 26 C18 33 24 36 39 41 C60 47 70 54 70 72 C70 91 57 102 35 102 C13 102 1 91 0 72 L18 69 C19 81 25 87 36 87 C47 87 53 82 53 74 C53 66 47 62 32 58 C10 51 1 43 1 27 C1 9 14 -2 35 -2 C55 -2 66 8 68 26 Z"/>
+<path id="top-07-H" aria-label="H" transform="translate(265 105) rotate(-31) scale(0.37333333 0.41000000) translate(-37.5 -50)" d="M0 0 H18 V40 H57 V0 H75 V100 H57 V58 H18 V100 H0 Z"/>
+<path id="top-08-C" aria-label="C" transform="translate(339 71) rotate(-3) scale(0.42105263 0.42000000) translate(-38 -50)" d="M76 25 L59 30 C56 19 50 14 39 14 C24 14 18 27 18 50 C18 74 25 87 39 87 C50 87 57 81 60 68 L76 73 C72 92 58 102 39 102 C14 102 0 84 0 50 C0 17 14 -2 39 -2 C59 -2 72 8 76 25 Z"/>
+<path id="top-09-O" aria-label="O" transform="translate(385 77) rotate(13) scale(0.43037975 0.42000000) translate(-39.5 -50)" d="M39.5 -2 C65 -2 79 17 79 50 C79 83 65 102 39.5 102 C14 102 0 83 0 50 C0 17 14 -2 39.5 -2 Z M39.5 14 C25 14 18 26 18 50 C18 74 25 86 39.5 86 C54 86 61 74 61 50 C61 26 54 14 39.5 14 Z"/>
+<path id="top-10-L" aria-label="L" transform="translate(419 94) rotate(28) scale(0.43333333 0.41000000) translate(-30 -50)" d="M0 0 H18 V83 H60 V100 H0 Z"/>
+<path id="top-11-U" aria-label="U" transform="translate(449 115) rotate(40) scale(0.38666667 0.41000000) translate(-37.5 -50)" d="M0 0 H18 V65 C18 80 24 86 37.5 86 C51 86 57 80 57 65 V0 H75 V66 C75 90 62 102 37.5 102 C13 102 0 90 0 66 Z"/>
+<path id="top-12-M" aria-label="M" transform="translate(475 142) rotate(51) scale(0.36363636 0.41000000) translate(-44 -50)" d="M0 100 V0 H23 L44 64 L65 0 H88 V100 H71 V30 L51 89 H37 L17 30 V100 Z"/>
+<path id="top-13-B" aria-label="B" transform="translate(498 173) rotate(61) scale(0.39130435 0.40000000) translate(-34.5 -50)" d="M0 0 H35 C55 0 65 9 65 25 C65 36 60 42 51 46 C63 49 69 58 69 72 C69 90 57 100 37 100 H0 Z M18 16 V40 H33 C42 40 47 36 47 28 C47 20 42 16 33 16 Z M18 56 V84 H35 C45 84 51 80 51 70 C51 60 45 56 35 56 Z"/>
+<path id="top-14-I" aria-label="I" transform="translate(514 204) rotate(70) scale(0.44444444 0.40000000) translate(-9 -50)" d="M0 0 H18 V100 H0 Z"/>
+<path id="top-15-A" aria-label="A" transform="translate(527 239) rotate(78) scale(0.38961039 0.40000000) translate(-38.5 -50)" d="M0 100 L29 0 H48 L77 100 H58 L52 79 H24 L18 100 Z M29 63 H47 L38 29 Z"/>
+</g><g id="lower-inscription" aria-label="FOREST SERVICE">
+<path id="bottom-01-F" aria-label="F" transform="translate(183 424) rotate(70) scale(0.38709677 0.37000000) translate(-31 -50)" d="M0 0 H62 V17 H18 V42 H55 V59 H18 V100 H0 Z"/>
+<path id="bottom-02-O" aria-label="O" transform="translate(198 460) rotate(59) scale(0.37974684 0.38000000) translate(-39.5 -50)" d="M39.5 -2 C65 -2 79 17 79 50 C79 83 65 102 39.5 102 C14 102 0 83 0 50 C0 17 14 -2 39.5 -2 Z M39.5 14 C25 14 18 26 18 50 C18 74 25 86 39.5 86 C54 86 61 74 61 50 C61 26 54 14 39.5 14 Z"/>
+<path id="bottom-03-R" aria-label="R" transform="translate(218 492) rotate(48) scale(0.37500000 0.38000000) translate(-36 -50)" d="M0 100 V0 H36 C58 0 69 11 69 31 C69 46 62 55 50 59 L72 100 H52 L32 62 H18 V100 Z M18 16 V46 H34 C45 46 51 41 51 31 C51 21 45 16 34 16 Z"/>
+<path id="bottom-04-E" aria-label="E" transform="translate(244 520) rotate(36) scale(0.37500000 0.38000000) translate(-32 -50)" d="M0 0 H64 V17 H18 V40 H59 V57 H18 V83 H64 V100 H0 Z"/>
+<path id="bottom-05-S" aria-label="S" transform="translate(270 542) rotate(26) scale(0.35714286 0.38000000) translate(-35 -50)" d="M68 26 L51 29 C50 19 44 14 34 14 C24 14 18 19 18 26 C18 33 24 36 39 41 C60 47 70 54 70 72 C70 91 57 102 35 102 C13 102 1 91 0 72 L18 69 C19 81 25 87 36 87 C47 87 53 82 53 74 C53 66 47 62 32 58 C10 51 1 43 1 27 C1 9 14 -2 35 -2 C55 -2 66 8 68 26 Z"/>
+<path id="bottom-06-T" aria-label="T" transform="translate(297 558) rotate(15) scale(0.38888889 0.38000000) translate(-36 -50)" d="M0 0 H72 V17 H45 V100 H27 V17 H0 Z"/>
+<path id="bottom-07-S" aria-label="S" transform="translate(392 559) rotate(-17) scale(0.35714286 0.38000000) translate(-35 -50)" d="M68 26 L51 29 C50 19 44 14 34 14 C24 14 18 19 18 26 C18 33 24 36 39 41 C60 47 70 54 70 72 C70 91 57 102 35 102 C13 102 1 91 0 72 L18 69 C19 81 25 87 36 87 C47 87 53 82 53 74 C53 66 47 62 32 58 C10 51 1 43 1 27 C1 9 14 -2 35 -2 C55 -2 66 8 68 26 Z"/>
+<path id="bottom-08-E" aria-label="E" transform="translate(420 546) rotate(-29) scale(0.37500000 0.38000000) translate(-32 -50)" d="M0 0 H64 V17 H18 V40 H59 V57 H18 V83 H64 V100 H0 Z"/>
+<path id="bottom-09-R" aria-label="R" transform="translate(448 528) rotate(-40) scale(0.36111111 0.38000000) translate(-36 -50)" d="M0 100 V0 H36 C58 0 69 11 69 31 C69 46 62 55 50 59 L72 100 H52 L32 62 H18 V100 Z M18 16 V46 H34 C45 46 51 41 51 31 C51 21 45 16 34 16 Z"/>
+<path id="bottom-10-V" aria-label="V" transform="translate(475 505) rotate(-50) scale(0.36363636 0.38000000) translate(-38.5 -50)" d="M0 0 H19 L38.5 73 L58 0 H77 L48 100 H29 Z"/>
+<path id="bottom-11-I" aria-label="I" transform="translate(497 482) rotate(-60) scale(0.44444444 0.38000000) translate(-9 -50)" d="M0 0 H18 V100 H0 Z"/>
+<path id="bottom-12-C" aria-label="C" transform="translate(513 456) rotate(-69) scale(0.35526316 0.38000000) translate(-38 -50)" d="M76 25 L59 30 C56 19 50 14 39 14 C24 14 18 27 18 50 C18 74 25 87 39 87 C50 87 57 81 60 68 L76 73 C72 92 58 102 39 102 C14 102 0 84 0 50 C0 17 14 -2 39 -2 C59 -2 72 8 76 25 Z"/>
+<path id="bottom-13-E" aria-label="E" transform="translate(527 426) rotate(-78) scale(0.37500000 0.37000000) translate(-32 -50)" d="M0 0 H64 V17 H18 V40 H59 V57 H18 V83 H64 V100 H0 Z"/>
+</g>
+</g>
+</g>
+</svg>

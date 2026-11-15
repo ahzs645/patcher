@@ -17,9 +17,9 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 29059574,
-  "storedBytes": 8489539,
-  "sharedBlocks": 61,
+  "sourceBytes": 29048142,
+  "storedBytes": 8484573,
+  "sharedBlocks": 60,
   "sharedPaths": 294
  },
  "collections": [
@@ -310,12 +310,6 @@
     "id": "embossed-outlined-caption-d48bf5929d",
     "file": "shared/embossed-outlined-caption-d48bf5929d.svg",
     "bytes": 3447,
-    "usedBy": 2
-   },
-   {
-    "id": "historic-pine-adffb4d88d",
-    "file": "shared/historic-pine-adffb4d88d.svg",
-    "bytes": 6732,
     "usedBy": 2
    },
    {
@@ -1707,9 +1701,7 @@
      ],
      "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
-     "blocks": [
-      "historic-pine-adffb4d88d"
-     ],
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1855,13 +1847,13 @@
      "label": "Forest Fire / Prevention Officer — tree shield",
      "collection": "badges",
      "medium": "Metal badge",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas shield with a reviewed reconstruction of its inner emblem",
      "family": "forest-fire-officer-metal",
      "affiliation": "Forestry",
      "svg": "bc-forest-service/S51-O01.svg",
      "preview": "bc-forest-service/previews/S51-O01.webp",
-     "sha256": "d53a603ffad1156f51847f4094900382d7689d1302c3b17f340d160340bccc06",
-     "bytes": 39494,
+     "sha256": "1cd816b9079674f45e4bf588533d3e06df1b6b6244d2ab0c2f548fcf08f905fe",
+     "bytes": 28062,
      "sourceUrl": "https://drive.google.com/file/d/1Qx2P5oct-kU8_sf8XOJJvK_dU1-J6Elb/view",
      "sightings": [
       {
@@ -1870,10 +1862,12 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
-     "blocks": [
-      "historic-pine-adffb4d88d"
-     ],
+     "limitations": "The shield, rims and FOREST FIRE / PREVENTION OFFICER lettering are the atlas's reconstruction. compose.mjs replaces the inner oval emblem with a hand-built reconstruction of a 674 × 676 close-up photograph (a broad, asymmetric tiered conifer in place of the shared thin historic pine, the two separator dots the atlas left out, and individually drawn BRITISH COLUMBIA / FOREST SERVICE), applies an overlap review's corrections (lower-left notch and bough, upper neck, trunk, the E S T of FOREST, dot size, and the border on its fitted ellipse), and fits it onto the atlas's oval. The close-up's oval is slightly wider than the whole badge's, likely an oblique view, so the emblem is about 5% narrower than in the close-up. Typeface, die contours and material tones remain interpretations.",
+     "replaced": {
+      "svg": "supplied/forest-fire-prevention-shield/composed/S51-O01.svg",
+      "atlasSha256": "d53a603ffad1156f51847f4094900382d7689d1302c3b17f340d160340bccc06"
+     },
+     "blocks": [],
      "bundles": []
     },
     {

@@ -208,6 +208,13 @@
       "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board. JUSTICE INSTITUTE, which the atlas left out, is set over the top by compose.mjs in the same outlined face and size, mirroring BRITISH COLUMBIA. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted."
     },
     {
+      "id": "S51-O01",
+      "svg": "supplied/forest-fire-prevention-shield/composed/S51-O01.svg",
+      "preview": "supplied/forest-fire-prevention-shield/preview-S51-O01.webp",
+      "quality": "Atlas shield with a reviewed reconstruction of its inner emblem",
+      "limitations": "The shield, rims and FOREST FIRE / PREVENTION OFFICER lettering are the atlas's reconstruction. compose.mjs replaces the inner oval emblem with a hand-built reconstruction of a 674 × 676 close-up photograph (a broad, asymmetric tiered conifer in place of the shared thin historic pine, the two separator dots the atlas left out, and individually drawn BRITISH COLUMBIA / FOREST SERVICE), applies an overlap review's corrections (lower-left notch and bough, upper neck, trunk, the E S T of FOREST, dot size, and the border on its fitted ellipse), and fits it onto the atlas's oval. The close-up's oval is slightly wider than the whole badge's, likely an oblique view, so the emblem is about 5% narrower than in the close-up. Typeface, die contours and material tones remain interpretations."
+    },
+    {
       "id": "S56-O47",
       "svg": "supplied/bc-police-college-roundel/composed/S56-O47.svg",
       "preview": "supplied/bc-police-college-roundel/preview-S56-O47.webp",

@@ -140,6 +140,7 @@ preview, quality line and limitations:
 | S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
 | MC03-O01 B.C. Game Department / Predator Branch | `supplied/bc-predator-branch/`: a supplied vector package, used whole, which reads the captions the atlas left out |
 | S56-O46 Justice Institute / British Columbia fan shield | `supplied/jibc-fan-badge/`: a supplied vector package, used whole |
+| S51-O01 Forest Fire / Prevention Officer shield | `supplied/forest-fire-prevention-shield/`: the atlas shield with a reviewed reconstruction of its inner emblem (broad asymmetric conifer, separator dots, redrawn captions), the review's corrections applied (`compose.mjs`) |
 | S56-O36 Justice Institute / British Columbia roundel | `supplied/jibc-bridge-roundel/`: the atlas roundel with the fan-badge package's JIBC monogram in place of its schematic bridge, and JUSTICE INSTITUTE set over the top (`compose.mjs`) |
 | S56-O47 British Columbia / Police College roundel | `supplied/bc-police-college-roundel/`: the atlas roundel with its captions reset in lower case as the photograph reads them (`compose.mjs`) |
 | S56-O48 Simon Fraser University / Security Services fan | `supplied/sfu-security-fan/`: the atlas fan with the university's supplied arms and its captions reset along the edges (`compose.mjs`) |
