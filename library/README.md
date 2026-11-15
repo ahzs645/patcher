@@ -123,6 +123,7 @@ preview, quality line and limitations:
 
 | Design | Drawing |
 |---|---|
+| S01-O01 Junior Forest Warden / Canadian Forestry Ass’n. | `supplied/junior-forest-warden/`: manually fitted shield, inset rim, individually drawn lettering and veined maple leaf registered to the original source photograph (`compose.py`); retains photographic perspective and is not a rectified die master |
 | S56-O23 Emergency Service / Expo 86 shield | `supplied/expo-emergency-service/`: corrected EMERGENCY and provisional SERVICE captions, a constructed shield, and the full stacked Expo logo already collected by PofBC (`compose.mjs`) |
 | S25-O01 Parks Branch elk roundel | `supplied/bc-parks-branch-elk-roundel/`: a supplied vector package, used whole |
 | S31-O01 Recreation and Conservation / Parks | `supplied/bc-parks-recreation-conservation/`: a supplied vector package, used whole |
