@@ -105,7 +105,9 @@ To bring something back, delete its rule and re-import.
 `relabel` gives a design a label of its own where the atlas's was wrong or left it unresolved, with an optional
 `family` correction and a note
 that joins its limitations (S56-O36 is the Justice Institute's roundel; S48-O01 the Forest Service
-evergreen emblem). Moving a design to another organization is a `family` rule like any other.
+evergreen emblem). The organization rules below are tested against the relabelled label and family, so a
+relabel's `family` moves a design (S56-O47 to the Justice Institute, S56-O48 to Simon Fraser University,
+S56-O59 to the University of Victoria).
 
 The atlas also has an entry per photograph a design was seen in, each fitted to its photograph, so
 the same patch can come out several times (the Parks scenic arch four times). The import merges
@@ -138,8 +140,16 @@ preview, quality line and limitations:
 | S56-O43 Fire Commissioner | `supplied/fire-commissioner-badge/`: a supplied scalloped-shield shape study as the outline, with the atlas's arms and lettering (`compose.mjs`) |
 | MC03-O01 B.C. Game Department / Predator Branch | `supplied/bc-predator-branch/`: a supplied vector package, used whole, which reads the captions the atlas left out |
 | S56-O46 Justice Institute / British Columbia fan shield | `supplied/jibc-fan-badge/`: a supplied vector package, used whole |
-| S56-O36 Justice Institute / British Columbia roundel | `supplied/jibc-bridge-roundel/`: the atlas roundel with the fan-badge package's JIBC monogram in place of its schematic bridge (`compose.mjs`) |
+| S51-O01 Forest Fire / Prevention Officer shield | `supplied/forest-fire-prevention-shield/`: the atlas shield with a reviewed reconstruction of its inner emblem (broad asymmetric conifer, separator dots, redrawn captions), the review's corrections applied (`compose.mjs`) |
+| S56-O36 Justice Institute / British Columbia roundel | `supplied/jibc-bridge-roundel/`: the atlas roundel with the fan-badge package's JIBC monogram in place of its schematic bridge, and JUSTICE INSTITUTE set over the top (`compose.mjs`) |
+| S56-O47 British Columbia / Police College roundel | `supplied/bc-police-college-roundel/`: the atlas roundel with its captions reset in lower case as the photograph reads them (`compose.mjs`) |
+| S56-O48 Simon Fraser University / Security Services fan | `supplied/sfu-security-fan/`: the atlas fan with the university's supplied arms and its captions reset along the edges (`compose.mjs`) |
+| S56-O57 University / British Columbia / Patrol | `supplied/ubc-patrol-shield/`: the atlas shield with a straight base and the UBC arms from Wikimedia Commons (`compose.mjs`) |
+| S56-O59 Campus Security / University of Victoria | `supplied/uvic-campus-security/`: the atlas shield with the UVic shield and its lower captions reset (`compose.mjs`) |
 | MC27-O01, MC28-O01, MC29-O01 compact Conservation Officer shields | `supplied/co-compact-shields-review/`: restores the photographed curved heading divider and refits the British Columbia row; other components remain under review |
+
+New wording is set with `supplied/lettering/`: outline tables for the atlas's own caption faces (and a
+stand-in), and helpers that place letters on lines, circles or a patch's own edge as the atlas does.
 
 The November 8 source review also restores the missing mountain strokes in the
 monochrome Wildfire Management oval and gives S48-O01 a separate near-square cloth

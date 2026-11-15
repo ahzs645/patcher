@@ -1,0 +1,434 @@
+{
+  "review_scope": "Analysis of delivered reconstruction; no source logo paths changed during this review.",
+  "coordinate_system": "Original 674 x 676 source pixels, origin top-left, x to right, y down. SVG rotations are in source-image coordinates.",
+  "sources": {
+    "photograph": {
+      "filename": "Screenshot 2026-11-14 at 9.57.24\u202fPM.png",
+      "sha256": "7f5415ae8da3576a68d0050c52663507fcd111e99dda1b56b91af74dfe6f1655"
+    },
+    "svg": {
+      "filename": "BC_Forest_Service_Reconstructed.svg",
+      "sha256": "f5a13f446c62731b6d1b5b9ace626b4c9e51d688bf0ea574a0f07ea747a7066a"
+    }
+  },
+  "border_diagnostics": {
+    "source_pixels": [
+      674,
+      676
+    ],
+    "method": "720 outward-normal profiles; +/-14 source-pixel corridor; narrow bright ridge after broad background subtraction; robust ellipse fit; bright ridge is not a certified artwork edge",
+    "initial_ellipse": {
+      "cx": 352.0,
+      "cy": 323.0,
+      "rx": 240.0,
+      "ry": 296.0,
+      "rotation_deg": -2.0
+    },
+    "fitted_bright_ridge_ellipse": {
+      "cx": 351.003,
+      "cy": 321.746,
+      "rx": 237.215,
+      "ry": 295.2,
+      "rotation_deg": -3.075
+    },
+    "minimum_response": 0.012,
+    "samples": 720,
+    "contrast_accepted": 707,
+    "fit_inliers": 685,
+    "existing_centerline_to_ridge": {
+      "n": 685,
+      "median_signed_px": -1.482,
+      "median_absolute_px": 1.675,
+      "p90_absolute_px": 4.74,
+      "min_px": -8.327,
+      "max_px": 3.215
+    },
+    "existing_centerline_to_ridge_all_contrast_accepted": {
+      "n": 707,
+      "median_signed_px": -1.567,
+      "median_absolute_px": 1.756,
+      "p90_absolute_px": 5.424,
+      "min_px": -9.48,
+      "max_px": 3.215
+    },
+    "fitted_ellipse_to_ridge": {
+      "n": 685,
+      "median_signed_px": 0.082,
+      "median_absolute_px": 1.087,
+      "p90_absolute_px": 2.861,
+      "min_px": -4.556,
+      "max_px": 3.557
+    },
+    "sector_metrics": {
+      "right": {
+        "accepted": 147,
+        "total": 180,
+        "existing_centerline_to_ridge": {
+          "n": 147,
+          "median_signed_px": -3.683,
+          "median_absolute_px": 3.683,
+          "p90_absolute_px": 7.509,
+          "min_px": -8.327,
+          "max_px": 1.179
+        },
+        "fitted_ellipse_to_ridge": {
+          "n": 147,
+          "median_signed_px": -0.489,
+          "median_absolute_px": 1.623,
+          "p90_absolute_px": 3.755,
+          "min_px": -4.556,
+          "max_px": 3.525
+        },
+        "contrast_accepted": 168,
+        "all_contrast_accepted_offset": {
+          "n": 168,
+          "median_signed_px": -4.377,
+          "median_absolute_px": 4.377,
+          "p90_absolute_px": 8.455,
+          "min_px": -9.48,
+          "max_px": 1.179
+        }
+      },
+      "bottom": {
+        "accepted": 180,
+        "total": 180,
+        "existing_centerline_to_ridge": {
+          "n": 180,
+          "median_signed_px": -2.45,
+          "median_absolute_px": 2.45,
+          "p90_absolute_px": 4.377,
+          "min_px": -4.818,
+          "max_px": 1.472
+        },
+        "fitted_ellipse_to_ridge": {
+          "n": 180,
+          "median_signed_px": 0.081,
+          "median_absolute_px": 1.389,
+          "p90_absolute_px": 2.608,
+          "min_px": -2.664,
+          "max_px": 3.517
+        },
+        "contrast_accepted": 180,
+        "all_contrast_accepted_offset": {
+          "n": 180,
+          "median_signed_px": -2.45,
+          "median_absolute_px": 2.45,
+          "p90_absolute_px": 4.377,
+          "min_px": -4.818,
+          "max_px": 1.472
+        }
+      },
+      "left": {
+        "accepted": 178,
+        "total": 180,
+        "existing_centerline_to_ridge": {
+          "n": 178,
+          "median_signed_px": -1.452,
+          "median_absolute_px": 1.589,
+          "p90_absolute_px": 4.039,
+          "min_px": -6.114,
+          "max_px": 3.215
+        },
+        "fitted_ellipse_to_ridge": {
+          "n": 178,
+          "median_signed_px": 0.242,
+          "median_absolute_px": 1.031,
+          "p90_absolute_px": 2.632,
+          "min_px": -3.906,
+          "max_px": 3.557
+        },
+        "contrast_accepted": 179,
+        "all_contrast_accepted_offset": {
+          "n": 179,
+          "median_signed_px": -1.459,
+          "median_absolute_px": 1.59,
+          "p90_absolute_px": 4.05,
+          "min_px": -6.594,
+          "max_px": 3.215
+        }
+      },
+      "top": {
+        "accepted": 180,
+        "total": 180,
+        "existing_centerline_to_ridge": {
+          "n": 180,
+          "median_signed_px": 0.169,
+          "median_absolute_px": 0.754,
+          "p90_absolute_px": 1.836,
+          "min_px": -3.335,
+          "max_px": 2.269
+        },
+        "fitted_ellipse_to_ridge": {
+          "n": 180,
+          "median_signed_px": 0.235,
+          "median_absolute_px": 0.864,
+          "p90_absolute_px": 1.883,
+          "min_px": -1.94,
+          "max_px": 3.397
+        },
+        "contrast_accepted": 180,
+        "all_contrast_accepted_offset": {
+          "n": 180,
+          "median_signed_px": 0.169,
+          "median_absolute_px": 0.754,
+          "p90_absolute_px": 1.836,
+          "min_px": -3.335,
+          "max_px": 2.269
+        }
+      }
+    },
+    "limitations": [
+      "This fits a photographic highlight, not the centre of the cast metal border.",
+      "Relief, worn metal, variable light and blur move the observed ridge relative to artwork.",
+      "The 720 nearby profile samples are correlated; they are not independent observations.",
+      "No whole-logo silhouette overlap score can be established from this image without an independent source mask."
+    ],
+    "contrast_threshold_sensitivity": [
+      {
+        "threshold": 0.008,
+        "n": 709,
+        "ellipse": {
+          "cx": 350.757,
+          "cy": 321.751,
+          "rx": 236.81,
+          "ry": 295.306,
+          "rotation_deg": -3.054
+        },
+        "existing_centerline_to_ridge": {
+          "n": 709,
+          "median_signed_px": -1.572,
+          "median_absolute_px": 1.758,
+          "p90_absolute_px": 5.489,
+          "min_px": -9.48,
+          "max_px": 3.215
+        }
+      },
+      {
+        "threshold": 0.012,
+        "n": 707,
+        "ellipse": {
+          "cx": 350.764,
+          "cy": 321.754,
+          "rx": 236.838,
+          "ry": 295.298,
+          "rotation_deg": -3.056
+        },
+        "existing_centerline_to_ridge": {
+          "n": 707,
+          "median_signed_px": -1.567,
+          "median_absolute_px": 1.756,
+          "p90_absolute_px": 5.424,
+          "min_px": -9.48,
+          "max_px": 3.215
+        }
+      },
+      {
+        "threshold": 0.02,
+        "n": 640,
+        "ellipse": {
+          "cx": 350.797,
+          "cy": 321.719,
+          "rx": 237.04,
+          "ry": 295.209,
+          "rotation_deg": -3.105
+        },
+        "existing_centerline_to_ridge": {
+          "n": 640,
+          "median_signed_px": -1.406,
+          "median_absolute_px": 1.644,
+          "p90_absolute_px": 5.211,
+          "min_px": -9.48,
+          "max_px": 3.215
+        }
+      },
+      {
+        "threshold": 0.03,
+        "n": 495,
+        "ellipse": {
+          "cx": 351.472,
+          "cy": 321.603,
+          "rx": 237.686,
+          "ry": 294.977,
+          "rotation_deg": -3.392
+        },
+        "existing_centerline_to_ridge": {
+          "n": 495,
+          "median_signed_px": -0.943,
+          "median_absolute_px": 1.461,
+          "p90_absolute_px": 4.454,
+          "min_px": -8.717,
+          "max_px": 3.215
+        }
+      }
+    ]
+  },
+  "visual_findings": [
+    {
+      "element": "lower_left_bough_notch",
+      "confidence": "moderate",
+      "verified_svg_reference_point": [
+        325,
+        402
+      ],
+      "approximate_photo_recess_end": {
+        "x": [
+          310,
+          318
+        ],
+        "y": [
+          401,
+          408
+        ]
+      },
+      "proposed_review": "Reduce inward penetration by approximately 8-15 source pixels, together with the adjacent secondary bough."
+    },
+    {
+      "element": "secondary_lower_left_bough",
+      "confidence": "moderate",
+      "verified_svg_tip_near": [
+        283,
+        436
+      ],
+      "approximate_photo_tip": {
+        "x": [
+          282,
+          286
+        ],
+        "y": [
+          429,
+          433
+        ]
+      },
+      "proposed_review": "Raise the secondary tip about 3-6 source pixels and reconsider its heavy underside."
+    },
+    {
+      "element": "upper_neck_right_edge",
+      "confidence": "moderate",
+      "current_edge_approx_x": [
+        354,
+        357
+      ],
+      "photo_face_approx_x": [
+        359,
+        364
+      ],
+      "source_y_interval": [
+        240,
+        255
+      ],
+      "proposed_review": "Test a local outward change of roughly 4-7 source pixels, with the broad tier endpoints retained."
+    },
+    {
+      "element": "trunk_left_edge_and_bottom",
+      "confidence": "low",
+      "proposed_review": "Consider a 3-6 source-pixel narrowing/shortening only after deciding whether the target is the raised face or full relief footprint."
+    },
+    {
+      "element": "FOREST_E",
+      "confidence": "moderate",
+      "verified_svg": {
+        "center": [
+          244,
+          520
+        ],
+        "rotation_deg": 36
+      },
+      "approximate_photo": {
+        "center_x": [
+          236,
+          239
+        ],
+        "center_y": [
+          522,
+          525
+        ],
+        "rotation_deg": [
+          38,
+          42
+        ]
+      }
+    },
+    {
+      "element": "FOREST_S",
+      "confidence": "moderate",
+      "verified_svg": {
+        "center": [
+          270,
+          542
+        ],
+        "rotation_deg": 26
+      },
+      "approximate_photo": {
+        "center_x": [
+          259,
+          263
+        ],
+        "center_y": [
+          544,
+          547
+        ],
+        "rotation_deg": [
+          30,
+          35
+        ]
+      }
+    },
+    {
+      "element": "FOREST_T",
+      "confidence": "moderate",
+      "verified_svg": {
+        "center": [
+          297,
+          558
+        ],
+        "rotation_deg": 15
+      },
+      "approximate_photo": {
+        "center_x": [
+          285,
+          289
+        ],
+        "center_y": [
+          560,
+          564
+        ],
+        "rotation_deg": [
+          28,
+          32
+        ]
+      }
+    },
+    {
+      "element": "separator_dots",
+      "confidence": "moderate",
+      "verified_svg": {
+        "centers": [
+          [
+            165,
+            350
+          ],
+          [
+            530,
+            332
+          ]
+        ],
+        "dimensions_px": [
+          17,
+          20
+        ]
+      },
+      "suggested_trial_dimensions_px": {
+        "width": [
+          22,
+          24
+        ],
+        "height": [
+          28,
+          32
+        ]
+      },
+      "proposed_review": "Enlarge before changing the centres; the visible metal relief footprint is larger than the current paths."
+    }
+  ],
+  "interpretation": "Border distances are measured to a photographic bright ridge. Other correction ranges are visual estimates, not calibrated confidence intervals. No global silhouette-overlap score is claimed."
+}

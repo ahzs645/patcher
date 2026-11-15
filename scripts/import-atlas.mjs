@@ -138,7 +138,9 @@ async function main() {
   // the atlas has an entry per photograph a design was seen in, fitted to that photograph.
   const kept = [];
   for (const d of all) {
-    const org = classify(d) ?? { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' };
+    // A relabel's label and family take part in filing, so a relabel can move a design to another organization.
+    const relabel = relabels.get(d.id);
+    const org = classify({ ...d, label: relabel?.label ?? d.label, family: relabel?.family ?? d.family }) ?? { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' };
     if (absorbedBy.has(d.id)) {
       absorbedDesigns.set(d.id, d);
       absorbed.push({ id: d.id, label: d.label, medium: d.medium, org: org.id, into: absorbedBy.get(d.id).id });

@@ -17,9 +17,9 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28909751,
-  "storedBytes": 8339716,
-  "sharedBlocks": 61,
+  "sourceBytes": 29048142,
+  "storedBytes": 8484573,
+  "sharedBlocks": 60,
   "sharedPaths": 294
  },
  "collections": [
@@ -310,12 +310,6 @@
     "id": "embossed-outlined-caption-d48bf5929d",
     "file": "shared/embossed-outlined-caption-d48bf5929d.svg",
     "bytes": 3447,
-    "usedBy": 2
-   },
-   {
-    "id": "historic-pine-adffb4d88d",
-    "file": "shared/historic-pine-adffb4d88d.svg",
-    "bytes": 6732,
     "usedBy": 2
    },
    {
@@ -1707,9 +1701,7 @@
      ],
      "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
-     "blocks": [
-      "historic-pine-adffb4d88d"
-     ],
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1855,13 +1847,13 @@
      "label": "Forest Fire / Prevention Officer — tree shield",
      "collection": "badges",
      "medium": "Metal badge",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas shield with a reviewed reconstruction of its inner emblem",
      "family": "forest-fire-officer-metal",
      "affiliation": "Forestry",
      "svg": "bc-forest-service/S51-O01.svg",
      "preview": "bc-forest-service/previews/S51-O01.webp",
-     "sha256": "d53a603ffad1156f51847f4094900382d7689d1302c3b17f340d160340bccc06",
-     "bytes": 39494,
+     "sha256": "07e67b437cd4d6701f7438482390b6e14c662bba2ead3601660b8392f2cc0309",
+     "bytes": 28062,
      "sourceUrl": "https://drive.google.com/file/d/1Qx2P5oct-kU8_sf8XOJJvK_dU1-J6Elb/view",
      "sightings": [
       {
@@ -1870,10 +1862,12 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
-     "blocks": [
-      "historic-pine-adffb4d88d"
-     ],
+     "limitations": "The shield, rims and FOREST FIRE / PREVENTION OFFICER lettering are the atlas's reconstruction. compose.mjs replaces the inner oval emblem with a hand-built reconstruction of a 674 × 676 close-up photograph (a broad, asymmetric tiered conifer in place of the shared thin historic pine, the two separator dots the atlas left out, and individually drawn BRITISH COLUMBIA / FOREST SERVICE), applies an overlap review's corrections (lower-left notch and bough, upper neck, trunk, the E S T of FOREST, dot size, and the border on its fitted ellipse), and fits it onto the atlas's oval. The close-up's oval is slightly wider than the whole badge's, likely an oblique view, so the emblem is about 5% narrower than in the close-up. Typeface, die contours and material tones remain interpretations.",
+     "replaced": {
+      "svg": "supplied/forest-fire-prevention-shield/composed/S51-O01.svg",
+      "atlasSha256": "d53a603ffad1156f51847f4094900382d7689d1302c3b17f340d160340bccc06"
+     },
+     "blocks": [],
      "bundles": []
     },
     {
@@ -5178,7 +5172,7 @@
    "sector": "justice",
    "description": null,
    "counts": {
-    "patches": 2,
+    "patches": 3,
     "badges": 0
    },
    "patches": [
@@ -5192,8 +5186,8 @@
      "affiliation": "Unconfirmed",
      "svg": "justice-institute/S56-O36.svg",
      "preview": "justice-institute/previews/S56-O36.webp",
-     "sha256": "d149651fc853af76d3c693283f713f35f142cb73cd9d8986f3c1640e1264529b",
-     "bytes": 30268,
+     "sha256": "ca100aa0f52416808c3de238ea5aaaadc031820e1340dd7e71f2870705aa0c1f",
+     "bytes": 36510,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5202,7 +5196,7 @@
       }
      ],
      "merged": [],
-     "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board; the upper caption (Justice Institute in the photograph) is still left out. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted by compose.mjs in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted. The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46).",
+     "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board. JUSTICE INSTITUTE, which the atlas left out, is set over the top by compose.mjs in the same outlined face and size, mirroring BRITISH COLUMBIA. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted. The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46).",
      "replaced": {
       "svg": "supplied/jibc-bridge-roundel/composed/S56-O36.svg",
       "atlasSha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1"
@@ -5237,6 +5231,34 @@
      },
      "blocks": [],
      "bundles": []
+    },
+    {
+     "id": "S56-O47",
+     "label": "British Columbia / Police College — blue roundel",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Atlas roundel with corrected lower-case lettering",
+     "family": "justice-institute-police-college-roundel",
+     "affiliation": "Other",
+     "svg": "justice-institute/S56-O47.svg",
+     "preview": "justice-institute/previews/S56-O47.webp",
+     "sha256": "6845f778a9bedf54365fbad65e12a34f625cf743fe3d0fb8243c73693f63609c",
+     "bytes": 14335,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O47",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "The cream rim, navy ring, grey disc and centre figure are the atlas's reconstruction from a 60 × 57 collector-board crop; the centre remains a coarse interpretation. compose.mjs resets both captions in lower case as the photograph shows them (british columbia, police college) in Poppins SemiBold, a stand-in for the unidentified geometric face. Thread colours are interpreted. The atlas read the lower caption as TRAFFIC OFFICERS and filed it with Highways and Motor Vehicles. The photograph reads british columbia / police college in lower case; the BC Police College became part of the Justice Institute of British Columbia (now its Police Academy).",
+     "replaced": {
+      "svg": "supplied/bc-police-college-roundel/composed/S56-O47.svg",
+      "atlasSha256": "0c4dd02b2a3da99307889c79e0e178b51cd9cd421e6aed84e43673f47f576ea1"
+     },
+     "blocks": [],
+     "bundles": []
     }
    ]
   },
@@ -5246,7 +5268,7 @@
    "sector": "transportation",
    "description": "Highway Patrol, the transportation ministries' shields, Motor Vehicle Inspectors, Weighmasters and Traffic Officers.",
    "counts": {
-    "patches": 11,
+    "patches": 9,
     "badges": 0
    },
    "patches": [
@@ -5494,54 +5516,6 @@
      "limitations": "The supplied vector geometry and original colours are preserved. The collector-board green stitched perimeter is interpreted as a smooth offset of the supplied shield. The gold supplied reference has no perimeter stroke and is available unchanged. Exact embroidery edges, calibrated thread colours and original typeface remain unverified.",
      "blocks": [],
      "bundles": []
-    },
-    {
-     "id": "S56-O47",
-     "label": "British Columbia / Traffic Officers — blue roundel",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "traffic-officers-roundel",
-     "affiliation": "Other",
-     "svg": "highways-and-motor-vehicles/S56-O47.svg",
-     "preview": "highways-and-motor-vehicles/previews/S56-O47.webp",
-     "sha256": "0c4dd02b2a3da99307889c79e0e178b51cd9cd421e6aed84e43673f47f576ea1",
-     "bytes": 13613,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O47",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S56-O48",
-     "label": "British Columbia / Motor Vehicles — wide crest emblem",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "motor-vehicles-wide",
-     "affiliation": "Other",
-     "svg": "highways-and-motor-vehicles/S56-O48.svg",
-     "preview": "highways-and-motor-vehicles/previews/S56-O48.webp",
-     "sha256": "511adc581fe187d2b685469ffa9ddff64ccf7ff70d3f13178461b4d44124f27e",
-     "bytes": 15157,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O48",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The small central red/blue/white charge is retained as a coarse colour interpretation; its exact shield charges cannot be authenticated from this photograph.",
-     "blocks": [],
-     "bundles": []
     }
    ]
   },
@@ -5615,7 +5589,7 @@
    "sector": "institutions",
    "description": null,
    "counts": {
-    "patches": 3,
+    "patches": 2,
     "badges": 0
    },
    "patches": [
@@ -5624,13 +5598,13 @@
      "label": "University / British Columbia / Patrol — upper shield",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas shield with the UBC arms and a straight base",
      "family": "ubc-patrol-upper",
      "affiliation": "Other",
      "svg": "ubc/S56-O57.svg",
      "preview": "ubc/previews/S56-O57.webp",
-     "sha256": "e1a414e80d7961f45fa50f147991ba30af21b8b8b26b695cc09977fe8be26aba",
-     "bytes": 13807,
+     "sha256": "c7ea01970d11ed686a6f8c5573311696a954456350682c0a80e7620db63e8c67",
+     "bytes": 52163,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5639,7 +5613,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
+     "limitations": "The navy field, gold edge and lettering are the atlas's reconstruction from an 80 × 65 collector-board crop. compose.mjs makes the base straight, as on the patch, and replaces the simplified centre with the University of British Columbia's arms (Wikimedia Commons, public domain, after the 1915 design in the UBC Archives), its gold matched to the patch's thread, at its own proportions. PATROL's tall condensed alphabet and the exact thread colours remain interpreted.",
+     "replaced": {
+      "svg": "supplied/ubc-patrol-shield/composed/S56-O57.svg",
+      "atlasSha256": "e1a414e80d7961f45fa50f147991ba30af21b8b8b26b695cc09977fe8be26aba"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -5666,30 +5644,6 @@
      "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
-    },
-    {
-     "id": "S56-O59",
-     "label": "Campus Security / UBC — shield",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "ubc-campus-security",
-     "affiliation": "Other",
-     "svg": "ubc/S56-O59.svg",
-     "preview": "ubc/previews/S56-O59.webp",
-     "sha256": "f3b0523ebf9b964bdabcd2d5b37025127401dff6556b816125e1e511e581ac51",
-     "bytes": 18521,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O59",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
-     "blocks": [],
-     "bundles": []
     }
    ]
   },
@@ -5699,10 +5653,38 @@
    "sector": "institutions",
    "description": null,
    "counts": {
-    "patches": 2,
+    "patches": 3,
     "badges": 0
    },
    "patches": [
+    {
+     "id": "S56-O59",
+     "label": "Campus Security / University of Victoria — shield",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Atlas shield with the University of Victoria's arms and corrected captions",
+     "family": "uvic-campus-security",
+     "affiliation": "Other",
+     "svg": "uvic/S56-O59.svg",
+     "preview": "uvic/previews/S56-O59.webp",
+     "sha256": "c279a4b76ff1ceb78be8e188c5516605976eb9a2a18d69df8b157e220e909126",
+     "bytes": 67503,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O59",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "The navy field, gold edge, CAMPUS and SECURITY are the atlas's reconstruction from a 78 × 62 collector-board crop. compose.mjs puts the University of Victoria's shield (cut from the full arms in its brand guidelines, as reproduced on the English Wikipedia; copyright the University of Victoria) in the centre, with UNIVERSITY OF VICTORIA curving under it and SERVICES across the bottom in outlined Roboto Condensed Bold. SERVICES is read from the blurred photograph. The embroidered alphabet, thread colours and the shield's stitched detail are interpreted. The atlas filed this patch under UBC and read UNIVERSITY OF / BRITISH COLUMBIA. The shield is the University of Victoria's (three martlets over an open book), with UNIVERSITY OF VICTORIA under it and SERVICES across the bottom.",
+     "replaced": {
+      "svg": "supplied/uvic-campus-security/composed/S56-O59.svg",
+      "atlasSha256": "f3b0523ebf9b964bdabcd2d5b37025127401dff6556b816125e1e511e581ac51"
+     },
+     "blocks": [],
+     "bundles": []
+    },
     {
      "id": "S56-O60",
      "label": "University of Victoria / Traffic and Security — shield",
@@ -5759,10 +5741,38 @@
    "sector": "institutions",
    "description": null,
    "counts": {
-    "patches": 1,
+    "patches": 2,
     "badges": 0
    },
    "patches": [
+    {
+     "id": "S56-O48",
+     "label": "Simon Fraser University / Security Services — fan",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Atlas fan with Simon Fraser University's arms and corrected captions",
+     "family": "sfu-security-fan",
+     "affiliation": "Other",
+     "svg": "sfu/S56-O48.svg",
+     "preview": "sfu/previews/S56-O48.webp",
+     "sha256": "8ca36ea12cc1b787401a3b703217440f1e508340649dd0dbe6fc61348e4b37f1",
+     "bytes": 70678,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O48",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "The cream fan and navy edge are the atlas's reconstruction from a 113 × 48 collector-board crop. compose.mjs puts Simon Fraser University's full-colour arms (shield and motto scroll, from the university's May 2015 brand guidelines; copyright Simon Fraser University) in the centre, SIMON FRASER UNIVERSITY along the upper edge and SECURITY SERVICES along the lower edges in outlined Roboto Condensed Bold. The embroidered alphabet, thread colours and the arms' stitched detail are interpreted. The atlas read this fan as British Columbia / Motor Vehicles. The photograph reads SIMON FRASER UNIVERSITY over SECURITY SERVICES, about the university's arms.",
+     "replaced": {
+      "svg": "supplied/sfu-security-fan/composed/S56-O48.svg",
+      "atlasSha256": "511adc581fe187d2b685469ffa9ddff64ccf7ff70d3f13178461b4d44124f27e"
+     },
+     "blocks": [],
+     "bundles": []
+    },
     {
      "id": "S56-O49",
      "label": "SFU / Campus Security — shield",
