@@ -101,8 +101,9 @@ const ids = (prefix) => [...reviewed.matchAll(new RegExp(`id="(${prefix}-\\d+-[A
 // ── The border, on the review's diagnostic fit to the photograph's bright ridge ──
 const FIT = JSON.parse(readFileSync(join(HERE, 'review/measurements.json'), 'utf8')).border_diagnostics.fitted_bright_ridge_ellipse;
 const RING = 3.5; // half the reconstruction's 7 px ring
-const ellipse = (rx, ry) => `M${FIT.cx - rx} ${FIT.cy} A${rx} ${ry} 0 1 0 ${FIT.cx + rx} ${FIT.cy} A${rx} ${ry} 0 1 0 ${FIT.cx - rx} ${FIT.cy} Z`;
-const ring = `<path data-role="border" d="${ellipse(FIT.rx + RING, FIT.ry + RING)} ${ellipse(FIT.rx - RING, FIT.ry - RING)}" fill-rule="evenodd" fill="${GOLD}" transform="rotate(${FIT.rotation_deg} ${FIT.cx} ${FIT.cy})"/>`;
+// The inner ellipse runs the other way round (sweep 1), so the ring is a ring under either fill rule.
+const ellipse = (rx, ry, sweep) => `M${FIT.cx - rx} ${FIT.cy} A${rx} ${ry} 0 1 ${sweep} ${FIT.cx + rx} ${FIT.cy} A${rx} ${ry} 0 1 ${sweep} ${FIT.cx - rx} ${FIT.cy} Z`;
+const ring = `<path data-role="border" d="${ellipse(FIT.rx + RING, FIT.ry + RING, 0)} ${ellipse(FIT.rx - RING, FIT.ry - RING, 1)}" fill-rule="evenodd" fill="${GOLD}" transform="rotate(${FIT.rotation_deg} ${FIT.cx} ${FIT.cy})"/>`;
 
 // ── Onto the atlas's oval ──
 // The atlas's oval was fitted to the whole badge's photograph, from which its shield and outer
