@@ -125,8 +125,9 @@ input[type=url], select {
 .sample:hover { border-color: var(--muted); }
 .sample.on { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 .sample img { max-width: 100%; max-height: 100%; }
-.library-org { width: 100%; }
-#libraryCount { margin: -4px 0 8px; }
+.library-filter { display: grid; gap: 4px; font-size: 12.5px; }
+.library-filter select { width: 100%; min-width: 0; }
+#libraryCount { margin: 4px 0 8px; }
 #libraryNote { margin: 6px 0 8px; }
 #libraryNote:empty { display: none; }
 #libraryVariants { margin-top: 8px; }
@@ -284,7 +285,7 @@ input[type=color]:disabled { opacity: .4; cursor: default; }
   :root { --top-h: 48px; }
   #app {
     grid-template-areas: "top" "viewer" "controls";
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-rows: var(--top-h) auto auto;
     height: auto;
   }
@@ -300,8 +301,8 @@ input[type=color]:disabled { opacity: .4; cursor: default; }
   .simbar { padding: 6px 10px; gap: 8px; }
   .simbar select { display: none; }
   .sim-count { min-width: 0; }
-  .controls { border-right: 0; min-height: 60vh; }
-  .tabs { top: 56svh; padding: 4px 6px 0; }
+  .controls { min-width: 0; border-right: 0; min-height: 60vh; }
+  .tabs { top: max(300px, 56svh); padding: 4px 6px 0; }
   .tabs button { padding: 10px 12px; }
   .panel { overflow: visible; padding-bottom: max(28px, env(safe-area-inset-bottom)); }
   .zoom button { min-height: 36px; }
@@ -310,4 +311,10 @@ input[type=color]:disabled { opacity: .4; cursor: default; }
 @media (max-width: 380px) {
   .exports { grid-template-columns: 1fr; }
   .samples { gap: 6px; }
+}
+
+/* A pinned preview would obscure the active settings on a short screen. */
+@media (max-width: 860px) and (max-height: 540px) {
+  .viewer { position: relative; }
+  .tabs { top: 0; }
 }

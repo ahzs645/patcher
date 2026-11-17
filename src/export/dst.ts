@@ -59,6 +59,7 @@ export function writeDst(result: DigitizeResult, name: string): Uint8Array<Array
   });
 
   const header = new Uint8Array(512).fill(0x20);
+  const signed = (value: number) => `${value < 0 ? '-' : '+'}${String(Math.abs(value)).padStart(5, ' ')}`;
   const fields = [
     `LA:${name.slice(0, 16).padEnd(16, ' ')}\r`,
     `ST:${String(count).padStart(7, ' ')}\r`,
@@ -67,8 +68,8 @@ export function writeDst(result: DigitizeResult, name: string): Uint8Array<Array
     `-X:${String(-minX).padStart(5, ' ')}\r`,
     `+Y:${String(-minY).padStart(5, ' ')}\r`,
     `-Y:${String(maxY).padStart(5, ' ')}\r`,
-    `AX:+${String(Math.abs(px)).padStart(5, ' ')}\r`,
-    `AY:+${String(Math.abs(py)).padStart(5, ' ')}\r`,
+    `AX:${signed(px)}\r`,
+    `AY:${signed(-py)}\r`,
     `MX:+${'0'.padStart(5, ' ')}\r`,
     `MY:+${'0'.padStart(5, ' ')}\r`,
     `PD:${'******'}\r`,

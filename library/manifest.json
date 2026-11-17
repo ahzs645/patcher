@@ -33,7 +33,7 @@
    "id": "badges",
    "name": "Badges",
    "description": "Metal and leather badges.",
-   "hidden": true
+   "hidden": false
   }
  ],
  "sectors": [

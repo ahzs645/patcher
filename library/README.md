@@ -81,9 +81,8 @@ A stored `<org>/<id>.svg` is not the whole drawing on its own, so don't serve it
 
 `orgs.json` has two more lists before the organizations:
 
-- `collections`: **patches**, and **badges** (metal and leather, by medium). Badges are marked
-  `"hidden": true`, so the apps leave them out of their menus for now. They are still in the library,
-  and `?patch=<id>` still opens one.
+- `collections`: **patches**, and **badges** (metal and leather, by medium). Both appear in the collection picker.
+  A direct link such as `?patch=S02-O01` opens the design and selects its collection and organization.
 - `exclude`: atlas designs to leave out, by id, with a reason. An organization can also carry
   `"exclude": "<reason>"`, which leaves out everything filed under it (Province of British Columbia,
   BC Timber Sales, BC Transit, ICBC, …).

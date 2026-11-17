@@ -19,7 +19,7 @@ import { joinSvg, unwrapBlock } from './library-join.js';
 
 export interface LibrarySector { id: string; name: string }
 
-/** Patches, and badges (hidden for now). A design is in one collection; an organization can have both. */
+/** Patches and badges. A design is in one collection; an organization can have both. */
 export interface LibraryCollection { id: string; name: string; description: string | null; hidden: boolean }
 
 export interface LibraryPatch {

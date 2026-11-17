@@ -8,7 +8,7 @@ export type BorderStyle = 'merrow' | 'satin' | 'none';
 export type Relief = 'flat' | 'raised';
 
 export interface DigitizeParams {
-  /** Finished patch width in mm (height follows the SVG aspect ratio). */
+  /** Artwork viewport width in mm (height follows the SVG aspect ratio). */
   widthMm: number;
   /** Raster resolution used for colour/region analysis. */
   pxPerMm: number;

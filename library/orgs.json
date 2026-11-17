@@ -2,7 +2,7 @@
   "$comment": "How scripts/import-atlas.mjs files each atlas design. 'variants' groups designs shown as one card with a variant switch (the first member is the card); an id merged into another (a repeat photograph) may be named, and stands for the patch it went into. 'consolidate' replaces atlas designs with supplied drawings and their variants (library/supplied/): each variant becomes a patch of its own, and the atlas ids it lists ('atlas') are absorbed into it, left out of the library with their photographs carried over. Designs listed in 'exclude', or claimed by an organization with an 'exclude' reason, are left out of the library altogether. The rest go into the first collection whose 'medium' list has their medium (else the first collection), and under an organization: Orgs are tried in order and the first whose rules match wins: 'family' and 'label' are regular expressions (case-insensitive) tested against the atlas design's family and label, 'affiliation' is the atlas's own coarse affiliation, matched exactly. Put specific rules before broad ones. A design nothing matches is filed under 'unsorted' and the import says so.",
   "collections": [
     { "id": "patches", "name": "Patches", "description": "Cloth patches, rockers and the emblems they were made from." },
-    { "id": "badges", "name": "Badges", "description": "Metal and leather badges.", "hidden": true, "medium": ["Metal badge", "Leather badge"] }
+    { "id": "badges", "name": "Badges", "description": "Metal and leather badges.", "medium": ["Metal badge", "Leather badge"] }
   ],
   "exclude": [
     { "reason": "A decal, prevention card or printed emblem, not a patch", "ids": ["S53-O02", "S53-O03", "S53-O04", "S53-O05", "S53-O06", "S53-O07", "S09-O01"] },
