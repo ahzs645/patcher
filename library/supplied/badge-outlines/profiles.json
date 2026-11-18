@@ -1,0 +1,38 @@
+[
+  {
+    "name": "plain-ranger-shield",
+    "ids": [
+      "S11-O01",
+      "S12-O01",
+      "S17-O01",
+      "S20-O01"
+    ],
+    "original": "M155 95Q280 150 365 75Q440 15 500 15Q560 15 635 75Q720 150 845 95L955 205Q892 310 892 422Q900 497 935 610Q980 745 972 851Q965 948 852 998Q784 1027 701 1037Q569 1044 500 1100Q431 1044 299 1037Q216 1027 148 998Q35 948 28 851Q20 745 65 610Q100 497 108 422Q108 310 45 205Z",
+    "path": "M500 15 C575 15 612 70 665 96 C712 119 780 123 848 92 L953 207 C918 264 883 323 883 386 C883 472 938 565 962 663 C983 748 975 826 944 890 C907 962 847 995 766 1011 C654 1032 567 1007 500 1100 C433 1007 346 1032 234 1011 C153 995 93 962 56 890 C25 826 17 748 38 663 C62 565 117 472 117 386 C117 323 82 264 47 207 L152 92 C220 123 288 119 335 96 C388 70 425 15 500 15 Z",
+    "occurrences": 2,
+    "note": "The four plain numbered specimens share a narrow upper waist, broad lower sides and a small central point. The shoulder and hip curves are averaged across the four front photographs."
+  },
+  {
+    "name": "enamel-ranger-shield",
+    "ids": [
+      "S14-O01",
+      "S18-O01"
+    ],
+    "original": "M150 90Q270 130 380 65Q500 0 620 65Q740 130 850 80L958 185Q912 295 924 430Q929 505 955 615Q992 780 940 888Q909 951 800 979Q760 1022 700 1040Q620 1055 500 1109Q380 1055 300 1040Q240 1022 200 979Q91 951 60 888Q8 780 45 615Q71 505 76 430Q88 295 42 185Z",
+    "path": "M500 22 C581 22 646 77 722 92 C770 100 812 96 849 79 L956 195 C926 269 907 319 907 386 C907 470 952 542 967 637 C984 761 943 855 850 887 Q813 900 783 904 C771 972 726 1007 652 1026 Q553 1050 500 1109 Q447 1050 348 1026 C274 1007 229 972 217 904 Q187 900 150 887 C57 855 16 761 33 637 C48 542 93 470 93 386 C93 319 74 269 44 195 L151 79 C188 96 230 100 278 92 C354 77 419 22 500 22 Z",
+    "occurrences": 2,
+    "note": "The enamel specimens have a pair of rounded lower shoulders above a distinct central numbered tab. The common silhouette is an interpretation of both photographs."
+  },
+  {
+    "name": "parks-cap-scroll",
+    "ids": [
+      "S13-O01",
+      "S15-O01",
+      "S19-O01"
+    ],
+    "original": "M12 275Q83 240 158 260Q252 277 345 300L655 300Q748 277 842 260Q917 240 988 275L984 388Q944 404 858 388Q747 375 655 346L345 346Q253 375 142 388Q56 404 16 359Z",
+    "path": "M12 275 Q76 248 158 260 Q258 279 345 284 L655 284 Q742 279 842 260 Q924 248 988 275 L984 370 Q965 397 906 394 Q818 392 655 346 L345 346 Q182 392 94 394 Q35 397 16 370 Z",
+    "occurrences": 1,
+    "note": "The rolled ribbon has paired ends of equal depth across the three cap badges. The dogwood and the two different arms remain individual source drawings."
+  }
+]

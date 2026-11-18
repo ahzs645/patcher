@@ -16,6 +16,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { applyBadgeOutline, badgeOutlines } from './badge-outlines.mjs';
 import { joinSvg, unwrapBlock } from '../src/library-join.js';
 import { LIBRARY, drawingKey, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
 
@@ -39,7 +40,7 @@ export function joinedPatches(library = LIBRARY) {
     for (const patch of org.patches) {
       const stored = readFileSync(join(library, patch.svg), 'utf8');
       const bytes = Buffer.from(joinSvg(stored, { block, path: (id) => paths.get(id) }), 'utf8');
-      out.push({ id: patch.id, org: org.id, bytes, sha256: sha(bytes), expected: patch.sha256, expectedBytes: patch.bytes, replaced: patch.replaced ?? null, supplied: patch.supplied ?? null });
+      out.push({ id: patch.id, org: org.id, bytes, sha256: sha(bytes), expected: patch.sha256, expectedBytes: patch.bytes, replaced: patch.replaced ?? null, outline: patch.outline ?? null, supplied: patch.supplied ?? null });
     }
   }
   return { manifest, patches: out };
@@ -79,7 +80,7 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
         else {
           // Against the atlas's own drawing of that patch, which a supplied replacement may have taken over.
           const intoDesign = source.index.designs.find((d) => d.id === into.id);
-          const intoAtlas = into.replaced ? Buffer.from(source.get(intoDesign.svgUrl)).toString('utf8') : into.bytes.toString('utf8');
+          const intoAtlas = (into.replaced || into.outline) ? Buffer.from(source.get(intoDesign.svgUrl)).toString('utf8') : into.bytes.toString('utf8');
           if (drawingKey(Buffer.from(original).toString('utf8')) !== drawingKey(intoAtlas)) problems.push(`${design.id}: doesn't draw the same as ${into.id}, which it was merged into`);
         }
         continue;
@@ -88,6 +89,14 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
       if (!p) { problems.push(`${design.id}: in the snapshot, not in the library (nor excluded)`); continue; }
       const original = source.get(design.svgUrl);
       if (!original) { problems.push(`${design.id}: ${design.svgUrl} missing from the snapshot`); continue; }
+      if (p.outline) {
+        const profile = badgeOutlines.get(p.id);
+        if (profile?.name !== p.outline.profile || sha(original) !== p.outline.atlasSha256 ||
+            !Buffer.from(applyBadgeOutline(Buffer.from(original).toString('utf8'), profile)).equals(p.bytes)) {
+          problems.push(`${p.id}: revised outline does not match its profile and atlas source`);
+        }
+        continue;
+      }
       if (p.replaced) {
         // A supplied drawing replaces the atlas's: it must be that file, and the atlas file the one on record.
         if (!readFileSync(join(library, p.replaced.svg)).equals(p.bytes)) problems.push(`${design.id}: joined bytes differ from the supplied ${p.replaced.svg}`);
@@ -118,7 +127,7 @@ async function main() {
   }
   console.log(
     `All ${patches.length} patches join back byte for byte (${(original / 1e6).toFixed(2)} MB of SVG from ` +
-    `${(stored / 1e6).toFixed(2)} MB stored), matching ${source ? 'the atlas snapshot file by file and its' : 'the manifest\'s'} SHA-256.`,
+    `${(stored / 1e6).toFixed(2)} MB stored), verified against ${source ? 'the atlas sources, supplied artwork and outline profiles' : 'the manifest hashes'}.`,
   );
 }
 

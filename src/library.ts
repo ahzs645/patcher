@@ -49,6 +49,7 @@ export interface LibraryPatch {
   merged: string[];
   /** Set when a supplied drawing (library/supplied/) replaces the atlas's: its file, and the atlas drawing's SHA-256. */
   replaced?: { svg: string; atlasSha256: string };
+  outline?: { profile: string; atlasSha256: string };
   /**
    * Set on a supplied design that isn't an atlas entry (orgs.json "consolidate", ids like FO-forests):
    * its file in library/supplied/, and the atlas entries it takes the place of (none for a new colourway).

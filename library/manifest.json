@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28902125,
-  "storedBytes": 8332906,
+  "sourceBytes": 28933762,
+  "storedBytes": 8364543,
   "sharedBlocks": 60,
   "sharedPaths": 294
  },
@@ -1762,13 +1762,13 @@
      "label": "Forest Service evergreen emblem — cloth square",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "PofBC Forest Service emblem artwork",
+     "quality": "Source-refined cloth border, PofBC emblem components",
      "family": "unlabelled-map-tree",
      "affiliation": "Unconfirmed",
      "svg": "bc-forest-service/S48-O01.svg",
      "preview": "bc-forest-service/previews/S48-O01.webp",
-     "sha256": "0e5f0843e63ee3d75ac74e4ded6e079c30fba673e2f9b184c762243f14caf524",
-     "bytes": 2954,
+     "sha256": "cd0a8ad6864fd74283ab28dda1b42da9b88f3386109f9f74cf61e9306a6e42f7",
+     "bytes": 2389,
      "sourceUrl": "https://drive.google.com/file/d/1bDBblhIfTPTb2v_euhvFb53evVVi_eWl/view",
      "sightings": [
       {
@@ -1777,7 +1777,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Drawn from PofBC's Forest Service evergreen emblem (Internal Logos → Forests) by compose.mjs: its bowed badge as the outline and an inset copy as the cloth field, its mainland, islands and evergreen, in the atlas's thread colours. The emblem is itself a vector reconstruction from a supplied image; thread colours and the patch's proportions are interpreted, and frayed threads are omitted. The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters.",
+     "limitations": "The near-square cloth border is constructed independently with near-straight sides and restrained corner rounding, following the S48 photograph. PofBC mainland, islands and evergreen geometry are retained. Exact cloth dimensions, inner component contours, edge stitching and thread colours remain interpreted; the photo was not warped or traced. The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters.",
      "replaced": {
       "svg": "supplied/forest-service-emblem-square/composed/S48-O01.svg",
       "atlasSha256": "08e3b25cfc6a4cd4d532f368c0d89191a9aa091077e276d77dd7eb37ac94bcd3"
@@ -1911,13 +1911,13 @@
      "collection": "badges",
      "medium": "Metal badge",
      "finish": "Worn copper tone",
-     "quality": "Clean vector reconstruction",
+     "quality": "Photo-registered vector reconstruction",
      "family": "junior-warden",
      "affiliation": "Canadian Forestry Association",
      "svg": "canadian-forestry-association/S01-O01.svg",
      "preview": "canadian-forestry-association/previews/S01-O01.webp",
-     "sha256": "b66e3860eb71a91da9c0607cbf5e457e16658d20f99b7eec035c496c4b93d7d7",
-     "bytes": 38938,
+     "sha256": "355eb5d404897e7b126e54d67865af78d513849ab391e82b522df7cfbed6e36d",
+     "bytes": 24044,
      "sourceUrl": "https://drive.google.com/file/d/1INS_YP_UZWb3HuuJuolLxhmbafQ2Fo_W/view",
      "sightings": [
       {
@@ -1926,9 +1926,9 @@
       }
      ],
      "merged": [],
-     "limitations": "The photograph shows a warm copper-toned metal shield, a rim with two highlights, and raised outlines around the lettering and maple leaf. Wear and colour are interpreted from one photograph. Alloy, plating and relief depth are unverified.",
+     "limitations": "Shield, inset rim, lettering and maple leaf are fitted to the photographed specimen. The worn copper colour and relief are interpreted. The alloy, plating, original die and physical depth are unverified.",
      "replaced": {
-      "svg": "supplied/junior-forest-warden/S01-O01.svg",
+      "svg": "supplied/junior-forest-warden/composed/S01-O01.svg",
       "atlasSha256": "ba3b0714455cef51124813dafe88fc73f7c8f65b2c1dbf3a9093d0a86f8748bb"
      },
      "blocks": [],
@@ -2057,8 +2057,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S11-O01.svg",
      "preview": "bc-parks/previews/S11-O01.webp",
-     "sha256": "4cae62e23f8eafc8b275f64b92bcecead89645fe6554a7ecea996c4e76a17fe7",
-     "bytes": 321647,
+     "sha256": "552480c11f049911cfa122cd36ab6447809c3eb8135d5712e8d9cd5dbc15280d",
+     "bytes": 322028,
      "sourceUrl": "https://drive.google.com/file/d/1zlab9TWi5MgdBwcCu4ml8RXFCgaqBV4I/view",
      "sightings": [
       {
@@ -2071,7 +2071,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master. The four plain numbered specimens share a narrow upper waist, broad lower sides and a small central point. The shoulder and hip curves are averaged across the four front photographs.",
+     "outline": {
+      "profile": "plain-ranger-shield",
+      "atlasSha256": "4cae62e23f8eafc8b275f64b92bcecead89645fe6554a7ecea996c4e76a17fe7"
+     },
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
       "embossed-outlined-caption-3aee8b213e",
@@ -2091,8 +2095,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S12-O01.svg",
      "preview": "bc-parks/previews/S12-O01.webp",
-     "sha256": "de07785612422f84189745f745680d19666996831b826ed866c0af7bbb6c4203",
-     "bytes": 322228,
+     "sha256": "3dffdb034d0b0a1267464a50c34ce0677379122acdbae8b439721e6674e3cd28",
+     "bytes": 322609,
      "sourceUrl": "https://drive.google.com/file/d/18K9CtO9ako9vJB4Da9I_OJqtJc2KODWh/view",
      "sightings": [
       {
@@ -2105,7 +2109,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master. The four plain numbered specimens share a narrow upper waist, broad lower sides and a small central point. The shoulder and hip curves are averaged across the four front photographs.",
+     "outline": {
+      "profile": "plain-ranger-shield",
+      "atlasSha256": "de07785612422f84189745f745680d19666996831b826ed866c0af7bbb6c4203"
+     },
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
       "embossed-outlined-caption-3aee8b213e",
@@ -2125,8 +2133,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S13-O01.svg",
      "preview": "bc-parks/previews/S13-O01.webp",
-     "sha256": "5c7ad8f8478752beb660696abe950f93bbe65b9a583cdd8a8d4a9a79ba2471a5",
-     "bytes": 312630,
+     "sha256": "d3c00edbe44bd42ae7fda2d5cad364badc6e8696652d1423b42f63d5b8aef4eb",
+     "bytes": 312793,
      "sourceUrl": "https://drive.google.com/file/d/1ePa_lXLyDnWoRlGVYQ7VUNsgzo1m5VeU/view",
      "sightings": [
       {
@@ -2143,7 +2151,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master. The rolled ribbon has paired ends of equal depth across the three cap badges. The dogwood and the two different arms remain individual source drawings.",
+     "outline": {
+      "profile": "parks-cap-scroll",
+      "atlasSha256": "5c7ad8f8478752beb660696abe950f93bbe65b9a583cdd8a8d4a9a79ba2471a5"
+     },
      "blocks": [
       "embossed-outlined-caption-1d0d62a359",
       "embossed-outlined-caption-45b312d54c",
@@ -2164,8 +2176,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S14-O01.svg",
      "preview": "bc-parks/previews/S14-O01.webp",
-     "sha256": "82e81489e106a9665f0ece9def9e7c94934dfb035a3d6cab3b3dbbb0e9f57179",
-     "bytes": 312643,
+     "sha256": "167db011db2d8fed74eaca5755451775318d20ca31cde030687168cd6238a3a2",
+     "bytes": 313072,
      "sourceUrl": "https://drive.google.com/file/d/1UexJQRmVnN87TV5QdUC8xb7sYnYZ2Pk_/view",
      "sightings": [
       {
@@ -2182,7 +2194,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master. The enamel specimens have a pair of rounded lower shoulders above a distinct central numbered tab. The common silhouette is an interpretation of both photographs.",
+     "outline": {
+      "profile": "enamel-ranger-shield",
+      "atlasSha256": "82e81489e106a9665f0ece9def9e7c94934dfb035a3d6cab3b3dbbb0e9f57179"
+     },
      "blocks": [
       "british-columbia-ec197ba42f",
       "park-ranger-b7e13fcc10",
@@ -2202,8 +2218,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S15-O01.svg",
      "preview": "bc-parks/previews/S15-O01.webp",
-     "sha256": "5b19a9f02a8868b3ab6174482da32198c84ad7c46fd6f82563ea92db93e3ac31",
-     "bytes": 26721,
+     "sha256": "27d02145394c7ca8bd51ab3c37e3d0f8996fb5cc7f1169e221b2f554214dd66a",
+     "bytes": 26884,
      "sourceUrl": "https://drive.google.com/file/d/1896L2S-wZ2q2R81hNfThSmJCd5l8PAeg/view",
      "sightings": [
       {
@@ -2224,7 +2240,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized. The rolled ribbon has paired ends of equal depth across the three cap badges. The dogwood and the two different arms remain individual source drawings.",
+     "outline": {
+      "profile": "parks-cap-scroll",
+      "atlasSha256": "5b19a9f02a8868b3ab6174482da32198c84ad7c46fd6f82563ea92db93e3ac31"
+     },
      "blocks": [
       "embossed-outlined-caption-1d0d62a359",
       "embossed-outlined-caption-45b312d54c"
@@ -2241,8 +2261,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S17-O01.svg",
      "preview": "bc-parks/previews/S17-O01.webp",
-     "sha256": "b6b5dce3d48f49db45eb014cbe595d04382e807803528695e9b405ee29c6cb94",
-     "bytes": 322471,
+     "sha256": "2c571a799046bf5c8783ad1619903ea94405dd884980df0c8151711844c61d56",
+     "bytes": 322852,
      "sourceUrl": "https://drive.google.com/file/d/1zShPMgLgSuNuK5Isegcg98jfNW-L2HbX/view",
      "sightings": [
       {
@@ -2255,7 +2275,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master. The four plain numbered specimens share a narrow upper waist, broad lower sides and a small central point. The shoulder and hip curves are averaged across the four front photographs.",
+     "outline": {
+      "profile": "plain-ranger-shield",
+      "atlasSha256": "b6b5dce3d48f49db45eb014cbe595d04382e807803528695e9b405ee29c6cb94"
+     },
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
       "embossed-outlined-caption-3aee8b213e",
@@ -2275,8 +2299,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S18-O01.svg",
      "preview": "bc-parks/previews/S18-O01.webp",
-     "sha256": "ba6965f24be9aeab370d716eda34c1eb8cf57a70d0097fcd1f612e86a855888f",
-     "bytes": 402480,
+     "sha256": "fb3040dc9f6993c5fd98331338969fc3da45405a10c674007adabf377cbae05a",
+     "bytes": 402909,
      "sourceUrl": "https://drive.google.com/file/d/1EjR9Hl9JbA8tIoaiQ3781kp_QIemH6Bf/view",
      "sightings": [
       {
@@ -2289,7 +2313,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The modern full achievement uses the exact uploaded native BC arms, uniformly fitted with its original geometry and stroke semantics. Two-tone engraved paint is a metal interpretation of that artwork, not authenticated die engraving.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The modern full achievement uses the exact uploaded native BC arms, uniformly fitted with its original geometry and stroke semantics. Two-tone engraved paint is a metal interpretation of that artwork, not authenticated die engraving. The enamel specimens have a pair of rounded lower shoulders above a distinct central numbered tab. The common silhouette is an interpretation of both photographs.",
+     "outline": {
+      "profile": "enamel-ranger-shield",
+      "atlasSha256": "ba6965f24be9aeab370d716eda34c1eb8cf57a70d0097fcd1f612e86a855888f"
+     },
      "blocks": [
       "british-columbia-ec197ba42f",
       "park-ranger-b7e13fcc10",
@@ -2309,8 +2337,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S19-O01.svg",
      "preview": "bc-parks/previews/S19-O01.webp",
-     "sha256": "dbdec39ac6fd1423092cb27ff1618f4a21be3da8fb44aa71061159887ac8e9f6",
-     "bytes": 402365,
+     "sha256": "8beec7aaec3d93a5cca009f5035bc6292d2c078d454011149923e620e51197ec",
+     "bytes": 402528,
      "sourceUrl": "https://drive.google.com/file/d/1jtb9fjfqiyRlP2uUPK5utZq8wnD7rz7e/view",
      "sightings": [
       {
@@ -2323,7 +2351,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized. The modern full achievement uses the exact uploaded native BC arms, uniformly fitted with its original geometry and stroke semantics. Two-tone engraved paint is a metal interpretation of that artwork, not authenticated die engraving.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The cap-badge scroll family is shared, with a separate dogwood, simplified framed arms or full-arms centre. Petal relief and small engraved lettering are idealized. The modern full achievement uses the exact uploaded native BC arms, uniformly fitted with its original geometry and stroke semantics. Two-tone engraved paint is a metal interpretation of that artwork, not authenticated die engraving. The rolled ribbon has paired ends of equal depth across the three cap badges. The dogwood and the two different arms remain individual source drawings.",
+     "outline": {
+      "profile": "parks-cap-scroll",
+      "atlasSha256": "dbdec39ac6fd1423092cb27ff1618f4a21be3da8fb44aa71061159887ac8e9f6"
+     },
      "blocks": [
       "embossed-outlined-caption-1d0d62a359",
       "embossed-outlined-caption-45b312d54c",
@@ -2344,8 +2376,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S20-O01.svg",
      "preview": "bc-parks/previews/S20-O01.webp",
-     "sha256": "e291c82fc986dcd4e22223bff883c5006b0115f6e80ac9441e28adeb40844368",
-     "bytes": 322080,
+     "sha256": "f7b4c7f70d35c1d49abca027546b51d1a3eaa30b9307fe9a6b467eff474aba8e",
+     "bytes": 322461,
      "sourceUrl": "https://drive.google.com/file/d/1RSqL4LJo_-KD7OaCx_A85Vvp6CK5Vz36/view",
      "sightings": [
       {
@@ -2358,7 +2390,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master.",
+     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The shared numbered Park Ranger template retains the serial, broad silhouette profile and full versus simplified armorial distinction. Lower edges hidden by display stands are completed from the matching family outline. The visible old armorial edition uses the exact user-selected Plateforge 1917-late / Type 3 component with stroke weight 3 and uniform fit. Plateforge describes its source as a vector conversion of a generated master; it is not an authenticated original die, engraving or embroidery master. The four plain numbered specimens share a narrow upper waist, broad lower sides and a small central point. The shoulder and hip curves are averaged across the four front photographs.",
+     "outline": {
+      "profile": "plain-ranger-shield",
+      "atlasSha256": "e291c82fc986dcd4e22223bff883c5006b0115f6e80ac9441e28adeb40844368"
+     },
      "blocks": [
       "embossed-outlined-caption-1f6f1b4674",
       "embossed-outlined-caption-3aee8b213e",
@@ -2595,8 +2631,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S27-O04.svg",
      "preview": "bc-parks/previews/S27-O04.webp",
-     "sha256": "0666f016eaf11ec53b17f3698c3614c762b6522782f4c55ff2717fd5d7374395",
-     "bytes": 463917,
+     "sha256": "f9d643e34b6a3b3c06ecaf39918ceb5aa7821f493f034d2d3badc8117b1af2cc",
+     "bytes": 464522,
      "sourceUrl": "https://drive.google.com/file/d/11GGUgBj5I0oEwrlZ_qrXfztMR1tuwvo1/view",
      "sightings": [
       {
@@ -2887,8 +2923,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S30-O04.svg",
      "preview": "bc-parks/previews/S30-O04.webp",
-     "sha256": "9fdc5dc41f37606227a0b08c33e99aeebc53836bbb876458983f67f8c73f0530",
-     "bytes": 461489,
+     "sha256": "f9c4de1bc1a7e32611e7b7ef1f906e17a95b85b9ecc3b4509f4d7403a89c44e8",
+     "bytes": 462097,
      "sourceUrl": "https://drive.google.com/file/d/1w8DfpMTH4JvH58ynkHFbYYak94gR4rUJ/view",
      "sightings": [
       {
@@ -5192,13 +5228,13 @@
      "label": "Justice Institute / British Columbia — white fan shield",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Supplied vector reconstruction",
      "family": "justice-institute-fan",
      "affiliation": "Other",
      "svg": "justice-institute/S56-O46.svg",
      "preview": "justice-institute/previews/S56-O46.webp",
-     "sha256": "55c05c6d80366eaa6b98e757eed3c570edb4f65033e70a397e3f8df933ef6b91",
-     "bytes": 13183,
+     "sha256": "6215880570b56d580edc1f7985369b07b5c7620c5825b15ef728a94a6c62ffa8",
+     "bytes": 17839,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5207,7 +5243,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. Justice Institute identity is confirmed by the visible caption and user reference. Fine channels in the historical triangular institutional monogram remain an interpretation of the board photograph.",
+     "limitations": "Manual vector reconstruction of a supplied image of the badge (JIBC badge vector package): an 11-curve border, the four-part JIBC monogram with real B counters, and 31 individually placed letters from Bookman-derived, hand-corrected letter masters. Not an official master; the typeface is unconfirmed and the blue (#0141A2) is sampled from the image, not an institutional specification. See the package README.",
+     "replaced": {
+      "svg": "supplied/jibc-fan-badge/vectors/JIBC_Badge_Rebuilt.svg",
+      "atlasSha256": "55c05c6d80366eaa6b98e757eed3c570edb4f65033e70a397e3f8df933ef6b91"
+     },
      "blocks": [],
      "bundles": []
     }
@@ -5597,13 +5637,13 @@
      "label": "University / British Columbia / Patrol — upper shield",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas shield with the UBC arms and a straight base",
      "family": "ubc-patrol-upper",
      "affiliation": "Other",
      "svg": "ubc/S56-O57.svg",
      "preview": "ubc/previews/S56-O57.webp",
-     "sha256": "e1a414e80d7961f45fa50f147991ba30af21b8b8b26b695cc09977fe8be26aba",
-     "bytes": 13807,
+     "sha256": "c7ea01970d11ed686a6f8c5573311696a954456350682c0a80e7620db63e8c67",
+     "bytes": 52163,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5612,7 +5652,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
+     "limitations": "The navy field, gold edge and lettering are the atlas's reconstruction from an 80 × 65 collector-board crop. compose.mjs makes the base straight, as on the patch, and replaces the simplified centre with the University of British Columbia's arms (Wikimedia Commons, public domain, after the 1915 design in the UBC Archives), its gold matched to the patch's thread, at its own proportions. PATROL's tall condensed alphabet and the exact thread colours remain interpreted.",
+     "replaced": {
+      "svg": "supplied/ubc-patrol-shield/composed/S56-O57.svg",
+      "atlasSha256": "e1a414e80d7961f45fa50f147991ba30af21b8b8b26b695cc09977fe8be26aba"
+     },
      "blocks": [],
      "bundles": []
     },

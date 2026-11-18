@@ -22,6 +22,7 @@ import { dirname, join } from 'node:path';
 import { strFromU8 } from 'fflate';
 import { hasReferences, wrapBlock } from '../src/library-join.js';
 import { LIBRARY, drawingKey, driveId, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
+import { applyBadgeOutline, badgeOutlines } from './badge-outlines.mjs';
 import { shareParts } from './share-parts.mjs';
 import { verifyLibrary } from './verify-library.mjs';
 
@@ -183,6 +184,8 @@ async function main() {
     let { d, org, svg, text } = primary;
     // A better drawing supplied for any entry of the group replaces the group's; the atlas's hash stays on record.
     const replacement = group.map(({ d: g }) => replacements.get(g.id)).find(Boolean);
+    const outline = badgeOutlines.get(d.id);
+    if (outline && replacement) throw new Error(`Choose one source of revised artwork for ${d.id}`);
     let previewFile = null;
     let atlasSha256 = null;
     if (replacement) {
@@ -191,6 +194,11 @@ async function main() {
       atlasSha256 = sha(svg);
       svg = file;
       text = supplied;
+    } else if (outline) {
+      atlasSha256 = sha(svg);
+      text = applyBadgeOutline(text, outline);
+      svg = Buffer.from(text);
+      previewFile = readFileSync(join(LIBRARY, 'supplied/badge-outlines', d.id + '.webp'));
     }
     const others = group.filter((entry) => entry !== primary);
     for (const { d: other } of others) merged.push({ id: other.id, label: other.label, into: d.id });
@@ -222,8 +230,9 @@ async function main() {
       sourceUrl: d.originalSourceUrl ?? null,
       sightings,
       merged: others.map(({ d: other }) => other.id),
-      limitations: [replacement?.limitations ?? d.limitations, relabels.get(d.id)?.note].filter(Boolean).join(' ') || null,
+      limitations: [replacement?.limitations ?? d.limitations, outline?.note, relabels.get(d.id)?.note].filter(Boolean).join(' ') || null,
       // Where the drawing came from when it isn't the atlas's own reconstruction.
+      ...(outline ? { outline: { profile: outline.name, atlasSha256 } } : {}),
       ...(replacement ? { replaced: { svg: replacement.svg, atlasSha256 } } : {}),
     });
   }
@@ -385,7 +394,7 @@ async function main() {
     `\nStored ${(storedBytes / 1e6).toFixed(2)} MB of SVG for ${(sourceBytes / 1e6).toFixed(2)} MB of drawings: ` +
     `${blocks.length} shared blocks, ${shared.paths.size} shared path outlines in ${bundles.length} bundles.`,
   );
-  console.log('Every patch joins back byte for byte to the snapshot\'s file, or to its supplied file where orgs.json replaces or consolidates it.');
+  console.log('Verified every joined drawing against its atlas source, supplied artwork or reviewed outline profile.');
   if (unsorted.length) {
     console.warn(`\n${unsorted.length} design(s) matched no organization; add a rule to library/orgs.json:`);
     for (const d of unsorted) console.warn(`  ${d.id}  family=${d.family}  affiliation=${d.affiliation}  ${d.label}`);

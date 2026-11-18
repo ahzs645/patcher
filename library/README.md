@@ -129,6 +129,10 @@ stored patch joins back to the supplied file. It also checks that the atlas draw
 since it was replaced. Merged repeat photographs of a replaced design still group by the atlas's
 drawing.
 
+## Shared badge outlines
+
+Four plain numbered Park Ranger badges use one shield outline. The two enamel Ranger badges use a second outline with a lower tab. Three Parks cap badges share the outer scroll and keep their individual crests. The paths, specimen IDs and interpretation notes are in `supplied/badge-outlines/profiles.json`. Each profile matches a specific atlas path and its number of occurrences, so the field and rim follow the same contour. The importer records the profile and original SVG checksum. Source verification reapplies the profile before comparing the complete joined drawing.
+
 ## Designs supplied with their variants
 
 `consolidate` goes further than `replace`: it puts a supplied design, with all its variants, in the place of

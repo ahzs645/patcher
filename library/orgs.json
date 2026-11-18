@@ -23,9 +23,10 @@
       "id": "S01-O01",
       "medium": "Metal badge",
       "finish": "Worn copper tone",
-      "svg": "supplied/junior-forest-warden/S01-O01.svg",
-      "preview": "supplied/junior-forest-warden/preview.webp",
-      "limitations": "The photograph shows a warm copper-toned metal shield, a rim with two highlights, and raised outlines around the lettering and maple leaf. Wear and colour are interpreted from one photograph. Alloy, plating and relief depth are unverified."
+      "svg": "supplied/junior-forest-warden/composed/S01-O01.svg",
+      "preview": "supplied/junior-forest-warden/preview-S01-O01.webp",
+      "limitations": "Shield, inset rim, lettering and maple leaf are fitted to the photographed specimen. The worn copper colour and relief are interpreted. The alloy, plating, original die and physical depth are unverified.",
+      "quality": "Photo-registered vector reconstruction"
     },
     {
       "id": "S25-O01",
@@ -136,8 +137,8 @@
       "id": "S48-O01",
       "svg": "supplied/forest-service-emblem-square/composed/S48-O01.svg",
       "preview": "supplied/forest-service-emblem-square/preview-S48-O01.webp",
-      "quality": "PofBC Forest Service emblem artwork",
-      "limitations": "Drawn from PofBC's Forest Service evergreen emblem (Internal Logos → Forests) by compose.mjs: its bowed badge as the outline and an inset copy as the cloth field, its mainland, islands and evergreen, in the atlas's thread colours. The emblem is itself a vector reconstruction from a supplied image; thread colours and the patch's proportions are interpreted, and frayed threads are omitted."
+      "quality": "Source-refined cloth border, PofBC emblem components",
+      "limitations": "The near-square cloth border is constructed independently with near-straight sides and restrained corner rounding, following the S48 photograph. PofBC mainland, islands and evergreen geometry are retained. Exact cloth dimensions, inner component contours, edge stitching and thread colours remain interpreted; the photo was not warped or traced."
     },
     {
       "id": "S56-O38",
@@ -159,6 +160,20 @@
       "preview": "supplied/bc-predator-branch/preview.webp",
       "quality": "Supplied vector reconstruction",
       "limitations": "Manual vector reconstruction of a supplied image (B.C. Predator Branch vector package): a symmetric border of six Bézier arcs, a hand-drawn wolf's head, and fourteen custom glyphs placed one by one for B.C. GAME DEPARTMENT and PREDATOR BRANCH. Not an official master; the shading is flattened to cream and near-black, and the lettering and border are close to the reference, not measured from an original (95% foreground overlap with it). The 1951 date is the publishing page's description, not verified. See the package README."
+    },
+    {
+      "id": "S56-O46",
+      "svg": "supplied/jibc-fan-badge/vectors/JIBC_Badge_Rebuilt.svg",
+      "preview": "supplied/jibc-fan-badge/preview.webp",
+      "quality": "Supplied vector reconstruction",
+      "limitations": "Manual vector reconstruction of a supplied image of the badge (JIBC badge vector package): an 11-curve border, the four-part JIBC monogram with real B counters, and 31 individually placed letters from Bookman-derived, hand-corrected letter masters. Not an official master; the typeface is unconfirmed and the blue (#0141A2) is sampled from the image, not an institutional specification. See the package README."
+    },
+    {
+      "id": "S56-O57",
+      "svg": "supplied/ubc-patrol-shield/composed/S56-O57.svg",
+      "preview": "supplied/ubc-patrol-shield/preview-S56-O57.webp",
+      "quality": "Atlas shield with the UBC arms and a straight base",
+      "limitations": "The navy field, gold edge and lettering are the atlas's reconstruction from an 80 × 65 collector-board crop. compose.mjs makes the base straight, as on the patch, and replaces the simplified centre with the University of British Columbia's arms (Wikimedia Commons, public domain, after the 1915 design in the UBC Archives), its gold matched to the patch's thread, at its own proportions. PATROL's tall condensed alphabet and the exact thread colours remain interpreted."
     }
   ],
   "variants": [

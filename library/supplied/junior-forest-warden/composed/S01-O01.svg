@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 539 607" role="img" aria-labelledby="title desc">
+  <title id="title">Junior Forest Warden / Canadian Forestry Ass’n. — photo-registered vector study</title>
+  <desc id="desc">Editable paths traced and reconstructed against the supplied photograph. The shield, inset rim, individual lettering and maple leaf retain photographed asymmetry and perspective. Broad relief edges are simplified; grain, cast shadows and JPEG noise are omitted. This is not authenticated issue artwork or a rectified manufacturing die. Metal badge with a worn copper tone. Alloy and plating are unverified.</desc>
+  <metadata>{"occurrenceId":"S01-O01","sourceId":"S01","sourceUrl":"https://drive.google.com/file/d/1INS_YP_UZWb3HuuJuolLxhmbafQ2Fo_W/view","sourceSha256":"ccff597d5eefc59ddee05a70690de332b3a1844921a5ac9b2652a9e241544f09","sourceDimensions":[720,960],"bbox":[65,125,604,732],"registration":{"type":"photo crop translation only","translate":[-65,-125],"perspectiveCorrection":false},"method":"Manually observed cubic silhouette and rim, individually drawn ridge-centreline lettering with explicit relief/face widths, and five-lobe leaf with corrected lobe recesses and connected tapered veins; no fonts, image-derived texture paths, or embedded raster","quality":"Photo-registered vector reconstruction; fine relief remains interpreted","materialAttribution":"Metal badge, worn copper tone; alloy and plating unverified","captionRuns":[{"id":"junior","text":"• JUNIOR •","glyphCount":6},{"id":"forest-warden","text":"FOREST WARDEN","glyphCount":12},{"id":"canadian","text":"CANADIAN","glyphCount":8},{"id":"forestry-assn","text":"FORESTRY ASS’N.","glyphCount":13}],"limits":["Perspective and curvature retained from one photograph; not a frontal die master.","Fine glyph boundaries and veins are softened by the photograph and interpreted.","Flat warm colours are display choices, not a calibrated material measurement."]}</metadata>
+  <g id="photo-registered-artwork" transform="translate(-65 -125)" stroke-linejoin="round" stroke-linecap="round">
+    <g id="silhouette">
+      <path id="outer-silhouette" d="M116 184 C150 192 176 183 204 169 C238 148 265 132 296 132&#10; C330 130 354 145 387 159 C427 175 470 185 509 167 Q516 164 521 173&#10; L556 230 Q562 237 556 246 C536 271 522 297 526 327 C530 366 551 405 572 451&#10; C593 493 601 531 595 567 C592 597 583 619 561 637 C531 660 481 671 432 683&#10; C391 693 361 703 338 717 Q333 721 328 717 C307 701 284 694 256 688&#10; C207 678 163 674 127 658 C90 642 73 622 68 590 C62 559 68 520 75 490&#10; C83 455 99 411 109 377 C117 349 119 329 111 304 C106 283 94 265 85 251&#10; Q77 241 84 226 L107 189 Q110 183 116 184 Z" fill="#9e663f" stroke="#80522e" stroke-width="2" />
+    </g>
+    <g id="rim">
+      <path id="outer-rim" d="M117 194 C150 201 177 190 209 176 C243 155 268 141 296 141&#10; C325 138 353 153 384 168 C428 186 474 193 512 179 L546 235&#10; C523 264 512 294 516 328 C520 371 542 412 563 457 C584 499 592 532 586 568&#10; C583 594 575 613 555 629 C525 650 477 662 429 674 C387 684 356 694 333 708&#10; C309 690 285 684 258 678 C210 668 166 665 130 650 C98 636 82 615 78 588&#10; C73 559 77 526 84 494 C92 457 108 415 118 380 C126 350 128 328 120 301&#10; C114 277 101 256 93 240 L116 196 Z" fill="#cd9268" stroke="#e3b389" stroke-width="2.5" />
+      <path id="inner-rim" d="M124 204 C158 210 184 198 214 183 C247 164 270 149 297 149&#10; C323 147 351 161 381 175 C425 194 469 201 508 188 L536 235&#10; C514 266 504 294 509 331 C514 374 533 413 556 462 C576 503 582 532 577 566&#10; C575 589 567 607 549 621 C519 643 472 653 425 665 C385 675 354 685 333 697&#10; C310 682 284 675 259 669 C212 659 169 657 134 642 C105 629 92 610 87 585&#10; C82 560 86 527 93 497 C102 459 116 417 126 384 C135 351 137 326 128 298&#10; C122 275 111 255 103 240 L124 205 Z" fill="#bb845d" stroke="#a96f3f" stroke-width="2" />
+    </g>
+    <g id="junior" data-caption="• JUNIOR •">
+      <g id="junior-1-J" data-letter="J">
+        <path d="M205 245 L205 278 C205 289 199 294 190 295 Q177 298 179 286" fill="none" stroke="#80522e" stroke-width="13" data-role="relief-boundary" />
+        <path d="M205 245 L205 278 C205 289 199 294 190 295 Q177 298 179 286" fill="none" stroke="#edbd85" stroke-width="6" data-role="letter-face" />
+      </g>
+      <g id="junior-2-U" data-letter="U">
+        <path d="M231 233 L232 259 C231 271 240 277 251 271 Q263 267 263 255 L262 227" fill="none" stroke="#80522e" stroke-width="13" data-role="relief-boundary" />
+        <path d="M231 233 L232 259 C231 271 240 277 251 271 Q263 267 263 255 L262 227" fill="none" stroke="#edbd85" stroke-width="6" data-role="letter-face" />
+      </g>
+      <g id="junior-3-N" data-letter="N">
+        <path d="M289 265 L289 225 L321 263 L321 222" fill="none" stroke="#80522e" stroke-width="13" data-role="relief-boundary" />
+        <path d="M289 265 L289 225 L321 263 L321 222" fill="none" stroke="#edbd85" stroke-width="6" data-role="letter-face" />
+      </g>
+      <g id="junior-4-I" data-letter="I">
+        <path d="M348 222 L348 263" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M348 222 L348 263" fill="none" stroke="#edbd85" stroke-width="5.5" data-role="letter-face" />
+      </g>
+      <g id="junior-5-O" data-letter="O">
+        <path d="M391 228 C380 225 373 231 373 241 C371 254 379 266 390 267 C403 270 410 260 408 246 C406 235 401 229 391 228 Z" fill="none" stroke="#80522e" stroke-width="13" data-role="relief-boundary" />
+        <path d="M391 228 C380 225 373 231 373 241 C371 254 379 266 390 267 C403 270 410 260 408 246 C406 235 401 229 391 228 Z" fill="none" stroke="#edbd85" stroke-width="6" data-role="letter-face" />
+      </g>
+      <g id="junior-6-R" data-letter="R">
+        <path d="M429 277 L429 235 Q451 236 455 248 Q458 260 430 258 M441 260 L457 284" fill="none" stroke="#80522e" stroke-width="13" data-role="relief-boundary" />
+        <path d="M429 277 L429 235 Q451 236 455 248 Q458 260 430 258 M441 260 L457 284" fill="none" stroke="#edbd85" stroke-width="6" data-role="letter-face" />
+      </g>
+      <circle cx="157.5" cy="287.5" r="8" fill="#80522e" data-letter="dot" />
+      <circle cx="157.5" cy="288.5" r="3" fill="#edbd85" aria-hidden="true" />
+      <circle cx="479" cy="276" r="8" fill="#80522e" data-letter="dot" />
+      <circle cx="479" cy="277" r="3" fill="#edbd85" aria-hidden="true" />
+    </g>
+    <g id="forest-warden" data-caption="FOREST WARDEN">
+      <g id="forest-warden-1-F" data-letter="F">
+        <path d="M145 403 L147 345 L167 334 M147 369 L162 361" fill="none" stroke="#80522e" stroke-width="10" data-role="relief-boundary" />
+        <path d="M145 403 L147 345 L167 334 M147 369 L162 361" fill="none" stroke="#edbd85" stroke-width="4" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-2-O" data-letter="O">
+        <path d="M187 336 C197 330 198 341 197 350 L195 364 Q194 376 186 376 Q178 375 180 361 L181 346 Q182 339 187 336 Z" fill="none" stroke="#80522e" stroke-width="10" data-role="relief-boundary" />
+        <path d="M187 336 C197 330 198 341 197 350 L195 364 Q194 376 186 376 Q178 375 180 361 L181 346 Q182 339 187 336 Z" fill="none" stroke="#edbd85" stroke-width="4" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-3-R" data-letter="R">
+        <path d="M216 362 L215 323 Q230 313 232 327 Q234 339 217 343 M221 342 L231 356" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M216 362 L215 323 Q230 313 232 327 Q234 339 217 343 M221 342 L231 356" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-4-E" data-letter="E">
+        <path d="M262 306 L247 312 L247 350 L262 345 M247 328 L259 324" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M262 306 L247 312 L247 350 L262 345 M247 328 L259 324" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-5-S" data-letter="S">
+        <path d="M286 308 C286 298 275 301 277 310 C277 318 289 317 289 331 C290 341 284 347 278 342 Q273 340 274 332" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M286 308 C286 298 275 301 277 310 C277 318 289 317 289 331 C290 341 284 347 278 342 Q273 340 274 332" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-6-T" data-letter="T">
+        <path d="M292 300 L309 298 M301 299 L303 338" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M292 300 L309 298 M301 299 L303 338" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-7-W" data-letter="W">
+        <path d="M328 289 L339 338 L346 300 L355 338 L365 290" fill="none" stroke="#80522e" stroke-width="10" data-role="relief-boundary" />
+        <path d="M328 289 L339 338 L346 300 L355 338 L365 290" fill="none" stroke="#edbd85" stroke-width="4" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-8-A" data-letter="A">
+        <path d="M374 340 L384 309 Q385 307 386 310 L395 345 M379 330 L390 331" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M374 340 L384 309 Q385 307 386 310 L395 345 M379 330 L390 331" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-9-R" data-letter="R">
+        <path d="M403 344 L401 312 Q418 311 419 327 Q418 340 404 337 M407 338 L419 350" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M403 344 L401 312 Q418 311 419 327 Q418 340 404 337 M407 338 L419 350" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-10-D" data-letter="D">
+        <path d="M432 356 L430 319 C445 320 448 329 447 342 L446 349 Q444 362 432 356 Z" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M432 356 L430 319 C445 320 448 329 447 342 L446 349 Q444 362 432 356 Z" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-11-E" data-letter="E">
+        <path d="M472 335 L458 328 L458 368 L473 376 M458 348 L469 354" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M472 335 L458 328 L458 368 L473 376 M458 348 L469 354" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+      <g id="forest-warden-12-N" data-letter="N">
+        <path d="M487 386 L487 345 L501 393 L501 353" fill="none" stroke="#80522e" stroke-width="9" data-role="relief-boundary" />
+        <path d="M487 386 L487 345 L501 393 L501 353" fill="none" stroke="#edbd85" stroke-width="3.5" data-role="letter-face" />
+      </g>
+    </g>
+    <g id="canadian" data-caption="CANADIAN">
+      <g id="canadian-1-C" data-letter="C">
+        <path d="M211 480 C208 458 192 454 183 472 C174 491 180 514 194 518 C205 522 215 515 215 503" fill="none" stroke="#80522e" stroke-width="15" data-role="relief-boundary" />
+        <path d="M211 480 C208 458 192 454 183 472 C174 491 180 514 194 518 C205 522 215 515 215 503" fill="none" stroke="#edbd85" stroke-width="7" data-role="letter-face" />
+      </g>
+      <g id="canadian-2-A" data-letter="A">
+        <path d="M230 529 L240 502 Q242 498 245 504 L254 533 M234 520 L250 522" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M230 529 L240 502 Q242 498 245 504 L254 533 M234 520 L250 522" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="canadian-3-N" data-letter="N">
+        <path d="M276 535 L275 508 Q275 505 278 508 L300 535 L299 509" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M276 535 L275 508 Q275 505 278 508 L300 535 L299 509" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="canadian-4-A" data-letter="A">
+        <path d="M319 537 L332 510 Q334 507 336 511 L348 536 M324 528 L344 528" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M319 537 L332 510 Q334 507 336 511 L348 536 M324 528 L344 528" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="canadian-5-D" data-letter="D">
+        <path d="M363 535 L362 509 C379 504 391 510 391 522 C389 534 379 538 363 535 Z" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M363 535 L362 509 C379 504 391 510 391 522 C389 534 379 538 363 535 Z" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="canadian-6-I" data-letter="I">
+        <path d="M407 499 L407 529" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M407 499 L407 529" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="canadian-7-A" data-letter="A">
+        <path d="M422 527 L432 492 Q433 487 435 492 L446 517 M427 513 L442 509" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M422 527 L432 492 Q433 487 435 492 L446 517 M427 513 L442 509" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="canadian-8-N" data-letter="N">
+        <path d="M457 508 L457 477 Q457 473 461 478 L479 495 L478 464" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M457 508 L457 477 Q457 473 461 478 L479 495 L478 464" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+    </g>
+    <g id="forestry-assn" data-caption="FORESTRY ASS’N.">
+      <g id="forestry-assn-1-F" data-letter="F">
+        <path d="M115 575 L115 522 L134 534 M115 547 L128 554" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M115 575 L115 522 L134 534 M115 547 L128 554" fill="none" stroke="#edbd85" stroke-width="4.8" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-2-O" data-letter="O">
+        <path d="M150 562 C140 559 141 572 142 584 Q143 596 155 598 Q166 599 164 583 L163 573 Q163 563 150 562 Z" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M150 562 C140 559 141 572 142 584 Q143 596 155 598 Q166 599 164 583 L163 573 Q163 563 150 562 Z" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-3-R" data-letter="R">
+        <path d="M181 603 L181 571 Q201 574 201 586 Q200 595 182 591 M186 593 L198 608" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M181 603 L181 571 Q201 574 201 586 Q200 595 182 591 M186 593 L198 608" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-4-E" data-letter="E">
+        <path d="M230 584 L212 578 L211 611 L229 615 M212 594 L224 598" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M230 584 L212 578 L211 611 L229 615 M212 594 L224 598" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-5-S" data-letter="S">
+        <path d="M264 592 C260 581 244 581 245 591 C246 600 263 600 266 611 C269 622 256 626 248 617 L245 612" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M264 592 C260 581 244 581 245 591 C246 600 263 600 266 611 C269 622 256 626 248 617 L245 612" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-6-T" data-letter="T">
+        <path d="M282 591 L308 592 M295 592 L295 621" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M282 591 L308 592 M295 592 L295 621" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-7-R" data-letter="R">
+        <path d="M321 621 L320 594 Q342 589 343 602 Q343 614 321 612 M333 612 L342 622" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M321 621 L320 594 Q342 589 343 602 Q343 614 321 612 M333 612 L342 622" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-8-Y" data-letter="Y">
+        <path d="M355 593 L369 609 L381 591 M369 609 L369 620" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M355 593 L369 609 L381 591 M369 609 L369 620" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-9-A" data-letter="A">
+        <path d="M402 608 L415 565 Q416 561 418 565 L431 603 M407 593 L427 588" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M402 608 L415 565 Q416 561 418 565 L431 603 M407 593 L427 588" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-10-S" data-letter="S">
+        <path d="M468 574 C463 564 448 568 450 577 C451 584 467 582 470 593 C472 602 459 609 449 601 Q445 598 445 594" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M468 574 C463 564 448 568 450 577 C451 584 467 582 470 593 C472 602 459 609 449 601 Q445 598 445 594" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-11-S" data-letter="S">
+        <path d="M505 554 C501 544 487 549 486 557 C486 566 501 564 507 575 C513 585 500 592 490 587 Q484 585 483 580" fill="none" stroke="#80522e" stroke-width="12" data-role="relief-boundary" />
+        <path d="M505 554 C501 544 487 549 486 557 C486 566 501 564 507 575 C513 585 500 592 490 587 Q484 585 483 580" fill="none" stroke="#edbd85" stroke-width="5" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-12-apostrophe" data-letter="apostrophe">
+        <path d="M509 539 Q512 537 511 541 L508 545" fill="none" stroke="#80522e" stroke-width="4.6" data-role="relief-boundary" />
+        <path d="M509 539 Q512 537 511 541 L508 545" fill="none" stroke="#edbd85" stroke-width="1.8" data-role="letter-face" />
+      </g>
+      <g id="forestry-assn-13-N" data-letter="N">
+        <path d="M520 575 L518 545 L538 560 L538 531" fill="none" stroke="#80522e" stroke-width="11" data-role="relief-boundary" />
+        <path d="M520 575 L518 545 L538 560 L538 531" fill="none" stroke="#edbd85" stroke-width="4.8" data-role="letter-face" />
+      </g>
+      <circle cx="548" cy="561" r="5.2" fill="#80522e" data-letter="period" />
+      <circle cx="548" cy="561.6" r="2" fill="#edbd85" aria-hidden="true" />
+    </g>
+    <g id="maple-leaf-outline" fill="#dfad74" stroke="#80522e" stroke-width="2.5" stroke-linejoin="round">
+      <path id="maple-leaf-blade-and-stem" d="       M327.2 360       C330.3 362 330.7 365 333.5 367.2       L335.8 368.1 336.5 372.3 Q339.4 376.6 339.3 379.3       L342 381 Q342.7 386.2 345 390 L344.9 393.3       C348.5 399.8 347.1 406.8 343.7 411       C341.6 413.7 339.8 416.1 339.9 418.5       C339.6 423 343.3 425 347.3 424.5       C351.4 424 352 420 353.6 415.7       L355.6 411.7 Q358.5 406.3 363.7 400.9       L367.7 397.1 373.7 396.6 377 394.7       Q387 394.4 396.2 397       L393.5 404.1 393 409.6 389.8 414.2 387 415.7       L388 418.2 384.2 423.9 381.7 425.3       L383.4 427.5 378.7 434 376.5 434.6       L377.1 437 370 443.6 366 443.4       Q361.1 446.5 358 447.5       C367 449 375.7 452 377.8 458.4       L381.5 465.3 374.1 468.1 371 471 363 470.5       Q359.6 473.1 354 471.2       C350.6 475.4 343.3 474.2 337 469.8       Q334.5 468.6 332.6 468.5       L333.8 481.7 Q334.4 485.2 331.5 484.1       Q330.5 483.7 330 481.3 L328.4 467.9       C323.8 470.4 317.6 473.3 313.2 473       Q309.2 475.3 305.1 471.4       L300.8 473.6 295.6 470.7       Q288 473 278.7 469       L282.4 463.6 285.3 458.1       C289.5 452.4 295.1 450 301 447.2       L290.6 444.4 286.3 441.7 282.1 442.2       L278.8 438.6 273.5 435.8 272.6 431.8 268.3 428.4       L269.2 424 264.8 420.6 266 416.9 262.1 413.6       L263.5 411.1 258.8 406.8 259.2 403 254.8 396.6       Q263 394.5 273.6 395.7 L281.3 393.8       Q286.8 395.3 289.7 401.4       C294 409 301 414.5 309 420.8       Q314.8 425.7 315 421.2       C315.1 417.9 311.8 414.6 309.2 412.1       C305.4 408.6 302.9 404.8 303.5 398.2       Q304 393.5 307 389       L310.6 384.2 311 380.4 314.4 377.8       L316.2 373 320 371 322.5 365 Z" />
+    </g>
+    <g id="maple-leaf-principal-veins" fill="#f4d2a0" stroke="#b9864f" stroke-width="0.55" stroke-linejoin="round">
+      <path id="maple-leaf-left-main-vein" d="M329 452.2 C313.5 446.2 293 430 267.3 404.8 C275 411.3 286.5 420.1 297 427.5 C310.3 437 321.5 446 330 451.4 Z" />
+      <path id="maple-leaf-right-main-vein" d="M329 452.3 C346 448.1 368.7 428 388.3 404.3 C374.5 425 350 450.3 330.1 454.5 Z" />
+      <path id="maple-leaf-left-basal-vein" d="M328.8 452.5 C315.5 452.2 298 459 283.2 467.3 C297.8 462.6 315 456.2 329.6 454.2 Z" />
+      <path id="maple-leaf-right-basal-vein" d="M330 452.8 C344.8 451.8 360.4 457.6 376.2 465.6 C359 461.8 344.1 455.5 330 455 Z" />
+    </g>
+    <g id="maple-leaf-secondary-veins" fill="#f4d2a0" stroke="#b9864f" stroke-width="0.4" stroke-linejoin="round">
+      <path id="maple-leaf-top-left-branch" d="M327.8 393.9 C324 389.4 322.5 383.8 322.1 377.8 C323.9 383.2 325.5 387.6 328.3 391.4 Z" />
+      <path id="maple-leaf-top-right-branch" d="M328.5 388.1 C331.1 384.4 332.6 379.6 332.1 374.4 C334.4 380.2 332.8 386.7 328.6 390.3 Z" />
+      <path id="maple-leaf-centre-left-branch" d="M328.1 413 C320.9 405.3 317.7 397.4 316.4 389.2 C319.9 397.9 323 404.1 328.5 410.5 Z" />
+      <path id="maple-leaf-centre-right-branch" d="M329 406.8 C335.3 401 339.5 391.8 339.2 385.5 C341.7 393.5 336.5 404.3 329.2 409 Z" />
+      <path id="maple-leaf-lower-left-branch" d="M328.7 437 C324 432.6 321.2 428.2 319.8 423.7 C323.9 427.5 326.4 430.5 329 433.8 Z" />
+      <path id="maple-leaf-lower-right-branch" d="M329.4 429.9 C333.5 425.5 337.4 419.8 339.1 414.9 C339.5 421.4 335 428.5 329.5 432.4 Z" />
+      <path id="maple-leaf-left-upper-branch" d="M295.7 430.6 C292.4 418.9 282.9 407.9 274 402 C285.5 407.8 294.4 418.9 298.6 432.4 Z" />
+      <path id="maple-leaf-left-lower-branch" d="M310.5 442.6 C296.5 443.4 285.9 437.4 278.6 431.4 C289.8 437.6 300.3 440.1 308.5 439.7 Z" />
+      <path id="maple-leaf-left-tip-branch" d="M282 417.8 C274.4 418.5 269.7 414.3 267 410.7 C272.1 414.9 277.8 416.8 280.7 416.1 Z" />
+      <path id="maple-leaf-right-upper-branch" d="M350.9 442.5 C352.2 426.4 362.6 409.1 375.5 401.9 C364.3 412.9 355.1 429.1 353.7 440.7 Z" />
+      <path id="maple-leaf-right-lower-branch" d="M346.6 444.5 C359.5 444 370.8 436.6 377.3 429.7 C370.7 439.8 359 446.8 343.5 447 Z" />
+      <path id="maple-leaf-right-tip-branch" d="M367.8 424.6 C374.9 423.5 381.4 415.4 385 411.6 C382.3 419.1 375.4 424.9 365.6 427 Z" />
+      <path id="maple-leaf-left-basal-branch" d="M309.4 458.3 C308.8 463 305.4 468 301 470 C303.8 464.8 305.4 462.9 306.8 459 Z" />
+      <path id="maple-leaf-right-basal-branch" d="M349.5 457.3 C349.5 462.4 354.1 467.3 360.9 470.1 C352 468.7 347.5 463.4 347 456.8 Z" />
+    </g>
+    <g id="maple-leaf-midrib" fill="#f4d2a0" stroke="#b9864f" stroke-width="0.5" stroke-linejoin="round">
+      <path id="maple-leaf-continuous-midrib" d="M331.4 482.1 C330 471.8 328.3 459.9 327.9 447.2 C327.2 433 328.5 420.3 327.4 408.2 C326.5 397 327.2 384 327.5 371.7 C329.2 382.8 329.1 395 329.4 407.8 C330 423.7 329 436 330 447.6 C330.4 460.1 332.4 472 333 481.9 Q332.6 483.1 331.4 482.1 Z" />
+    </g>
+  </g>
+</svg>
