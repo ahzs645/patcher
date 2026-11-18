@@ -1,7 +1,7 @@
 import './style.css';
 import { DEFAULT_PARAMS, type DigitizeParams, type DigitizeResult } from './types';
 import { loadSvg, rasterize, type LoadedSvg } from './svg';
-import { renderTextured, type Finish } from './render/textured';
+import { blockColor, renderTextured, type Finish } from './render/textured';
 import { renderPlan } from './render/plan';
 import { writeDst } from './export/dst';
 import { writeExp } from './export/exp';
@@ -15,8 +15,6 @@ import { LIBRARY, cardLabel, cardOf, collectionOrgs, findPatch, isCard, loadPatc
 const PAD_MM = DEFAULT_PAD_MM;
 /** state.source for a library patch: its id survives rebuilds, its hashed asset URL doesn't. */
 const LIBRARY_SOURCE = 'library:';
-/** The picker lists patches; badges are kept in the library but hidden for now (?patch=<id> still opens one). */
-const LIBRARY_COLLECTION = 'patches';
 /** CSS px per mm at zoom 1 — every pane shares this so they line up. */
 const BASE = 5;
 const STORE_KEY = 'patcher:v1';
@@ -67,8 +65,8 @@ const state = {
   /** null = fully sewn; otherwise the number of needle points shown. */
   simLimit: null as number | null,
   patchSvgUrl: '',
-  /** Organization shown in the patch library picker. */
-  libraryOrg: orgsBySector(LIBRARY_COLLECTION)[0]?.orgs[0]?.id ?? '',
+  libraryCollection: 'patches',
+  libraryOrg: '',
 };
 
 // ---------------------------------------------------------------- persistence (per-viewer convenience)
@@ -79,8 +77,16 @@ function loadPrefs() {
     if (!raw) return;
     const p = JSON.parse(raw);
     Object.assign(state.params, p.params ?? {});
-    for (const k of ['view', 'lightDeg', 'finish', 'backdrop', 'chart', 'snap', 'source', 'libraryOrg'] as const) {
+    for (const k of ['view', 'lightDeg', 'finish', 'backdrop', 'chart', 'snap', 'source', 'libraryCollection', 'libraryOrg'] as const) {
       if (p[k] !== undefined) (state as Record<string, unknown>)[k] = p[k];
+    }
+    // Older preferences recorded the open badge but had no badge picker to remember.
+    if (!p.libraryCollection && state.source.startsWith(LIBRARY_SOURCE)) {
+      const previous = findPatch(state.source.slice(LIBRARY_SOURCE.length));
+      if (previous && previous.collection !== 'patches') {
+        state.libraryCollection = previous.collection;
+        state.libraryOrg = previous.orgId;
+      }
     }
   } catch { /* storage unavailable — defaults are fine */ }
 }
@@ -89,8 +95,8 @@ function savePrefs() {
   clearTimeout(saveTimer);
   saveTimer = window.setTimeout(() => {
     try {
-      const { params, view, lightDeg, finish, backdrop, chart, snap, source, libraryOrg } = state;
-      localStorage.setItem(STORE_KEY, JSON.stringify({ params, view, lightDeg, finish, backdrop, chart, snap, source, libraryOrg }));
+      const { params, view, lightDeg, finish, backdrop, chart, snap, source, libraryCollection, libraryOrg } = state;
+      localStorage.setItem(STORE_KEY, JSON.stringify({ params, view, lightDeg, finish, backdrop, chart, snap, source, libraryCollection, libraryOrg }));
     } catch { /* ignore */ }
   }, 300);
 }
@@ -99,33 +105,49 @@ function savePrefs() {
 
 const digitizer = createDigitizer();
 let jobId = 0;
+let readyJob = -1;
+let selectionId = 0;
+let loadingArtwork = false;
+
+function exportsReady() {
+  return !!state.result && readyJob === jobId && !loadingArtwork;
+}
+
+function syncExportButtons() {
+  const disabled = !exportsReady();
+  document.querySelectorAll<HTMLButtonElement>('[data-export]').forEach((button) => { button.disabled = disabled; });
+}
 
 let digitizeTimer = 0;
 function scheduleDigitize(delay = 200) {
   clearTimeout(digitizeTimer);
-  digitizeTimer = window.setTimeout(runDigitize, delay);
+  const id = ++jobId;
+  syncExportButtons();
+  digitizeTimer = window.setTimeout(() => runDigitize(id), delay);
   savePrefs();
 }
 
-async function runDigitize() {
-  if (!state.svg) return;
-  const id = ++jobId;
+async function runDigitize(id: number) {
+  if (!state.svg || id !== jobId) return;
   setBusy('Digitizing…');
   showError(null);
   try {
     const raster = await rasterize(state.svg, state.params.widthMm, state.params.pxPerMm, PAD_MM);
     if (id !== jobId) return;
-    const result = await digitizer.digitizeRaster(raster, state.params);
+    const result = await digitizer.digitizeRaster(raster, { ...state.params, borderColor: null });
     if (id !== jobId) return;
     state.result = result;
     stopPlay();
     state.simLimit = null;
     setBusy('Rendering…');
     await nextFrame();
+    if (id !== jobId) return;
     renderAll();
     updatePalette();
     updateDetails();
     updateSim();
+    readyJob = id;
+    syncExportButtons();
   } catch (err) {
     // A job that was superseded while it ran has nothing to report.
     if (id !== jobId) return;
@@ -530,7 +552,7 @@ function syncSizeChips() {
 
 function updateSizeInfo() {
   const [w, h] = [state.params.widthMm, state.params.widthMm * (state.svg?.aspect ?? 1)];
-  $('sizeInfo').textContent = `Finished size ${w.toFixed(0)} × ${h.toFixed(0)} mm (${(w / 25.4).toFixed(2)} × ${(h / 25.4).toFixed(2)} in)`;
+  $('sizeInfo').textContent = `Artwork size ${w.toFixed(0)} × ${h.toFixed(0)} mm (${(w / 25.4).toFixed(2)} × ${(h / 25.4).toFixed(2)} in)`;
 }
 
 function updateDoc() {
@@ -538,7 +560,7 @@ function updateDoc() {
   const r = state.result;
   const [w, h] = [state.params.widthMm, state.params.widthMm * (state.svg?.aspect ?? 1)];
   $('docMeta').textContent = r
-    ? `${w.toFixed(0)} × ${h.toFixed(0)} mm · ${(r.stitchCount / 1000).toFixed(1)}k stitches · ${r.palette.length} colors`
+    ? `${w.toFixed(0)} × ${h.toFixed(0)} mm · ${(r.stitchCount / 1000).toFixed(1)}k stitches · ${r.palette.length} artwork ${r.palette.length === 1 ? 'color' : 'colors'}`
     : `${w.toFixed(0)} × ${h.toFixed(0)} mm`;
 }
 
@@ -611,19 +633,26 @@ function updatePalette() {
   if (!state.params.borderColor) $<HTMLInputElement>('borderColor').value = borderColor() ?? '#222222';
 }
 
+function machineDesign(result: DigitizeResult): DigitizeResult {
+  const options = { colors: colors(), borderColor: borderColor() };
+  return { ...result, blocks: result.blocks.map((block, i) => ({ ...block, color: blockColor(result, options, i) })) };
+}
+
 function updateDetails() {
   const r = state.result;
   const dl = $('details');
   const ol = $('sequence');
   if (!r) { dl.innerHTML = ''; ol.innerHTML = ''; return; }
-  const st = machineStats(machineStitches(r));
+  const design = machineDesign(r);
+  const st = machineStats(machineStitches(design));
+  const threadCount = new Set(design.blocks.map((block) => block.color)).size;
   const areaCm2 = (state.params.widthMm * state.params.widthMm * (state.svg?.aspect ?? 1)) / 100; // bounding box
   const minutes = st.stitches / 800 + st.colorChanges * 0.5; // bastidor sewtime.js
   const fmtTime = (m: number) => (m < 60 ? `${Math.max(1, Math.round(m))} min` : `${Math.floor(m / 60)} h ${String(Math.round(m % 60)).padStart(2, '0')} min`);
   const rows: [string, string, boolean?][] = [
-    ['Size', `${st.widthMm.toFixed(1)} × ${st.heightMm.toFixed(1)} mm`],
+    ['Stitched size', `${st.widthMm.toFixed(1)} × ${st.heightMm.toFixed(1)} mm`],
     ['Stitches', st.stitches.toLocaleString()],
-    ['Colors', `${r.palette.length}`],
+    ['Colors', `${threadCount}`],
     ['Color changes', `${st.colorChanges}`],
     ['Trims', `${st.trims}`],
     ['Longest stitch', `${st.longestMm.toFixed(1)} mm`, st.longestMm > 12.1],
@@ -644,8 +673,8 @@ function updateDetails() {
   let prev = '', count = 0;
   let countEl: HTMLElement | null = null;
   const flush = () => { if (countEl) countEl.textContent = `${count.toLocaleString()} st`; };
-  for (const b of r.blocks) {
-    const hex = b.kind === 'border' ? borderColor() ?? b.color : colors()[b.paletteIndex] ?? b.color;
+  for (const b of design.blocks) {
+    const hex = b.color;
     if (hex !== prev) {
       flush();
       prev = hex;
@@ -668,6 +697,7 @@ function updateDetails() {
 }
 
 function setBusy(text: string | null) {
+  if (loadingArtwork) text = 'Loading…';
   $('busy').classList.toggle('on', !!text);
   if (text) $('busyText').textContent = text;
 }
@@ -738,47 +768,62 @@ function setupBackdrops() {
 // ---------------------------------------------------------------- loading
 
 function openSvgText(text: string, name: string, source = '') {
+  const svg = loadSvg(text);
+  if (state.svg) URL.revokeObjectURL(state.svg.url);
+  state.svg = svg;
+  state.name = name.replace(/\.svg$/i, '').replace(/_+/g, ' ').slice(0, 60) || 'patch';
+  state.source = source;
+  if (!source.startsWith(LIBRARY_SOURCE)) $('libraryVariants').hidden = true;
+  state.result = null;
+  state.overrides = {};
+  state.simLimit = null;
+  stopPlay();
+  $<HTMLCanvasElement>('stitched').width = 0;
+  $<HTMLCanvasElement>('cmpCanvas').width = 0;
+  $<HTMLCanvasElement>('plan').width = 0;
+  $('palette').innerHTML = '';
+  updateDetails();
+  updateSim();
+  updateSizeInfo();
+  updateDoc();
+  updatePatchSvg();
+  layoutStages();
+  fit();
+  document.querySelectorAll<HTMLElement>('.sample').forEach((b) => b.classList.toggle('on', b.dataset.src === source));
+  scheduleDigitize(0);
+}
+
+type Artwork = { text: string; name: string; source?: string };
+
+async function loadArtwork(label: string, read: () => Promise<Artwork>, opened?: () => void) {
+  const selection = ++selectionId;
+  loadingArtwork = true;
+  syncExportButtons();
+  setBusy('Loading…');
+  showError(null);
   try {
-    const svg = loadSvg(text);
-    if (state.svg) URL.revokeObjectURL(state.svg.url);
-    state.svg = svg;
-    state.name = name.replace(/\.svg$/i, '').replace(/_+/g, ' ').slice(0, 60) || 'patch';
-    state.source = source;
-    if (!source.startsWith(LIBRARY_SOURCE)) $('libraryVariants').hidden = true;
-    state.result = null;
-    state.overrides = {};
-    state.simLimit = null;
-    stopPlay();
-    $<HTMLCanvasElement>('stitched').width = 0;
-    $<HTMLCanvasElement>('cmpCanvas').width = 0;
-    $<HTMLCanvasElement>('plan').width = 0;
-    $('palette').innerHTML = '';
-    updateDetails();
-    updateSim();
-    updateSizeInfo();
-    updateDoc();
-    updatePatchSvg();
-    layoutStages();
-    fit();
-    document.querySelectorAll<HTMLElement>('.sample').forEach((b) => b.classList.toggle('on', b.dataset.src === source));
-    scheduleDigitize(0);
+    const art = await read();
+    if (selection !== selectionId) return;
+    openSvgText(art.text, art.name, art.source);
+    opened?.();
   } catch (err) {
-    setBusy(null);
-    showError((err as Error).message);
+    if (selection === selectionId) showError(`Couldn't load that ${label}: ${(err as Error).message}`);
+  } finally {
+    if (selection === selectionId) {
+      loadingArtwork = false;
+      syncExportButtons();
+      setBusy(null);
+    }
   }
 }
 
-async function openUrl(url: string, name?: string, source = url) {
-  showError(null);
-  setBusy('Loading…');
-  try {
+function openUrl(input: string, name?: string) {
+  return loadArtwork('URL', async () => {
+    const url = await resolveUrl(input);
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Download failed (${res.status})`);
-    openSvgText(await res.text(), name ?? decodeURIComponent(url.split(/[?#]/)[0].split('/').pop() || 'patch.svg'), source);
-  } catch (err) {
-    setBusy(null);
-    showError(`Couldn't load that URL: ${(err as Error).message}`);
-  }
+    return { text: await res.text(), name: name ?? decodeURIComponent(url.split(/[?#]/)[0].split('/').pop() || 'patch.svg'), source: url };
+  });
 }
 
 /**
@@ -800,7 +845,7 @@ async function resolveUrl(u: string): Promise<string> {
 function setupLoading() {
   const drop = $('drop');
   const file = $<HTMLInputElement>('file');
-  const readFile = (f: File) => f.text().then((t) => openSvgText(t, f.name));
+  const readFile = (f: File) => loadArtwork('file', async () => ({ text: await f.text(), name: f.name }));
   file.onchange = () => { if (file.files?.[0]) readFile(file.files[0]); file.value = ''; };
   $('openBtn').onclick = () => file.click();
   drop.addEventListener('dragover', (e) => { e.preventDefault(); drop.classList.add('hover'); });
@@ -817,7 +862,7 @@ function setupLoading() {
   $('urlForm').addEventListener('submit', (e) => {
     e.preventDefault();
     const u = $<HTMLInputElement>('url').value.trim();
-    if (u) resolveUrl(u).then((r) => openUrl(r), (err) => showError(`Couldn't load that URL: ${err.message}`));
+    if (u) openUrl(u);
   });
 
   for (const s of SAMPLES) {
@@ -839,26 +884,25 @@ function setupLoading() {
 // ---------------------------------------------------------------- patch library
 
 /** Library patches are stored with their shared crests and outlines apart; loadPatchSvg joins them. */
-async function openPatch(p: ResolvedPatch) {
-  if (state.libraryOrg !== p.orgId && p.collection === LIBRARY_COLLECTION) showLibraryOrg(p.orgId);
-  showError(null);
-  setBusy('Loading…');
-  try {
-    openSvgText(await loadPatchSvg(p), p.variant ? `${cardLabel(p)} — ${p.variant}` : p.label, LIBRARY_SOURCE + p.id);
-    showLibraryVariants(p);
-  } catch (err) {
-    setBusy(null);
-    showError(`Couldn't load that patch: ${(err as Error).message}`);
+async function openPatch(p: ResolvedPatch, reveal = true) {
+  if (reveal) {
+    if (p.collection !== state.libraryCollection) showLibraryCollection(p.collection, p.orgId);
+    else if (p.orgId !== state.libraryOrg) showLibraryOrg(p.orgId);
   }
+  await loadArtwork('patch', async () => ({
+    text: await loadPatchSvg(p),
+    name: p.variant ? `${cardLabel(p)} — ${p.variant}` : p.label,
+    source: LIBRARY_SOURCE + p.id,
+  }), () => showLibraryVariants(p));
 }
 
 function showLibraryOrg(orgId: string) {
-  const orgs = collectionOrgs(LIBRARY_COLLECTION);
-  const org = orgs.find((o) => o.id === orgId) ?? orgsBySector(LIBRARY_COLLECTION)[0]?.orgs[0];
+  const orgs = collectionOrgs(state.libraryCollection);
+  const org = orgs.find((o) => o.id === orgId) ?? orgs[0];
   if (!org) return;
   state.libraryOrg = org.id;
   $<HTMLSelectElement>('libraryOrg').value = org.id;
-  $('libraryNote').textContent = org.description ?? '';
+  $('libraryNote').textContent = state.libraryCollection === 'patches' ? org.description ?? '' : '';
   const grid = $('librarySamples');
   // One tile per card: a variant group shows its first member, and the variant row switches.
   const current = state.source.startsWith(LIBRARY_SOURCE) ? findPatch(state.source.slice(LIBRARY_SOURCE.length)) : undefined;
@@ -866,7 +910,7 @@ function showLibraryOrg(orgId: string) {
     const b = document.createElement('button');
     b.className = 'sample';
     const variants = variantsOf(p);
-    b.title = `${cardLabel(p)} (${p.medium}${variants ? `, ${variants.members.length} variants` : ''})`;
+    b.title = `${cardLabel(p)} (${[p.medium, p.finish].filter(Boolean).join(' · ')}${variants ? `, ${variants.members.length} variants` : ''})`;
     b.dataset.src = LIBRARY_SOURCE + p.id;
     b.classList.toggle('on', !!current && cardOf(current).id === p.id);
     const img = document.createElement('img');
@@ -877,13 +921,14 @@ function showLibraryOrg(orgId: string) {
     b.onclick = () => openPatch(p);
     return b;
   }));
+  if (current) showLibraryVariants(current);
   savePrefs();
 }
 
 /** The open patch's variants, as chips under the library grid; hidden when it has none. */
 function showLibraryVariants(p: ResolvedPatch) {
   const row = $('libraryVariants');
-  const variants = variantsOf(p);
+  const variants = state.libraryCollection === p.collection && state.libraryOrg === p.orgId ? variantsOf(p) : null;
   row.hidden = !variants;
   if (!variants) return row.replaceChildren();
   row.replaceChildren(...variants.members.map((m) => {
@@ -896,18 +941,42 @@ function showLibraryVariants(p: ResolvedPatch) {
   document.querySelectorAll<HTMLElement>('#librarySamples .sample').forEach((t) => t.classList.toggle('on', t.dataset.src === LIBRARY_SOURCE + cardOf(p).id));
 }
 
-function setupLibrary() {
+function showLibraryCollection(id: string, orgId: string) {
+  const selector = $<HTMLSelectElement>('libraryCollection');
+  selector.value = id;
+  if (selector.selectedIndex === -1) selector.selectedIndex = 0;
+  state.libraryCollection = selector.value;
   const select = $<HTMLSelectElement>('libraryOrg');
-  for (const { sector, orgs } of orgsBySector(LIBRARY_COLLECTION)) {
+  const sections = orgsBySector(state.libraryCollection);
+  let cards = 0;
+  let designs = 0;
+  select.replaceChildren();
+  for (const { sector, orgs } of sections) {
     const group = document.createElement('optgroup');
     group.label = sector.name;
-    for (const org of orgs) group.append(new Option(`${org.name} (${org.patches.filter(isCard).length})`, org.id));
+    for (const org of orgs) {
+      const count = org.patches.filter(isCard).length;
+      cards += count;
+      designs += org.patches.length;
+      group.append(new Option(`${org.name} (${count})`, org.id));
+    }
     select.append(group);
   }
-  select.onchange = () => showLibraryOrg(select.value);
-  const cards = collectionOrgs(LIBRARY_COLLECTION).reduce((n, o) => n + o.patches.filter(isCard).length, 0);
-  $('libraryCount').textContent = `${cards} patches from the ${LIBRARY.source.name}, by organization`;
-  showLibraryOrg(state.libraryOrg);
+  $('libraryCount').textContent = cards === designs
+    ? `${cards} ${selector.selectedOptions[0].text.toLowerCase()}`
+    : `${cards} cards · ${designs} designs and variants`;
+  showLibraryOrg(orgId);
+}
+
+function setupLibrary() {
+  const selector = $<HTMLSelectElement>('libraryCollection');
+  for (const collection of LIBRARY.collections.filter((c) => !c.hidden)) {
+    selector.append(new Option(collection.name, collection.id));
+  }
+  selector.onchange = () => showLibraryCollection(selector.value, state.libraryOrg);
+  const org = $<HTMLSelectElement>('libraryOrg');
+  org.onchange = () => showLibraryOrg(org.value);
+  showLibraryCollection(state.libraryCollection, state.libraryOrg);
 }
 
 // ---------------------------------------------------------------- export
@@ -924,22 +993,23 @@ const fileBase = () => state.name.replace(/[^\w-]+/g, '_').slice(0, 40) || 'patc
 
 function doExport(kind: string) {
   const r = state.result;
+  if (!r || !exportsReady()) return;
   if (kind === 'svg') {
     if (!state.svg) return;
     download(new Blob([buildPatchSvg(state.svg, state.params, r, borderColor(), PAD_MM)], { type: 'image/svg+xml' }), `${fileBase()}-patch.svg`);
     return;
   }
-  if (!r) return;
   if (kind === 'png') {
     const c = renderTextured(r, {
       scale: Math.min(24, 6000 / Math.max(r.widthMm, r.heightMm)),
       lightDeg: state.lightDeg, colors: colors(), borderColor: borderColor(), dropShadow: true, finish: state.finish,
     });
-    c.toBlob((b) => b && download(b, `${fileBase()}-embroidered.png`), 'image/png');
+    const filename = `${fileBase()}-embroidered.png`;
+    c.toBlob((b) => b && download(b, filename), 'image/png');
   } else if (kind === 'dst') {
-    download(new Blob([writeDst(r, fileBase())], { type: 'application/octet-stream' }), `${fileBase()}.dst`);
+    download(new Blob([writeDst(machineDesign(r), fileBase())], { type: 'application/octet-stream' }), `${fileBase()}.dst`);
   } else if (kind === 'exp') {
-    download(new Blob([writeExp(r)], { type: 'application/octet-stream' }), `${fileBase()}.exp`);
+    download(new Blob([writeExp(machineDesign(r))], { type: 'application/octet-stream' }), `${fileBase()}.exp`);
   }
 }
 
@@ -1027,7 +1097,7 @@ function init() {
   const linked = findPatch(new URLSearchParams(location.search).get('patch') ?? '');
   if (linked) { openPatch(linked); return; }
   const remembered = state.source.startsWith(LIBRARY_SOURCE) ? findPatch(state.source.slice(LIBRARY_SOURCE.length)) : undefined;
-  if (remembered) { openPatch(remembered); return; }
+  if (remembered) { openPatch(remembered, false); return; }
   const sampleSrcs = SAMPLES.map((s) => `${import.meta.env.BASE_URL}samples/${s.file}`);
   // Reopen the last remote/sample source; local files can't be reopened.
   const src = state.source && /^(https?:|\/)/.test(state.source) ? state.source : sampleSrcs[0];

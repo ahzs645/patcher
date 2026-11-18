@@ -22,7 +22,7 @@ import { createTextCache } from './library-cache.js';
 
 export interface LibrarySector { id: string; name: string }
 
-/** Patches, and badges (hidden for now). A design is in one collection; an organization can have both. */
+/** Patches and badges. A design is in one collection; an organization can have both. */
 export interface LibraryCollection { id: string; name: string; description: string | null; hidden: boolean }
 
 export interface LibraryPatch {
@@ -30,6 +30,7 @@ export interface LibraryPatch {
   label: string;
   collection: string;
   medium: string;
+  finish?: string;
   quality: string;
   family: string;
   /** The atlas's own coarse affiliation, kept for reference. */
@@ -51,6 +52,7 @@ export interface LibraryPatch {
   merged: string[];
   /** Set when a supplied drawing (library/supplied/) replaces the atlas's: its file, and the atlas drawing's SHA-256. */
   replaced?: { svg: string; atlasSha256: string };
+  outline?: { profile: string; atlasSha256: string };
   /**
    * Set on a supplied design that isn't an atlas entry (orgs.json "consolidate", ids like FO-forests):
    * its file in library/supplied/, and the atlas entries it takes the place of (none for a new colourway).

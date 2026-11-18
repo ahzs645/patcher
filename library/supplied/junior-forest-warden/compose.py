@@ -103,24 +103,24 @@ CAPTIONS = [
 
 svg = el('svg', {'viewBox':'0 0 539 607','role':'img','aria-labelledby':'title desc'})
 el('title', {'id':'title'}, svg, 'Junior Forest Warden / Canadian Forestry Ass’n. — photo-registered vector study')
-el('desc', {'id':'desc'}, svg, 'Editable paths traced and reconstructed against the supplied photograph. The shield, inset rim, individual lettering and maple leaf retain photographed asymmetry and perspective. Broad relief edges are simplified; grain, cast shadows and JPEG noise are omitted. This is not authenticated issue artwork or a rectified manufacturing die. Existing catalogue attribution: leather badge; material is not authenticated from this photograph.')
+el('desc', {'id':'desc'}, svg, 'Editable paths traced and reconstructed against the supplied photograph. The shield, inset rim, individual lettering and maple leaf retain photographed asymmetry and perspective. Broad relief edges are simplified; grain, cast shadows and JPEG noise are omitted. This is not authenticated issue artwork or a rectified manufacturing die. Metal badge with a worn copper tone. Alloy and plating are unverified.')
 metadata = {
  'occurrenceId':'S01-O01','sourceId':'S01','sourceUrl':SOURCE_URL,'sourceSha256':SOURCE_SHA,
  'sourceDimensions':[720,960],'bbox':[65,125,604,732],
  'registration':{'type':'photo crop translation only','translate':[-65,-125], 'perspectiveCorrection':False},
  'method':'Manually observed cubic silhouette and rim, individually drawn ridge-centreline lettering with explicit relief/face widths, and five-lobe leaf with corrected lobe recesses and connected tapered veins; no fonts, image-derived texture paths, or embedded raster',
  'quality':'Photo-registered vector reconstruction; fine relief remains interpreted',
- 'materialAttribution':'Leather badge (inherited catalogue attribution; not verified from the photograph)',
+ 'materialAttribution':'Metal badge, worn copper tone; alloy and plating unverified',
  'captionRuns':[{'id':k,'text':t,'glyphCount':len(g)} for k,t,g in CAPTIONS],
  'limits':['Perspective and curvature retained from one photograph; not a frontal die master.', 'Fine glyph boundaries and veins are softened by the photograph and interpreted.', 'Flat warm colours are display choices, not a calibrated material measurement.'],
 }
 el('metadata', parent=svg, text=json.dumps(metadata,ensure_ascii=False,separators=(',',':')))
 art = el('g',{'id':'photo-registered-artwork','transform':'translate(-65 -125)','stroke-linejoin':'round','stroke-linecap':'round'},svg)
 base = el('g',{'id':'silhouette'},art)
-el('path',{'id':'outer-silhouette','d':SILHOUETTE,'fill':'#b98048','stroke':'#80522e','stroke-width':'2'},base)
+el('path',{'id':'outer-silhouette','d':SILHOUETTE,'fill':'#9e663f','stroke':'#80522e','stroke-width':'2'},base)
 rim = el('g',{'id':'rim'},art)
-el('path',{'id':'outer-rim','d':RIM_OUTER,'fill':'#dfaa70','stroke':'#edbb82','stroke-width':'2.5'},rim)
-el('path',{'id':'inner-rim','d':RIM_INNER,'fill':'#d39a5e','stroke':'#a96f3f','stroke-width':'2'},rim)
+el('path',{'id':'outer-rim','d':RIM_OUTER,'fill':'#cd9268','stroke':'#e3b389','stroke-width':'2.5'},rim)
+el('path',{'id':'inner-rim','d':RIM_INNER,'fill':'#bb845d','stroke':'#a96f3f','stroke-width':'2'},rim)
 for group_id, caption, glyphs in CAPTIONS:
     group=el('g',{'id':group_id,'data-caption':caption},art)
     for i,(char,path,edge,face) in enumerate(glyphs):

@@ -16,12 +16,12 @@ live lettering editor (Forest Service, Forests, Forests · Wildfire Service, Lon
 Airtanker Operations), exported at their defaults with the lettering converted to outlines so they render
 without the fonts installed. They are reference-based reconstructions, not official masters.
 
-The **Patch library** holds 156 patches from the BC Forestry Patch Atlas, grouped by organization:
-BC Forest Service, BC Parks, Conservation Officer Service, BC Sheriff Service, BC Corrections, Highways and
-Motor Vehicles, BC Hydro and more. Choose an organization, then a patch. Related designs are one card with a
-variant switch: the Forest Service and Wildfire Service ovals are PofBC's Forest Oval artwork in all its
-colourways, in place of the atlas's separate reconstructions of them. It also keeps 14 metal and leather
-badges, hidden from the picker for now. The atlas's logos, signs, decals and printed emblems are left out.
+The **Patch and badge library** groups designs from the BC Forestry Patch Atlas by organization.
+Choose a collection, then an organization such as BC Forest Service, BC Parks or BC Sheriff Service.
+The patch collection has 126 cards covering 154 designs and variants. Related designs share a card.
+For example, the Forest Service and Wildfire Service ovals use PofBC's Forest Oval artwork with a
+switch for their colourways. The badge collection has 14 cards covering 14 metal badges, including the copper-toned
+Junior Forest Warden shield. Opening a badge in Patcher previews it as embroidery.
 `?patch=<id>` opens one directly (e.g. `?patch=S25-O01`), and an atlas id that was merged or replaced opens
 the patch that took its place. [`library/README.md`](library/README.md) says where the patches come
 from, how they are grouped, how repeated crests and outlines are stored once (29 MB of drawings in

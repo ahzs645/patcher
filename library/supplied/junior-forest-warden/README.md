@@ -27,7 +27,7 @@ The clean SVG has named groups for `silhouette`, `rim`, `junior`, `forest-warden
 
 The photograph has bevel lighting, shadows, wear and compression. Some fine letter widths, small serifs/scallops and vein details remain interpreted. The tracing convention follows ridge centrelines with simplified visible relief boundaries; it does not copy every shadow as a separate decorative feature. The photographed perspective and possible curvature are retained. A flat scan or calibrated straight-on photograph would be needed to establish a frontal geometry more confidently.
 
-The existing catalogue calls the object a **leather badge**. This package preserves that attribution but does not independently authenticate the material, date, maker, physical dimensions or original die from this single photograph.
+The catalogue records a metal badge with a worn copper tone. The single photograph cannot establish the alloy, plating, dimensions or original die.
 
 ## Rebuild and verify
 
@@ -39,14 +39,14 @@ python library/supplied/junior-forest-warden/compose.py
 
 `compose.py` checks the original photo checksum and combines the explicitly recorded shield/letter paths with `maple-leaf-component.svg`. It deterministically writes `composed/S01-O01.svg`; neither file is produced by automatic raster tracing.
 
-Regenerate the small WebP preview from that SVG with an SVG renderer at 400 pixels wide, keeping transparency and the original aspect ratio. The committed preview was rendered with Sharp, WebP quality 92 and alpha quality 100. Then import through the normal library pipeline:
+Regenerate the small WebP preview from that SVG with an SVG renderer at 320 pixels wide, keeping transparency and the original aspect ratio. The committed preview was rendered with Inkscape and encoded at WebP quality 92. Then import through the normal library pipeline:
 
 ```bash
 npm run library:import -- --zip /path/to/bc-forestry-patch-atlas-codebase-02f524d650e2.zip
 node scripts/verify-library.mjs --zip /path/to/bc-forestry-patch-atlas-codebase-02f524d650e2.zip
 ```
 
-`library/orgs.json` records the supplied replacement and the corrected punctuation in its label. The importer retains the original atlas SVG checksum under the generated record's `replaced` field. Do not edit the generated organization SVG, preview or manifest by hand.
+`library/orgs.json` records the supplied replacement. The importer retains the original atlas SVG checksum under the generated record's `replaced` field. Do not edit the generated organization SVG, preview or manifest by hand.
 
 ## Review
 

@@ -18,10 +18,12 @@ export function buildPatchSvg(
   const W = artW + padMm * 2, H = artH + padMm * 2;
 
   // Nest the original document as an inner <svg> positioned on the patch.
-  const inner = svg.text
-    .replace(/^<\?xml[^>]*>\s*/, '')
-    .replace(/<svg\b([^>]*)>/, (_m, attrs: string) =>
-      `<svg${attrs.replace(/\s(width|height|x|y)="[^"]*"/g, '')} x="${f(padMm)}" y="${f(padMm)}" width="${f(artW)}" height="${f(artH)}">`);
+  const root = new DOMParser().parseFromString(svg.text, 'image/svg+xml').documentElement;
+  root.setAttribute('x', f(padMm));
+  root.setAttribute('y', f(padMm));
+  root.setAttribute('width', f(artW));
+  root.setAttribute('height', f(artH));
+  const inner = new XMLSerializer().serializeToString(root);
 
   let edge = '';
   if (result && borderColor && params.border !== 'none') {

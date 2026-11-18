@@ -1,0 +1,112 @@
+[
+  {
+    "name": "framed-ministry-crest",
+    "ids": [
+      "S25-O03",
+      "S25-O05",
+      "S25-O06",
+      "S49-O02"
+    ],
+    "changes": [
+      {
+        "original": "transform=\"translate(32 23) scale(0.0724069269293429)\"",
+        "revised": "transform=\"translate(30.2 17.6) scale(0.07965)\""
+      }
+    ],
+    "note": "The framed crest is raised and enlarged to fit the space between the top caption and footer in the Parks and Forest Service photographs."
+  },
+  {
+    "name": "single-line-rocker",
+    "ids": [
+      "S25-O02",
+      "S49-O01",
+      "S56-O55"
+    ],
+    "changes": [
+      {
+        "original": "d=\"M3 10 Q50 -4 97 10 L93 25 Q50 9 7 25 Z\"",
+        "revised": "d=\"M4 9 Q50 -7 96 9 Q98 10 97 13 L94 24 Q93.5 27 90.5 26 Q50 11 9.5 26 Q6.5 27 6 24 L3 13 Q2 10 4 9 Z\""
+      }
+    ],
+    "note": "The arched cloth band has rounded end transitions and a deeper outer curve in the photographs."
+  },
+  {
+    "name": "parks-recreation-rocker",
+    "ids": [
+      "S25-O04",
+      "S56-O54"
+    ],
+    "changes": [
+      {
+        "original": "d=\"M3 11 Q50 -5 97 11 L94 35 Q50 20 6 35 Z\"",
+        "revised": "d=\"M5 10 Q50 -7 95 10 Q98 11 97 14 L94 33 Q93.5 37 90 36 Q50 22 10 36 Q6.5 37 6 33 L3 14 Q2 11 5 10 Z\""
+      }
+    ],
+    "note": "Rounded ends and the fuller lower edge follow the two-line Parks rocker."
+  },
+  {
+    "name": "ubc-patrol-arch",
+    "ids": [
+      "S56-O58"
+    ],
+    "changes": [
+      {
+        "original": "d=\"M3 53 Q25 12 52 6 Q79 11 96 55 L76 89 L24 89 Z\"",
+        "revised": "d=\"M4 57 Q8 34 26 18 Q38 7 51 6 Q75 8 91 36 Q98 49 96 63 Q92 77 82 86 Q77 90 68 90 H30 Q16 90 8 76 Q3 68 4 57 Z\""
+      }
+    ],
+    "note": "The compact UBC Patrol arch has curved sides and an almost level lower edge. The collector-board view leaves the individual stitches unresolved."
+  },
+  {
+    "name": "central-arms-s56-o12",
+    "ids": [
+      "S56-O12"
+    ],
+    "changes": [
+      {
+        "original": "transform=\"translate(20.7312458261 29.0000000000) scale(0.186023653173) translate(-0.0 -0.0)\"",
+        "revised": "transform=\"translate(18.7544 27.8000) scale(0.2046260185) translate(-0.0 -0.0)\""
+      }
+    ],
+    "note": "The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction."
+  },
+  {
+    "name": "central-arms-s56-o45",
+    "ids": [
+      "S56-O45"
+    ],
+    "changes": [
+      {
+        "original": "transform=\"translate(23.9343723168 23.0000000000) scale(0.119586634183) translate(-0.0 -0.0)\"",
+        "revised": "transform=\"translate(22.6778 21.0000) scale(0.1315452976) translate(-0.0 -0.0)\""
+      }
+    ],
+    "note": "The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction."
+  },
+  {
+    "name": "central-arms-s56-o25",
+    "ids": [
+      "S56-O25"
+    ],
+    "changes": [
+      {
+        "original": "transform=\"translate(17.8906205280 23.0000000000) scale(0.199311056971) translate(-0.0 -0.0)\"",
+        "revised": "transform=\"translate(15.4775 21.9000) scale(0.2232283838) translate(-0.0 -0.0)\""
+      }
+    ],
+    "note": "The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction."
+  },
+  {
+    "name": "central-arms-s56-o01",
+    "ids": [
+      "S56-O01"
+    ],
+    "changes": [
+      {
+        "original": "transform=\"translate(15.6031201304 10.0000000000) scale(0.217027595369) translate(-0.0 -0.0)\"",
+        "revised": "transform=\"translate(14.0703 9.0000) scale(0.2322195270) translate(-0.0 -0.0)\""
+      }
+    ],
+    "note": "The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction."
+  }
+]

@@ -64,3 +64,5 @@ The preview is a transparent 440-pixel-wide WebP rendered from that composed SVG
 After changing the composition, regenerate the preview before importing.
 `library/orgs.json` applies both the replacement and the corrected label/family,
 so a later atlas import retains this fix.
+
+The neighbouring Security specimen (S56-O24) keeps its own heading, field and borders and uses the same collected Expo 86 lockup. After composing S56-O23, run `python library/supplied/expo-emergency-service/compose-security.py /path/to/atlas.zip` to rebuild it.

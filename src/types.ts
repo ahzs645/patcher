@@ -9,7 +9,7 @@ export type Relief = 'flat' | 'raised';
 export type Ground = 'stitched' | 'cloth';
 
 export interface DigitizeParams {
-  /** Finished patch width in mm (height follows the SVG aspect ratio). */
+  /** Artwork viewport width in mm (height follows the SVG aspect ratio). */
   widthMm: number;
   /** Raster resolution used for colour/region analysis. */
   pxPerMm: number;

@@ -93,9 +93,8 @@ content, run `node scripts/audit-library.mjs`. It uses local files only and leav
 
 `orgs.json` has two more lists before the organizations:
 
-- `collections`: **patches**, and **badges** (metal and leather, by medium). Badges are marked
-  `"hidden": true`, so the apps leave them out of their menus for now. They are still in the library,
-  and `?patch=<id>` still opens one.
+- `collections`: **patches**, and **badges** (classified by medium). Both appear in the collection picker.
+  A direct link such as `?patch=S02-O01` opens the design and selects its collection and organization.
 - `exclude`: atlas designs to leave out, by id, with a reason. An organization can also carry
   `"exclude": "<reason>"`, which leaves out everything filed under it (Province of British Columbia,
   BC Timber Sales, BC Transit, ICBC, …).
@@ -123,7 +122,7 @@ preview, quality line and limitations:
 
 | Design | Drawing |
 |---|---|
-| S01-O01 Junior Forest Warden / Canadian Forestry Ass’n. | `supplied/junior-forest-warden/`: manually fitted shield, inset rim, individually drawn lettering and veined maple leaf registered to the original source photograph (`compose.py`); retains photographic perspective and is not a rectified die master |
+| S01-O01 Junior Forest Warden | `supplied/junior-forest-warden/` corrects the material to metal and models the warm copper finish from source photograph S01. The alloy is unverified. |
 | S56-O23 Emergency Service / Expo 86 shield | `supplied/expo-emergency-service/`: corrected EMERGENCY and provisional SERVICE captions, a constructed shield, and the full stacked Expo logo already collected by PofBC (`compose.mjs`) |
 | S25-O01 Parks Branch elk roundel | `supplied/bc-parks-branch-elk-roundel/`: a supplied vector package, used whole |
 | S31-O01 Recreation and Conservation / Parks | `supplied/bc-parks-recreation-conservation/`: a supplied vector package, used whole |
@@ -165,6 +164,10 @@ records the supplied file and the atlas drawing's SHA-256 (`replaced`), and the 
 stored patch joins back to the supplied file. It also checks that the atlas drawing hasn't changed
 since it was replaced. Merged repeat photographs of a replaced design still group by the atlas's
 drawing.
+
+## Shared badge outlines
+
+Four plain numbered Park Ranger badges use one shield outline. The two enamel Ranger badges use a second outline with a lower tab. Three Parks cap badges share the outer scroll and keep their individual crests. The paths, specimen IDs and interpretation notes are in `supplied/badge-outlines/profiles.json`. Each profile matches a specific atlas path and its number of occurrences, so the field and rim follow the same contour. The importer records the profile and original SVG checksum. Source verification reapplies the profile before comparing the complete joined drawing.
 
 ## Designs supplied with their variants
 

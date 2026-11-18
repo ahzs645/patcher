@@ -116,16 +116,23 @@
           <div class="samples" id="samples"></div>
           <h3>BC Forest Service</h3>
           <div class="samples" id="bcSamples"></div>
-          <h3>Patch library</h3>
+          <h3>Patch and badge library</h3>
+          <div class="library-filter">
+            <label for="libraryCollection">Collection</label>
+            <select id="libraryCollection"></select>
+          </div>
           <p class="muted small" id="libraryCount"></p>
-          <select id="libraryOrg" class="library-org" aria-label="Organization"></select>
+          <div class="library-filter">
+            <label for="libraryOrg">Organization</label>
+            <select id="libraryOrg"></select>
+          </div>
           <p class="muted small" id="libraryNote"></p>
           <div class="samples library" id="librarySamples"></div>
           <div class="chips" id="libraryVariants" aria-label="Variant" hidden></div>
 
           <h3>Size</h3>
           <div class="field">
-            <label for="widthMm">Patch width <output id="widthMmOut"></output></label>
+            <label for="widthMm">Artwork width <output id="widthMmOut"></output></label>
             <input type="range" id="widthMm" min="40" max="200" step="1" />
           </div>
           <div class="chips" id="sizePresets">

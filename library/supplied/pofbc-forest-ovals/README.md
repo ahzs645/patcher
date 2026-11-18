@@ -18,6 +18,7 @@ To rebuild, from the Patcher root:
 # capture.mjs: in a PofBC checkout, run `npx vite --port 5190`, then
 node library/supplied/pofbc-forest-ovals/capture.mjs http://localhost:5190 ../PofBC
 node library/supplied/pofbc-forest-ovals/drawings.mjs ../PofBC
+python library/supplied/pofbc-forest-ovals/fit-specimen-scenes.py
 npm run library:import
 ```
 
@@ -31,3 +32,5 @@ Each `.webp` is its SVG rendered in Chromium, cropped to the drawing, and scaled
 
 These are reference-based reconstructions, not authenticated issue artwork. Colourways with no atlas entry
 are generated recolours; `orgs.json` says which.
+
+The light-band, Fire Control and Wildfire Management colour specimens use the historic conifer and foothills from the atlas study `dist/assets/editable/F01-tree-light.svg`. The dark poster oval has its own conifer and horizon drawn from S04. The specimen scene step preserves the surrounding lettering and tabs.
