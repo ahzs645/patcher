@@ -3766,7 +3766,7 @@
      "id": "MC03-O01",
      "label": "B.C. Game Department / Predator Branch — wolf's head triangle",
      "collection": "patches",
-     "medium": "Cloth patch",
+     "medium": "Printed depiction",
      "quality": "Supplied vector reconstruction",
      "family": "moosecop-predator-triangle-study-v1",
      "affiliation": "Fish and Game / Conservation history",
@@ -3782,7 +3782,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Manual vector reconstruction of a supplied image (B.C. Predator Branch vector package): a symmetric border of six Bézier arcs, a hand-drawn wolf's head, and fourteen custom glyphs placed one by one for B.C. GAME DEPARTMENT and PREDATOR BRANCH. Not an official master; the shading is flattened to cream and near-black, and the lettering and border are close to the reference, not measured from an original (95% foreground overlap with it). The 1951 date is the publishing page's description, not verified. See the package README. The atlas left the captions out, unread from a 157 × 173 photograph; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head.",
+     "limitations": "Manual vector reconstruction of a supplied image (B.C. Predator Branch vector package): a symmetric border of six Bézier arcs, a hand-drawn wolf's head, and fourteen custom glyphs placed one by one for B.C. GAME DEPARTMENT and PREDATOR BRANCH. Not an official master; the shading is flattened to cream and near-black, and the lettering and border are close to the reference, not measured from an original (95% foreground overlap with it). The source documents a printed depiction. The 1951 date is the publishing page's description, not verified. See the package README. The reference is a 157 × 173 historical catalogue illustration. The physical material is undocumented; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head.",
      "replaced": {
       "svg": "supplied/bc-predator-branch/vectors/bc-predator-branch-rebuilt.svg",
       "atlasSha256": "b0beddedcbba63d40101de1801b532c53a128f5535276b9ab9ab253e14491aef"
