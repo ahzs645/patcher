@@ -22,7 +22,7 @@ import { dirname, join } from 'node:path';
 import { strFromU8 } from 'fflate';
 import { hasReferences, wrapBlock } from '../src/library-join.js';
 import { LIBRARY, drawingKey, driveId, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
-import { applyBadgeOutline, badgeOutlines } from './badge-outlines.mjs';
+import { applyAtlasProfile, atlasProfiles } from './atlas-profiles.mjs';
 import { shareParts } from './share-parts.mjs';
 import { verifyLibrary } from './verify-library.mjs';
 
@@ -139,7 +139,8 @@ async function main() {
   // the atlas has an entry per photograph a design was seen in, fitted to that photograph.
   const kept = [];
   for (const d of all) {
-    const org = classify(d) ?? { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' };
+    const relabel = relabels.get(d.id);
+    const org = classify({ ...d, label: relabel?.label ?? d.label, family: relabel?.family ?? d.family }) ?? { id: 'unsorted', name: 'Unsorted', sector: 'unconfirmed' };
     if (absorbedBy.has(d.id)) {
       absorbedDesigns.set(d.id, d);
       absorbed.push({ id: d.id, label: d.label, medium: d.medium, org: org.id, into: absorbedBy.get(d.id).id });
@@ -184,7 +185,7 @@ async function main() {
     let { d, org, svg, text } = primary;
     // A better drawing supplied for any entry of the group replaces the group's; the atlas's hash stays on record.
     const replacement = group.map(({ d: g }) => replacements.get(g.id)).find(Boolean);
-    const outline = badgeOutlines.get(d.id);
+    const outline = atlasProfiles.get(d.id);
     if (outline && replacement) throw new Error(`Choose one source of revised artwork for ${d.id}`);
     let previewFile = null;
     let atlasSha256 = null;
@@ -196,9 +197,9 @@ async function main() {
       text = supplied;
     } else if (outline) {
       atlasSha256 = sha(svg);
-      text = applyBadgeOutline(text, outline);
+      text = applyAtlasProfile(text, outline);
       svg = Buffer.from(text);
-      previewFile = readFileSync(join(LIBRARY, 'supplied/badge-outlines', d.id + '.webp'));
+      previewFile = readFileSync(join(LIBRARY, 'supplied', outline.folder, d.id + '.webp'));
     }
     const others = group.filter((entry) => entry !== primary);
     for (const { d: other } of others) merged.push({ id: other.id, label: other.label, into: d.id });
@@ -221,7 +222,7 @@ async function main() {
       medium: mediumOf(d),
       ...(replacement?.finish ? { finish: replacement.finish } : {}),
       quality: replacement?.quality ?? d.quality,
-      family: d.family,
+      family: relabels.get(d.id)?.family ?? d.family,
       affiliation: d.affiliation,
       svg: `${org.id}/${d.id}.svg`,
       preview: previewPath,

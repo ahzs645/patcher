@@ -1,0 +1,20 @@
+{
+  "patcherCommit": "1e41f5e01a517d2232197ff57ba5b4f1c9d0636e",
+  "patches": [
+    {
+      "id": "MC27-O01",
+      "sha256": "3cb9b71731b9adfbfbaa5d18660beadae8ebe44fb4e5311f0b9746a18ab907ad",
+      "bytes": 42572
+    },
+    {
+      "id": "MC28-O01",
+      "sha256": "5e66d7bc704a667970c3c08fe5dfdea6485f8edcb4c42eb93c7f452e67e73453",
+      "bytes": 45191
+    },
+    {
+      "id": "MC29-O01",
+      "sha256": "e5599c52275da9c901f68795d95a31b2bc33520d892790430cbd89cbd35b3d74",
+      "bytes": 42480
+    }
+  ]
+}

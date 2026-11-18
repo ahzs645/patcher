@@ -17,10 +17,10 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28933762,
-  "storedBytes": 8364543,
-  "sharedBlocks": 60,
-  "sharedPaths": 294
+  "sourceBytes": 28993421,
+  "storedBytes": 8474450,
+  "sharedBlocks": 56,
+  "sharedPaths": 331
  },
  "collections": [
   {
@@ -112,7 +112,7 @@
     "id": "block-2bc66a6555",
     "file": "shared/block-2bc66a6555.svg",
     "bytes": 19174,
-    "usedBy": 3
+    "usedBy": 2
    },
    {
     "id": "block-3516b005e5",
@@ -121,40 +121,22 @@
     "usedBy": 5
    },
    {
-    "id": "block-462b265f2f",
-    "file": "shared/block-462b265f2f.svg",
-    "bytes": 4006,
-    "usedBy": 2
-   },
-   {
-    "id": "block-4ad55ab5e0",
-    "file": "shared/block-4ad55ab5e0.svg",
-    "bytes": 6450,
-    "usedBy": 2
-   },
-   {
-    "id": "block-59e90f2d58",
-    "file": "shared/block-59e90f2d58.svg",
-    "bytes": 4751,
+    "id": "block-45ef6e366a",
+    "file": "shared/block-45ef6e366a.svg",
+    "bytes": 3648,
     "usedBy": 2
    },
    {
     "id": "block-66a9b75e94",
     "file": "shared/block-66a9b75e94.svg",
     "bytes": 3633,
-    "usedBy": 10
+    "usedBy": 8
    },
    {
     "id": "block-7088196603",
     "file": "shared/block-7088196603.svg",
     "bytes": 3841,
     "usedBy": 2
-   },
-   {
-    "id": "block-7b6375ed8b",
-    "file": "shared/block-7b6375ed8b.svg",
-    "bytes": 1746,
-    "usedBy": 3
    },
    {
     "id": "block-7bc2c318b5",
@@ -166,12 +148,12 @@
     "id": "block-7d4447618d",
     "file": "shared/block-7d4447618d.svg",
     "bytes": 3921,
-    "usedBy": 3
+    "usedBy": 2
    },
    {
-    "id": "block-868ffb3281",
-    "file": "shared/block-868ffb3281.svg",
-    "bytes": 208,
+    "id": "block-898a7ec415",
+    "file": "shared/block-898a7ec415.svg",
+    "bytes": 210,
     "usedBy": 2
    },
    {
@@ -187,27 +169,21 @@
     "usedBy": 2
    },
    {
-    "id": "block-96223024ce",
-    "file": "shared/block-96223024ce.svg",
-    "bytes": 13759,
-    "usedBy": 2
-   },
-   {
-    "id": "block-a972e030c6",
-    "file": "shared/block-a972e030c6.svg",
-    "bytes": 3696,
+    "id": "block-9af7c06080",
+    "file": "shared/block-9af7c06080.svg",
+    "bytes": 2723,
     "usedBy": 2
    },
    {
     "id": "block-b10ec37936",
     "file": "shared/block-b10ec37936.svg",
     "bytes": 3324,
-    "usedBy": 10
+    "usedBy": 8
    },
    {
-    "id": "block-bd9bcfbae5",
-    "file": "shared/block-bd9bcfbae5.svg",
-    "bytes": 4467,
+    "id": "block-b1981ebd75",
+    "file": "shared/block-b1981ebd75.svg",
+    "bytes": 3337,
     "usedBy": 2
    },
    {
@@ -226,6 +202,12 @@
     "id": "block-e87223c282",
     "file": "shared/block-e87223c282.svg",
     "bytes": 3497,
+    "usedBy": 2
+   },
+   {
+    "id": "block-fc0df7b2a8",
+    "file": "shared/block-fc0df7b2a8.svg",
+    "bytes": 5461,
     "usedBy": 3
    },
    {
@@ -304,12 +286,6 @@
     "id": "embossed-outlined-caption-d48bf5929d",
     "file": "shared/embossed-outlined-caption-d48bf5929d.svg",
     "bytes": 3447,
-    "usedBy": 2
-   },
-   {
-    "id": "historic-pine-adffb4d88d",
-    "file": "shared/historic-pine-adffb4d88d.svg",
-    "bytes": 6732,
     "usedBy": 2
    },
    {
@@ -435,6 +411,13 @@
   ],
   "bundles": [
    {
+    "name": "paths-1bc8c20315",
+    "file": "shared/paths-1bc8c20315.json",
+    "bytes": 4550,
+    "paths": 4,
+    "usedBy": 10
+   },
+   {
     "name": "paths-477fa3db06",
     "file": "shared/paths-477fa3db06.json",
     "bytes": 13605,
@@ -484,13 +467,6 @@
     "usedBy": 11
    },
    {
-    "name": "paths-b08402ee29",
-    "file": "shared/paths-b08402ee29.json",
-    "bytes": 4550,
-    "paths": 4,
-    "usedBy": 12
-   },
-   {
     "name": "paths-variants-conservation-officer-lower-rocker",
     "file": "shared/paths-variants-conservation-officer-lower-rocker.json",
     "bytes": 1765,
@@ -500,8 +476,8 @@
    {
     "name": "paths-variants-forest-service-oval",
     "file": "shared/paths-variants-forest-service-oval.json",
-    "bytes": 3233,
-    "paths": 17,
+    "bytes": 4915,
+    "paths": 24,
     "usedBy": 10
    },
    {
@@ -509,6 +485,13 @@
     "file": "shared/paths-variants-forest-service-parks-oval.json",
     "bytes": 3071,
     "paths": 12,
+    "usedBy": 2
+   },
+   {
+    "name": "paths-variants-forest-service-yellow-sky",
+    "file": "shared/paths-variants-forest-service-yellow-sky.json",
+    "bytes": 4628,
+    "paths": 30,
     "usedBy": 2
    },
    {
@@ -586,7 +569,7 @@
       "block-b10ec37936"
      ],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -600,8 +583,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/FO-fire-control.svg",
      "preview": "bc-forest-service/previews/FO-fire-control.webp",
-     "sha256": "c30d5e1424d18ca4d171c61680cac961467c05cd0830455e640e0be0a449800d",
-     "bytes": 36429,
+     "sha256": "8c7c5d42a9213e54c7f897a72326e2f08835789c47b09f43152973802a4eb320",
+     "bytes": 36052,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/fire-control.jpg",
      "sightings": [
       {
@@ -610,7 +593,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. FIRE CONTROL set on the Wildfire Management ribbon through the engine's own service field, as on the cloth patch; the ribbon's exact proportions on that patch are unverified.",
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. Fire Control ribbon and the historic conifer above a yellow understory and dark water, based on R11. Ribbon proportions are approximate.",
      "supplied": {
       "svg": "supplied/pofbc-forest-ovals/forest-service/fire-control.svg"
      },
@@ -620,14 +603,13 @@
      "group": "forest-service-oval",
      "variant": "Fire Control",
      "blocks": [
-      "block-66a9b75e94",
-      "block-7b6375ed8b",
-      "block-868ffb3281",
-      "block-b10ec37936"
+      "block-45ef6e366a",
+      "block-898a7ec415",
+      "block-b1981ebd75",
+      "block-fc0df7b2a8"
      ],
      "bundles": [
       "paths-7cbd77ceaf",
-      "paths-b08402ee29",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -662,11 +644,10 @@
      "variant": "Full colour",
      "blocks": [
       "block-66a9b75e94",
-      "block-7b6375ed8b",
       "block-b10ec37936"
      ],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -701,10 +682,11 @@
      "variant": "Black & white",
      "blocks": [
       "block-66a9b75e94",
+      "block-9af7c06080",
       "block-b10ec37936"
      ],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -735,7 +717,7 @@
       "block-b10ec37936"
      ],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -766,7 +748,7 @@
       "block-b10ec37936"
      ],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -797,7 +779,7 @@
       "block-b10ec37936"
      ],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -828,7 +810,7 @@
       "block-b10ec37936"
      ],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -1158,8 +1140,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/FO-green-gold-light-band.svg",
      "preview": "bc-forest-service/previews/FO-green-gold-light-band.webp",
-     "sha256": "c27933cde5adb66e797fc70b52a9b90a760d1b65e39129efb0fb9e2a905fa04a",
-     "bytes": 28079,
+     "sha256": "88e466bed1ca8d4b7096423d02825474375de51856284b4180535567476ef3bf",
+     "bytes": 14554,
      "sourceUrl": "https://drive.google.com/file/d/11ch3hDdDDCIgJ2bEHvYoBlhgINX2sZnf/view",
      "sightings": [
       {
@@ -1180,7 +1162,7 @@
       }
      ],
      "merged": [],
-     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. The light band and green lettering of the white-band oval, recoloured from the full-colour drawing.",
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. The light band, green lettering and historic foothill scene follow the S46 cloth specimen. The secondary decal and vehicle views are separate sightings.",
      "supplied": {
       "svg": "supplied/pofbc-forest-ovals/green-gold/light-band.svg"
      },
@@ -1193,8 +1175,8 @@
      "variant": "Light band",
      "blocks": [
       "block-16bffd9b32",
-      "block-2bc66a6555",
-      "block-7bc2c318b5"
+      "block-7bc2c318b5",
+      "block-fc0df7b2a8"
      ],
      "bundles": []
     },
@@ -1435,8 +1417,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/FO-wildfire-management.svg",
      "preview": "bc-forest-service/previews/FO-wildfire-management.webp",
-     "sha256": "4061faffa98eac1497a9452fce8c63fd8e3f362831612647636235fde1eec3e2",
-     "bytes": 37011,
+     "sha256": "fd39aea05031812700cd3fdd80eb07220eeb44875cde4c0d94a558804f020036",
+     "bytes": 36641,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management.jpg",
      "sightings": [
       {
@@ -1445,7 +1427,7 @@
       }
      ],
      "merged": [],
-     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. The upper service ribbon; Forest Oval labels it a photographic approximation.",
+     "limitations": "Rendered from PofBC's Forest Oval artwork (Internal Logos → Forests) by capture.mjs: the vendored Forest Oval engine's own recipe, theme and colours, laid out in a browser and with every letter outlined from the font the page used, so no font is needed. Forest Oval is itself a reference-based reconstruction, not authenticated issue artwork; typeface, thread colours and fine detail are interpreted. Upper Wildfire Management ribbon and the foothill, yellow-understory and lake scene visible on R21.",
      "supplied": {
       "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.svg"
      },
@@ -1455,15 +1437,13 @@
      "group": "forest-service-oval",
      "variant": "Wildfire Management",
      "blocks": [
-      "block-59e90f2d58",
-      "block-66a9b75e94",
-      "block-7b6375ed8b",
-      "block-868ffb3281",
-      "block-b10ec37936"
+      "block-45ef6e366a",
+      "block-898a7ec415",
+      "block-b1981ebd75",
+      "block-fc0df7b2a8"
      ],
      "bundles": [
       "paths-7cbd77ceaf",
-      "paths-b08402ee29",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -1477,8 +1457,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/FO-wildfire-management-black.svg",
      "preview": "bc-forest-service/previews/FO-wildfire-management-black.webp",
-     "sha256": "3d6b1867b9878e972ea0e99f476ab9085c0386264035014ef19f33914c424cef",
-     "bytes": 37009,
+     "sha256": "1ac453ee147c52adbe578a5ebfb989537affeef608a8914f9ca0239f0e1c6e43",
+     "bytes": 37986,
      "sourceUrl": "https://github.com/ahzs645/forestoval/blob/44ec88fc53cd2e4eb45e1f15ab094a98582a0fc2/shared-primitives/references/wildfire-management-alt1.jpeg",
      "sightings": [
       {
@@ -1497,13 +1477,13 @@
      "group": "forest-service-oval",
      "variant": "Wildfire Management · black",
      "blocks": [
-      "block-59e90f2d58",
       "block-66a9b75e94",
+      "block-9af7c06080",
       "block-b10ec37936"
      ],
      "bundles": [
+      "paths-1bc8c20315",
       "paths-7cbd77ceaf",
-      "paths-b08402ee29",
       "paths-variants-forest-service-oval"
      ]
     },
@@ -1537,15 +1517,12 @@
      "group": "forest-service-yellow-sky",
      "variant": "Green",
      "blocks": [
-      "block-462b265f2f",
-      "block-4ad55ab5e0",
       "block-7d4447618d",
-      "block-96223024ce",
-      "block-a972e030c6",
-      "block-bd9bcfbae5",
       "block-e87223c282"
      ],
-     "bundles": []
+     "bundles": [
+      "paths-variants-forest-service-yellow-sky"
+     ]
     },
     {
      "id": "FO-yellow-sky-cream",
@@ -1580,7 +1557,9 @@
       "block-7d4447618d",
       "block-e87223c282"
      ],
-     "bundles": []
+     "bundles": [
+      "paths-variants-forest-service-yellow-sky"
+     ]
     },
     {
      "id": "FO-yellow-sky-dark",
@@ -1592,8 +1571,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/FO-yellow-sky-dark.svg",
      "preview": "bc-forest-service/previews/FO-yellow-sky-dark.webp",
-     "sha256": "7f8c0e023cc94f3a837c50f503375ea5bd9f236a8525dfcf79ddfcda49452ac7",
-     "bytes": 41280,
+     "sha256": "a6efe5811b1d3d75222f41e21222692eb899c79607c7d5017007952d802d606e",
+     "bytes": 9474,
      "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view",
      "sightings": [
       {
@@ -1602,7 +1581,7 @@
       }
      ],
      "merged": [],
-     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. The dark ring and pale lettering of the poster oval, recoloured from the green drawing.",
+     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. The dark ring, dense conifer, amber sky and horizontal bands are reconstructed from the S04 poster.",
      "supplied": {
       "svg": "supplied/pofbc-forest-ovals/yellow-sky/dark.svg"
      },
@@ -1611,15 +1590,7 @@
      ],
      "group": "forest-service-yellow-sky",
      "variant": "Dark",
-     "blocks": [
-      "block-462b265f2f",
-      "block-4ad55ab5e0",
-      "block-7d4447618d",
-      "block-96223024ce",
-      "block-a972e030c6",
-      "block-bd9bcfbae5",
-      "block-e87223c282"
-     ],
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1699,9 +1670,7 @@
      ],
      "merged": [],
      "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
-     "blocks": [
-      "historic-pine-adffb4d88d"
-     ],
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1729,22 +1698,22 @@
      "variant": "Shoulder photograph",
      "blocks": [],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-shoulder-emblem"
      ]
     },
     {
      "id": "S45-O01",
-     "label": "B.C. / Forest Service — map, tree and ungulate rectangle",
+     "label": "B.C. / Forest Service — evergreen emblem and caribou rectangle",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Shared Forest Service emblem with reconstructed caribou and fitted captions",
      "family": "forest-map-animal",
      "affiliation": "Forestry",
      "svg": "bc-forest-service/S45-O01.svg",
      "preview": "bc-forest-service/previews/S45-O01.webp",
-     "sha256": "7fb037c68de06c2ee9368331cac8d6538a57055c1767e0bf96a0c5ecf6855972",
-     "bytes": 11336,
+     "sha256": "eb139ad5577d28d72be795df67c6c9bafcc7a572f9b50bb49df847d90e2660ce",
+     "bytes": 14581,
      "sourceUrl": "https://drive.google.com/file/d/1LuVoONE1ytqacJXacmQgiucv-k5JjleR/view",
      "sightings": [
       {
@@ -1753,7 +1722,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. Map outline and ungulate anatomy are clean symbolic interpretations; the screenshot cannot establish detailed geographic/antler contours or species.",
+     "limitations": "The mainland, three islands, evergreen crown and trunk use the same PofBC component outlines as S48-O01, fitted independently to S45's rectangular composition with its red-brown outlining. The right-facing animal is built from smooth closed paths with a darker body and pale neck; caribou is the user's identification. The two atlas caption rows retain their substitute outlined glyphs with adjusted fitting. The 418 × 479 source crop cannot establish exact animal anatomy, the original alphabet, physical dimensions or calibrated thread colours. No tracing or source-photo warping. See supplied/forest-service-map-caribou/README.md. The central mark reuses the Forest Service evergreen emblem also present on S48-O01. Caribou follows the user's identification; the blurred source does not independently establish species or fine antler anatomy.",
+     "replaced": {
+      "svg": "supplied/forest-service-map-caribou/composed/S45-O01.svg",
+      "atlasSha256": "7fb037c68de06c2ee9368331cac8d6538a57055c1767e0bf96a0c5ecf6855972"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -1795,8 +1768,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/S49-O01.svg",
      "preview": "bc-forest-service/previews/S49-O01.webp",
-     "sha256": "8b06615cc1524f80a6f1685d8cc58f29139a9fbc1b8791602490f7f4a1eaaf21",
-     "bytes": 5447,
+     "sha256": "4daf698f7cee21c755e90078722318fe8229c158536303858c841e026671479c",
+     "bytes": 5602,
      "sourceUrl": "https://drive.google.com/file/d/1kpXxoJ7pusJ9xnbztejVQixpxykHj-Og/view",
      "sightings": [
       {
@@ -1805,7 +1778,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The canonical shared rocker omits the photographed tilt and asymmetric camera skew. Native source crop dimensions remain unchanged.",
+     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The canonical shared rocker omits the photographed tilt and asymmetric camera skew. Native source crop dimensions remain unchanged. The arched cloth band has rounded end transitions and a deeper outer curve in the photographs.",
+     "outline": {
+      "profile": "single-line-rocker",
+      "atlasSha256": "8b06615cc1524f80a6f1685d8cc58f29139a9fbc1b8791602490f7f4a1eaaf21"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -1819,8 +1796,8 @@
      "affiliation": "Forestry",
      "svg": "bc-forest-service/S49-O02.svg",
      "preview": "bc-forest-service/previews/S49-O02.webp",
-     "sha256": "2f5ff5f1b8737b58c0034858b1e6e7edb8e4fbd5104764a943a0209690032108",
-     "bytes": 32634,
+     "sha256": "57baa1d963009acea3604a3bbd0538d192d1234fc5b26501a5a14fdd210fcd05",
+     "bytes": 32764,
      "sourceUrl": "https://drive.google.com/file/d/1kpXxoJ7pusJ9xnbztejVQixpxykHj-Og/view",
      "sightings": [
       {
@@ -1829,7 +1806,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The shared symmetric ministry border and fixed provincial crest replace the photographed skewed outline. Native source crop dimensions remain unchanged.",
+     "limitations": "Clean geometry is interpreted from the supplied source; it is not an authenticated production master. Replacement outlined fonts approximate stitched/painted lettering; camera perspective, stitch texture and uncertain fine detail are not reproduced. Colors are selected from visual reference, without color calibration. The shared symmetric ministry border and fixed provincial crest replace the photographed skewed outline. Native source crop dimensions remain unchanged. The framed crest is raised and enlarged to fit the space between the top caption and footer in the Parks and Forest Service photographs.",
+     "outline": {
+      "profile": "framed-ministry-crest",
+      "atlasSha256": "2f5ff5f1b8737b58c0034858b1e6e7edb8e4fbd5104764a943a0209690032108"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -1843,13 +1824,13 @@
      "label": "Forest Fire / Prevention Officer — tree shield",
      "collection": "badges",
      "medium": "Metal badge",
-     "quality": "Clean vector reconstruction",
+     "quality": "Atlas shield with a reviewed reconstruction of its inner emblem",
      "family": "forest-fire-officer-metal",
      "affiliation": "Forestry",
      "svg": "bc-forest-service/S51-O01.svg",
      "preview": "bc-forest-service/previews/S51-O01.webp",
-     "sha256": "d53a603ffad1156f51847f4094900382d7689d1302c3b17f340d160340bccc06",
-     "bytes": 39494,
+     "sha256": "07e67b437cd4d6701f7438482390b6e14c662bba2ead3601660b8392f2cc0309",
+     "bytes": 28062,
      "sourceUrl": "https://drive.google.com/file/d/1Qx2P5oct-kU8_sf8XOJJvK_dU1-J6Elb/view",
      "sightings": [
       {
@@ -1858,10 +1839,12 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The historical pine, roots and optional mountains/water are hand-drawn geometric symbols fitted to the specimen, rather than substitutes for the modern ministry emblem.",
-     "blocks": [
-      "historic-pine-adffb4d88d"
-     ],
+     "limitations": "The shield, rims and FOREST FIRE / PREVENTION OFFICER lettering are the atlas's reconstruction. compose.mjs replaces the inner oval emblem with a hand-built reconstruction of a 674 × 676 close-up photograph (a broad, asymmetric tiered conifer in place of the shared thin historic pine, the two separator dots the atlas left out, and individually drawn BRITISH COLUMBIA / FOREST SERVICE), applies an overlap review's corrections (lower-left notch and bough, upper neck, trunk, the E S T of FOREST, dot size, and the border on its fitted ellipse), and fits it onto the atlas's oval. The close-up's oval is slightly wider than the whole badge's, likely an oblique view, so the emblem is about 5% narrower than in the close-up. Typeface, die contours and material tones remain interpretations.",
+     "replaced": {
+      "svg": "supplied/forest-fire-prevention-shield/composed/S51-O01.svg",
+      "atlasSha256": "d53a603ffad1156f51847f4094900382d7689d1302c3b17f340d160340bccc06"
+     },
+     "blocks": [],
      "bundles": []
     },
     {
@@ -1889,7 +1872,7 @@
      "variant": "Collector board",
      "blocks": [],
      "bundles": [
-      "paths-b08402ee29",
+      "paths-1bc8c20315",
       "paths-variants-forest-shoulder-emblem"
      ]
     }
@@ -2442,8 +2425,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S25-O02.svg",
      "preview": "bc-parks/previews/S25-O02.webp",
-     "sha256": "b77130e0f22494139783f6204e9058e3fff8efa282d1a9265d8dbde98e692ad0",
-     "bytes": 4468,
+     "sha256": "653af61ddafea4a6c4d2608d2093a70d3f44c508275833eba8eb9d680a72f661",
+     "bytes": 4623,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
      "sightings": [
       {
@@ -2456,7 +2439,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry. The arched cloth band has rounded end transitions and a deeper outer curve in the photographs.",
+     "outline": {
+      "profile": "single-line-rocker",
+      "atlasSha256": "b77130e0f22494139783f6204e9058e3fff8efa282d1a9265d8dbde98e692ad0"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -2470,8 +2457,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S25-O03.svg",
      "preview": "bc-parks/previews/S25-O03.webp",
-     "sha256": "971e7c5332e09050dfaf68551a36441a4ecb2c9f6531258229e372dd89aed3d2",
-     "bytes": 36059,
+     "sha256": "75ff68889f9a4e396f1f2b3aad0f65e560635f9d68d7b4fd3e89ddc528939994",
+     "bytes": 36189,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
      "sightings": [
       {
@@ -2484,7 +2471,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry. The framed crest is raised and enlarged to fit the space between the top caption and footer in the Parks and Forest Service photographs.",
+     "outline": {
+      "profile": "framed-ministry-crest",
+      "atlasSha256": "971e7c5332e09050dfaf68551a36441a4ecb2c9f6531258229e372dd89aed3d2"
+     },
      "blocks": [
       "bc-provincial-mark-356f812fb6",
       "british-columbia-a4998664d1",
@@ -2505,8 +2496,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S25-O04.svg",
      "preview": "bc-parks/previews/S25-O04.webp",
-     "sha256": "e3fcc8cc7f8906d0e3aae15614bcc357d01f72778233e6687b1a8e560c8f1aa8",
-     "bytes": 7987,
+     "sha256": "60a01fea69dd0ed153703bff795e15f662327fa5a3ccc82401de2b501cb41fdf",
+     "bytes": 8119,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
      "sightings": [
       {
@@ -2519,7 +2510,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry. Rounded ends and the fuller lower edge follow the two-line Parks rocker.",
+     "outline": {
+      "profile": "parks-recreation-rocker",
+      "atlasSha256": "e3fcc8cc7f8906d0e3aae15614bcc357d01f72778233e6687b1a8e560c8f1aa8"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -2533,8 +2528,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S25-O05.svg",
      "preview": "bc-parks/previews/S25-O05.webp",
-     "sha256": "c151f9af00c8cc495215644d23353d8648f83cf5a7a00a2793b87d5dc0c136cc",
-     "bytes": 34853,
+     "sha256": "5be9bafd0d6dde60fccc3ecc32a94514dd1cfdc4ffec06b24990c5876a1702ff",
+     "bytes": 34983,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
      "sightings": [
       {
@@ -2547,7 +2542,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry. The framed crest is raised and enlarged to fit the space between the top caption and footer in the Parks and Forest Service photographs.",
+     "outline": {
+      "profile": "framed-ministry-crest",
+      "atlasSha256": "c151f9af00c8cc495215644d23353d8648f83cf5a7a00a2793b87d5dc0c136cc"
+     },
      "blocks": [
       "bc-provincial-mark-356f812fb6",
       "british-columbia-a4998664d1",
@@ -2568,8 +2567,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S25-O06.svg",
      "preview": "bc-parks/previews/S25-O06.webp",
-     "sha256": "54d5af866a9eec9d683177dd1a0f834125b44d28fd60769729e3380bb6dff312",
-     "bytes": 31620,
+     "sha256": "97a1338e61a7d7961de650d8100dcff09e4dcd2dd4073dd0792e48c5a48134de",
+     "bytes": 31750,
      "sourceUrl": "https://drive.google.com/file/d/1uNNWaONap2HJPUty99OHT13K7ovmrW0_/view",
      "sightings": [
       {
@@ -2582,7 +2581,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry.",
+     "limitations": "Issue geometry is inferred from matching clear source designs, not authenticated manufacturing drawings. Exact thread colours, font identity and fine embroidered details remain approximate. Source aspect alignment is separate from the fixed master geometry. The framed crest is raised and enlarged to fit the space between the top caption and footer in the Parks and Forest Service photographs.",
+     "outline": {
+      "profile": "framed-ministry-crest",
+      "atlasSha256": "54d5af866a9eec9d683177dd1a0f834125b44d28fd60769729e3380bb6dff312"
+     },
      "blocks": [
       "bc-provincial-mark-356f812fb6",
       "british-columbia-a4998664d1",
@@ -3024,8 +3027,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S56-O54.svg",
      "preview": "bc-parks/previews/S56-O54.webp",
-     "sha256": "e5a9a32a1aa8bf3fe1190739462b46c476f60655adcc2f86eb04e5bed6a57e5c",
-     "bytes": 12245,
+     "sha256": "8f2b2254bccf27c353fa22e441aee523d94a8ec3335a57c86babad7f55dae6b8",
+     "bytes": 12377,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -3034,7 +3037,11 @@
       }
      ],
      "merged": [],
-     "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
+     "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified. Rounded ends and the fuller lower edge follow the two-line Parks rocker.",
+     "outline": {
+      "profile": "parks-recreation-rocker",
+      "atlasSha256": "e5a9a32a1aa8bf3fe1190739462b46c476f60655adcc2f86eb04e5bed6a57e5c"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -3048,8 +3055,8 @@
      "affiliation": "Parks",
      "svg": "bc-parks/S56-O55.svg",
      "preview": "bc-parks/previews/S56-O55.webp",
-     "sha256": "55e9dbce899c193b21a83932276f5f123b43d8953ce0f7807452c7cfc1b2d915",
-     "bytes": 6912,
+     "sha256": "d171ad1a2168d2e1a2f671a29463faac597a7a6a4ccc0d2533a5bd8d8b5b3092",
+     "bytes": 7067,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -3058,7 +3065,11 @@
       }
      ],
      "merged": [],
-     "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
+     "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified. The arched cloth band has rounded end transitions and a deeper outer curve in the photographs.",
+     "outline": {
+      "profile": "single-line-rocker",
+      "atlasSha256": "55e9dbce899c193b21a83932276f5f123b43d8953ce0f7807452c7cfc1b2d915"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -3166,13 +3177,13 @@
      "label": "Conservation Officer / British Columbia / Ministry of Environment — integrated compact crest shield (1984 source edition)",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Partial source-based heading refinement",
      "family": "bc-co-compact-integrated",
      "affiliation": "Conservation",
      "svg": "conservation-officer-service/MC27-O01.svg",
      "preview": "conservation-officer-service/previews/MC27-O01.webp",
-     "sha256": "3cb9b71731b9adfbfbaa5d18660beadae8ebe44fb4e5311f0b9746a18ab907ad",
-     "bytes": 42572,
+     "sha256": "d6593b9543e7a463bf60d0c2a32cc2e45e2bcc51652b275953bff6223b6c4e6e",
+     "bytes": 41346,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_1st_version.jpg",
      "sightings": [
       {
@@ -3181,7 +3192,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
+     "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions.",
+     "replaced": {
+      "svg": "supplied/co-compact-shields-review/MC27-O01.svg",
+      "atlasSha256": "3cb9b71731b9adfbfbaa5d18660beadae8ebe44fb4e5311f0b9746a18ab907ad"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -3195,13 +3210,13 @@
      "label": "Conservation Officer / British Columbia / Ministry of Environment and Parks — integrated compact crest shield (1986 source edition)",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Partial source-based heading refinement",
      "family": "bc-co-compact-integrated",
      "affiliation": "Conservation",
      "svg": "conservation-officer-service/MC28-O01.svg",
      "preview": "conservation-officer-service/previews/MC28-O01.webp",
-     "sha256": "5e66d7bc704a667970c3c08fe5dfdea6485f8edcb4c42eb93c7f452e67e73453",
-     "bytes": 45191,
+     "sha256": "2669c66c81b11ef60b39b737543ee8650bfae7a7ceec512b5e340625fb21a35b",
+     "bytes": 43596,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_Parks.jpg",
      "sightings": [
       {
@@ -3210,7 +3225,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
+     "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions.",
+     "replaced": {
+      "svg": "supplied/co-compact-shields-review/MC28-O01.svg",
+      "atlasSha256": "5e66d7bc704a667970c3c08fe5dfdea6485f8edcb4c42eb93c7f452e67e73453"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -3224,13 +3243,13 @@
      "label": "Conservation Officer / British Columbia / Ministry of Environment — narrow footer edition (c.1991 source edition)",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Partial source-based heading refinement",
      "family": "bc-co-compact-integrated",
      "affiliation": "Conservation",
      "svg": "conservation-officer-service/MC29-O01.svg",
      "preview": "conservation-officer-service/previews/MC29-O01.webp",
-     "sha256": "e5599c52275da9c901f68795d95a31b2bc33520d892790430cbd89cbd35b3d74",
-     "bytes": 42480,
+     "sha256": "309f230ff4ed90318f8f4c27b5999ba596e7fb46d1b4533c7bc90ad7fb3dcaf8",
+     "bytes": 41276,
      "sourceUrl": "https://moosecop.net/History/BC_CO_Min_of_Env_2nd_version.jpg",
      "sightings": [
       {
@@ -3239,7 +3258,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean vector reconstruction from visible artifact references; no photograph tracing, source textures or embedded raster. Natural outlined replacement fonts approximate embroidered alphabets. Exact stitch anatomy, manufacturing dimensions and calibrated thread colors remain unverified. Whole-master source placement uses uniform scale; the photograph is not used to distort separate border or emblem components.",
+     "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions.",
+     "replaced": {
+      "svg": "supplied/co-compact-shields-review/MC29-O01.svg",
+      "atlasSha256": "e5599c52275da9c901f68795d95a31b2bc33520d892790430cbd89cbd35b3d74"
+     },
      "blocks": [
       "bc-framed-provincial-mark-3b841c1ba2"
      ],
@@ -4406,8 +4429,8 @@
      "affiliation": "Other",
      "svg": "bc-sheriff-service/S56-O01.svg",
      "preview": "bc-sheriff-service/previews/S56-O01.webp",
-     "sha256": "2d6b5e47b579a5745aaa989bd3d2f4aac3fc7735081bb90d47a62199a6d25660",
-     "bytes": 395117,
+     "sha256": "fec0d8abd518122e173bcf1159df697691f6cf8aaa384d0a082b8eb09a01e3d9",
+     "bytes": 395259,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -4416,7 +4439,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
+     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction. The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction.",
+     "outline": {
+      "profile": "central-arms-s56-o01",
+      "atlasSha256": "2d6b5e47b579a5745aaa989bd3d2f4aac3fc7735081bb90d47a62199a6d25660"
+     },
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
      ],
@@ -4634,8 +4661,8 @@
      "affiliation": "Other",
      "svg": "bc-corrections/S56-O25.svg",
      "preview": "bc-corrections/previews/S56-O25.webp",
-     "sha256": "5a05975f40f34ecea8b67a366ffc6886cfef31b146cf113529f94989e0c39eac",
-     "bytes": 398118,
+     "sha256": "45f0270555cb4d8cca398b24ea8448b447f68266e4218209b8b1b0bae6e0787e",
+     "bytes": 398261,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -4644,7 +4671,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
+     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction. The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction.",
+     "outline": {
+      "profile": "central-arms-s56-o25",
+      "atlasSha256": "5a05975f40f34ecea8b67a366ffc6886cfef31b146cf113529f94989e0c39eac"
+     },
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
      ],
@@ -5125,8 +5156,8 @@
      "affiliation": "Other",
      "svg": "fire-commissioner/S56-O43.svg",
      "preview": "fire-commissioner/previews/S56-O43.webp",
-     "sha256": "520e8ab06f7347f111a24a1fe9773256287655dd4720f5c84188900c390a0d3b",
-     "bytes": 402675,
+     "sha256": "3e3645dd55e1b89b27fd5810c23258f4ace63c60cbac415c57a9630a4e8f6545",
+     "bytes": 402648,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5169,8 +5200,8 @@
      "affiliation": "Other",
      "svg": "legislative-security/S56-O45.svg",
      "preview": "legislative-security/previews/S56-O45.webp",
-     "sha256": "ce6c5952683dbd3b9755c29b634fa63782737a6ba8aaf5486ecd9d91c0118aa5",
-     "bytes": 399493,
+     "sha256": "b003ad15da43e841b01259805f0da622b67d48d6ee8c2bba45f41b65b83387fd",
+     "bytes": 399636,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5179,7 +5210,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
+     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction. The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction.",
+     "outline": {
+      "profile": "central-arms-s56-o45",
+      "atlasSha256": "ce6c5952683dbd3b9755c29b634fa63782737a6ba8aaf5486ecd9d91c0118aa5"
+     },
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
      ],
@@ -5195,22 +5230,22 @@
    "sector": "justice",
    "description": null,
    "counts": {
-    "patches": 2,
+    "patches": 3,
     "badges": 0
    },
    "patches": [
     {
      "id": "S56-O36",
-     "label": "Justice Institute / British Columbia — gold and navy bridge roundel",
+     "label": "Justice Institute / British Columbia — gold and navy roundel",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Limited-evidence clean vector study",
+     "quality": "Atlas roundel with the supplied JIBC monogram",
      "family": "unresolved-bridge-circle",
      "affiliation": "Unconfirmed",
      "svg": "justice-institute/S56-O36.svg",
      "preview": "justice-institute/previews/S56-O36.webp",
-     "sha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1",
-     "bytes": 29009,
+     "sha256": "ca100aa0f52416808c3de238ea5aaaadc031820e1340dd7e71f2870705aa0c1f",
+     "bytes": 36510,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5219,7 +5254,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean hand-designed roundel silhouette and principal visible motif. Only BRITISH COLUMBIA is confidently legible. The remaining caption is omitted rather than invented; affiliation and fine charge details remain unresolved. The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46).",
+     "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board. JUSTICE INSTITUTE, which the atlas left out, is set over the top by compose.mjs in the same outlined face and size, mirroring BRITISH COLUMBIA. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted. The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46).",
+     "replaced": {
+      "svg": "supplied/jibc-bridge-roundel/composed/S56-O36.svg",
+      "atlasSha256": "f08546d40a6e0b8616bdb14cef26e4b3a6c9fc7b70f9838adc12ef07f3461ee1"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -5250,6 +5289,34 @@
      },
      "blocks": [],
      "bundles": []
+    },
+    {
+     "id": "S56-O47",
+     "label": "British Columbia / Police College — blue roundel",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Atlas roundel with corrected lower-case lettering",
+     "family": "justice-institute-police-college-roundel",
+     "affiliation": "Other",
+     "svg": "justice-institute/S56-O47.svg",
+     "preview": "justice-institute/previews/S56-O47.webp",
+     "sha256": "6845f778a9bedf54365fbad65e12a34f625cf743fe3d0fb8243c73693f63609c",
+     "bytes": 14335,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O47",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "The cream rim, navy ring, grey disc and centre figure are the atlas's reconstruction from a 60 × 57 collector-board crop; the centre remains a coarse interpretation. compose.mjs resets both captions in lower case as the photograph shows them (british columbia, police college) in Poppins SemiBold, a stand-in for the unidentified geometric face. Thread colours are interpreted. The atlas read the lower caption as TRAFFIC OFFICERS and filed it with Highways and Motor Vehicles. The photograph reads british columbia / police college in lower case; the BC Police College became part of the Justice Institute of British Columbia (now its Police Academy).",
+     "replaced": {
+      "svg": "supplied/bc-police-college-roundel/composed/S56-O47.svg",
+      "atlasSha256": "0c4dd02b2a3da99307889c79e0e178b51cd9cd421e6aed84e43673f47f576ea1"
+     },
+     "blocks": [],
+     "bundles": []
     }
    ]
   },
@@ -5259,7 +5326,7 @@
    "sector": "transportation",
    "description": "Highway Patrol, the transportation ministries' shields, Motor Vehicle Inspectors, Weighmasters and Traffic Officers.",
    "counts": {
-    "patches": 11,
+    "patches": 9,
     "badges": 0
    },
    "patches": [
@@ -5273,8 +5340,8 @@
      "affiliation": "Other",
      "svg": "highways-and-motor-vehicles/S56-O12.svg",
      "preview": "highways-and-motor-vehicles/previews/S56-O12.webp",
-     "sha256": "64317aad9b8f5a9ae7ee6b98324358b3756aa3be7afedcc745b8278cc718c6c1",
-     "bytes": 401289,
+     "sha256": "8eae331f7ab7c2e7151b4a36c4a7fc92104a9b80f3aeeb7c6684cfcddc1100e4",
+     "bytes": 401432,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5283,7 +5350,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction.",
+     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The modern full achievement uses the exact uploaded native BC arms geometry and original colours, uniformly fitted. This is the user-mandated reference substitution; this small cloth photograph cannot verify fine heraldic lines, calibrated thread colours or stitch construction. The achievement fills more of the central field, matching the proportions visible on the collector board. The fine heraldic detail remains a reconstruction.",
+     "outline": {
+      "profile": "central-arms-s56-o12",
+      "atlasSha256": "64317aad9b8f5a9ae7ee6b98324358b3756aa3be7afedcc745b8278cc718c6c1"
+     },
      "blocks": [
       "uploaded-bc-modern-arms-8491a6243c"
      ],
@@ -5507,54 +5578,6 @@
      "limitations": "The supplied vector geometry and original colours are preserved. The collector-board green stitched perimeter is interpreted as a smooth offset of the supplied shield. The gold supplied reference has no perimeter stroke and is available unchanged. Exact embroidery edges, calibrated thread colours and original typeface remain unverified.",
      "blocks": [],
      "bundles": []
-    },
-    {
-     "id": "S56-O47",
-     "label": "British Columbia / Traffic Officers — blue roundel",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "traffic-officers-roundel",
-     "affiliation": "Other",
-     "svg": "highways-and-motor-vehicles/S56-O47.svg",
-     "preview": "highways-and-motor-vehicles/previews/S56-O47.webp",
-     "sha256": "0c4dd02b2a3da99307889c79e0e178b51cd9cd421e6aed84e43673f47f576ea1",
-     "bytes": 13613,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O47",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S56-O48",
-     "label": "British Columbia / Motor Vehicles — wide crest emblem",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "motor-vehicles-wide",
-     "affiliation": "Other",
-     "svg": "highways-and-motor-vehicles/S56-O48.svg",
-     "preview": "highways-and-motor-vehicles/previews/S56-O48.webp",
-     "sha256": "511adc581fe187d2b685469ffa9ddff64ccf7ff70d3f13178461b4d44124f27e",
-     "bytes": 15157,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O48",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Interpreted vector rebuild from a 480 × 640 collector-board photograph. Border proportions and caption positions follow the visible specimen. Outlined Roboto Bold/Roboto Condensed Bold interprets the embroidered lettering; exact alphabet, stitch paths, physical dimensions and issue colours are unverified. The small central red/blue/white charge is retained as a coarse colour interpretation; its exact shield charges cannot be authenticated from this photograph.",
-     "blocks": [],
-     "bundles": []
     }
    ]
   },
@@ -5628,7 +5651,7 @@
    "sector": "institutions",
    "description": null,
    "counts": {
-    "patches": 3,
+    "patches": 2,
     "badges": 0
    },
    "patches": [
@@ -5670,8 +5693,8 @@
      "affiliation": "Other",
      "svg": "ubc/S56-O58.svg",
      "preview": "ubc/previews/S56-O58.webp",
-     "sha256": "2b97ef0162d6693bfb54f88f4a5b004def0f7c6ece0057bb085649413cc69231",
-     "bytes": 9724,
+     "sha256": "6448fbbcb374b4e909b7475de17113b7901f4c5d3b73ee64b50bdaebc051537d",
+     "bytes": 9786,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5680,31 +5703,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S56-O59",
-     "label": "Campus Security / UBC — shield",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "ubc-campus-security",
-     "affiliation": "Other",
-     "svg": "ubc/S56-O59.svg",
-     "preview": "ubc/previews/S56-O59.webp",
-     "sha256": "f3b0523ebf9b964bdabcd2d5b37025127401dff6556b816125e1e511e581ac51",
-     "bytes": 18521,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O59",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
+     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. The compact UBC Patrol arch has curved sides and an almost level lower edge. The collector-board view leaves the individual stitches unresolved.",
+     "outline": {
+      "profile": "ubc-patrol-arch",
+      "atlasSha256": "2b97ef0162d6693bfb54f88f4a5b004def0f7c6ece0057bb085649413cc69231"
+     },
      "blocks": [],
      "bundles": []
     }
@@ -5716,10 +5719,38 @@
    "sector": "institutions",
    "description": null,
    "counts": {
-    "patches": 2,
+    "patches": 3,
     "badges": 0
    },
    "patches": [
+    {
+     "id": "S56-O59",
+     "label": "Campus Security / University of Victoria — shield",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Atlas shield with the University of Victoria's arms and corrected captions",
+     "family": "uvic-campus-security",
+     "affiliation": "Other",
+     "svg": "uvic/S56-O59.svg",
+     "preview": "uvic/previews/S56-O59.webp",
+     "sha256": "c279a4b76ff1ceb78be8e188c5516605976eb9a2a18d69df8b157e220e909126",
+     "bytes": 67503,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O59",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "The navy field, gold edge, CAMPUS and SECURITY are the atlas's reconstruction from a 78 × 62 collector-board crop. compose.mjs puts the University of Victoria's shield (cut from the full arms in its brand guidelines, as reproduced on the English Wikipedia; copyright the University of Victoria) in the centre, with UNIVERSITY OF VICTORIA curving under it and SERVICES across the bottom in outlined Roboto Condensed Bold. SERVICES is read from the blurred photograph. The embroidered alphabet, thread colours and the shield's stitched detail are interpreted. The atlas filed this patch under UBC and read UNIVERSITY OF / BRITISH COLUMBIA. The shield is the University of Victoria's (three martlets over an open book), with UNIVERSITY OF VICTORIA under it and SERVICES across the bottom.",
+     "replaced": {
+      "svg": "supplied/uvic-campus-security/composed/S56-O59.svg",
+      "atlasSha256": "f3b0523ebf9b964bdabcd2d5b37025127401dff6556b816125e1e511e581ac51"
+     },
+     "blocks": [],
+     "bundles": []
+    },
     {
      "id": "S56-O60",
      "label": "University of Victoria / Traffic and Security — shield",
@@ -5776,10 +5807,38 @@
    "sector": "institutions",
    "description": null,
    "counts": {
-    "patches": 1,
+    "patches": 2,
     "badges": 0
    },
    "patches": [
+    {
+     "id": "S56-O48",
+     "label": "Simon Fraser University / Security Services — fan",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Atlas fan with Simon Fraser University's arms and corrected captions",
+     "family": "sfu-security-fan",
+     "affiliation": "Other",
+     "svg": "sfu/S56-O48.svg",
+     "preview": "sfu/previews/S56-O48.webp",
+     "sha256": "8ca36ea12cc1b787401a3b703217440f1e508340649dd0dbe6fc61348e4b37f1",
+     "bytes": 70678,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O48",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "The cream fan and navy edge are the atlas's reconstruction from a 113 × 48 collector-board crop. compose.mjs puts Simon Fraser University's full-colour arms (shield and motto scroll, from the university's May 2015 brand guidelines; copyright Simon Fraser University) in the centre, SIMON FRASER UNIVERSITY along the upper edge and SECURITY SERVICES along the lower edges in outlined Roboto Condensed Bold. The embroidered alphabet, thread colours and the arms' stitched detail are interpreted. The atlas read this fan as British Columbia / Motor Vehicles. The photograph reads SIMON FRASER UNIVERSITY over SECURITY SERVICES, about the university's arms.",
+     "replaced": {
+      "svg": "supplied/sfu-security-fan/composed/S56-O48.svg",
+      "atlasSha256": "511adc581fe187d2b685469ffa9ddff64ccf7ff70d3f13178461b4d44124f27e"
+     },
+     "blocks": [],
+     "bundles": []
+    },
     {
      "id": "S56-O49",
      "label": "SFU / Campus Security — shield",
@@ -5818,16 +5877,16 @@
    "patches": [
     {
      "id": "S56-O23",
-     "label": "Crime Prevention / Expo 86 — shield",
+     "label": "Emergency Service / Expo 86 — shield",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "expo-crime-prevention",
+     "quality": "Reconstructed captions with PofBC's collected Expo 86 vector",
+     "family": "expo-emergency-service",
      "affiliation": "Other",
      "svg": "expo-86/S56-O23.svg",
      "preview": "expo-86/previews/S56-O23.webp",
-     "sha256": "ce38984b19c265c5c0b79aef3d6b925073db55e93475ced0caaa8655d16b47d8",
-     "bytes": 6304,
+     "sha256": "a0029b139562dd84c977497fe7aac8b1a39e73218b252d4c3d4ea59173832b96",
+     "bytes": 7688,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5836,7 +5895,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
+     "limitations": "The blue shield, dark edging, gold inset border and two magenta caption rows are reconstructed from a 75 × 57 collector-board crop. The stacked EXPO-over-86 lockup reuses PofBC's collected expo86-symbol.svg at its original aspect ratio, recoloured gold; the source is Mwtoews's third-party vector reconstruction, not an official historical master. The exact embroidered alphabet, thread colours, outline and second-line transcription remain unverified. See supplied/expo-emergency-service/README.md. EMERGENCY corrects the atlas's mistaken CRIME PREVENTION caption. SERVICE follows the user's reading of the short second line and remains provisional at 75 × 57 source pixels.",
+     "replaced": {
+      "svg": "supplied/expo-emergency-service/composed/S56-O23.svg",
+      "atlasSha256": "ce38984b19c265c5c0b79aef3d6b925073db55e93475ced0caaa8655d16b47d8"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -5845,13 +5908,13 @@
      "label": "Security / Expo 86 — shield",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Reference-based reconstruction with the collected Expo 86 lockup",
      "family": "expo-security",
      "affiliation": "Other",
      "svg": "expo-86/S56-O24.svg",
      "preview": "expo-86/previews/S56-O24.webp",
-     "sha256": "31c9204c8a43641c529bae7e971d4c7a33afacf340f0d6ba2171fc71a37dcc81",
-     "bytes": 4751,
+     "sha256": "d63037d6a5a324229622b83e76296f6ac1103df4d2c3f71c98be7060b136c118",
+     "bytes": 5758,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5860,7 +5923,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
+     "limitations": "The Security heading and shield are retained from the atlas. The Expo 86 lockup is fitted to the small reference photograph. Its exact embroidery, letter spacing and thread colours are uncertain.",
+     "replaced": {
+      "svg": "supplied/expo-emergency-service/composed/S56-O24.svg",
+      "atlasSha256": "31c9204c8a43641c529bae7e971d4c7a33afacf340f0d6ba2171fc71a37dcc81"
+     },
      "blocks": [],
      "bundles": []
     }

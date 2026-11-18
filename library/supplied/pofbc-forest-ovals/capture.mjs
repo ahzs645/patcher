@@ -150,7 +150,7 @@ for (const variant of VARIANTS) {
       const ids = new Set();
       for (const el of svg.querySelectorAll('[id]')) { if (ids.has(el.id)) el.removeAttribute('id'); else ids.add(el.id); }
     }
-    if (v.preset === 'forest-service' && v.theme === 'mono') {
+    if (['forest-service', 'wildfire-management'].includes(v.preset) && v.theme === 'mono') {
       // As InternalLogosView's addMountainLines: the supplied ridge and base lines behind the tree.
       const ink = result.state.colours.ink ?? P.THEMES[result.state.theme].ink;
       const parser = new DOMParser();

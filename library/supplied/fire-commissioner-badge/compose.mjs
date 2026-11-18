@@ -17,7 +17,7 @@ import { readSnapshot, snapshotPath } from '../../../scripts/atlas-snapshot.mjs'
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 
-const source = readSnapshot(await snapshotPath({}));
+const source = readSnapshot(await snapshotPath({ zip: process.argv[2] }));
 const design = source.index.designs.find((d) => d.id === 'S56-O43');
 const atlas = strFromU8(source.get(design.svgUrl));
 
@@ -37,7 +37,10 @@ const badge =
 // drawn a tenth smaller about its middle and a unit higher, to stay clear of the gold.
 const LOWER = '<g data-caption="BRITISH COLUMBIA">';
 if (!atlas.includes(LOWER)) throw new Error('S56-O43: no BRITISH COLUMBIA caption');
+const arms = 'translate(23.3593715217 25.0000000000) scale(0.155019710978)';
+if (!atlas.includes(arms)) throw new Error('S56-O43: source arms placement changed');
 const svg = atlas
+  .replace(arms, 'translate(21.7 21.6) scale(0.174)')
   .replace(border, badge)
   .replace(LOWER, '<g data-caption="BRITISH COLUMBIA" transform="translate(37 63) scale(0.9) translate(-37 -64)">');
 mkdirSync(join(HERE, 'composed'), { recursive: true });

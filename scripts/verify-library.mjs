@@ -16,7 +16,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { applyBadgeOutline, badgeOutlines } from './badge-outlines.mjs';
+import { applyAtlasProfile, atlasProfiles } from './atlas-profiles.mjs';
 import { joinSvg, unwrapBlock } from '../src/library-join.js';
 import { LIBRARY, drawingKey, parseArgs, readSnapshot, snapshotPath } from './atlas-snapshot.mjs';
 
@@ -90,9 +90,9 @@ export function verifyLibrary({ source, library = LIBRARY } = {}) {
       const original = source.get(design.svgUrl);
       if (!original) { problems.push(`${design.id}: ${design.svgUrl} missing from the snapshot`); continue; }
       if (p.outline) {
-        const profile = badgeOutlines.get(p.id);
+        const profile = atlasProfiles.get(p.id);
         if (profile?.name !== p.outline.profile || sha(original) !== p.outline.atlasSha256 ||
-            !Buffer.from(applyBadgeOutline(Buffer.from(original).toString('utf8'), profile)).equals(p.bytes)) {
+            !Buffer.from(applyAtlasProfile(Buffer.from(original).toString('utf8'), profile)).equals(p.bytes)) {
           problems.push(`${p.id}: revised outline does not match its profile and atlas source`);
         }
         continue;

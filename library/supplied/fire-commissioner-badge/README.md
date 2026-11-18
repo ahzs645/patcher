@@ -15,3 +15,5 @@ centred) and painted in the atlas's gold and navy. The coat of arms and the thre
 atlas's; the badge's foot is narrower than the cross's, so BRITISH COLUMBIA is drawn 90% the size and a
 unit higher to stay clear of the gold. `source/` is the package as supplied, less the comparison sheet's
 SVG, which embeds the photograph (the PNG of it is kept).
+
+The central achievement is enlarged and raised within the photographed scalloped border, with clearance for both caption arcs.

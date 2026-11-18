@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 57" role="img" aria-labelledby="expo-emergency-title expo-emergency-description">
+  <title id="expo-emergency-title">Emergency Service / Expo 86 — shield</title>
+  <desc id="expo-emergency-description">Reference-based reconstruction of S56-O23. EMERGENCY follows the visible upper caption; SERVICE is a provisional reading of the blurred second line. The gold stacked Expo 86 logo reuses PofBC's collected third-party vector, not an official manufacturing master.</desc>
+  <g data-component="base-border" stroke-linejoin="round">
+    <path d="M3.6 11.3 Q37.5 -7 71.4 11.3 Q72.4 12 71.6 14.1 L57.1 51.7 Q56.4 53.5 54.2 53.5 L20.8 53.5 Q18.6 53.5 17.9 51.7 L3.4 14.1 Q2.6 12 3.6 11.3 Z" fill="#214986" stroke="#352e29" stroke-width="2.6"/>
+    <path d="M5.5 12.5 Q37.5 -3.3 69.5 12.5 L55.2 50.5 Q54.8 51.1 53.7 51.1 L21.3 51.1 Q20.2 51.1 19.8 50.5 Z" fill="none" stroke="#c19a4f" stroke-width="1.15"/>
+  </g>
+  <g data-caption="EMERGENCY" fill="#b83969">
+    <path d="M229 314H578V439H229V604H606V729H79V0H624V125H229Z" transform="translate(13.841411 15.658517) rotate(-21.344718) scale(0.006859 -0.006859) translate(-333.5 0)"/>
+    <path d="M216 568 347 0H497L626 568V0H776V729H550L422 149L290 729H66V0H216Z" transform="translate(19.757285 13.668439) rotate(-15.840769) scale(0.006859 -0.006859) translate(-416.5 0)"/>
+    <path d="M229 314H578V439H229V604H606V729H79V0H624V125H229Z" transform="translate(25.836762 12.254954) rotate(-10.336819) scale(0.006859 -0.006859) translate(-333.5 0)"/>
+    <path d="M230 289H402C467 289 495 263 495 203V173C494 154 494 136 494 125C494 56 498 35 516 0H677V27C654 40 645 55 645 87C641 302 637 312 544 352C626 384 667 443 667 532C667 590 647 643 612 679C579 713 533 729 471 729H80V0H230ZM230 414V604H411C454 604 471 600 490 585C508 570 517 545 517 511C517 476 508 448 490 433C473 419 454 414 411 414Z" transform="translate(31.644574 11.464276) rotate(-5.168409) scale(0.006859 -0.006859) translate(-361 0)"/>
+    <path d="M711 392H419V267H585C581 226 571 201 549 175C513 131 457 105 400 105C278 105 192 211 192 361C192 518 268 613 396 613C448 613 492 598 525 569C546 551 557 534 570 496H711C693 647 571 741 395 741C185 741 42 586 42 359C42 138 186 -23 383 -23C481 -23 547 12 603 94L621 -2H711Z" transform="translate(37.880656 11.201115) rotate(0.33554) scale(0.006859 -0.006859) translate(-389 0)"/>
+    <path d="M229 314H578V439H229V604H606V729H79V0H624V125H229Z" transform="translate(43.925565 11.518379) rotate(5.673231) scale(0.006859 -0.006859) translate(-333.5 0)"/>
+    <path d="M511 0H661V729H511V233L222 729H68V0H218V504Z" transform="translate(49.726185 12.360197) rotate(10.841641) scale(0.006859 -0.006859) translate(-361 0)"/>
+    <path d="M682 482C677 545 664 585 633 626C577 700 487 741 378 741C172 741 44 594 44 358C44 123 171 -23 374 -23C556 -23 676 82 685 249H539C529 156 471 103 378 103C262 103 194 197 194 356C194 517 265 613 383 613C470 613 519 571 539 482Z" transform="translate(55.608611 13.773417) rotate(16.176309) scale(0.006859 -0.006859) translate(-361 0)"/>
+    <path d="M419 270 650 729H482L343 407L194 729H27L269 270V0H419Z" transform="translate(61.158589 15.658517) rotate(21.344718) scale(0.006859 -0.006859) translate(-333.5 0)"/>
+  </g>
+  <g data-caption="SERVICE" data-transcription="provisional" fill="#b83969">
+    <path d="M607 507C606 658 505 741 321 741C146 741 45 659 45 517C45 404 102 349 250 321L352 301C452 282 489 254 489 195C489 134 433 97 342 97C240 97 183 140 178 218H32C41 62 148 -23 334 -23C522 -23 633 64 633 213C633 328 575 388 440 414L326 436C219 457 188 478 188 531C188 586 236 621 314 621C409 621 462 581 467 507Z" transform="translate(27.993185 17.752923) rotate(-5.455242) scale(0.00439 -0.00439) translate(-333.5 0)"/>
+    <path d="M229 314H578V439H229V604H606V729H79V0H624V125H229Z" transform="translate(31.360516 17.488644) rotate(-3.519879) scale(0.00439 -0.00439) translate(-333.5 0)"/>
+    <path d="M230 289H402C467 289 495 263 495 203V173C494 154 494 136 494 125C494 56 498 35 516 0H677V27C654 40 645 55 645 87C641 302 637 312 544 352C626 384 667 443 667 532C667 590 647 643 612 679C579 713 533 729 471 729H80V0H230ZM230 414V604H411C454 604 471 600 490 585C508 570 517 545 517 511C517 476 508 448 490 433C473 419 454 414 411 414Z" transform="translate(34.855521 17.334972) rotate(-1.515352) scale(0.00439 -0.00439) translate(-361 0)"/>
+    <path d="M397 0 647 729H496L337 180L175 729H24L270 0Z" transform="translate(38.353762 17.303645) rotate(0.489175) scale(0.00439 -0.00439) translate(-333.5 0)"/>
+    <path d="M213 729H63V0H213Z" transform="translate(40.877204 17.357044) rotate(1.935363) scale(0.00439 -0.00439) translate(-139 0)"/>
+    <path d="M682 482C677 545 664 585 633 626C577 700 487 741 378 741C172 741 44 594 44 358C44 123 171 -23 374 -23C556 -23 676 82 685 249H539C529 156 471 103 378 103C262 103 194 197 194 356C194 517 265 613 383 613C470 613 519 571 539 482Z" transform="translate(43.518994 17.481306) rotate(3.450715) scale(0.00439 -0.00439) translate(-361 0)"/>
+    <path d="M229 314H578V439H229V604H606V729H79V0H624V125H229Z" transform="translate(47.006815 17.752923) rotate(5.455242) scale(0.00439 -0.00439) translate(-333.5 0)"/>
+  </g>
+  <g data-component="expo86-lockup" data-source="PofBC collected-expo-86-corporation / expo86-symbol.svg" data-source-sha256="3f51b5e0355222bd5399fc5e35ece3c4204c8527681d20f0385a8825bec5a1c7" transform="translate(26 18.4) scale(0.087452)">
+<line fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" x1="59.899" y1="28.5" x2="31.899" y2="28.5"/>
+<line fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" x1="56.649" y1="53.25" x2="31.899" y2="53.25"/>
+<line fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" x1="60.024" y1="79" x2="32.024" y2="79"/>
+<line fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" x1="31.899" y1="28.5" x2="31.899" y2="78.313"/>
+<line fill="none" stroke="#c19a4f" stroke-width="16" stroke-linecap="round" x1="76.784" y1="29.067" x2="116.284" y2="77.817"/>
+<line fill="none" stroke="#c19a4f" stroke-width="16" stroke-linecap="round" x1="116.284" y1="29.067" x2="76.784" y2="77.817"/>
+<line fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" x1="151.117" y1="28.25" x2="134.5" y2="28.25"/>
+<line fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" x1="134.5" y1="28.25" x2="134.5" y2="78.5"/>
+<path fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" d="M151,60.744c0.039,0,0.078,0.006,0.117,0.006
+	c8.975,0,16.25-7.275,16.25-16.25s-7.275-16.25-16.25-16.25c-0.039,0-0.078,0.006-0.117,0.006"/>
+<line fill="none" stroke="#c19a4f" stroke-width="15" stroke-linecap="round" x1="152.906" y1="60.781" x2="135.406" y2="60.781"/>
+<circle fill="none" stroke="#c19a4f" stroke-width="16" stroke-linecap="round" cx="205.5" cy="54.284" r="25.25"/>
+<path fill="none" stroke="#c19a4f" stroke-width="31" d="M147.742,170.386c0,33.708-27.282,61.019-60.97,61.019
+	c-33.689,0-61-27.311-61-61.019c0-33.69,27.31-61,61-61C120.46,109.386,147.742,136.696,147.742,170.386z"/>
+<path fill="none" stroke="#c19a4f" stroke-width="31" d="M147.742,253.486c0,33.709-27.282,61.02-60.97,61.02
+	c-33.689,0-61-27.311-61-61.02c0-33.69,27.31-61.001,61-61.001C120.46,192.485,147.742,219.796,147.742,253.486z"/>
+<path fill="none" stroke="#c19a4f" stroke-width="31" d="M231.643,253.486c0,33.709-27.281,61.02-60.97,61.02
+	c-33.689,0-60.999-27.311-60.999-61.02c0-33.69,27.309-61.001,60.999-61.001C204.361,192.485,231.643,219.796,231.643,253.486z"/>
+<line fill="none" stroke="#c19a4f" stroke-width="31" x1="146.434" y1="193" x2="225.434" y2="114"/>
+  </g>
+</svg>

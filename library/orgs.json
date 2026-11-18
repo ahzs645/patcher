@@ -14,9 +14,14 @@
     { "reason": "Too little survives to draw: a blurred windscreen emblem and a lower-left fragment of an arch, neither identifiable", "ids": ["S42-O02", "S56-O11"] }
   ],
   "relabel": [
-    { "id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters." },
-    { "id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy bridge roundel", "note": "The atlas left its owner unresolved; the bridge is the Justice Institute of British Columbia's mark, as on its fan shield (S56-O46)." },
-    { "id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The reference is a 157 × 173 historical catalogue illustration. The physical material is undocumented; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head." }
+    {"id": "S48-O01", "label": "Forest Service evergreen emblem — cloth square", "note": "The atlas left this square unlabelled; it carries the Forest Service evergreen emblem (PofBC Internal Logos → Forests), the mark on the Forest Service posters."},
+    {"id": "S56-O36", "label": "Justice Institute / British Columbia — gold and navy roundel", "note": "The atlas left its owner unresolved; the centre is the Justice Institute of British Columbia's monogram, as on its fan shield (S56-O46)."},
+    {"id": "MC03-O01", "label": "B.C. Game Department / Predator Branch — wolf's head triangle", "note": "The reference is a 157 × 173 historical catalogue illustration. The physical material is undocumented; the supplied package reads B.C. GAME DEPARTMENT and PREDATOR BRANCH around the wolf's head."},
+    {"id": "S45-O01", "label": "B.C. / Forest Service — evergreen emblem and caribou rectangle", "note": "The central mark reuses the Forest Service evergreen emblem also present on S48-O01. Caribou follows the user's identification; the blurred source does not independently establish species or fine antler anatomy."},
+    {"id": "S56-O23", "label": "Emergency Service / Expo 86 — shield", "family": "expo-emergency-service", "note": "EMERGENCY corrects the atlas's mistaken CRIME PREVENTION caption. SERVICE follows the user's reading of the short second line and remains provisional at 75 × 57 source pixels."},
+    {"id": "S56-O47", "label": "British Columbia / Police College — blue roundel", "family": "justice-institute-police-college-roundel", "note": "The atlas read the lower caption as TRAFFIC OFFICERS and filed it with Highways and Motor Vehicles. The photograph reads british columbia / police college in lower case; the BC Police College became part of the Justice Institute of British Columbia (now its Police Academy)."},
+    {"id": "S56-O48", "label": "Simon Fraser University / Security Services — fan", "family": "sfu-security-fan", "note": "The atlas read this fan as British Columbia / Motor Vehicles. The photograph reads SIMON FRASER UNIVERSITY over SECURITY SERVICES, about the university's arms."},
+    {"id": "S56-O59", "label": "Campus Security / University of Victoria — shield", "family": "uvic-campus-security", "note": "The atlas filed this patch under UBC and read UNIVERSITY OF / BRITISH COLUMBIA. The shield is the University of Victoria's (three martlets over an open book), with UNIVERSITY OF VICTORIA under it and SERVICES across the bottom."}
   ],
   "replace": [
     {
@@ -175,6 +180,83 @@
       "preview": "supplied/ubc-patrol-shield/preview-S56-O57.webp",
       "quality": "Atlas shield with the UBC arms and a straight base",
       "limitations": "The navy field, gold edge and lettering are the atlas's reconstruction from an 80 × 65 collector-board crop. compose.mjs makes the base straight, as on the patch, and replaces the simplified centre with the University of British Columbia's arms (Wikimedia Commons, public domain, after the 1915 design in the UBC Archives), its gold matched to the patch's thread, at its own proportions. PATROL's tall condensed alphabet and the exact thread colours remain interpreted."
+    },
+    {
+      "id": "S56-O24",
+      "svg": "supplied/expo-emergency-service/composed/S56-O24.svg",
+      "preview": "supplied/expo-emergency-service/preview-S56-O24.webp",
+      "quality": "Reference-based reconstruction with the collected Expo 86 lockup",
+      "limitations": "The Security heading and shield are retained from the atlas. The Expo 86 lockup is fitted to the small reference photograph. Its exact embroidery, letter spacing and thread colours are uncertain."
+    },
+    {
+      "id": "S56-O23",
+      "svg": "supplied/expo-emergency-service/composed/S56-O23.svg",
+      "preview": "supplied/expo-emergency-service/preview-S56-O23.webp",
+      "quality": "Reconstructed captions with PofBC's collected Expo 86 vector",
+      "limitations": "The blue shield, dark edging, gold inset border and two magenta caption rows are reconstructed from a 75 × 57 collector-board crop. The stacked EXPO-over-86 lockup reuses PofBC's collected expo86-symbol.svg at its original aspect ratio, recoloured gold; the source is Mwtoews's third-party vector reconstruction, not an official historical master. The exact embroidered alphabet, thread colours, outline and second-line transcription remain unverified. See supplied/expo-emergency-service/README.md."
+    },
+    {
+      "id": "S45-O01",
+      "svg": "supplied/forest-service-map-caribou/composed/S45-O01.svg",
+      "preview": "supplied/forest-service-map-caribou/preview-S45-O01.webp",
+      "quality": "Shared Forest Service emblem with reconstructed caribou and fitted captions",
+      "limitations": "The mainland, three islands, evergreen crown and trunk use the same PofBC component outlines as S48-O01, fitted independently to S45's rectangular composition with its red-brown outlining. The right-facing animal is built from smooth closed paths with a darker body and pale neck; caribou is the user's identification. The two atlas caption rows retain their substitute outlined glyphs with adjusted fitting. The 418 × 479 source crop cannot establish exact animal anatomy, the original alphabet, physical dimensions or calibrated thread colours. No tracing or source-photo warping. See supplied/forest-service-map-caribou/README.md."
+    },
+    {
+      "id": "MC27-O01",
+      "svg": "supplied/co-compact-shields-review/MC27-O01.svg",
+      "preview": "supplied/co-compact-shields-review/preview-MC27-O01.webp",
+      "quality": "Partial source-based heading refinement",
+      "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions."
+    },
+    {
+      "id": "MC28-O01",
+      "svg": "supplied/co-compact-shields-review/MC28-O01.svg",
+      "preview": "supplied/co-compact-shields-review/preview-MC28-O01.webp",
+      "quality": "Partial source-based heading refinement",
+      "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions."
+    },
+    {
+      "id": "MC29-O01",
+      "svg": "supplied/co-compact-shields-review/MC29-O01.svg",
+      "preview": "supplied/co-compact-shields-review/preview-MC29-O01.webp",
+      "quality": "Partial source-based heading refinement",
+      "limitations": "The visible curved divider below CONSERVATION OFFICER is restored and BRITISH COLUMBIA follows an independently positioned wider, lower arc. Original glyph outlines are retained with uniform glyph scaling. Outer cut, provincial arms, upper and lower alphabets, palette and footer spacing remain interpreted and still need review. This partial correction does not authenticate historical issue artwork or manufacturing dimensions."
+    },
+    {
+      "id": "S56-O36",
+      "svg": "supplied/jibc-bridge-roundel/composed/S56-O36.svg",
+      "preview": "supplied/jibc-bridge-roundel/preview-S56-O36.webp",
+      "quality": "Atlas roundel with the supplied JIBC monogram",
+      "limitations": "The gold ring, navy disc and BRITISH COLUMBIA lettering are the atlas's reconstruction from a low-resolution collector board. JUSTICE INSTITUTE, which the atlas left out, is set over the top by compose.mjs in the same outlined face and size, mirroring BRITISH COLUMBIA. The centre is the JIBC monogram from the supplied fan-badge package, in the roundel's gold, fitted in place of the atlas's schematic bridge, at the width the photograph shows. Thread colours and fine detail are interpreted."
+    },
+    {
+      "id": "S51-O01",
+      "svg": "supplied/forest-fire-prevention-shield/composed/S51-O01.svg",
+      "preview": "supplied/forest-fire-prevention-shield/preview-S51-O01.webp",
+      "quality": "Atlas shield with a reviewed reconstruction of its inner emblem",
+      "limitations": "The shield, rims and FOREST FIRE / PREVENTION OFFICER lettering are the atlas's reconstruction. compose.mjs replaces the inner oval emblem with a hand-built reconstruction of a 674 × 676 close-up photograph (a broad, asymmetric tiered conifer in place of the shared thin historic pine, the two separator dots the atlas left out, and individually drawn BRITISH COLUMBIA / FOREST SERVICE), applies an overlap review's corrections (lower-left notch and bough, upper neck, trunk, the E S T of FOREST, dot size, and the border on its fitted ellipse), and fits it onto the atlas's oval. The close-up's oval is slightly wider than the whole badge's, likely an oblique view, so the emblem is about 5% narrower than in the close-up. Typeface, die contours and material tones remain interpretations."
+    },
+    {
+      "id": "S56-O47",
+      "svg": "supplied/bc-police-college-roundel/composed/S56-O47.svg",
+      "preview": "supplied/bc-police-college-roundel/preview-S56-O47.webp",
+      "quality": "Atlas roundel with corrected lower-case lettering",
+      "limitations": "The cream rim, navy ring, grey disc and centre figure are the atlas's reconstruction from a 60 × 57 collector-board crop; the centre remains a coarse interpretation. compose.mjs resets both captions in lower case as the photograph shows them (british columbia, police college) in Poppins SemiBold, a stand-in for the unidentified geometric face. Thread colours are interpreted."
+    },
+    {
+      "id": "S56-O48",
+      "svg": "supplied/sfu-security-fan/composed/S56-O48.svg",
+      "preview": "supplied/sfu-security-fan/preview-S56-O48.webp",
+      "quality": "Atlas fan with Simon Fraser University's arms and corrected captions",
+      "limitations": "The cream fan and navy edge are the atlas's reconstruction from a 113 × 48 collector-board crop. compose.mjs puts Simon Fraser University's full-colour arms (shield and motto scroll, from the university's May 2015 brand guidelines; copyright Simon Fraser University) in the centre, SIMON FRASER UNIVERSITY along the upper edge and SECURITY SERVICES along the lower edges in outlined Roboto Condensed Bold. The embroidered alphabet, thread colours and the arms' stitched detail are interpreted."
+    },
+    {
+      "id": "S56-O59",
+      "svg": "supplied/uvic-campus-security/composed/S56-O59.svg",
+      "preview": "supplied/uvic-campus-security/preview-S56-O59.webp",
+      "quality": "Atlas shield with the University of Victoria's arms and corrected captions",
+      "limitations": "The navy field, gold edge, CAMPUS and SECURITY are the atlas's reconstruction from a 78 × 62 collector-board crop. compose.mjs puts the University of Victoria's shield (cut from the full arms in its brand guidelines, as reproduced on the English Wikipedia; copyright the University of Victoria) in the centre, with UNIVERSITY OF VICTORIA curving under it and SERVICES across the bottom in outlined Roboto Condensed Bold. SERVICES is read from the blurred photograph. The embroidered alphabet, thread colours and the shield's stitched detail are interpreted."
     }
   ],
   "variants": [
@@ -217,9 +299,9 @@
         { "id": "FO-forest-service-reversed", "name": "White on green", "svg": "supplied/pofbc-forest-ovals/forest-service/reversed.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/reversed.webp", "atlas": [], "note": "This colourway is a generated recolour, not seen in a photograph." },
         { "id": "FO-forest-service-black-gold", "name": "Black & gold", "svg": "supplied/pofbc-forest-ovals/forest-service/black-gold.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/black-gold.webp", "atlas": [], "note": "This colourway is a generated recolour, not seen in a photograph. Its adoption date is unverified." },
         { "id": "FO-forest-service-navy-gold", "name": "Navy & gold", "svg": "supplied/pofbc-forest-ovals/forest-service/navy-gold.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/navy-gold.webp", "atlas": [], "note": "The Airtanker package's navy and gold applied to the standalone oval, a generated colourway." },
-        { "id": "FO-wildfire-management", "name": "Wildfire Management", "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.webp", "atlas": ["R21-O01"], "note": "The upper service ribbon; Forest Oval labels it a photographic approximation." },
+        { "id": "FO-wildfire-management", "name": "Wildfire Management", "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/wildfire-management.webp", "atlas": ["R21-O01"], "note": "Upper Wildfire Management ribbon and the foothill, yellow-understory and lake scene visible on R21." },
         { "id": "FO-wildfire-management-black", "name": "Wildfire Management · black", "svg": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/wildfire-management-black.webp", "atlas": ["R20-O01"] },
-        { "id": "FO-fire-control", "name": "Fire Control", "svg": "supplied/pofbc-forest-ovals/forest-service/fire-control.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/fire-control.webp", "atlas": ["R11-O01"], "note": "FIRE CONTROL set on the Wildfire Management ribbon through the engine's own service field, as on the cloth patch; the ribbon's exact proportions on that patch are unverified." },
+        { "id": "FO-fire-control", "name": "Fire Control", "svg": "supplied/pofbc-forest-ovals/forest-service/fire-control.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/fire-control.webp", "atlas": ["R11-O01"], "note": "Fire Control ribbon and the historic conifer above a yellow understory and dark water, based on R11. Ribbon proportions are approximate." },
         { "id": "FO-airtanker", "name": "Airtanker Operations", "svg": "supplied/pofbc-forest-ovals/forest-service/airtanker.svg", "preview": "supplied/pofbc-forest-ovals/forest-service/airtanker.webp", "atlas": ["R01-O01"], "note": "The Airtanker package's wings and band around the shared tree oval; its adoption date is unverified." }
       ]
     },
@@ -261,7 +343,7 @@
       "variants": [
         { "id": "FO-yellow-sky", "name": "Green", "svg": "supplied/pofbc-forest-ovals/yellow-sky/colour.svg", "preview": "supplied/pofbc-forest-ovals/yellow-sky/colour.webp", "atlas": ["S05-O01"] },
         { "id": "FO-yellow-sky-cream", "name": "Cream", "svg": "supplied/pofbc-forest-ovals/yellow-sky/cream.svg", "preview": "supplied/pofbc-forest-ovals/yellow-sky/cream.webp", "atlas": ["S54-O01"] },
-        { "id": "FO-yellow-sky-dark", "name": "Dark", "svg": "supplied/pofbc-forest-ovals/yellow-sky/dark.svg", "preview": "supplied/pofbc-forest-ovals/yellow-sky/dark.webp", "atlas": ["S04-O01"], "note": "The dark ring and pale lettering of the poster oval, recoloured from the green drawing." }
+        { "id": "FO-yellow-sky-dark", "name": "Dark", "svg": "supplied/pofbc-forest-ovals/yellow-sky/dark.svg", "preview": "supplied/pofbc-forest-ovals/yellow-sky/dark.webp", "atlas": ["S04-O01"], "note": "The dark ring, dense conifer, amber sky and horizontal bands are reconstructed from the S04 poster." }
       ]
     },
     {
@@ -272,7 +354,7 @@
       "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
       "variants": [
         { "id": "FO-green-gold", "name": "Full colour", "svg": "supplied/pofbc-forest-ovals/green-gold/colour.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/colour.webp", "atlas": ["S47-O01", "S39-O01", "S35-O01"] },
-        { "id": "FO-green-gold-light-band", "name": "Light band", "svg": "supplied/pofbc-forest-ovals/green-gold/light-band.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/light-band.webp", "atlas": ["S46-O01", "S24-O04", "S42-O01"], "note": "The light band and green lettering of the white-band oval, recoloured from the full-colour drawing." },
+        { "id": "FO-green-gold-light-band", "name": "Light band", "svg": "supplied/pofbc-forest-ovals/green-gold/light-band.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/light-band.webp", "atlas": ["S46-O01", "S24-O04", "S42-O01"], "note": "The light band, green lettering and historic foothill scene follow the S46 cloth specimen. The secondary decal and vehicle views are separate sightings." },
         { "id": "FO-green-gold-black-gold", "name": "Black & gold", "svg": "supplied/pofbc-forest-ovals/green-gold/black-gold.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/black-gold.webp", "atlas": [], "note": "This colourway is a generated recolour, not seen in a photograph." },
         { "id": "FO-green-gold-black", "name": "Black & white", "svg": "supplied/pofbc-forest-ovals/green-gold/black.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/black.webp", "atlas": [], "note": "This colourway is a generated recolour, not seen in a photograph." }
       ]
