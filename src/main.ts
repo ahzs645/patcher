@@ -909,7 +909,7 @@ function showLibraryOrg(orgId: string) {
     const b = document.createElement('button');
     b.className = 'sample';
     const variants = variantsOf(p);
-    b.title = `${cardLabel(p)} (${p.medium}${variants ? `, ${variants.members.length} variants` : ''})`;
+    b.title = `${cardLabel(p)} (${[p.medium, p.finish].filter(Boolean).join(' · ')}${variants ? `, ${variants.members.length} variants` : ''})`;
     b.dataset.src = LIBRARY_SOURCE + p.id;
     b.classList.toggle('on', !!current && cardOf(current).id === p.id);
     const img = document.createElement('img');

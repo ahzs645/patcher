@@ -90,7 +90,6 @@ async function main() {
     if (org.id === SHARED || org.id === 'supplied') throw new Error(`orgs.json: "${org.id}" is reserved for library/${org.id}/`);
   }
   const collections = taxonomy.collections ?? [{ id: 'patches', name: 'Patches' }];
-  const collectionOf = (design) => collections.find((c) => c.medium?.includes(design.medium)) ?? collections[0];
   const excludedIds = new Map((taxonomy.exclude ?? []).flatMap((rule) => rule.ids.map((id) => [id, rule.reason])));
   const known = new Set(index.designs.map((d) => d.id));
   // Drawings supplied to replace an atlas reconstruction (library/supplied/), by atlas id.
@@ -98,6 +97,8 @@ async function main() {
     if (!known.has(r.id)) throw new Error(`orgs.json replaces ${r.id}, which isn't in the snapshot`);
     return [r.id, r];
   }));
+  const mediumOf = (design) => replacements.get(design.id)?.medium ?? design.medium;
+  const collectionOf = (design) => collections.find((c) => c.medium?.includes(mediumOf(design))) ?? collections[0];
   for (const id of excludedIds.keys()) if (!known.has(id)) throw new Error(`orgs.json excludes ${id}, which isn't in the snapshot`);
   // Designs the atlas labelled wrongly or vaguely, given a label of their own (orgs.json "relabel"),
   // with a note on why that joins their limitations.
@@ -209,7 +210,8 @@ async function main() {
       id: d.id,
       label: relabels.get(d.id)?.label ?? (group.length > 1 ? labelFor(group) : d.label),
       collection: collectionOf(d).id,
-      medium: d.medium,
+      medium: mediumOf(d),
+      ...(replacement?.finish ? { finish: replacement.finish } : {}),
       quality: replacement?.quality ?? d.quality,
       family: d.family,
       affiliation: d.affiliation,

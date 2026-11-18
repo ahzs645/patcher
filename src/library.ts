@@ -27,6 +27,7 @@ export interface LibraryPatch {
   label: string;
   collection: string;
   medium: string;
+  finish?: string;
   quality: string;
   family: string;
   /** The atlas's own coarse affiliation, kept for reference. */

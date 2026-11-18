@@ -20,8 +20,8 @@ The **Patch and badge library** groups designs from the BC Forestry Patch Atlas 
 Choose a collection, then an organization such as BC Forest Service, BC Parks or BC Sheriff Service.
 The patch collection has 126 cards covering 154 designs and variants. Related designs share a card.
 For example, the Forest Service and Wildfire Service ovals use PofBC's Forest Oval artwork with a
-switch for their colourways. The badge collection has 14 cards covering 13 metal badges and one
-leather badge. Opening a badge in Patcher previews it as embroidery.
+switch for their colourways. The badge collection has 14 cards covering 14 metal badges, including the copper-toned
+Junior Forest Warden shield. Opening a badge in Patcher previews it as embroidery.
 `?patch=<id>` opens one directly (e.g. `?patch=S25-O01`), and an atlas id that was merged or replaced opens
 the patch that took its place. [`library/README.md`](library/README.md) says where the patches come
 from, how they are grouped, how repeated crests and outlines are stored once (29 MB of drawings in

@@ -81,7 +81,7 @@ A stored `<org>/<id>.svg` is not the whole drawing on its own, so don't serve it
 
 `orgs.json` has two more lists before the organizations:
 
-- `collections`: **patches**, and **badges** (metal and leather, by medium). Both appear in the collection picker.
+- `collections`: **patches**, and **badges** (classified by medium). Both appear in the collection picker.
   A direct link such as `?patch=S02-O01` opens the design and selects its collection and organization.
 - `exclude`: atlas designs to leave out, by id, with a reason. An organization can also carry
   `"exclude": "<reason>"`, which leaves out everything filed under it (Province of British Columbia,
@@ -107,6 +107,7 @@ preview, quality line and limitations:
 
 | Design | Drawing |
 |---|---|
+| S01-O01 Junior Forest Warden | `supplied/junior-forest-warden/` corrects the material to metal and models the warm copper finish from source photograph S01. The alloy is unverified. |
 | S25-O01 Parks Branch elk roundel | `supplied/bc-parks-branch-elk-roundel/`: a supplied vector package, used whole |
 | S31-O01 Recreation and Conservation / Parks | `supplied/bc-parks-recreation-conservation/`: a supplied vector package, used whole |
 | S30-O04, S27-O04 scenic arch, Parks and Parks · Ranger | `supplied/bc-parks-scenic-arch/`: the atlas arch and lettering with a supplied landscape in the window (`compose.mjs`) |

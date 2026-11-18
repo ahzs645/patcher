@@ -2,7 +2,7 @@
  "version": 3,
  "source": {
   "name": "BC Forestry Patch Atlas",
-  "driveId": "1FttYbiCfmrQW4TbvcDD7lpVG9Y-gRzs4",
+  "driveId": null,
   "snapshotSha256": "02f524d650e28b12a9600bfcd220e492d0fcb2b7cdce039d97e6655ab231c563",
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28901607,
-  "storedBytes": 8332388,
+  "sourceBytes": 28902125,
+  "storedBytes": 8332906,
   "sharedBlocks": 60,
   "sharedPaths": 294
  },
@@ -32,7 +32,7 @@
   {
    "id": "badges",
    "name": "Badges",
-   "description": "Metal and leather badges.",
+   "description": "Badges by organization.",
    "hidden": false
   }
  ],
@@ -1909,14 +1909,15 @@
      "id": "S01-O01",
      "label": "Junior Forest Warden / Canadian Forestry Assn.",
      "collection": "badges",
-     "medium": "Leather badge",
+     "medium": "Metal badge",
+     "finish": "Worn copper tone",
      "quality": "Clean vector reconstruction",
      "family": "junior-warden",
      "affiliation": "Canadian Forestry Association",
      "svg": "canadian-forestry-association/S01-O01.svg",
      "preview": "canadian-forestry-association/previews/S01-O01.webp",
-     "sha256": "ba3b0714455cef51124813dafe88fc73f7c8f65b2c1dbf3a9093d0a86f8748bb",
-     "bytes": 38420,
+     "sha256": "b66e3860eb71a91da9c0607cbf5e457e16658d20f99b7eec035c496c4b93d7d7",
+     "bytes": 38938,
      "sourceUrl": "https://drive.google.com/file/d/1INS_YP_UZWb3HuuJuolLxhmbafQ2Fo_W/view",
      "sightings": [
       {
@@ -1925,7 +1926,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Clean designed reconstruction of the photographed badge. Smooth geometry and outlined type replace all image-derived contours. Relief, hammered grain, ageing, reflections and display stands are omitted. Exact original typeface, die engraving and material tones cannot be authenticated; the few silver/bronze fills are a material interpretation. The embossed maple leaf and condensed lettering are interpreted as clean forms; leather grain is deliberately absent.",
+     "limitations": "The photograph shows a warm copper-toned metal shield, a rim with two highlights, and raised outlines around the lettering and maple leaf. Wear and colour are interpreted from one photograph. Alloy, plating and relief depth are unverified.",
+     "replaced": {
+      "svg": "supplied/junior-forest-warden/S01-O01.svg",
+      "atlasSha256": "ba3b0714455cef51124813dafe88fc73f7c8f65b2c1dbf3a9093d0a86f8748bb"
+     },
      "blocks": [],
      "bundles": []
     }
