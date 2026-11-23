@@ -7,20 +7,20 @@
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
  "summary": {
-  "designs": 168,
+  "designs": 163,
   "byCollection": {
-   "patches": 154,
+   "patches": 149,
    "badges": 14
   },
-  "excluded": 108,
+  "excluded": 111,
   "merged": 5,
-  "absorbed": 27,
+  "absorbed": 24,
   "orgs": 23,
   "unsorted": 0,
-  "sourceBytes": 28990899,
-  "storedBytes": 8471928,
-  "sharedBlocks": 56,
-  "sharedPaths": 331
+  "sourceBytes": 28842707,
+  "storedBytes": 8385090,
+  "sharedBlocks": 53,
+  "sharedPaths": 301
  },
  "collections": [
   {
@@ -100,19 +100,13 @@
     "id": "block-16bffd9b32",
     "file": "shared/block-16bffd9b32.svg",
     "bytes": 3384,
-    "usedBy": 4
+    "usedBy": 2
    },
    {
     "id": "block-228c4ab97f",
     "file": "shared/block-228c4ab97f.svg",
     "bytes": 3141,
     "usedBy": 5
-   },
-   {
-    "id": "block-2bc66a6555",
-    "file": "shared/block-2bc66a6555.svg",
-    "bytes": 19174,
-    "usedBy": 2
    },
    {
     "id": "block-3516b005e5",
@@ -142,12 +136,6 @@
     "id": "block-7bc2c318b5",
     "file": "shared/block-7bc2c318b5.svg",
     "bytes": 3889,
-    "usedBy": 4
-   },
-   {
-    "id": "block-7d4447618d",
-    "file": "shared/block-7d4447618d.svg",
-    "bytes": 3921,
     "usedBy": 2
    },
    {
@@ -197,12 +185,6 @@
     "file": "shared/block-dc1347536c.svg",
     "bytes": 5442,
     "usedBy": 5
-   },
-   {
-    "id": "block-e87223c282",
-    "file": "shared/block-e87223c282.svg",
-    "bytes": 3497,
-    "usedBy": 2
    },
    {
     "id": "block-fc0df7b2a8",
@@ -488,13 +470,6 @@
     "usedBy": 2
    },
    {
-    "name": "paths-variants-forest-service-yellow-sky",
-    "file": "shared/paths-variants-forest-service-yellow-sky.json",
-    "bytes": 4628,
-    "paths": 30,
-    "usedBy": 2
-   },
-   {
     "name": "paths-variants-forest-shoulder-emblem",
     "file": "shared/paths-variants-forest-shoulder-emblem.json",
     "bytes": 3860,
@@ -531,7 +506,7 @@
    "sector": "forests",
    "description": "The Forest Service and the Ministry of Forests: tree ovals, shoulder patches, metal badges, fire-control and prevention marks.",
    "counts": {
-    "patches": 34,
+    "patches": 29,
     "badges": 4
    },
    "patches": [
@@ -1068,64 +1043,6 @@
      "variant": "Full colour",
      "blocks": [
       "block-16bffd9b32",
-      "block-2bc66a6555",
-      "block-7bc2c318b5"
-     ],
-     "bundles": []
-    },
-    {
-     "id": "FO-green-gold-black",
-     "label": "Forest Service / British Columbia — green and gold oval · Black & white",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "PofBC reconstruction",
-     "family": "forest-tree-green",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/FO-green-gold-black.svg",
-     "preview": "bc-forest-service/previews/FO-green-gold-black.webp",
-     "sha256": "d31e5f8416f5918032e6b20772e25d65c2d8caac6764a68990f588411db25e53",
-     "bytes": 28079,
-     "sourceUrl": null,
-     "sightings": [],
-     "merged": [],
-     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. This colourway is a generated recolour, not seen in a photograph.",
-     "supplied": {
-      "svg": "supplied/pofbc-forest-ovals/green-gold/black.svg"
-     },
-     "absorbs": [],
-     "group": "forest-service-green-gold",
-     "variant": "Black & white",
-     "blocks": [
-      "block-16bffd9b32",
-      "block-7bc2c318b5"
-     ],
-     "bundles": []
-    },
-    {
-     "id": "FO-green-gold-black-gold",
-     "label": "Forest Service / British Columbia — green and gold oval · Black & gold",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "PofBC reconstruction",
-     "family": "forest-tree-green",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/FO-green-gold-black-gold.svg",
-     "preview": "bc-forest-service/previews/FO-green-gold-black-gold.webp",
-     "sha256": "9bd94b549db613d8336e1daf59950f310f64d847c60a283046f6c96af83a6164",
-     "bytes": 28079,
-     "sourceUrl": null,
-     "sightings": [],
-     "merged": [],
-     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. This colourway is a generated recolour, not seen in a photograph.",
-     "supplied": {
-      "svg": "supplied/pofbc-forest-ovals/green-gold/black-gold.svg"
-     },
-     "absorbs": [],
-     "group": "forest-service-green-gold",
-     "variant": "Black & gold",
-     "blocks": [
-      "block-16bffd9b32",
-      "block-2bc66a6555",
       "block-7bc2c318b5"
      ],
      "bundles": []
@@ -1486,112 +1403,6 @@
       "paths-7cbd77ceaf",
       "paths-variants-forest-service-oval"
      ]
-    },
-    {
-     "id": "FO-yellow-sky",
-     "label": "Forest Service / British Columbia — yellow-sky oval · Green",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "PofBC reconstruction",
-     "family": "tree-poster-green",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/FO-yellow-sky.svg",
-     "preview": "bc-forest-service/previews/FO-yellow-sky.webp",
-     "sha256": "9106a425b2a103bd0e0ae2ab2ec199d5795bcb986ff5a1fbe7e23ef4cc38c5e8",
-     "bytes": 41280,
-     "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view",
-     "sightings": [
-      {
-       "id": "S05-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1ee0wDpU4wk-0a7PTeSXcPHH9ZniuB6ad/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
-     "supplied": {
-      "svg": "supplied/pofbc-forest-ovals/yellow-sky/colour.svg"
-     },
-     "absorbs": [
-      "S05-O01"
-     ],
-     "group": "forest-service-yellow-sky",
-     "variant": "Green",
-     "blocks": [
-      "block-7d4447618d",
-      "block-e87223c282"
-     ],
-     "bundles": [
-      "paths-variants-forest-service-yellow-sky"
-     ]
-    },
-    {
-     "id": "FO-yellow-sky-cream",
-     "label": "Forest Service / British Columbia — yellow-sky oval · Cream",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "PofBC reconstruction",
-     "family": "tree-poster-cream",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/FO-yellow-sky-cream.svg",
-     "preview": "bc-forest-service/previews/FO-yellow-sky-cream.webp",
-     "sha256": "808463db540331cd37eff73844f6034a1b3a16c4d616f39fb1538fefcf187f19",
-     "bytes": 41280,
-     "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view",
-     "sightings": [
-      {
-       "id": "S54-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1ZWqXpHDedzqd2chZtdvHt5UYlju8GZzH/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
-     "supplied": {
-      "svg": "supplied/pofbc-forest-ovals/yellow-sky/cream.svg"
-     },
-     "absorbs": [
-      "S54-O01"
-     ],
-     "group": "forest-service-yellow-sky",
-     "variant": "Cream",
-     "blocks": [
-      "block-7d4447618d",
-      "block-e87223c282"
-     ],
-     "bundles": [
-      "paths-variants-forest-service-yellow-sky"
-     ]
-    },
-    {
-     "id": "FO-yellow-sky-dark",
-     "label": "Forest Service / British Columbia — yellow-sky oval · Dark",
-     "collection": "patches",
-     "medium": "Printed emblem",
-     "quality": "PofBC reconstruction",
-     "family": "tree-poster-black",
-     "affiliation": "Forestry",
-     "svg": "bc-forest-service/FO-yellow-sky-dark.svg",
-     "preview": "bc-forest-service/previews/FO-yellow-sky-dark.webp",
-     "sha256": "a6efe5811b1d3d75222f41e21222692eb899c79607c7d5017007952d802d606e",
-     "bytes": 9474,
-     "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view",
-     "sightings": [
-      {
-       "id": "S04-O01",
-       "sourceUrl": "https://drive.google.com/file/d/1UvMWn8c55A9BkUhXxEpD4N9Uo0iFvTH_/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted. The dark ring, dense conifer, amber sky and horizontal bands are reconstructed from the S04 poster.",
-     "supplied": {
-      "svg": "supplied/pofbc-forest-ovals/yellow-sky/dark.svg"
-     },
-     "absorbs": [
-      "S04-O01"
-     ],
-     "group": "forest-service-yellow-sky",
-     "variant": "Dark",
-     "blocks": [],
-     "bundles": []
     },
     {
      "id": "S02-O01",
@@ -6596,11 +6407,25 @@
    "reason": "A branch's digital lockup, not a patch"
   },
   {
+   "id": "S04-O01",
+   "label": "Forest Service / British Columbia — poster oval",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "reason": "The yellow-sky Forest Service oval, printed on Forest Service posters, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, yellow-sky oval)"
+  },
+  {
    "id": "S04-O02",
    "label": "1966 / 1967 centennial symbol",
    "medium": "Printed emblem",
    "org": "province-of-bc",
    "reason": "The Province's corporate identity, not patches"
+  },
+  {
+   "id": "S05-O01",
+   "label": "Forest Service / British Columbia — green poster oval",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "reason": "The yellow-sky Forest Service oval, printed on Forest Service posters, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, yellow-sky oval)"
   },
   {
    "id": "S09-O01",
@@ -6685,6 +6510,13 @@
    "medium": "Printed emblem",
    "org": "bc-forest-service",
    "reason": "A decal, prevention card or printed emblem, not a patch"
+  },
+  {
+   "id": "S54-O01",
+   "label": "Forest Service / BC — cream-band poster oval",
+   "medium": "Printed emblem",
+   "org": "bc-forest-service",
+   "reason": "The yellow-sky Forest Service oval, printed on Forest Service posters, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, yellow-sky oval)"
   },
   {
    "id": "S55-O01",
@@ -6926,20 +6758,6 @@
    "into": "FO-forests"
   },
   {
-   "id": "S04-O01",
-   "label": "Forest Service / British Columbia — poster oval",
-   "medium": "Printed emblem",
-   "org": "bc-forest-service",
-   "into": "FO-yellow-sky-dark"
-  },
-  {
-   "id": "S05-O01",
-   "label": "Forest Service / British Columbia — green poster oval",
-   "medium": "Printed emblem",
-   "org": "bc-forest-service",
-   "into": "FO-yellow-sky"
-  },
-  {
    "id": "S24-O04",
    "label": "Forest Service / British Columbia — light-band printed oval",
    "medium": "Decal",
@@ -6994,13 +6812,6 @@
    "medium": "Cloth patch",
    "org": "bc-forest-service",
    "into": "FO-green-gold"
-  },
-  {
-   "id": "S54-O01",
-   "label": "Forest Service / BC — cream-band poster oval",
-   "medium": "Printed emblem",
-   "org": "bc-forest-service",
-   "into": "FO-yellow-sky-cream"
   },
   {
    "id": "S58-O05",
@@ -7156,24 +6967,6 @@
    ]
   },
   {
-   "id": "forest-service-yellow-sky",
-   "label": "Forest Service / British Columbia — yellow-sky oval",
-   "members": [
-    {
-     "id": "FO-yellow-sky",
-     "name": "Green"
-    },
-    {
-     "id": "FO-yellow-sky-cream",
-     "name": "Cream"
-    },
-    {
-     "id": "FO-yellow-sky-dark",
-     "name": "Dark"
-    }
-   ]
-  },
-  {
    "id": "forest-service-green-gold",
    "label": "Forest Service / British Columbia — green and gold oval",
    "members": [
@@ -7184,14 +6977,6 @@
     {
      "id": "FO-green-gold-light-band",
      "name": "Light band"
-    },
-    {
-     "id": "FO-green-gold-black-gold",
-     "name": "Black & gold"
-    },
-    {
-     "id": "FO-green-gold-black",
-     "name": "Black & white"
     }
    ]
   },

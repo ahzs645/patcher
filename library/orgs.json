@@ -11,6 +11,7 @@
     { "reason": "A printed seal, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, Lands Department)", "ids": ["S10-O01"] },
     { "reason": "The BC Hydro corporate logo, not a patch", "ids": ["P11-O01", "P11-O02", "P11-O03", "P11-O04", "P11-O05", "P11-O06", "P11-O07", "P11-O08"] },
     { "reason": "A printed mark on a spoon handle, not a patch; the same emblem is the Forest Service evergreen emblem, drawn as the cloth square S48-O01 and kept as a logo in PofBC's Internal Logos", "ids": ["S24-O01"] },
+    { "reason": "The yellow-sky Forest Service oval, printed on Forest Service posters, not a patch; kept as a logo in PofBC's Internal Logos (Forest Service, yellow-sky oval)", "ids": ["S04-O01", "S05-O01", "S54-O01"] },
     { "reason": "Too little survives to draw: a blurred windscreen emblem and a lower-left fragment of an arch, neither identifiable", "ids": ["S42-O02", "S56-O11"] }
   ],
   "relabel": [
@@ -359,18 +360,6 @@
       ]
     },
     {
-      "id": "forest-service-yellow-sky",
-      "org": "bc-forest-service",
-      "label": "Forest Service / British Columbia — yellow-sky oval",
-      "quality": "PofBC reconstruction",
-      "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
-      "variants": [
-        { "id": "FO-yellow-sky", "name": "Green", "svg": "supplied/pofbc-forest-ovals/yellow-sky/colour.svg", "preview": "supplied/pofbc-forest-ovals/yellow-sky/colour.webp", "atlas": ["S05-O01"] },
-        { "id": "FO-yellow-sky-cream", "name": "Cream", "svg": "supplied/pofbc-forest-ovals/yellow-sky/cream.svg", "preview": "supplied/pofbc-forest-ovals/yellow-sky/cream.webp", "atlas": ["S54-O01"] },
-        { "id": "FO-yellow-sky-dark", "name": "Dark", "svg": "supplied/pofbc-forest-ovals/yellow-sky/dark.svg", "preview": "supplied/pofbc-forest-ovals/yellow-sky/dark.webp", "atlas": ["S04-O01"], "note": "The dark ring, dense conifer, amber sky and horizontal bands are reconstructed from the S04 poster." }
-      ]
-    },
-    {
       "id": "forest-service-green-gold",
       "org": "bc-forest-service",
       "label": "Forest Service / British Columbia — green and gold oval",
@@ -378,9 +367,7 @@
       "limitations": "PofBC's reconstruction of this oval (Internal Logos → Forests), copied or recoloured by drawings.mjs. A reference-based reconstruction, not authenticated issue artwork; colours are approximated from photographs and the typeface is interpreted.",
       "variants": [
         { "id": "FO-green-gold", "name": "Full colour", "svg": "supplied/pofbc-forest-ovals/green-gold/colour.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/colour.webp", "atlas": ["S47-O01", "S39-O01", "S35-O01"] },
-        { "id": "FO-green-gold-light-band", "name": "Light band", "svg": "supplied/pofbc-forest-ovals/green-gold/light-band.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/light-band.webp", "atlas": ["S46-O01", "S24-O04", "S42-O01"], "note": "The light band, green lettering and historic foothill scene follow the S46 cloth specimen. The secondary decal and vehicle views are separate sightings." },
-        { "id": "FO-green-gold-black-gold", "name": "Black & gold", "svg": "supplied/pofbc-forest-ovals/green-gold/black-gold.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/black-gold.webp", "atlas": [], "note": "This colourway is a generated recolour, not seen in a photograph." },
-        { "id": "FO-green-gold-black", "name": "Black & white", "svg": "supplied/pofbc-forest-ovals/green-gold/black.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/black.webp", "atlas": [], "note": "This colourway is a generated recolour, not seen in a photograph." }
+        { "id": "FO-green-gold-light-band", "name": "Light band", "svg": "supplied/pofbc-forest-ovals/green-gold/light-band.svg", "preview": "supplied/pofbc-forest-ovals/green-gold/light-band.webp", "atlas": ["S46-O01", "S24-O04", "S42-O01"], "note": "The light band, green lettering and historic foothill scene follow the S46 cloth specimen. The secondary decal and vehicle views are separate sightings." }
       ]
     },
     {

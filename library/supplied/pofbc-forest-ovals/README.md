@@ -9,8 +9,7 @@ reconstructions of the same ovals.
 | `forest-service/` | The Forest Service tree oval: PofBC's colourways, Wildfire Management (colour and black), Fire Control, and the Airtanker Operations package | `capture.mjs` |
 | `forests/` | British Columbia / Forests wildlife oval, and its Wildfire Service edition | `capture.mjs` |
 | `long-ministry/` | The long ministry-name wildlife oval, its Wildfire Service edition, and Ministry of Forests | `capture.mjs` |
-| `yellow-sky/` | PofBC's yellow-sky oval: green, cream, and a dark recolour | `drawings.mjs` |
-| `green-gold/` | PofBC's green-and-gold oval: full colour, PofBC's black recolours, and a light-band recolour | `drawings.mjs` |
+| `green-gold/` | PofBC's green-and-gold oval: full colour and a light-band recolour | `drawings.mjs` |
 
 To rebuild, from the Patcher root:
 
@@ -33,4 +32,8 @@ Each `.webp` is its SVG rendered in Chromium, cropped to the drawing, and scaled
 These are reference-based reconstructions, not authenticated issue artwork. Colourways with no atlas entry
 are generated recolours; `orgs.json` says which.
 
-The light-band, Fire Control and Wildfire Management colour specimens use the historic conifer and foothills from the atlas study `dist/assets/editable/F01-tree-light.svg`. The dark poster oval has its own conifer and horizon drawn from S04. The specimen scene step preserves the surrounding lettering and tabs.
+The light-band, Fire Control and Wildfire Management colour specimens use the historic conifer and foothills from the atlas study `dist/assets/editable/F01-tree-light.svg`. The specimen scene step preserves the surrounding lettering and tabs.
+
+PofBC's yellow-sky oval was printed on Forest Service posters, not sewn, so it is no longer copied here;
+its atlas photographs (S04, S05, S54) are excluded in `orgs.json`, and PofBC keeps the oval in Internal Logos.
+The green-and-gold oval's two generated black recolours, which no photograph shows, are dropped.

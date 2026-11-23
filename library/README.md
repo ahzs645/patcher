@@ -185,14 +185,15 @@ The Forest Service and Wildfire Service ovals are consolidated this way, into Po
 | Forest Service tree oval | Full colour, Black & white, Forest green, White on green, Black & gold, Navy & gold, Wildfire Management (colour and black), Fire Control, Airtanker Operations | R22, R12, R21, R20, R11, R01 |
 | British Columbia / Forests wildlife oval | Full colour, Black & white, Forest green, White on green, Wildfire Service | R15, R24, R13, R14, R23 |
 | Forests, Lands and Natural Resource Operations wildlife oval | Full colour, Black & white, Forest green, White on green, Wildfire Service, Ministry of Forests | R16, R17, R18, S43, S58-O05 |
-| Forest Service yellow-sky oval | Green, Cream, Dark | S05, S54, S04 |
-| Forest Service green and gold oval | Full colour, Light band, Black & gold, Black & white | S47, S39, S35, S46, S24-O04, S42 |
+| Forest Service green and gold oval | Full colour, Light band | S47, S39, S35, S46, S24-O04, S42 |
 
 The first three come from the Forest Oval engine PofBC vendors. `capture.mjs` renders each variant in a
 browser from a PofBC dev server, as PofBC's Internal Logos view does, and outlines every letter from the
 font the page used, so the files need no fonts. It also sets two wordings the presets lack, FIRE CONTROL and
-Ministry of Forests, through the engine's own content fields. `drawings.mjs` copies the yellow-sky and
-green-and-gold drawings from PofBC and makes the recolours. After running either, re-import.
+Ministry of Forests, through the engine's own content fields. `drawings.mjs` copies the
+green-and-gold drawing from PofBC and makes its light-band recolour. After running either, re-import.
+The yellow-sky oval, printed on posters rather than sewn, is excluded (S04, S05, S54) and kept only in
+PofBC's Internal Logos.
 
 The Forest Service / British Columbia / Parks tree oval is consolidated the same way, into two supplied vector
 packages kept in `supplied/forest-service-parks-oval/` (see its README): Cream backing and Without backing

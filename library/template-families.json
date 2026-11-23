@@ -32,19 +32,10 @@
       ]
     },
     {
-      "id": "forest-service-yellow-sky",
-      "label": "Forest Service yellow-sky oval",
-      "description": "Yellow-sky oval in three recorded or reconstructed colour treatments.",
-      "basis": "Existing variant group; printed-source media remain recorded per member.",
-      "variantGroups": [
-        "forest-service-yellow-sky"
-      ]
-    },
-    {
       "id": "forest-service-green-gold",
       "label": "Forest Service green-and-gold oval",
-      "description": "Green-and-gold oval, light-band edition and generated colourways.",
-      "basis": "Existing variant group; generated colourways remain interpretations, not newly documented specimens.",
+      "description": "Green-and-gold oval and its light-band edition.",
+      "basis": "Existing variant group; the light-band colourway is generated after photographed specimens, not a newly documented one.",
       "variantGroups": [
         "forest-service-green-gold"
       ]
