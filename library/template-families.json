@@ -261,13 +261,14 @@
       ]
     },
     {
-      "id": "bcgs-semicircle",
-      "label": "B.C.G.S. semicircle",
-      "description": "Gold-lettered semicircular Alouette River Unit and Camps designs.",
-      "basis": "Reviewed gold arch silhouettes and title arrangement. The initials remain unresolved in the source catalogue.",
+      "id": "gold-arch-semicircle",
+      "label": "Gold-edged semicircle",
+      "description": "Dark semicircles with a gold edge and gold lettering: the B.C.G.S. Alouette River Unit and Camps arches and the BC Ferries arch.",
+      "basis": "Constructed semicircle recipe in supplied/bc-parks-semicircles/, shared with the Parks Branch semicircle; each keeps its own field colour, lettering and caption arrangement. The B.C.G.S. initials remain unresolved in the source catalogue.",
       "members": [
         "S56-O33",
-        "S56-O34"
+        "S56-O34",
+        "S56-O37"
       ]
     },
     {

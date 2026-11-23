@@ -128,7 +128,7 @@ preview, quality line and limitations:
 | S31-O01 Recreation and Conservation / Parks | `supplied/bc-parks-recreation-conservation/`: a supplied vector package, used whole |
 | S30-O04, S27-O04 scenic arch, Parks and Parks · Ranger | `supplied/bc-parks-scenic-arch/`: the atlas arch and lettering with a supplied landscape in the window (`compose.mjs`) |
 | S30-O01 BC Parks flag, rounded square | `supplied/bc-parks-flag-badge/`: PofBC's flag badge, whole (`compose.mjs`) |
-| S29-O01, S29-O02, S29-O04 Parks Branch semicircles; S30-O02 BC Parks flag semicircle | `supplied/bc-parks-semicircles/`: constructed geometry (a true semicircle, its field the exact inset, concentric arc lettering), with the atlas's letters or PofBC's flag badge (`compose.mjs`) |
+| S29-O01, S29-O02, S29-O04 Parks Branch semicircles; S30-O02 BC Parks flag semicircle; S56-O33, S56-O34 B.C.G.S. and S56-O37 BC Ferries gold arches | `supplied/bc-parks-semicircles/`: constructed geometry (a true semicircle, its field the exact inset, concentric arc lettering), with the atlas's letters or PofBC's flag badge (`compose.mjs`) |
 | S56-O21 B.C. Hydro Security shield | `supplied/bc-hydro-security/`: the atlas shield with PofBC's BC Hydro symbol in place of its plain H (`compose.mjs`) |
 | MC30-O01 Conservation Officer / BC Environment | `supplied/bc-co-environment-flag/`: the atlas shield with the waving flag of PofBC's BC Parks flag badge beside BC (`compose.mjs`) |
 | MC09-O02 Wildlife Protection / Division | `supplied/moosecop-division-flash/`: the regular felt flash's rocker merged with a box, the outline their exact union, with the atlas's lettering (`compose.mjs`) |

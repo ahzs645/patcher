@@ -66,8 +66,8 @@ function steps(glyphs, spaceAfter) {
 function captionGlyphs(svg, name) {
   const group = new RegExp(`<g data-caption="${name}">([\\s\\S]*?)</g>`).exec(svg);
   if (!group) throw new Error(`no caption "${name}"`);
-  const glyphs = [...group[1].matchAll(/<path d="([^"]*)" fill="([^"]*)" transform="translate\(([-\d.]+) ([-\d.]+)\) rotate\([-\d.]+\) scale\(([-\d.]+) [-\d.]+\) translate\(([-\d.]+) 0\)"/g)]
-    .map((m) => ({ d: m[1], fill: m[2], x: +m[3], y: +m[4], s: +m[5], adv: -2 * +m[6] }));
+  const glyphs = [...group[1].matchAll(/<path d="([^"]*)" fill="([^"]*)" transform="translate\(([-\d.]+) ([-\d.]+)\) rotate\(([-\d.]+)\) scale\(([-\d.]+) [-\d.]+\) translate\(([-\d.]+) 0\)"/g)]
+    .map((m) => ({ d: m[1], fill: m[2], x: +m[3], y: +m[4], rotate: +m[5], s: +m[6], adv: -2 * +m[7] }));
   // The capitals' height in font units gives the em; a word space is 0.278 em in these faces.
   const em = glyphs[0].adv > 1000 ? 2048 : 1000;
   for (const g of glyphs) g.space = 0.278 * em;
@@ -76,15 +76,54 @@ function captionGlyphs(svg, name) {
   const spaceAfter = new Set();
   let i = -1;
   for (const ch of name) { if (ch === ' ') spaceAfter.add(i); else i += 1; }
-  return { glyphs, spaceAfter, capHeight: (em === 2048 ? 1456 : 729) * glyphs[0].s };
+  const span = glyphs.at(-1).x - glyphs[0].x;
+  return { glyphs, letters, spaceAfter, span, capHeight: (em === 2048 ? 1456 : 729) * glyphs[0].s };
 }
 
-/** The upper caption on an arc concentric with the semicircle, spanning the atlas's angle. */
-function arcCaption({ glyphs, spaceAfter, capHeight }, border, atlasCentre) {
+/** A caption's letters at k times the atlas's size. */
+const scaled = (caption, k) => ({
+  ...caption,
+  glyphs: caption.glyphs.map((g) => ({ ...g, s: Number((g.s * k).toFixed(8)) })),
+  span: caption.span * k,
+  capHeight: caption.capHeight * k,
+});
+
+/**
+ * The same caption spelled anew from its own letter outlines (every letter of the new wording must
+ * occur in the old), keeping the atlas's tracking: its span is the new letters' advances plus the
+ * same even spacing between them.
+ */
+function respell(caption, text) {
+  const byLetter = new Map();
+  [...caption.glyphs.keys()].forEach((i) => byLetter.set([...caption.letters][i], caption.glyphs[i]));
+  const letters = text.replace(/ /g, '');
+  const glyphs = [...letters].map((ch) => {
+    if (!byLetter.has(ch)) throw new Error(`"${text}": no outline for ${ch}`);
+    return byLetter.get(ch);
+  });
+  const spaceAfter = new Set();
+  let i = -1;
+  for (const ch of text) { if (ch === ' ') spaceAfter.add(i); else i += 1; }
+  const before = steps(caption.glyphs, caption.spaceAfter);
+  const tracking = (caption.span - before.reduce((a, b) => a + b, 0)) / before.length;
+  const after = steps(glyphs, spaceAfter);
+  return { ...caption, glyphs, spaceAfter, span: after.reduce((a, b) => a + b, 0) + tracking * after.length };
+}
+
+/**
+ * The upper caption on an arc concentric with the semicircle, spanning the atlas's angle: measured
+ * about the atlas's centre, or, where the atlas drew a flattened arch (atlasCentre null), taken from
+ * the turn it gave its first and last letters.
+ */
+function arcCaption({ glyphs, spaceAfter, capHeight }, border, atlasCentre, halfAngle) {
   const radius = R - border - GAP - capHeight;
-  // The atlas's span, from its first and last letters about its own centre, made symmetric.
-  const angle = (g) => Math.atan2(g.x - atlasCentre.x, atlasCentre.y - g.y);
-  const half = (Math.abs(angle(glyphs[0])) + Math.abs(angle(glyphs.at(-1)))) / 2;
+  // The atlas's span, from its first and last letters, made symmetric; or one read from the photograph.
+  const angle = atlasCentre
+    ? (g) => Math.atan2(g.x - atlasCentre.x, atlasCentre.y - g.y)
+    : (g) => (g.rotate * Math.PI) / 180;
+  const half = halfAngle !== undefined
+    ? (halfAngle * Math.PI) / 180
+    : (Math.abs(angle(glyphs[0])) + Math.abs(angle(glyphs.at(-1)))) / 2;
   const gaps = steps(glyphs, spaceAfter);
   const tracking = (2 * half * radius - gaps.reduce((a, b) => a + b, 0)) / gaps.length;
   let along = -half * radius;
@@ -95,15 +134,17 @@ function arcCaption({ glyphs, spaceAfter, capHeight }, border, atlasCentre) {
   }).join('');
 }
 
-/** The lower caption on a straight baseline, centred, as wide as the atlas set it. */
-function baseCaption({ glyphs, spaceAfter }, border) {
+/**
+ * A lower caption on a straight baseline, centred, as wide as the atlas set it: GAP above the
+ * field's base, or `lift` higher for a line set above another.
+ */
+function baseCaption({ glyphs, spaceAfter, span }, border, lift = 0) {
   const gaps = steps(glyphs, spaceAfter);
-  const span = glyphs.at(-1).x - glyphs[0].x;
   const tracking = (span - gaps.reduce((a, b) => a + b, 0)) / gaps.length;
   let x = -span / 2;
   return glyphs.map((g, i) => {
     if (i > 0) x += gaps[i - 1] + tracking;
-    return letter(g, x, -(border + GAP), 0);
+    return letter(g, x, -(border + GAP + lift), 0);
   }).join('');
 }
 
@@ -164,6 +205,54 @@ for (const [id, title] of [
     'Constructed geometry: a true semicircle and its field, the exact inset by the border width. Inside it, PofBC’s BC Parks flag badge (its flag and outlined BC / Parks) in the atlas’s thread colours, at the largest size that keeps an even clearance from the field’s edge.',
     base(BORDER, { border: THREAD, field: CLOTH }) +
     `<g data-supplied="pofbc-flag-badge" transform="translate(${n(tx)} ${n(ty)}) scale(${n(scale)})">${wordmark}</g>`);
+}
+
+// The gold-edged arches from the collector board (S56): B.C.G.S. Alouette River Unit and Camps, and
+// BC Ferries. The atlas drew each freehand and flattened, a different curve each time; they take the
+// Parks Branch construction and border, in the atlas's field and gold. Atlas master: one outlined
+// path, field as its fill and the gold edge as its stroke.
+const GOLD_ARCH_BORDER = 3;
+const archColours = (svg) => {
+  const m = /<g data-component="shared-base-border"><path [^>]*fill="([^"]*)" stroke="([^"]*)"/.exec(svg);
+  if (!m) throw new Error('no gold arch border');
+  return { field: m[1], border: m[2] };
+};
+const GOLD_ARCH_DESC =
+  'Constructed geometry, shared with the Parks Branch semicircles: a true semicircle, its field the exact inset by the ' +
+  'border width, the upper wording on a concentric arc and the lower on straight baselines, each an even clearance ' +
+  'inside the field. The atlas drew this arch flatter and freehand; its letter outlines and colours are kept, with ' +
+  'caption spans and sizes checked against the photograph. The typeface and thread colours remain approximate.';
+{
+  const svg = atlasSvg('S56-O33');
+  const lower = captionGlyphs(svg, 'B.C.G.S.');
+  const upper = captionGlyphs(svg, 'UNIT');
+  // UNIT sits above B.C.G.S. by the atlas's own line spacing.
+  const leading = lower.glyphs[0].y - upper.glyphs[0].y;
+  out['S56-O33'] = document('Alouette River / Unit / B.C.G.S. — gold arch', GOLD_ARCH_DESC,
+    base(GOLD_ARCH_BORDER, archColours(svg)) +
+    `<g data-caption="ALOUETTE RIVER">${arcCaption(captionGlyphs(svg, 'ALOUETTE RIVER'), GOLD_ARCH_BORDER, null)}</g>` +
+    `<g data-caption="UNIT">${baseCaption(upper, GOLD_ARCH_BORDER, leading)}</g>` +
+    `<g data-caption="B.C.G.S.">${baseCaption(lower, GOLD_ARCH_BORDER)}</g>`);
+}
+{
+  const svg = atlasSvg('S56-O34');
+  out['S56-O34'] = document('B.C.G.S. / Camps — gold arch', GOLD_ARCH_DESC,
+    base(GOLD_ARCH_BORDER, archColours(svg)) +
+    // The atlas bunched the initials at the top (about ±22°); the photograph sets them larger, over
+    // about ±42°.
+    `<g data-caption="B.C.G.S.">${arcCaption(scaled(captionGlyphs(svg, 'B.C.G.S.'), 1.4), GOLD_ARCH_BORDER, null, 42)}</g>` +
+    `<g data-caption="CAMPS">${baseCaption(captionGlyphs(svg, 'CAMPS'), GOLD_ARCH_BORDER)}</g>`);
+}
+{
+  // The atlas read the lower line as SHERIFFS; the photograph reads FERRIES. Every letter of it is
+  // in SHERIFFS, so it is set from those outlines with the same spacing.
+  const svg = atlasSvg('S56-O37');
+  out['S56-O37'] = document('British Columbia / Ferries — gold arch', GOLD_ARCH_DESC,
+    base(GOLD_ARCH_BORDER, archColours(svg)) +
+    // The photograph runs BRITISH COLUMBIA most of the way round (about ±62°), in letters about a
+    // quarter larger than the atlas set them.
+    `<g data-caption="BRITISH COLUMBIA">${arcCaption(scaled(captionGlyphs(svg, 'BRITISH COLUMBIA'), 1.25), GOLD_ARCH_BORDER, null, 62)}</g>` +
+    `<g data-caption="FERRIES">${baseCaption(respell(captionGlyphs(svg, 'SHERIFFS'), 'FERRIES'), GOLD_ARCH_BORDER)}</g>`);
 }
 
 mkdirSync(join(HERE, 'composed'), { recursive: true });

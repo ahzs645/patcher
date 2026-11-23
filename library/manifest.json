@@ -15,10 +15,10 @@
   "excluded": 108,
   "merged": 5,
   "absorbed": 27,
-  "orgs": 22,
+  "orgs": 23,
   "unsorted": 0,
-  "sourceBytes": 28991440,
-  "storedBytes": 8472469,
+  "sourceBytes": 28990899,
+  "storedBytes": 8471928,
   "sharedBlocks": 56,
   "sharedPaths": 331
  },
@@ -4415,7 +4415,7 @@
    "sector": "justice",
    "description": "Sheriff and Deputy Sheriff shields and rockers.",
    "counts": {
-    "patches": 8,
+    "patches": 7,
     "badges": 0
    },
    "patches": [
@@ -4612,30 +4612,6 @@
      ],
      "merged": [],
      "limitations": "The geometry is standardized to its shared construction master, removing photographic perspective/crop distortion. Readable source wording and colour edition are retained. Exact embroidered alphabet, thread colour and fine heraldic detail remain unverified.",
-     "blocks": [],
-     "bundles": []
-    },
-    {
-     "id": "S56-O37",
-     "label": "British Columbia / Sheriffs — gold arch",
-     "collection": "patches",
-     "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
-     "family": "sheriffs-gold-arch",
-     "affiliation": "Other",
-     "svg": "bc-sheriff-service/S56-O37.svg",
-     "preview": "bc-sheriff-service/previews/S56-O37.webp",
-     "sha256": "b67ce75da9a5e6cc232c517aa3bcc35e3f4707ebaacd5d32b847e830783be553",
-     "bytes": 7421,
-     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
-     "sightings": [
-      {
-       "id": "S56-O37",
-       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
-      }
-     ],
-     "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted.",
      "blocks": [],
      "bundles": []
     }
@@ -4886,13 +4862,13 @@
      "label": "Alouette River / Unit / B.C.G.S. — gold arch",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed semicircle, atlas lettering",
      "family": "bcgs-alouette-river",
      "affiliation": "Other",
      "svg": "bcgs/S56-O33.svg",
      "preview": "bcgs/previews/S56-O33.webp",
-     "sha256": "46e8da540f6c9848f4024a664ed121cfb375d6a2e0e0a1a0cc3278f4a9ccbd91",
-     "bytes": 7088,
+     "sha256": "5572839461658e30572c9008fcbeeb986161c430dafd3fd7c29e6427ff1fbd7a",
+     "bytes": 6884,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -4901,7 +4877,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. Curved legend corrected from Volunteer to the visibly lettered Alouette River; transcription remains provisional. Small tan material below the bottom border is an occlusion/mounting detail, excluded from the design outline.",
+     "limitations": "The geometry is the Parks Branch semicircles' (bc-parks-semicircles/compose.mjs): a true semicircle, its field the exact inset by the border width, the upper wording on a concentric arc and the lower on straight baselines, each an even clearance inside the field. The atlas drew this arch flatter and freehand; its letter outlines and colours are kept. ALOUETTE RIVER keeps the atlas's span; UNIT sits above B.C.G.S. at the atlas's line spacing. The exact embroidered alphabet and thread colours remain unverified, from a collector-board crop about 70 × 32 pixels.",
+     "replaced": {
+      "svg": "supplied/bc-parks-semicircles/composed/S56-O33.svg",
+      "atlasSha256": "46e8da540f6c9848f4024a664ed121cfb375d6a2e0e0a1a0cc3278f4a9ccbd91"
+     },
      "blocks": [],
      "bundles": []
     },
@@ -4910,13 +4890,13 @@
      "label": "B.C.G.S. / Camps — gold arch",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Clean vector reconstruction",
+     "quality": "Constructed semicircle, atlas lettering",
      "family": "bcgs-camps",
      "affiliation": "Other",
      "svg": "bcgs/S56-O34.svg",
      "preview": "bcgs/previews/S56-O34.webp",
-     "sha256": "69dfc2d3d8c9eb9b9ac03c03372f2b0d3b820a63efb80f124b3857d8c46498ef",
-     "bytes": 4842,
+     "sha256": "4be62912231d4ba54d9a9f52a18830ee380b1cb0a720e18f0b92e9081b655c5b",
+     "bytes": 4861,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -4925,7 +4905,11 @@
       }
      ],
      "merged": [],
-     "limitations": "Low-resolution collector board: exact typefaces, calibrated colours and fine centre-art details remain interpreted. No issue size or manufacturing master is asserted. Slightly concave lower border and vertical side ends reconstructed from source; central tan mounting/occlusion detail excluded.",
+     "limitations": "The geometry is the Parks Branch semicircles' (bc-parks-semicircles/compose.mjs): a true semicircle, its field the exact inset by the border width, the upper wording on a concentric arc and the lower on straight baselines, each an even clearance inside the field. The atlas drew this arch flatter and freehand; its letter outlines and colours are kept. The atlas bunched B.C.G.S. at the top of the arc; it is set 1.4 times larger over about ±42°, as the photograph shows it. The exact embroidered alphabet and thread colours remain unverified, from a collector-board crop about 70 × 32 pixels.",
+     "replaced": {
+      "svg": "supplied/bc-parks-semicircles/composed/S56-O34.svg",
+      "atlasSha256": "69dfc2d3d8c9eb9b9ac03c03372f2b0d3b820a63efb80f124b3857d8c46498ef"
+     },
      "blocks": [],
      "bundles": []
     }
@@ -5576,6 +5560,46 @@
      ],
      "merged": [],
      "limitations": "The supplied vector geometry and original colours are preserved. The collector-board green stitched perimeter is interpreted as a smooth offset of the supplied shield. The gold supplied reference has no perimeter stroke and is available unchanged. Exact embroidery edges, calibrated thread colours and original typeface remain unverified.",
+     "blocks": [],
+     "bundles": []
+    }
+   ]
+  },
+  {
+   "id": "bc-ferries",
+   "name": "BC Ferries",
+   "sector": "crown",
+   "description": "A gold-edged arch lettered BRITISH COLUMBIA / FERRIES, which the atlas read as Sheriffs.",
+   "counts": {
+    "patches": 1,
+    "badges": 0
+   },
+   "patches": [
+    {
+     "id": "S56-O37",
+     "label": "British Columbia / Ferries — gold arch",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Constructed semicircle, atlas lettering respelled",
+     "family": "bc-ferries-gold-arch",
+     "affiliation": "Other",
+     "svg": "bc-ferries/S56-O37.svg",
+     "preview": "bc-ferries/previews/S56-O37.webp",
+     "sha256": "5585542db3c54afa05d1751366e452aff842e6eeee2583533eb832d4f03070c0",
+     "bytes": 7065,
+     "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
+     "sightings": [
+      {
+       "id": "S56-O37",
+       "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view"
+      }
+     ],
+     "merged": [],
+     "limitations": "The geometry is the Parks Branch semicircles' (bc-parks-semicircles/compose.mjs): a true semicircle, its field the exact inset by the border width, the upper wording on a concentric arc and the lower on straight baselines, each an even clearance inside the field. The atlas drew this arch flatter and freehand; its letter outlines and colours are kept. The atlas read the lower line as SHERIFFS; the photograph reads FERRIES, set from the atlas's own SHERIFFS letter outlines with the same spacing. BRITISH COLUMBIA is set about a quarter larger over about ±62°, as the photograph shows it. The exact embroidered alphabet and thread colours remain unverified, from a collector-board crop about 70 × 32 pixels. The atlas read the lower line as SHERIFFS and filed the arch with the BC Sheriff Service. The photograph reads BRITISH COLUMBIA / FERRIES.",
+     "replaced": {
+      "svg": "supplied/bc-parks-semicircles/composed/S56-O37.svg",
+      "atlasSha256": "b67ce75da9a5e6cc232c517aa3bcc35e3f4707ebaacd5d32b847e830783be553"
+     },
      "blocks": [],
      "bundles": []
     }
