@@ -142,7 +142,7 @@ preview, quality line and limitations:
 | S56-O46 Justice Institute / British Columbia fan shield | `supplied/jibc-fan-badge/`: a supplied vector package, used whole |
 | S51-O01 Forest Fire / Prevention Officer shield | `supplied/forest-fire-prevention-shield/`: the atlas shield with a reviewed reconstruction of its inner emblem (broad asymmetric conifer, separator dots, redrawn captions), the review's corrections applied (`compose.mjs`) |
 | S56-O36 Justice Institute / British Columbia roundel | `supplied/jibc-bridge-roundel/`: the atlas roundel with the fan-badge package's JIBC monogram in place of its schematic bridge, and JUSTICE INSTITUTE set over the top (`compose.mjs`) |
-| S56-O47 British Columbia / Police College roundel | `supplied/bc-police-college-roundel/`: the atlas roundel with its captions reset in lower case as the photograph reads them (`compose.mjs`) |
+| S56-O47 British Columbia / Police College roundel | `supplied/bc-police-college/`: a manual reconstruction from a supplied 500 × 666 photograph, with custom lower-case letter outlines and a two-colour centre emblem (`compose.py`, Python standard library only) |
 | S56-O48 Simon Fraser University / Security Services fan | `supplied/sfu-security-fan/`: the atlas fan with the university's supplied arms and its captions reset along the edges (`compose.mjs`) |
 | S56-O57 University / British Columbia / Patrol | `supplied/ubc-patrol-shield/`: the atlas shield with a straight base and the UBC arms from Wikimedia Commons (`compose.mjs`) |
 | S56-O59 Campus Security / University of Victoria | `supplied/uvic-campus-security/`: the atlas shield with the UVic shield and its lower captions reset (`compose.mjs`) |

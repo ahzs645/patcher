@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "canvas": {
+    "width": 500,
+    "height": 500,
+    "cx": 250,
+    "cy": 250
+  },
+  "palette": {
+    "navy": "#28316F",
+    "ivory": "#DBD9C0",
+    "disc": "#BAC0B8",
+    "lightBlue": "#8BB9C9"
+  },
+  "radii": {
+    "outer": 243,
+    "navy": 225,
+    "disc": 143
+  },
+  "referenceOffset": {
+    "x": 0,
+    "y": -83
+  },
+  "emblem": {
+    "lightBlue": "M193 205 C186 229 172 247 146 254 L146 302 C146 332 165 353 209 365 L243 337 C261 321 278 307 290 300 C284 267 268 242 245 224 C240 245 231 261 213 272 C226 271 238 281 238 292 C238 305 227 315 216 313 C204 311 198 302 198 289 L196 205 Z",
+    "navy": "M270 296 C312 293 348 326 352 364 C358 397 335 424 309 438 C302 419 291 404 273 394 C286 394 298 386 299 375 C301 363 291 354 280 353 C267 351 257 363 258 377 L264 463 L226 422 L210 419 L208 365 C207 329 233 301 270 296 Z"
+  },
+  "lettering": {
+    "upper": {
+      "text": "british columbia",
+      "xHeight": 30.5,
+      "radius": 175,
+      "tracking": 0.5,
+      "angleOffset": 0
+    },
+    "lower": {
+      "text": "police college",
+      "xHeight": 33.0,
+      "radius": 201,
+      "tracking": 3.2,
+      "angleOffset": 0
+    }
+  },
+  "provenance": {
+    "method": "Manually authored geometric rings, Bezier emblem contours and custom lowercase glyphs. No raster-to-vector tracing or font outlines.",
+    "reference": "User-supplied 500 by 666 JPEG, retaining the 615policepatches.com watermark in the reference only.",
+    "registration": "The source patch is approximately centred at 250,333. The vertical -83 offset places the emblem on a 500 by 500 drawing; rings regularize the photographed cloth outline.",
+    "limits": "Photo-derived sRGB colours and reconstructed contours/letterforms. Original artwork, font identity, issue dates, physical dimensions and embroidery specification are not established."
+  }
+}

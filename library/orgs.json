@@ -241,10 +241,10 @@
     },
     {
       "id": "S56-O47",
-      "svg": "supplied/bc-police-college-roundel/composed/S56-O47.svg",
-      "preview": "supplied/bc-police-college-roundel/preview-S56-O47.webp",
-      "quality": "Atlas roundel with corrected lower-case lettering",
-      "limitations": "The cream rim, navy ring, grey disc and centre figure are the atlas's reconstruction from a 60 × 57 collector-board crop; the centre remains a coarse interpretation. compose.mjs resets both captions in lower case as the photograph shows them (british columbia, police college) in Poppins SemiBold, a stand-in for the unidentified geometric face. Thread colours are interpreted."
+      "svg": "supplied/bc-police-college/composed/S56-O47.svg",
+      "preview": "supplied/bc-police-college/preview-S56-O47.webp",
+      "quality": "Manual vector reconstruction from a supplied Police College photograph",
+      "limitations": "Constructed concentric rings, 28 individually placed custom lower-case letter outlines and two overlapping Bézier emblem shapes follow a supplied 500 × 666 photograph of the patch. No automatic trace, embedded image or font is used. The photograph's watermark crosses part of the centre, so obscured joins are interpreted from the visible contours. Cloth distortion is regularized and the flat colours approximate photographed thread. The original alphabet, thread colours, dimensions, issue date and the emblem's meaning remain unverified. See supplied/bc-police-college/README.md."
     },
     {
       "id": "S56-O48",

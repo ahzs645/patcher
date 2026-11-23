@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="130 110 240 290" width="480" height="580" role="img" aria-labelledby="emblem-title emblem-description">
+  <title id="emblem-title">British Columbia Police College — reconstructed centre emblem</title>
+  <desc id="emblem-description">Two editable, manually authored filled paths on a transparent background. Reconstructed from the supplied patch photograph; not an authenticated original logo master. The navy shape's open counter is intentional.</desc>
+  <g id="centre-emblem" data-component="police-college-emblem" transform="translate(0 -83)">
+    <path id="emblem-light-blue" data-component="rear-light-blue-shape" fill="#8BB9C9" d="M193 205 C186 229 172 247 146 254 L146 302 C146 332 165 353 209 365 L243 337 C261 321 278 307 290 300 C284 267 268 242 245 224 C240 245 231 261 213 272 C226 271 238 281 238 292 C238 305 227 315 216 313 C204 311 198 302 198 289 L196 205 Z"/>
+    <path id="emblem-navy" data-component="front-navy-shape" fill="#28316F" d="M270 296 C312 293 348 326 352 364 C358 397 335 424 309 438 C302 419 291 404 273 394 C286 394 298 386 299 375 C301 363 291 354 280 353 C267 351 257 363 258 377 L264 463 L226 422 L210 419 L208 365 C207 329 233 301 270 296 Z"/>
+  </g>
+</svg>

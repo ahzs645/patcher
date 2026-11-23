@@ -17,8 +17,8 @@
   "absorbed": 27,
   "orgs": 22,
   "unsorted": 0,
-  "sourceBytes": 28993421,
-  "storedBytes": 8474450,
+  "sourceBytes": 28991440,
+  "storedBytes": 8472469,
   "sharedBlocks": 56,
   "sharedPaths": 331
  },
@@ -5295,13 +5295,13 @@
      "label": "British Columbia / Police College — blue roundel",
      "collection": "patches",
      "medium": "Cloth patch",
-     "quality": "Atlas roundel with corrected lower-case lettering",
+     "quality": "Manual vector reconstruction from a supplied Police College photograph",
      "family": "justice-institute-police-college-roundel",
      "affiliation": "Other",
      "svg": "justice-institute/S56-O47.svg",
      "preview": "justice-institute/previews/S56-O47.webp",
-     "sha256": "6845f778a9bedf54365fbad65e12a34f625cf743fe3d0fb8243c73693f63609c",
-     "bytes": 14335,
+     "sha256": "6874e6b6e5ece5a487651356bf79e867f0de3c5f40b43bfa4505583b56a4c3a3",
+     "bytes": 12354,
      "sourceUrl": "https://drive.google.com/file/d/1ptQyL4EWkBbEo74gaC7jHaIzm6NCXbwY/view",
      "sightings": [
       {
@@ -5310,9 +5310,9 @@
       }
      ],
      "merged": [],
-     "limitations": "The cream rim, navy ring, grey disc and centre figure are the atlas's reconstruction from a 60 × 57 collector-board crop; the centre remains a coarse interpretation. compose.mjs resets both captions in lower case as the photograph shows them (british columbia, police college) in Poppins SemiBold, a stand-in for the unidentified geometric face. Thread colours are interpreted. The atlas read the lower caption as TRAFFIC OFFICERS and filed it with Highways and Motor Vehicles. The photograph reads british columbia / police college in lower case; the BC Police College became part of the Justice Institute of British Columbia (now its Police Academy).",
+     "limitations": "Constructed concentric rings, 28 individually placed custom lower-case letter outlines and two overlapping Bézier emblem shapes follow a supplied 500 × 666 photograph of the patch. No automatic trace, embedded image or font is used. The photograph's watermark crosses part of the centre, so obscured joins are interpreted from the visible contours. Cloth distortion is regularized and the flat colours approximate photographed thread. The original alphabet, thread colours, dimensions, issue date and the emblem's meaning remain unverified. See supplied/bc-police-college/README.md. The atlas read the lower caption as TRAFFIC OFFICERS and filed it with Highways and Motor Vehicles. The photograph reads british columbia / police college in lower case; the BC Police College became part of the Justice Institute of British Columbia (now its Police Academy).",
      "replaced": {
-      "svg": "supplied/bc-police-college-roundel/composed/S56-O47.svg",
+      "svg": "supplied/bc-police-college/composed/S56-O47.svg",
       "atlasSha256": "0c4dd02b2a3da99307889c79e0e178b51cd9cd421e6aed84e43673f47f576ea1"
      },
      "blocks": [],
