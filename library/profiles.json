@@ -1,4 +1,16 @@
 {
+  "MC19-O02": {
+    "evidence": "MC19-O02 photograph. Olive cloth and gold lettering with a plain cloth edge.",
+    "params": {"ground": "cloth", "groundColor": "#626c55", "border": "none"}
+  },
+  "MC20-O02": {
+    "evidence": "MC20-O02 photograph. Green field with gold lettering and a distinct gold edge.",
+    "params": {"ground": "cloth", "groundColor": "#407b58", "border": "merrow", "borderColor": "#d0a33e", "borderWidthMm": 2.2}
+  },
+  "S56-O40": {
+    "evidence": "MC26-O01 photograph. Dark cloth with white lettering and a pale stitched edge.",
+    "params": {"ground": "cloth", "groundColor": "#2e2a3a", "border": "merrow", "borderColor": "#e4e0db", "borderWidthMm": 1.7}
+  },
   "S31-O01": {
     "evidence": "Scan of the patch (moosecop.net, BC Parks display, Parks_002): slate-green twill ground, plain gold satin lettering, white merrow edge.",
     "params": { "groundColor": "#102338", "borderColor": "#f4f2ec" },
