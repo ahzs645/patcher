@@ -8,6 +8,7 @@ import { writeExp } from './export/exp';
 import { machineStats, machineStitches } from './export/machine';
 import { buildPatchSvg } from './patchSvg';
 import { nearestThread } from './threadCharts';
+import { profileParams } from './profiles';
 import { createDigitizer, DEFAULT_PAD_MM } from './digitizer';
 import { LIBRARY, cardLabel, cardOf, collectionOrgs, findPatch, isCard, loadPatchSvg, orgsBySector, variantsOf, type ResolvedPatch } from './library';
 
@@ -67,6 +68,7 @@ const state = {
   patchSvgUrl: '',
   libraryCollection: 'patches',
   libraryOrg: '',
+  useArtworkPalette: true,
 };
 
 // ---------------------------------------------------------------- persistence (per-viewer convenience)
@@ -127,6 +129,12 @@ function scheduleDigitize(delay = 200) {
   savePrefs();
 }
 
+/** Library palette selection is per artwork, not a persisted global palette. */
+function artworkPaletteParams(): Partial<DigitizeParams> {
+  const profile = state.source.startsWith(LIBRARY_SOURCE) ? profileParams(state.source.slice(LIBRARY_SOURCE.length)) : {};
+  return profile.fixedPalette?.length ? profile : {};
+}
+
 async function runDigitize(id: number) {
   if (!state.svg || id !== jobId) return;
   setBusy('Digitizing…');
@@ -134,7 +142,13 @@ async function runDigitize(id: number) {
   try {
     const raster = await rasterize(state.svg, state.params.widthMm, state.params.pxPerMm, PAD_MM);
     if (id !== jobId) return;
-    const result = await digitizer.digitizeRaster(raster, { ...state.params, borderColor: null });
+    const profile = state.useArtworkPalette ? artworkPaletteParams() : {};
+    const result = await digitizer.digitizeRaster(raster, {
+      ...state.params,
+      fixedPalette: profile.fixedPalette,
+      groundColor: profile.groundColor ?? state.params.groundColor,
+      borderColor: profile.borderColor ?? null,
+    });
     if (id !== jobId) return;
     state.result = result;
     stopPlay();
@@ -470,7 +484,7 @@ function setupSim() {
 
 // ---------------------------------------------------------------- controls
 
-type NumKey = { [K in keyof DigitizeParams]: DigitizeParams[K] extends number ? K : never }[keyof DigitizeParams];
+type NumKey = { [K in keyof DigitizeParams]-?: DigitizeParams[K] extends number ? K : never }[keyof DigitizeParams];
 
 const FORMAT: Partial<Record<NumKey | 'lightDeg', (v: number) => string>> = {
   widthMm: (v) => `${v} mm · ${(v / 25.4).toFixed(2)}″`,
@@ -486,6 +500,7 @@ const FORMAT: Partial<Record<NumKey | 'lightDeg', (v: number) => string>> = {
 const RANGE_KEYS: NumKey[] = ['widthMm', 'maxColors', 'colorTolerance', 'fillSpacingMm', 'fillStitchMm', 'fillAngleDeg', 'satinMaxWidthMm', 'borderWidthMm'];
 
 function syncControls() {
+  syncArtworkPalette();
   for (const key of RANGE_KEYS) {
     $<HTMLInputElement>(key).value = String(state.params[key]);
     $(`${key}Out`).textContent = FORMAT[key]!(state.params[key]);
@@ -503,6 +518,16 @@ function syncControls() {
   $<HTMLSelectElement>('chart').value = state.chart;
   document.querySelectorAll<HTMLElement>('[data-seg-sync]').forEach((el) => el.dispatchEvent(new Event('sync')));
   syncSizeChips();
+}
+
+function syncArtworkPalette() {
+  const palette = artworkPaletteParams().fixedPalette;
+  const available = Boolean(palette?.length);
+  $('artworkPaletteRow').hidden = !available;
+  $<HTMLInputElement>('artworkPalette').checked = available && state.useArtworkPalette;
+  for (const key of ['maxColors', 'colorTolerance']) {
+    $<HTMLInputElement>(key).disabled = available && state.useArtworkPalette;
+  }
 }
 
 function bindRange(key: NumKey) {
@@ -773,6 +798,8 @@ function openSvgText(text: string, name: string, source = '') {
   state.svg = svg;
   state.name = name.replace(/\.svg$/i, '').replace(/_+/g, ' ').slice(0, 60) || 'patch';
   state.source = source;
+  state.useArtworkPalette = true;
+  syncArtworkPalette();
   if (!source.startsWith(LIBRARY_SOURCE)) $('libraryVariants').hidden = true;
   state.result = null;
   state.overrides = {};
@@ -1034,6 +1061,11 @@ function setupKeys() {
 function init() {
   loadPrefs();
   RANGE_KEYS.forEach(bindRange);
+  $<HTMLInputElement>('artworkPalette').onchange = (e) => {
+    state.useArtworkPalette = (e.target as HTMLInputElement).checked;
+    syncArtworkPalette();
+    scheduleDigitize(0);
+  };
 
   $<HTMLInputElement>('varyAngles').onchange = (e) => { state.params.varyAngles = (e.target as HTMLInputElement).checked; scheduleDigitize(); };
   $<HTMLInputElement>('underlay').onchange = (e) => { state.params.underlay = (e.target as HTMLInputElement).checked; scheduleDigitize(); };

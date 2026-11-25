@@ -145,6 +145,10 @@
         </div>
 
         <div class="panel" data-panel="threads" hidden>
+          <div id="artworkPaletteRow" hidden>
+            <label class="check"><input type="checkbox" id="artworkPalette" checked /> Preserve artwork colors</label>
+            <p class="muted small">Use the library's exact palette instead of merging similar colors.</p>
+          </div>
           <div class="field">
             <label for="maxColors">Max colors <output id="maxColorsOut"></output></label>
             <input type="range" id="maxColors" min="2" max="16" step="1" />
