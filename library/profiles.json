@@ -27,5 +27,9 @@
     "evidence": "Source photograph S25-O02 (PofBC patch review crop): dark brown twill ground, white satin lettering, white merrow edge.",
     "params": { "groundColor": "#242130", "borderColor": "#f4f2ec" },
     "threads": { "#242130": "#2a201e", "#7d7a83": "#f1eef0", "#a5a2a8": "#f1eef0" }
+  },
+  "S56-O47": {
+    "evidence": "Manual Police College reconstruction: preserve its four intentional artwork colors. Navy twill and ivory edge are simulation settings, not measured thread or construction evidence.",
+    "params": { "fixedPalette": ["#28316F", "#BAC0B8", "#DBD9C0", "#8BB9C9"], "groundColor": "#28316f", "borderColor": "#dbd9c0" }
   }
 }

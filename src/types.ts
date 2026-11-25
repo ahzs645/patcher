@@ -17,6 +17,8 @@ export interface DigitizeParams {
   maxColors: number;
   /** Colours closer than this (perceptual RGB distance) are merged. */
   colorTolerance: number;
+  /** Exact intentional artwork colors (#RRGGBB). When nonempty, bypass automatic color merging and maxColors. */
+  fixedPalette?: string[];
   /** Tatami row spacing (density). */
   fillSpacingMm: number;
   /** Tatami stitch length. */

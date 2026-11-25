@@ -30,7 +30,9 @@ export function quantize(
   height: number,
   maxColors: number,
   tolerance: number,
+  fixedPalette?: readonly string[],
 ): Quantized {
+  if (fixedPalette?.length) return quantizeFixed(data, width, height, fixedPalette);
   const n = width * height;
   const BITS = 5;
   const SHIFT = 8 - BITS;
@@ -110,6 +112,61 @@ export function quantize(
 
   majorityFilter(labels, width, height);
   return { palette: palette.map((c) => c.map(Math.round) as RGB), labels };
+}
+
+/**
+ * Use intentional artwork colours, not an inferred histogram palette. Exact
+ * RGB matches stay exact even when two colours fall in the same 5-bit bin.
+ * Other pixels (including antialiasing) snap to the nearest declared colour.
+ * Do not smooth labels or refine the palette: both can erase small intentional
+ * details. Region cleanup later still enforces the physical stitch-size limit.
+ */
+function quantizeFixed(
+  data: Uint8ClampedArray, width: number, height: number, colors: readonly string[],
+): Quantized {
+  const unique = [...new Set(colors.map((hex) => {
+    if (typeof hex !== 'string' || !/^#[0-9a-f]{6}$/i.test(hex)) {
+      throw new Error('Fixed palette colors must be #RRGGBB hex values.');
+    }
+    return hex.toLowerCase();
+  }))];
+  // Labels 254 and 255 are reserved for holes and transparency.
+  if (unique.length > 254) throw new Error('Fixed palette supports at most 254 distinct colors.');
+  const rgb: RGB[] = unique.map((hex) => {
+    const n = parseInt(hex.slice(1), 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  });
+  const labels = new Uint8Array(width * height).fill(TRANSPARENT);
+  const cache = new Map<number, number>();
+  rgb.forEach(([r, g, b], i) => cache.set((r << 16) | (g << 8) | b, i));
+  const used = new Uint8Array(rgb.length);
+  for (let i = 0; i < labels.length; i++) {
+    const o = i * 4;
+    if (data[o + 3] < 128) continue;
+    const r = data[o], g = data[o + 1], b = data[o + 2];
+    const key = (r << 16) | (g << 8) | b;
+    let label = cache.get(key);
+    if (label === undefined) {
+      let best = Infinity;
+      label = 0;
+      for (let j = 0; j < rgb.length; j++) {
+        const distance = colorDist(rgb[j], [r, g, b]);
+        if (distance < best) { best = distance; label = j; }
+      }
+      cache.set(key, label);
+    }
+    labels[i] = label;
+    used[label] = 1;
+  }
+  // Keep declared order for deterministic thread indices, but do not advertise
+  // colors with no pixels (e.g. a color from an unselected artwork variant).
+  const palette: RGB[] = [];
+  const remap = new Uint8Array(rgb.length);
+  rgb.forEach((c, i) => { if (used[i]) { remap[i] = palette.length; palette.push(c); } });
+  for (let i = 0; i < labels.length; i++) {
+    if (labels[i] !== TRANSPARENT) labels[i] = remap[labels[i]];
+  }
+  return { palette, labels };
 }
 
 /** One 3x3 majority pass: removes single-pixel speckle left by anti-aliasing. */

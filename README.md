@@ -45,6 +45,8 @@ cannot: which colour is the cloth (`groundColor`), the edge (`borderColor`, `bor
 sewn in (`fillAngles`, by colour), and thread colour corrections (`threads`). `profileParams(id)` gives the digitizing
 settings and `threadColors(profile, palette)` the colours to render with. The drawings are not edited.
 
+**Fixed artwork palettes:** For flat, manually reconstructed artwork, pass `fixedPalette: ['#28316F', '#BAC0B8', '#DBD9C0', '#8BB9C9']` in the digitizer parameters or a patch profile. The supplied palette replaces automatic colour discovery and ignores `maxColors` and `colorTolerance`. Exact pixels retain their colour; blended edge pixels snap to the closest declared colour. Only used colours are returned, in declared order. The physical minimum stitch/region size still applies. Omit the palette or pass `[]` to retain automatic quantization for gradients and photographs. The standalone library viewer exposes a Preserve artwork colors switch for profiled designs. S56-O47 uses four reconstructed colours, not verified historical thread samples. `npm run test:palette` runs the focused regression checks locally.
+
 **Checking a change:** `npm run sew:check` sews every library patch in a real browser (it needs Playwright) and writes
 a PNG and a report line for each: stitches by kind, raised share, longest stitch, time. Run it before and after into two
 `--out` folders and compare; `--profiles` applies each patch's profile.

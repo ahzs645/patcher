@@ -51,7 +51,7 @@ export function digitize(raster: RasterInput, params: DigitizeParams): DigitizeR
   const { width: w, height: h, data, padPx } = raster;
   const ppm = params.pxPerMm;
 
-  const { palette: rgb, labels } = quantize(data, w, h, params.maxColors, params.colorTolerance);
+  const { palette: rgb, labels } = quantize(data, w, h, params.maxColors, params.colorTolerance, params.fixedPalette);
   const palette = rgb.map(toHex);
   lap('quantize');
 
