@@ -296,6 +296,7 @@ async function main() {
     return { id: group.id, label: group.label ?? patchById.get(members[0].id).label, members };
   });
   for (const group of consolidate) {
+    if (group.variants.length < 2) continue;
     for (const { id, name } of group.variants) Object.assign(patchById.get(id), { group: group.id, variant: name });
     variantGroups.push({ id: group.id, label: group.label, members: group.variants.map(({ id, name }) => ({ id, name })) });
   }

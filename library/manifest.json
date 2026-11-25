@@ -7,9 +7,9 @@
   "note": "Reference-based vector reconstructions, not authenticated issue artwork. See each patch's limitations."
  },
  "summary": {
-  "designs": 163,
+  "designs": 165,
   "byCollection": {
-   "patches": 149,
+   "patches": 151,
    "badges": 14
   },
   "excluded": 111,
@@ -17,8 +17,8 @@
   "absorbed": 24,
   "orgs": 23,
   "unsorted": 0,
-  "sourceBytes": 28843067,
-  "storedBytes": 8387025,
+  "sourceBytes": 28856355,
+  "storedBytes": 8400313,
   "sharedBlocks": 53,
   "sharedPaths": 299
  },
@@ -5834,10 +5834,56 @@
    "sector": "unconfirmed",
    "description": "Designs whose wording or owner the atlas could not resolve.",
    "counts": {
-    "patches": 1,
+    "patches": 3,
     "badges": 0
    },
    "patches": [
+    {
+     "id": "fish-game-canada",
+     "label": "B.C. Fish & Game / Canada — flower shoulder patch",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Reference-based vector reconstruction",
+     "family": null,
+     "affiliation": null,
+     "svg": "unconfirmed/fish-game-canada.svg",
+     "preview": "unconfirmed/previews/fish-game-canada.webp",
+     "sha256": "6dc827f25571d7a05f61b07621801ee0e681e4e67bebf99e38d0b74fdd2e1145",
+     "bytes": 9160,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "The monochrome sleeve photograph shows a flower, a light perimeter, a curved upper legend and Canada in script. GAME is completed where the cloth turns away. The flattened outline, partly obscured lettering, flower detail and script are interpreted. Issuer, dates and thread colours are unverified.",
+     "supplied": {
+      "svg": "supplied/regional-and-fish-game/fish-game-canada.svg"
+     },
+     "absorbs": [],
+     "blocks": [],
+     "bundles": []
+    },
+    {
+     "id": "regional-supervisor",
+     "label": "Regional Supervisor — green and gold title tab",
+     "collection": "patches",
+     "medium": "Cloth patch",
+     "quality": "Reference-based vector reconstruction",
+     "family": null,
+     "affiliation": null,
+     "svg": "unconfirmed/regional-supervisor.svg",
+     "preview": "unconfirmed/previews/regional-supervisor.webp",
+     "sha256": "93f8535b48a6f79877462c83be0bede91fd614ba1624e38bb3b3ea2b180c94c0",
+     "bytes": 4128,
+     "sourceUrl": null,
+     "sightings": [],
+     "merged": [],
+     "limitations": "The supplied colour photograph shows the two-line role title, a green merrowed edge and an inset gold rule. It gives no agency name, issue date or location. Colours and letterforms are approximate.",
+     "supplied": {
+      "svg": "supplied/regional-and-fish-game/regional-supervisor.svg"
+     },
+     "absorbs": [],
+     "blocks": [],
+     "bundles": []
+    },
     {
      "id": "S56-O35",
      "label": "Green/white circular emblem — wording unresolved",
