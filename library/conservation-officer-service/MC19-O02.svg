@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371 118" role="img">
   <title>Conservation Officer — separate olive lower rocker</title>
-  <desc>MC19-O02: independently constructed rounded U-shaped cloth outline and individually positioned original narrow capital glyphs. Reference-based interpretation; no raster or traced contours. Exact embroidery alphabet, thread colours and physical dimensions remain unverified.</desc>
-  <path data-component="lower-rocker-outline" fill="#626c55" d="M 32 3 C 38 2 42 6 49 12 C 87 42 131 58 185.5 59 C 240 58 284 42 322 12 C 329 6 333 2 339 3 C 347 3 353 10 359 18 C 367 28 371 37 367 44 C 365 48 361 52 356 56 C 312 94 251 115 185.5 115 C 120 115 59 94 15 56 C 10 52 6 48 4 44 C 0 37 4 28 12 18 C 18 10 24 3 32 3 Z"/>
-  <g data-live-text="CONSERVATION OFFICER" data-caption="CONSERVATION OFFICER" fill="#cfb258" fill-rule="evenodd">
-    <path data-glyph="C" d="M12 5.8 9.7 7.2C9 4 8 2.6 6.1 2.6 3.2 2.6 2.6 6.6 2.6 14S3.2 25.4 6.1 25.4C8 25.4 9 23.8 9.7 20.8L12 22.2C11 26.4 9 28 6.1 28 1.4 28 0 23.4 0 14S1.4 0 6.1 0C9 0 11 1.6 12 5.8Z" transform="translate(30 29.594) rotate(34.982) translate(-6 -14)"/>
-    <path data-glyph="O" d="M6.5 0C11.4 0 13 4.7 13 14S11.4 28 6.5 28 0 23.3 0 14 1.6 0 6.5 0ZM6.5 2.6C3.5 2.6 2.6 6.2 2.6 14S3.5 25.4 6.5 25.4 10.4 21.8 10.4 14 9.5 2.6 6.5 2.6Z" transform="translate(48 41.461) rotate(31.747) translate(-6.5 -14)"/>
-    <path data-glyph="N" d="M0 0H2.7L10.4 22V0H13V28H10.3L2.6 6V28H0Z" transform="translate(67 52.405) rotate(28.069) translate(-6.5 -14)"/>
-    <path data-glyph="S" d="M11.8 5.7 9.4 6.7C8.8 3.8 7.7 2.6 5.9 2.6 3.8 2.6 2.8 4.3 2.8 7.1 2.8 10.4 4.4 11.5 6.8 13 10 14.9 12 16.9 12 21.1 12 25.4 9.8 28 6 28 2.8 28 .8 26.2 0 22L2.5 21.1C3 24.1 4 25.4 6 25.4 8.3 25.4 9.4 23.8 9.4 21.1 9.4 18 7.6 16.7 5.2 15.2 2.2 13.4 .2 11.4 .2 7.1 .2 2.8 2.4 0 5.9 0 9 0 11 1.8 11.8 5.7Z" transform="translate(86 61.724) rotate(24.12) translate(-6 -14)"/>
-    <path data-glyph="E" d="M0 0H11V2.6H2.6V12.4H9.2V15H2.6V25.4H11V28H0Z" transform="translate(104 69.055) rotate(20.141) translate(-5.5 -14)"/>
-    <path data-glyph="R" d="M0 0H5.7C10.5 0 12.5 2.8 12.5 8.3 12.5 12.8 10.9 15.1 8 15.9L13 28H10L5.1 16.5H2.6V28H0ZM2.6 2.6V13.9H5.6C8.5 13.9 9.9 12.2 9.9 8.3S8.5 2.6 5.6 2.6Z" transform="translate(121 74.639) rotate(16.185) translate(-6.5 -14)"/>
-    <path data-glyph="V" d="M0 0H2.8L6.5 22.6 10.2 0H13L7.9 28H5.1Z" transform="translate(138 78.923) rotate(12.065) translate(-6.5 -14)"/>
-    <path data-glyph="A" d="M5.1 0H7.9L13 28H10.3L9.1 21H3.9L2.7 28H0ZM4.4 18.4H8.6L6.5 5.9Z" transform="translate(155 81.907) rotate(7.815) translate(-6.5 -14)"/>
-    <path data-glyph="T" d="M0 0H13V2.6H7.8V28H5.2V2.6H0Z" transform="translate(173 83.648) rotate(3.219) translate(-6.5 -14)"/>
-    <path data-glyph="I" d="M0 0H2.7V28H0Z" transform="translate(186 83.999) rotate(-0.129) translate(-1.35 -14)"/>
-    <path data-glyph="O" d="M6.5 0C11.4 0 13 4.7 13 14S11.4 28 6.5 28 0 23.3 0 14 1.6 0 6.5 0ZM6.5 2.6C3.5 2.6 2.6 6.2 2.6 14S3.5 25.4 6.5 25.4 10.4 21.8 10.4 14 9.5 2.6 6.5 2.6Z" transform="translate(198 83.648) rotate(-3.219) translate(-6.5 -14)"/>
-    <path data-glyph="N" d="M0 0H2.7L10.4 22V0H13V28H10.3L2.6 6V28H0Z" transform="translate(219 81.475) rotate(-8.573) translate(-6.5 -14)"/>
-    <path data-glyph="O" d="M6.5 0C11.4 0 13 4.7 13 14S11.4 28 6.5 28 0 23.3 0 14 1.6 0 6.5 0ZM6.5 2.6C3.5 2.6 2.6 6.2 2.6 14S3.5 25.4 6.5 25.4 10.4 21.8 10.4 14 9.5 2.6 6.5 2.6Z" transform="translate(246 75.764) rotate(-15.23) translate(-6.5 -14)"/>
-    <path data-glyph="F" d="M0 0H11V2.6H2.6V12.4H9.2V15H2.6V28H0Z" transform="translate(263 70.486) rotate(-19.226) translate(-5.5 -14)"/>
-    <path data-glyph="F" d="M0 0H11V2.6H2.6V12.4H9.2V15H2.6V28H0Z" transform="translate(278 64.748) rotate(-22.6) translate(-5.5 -14)"/>
-    <path data-glyph="I" d="M0 0H2.7V28H0Z" transform="translate(289 59.897) rotate(-24.974) translate(-1.35 -14)"/>
-    <path data-glyph="C" d="M12 5.8 9.7 7.2C9 4 8 2.6 6.1 2.6 3.2 2.6 2.6 6.6 2.6 14S3.2 25.4 6.1 25.4C8 25.4 9 23.8 9.7 20.8L12 22.2C11 26.4 9 28 6.1 28 1.4 28 0 23.4 0 14S1.4 0 6.1 0C9 0 11 1.6 12 5.8Z" transform="translate(303 52.936) rotate(-27.868) translate(-6 -14)"/>
-    <path data-glyph="E" d="M0 0H11V2.6H2.6V12.4H9.2V15H2.6V25.4H11V28H0Z" transform="translate(319 43.9) rotate(-30.995) translate(-5.5 -14)"/>
-    <path data-glyph="R" d="M0 0H5.7C10.5 0 12.5 2.8 12.5 8.3 12.5 12.8 10.9 15.1 8 15.9L13 28H10L5.1 16.5H2.6V28H0ZM2.6 2.6V13.9H5.6C8.5 13.9 9.9 12.2 9.9 8.3S8.5 2.6 5.6 2.6Z" transform="translate(336 33.037) rotate(-34.108) translate(-6.5 -14)"/>
+  <desc>Reconstruction from the MC19-O02 photograph. Cloth cut, thread colours and stitched letterforms are approximate.</desc>
+  <path data-component="rocker-outline" d="M 32 3 C 38 2 42 6 49 12 C 87 42 131 58 185.5 59 C 240 58 284 42 322 12 C 329 6 333 2 339 3 C 347 3 353 10 359 18 C 367 28 371 37 367 44 C 365 48 361 52 356 56 C 312 94 251 115 185.5 115 C 120 115 59 94 15 56 C 10 52 6 48 4 44 C 0 37 4 28 12 18 C 18 10 24 3 32 3 Z" fill="#626c55"/>
+  <g data-caption="CONSERVATION OFFICER" fill="#cfb258" fill-rule="evenodd" stroke="#cfb258" stroke-width="0" stroke-linejoin="round">
+    <path data-glyph="C" d="@pe9a76c811e84" transform="translate(30.5 28) rotate(40) scale(1.3 0.9) translate(-6 -14)"/>
+    <path data-glyph="O" d="@p9dc8ea78d783" transform="translate(46.4 41.4) rotate(38) scale(1.28 0.93) translate(-6.5 -14)"/>
+    <path data-glyph="N" d="@p67efcb3540a3" transform="translate(63.7 54.1) rotate(36) scale(1.26 0.88) translate(-6.5 -14)"/>
+    <path data-glyph="S" d="@pde1f1884041d" transform="translate(82.5 64.5) rotate(26) scale(1.39 0.97) translate(-6 -14)"/>
+    <path data-glyph="E" d="@pc7a7a53fec7f" transform="translate(100.5 72.4) rotate(16) scale(1.17 0.86) translate(-5.5 -14)"/>
+    <path data-glyph="R" d="@p9ca810dc9efc" transform="translate(119.5 77.5) rotate(12) scale(1.3 0.84) translate(-6.5 -14)"/>
+    <path data-glyph="V" d="@pac10bda4af63" transform="translate(138.6 81.9) rotate(10) scale(1.4 0.83) translate(-6.5 -14)"/>
+    <path data-glyph="A" d="@p43106caff47d" transform="translate(155.2 84.4) rotate(6) scale(1.27 0.91) translate(-6.5 -14)"/>
+    <path data-glyph="T" d="M0 0H13V2.6H7.8V28H5.2V2.6H0Z" transform="translate(169.4 85.3) rotate(3) scale(1.04 0.92) translate(-6.5 -14)"/>
+    <path data-glyph="I" d="M0 0H2.7V28H0Z" transform="translate(182.5 85.8) rotate(4) scale(1.07 0.85) translate(-1.35 -14)"/>
+    <path data-glyph="O" d="@p9dc8ea78d783" transform="translate(196.9 85.5) rotate(-3) scale(1.2 0.95) translate(-6.5 -14)"/>
+    <path data-glyph="N" d="@p67efcb3540a3" transform="translate(219.1 84.2) rotate(-4) scale(1.24 0.9) translate(-6.5 -14)"/>
+    <path data-glyph="O" d="@p9dc8ea78d783" transform="translate(249.6 79.7) rotate(-9) scale(1.28 0.99) translate(-6.5 -14)"/>
+    <path data-glyph="F" d="@pc14edbd3c97b" transform="translate(268.9 74) rotate(-20) scale(1.1 0.89) translate(-5.5 -14)"/>
+    <path data-glyph="F" d="@pc14edbd3c97b" transform="translate(285.1 67.8) rotate(-24) scale(1.01 0.92) translate(-5.5 -14)"/>
+    <path data-glyph="I" d="M0 0H2.7V28H0Z" transform="translate(295.6 60.5) rotate(-29) scale(0.99 0.8) translate(-1.35 -14)"/>
+    <path data-glyph="C" d="@pe9a76c811e84" transform="translate(308.4 52.7) rotate(-34) scale(1.39 0.92) translate(-6 -14)"/>
+    <path data-glyph="E" d="@pc7a7a53fec7f" transform="translate(324.7 41.2) rotate(-38) scale(1.05 0.9) translate(-5.5 -14)"/>
+    <path data-glyph="R" d="@p9ca810dc9efc" transform="translate(339.1 27.8) rotate(-42) scale(1.32 0.8) translate(-6.5 -14)"/>
   </g>
 </svg>

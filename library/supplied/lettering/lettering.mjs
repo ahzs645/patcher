@@ -118,15 +118,16 @@ function walker(points) {
 /**
  * Letters along a polyline baseline, read from its first point to its last and standing on its
  * left (in the drawing's y-down axes, the side that is "up" when the line runs to the right).
+ * `stretch` scales glyph widths and advances along the curve, preserving cap height.
  * `centre` is the distance along the line of the text's middle (default: the line's middle).
  */
-export function along(f, text, { points, capHeight, fill, tracking = 0, centre, wordSpace = 1 }) {
+export function along(f, text, { points, capHeight, fill, tracking = 0, centre, wordSpace = 1, stretch = 1 }) {
   const { letters, length, s } = run(f, text, capHeight, { tracking, wordSpace });
   const path = walker(points);
   const mid = centre ?? path.total / 2;
   const body = letters.map((l) => {
-    const p = path.at(mid + l.centre - length / 2);
-    return letterPath(l, s, p.x, p.y, (p.angle * 180) / Math.PI, fill);
+    const p = path.at(mid + (l.centre - length / 2) * stretch);
+    return letterPath(l, s, p.x, p.y, (p.angle * 180) / Math.PI, fill, stretch);
   }).join('');
   return group(text, body);
 }

@@ -30,10 +30,24 @@
   "replace": [
     {
       "id": "MC19-O02",
-      "svg": "supplied/co-olive-lower-rocker/MC19-O02.svg",
-      "preview": "supplied/co-olive-lower-rocker/MC19-O02.webp",
-      "quality": "Refined source-based olive lower rocker",
-      "limitations": "Independent source-based reconstruction of the olive lower rocker from the 371 × 118 MC19-O02 crop. Rounded Bézier cloth outline, individually placed original narrow capitals, and approximate olive/gold palette. No traced photograph contours or raster content. Exact embroidered alphabet, calibrated thread colours, physical size and stitch structure remain unverified; visual fit is provisional. MC20-O02 remains a separately evidenced variant."
+      "svg": "supplied/conservation-officer-rockers/MC19-O02.svg",
+      "preview": "supplied/conservation-officer-rockers/MC19-O02.webp",
+      "quality": "Photo-compared rocker reconstruction",
+      "limitations": "Reconstruction from the MC19-O02 photograph. The cloth cut, edge, thread colours, and individual letter placements are approximate. The source does not establish physical dimensions or exact stitch structure."
+    },
+    {
+      "id": "MC20-O02",
+      "svg": "supplied/conservation-officer-rockers/MC20-O02.svg",
+      "preview": "supplied/conservation-officer-rockers/MC20-O02.webp",
+      "quality": "Photo-compared rocker reconstruction",
+      "limitations": "Reconstruction from the MC20-O02 photograph. The cloth cut, edge, thread colours, and individual letter placements are approximate. The source does not establish physical dimensions or exact stitch structure."
+    },
+    {
+      "id": "S56-O40",
+      "svg": "supplied/conservation-officer-rockers/S56-O40.svg",
+      "preview": "supplied/conservation-officer-rockers/S56-O40.webp",
+      "quality": "Photo-compared rocker reconstruction",
+      "limitations": "Reconstruction from the MC26-O01 photograph. The cloth cut, edge, thread colours, and individual letter placements are approximate. The source does not establish physical dimensions or exact stitch structure."
     },
     {
       "id": "S01-O01",
