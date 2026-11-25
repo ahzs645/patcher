@@ -19,7 +19,6 @@
     "name": "single-line-rocker",
     "ids": [
       "S25-O02",
-      "S49-O01",
       "S56-O55"
     ],
     "changes": [
@@ -28,7 +27,18 @@
         "revised": "d=\"M4 9 Q50 -7 96 9 Q98 10 97 13 L94 24 Q93.5 27 90.5 26 Q50 11 9.5 26 Q6.5 27 6 24 L3 13 Q2 10 4 9 Z\""
       }
     ],
-    "note": "The arched cloth band has rounded end transitions and a deeper outer curve in the photographs."
+    "note": "The single-line Parks rocker uses rounded ends, a fuller band and a wider word space, visible most clearly in S25-O02.",
+    "captions": [
+      {
+        "text": "PARKS BRANCH",
+        "baseline": 11.3,
+        "riseAtEnds": 7,
+        "span": 79,
+        "capHeight": 6.6,
+        "wordSpace": 2.9,
+        "stretch": 1.38
+      }
+    ]
   },
   {
     "name": "parks-recreation-rocker",
@@ -42,7 +52,75 @@
         "revised": "d=\"M5 10 Q50 -7 95 10 Q98 11 97 14 L94 33 Q93.5 37 90 36 Q50 22 10 36 Q6.5 37 6 33 L3 14 Q2 11 5 10 Z\""
       }
     ],
-    "note": "Rounded ends and the fuller lower edge follow the two-line Parks rocker."
+    "note": "The two-line Parks rocker has a rounded edge, compact row spacing and a deeper lower caption arc, based on S25-O04.",
+    "captions": [
+      {
+        "text": "PARKS",
+        "baseline": 11.4,
+        "riseAtEnds": 6.3,
+        "span": 25,
+        "capHeight": 5.5,
+        "wordSpace": 1,
+        "stretch": 1.26
+      },
+      {
+        "text": "OUTDOOR RECREATION",
+        "baseline": 19.5,
+        "riseAtEnds": 12.2,
+        "span": 84,
+        "capHeight": 5.5,
+        "wordSpace": 1.45,
+        "stretch": 1.16
+      }
+    ]
+  },
+  {
+    "name": "fire-control-rocker",
+    "ids": [
+      "S49-O01"
+    ],
+    "changes": [
+      {
+        "original": "d=\"M3 10 Q50 -4 97 10 L93 25 Q50 9 7 25 Z\"",
+        "revised": "d=\"M4 9 Q50 -7 96 9 Q98 10 97 13 L94 24 Q93.5 27 90.5 26 Q50 11 9.5 26 Q6.5 27 6 24 L3 13 Q2 10 4 9 Z\""
+      }
+    ],
+    "note": "The Fire Control photograph supports a deeper title arc and a distinct gap between FIRE and CONTROL.",
+    "captions": [
+      {
+        "text": "FIRE CONTROL",
+        "baseline": 10.9,
+        "riseAtEnds": 10.8,
+        "span": 71,
+        "capHeight": 6.7,
+        "wordSpace": 1.8,
+        "stretch": 1.25
+      }
+    ]
+  },
+  {
+    "name": "deputy-sheriff-rocker",
+    "ids": [
+      "S56-O06",
+      "S56-O08"
+    ],
+    "changes": [
+      {
+        "original": "d=\"M3 10 Q50 -4 97 10 L93 25 Q50 9 7 25 Z\"",
+        "revised": "d=\"M4 10 Q50 -5 96 10 Q97 10.5 96.5 12.5 L94 23.5 Q93.5 26 91.5 25 Q50 10 8.5 25 Q6.5 26 6 23.5 L3.5 12.5 Q3 10.5 4 10 Z\""
+      }
+    ],
+    "captions": [
+      {
+        "text": "DEPUTY SHERIFF",
+        "baseline": 11,
+        "riseAtEnds": 8,
+        "span": 73,
+        "capHeight": 7.1,
+        "wordSpace": 1.2
+      }
+    ],
+    "note": "The paired collector-board titles show compact lettering set into the dark field with clearance at each end. Fine stitch and edge details are unresolved."
   },
   {
     "name": "ubc-patrol-arch",

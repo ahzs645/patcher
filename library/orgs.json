@@ -29,6 +29,27 @@
   ],
   "replace": [
     {
+      "id": "MC19-O02",
+      "svg": "supplied/conservation-officer-rockers/MC19-O02.svg",
+      "preview": "supplied/conservation-officer-rockers/MC19-O02.webp",
+      "quality": "Photo-compared rocker reconstruction",
+      "limitations": "Reconstruction from the MC19-O02 photograph. The cloth cut, edge, thread colours, and individual letter placements are approximate. The source does not establish physical dimensions or exact stitch structure."
+    },
+    {
+      "id": "MC20-O02",
+      "svg": "supplied/conservation-officer-rockers/MC20-O02.svg",
+      "preview": "supplied/conservation-officer-rockers/MC20-O02.webp",
+      "quality": "Photo-compared rocker reconstruction",
+      "limitations": "Reconstruction from the MC20-O02 photograph. The cloth cut, edge, thread colours, and individual letter placements are approximate. The source does not establish physical dimensions or exact stitch structure."
+    },
+    {
+      "id": "S56-O40",
+      "svg": "supplied/conservation-officer-rockers/S56-O40.svg",
+      "preview": "supplied/conservation-officer-rockers/S56-O40.webp",
+      "quality": "Photo-compared rocker reconstruction",
+      "limitations": "Reconstruction from the MC26-O01 photograph. The cloth cut, edge, thread colours, and individual letter placements are approximate. The source does not establish physical dimensions or exact stitch structure."
+    },
+    {
       "id": "S01-O01",
       "medium": "Metal badge",
       "finish": "Worn copper tone",
@@ -311,6 +332,42 @@
     }
   ],
   "consolidate": [
+    {
+      "id": "regional-supervisor",
+      "org": "unconfirmed",
+      "label": "Regional Supervisor — green and gold title tab",
+      "quality": "Reference-based vector reconstruction",
+      "medium": "Cloth patch",
+      "limitations": "The supplied colour photograph shows the two-line role title, a green merrowed edge and an inset gold rule. It gives no agency name, issue date or location. Colours and letterforms are approximate.",
+      "variants": [
+        {
+          "id": "regional-supervisor",
+          "name": "Photographed specimen",
+          "label": "Regional Supervisor — green and gold title tab",
+          "svg": "supplied/regional-and-fish-game/regional-supervisor.svg",
+          "preview": "supplied/regional-and-fish-game/regional-supervisor.webp",
+          "atlas": []
+        }
+      ]
+    },
+    {
+      "id": "fish-game-canada",
+      "org": "unconfirmed",
+      "label": "B.C. Fish & Game / Canada — flower shoulder patch",
+      "quality": "Reference-based vector reconstruction",
+      "medium": "Cloth patch",
+      "limitations": "The monochrome sleeve photograph shows a flower, a light perimeter, a curved upper legend and Canada in script. GAME is completed where the cloth turns away. The flattened outline, partly obscured lettering, flower detail and script are interpreted. Issuer, dates and thread colours are unverified.",
+      "variants": [
+        {
+          "id": "fish-game-canada",
+          "name": "Photographed specimen",
+          "label": "B.C. Fish & Game / Canada — flower shoulder patch",
+          "svg": "supplied/regional-and-fish-game/fish-game-canada.svg",
+          "preview": "supplied/regional-and-fish-game/fish-game-canada.webp",
+          "atlas": []
+        }
+      ]
+    },
     {
       "id": "forest-service-oval",
       "org": "bc-forest-service",
