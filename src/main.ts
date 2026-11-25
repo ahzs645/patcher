@@ -484,7 +484,7 @@ function setupSim() {
 
 // ---------------------------------------------------------------- controls
 
-type NumKey = { [K in keyof DigitizeParams]: DigitizeParams[K] extends number ? K : never }[keyof DigitizeParams];
+type NumKey = { [K in keyof DigitizeParams]-?: DigitizeParams[K] extends number ? K : never }[keyof DigitizeParams];
 
 const FORMAT: Partial<Record<NumKey | 'lightDeg', (v: number) => string>> = {
   widthMm: (v) => `${v} mm · ${(v / 25.4).toFixed(2)}″`,
